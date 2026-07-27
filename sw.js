@@ -1,6 +1,6 @@
 "use strict";
-const CACHE = "recallcheck-static-v0.7-discover-verify-share";
-const STATIC = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest", "./assets/icons/recallcheck.svg", "./data/demo-products.json", "./data/demo-recalls.json", "./discovery.js", "./recalls.html", "./recall.html", "./how-recalls-work.html", "./fda-vs-usda.html", "./find-a-lot-code.html", "./why-barcode-may-not-be-enough.html", "./current-vs-historical.html", "./what-no-match-means.html", "./privacy.html", "./methodology.html", "./assets/social/recallcheck-share.svg"];
+const CACHE = "recallcheck-static-v0.8-safety-state-design";
+const STATIC = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest", "./assets/icons/recallcheck.svg", "./data/demo-products.json", "./data/demo-recalls.json", "./discovery.js", "./recalls.html", "./recall.html", "./how-recalls-work.html", "./fda-vs-usda.html", "./find-a-lot-code.html", "./why-barcode-may-not-be-enough.html", "./current-vs-historical.html", "./what-no-match-means.html", "./privacy.html", "./methodology.html", "./assets/social/recallcheck-share.svg", "./design-review.html", "./design-review.js"];
 self.addEventListener("install", event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(STATIC)).then(() => self.skipWaiting())));
 self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
 self.addEventListener("fetch", event => {

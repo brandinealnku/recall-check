@@ -195,3 +195,38 @@ no-current-recall result.
 ## Version 0.7 discovery and privacy notes
 
 Current-recall category filters are deliberately conservative: USDA records map to meat and poultry; all other category filters require explicit normalized `categories` or `hazards` fields. No category is inferred from loose title or reason keywords. Recall detail links contain only the public normalized recall ID. Dynamic detail URLs are excluded from the sitemap because they are query-based and not a stable generated static list. Session history uses generic “Product check” labels, is held only in JavaScript memory, is capped at five, and clears on reload. The sitemap uses a conspicuous non-production placeholder because no production URL was confirmed; replace it and add the Sitemap directive to robots.txt during deployment; canonical tags are omitted rather than emitting incorrect relative canonicals. Lighthouse and PageSpeed may be run against the deployed URL; no measurements are transmitted by the application.
+
+
+## Version 0.8 safety-state design system
+
+Version 0.8 separates **recall severity** from **package certainty**. A barcode associated with a current recall always retains the critical red recall banner. When an affected lot, date, size, or establishment number still needs confirmation, an amber package-verification panel appears beneath that banner. Package outcomes never erase the original current-recall association.
+
+### Semantic token roles
+
+- `--color-brand*`: routine navigation, scanner controls, and product actions; never the default result state.
+- `--color-critical*`: a current official recall and its official action.
+- `--color-warning*`: incomplete agency coverage, unknown status, and package verification.
+- `--color-neutral-result*`: no current match and neutral package non-match; this is not success or safety approval.
+- `--color-historical*`: closed and terminated records.
+- `--color-failure*`: an official-data check that could not be completed, distinct from a product recall.
+- `--color-success-progress`: completed progress steps only.
+- `--focus-ring`: high-visibility keyboard focus.
+- `--space-1` through `--space-7`: the shared spacing scale.
+
+Result headings, status labels, immediate instructions, semantic buttons, local inline SVG icons, spacing, forced-colors treatment, reduced-motion behavior, and 320-pixel reflow rules are centralized in `styles.css`. The unlinked `design-review.html` route contains 16 fictional, production-safe visual fixtures and is marked `noindex`.
+
+### Five-second comprehension test
+
+Show each primary state for five seconds, hide it, and ask:
+
+1. Is the product associated with a current recall?
+2. Is this exact package confirmed as included?
+3. What should you do next?
+4. Which agency issued the recall?
+5. Is this result a safety guarantee?
+
+Success means the tester immediately recognizes current-recall association, correctly distinguishes package certainty, identifies the primary action, does not interpret no-match as safe, does not interpret historical as current, and does not interpret a service failure as a recalled product. Record observations rather than coaching the tester. The design review performed for this release confirmed that each fixture exposes those answers in its label, heading, instruction, agency/details area, and action hierarchy; formal moderated user research remains a follow-up activity.
+
+### Design-review checklist
+
+Review the fixture route at 320px, 375px, tablet, and desktop widths; at 200% zoom; with keyboard-only input; reduced motion; and forced colors. Confirm current recall is red, verification is subordinate amber, historical is purple-gray, no-match is blue-gray with a non-guarantee, and service failure is red-brown with “Check not completed.” Confirm RecallCheck remains the primary name, ITSBAD LLC remains the maker, and the independent-product disclaimer does not imply government affiliation.
