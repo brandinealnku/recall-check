@@ -7,7 +7,7 @@
       "id": "DEMO-FDA-001",
       "agency": "FDA",
       "type": "recall",
-      "status": "ongoing",
+      "status": "active",
       "classification": "Class I",
       "title": "DEMONSTRATION: Harbor Field Oat Bites",
       "recallingFirm": "Demonstration Foods Company (fictional)",
@@ -38,7 +38,18 @@
         "demo": true,
         "note": "Fictional record solely for interface testing; no real company or event is represented."
       },
-      "searchText": "demonstration harbor field oat bites 6 oz allergen"
+      "searchText": "demonstration harbor field oat bites 6 oz allergen",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-07-15",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      }
     },
     {
       "id": "DEMO-USDA-002",
@@ -81,13 +92,24 @@
         "demo": true,
         "note": "Fictional record solely for interface testing; no real company or event is represented."
       },
-      "searchText": "demonstration meadow table chicken soup 15 oz l2407a"
+      "searchText": "demonstration meadow table chicken soup 15 oz l2407a",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-07-12",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      }
     },
     {
       "id": "DEMO-FDA-003",
       "agency": "FDA",
       "type": "recall",
-      "status": "ongoing",
+      "status": "closed",
       "classification": "Class II",
       "title": "DEMONSTRATION: Orchard Morning Granola",
       "recallingFirm": "Example Orchard Cooperative (fictional)",
@@ -113,7 +135,64 @@
       "sourceRecord": {
         "demo": true
       },
-      "searchText": "demonstration orchard morning honey granola 10 oz"
+      "searchText": "demonstration orchard morning honey granola 10 oz",
+      "lifecycle": {
+        "state": "closed",
+        "isActionable": false,
+        "sourceStatus": "Closed",
+        "terminationDate": "2026-01-20"
+      },
+      "timeline": {
+        "recallDate": "2026-07-10",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      }
+    },
+    {
+      "id": "DEMO-FDA-004",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "terminated",
+      "classification": "Class I",
+      "title": "DEMONSTRATION: Historical Harbor Field Oat Bites",
+      "recallingFirm": "Demonstration Foods Company (fictional)",
+      "productDescription": "DEMONSTRATION RECORD ONLY \u2014 Harbor Field Oat Bites, 6 oz pouch",
+      "brandNames": [
+        "Harbor Field"
+      ],
+      "productNames": [
+        "Oat Bites"
+      ],
+      "upcs": [
+        "725272730706"
+      ],
+      "gtins": [],
+      "packageSizes": [
+        "6 oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Demonstration allergen recall scenario; this is not a real recall or company.",
+      "distribution": "Demonstration distribution: nationwide",
+      "recallDate": "2025-07-12",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
+      "sourceRecord": {
+        "demo": true,
+        "note": "Fictional record solely for interface testing; no real company or event is represented."
+      },
+      "searchText": "demonstration harbor field oat bites 6 oz allergen",
+      "lifecycle": {
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "Terminated",
+        "terminationDate": "2025-09-01"
+      },
+      "timeline": {
+        "recallDate": "2025-07-12",
+        "ageDaysAtRefresh": 373,
+        "isRecent": false
+      }
     }
   ]
 }

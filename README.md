@@ -59,9 +59,9 @@ The expandable **Recall data coverage** panel gives plain-language agency availa
 2. Validate GS1 check digits while permitting an explicit user override.
 3. Generate zero-padded equivalent UPC-A/GTIN-13/GTIN-14 representations.
 4. Rank exact identifiers, equivalent identifiers, then brand/name/package-size similarity.
-5. Exact/equivalent identifiers may establish a product-level match. If any lot/date restrictions exist, the result remains `possible_match_details_required` until a printed package value matches.
-6. Similarity alone **never** produces `confirmed_match`; it produces manual review.
-7. Product-service failure still performs a direct official identifier search. Recall-data failure never produces `no_matching_recall`.
+5. Exact/equivalent identifiers may establish a current product-level match only when lifecycle permits it. Lot/date restrictions produce `current_recall_details_required`; closed or terminated exact records produce `historical_exact_match`.
+6. Similarity alone **never** confirms a barcode. Active, strongly corroborated similarity requires manual review; inactive similarity is secondary `historical_similar_record` information.
+7. Product-service failure still performs a direct official identifier search. Recall-data failure never produces `no_matching_current_recall`.
 
 Every possible/confirmed result has **Why am I seeing this?**, including match method, matched fields, exact/equivalent barcode status, similarity use, unresolved lot/date details, reason, and source record identifier.
 
@@ -146,3 +146,20 @@ Consider managed backend ingestion, database normalization, more frequent refres
 > RecallCheck is an experimental prototype and does not replace official FDA, USDA, manufacturer, retailer, or healthcare guidance. Recall information can change, and some recalls may not include a barcode.
 
 RecallCheck is not endorsed by FDA, USDA, Open Food Facts, or any company. Code is MIT licensed; source data remains subject to its source terms.
+
+## Current and historical matching
+
+RecallCheck evaluates official identifiers before product metadata. Exact UPCs and equivalent
+UPC/GTIN representations are ranked by official lifecycle state; active exact matches take
+precedence, while closed or terminated identifiers are explicitly historical. Missing or
+unrecognized agency statuses remain unknown and require manual review rather than being assumed
+active or historical. Recall age is displayed and used as context, but does not override an
+official active status.
+
+Similarity discovery is a separate fallback stage. Generic category terms (including “eggs,”
+“milk,” and “food”) carry no product-name weight. A candidate must score at least 70, match at
+least two fields, and include either an exact normalized brand or distinctive product-name
+overlap. Brand contributes 40 points, distinctive name overlap up to 45, and package size 15;
+therefore brand or size alone cannot qualify. Similarity never confirms a specific barcode.
+Inactive similarity records appear only as secondary historical information beneath the primary
+no-current-recall result.
