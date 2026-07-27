@@ -23,6 +23,7 @@ OUTPUT = ROOT / "data" / "recalls.json"
 FDA_ENDPOINT = "https://api.fda.gov/food/enforcement.json"
 USDA_ENDPOINT = "https://www.fsis.usda.gov/fsis/api/recall/v/1"
 WORKFLOW_VERSION = "0.2.0"
+RECENT_RECALL_DAYS = int(os.environ.get("RECENT_RECALL_DAYS", "180"))
 PAGE_SIZE = 1000
 MAX_FDA_RECORDS = 5000
 FDA_DIAGNOSTIC_LIMIT = 240
@@ -108,6 +109,32 @@ def parse_date(value: Any) -> str:
     return ""
 
 
+def normalize_lifecycle(status: Any, termination_date: Any = None) -> dict[str, Any]:
+    """Map agency lifecycle text without treating absent or novel values as active."""
+    source = clean_text(status)
+    value = source.lower()
+    if value in {"ongoing", "active", "open", "current"}:
+        state = "active"
+    elif value in {"terminated"}:
+        state = "terminated"
+    elif value in {"completed", "closed"}:
+        state = "closed"
+    else:
+        state = "unknown"
+    return {
+        "state": state,
+        "isActionable": state == "active",
+        "sourceStatus": source,
+        "terminationDate": parse_date(termination_date),
+    }
+
+
+def normalize_timeline(recall_date: Any, today: dt.date | None = None) -> dict[str, Any]:
+    normalized = parse_date(recall_date)
+    age = max(0, ((today or dt.date.today()) - dt.date.fromisoformat(normalized)).days) if normalized else 0
+    return {"recallDate": normalized, "ageDaysAtRefresh": age, "isRecent": bool(normalized) and age <= RECENT_RECALL_DAYS}
+
+
 def extract_candidates(*parts: Any) -> dict[str, Any]:
     """Conservative narrative extraction; every value retains method/confidence."""
     text = " ".join(clean_text(part) for part in parts if part)
@@ -140,15 +167,17 @@ def normalize_fda(record: dict[str, Any]) -> dict[str, Any]:
     identifiers = extraction["identifiers"]
     recall_number = clean_text(record.get("recall_number")) or "unknown"
     firm = clean_text(record.get("recalling_firm")) or "Unknown"
+    lifecycle = normalize_lifecycle(record.get("status"), record.get("termination_date"))
+    timeline = normalize_timeline(record.get("recall_initiation_date"))
     return {
         "id": f"FDA-{recall_number}", "sourceRecordId": recall_number, "agency": "FDA", "type": "recall",
-        "status": (clean_text(record.get("status")) or "unknown").lower(), "classification": clean_text(record.get("classification")) or "unknown",
+        "status": (clean_text(record.get("status")) or "unknown").lower(), "lifecycle": lifecycle, "timeline": timeline, "classification": clean_text(record.get("classification")) or "unknown",
         "title": f"{firm} — {description[:120] or 'Food recall'}", "recallingFirm": firm, "productDescription": description,
         "brandNames": extraction["brandNames"], "productNames": split_names(description), "upcs": [x for x in identifiers if len(x) in (8, 12, 13)],
         "gtins": [x for x in identifiers if len(x) == 14], "packageSizes": extraction["packageSizes"], "lotCodes": extraction["lotCodes"],
         "dateCodes": unique(extraction["dateCodes"] + ([code_info] if code_info and not extraction["lotCodes"] and not extraction["dateCodes"] else [])),
         "establishmentNumbers": [], "reason": clean_text(record.get("reason_for_recall")) or "Not provided",
-        "distribution": clean_text(record.get("distribution_pattern")) or "Not provided", "recallDate": parse_date(record.get("recall_initiation_date")),
+        "distribution": clean_text(record.get("distribution_pattern")) or "Not provided", "recallDate": timeline["recallDate"],
         "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/", "extraction": extraction["extraction"],
         "sourceRecord": record, "searchText": clean_text(" ".join([firm, description, code_info])).lower()
     }
@@ -165,10 +194,17 @@ def normalize_usda(record: dict[str, Any]) -> dict[str, Any]:
     if url.startswith("/"): url = "https://www.fsis.usda.gov" + url
     if not url.startswith("https://www.fsis.usda.gov/"): url = "https://www.fsis.usda.gov/recalls"
     alert_text = " ".join([title, clean_text(record.get("recall_type")), details]).lower()
+    source_status = record.get("status") or record.get("recall_status") or record.get("closed_date")
+    lifecycle = normalize_lifecycle(source_status, record.get("termination_date") or record.get("closed_date"))
+    # Some FSIS payload shapes publish only a closure date, not a status label.
+    if not (record.get("status") or record.get("recall_status")) and record.get("closed_date"):
+        lifecycle["state"] = "closed"
+        lifecycle["isActionable"] = False
+    timeline = normalize_timeline(record.get("recall_date") or record.get("date"))
     return {
         "id": f"USDA-{number}", "sourceRecordId": number, "agency": "USDA",
         "type": "public-health-alert" if "public health alert" in alert_text else "recall",
-        "status": (clean_text(record.get("status") or record.get("closed_date")) or "active").lower(),
+        "status": (clean_text(source_status) or "unknown").lower(), "lifecycle": lifecycle, "timeline": timeline,
         "classification": clean_text(record.get("classification") or record.get("recall_classification")) or "unknown",
         "title": title or f"USDA FSIS notice {number}", "recallingFirm": clean_text(record.get("company") or record.get("recalling_firm")) or "Not listed",
         "productDescription": products or details, "brandNames": extraction["brandNames"], "productNames": split_names(products or title),
@@ -177,7 +213,7 @@ def normalize_usda(record: dict[str, Any]) -> dict[str, Any]:
         "establishmentNumbers": unique(re.findall(r"(?i)\b(?:EST\.?|P)-?\s*\d+[A-Z]?\b", products + " " + details)),
         "reason": clean_text(record.get("reason") or record.get("reason_for_recall")) or details or "See official notice",
         "distribution": clean_text(record.get("distribution") or record.get("states")) or "See official notice",
-        "recallDate": parse_date(record.get("recall_date") or record.get("date")), "officialUrl": url,
+        "recallDate": timeline["recallDate"], "officialUrl": url,
         "extraction": extraction["extraction"], "sourceRecord": record, "searchText": clean_text(" ".join([title, products, details])).lower()
     }
 

@@ -22,6 +22,27 @@ class NormalizationTests(unittest.TestCase):
         self.assertTrue(item["dateCodes"])
         self.assertEqual(item["extraction"]["method"], "labeled-narrative-regex-v1")
         self.assertEqual(item["sourceRecord"]["recall_number"], "F-1417-2024")
+        self.assertEqual(item["lifecycle"]["state"], "active")
+        self.assertTrue(item["lifecycle"]["isActionable"])
+        self.assertEqual(item["timeline"]["recallDate"], "2024-07-15")
+
+    def test_lifecycle_normalization_is_conservative(self):
+        expectations = {
+            "Ongoing": ("active", True), "Completed": ("closed", False),
+            "Terminated": ("terminated", False), "unexpected": ("unknown", False),
+            None: ("unknown", False),
+        }
+        for source, expected in expectations.items():
+            with self.subTest(source=source):
+                lifecycle = rr.normalize_lifecycle(source, "20250712")
+                self.assertEqual((lifecycle["state"], lifecycle["isActionable"]), expected)
+                self.assertEqual(lifecycle["terminationDate"], "2025-07-12")
+
+    def test_timeline_age_does_not_change_active_lifecycle(self):
+        timeline = rr.normalize_timeline("20240101", rr.dt.date(2026, 7, 27))
+        self.assertFalse(timeline["isRecent"])
+        self.assertGreater(timeline["ageDaysAtRefresh"], rr.RECENT_RECALL_DAYS)
+        self.assertEqual(rr.normalize_lifecycle("active")["state"], "active")
 
     def test_recall_without_barcode(self):
         self.assertFalse(rr.normalize_fda(FIXTURES["fda"][1])["upcs"])
@@ -33,6 +54,15 @@ class NormalizationTests(unittest.TestCase):
         self.assertEqual(recall["officialUrl"], FIXTURES["usda"][0]["url"])
         self.assertEqual(alert["type"], "public-health-alert")
         self.assertEqual(alert["upcs"], ["737628064502"])
+        self.assertEqual(recall["lifecycle"]["state"], "unknown")
+        self.assertFalse(recall["lifecycle"]["isActionable"])
+
+    def test_usda_closed_date_without_status_is_closed(self):
+        record = {**FIXTURES["usda"][0], "closed_date": "07/12/2025"}
+        item = rr.normalize_usda(record)
+        self.assertEqual(item["lifecycle"]["state"], "closed")
+        self.assertEqual(item["lifecycle"]["sourceStatus"], "07/12/2025")
+        self.assertEqual(item["lifecycle"]["terminationDate"], "2025-07-12")
 
     def test_fda_pagination(self):
         old_size, old_max = rr.PAGE_SIZE, rr.MAX_FDA_RECORDS
