@@ -14,7 +14,23 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header"><a class="brand" href="#main" aria-label="RecallCheck by ITSBAD LLC home"><span aria-hidden="true">RC</span> <span><strong>RecallCheck</strong><small>A product by ITSBAD LLC</small></span></a><details class="beta"><summary><span class="badge">Beta: how results work</span><span class="sr-only">About beta results</span></summary><p>RecallCheck is in beta. Results depend on available FDA, USDA, and product information and may be incomplete.</p></details><button class="menu-button" data-menu-button aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" data-nav aria-label="Main navigation"><a href="index.html" aria-current="page">Scan</a><a href="recalls.html">Current recalls</a><a href="how-recalls-work.html">How it works</a><a href="privacy.html">Privacy</a><a href="#about">About ITSBAD LLC</a></nav></header>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="RecallCheck by ITSBAD LLC home"><span aria-hidden="true">RC</span><span><strong>RecallCheck</strong><small>by ITSBAD LLC</small></span></a>
+  <button class="menu-button" data-menu-button type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" data-nav aria-label="Main navigation">
+    <ul class="primary-nav">
+      <li><a href="index.html" aria-current="page">Scan</a></li>
+      <li><a href="recalls.html">Current recalls</a></li>
+      <li><a href="how-recalls-work.html">How it works</a></li>
+      <li class="more-item"><details class="more-menu"><summary>More</summary><ul class="secondary-nav">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="index.html#about">About ITSBAD LLC</a></li>
+        <li><a class="beta-link" href="index.html#beta-results">Beta: How results work</a></li>
+      </ul></details></li>
+    </ul>
+  </nav>
+</header>
 <main id="main">
   <section class="hero" aria-labelledby="hero-title">
     <p class="eyebrow">Food recall checker</p><h1 id="hero-title">Is this food recalled?</h1>
@@ -23,6 +39,7 @@
     <div class="hero-actions"><button class="primary scan-action" id="scan-button" type="button"><span aria-hidden="true">▣</span> Scan barcode</button><button class="secondary" id="manual-button" type="button" aria-expanded="false" aria-controls="manual-section">Enter barcode</button></div>
     <p class="coverage-line">Checks available FDA and USDA recall records</p><p id="data-notice" class="update-note" role="status">Loading recall data update…</p>
   </section>
+  <details id="beta-results" class="disclosure beta-explanation"><summary>How RecallCheck beta results work</summary><div><p>RecallCheck is in beta. Results depend on available FDA, USDA, and product information and may be incomplete.</p><p><a href="methodology.html">Read the RecallCheck methodology</a></p></div></details>
   <section id="manual-section" class="card" hidden aria-labelledby="manual-title"><h2 id="manual-title">Enter a barcode</h2><p>Enter the 8, 12, 13, or 14 digits printed below the bars.</p><form id="barcode-form" novalidate><label for="barcode-input">Barcode</label><input id="barcode-input" name="barcode" inputmode="numeric" autocomplete="off" placeholder="Example: 012345678905" aria-describedby="barcode-help barcode-error"><small id="barcode-help">Spaces and hyphens are okay.</small><p id="barcode-error" class="field-error" role="alert"></p><button class="primary" type="submit">Check product</button><button id="continue-invalid" class="text-button" type="button" hidden>Continue despite check-digit warning</button></form></section>
   <section id="lookup-progress" class="card progress" hidden aria-labelledby="progress-title"><h2 id="progress-title">Checking your product</h2><ol><li id="progress-barcode">Barcode captured</li><li id="progress-product">Product identified</li><li id="progress-recalls">Checking FDA and USDA recalls</li></ol><p id="progress-announcement" class="sr-only" role="status" aria-live="polite"></p></section>
   <section id="product-confirmation" class="card" hidden aria-labelledby="confirmation-title"><h2 id="confirmation-title">Is this the product you scanned?</h2><div id="confirmation-product"></div><p id="confirmation-note">Product information comes from Open Food Facts and may be incomplete.</p><div class="actions"><button id="confirm-product" class="primary" type="button">Yes, check recalls</button><button id="reject-product" class="secondary" type="button">Not my product</button></div><div id="correction-actions" hidden><p>You can correct the barcode or continue checking it directly against official recall records.</p><button id="correction-manual" class="secondary" type="button">Re-enter barcode</button><button id="correction-scan" class="secondary" type="button">Scan again</button><button id="direct-check" class="text-button" type="button">Continue direct barcode check</button></div></section>
