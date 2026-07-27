@@ -65,7 +65,11 @@
     assert("No unsafe innerHTML or analytics",!source.includes(".innerHTML")&&!/google-analytics|googletagmanager|hotjar|clarity|facebook\.net/i.test(source));
     assert("Current and historical UI language",source.includes("No matching current recall found")&&source.includes("Similar historical recall"));
     assert("Historical result has no danger styling",source.includes('historical_exact_match:["i","Historical recall record"')&&source.includes('terminated.\",\"neutral\"]'));
-    assert("No-current result retains non-guarantee",source.includes("This does not guarantee that the product is safe"));
+    assert("No-current result retains non-guarantee",source.includes("This is not a safety guarantee"));
+    assert("Current package verification keeps critical primary state",source.includes('current_recall_details_required:{label:"Current recall"')&&source.includes("package-verification package-verification--warning"));
+    assert("Semantic SVG icons are decorative",source.includes('setAttribute("aria-hidden","true")')&&source.includes('setAttribute("focusable","false")'));
+    assert("Package choices cover all certainty outcomes",["My package matches","My package does not match","I cannot find the code"].every(x=>source.includes(x)));
+    assert("Failure, partial, no-match, and historical tones differ",['tone:"failure"','tone:"warning"','tone:"neutral-result"','tone:"historical"'].every(x=>source.includes(x)));
     const missing=await api.identifyProductWithOpenFoodFacts("12345670",{demo:{product:null}});
     assert("Product-service failure permits direct path",missing===null&&api.classifyResult(product(),[active]).status==="confirmed_current_recall");
     assert("Safe DOM rendering",(()=>{const n=doc.createElement("p");n.textContent="<img src=x onerror=alert(1)>";return n.children.length===0;})());
