@@ -8,6 +8,7 @@ APP = (ROOT / "app.js").read_text()
 CSS = (ROOT / "styles.css").read_text()
 INDEX = (ROOT / "index.html").read_text()
 REVIEW = (ROOT / "design-review.js").read_text()
+DESIGN_SYSTEM = (ROOT / "design-system.html").read_text()
 
 
 class SafetyStateDesignTests(unittest.TestCase):
@@ -59,6 +60,23 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by the FDA, USDA", INDEX)
+
+    def test_premium_semantic_tokens_and_review_fixture(self):
+        for token in ("--surface-page", "--surface-raised", "--surface-inset",
+                      "--text-primary", "--text-secondary", "--brand-primary-hover",
+                      "--state-critical", "--state-warning", "--state-historical",
+                      "--state-information", "--state-failure", "--border-subtle",
+                      "--duration-fast", "--content-narrow"):
+            self.assertIn(token, CSS)
+        for component in ("Actions and form controls", "Product confirmation",
+                          "Safety result states", "Scanner shell"):
+            self.assertIn(component, DESIGN_SYSTEM)
+
+    def test_design_avoids_template_dependencies_and_effects(self):
+        combined = (CSS + INDEX + DESIGN_SYSTEM).lower()
+        for forbidden in ("backdrop-filter", "fonts.googleapis.com", "font-awesome",
+                          "bootstrap.min", "tailwind", "sparkle", "decorative-blob"):
+            self.assertNotIn(forbidden, combined)
 
 
 if __name__ == "__main__":
