@@ -1,4 +1,4 @@
-# RecallCheck 0.4
+# RecallCheck 0.6
 
 **Is this food recalled?** RecallCheck is a calm, mobile-first consumer tool that identifies packaged food through Open Food Facts and compares it with cached official FDA and USDA recall records. It is an independent beta—not a safety guarantee, production safety system, or medical system.
 
@@ -6,7 +6,7 @@
 
 RecallCheck is created and operated by **ITSBAD LLC**. RecallCheck remains the primary product identity; compact maker text in the header and hero, an About subsection, metadata, and ownership/disclaimer text provide supporting company attribution.
 
-Version 0.4 adds privacy-conscious result feedback. Version 0.3 added a focused scan-first home screen, accessible three-step lookup progress, product confirmation and correction, six explicit consumer result states, package-code guidance, repeat-check actions, clearer coverage reporting, and a secondary fictional Demo Mode. It deliberately does **not** add accounts, alerts, OCR, uploads, or pantry management.
+Version 0.6 restores a focused recall-checking journey: capture a barcode, identify the product, check current FDA and USDA recall records, and show the recall result. Privacy-conscious result feedback, product confirmation and correction, package-code guidance from official notices, repeat-check actions, clear coverage reporting, and a secondary fictional Demo Mode remain available. RecallCheck deliberately does **not** add accounts, alerts, uploads, or pantry management.
 
 There is no runtime server, build step, database, analytics, cookie, or browser API key. Relative first-party URLs support both `USERNAME.github.io/REPOSITORY/` and custom domains.
 
@@ -58,7 +58,7 @@ The expandable **Recall data coverage** panel gives plain-language agency availa
 ## Matching methodology and safety rules
 
 1. Normalize spaces/hyphens without deleting meaningful middle digits and accept GTIN lengths 8, 12, 13, and 14.
-2. Validate GS1 check digits while permitting an explicit user override.
+2. Validate standard barcode check digits while permitting an explicit user override.
 3. Generate zero-padded equivalent UPC-A/GTIN-13/GTIN-14 representations.
 4. Rank exact identifiers, equivalent identifiers, then brand/name/package-size similarity.
 5. Exact/equivalent identifiers may establish a current product-level match only when lifecycle permits it. Lot/date restrictions produce `current_recall_details_required`; closed or terminated exact records produce `historical_exact_match`.
@@ -125,7 +125,7 @@ node --check app.js && node --check tests.js && node --check sw.js
 
 Remove the leading `+` characters if copying commands from a rendered diff; in the repository file they are shown to distinguish command lines visually.
 
-## Version 0.4 manual test plan
+## Version 0.6 manual test plan
 
 1. Confirm Live Check shows official source health and, on this unrefreshed snapshot, refuses a no-match conclusion.
 2. Run every Demo Mode card offline after one online load; confirm all results say fictional Demo Mode.
@@ -166,7 +166,7 @@ Recall narratives may omit, group, punctuate, or ambiguously label UPC/GTIN, lot
 
 ## Future production hardening
 
-Consider managed backend ingestion, database normalization, more frequent refreshes, reliable attachment extraction, OCR, GS1 data, retailer receipt integrations, pantry monitoring/alerts, observability, data-quality review, legal/safety/privacy review, automated cross-browser testing, and human review of uncertain matches. These remain out of scope.
+Consider managed backend ingestion, database normalization, more frequent refreshes, reliable attachment extraction, retailer receipt integrations, pantry monitoring/alerts, observability, data-quality review, legal/safety/privacy review, automated cross-browser testing, and human review of uncertain matches. These remain out of scope.
 
 ## Disclaimer, attribution, and license
 
@@ -190,13 +190,3 @@ overlap. Brand contributes 40 points, distinctive name overlap up to 45, and pac
 therefore brand or size alone cannot qualify. Similarity never confirms a specific barcode.
 Inactive similarity records appear only as secondary historical information beneath the primary
 no-current-recall result.
-
-## Version 0.5 package-date checking
-
-RecallCheck keeps the recall determination and package-date determination independent. Ordinary UPC-A, UPC-E, EAN-8, and EAN-13 symbols identify a trade item and are **not** described as containing expiration dates. Where the scanner exposes them, Code 128/GS1-128, Data Matrix/GS1 DataMatrix, QR/GS1 QR, and ZXing-supported DataBar symbols are accepted. The normalized scan retains its value only for the active result.
-
-The local parser supports GS1 AIs `01` (GTIN), `10` (lot), `11` (production), `13` (packaging), `15` (best before), `16` (sell by), `17` (expiration/use by), and `21` (serial), including parenthesized element strings, FNC1/group separators, unparenthesized scanner output, and GS1 Digital Link paths/query attributes. Dates are six-digit `YYMMDD` values. A deterministic consumer-goods window accepts exactly one year from ten years before through thirty years after the user's current year; multiple candidates are ambiguous. Allowed day `00` values are conservatively normalized to month end. Invalid or implausible dates are rejected rather than guessed.
-
-When no encoded date exists, the result offers a privacy-preserving printed-date action, manual date input, or skip. This static build deliberately does not bundle unreliable OCR: the camera/confirmation entry point explains the limitation and falls back to manual entry without capturing or uploading an image. Manual dates are date-only local calendar values and are cleared with the active result. Best-before dates are quality guidance, sell-by dates are inventory guidance, and production/packaging dates are never evaluated as expiration dates. Use-by and expiration results avoid unconditional safety claims. Infant formula is identified only from strong “infant/baby” plus “formula” product/category indicators and receives stronger past-use-by guidance.
-
-No barcode, date, lot, product/recall identifier, image, camera frame, API key, or personal information is persisted. RecallCheck uses no local/session storage, accounts, cookies, analytics, or runtime backend. Feedback remains restricted to non-identifying result context and never contains the actual package date. Fictional Version 0.5 scenarios remain isolated in `data/demo-products.json`; official `data/recalls.json` and ingestion logic are unchanged.

@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "label": "Active recall with future expiration",
-      "description": "Fictional current recall and future expiration.",
+      "label": "Active exact barcode recall",
+      "description": "Fictional current exact-match scenario.",
       "code": "012345678905",
       "recallId": "DEMO-FDA-001",
       "product": {
@@ -10,64 +10,23 @@
         "product_name": "Oat Bites",
         "brands": "Harbor Field",
         "quantity": "6 oz"
-      },
-      "date": {
-        "date": "2099-12-31",
-        "type": "expiration",
-        "source": "encoded"
       }
     },
     {
-      "label": "No recall with future best-before",
-      "description": "Fictional quality-date scenario.",
-      "code": "12345670",
+      "label": "Active lot/date restriction",
+      "description": "Fictional package-detail scenario.",
+      "code": "036602301972",
+      "recallId": "DEMO-USDA-002",
       "product": {
-        "code": "12345670",
-        "product_name": "Honey Granola",
-        "brands": "Orchard Morning",
-        "quantity": "10 oz"
-      },
-      "date": {
-        "date": "2099-12-31",
-        "type": "best_before",
-        "source": "manual"
+        "code": "036602301972",
+        "product_name": "Chicken Soup",
+        "brands": "Meadow Table",
+        "quantity": "15 oz"
       }
     },
     {
-      "label": "No recall with past best-before",
-      "description": "Fictional passed quality-date scenario.",
-      "code": "737628064502",
-      "product": {
-        "code": "737628064502",
-        "product_name": "Honey Granola",
-        "brands": "Orchard Morning",
-        "quantity": "10 oz"
-      },
-      "date": {
-        "date": "2020-01-01",
-        "type": "best_before",
-        "source": "manual"
-      }
-    },
-    {
-      "label": "No recall with past use-by",
-      "description": "Fictional passed use-by scenario.",
-      "code": "12345670",
-      "product": {
-        "code": "12345670",
-        "product_name": "Honey Granola",
-        "brands": "Orchard Morning",
-        "quantity": "10 oz"
-      },
-      "date": {
-        "date": "2020-01-01",
-        "type": "use_by",
-        "source": "manual"
-      }
-    },
-    {
-      "label": "Historical recall with future date",
-      "description": "Fictional historical recall and future date.",
+      "label": "Historical exact barcode",
+      "description": "Fictional terminated exact-match scenario.",
       "code": "725272730706",
       "recallId": "DEMO-FDA-004",
       "product": {
@@ -75,39 +34,11 @@
         "product_name": "Oat Bites",
         "brands": "Harbor Field",
         "quantity": "6 oz"
-      },
-      "date": {
-        "date": "2099-12-31",
-        "type": "expiration",
-        "source": "manual"
       }
     },
     {
-      "label": "Encoded GS1 expiration",
-      "description": "Fictional encoded GS1 Application Identifier 17 scenario.",
-      "code": "12345670",
-      "product": {
-        "code": "12345670",
-        "product_name": "Honey Granola",
-        "brands": "Orchard Morning",
-        "quantity": "10 oz"
-      },
-      "date": {
-        "date": "2099-12-31",
-        "type": "expiration",
-        "source": "encoded"
-      },
-      "parsed": {
-        "expirationDate": "2099-12-31",
-        "applicationIdentifiers": {
-          "17": "991231"
-        },
-        "parseWarnings": []
-      }
-    },
-    {
-      "label": "Printed-date/manual-entry flow",
-      "description": "Fictional manual fallback scenario.",
+      "label": "Historical similar product",
+      "description": "Fictional similarity-only secondary record.",
       "code": "12345670",
       "product": {
         "code": "12345670",
@@ -117,31 +48,14 @@
       }
     },
     {
-      "label": "Ambiguous printed date",
-      "description": "Fictional unreadable date scenario.",
-      "code": "12345670",
+      "label": "No current match with history",
+      "description": "Fictional no-current-match scenario with older records.",
+      "code": "737628064502",
       "product": {
-        "code": "12345670",
+        "code": "737628064502",
         "product_name": "Honey Granola",
         "brands": "Orchard Morning",
         "quantity": "10 oz"
-      }
-    },
-    {
-      "label": "Infant formula past use-by",
-      "description": "Fictional infant-formula scenario.",
-      "code": "12345670",
-      "product": {
-        "code": "12345670",
-        "product_name": "Infant Formula",
-        "brands": "Fictional Baby Nutrition",
-        "quantity": "12 oz",
-        "categories": "Infant formula"
-      },
-      "date": {
-        "date": "2020-01-01",
-        "type": "use_by",
-        "source": "manual"
       }
     }
   ]

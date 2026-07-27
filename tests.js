@@ -16,6 +16,8 @@
     assert("Dynamic copyright",doc.querySelector("#copyright-year")?.textContent===String(new Date().getFullYear()));
     assert("Feedback hidden before a completed result",!doc.querySelector(".feedback"));
     assert("Demo is secondary and fictional",doc.querySelector(".demo")?.textContent.includes("Fictional examples"));
+    assert("Recall-only progress has exactly three steps",doc.querySelectorAll("#lookup-progress li").length===3&&doc.querySelector("#progress-product")?.textContent==="Product identified");
+    assert("No consumer package-date controls or result cards",!["package-date-check","printed-date-dialog","progress-date"].some(id=>doc.getElementById(id))&&!doc.querySelector('[name="date-label"]'));
     assert("UPC normalization",api.normalizeBarcode("0123-456 78905")==="012345678905");
     const active=recall({upcs:["012345678905"]});
     assert("Active exact barcode match",api.classifyResult(product(),[active]).status==="confirmed_current_recall");
@@ -42,6 +44,9 @@
     const restricted=recall({upcs:["012345678905"],lotCodes:["LOT-A"]});
     assert("Active lot restriction needs details",api.classifyResult(product(),[restricted]).status==="current_recall_details_required");
     const source=await fetch("app.js").then(r=>r.text());
+    assert("No package-date state or feedback context",!["dateCheckUsed","dateInputMethod","dateResultCategory","dateResult","dateLabel"].some(field=>source.includes(field)));
+    const worker=await fetch("sw.js").then(r=>r.text());
+    assert("Removed date feature is not cached",!worker.includes("date-check.js")&&!worker.includes("printed-date"));
     assert("Feedback prompt and accessible controls implemented",source.includes("Was this result helpful or confusing?")&&source.includes('el("button",value[0]')&&source.includes('el("fieldset")'));
     assert("Helpful and confusing structured reasons",source.includes("The result was clear")&&source.includes("The recall seemed unrelated")&&source.includes("Current versus historical was unclear"));
     assert("Optional comment character limit",source.includes("comment.maxLength=750")&&source.includes("remaining"));
