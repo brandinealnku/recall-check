@@ -25,8 +25,56 @@ USDA_ENDPOINT = "https://www.fsis.usda.gov/fsis/api/recall/v/1"
 WORKFLOW_VERSION = "0.2.0"
 PAGE_SIZE = 1000
 MAX_FDA_RECORDS = 5000
+FDA_DIAGNOSTIC_LIMIT = 240
 
 JsonFetcher = Callable[[str, dict[str, str]], tuple[Any, dict[str, str]]]
+
+
+class FdaRequestError(RuntimeError):
+    """An openFDA failure containing only diagnostics safe to persist and log."""
+
+    def __init__(self, *, status: int | None = None, reason: str = "", message: str = "", offset: int = 0, api_key_supplied: bool = False, supplied_key: str | None = None):
+        self.diagnostic = {
+            "httpStatus": status,
+            "httpReason": sanitize_fda_message(reason, supplied_key)[:80],
+            "message": sanitize_fda_message(message, supplied_key),
+            "paginationOffset": offset,
+            "apiKeySupplied": api_key_supplied,
+        }
+        super().__init__(format_fda_diagnostic(self.diagnostic))
+
+
+def sanitize_fda_message(value: Any, supplied_key: str | None = None) -> str:
+    """Return a short error description without URLs, keys, or key-like fields."""
+    text = clean_text(value)
+    if supplied_key:
+        text = text.replace(supplied_key, "[REDACTED]")
+    text = re.sub(r'''(?ix)["']?(api[_-]?key|authorization|token|secret)["']?\s*[=:]\s*["']?[^\s,;}"']+''', r"\1=[REDACTED]", text)
+    text = re.sub(r"(?i)https?://\S+", "[URL REMOVED]", text)
+    return text[:FDA_DIAGNOSTIC_LIMIT]
+
+
+def fda_error_message(error: urllib.error.HTTPError, supplied_key: str | None) -> str:
+    try:
+        raw = error.read(4096).decode("utf-8", errors="replace")
+    except Exception:
+        raw = ""
+    try:
+        payload = json.loads(raw)
+        candidate = payload.get("error", payload) if isinstance(payload, dict) else payload
+        if isinstance(candidate, dict):
+            candidate = candidate.get("message") or candidate.get("detail") or candidate.get("code") or ""
+        raw = candidate if isinstance(candidate, str) else ""
+    except (json.JSONDecodeError, TypeError):
+        pass
+    return sanitize_fda_message(raw or error.reason or "openFDA request failed", supplied_key)
+
+
+def format_fda_diagnostic(diagnostic: dict[str, Any]) -> str:
+    status = diagnostic.get("httpStatus")
+    prefix = f"HTTP {status}" if status is not None else "openFDA error"
+    detail = diagnostic.get("message") or diagnostic.get("httpReason") or "request failed"
+    return f"{prefix} — {detail} (offset {diagnostic.get('paginationOffset', 0)}, apiKeySupplied={str(bool(diagnostic.get('apiKeySupplied'))).lower()})"
 
 
 def utc_now() -> str:
@@ -135,20 +183,30 @@ def normalize_usda(record: dict[str, Any]) -> dict[str, Any]:
 
 
 def fetch_fda(fetcher: JsonFetcher = fetch_json, key: str | None = None) -> list[dict[str, Any]]:
-    start = (dt.date.today() - dt.timedelta(days=730)).strftime("%Y%m%d")
+    today = dt.date.today()
+    start = (today - dt.timedelta(days=730)).strftime("%Y%m%d")
+    end = today.strftime("%Y%m%d")
     records: list[dict[str, Any]] = []
     skip = 0
     while skip < MAX_FDA_RECORDS:
-        params = {"search": f"recall_initiation_date:[{start}+TO+99991231]", "limit": str(PAGE_SIZE), "skip": str(skip)}
+        params = {"search": f"recall_initiation_date:[{start}+TO+{end}]", "limit": str(PAGE_SIZE), "skip": str(skip)}
         if key: params["api_key"] = key
-        payload, _ = fetcher(FDA_ENDPOINT + "?" + urllib.parse.urlencode(params), {})
+        try:
+            query = urllib.parse.urlencode(params).replace("%2BTO%2B", "+TO+")
+            payload, _ = fetcher(FDA_ENDPOINT + "?" + query, {})
+        except urllib.error.HTTPError as exc:
+            raise FdaRequestError(status=exc.code, reason=str(exc.reason or ""), message=fda_error_message(exc, key), offset=skip, api_key_supplied=bool(key), supplied_key=key) from None
+        except FdaRequestError:
+            raise
+        except Exception as exc:
+            raise FdaRequestError(message=str(exc), offset=skip, api_key_supplied=bool(key), supplied_key=key) from None
         page = payload.get("results") if isinstance(payload, dict) else None
-        if not isinstance(page, list): raise ValueError("malformed FDA response: results is not a list")
+        if not isinstance(page, list): raise FdaRequestError(message="malformed FDA response: results is not a list", offset=skip, api_key_supplied=bool(key), supplied_key=key)
         records.extend(page)
         total = int(payload.get("meta", {}).get("results", {}).get("total", len(records)))
         if not page or len(records) >= total or len(page) < PAGE_SIZE: break
         skip += PAGE_SIZE
-    if not records: raise ValueError("FDA returned no records")
+    if not records: raise FdaRequestError(message="FDA returned no records", offset=skip, api_key_supplied=bool(key), supplied_key=key)
     return [normalize_fda(record) for record in records]
 
 
@@ -187,7 +245,10 @@ def build_dataset(existing: dict[str, Any], fetcher: JsonFetcher = fetch_json, n
         except Exception as exc:
             retained = [r for r in old if r.get("agency") == agency and not str(r.get("id", "")).startswith("DEMO-")]
             combined.extend(retained); warning = f"{agency} refresh failed; retained {len(retained)} last-known records"
-            warnings.append(warning); sources[agency] = {"success": False, "retrievedAt": timestamp, "recordCount": len(retained), "error": type(exc).__name__}
+            warnings.append(warning)
+            error = exc.diagnostic if isinstance(exc, FdaRequestError) else {"type": type(exc).__name__, "message": sanitize_fda_message(str(exc))}
+            sources[agency] = {"success": False, "retrievedAt": timestamp, "recordCount": len(retained), "error": error}
+            if agency == "FDA": print(f"openFDA refresh failed: {format_fda_diagnostic(error)}")
     if not combined: raise RuntimeError("refusing to write an empty official dataset; existing file remains unchanged")
     counts = {agency: sum(r.get("agency") == agency for r in combined) for agency in ("FDA", "USDA")}
     with_ids = sum(bool(r.get("upcs") or r.get("gtins")) for r in combined)

@@ -35,7 +35,7 @@ There is no runtime server, build step, database, analytics, cookie, or browser 
 
 ### FDA
 
-`scripts/refresh_recalls.py` calls the [openFDA Food Enforcement API](https://open.fda.gov/apis/food/enforcement/), retrieves active/recent records from the previous two years, follows `limit`/`skip` pagination, and caps a run defensively. It preserves every original field in `sourceRecord`. Conservative labeled-narrative extraction collects UPC/GTIN candidates, lot/date codes, package sizes, and product-name fragments. Each normalized record includes extraction method, confidence, and field counts. Narrative extraction is only a candidate-generation aid; it is not proof of package identity.
+`scripts/refresh_recalls.py` calls `https://api.fda.gov/food/enforcement.json` with a bounded two-year search ending on the current date: `search=recall_initiation_date:[YYYYMMDD+TO+YYYYMMDD]&limit=1000&skip=0`. The visible `+TO+` syntax follows openFDA's documented range format; subsequent pages increment `skip`. An optional URL-encoded `api_key` is appended. The former unbounded `99991231` end date is not used. It preserves every original field in `sourceRecord`. Conservative labeled-narrative extraction collects UPC/GTIN candidates, lot/date codes, package sizes, and product-name fragments. Each normalized record includes extraction method, confidence, and field counts. Narrative extraction is only a candidate-generation aid; it is not proof of package identity.
 
 ### USDA FSIS
 
@@ -47,7 +47,7 @@ FDA and USDA are fetched independently. A failed source retains only its last-kn
 
 * workflow version and generated timestamp;
 * last successful update;
-* per-source retrieval time, success/failure, retained count, and safe error type;
+* per-source retrieval time, success/failure, retained count, and secret-safe structured diagnostics;
 * counts by agency and records with identifier candidates;
 * warnings, including partial-source coverage.
 
@@ -126,7 +126,8 @@ Pages requires no key. To raise Actions API limits, open **Settings → Secrets 
 
 Run manually through **Actions → Refresh recall data → Run workflow**. It also runs weekly. Troubleshooting:
 
-* Read source status warnings in the failed run; exception types do not include secret request URLs.
+* Read the concise openFDA Actions diagnostic or source status. FDA failures show only HTTP status/reason, a sanitized message (at most 240 characters), pagination offset, and whether a key was supplied.
+* Diagnostics redact the supplied key and key-like fields, remove URLs, and never include the full keyed request URL or secret-bearing headers.
 * Confirm official endpoints and Actions outbound networking are available.
 * A malformed/empty response intentionally fails or retains prior official records.
 * Validate locally with a disposable `--output` path only if network access is intended.
