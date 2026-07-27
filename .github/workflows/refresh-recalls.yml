@@ -1,0 +1,45 @@
+name: Refresh recall data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 8 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recall-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch and normalize official data
+        env:
+          OPENFDA_API_KEY: ${{ secrets.OPENFDA_API_KEY }}
+        run: python3 scripts/refresh_recalls.py
+      - name: Run normalization and matching tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Validate all recall JSON
+        run: |
+          python3 -m json.tool data/recalls.json >/dev/null
+          python3 -m json.tool data/demo-recalls.json >/dev/null
+          python3 -m json.tool data/demo-products.json >/dev/null
+          python3 -m json.tool tests/fixtures/official-recall-fixtures.json >/dev/null
+      - name: Commit changed data
+        run: |
+          if git diff --quiet -- data/recalls.json; then
+            echo "Recall data is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recalls.json
+          git commit -m "chore: refresh recall data"
+          git push

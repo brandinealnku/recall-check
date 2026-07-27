@@ -1,0 +1,9 @@
+{
+  "products": [
+    {"label":"Confirmed recall match","description":"See the strongest warning state.","code":"012345678905","recallId":"DEMO-FDA-001","forcedStatus":"confirmed_match","product":{"code":"012345678905","product_name":"Oat Bites","brands":"Harbor Field","quantity":"6 oz"}},
+    {"label":"Lot/date check needed","description":"Practice confirming package details.","code":"036602301972","recallId":"DEMO-USDA-002","forcedStatus":"possible_match_details_required","product":{"code":"036602301972","product_name":"Chicken Soup","brands":"Meadow Table","quantity":"15 oz"}},
+    {"label":"No matching recall","description":"Review careful no-match wording.","code":"737628064502","forcedStatus":"no_matching_recall","product":{"code":"737628064502","product_name":"Sunrise Rice Crackers","brands":"Sample Pantry","quantity":"4 oz"}},
+    {"label":"Product not found","description":"See the unidentified-product fallback.","code":"12345670","forcedStatus":"product_not_found","product":null},
+    {"label":"Manual review","description":"See a similarity-based possible match.","code":"725272730706","recallId":"DEMO-FDA-003","forcedStatus":"possible_match_manual_review","reason":"Brand, product name, and package size resemble a demonstration recall, but no barcode was listed.","product":{"code":"725272730706","product_name":"Honey Granola","brands":"Orchard Morning","quantity":"10 oz"}}
+  ]
+}

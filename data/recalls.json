@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-07-27T00:00:00Z",
+  "sources": [
+    {
+      "agency": "FDA",
+      "name": "openFDA Food Enforcement",
+      "url": "https://open.fda.gov/apis/food/enforcement/"
+    },
+    {
+      "agency": "USDA",
+      "name": "USDA FSIS Recall API v1",
+      "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1"
+    }
+  ],
+  "dataHealth": {
+    "workflowVersion": "0.2.0",
+    "lastSuccessfulUpdate": null,
+    "sources": {
+      "FDA": {
+        "success": false,
+        "retrievedAt": "2026-07-27T00:00:00Z",
+        "recordCount": 0,
+        "error": "Initial official refresh required"
+      },
+      "USDA": {
+        "success": false,
+        "retrievedAt": "2026-07-27T00:00:00Z",
+        "recordCount": 0,
+        "error": "Initial official refresh required"
+      }
+    },
+    "recordCountByAgency": {
+      "FDA": 0,
+      "USDA": 0
+    },
+    "recordsWithIdentifierCandidates": 0,
+    "warnings": [
+      "No official refresh has completed in this repository snapshot. Run the refresh workflow before relying on Live Check."
+    ]
+  },
+  "recalls": []
+}
