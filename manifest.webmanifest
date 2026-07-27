@@ -1,11 +1,18 @@
 {
   "name": "RecallCheck",
   "short_name": "RecallCheck",
-  "description": "Check packaged-food barcodes against available FDA and USDA recall information.",
+  "description": "Scan a packaged-food barcode and compare it with available FDA and USDA recall information using RecallCheck, an ITSBAD LLC product.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f1f7f5",
   "theme_color": "#123c43",
-  "icons": [{"src":"assets/icons/recallcheck.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "icons": [
+    {
+      "src": "assets/icons/recallcheck.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

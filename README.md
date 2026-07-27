@@ -1,10 +1,12 @@
-# RecallCheck 0.3
+# RecallCheck 0.4
 
 **Is this food recalled?** RecallCheck is a calm, mobile-first consumer tool that identifies packaged food through Open Food Facts and compares it with cached official FDA and USDA recall records. It is an independent beta—not a safety guarantee, production safety system, or medical system.
 
 ## Scope and architecture
 
-Version 0.3 adds a focused scan-first home screen, accessible three-step lookup progress, product confirmation and correction, six explicit consumer result states, package-code guidance, repeat-check actions, clearer coverage reporting, and a secondary fictional Demo Mode. It deliberately does **not** add accounts, alerts, OCR, uploads, or pantry management.
+RecallCheck is created and operated by **ITSBAD LLC**. RecallCheck remains the primary product identity; compact maker text in the header and hero, an About subsection, metadata, and ownership/disclaimer text provide supporting company attribution.
+
+Version 0.4 adds privacy-conscious result feedback. Version 0.3 added a focused scan-first home screen, accessible three-step lookup progress, product confirmation and correction, six explicit consumer result states, package-code guidance, repeat-check actions, clearer coverage reporting, and a secondary fictional Demo Mode. It deliberately does **not** add accounts, alerts, OCR, uploads, or pantry management.
 
 There is no runtime server, build step, database, analytics, cookie, or browser API key. Relative first-party URLs support both `USERNAME.github.io/REPOSITORY/` and custom domains.
 
@@ -71,6 +73,31 @@ Open Food Facts API v2 is community maintained and is never treated as a recall 
 
 Camera access starts only after a scan action. ZXing processes frames locally; images are not uploaded or saved. Tracks stop after detection, close, Escape, stop, manual fallback, fatal error, page hiding, or navigation. Barcodes remain only in memory. There are no accounts, tracking, ads, cookies, or local storage. External content is rendered through DOM APIs and `textContent`; external links use `noopener noreferrer`. The CSP allows the pinned scanner CDN, local assets, and Open Food Facts only where required.
 
+## Result feedback and privacy
+
+Feedback appears only after a completed result, including clearly labeled fictional Demo Mode results. Helpful and Confusing choices expand an accessible follow-up form; reasons are optional, Confusing allows a trimmed 750-character comment, and selection/focus states are conveyed programmatically. A successful endpoint response shows confirmation and **Check another product**, which clears the in-memory feedback state. Feedback is never stored in local or session storage and is not behavioral analytics.
+
+Configure the documented object near the top of `app.js`; never place credentials in browser code:
+
+```js
+feedback: {
+  mode: "disabled", // "endpoint", "email", or "disabled"
+  endpoint: "https://feedback-provider.example/recallcheck",
+  email: "CONFIGURE_FEEDBACK_EMAIL",
+  timeout: 8000
+}
+```
+
+The repository defaults to **disabled**, because no verified ITSBAD LLC feedback address or endpoint is available. Disabled mode acknowledges a choice locally and accurately says it was not transmitted. Email mode exposes **Send feedback to ITSBAD LLC** only after the placeholder is replaced with a confirmed address. Endpoint mode requires a valid HTTPS URL, performs one JSON POST with an eight-second timeout, omits credentials/referrer, prevents concurrent/duplicate submission, and never retries automatically. If endpoint delivery fails, users can retry, use a configured email fallback, or continue. Hosting and receiving services may process network information such as an IP address as part of delivery; RecallCheck does not claim anonymity.
+
+Only these fields are constructed: `feedback`, optional allow-listed `reason`, optional trimmed `comment`, `resultState`, coarse current/historical `classification`, `agencyCoverage`, coarse `matchCategory`, `applicationVersion`, browser language, ISO `submissionTimestamp`, and `isDemo`. The payload and email deliberately exclude barcode/GTIN, product or brand name, recall title or record, lot/date/package/establishment codes, camera data/images, location, user agent, API keys, and query secrets. Users are warned not to type personal, medical, or sensitive information. No name, contact, purchase, medical, photo, or location field exists.
+
+A configured endpoint must independently validate the allow-list and types, reject oversized bodies, rate-limit abuse, protect stored feedback, use HTTPS, and allow only expected origins where practical. Client checks are not a security boundary. Review the endpoint provider's network/privacy handling before enabling it. RecallCheck adds no analytics, pixels, fingerprinting, tracking requests, cookies, account, or database; only feedback that a user intentionally sends leaves through the configured transport.
+
+### Feedback manual checks
+
+Exercise current, historical, no-match, product-not-found, partial-coverage, and fictional Demo results with both choices. Verify each structured reason, empty and 750-character comments, endpoint success/timeout/error, confirmed email fallback, disabled mode, duplicate clicks, and **Check another product** reset. Complete the flow by keyboard at 320/375 CSS pixels and 200% zoom. Inspect requests, mailto URLs, console, and both Web Storage APIs to confirm no product identifier or prior response is present and no analytics request occurs. Use synthetic fixture identifiers only.
+
 ## PWA behavior
 
 `manifest.webmanifest` uses relative `start_url`/`scope` and a local maskable SVG icon. The service worker precaches the static shell and Demo Mode JSON for offline use. Official `data/recalls.json` is deliberately network-handled rather than indefinitely cached, and cross-origin Open Food Facts responses are never cached. Installability still depends on browser criteria and HTTPS; GitHub Pages supplies HTTPS.
@@ -98,7 +125,7 @@ node --check app.js && node --check tests.js && node --check sw.js
 
 Remove the leading `+` characters if copying commands from a rendered diff; in the repository file they are shown to distinguish command lines visually.
 
-## Version 0.3 manual test plan
+## Version 0.4 manual test plan
 
 1. Confirm Live Check shows official source health and, on this unrefreshed snapshot, refuses a no-match conclusion.
 2. Run every Demo Mode card offline after one online load; confirm all results say fictional Demo Mode.
