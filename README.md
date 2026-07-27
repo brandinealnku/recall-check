@@ -1,125 +1,147 @@
-# RecallCheck
+# RecallCheck 0.2
 
-**Scan it. Check it. Protect your household.** RecallCheck is a mobile-first, static GitHub Pages prototype that identifies packaged food through Open Food Facts and compares it with a local, normalized FDA/USDA recall cache. It is a testing prototype—not a production safety or medical system.
+**Scan it. Check it. Protect your household.** RecallCheck is a mobile-first GitHub Pages prototype that identifies packaged food through Open Food Facts and deterministically compares it with cached official FDA and USDA recall records. It is an experimental testing tool—not a production safety or medical system.
 
-## Prototype scope and architecture
+## Scope and architecture
 
-The page offers opt-in camera scanning (pinned ZXing Browser), manual entry, deterministic recall matching, lot/date confirmation, official links, and offline-capable local demonstrations. HTML provides semantic UI, CSS provides a responsive design system, and an IIFE in `app.js` owns in-memory state and exposes pure matching helpers as `window.RecallCheck` for tests. There is no runtime server, build step, database, account, analytics, cookie, or browser API key.
+Version 0.2 provides opt-in ZXing camera scanning, manual GTIN entry, live official checks, an isolated fictional Demo Mode, data-health reporting, matching explanations, lot/date confirmation, a browser test page, and PWA fundamentals. It deliberately does **not** add accounts, alerts, OCR, uploads, or pantry management.
 
-All first-party paths are relative, so deployment works at a repository subpath or custom domain. GitHub Pages serves the static files. Open Food Facts is called directly only for a live lookup; demo products and recall data are local JSON.
+There is no runtime server, build step, database, analytics, cookie, or browser API key. Relative first-party URLs support both `USERNAME.github.io/REPOSITORY/` and custom domains.
 
 ```text
 .
 ├── .github/workflows/refresh-recalls.yml
-├── assets/icons/README.md
-├── data/demo-products.json
-├── data/recalls.json
+├── assets/icons/{README.md,recallcheck.svg}
+├── data/{recalls.json,demo-recalls.json,demo-products.json}
 ├── scripts/refresh_recalls.py
-├── .gitignore
-├── LICENSE
-├── README.md
+├── tests/fixtures/official-recall-fixtures.json
+├── tests/test_refresh_recalls.py
 ├── app.js
 ├── index.html
+├── manifest.webmanifest
 ├── styles.css
+├── sw.js
 ├── tests.html
 └── tests.js
 ```
 
-## Data sources and integrity
+### Live Check versus Demo Mode
 
-* **Product information:** [Open Food Facts](https://world.openfoodfacts.org/) API v2, a community-maintained source. Its records can be absent or incomplete and are never treated as authoritative recall evidence.
-* **FDA recalls:** [openFDA Food Enforcement](https://open.fda.gov/apis/food/enforcement/), normalized by the refresh script.
-* **USDA notices:** [USDA FSIS recalls and alerts](https://www.fsis.usda.gov/recalls). Because this prototype does not assume an undocumented stable FSIS JSON API, `fetch_usda()` is isolated and retains existing audited USDA records instead of inventing or deleting them.
+* **Live Check** reads only `data/recalls.json`. That file is reserved for records retrieved from official openFDA and FSIS endpoints. When neither official source has usable data, Live Check reports data unavailability and never reports a no-match conclusion.
+* **Demo Mode** reads fictional products from `data/demo-products.json` and fictional recalls from `data/demo-recalls.json`. Demo records are visibly labeled and never passed to the official matching path.
+* `tests/fixtures/` contains reduced historical official-record shapes for automated normalization tests. Fixtures are never loaded by the application or refresh output.
 
-The committed dataset contains conspicuously labeled, fictional demonstration records—not claims about real companies. Each keeps a `sourceRecord` audit object. The refresh script keeps existing demo and USDA records, requires a non-empty FDA response, validates a temporary JSON file, and atomically replaces the cache only after validation. Always follow linked government notices.
+## Official data ingestion
 
-## Matching model
+### FDA
 
-1. Remove spaces/hyphens while retaining all meaningful digits; accept GTIN lengths 8, 12, 13, and 14.
-2. Validate the GS1 check digit and let a user deliberately continue after a warning.
-3. Generate equivalent zero-padded UPC-A/GTIN-13/GTIN-14 variants.
-4. Prefer exact/equivalent identifiers. Otherwise score normalized brand, product-name token overlap, and package size.
-5. Classify deterministic results as confirmed, details-required, manual review, no match, unidentified product, separate data/service failures, or invalid barcode.
+`scripts/refresh_recalls.py` calls the [openFDA Food Enforcement API](https://open.fda.gov/apis/food/enforcement/), retrieves active/recent records from the previous two years, follows `limit`/`skip` pagination, and caps a run defensively. It preserves every original field in `sourceRecord`. Conservative labeled-narrative extraction collects UPC/GTIN candidates, lot/date codes, package sizes, and product-name fragments. Each normalized record includes extraction method, confidence, and field counts. Narrative extraction is only a candidate-generation aid; it is not proof of package identity.
 
-An exact product barcode does not prove that a particular package is included. If a record lists lots or dates, RecallCheck initially asks for the printed code and only promotes an exact code match to “Recall match found.” Codes commonly appear near a seal, nutrition panel, bottom, or cap. “I cannot find it” directs the user to the official notice rather than making a safety inference.
+### USDA FSIS
 
-## Privacy and security
+The isolated USDA loader calls the documented FSIS Recall API v1 at `https://www.fsis.usda.gov/fsis/api/recall/v/1`, accepts documented list responses and common JSON wrappers, follows body or HTTP `Link` pagination, and normalizes recalls and public-health alerts. It preserves the complete source object, source record number, establishment numbers, and official `fsis.usda.gov` URL. A USDA failure cannot discard successful FDA data, and no demo record is retained as official data.
 
-Camera access begins only after the scan button is pressed. ZXing processes video in the browser; frames are not uploaded or saved. Camera tracks stop on detection, close, manual fallback, fatal errors, page hiding, or navigation. Barcodes and recall data remain in memory for the session. There are no trackers, advertisements, accounts, cookies, or local storage. A restrictive CSP permits the pinned jsDelivr script, Open Food Facts requests/images, and local assets. External links use `noopener noreferrer`.
+### Failure and data-health behavior
 
-External data is rendered through DOM APIs and `textContent`, never unsanitized `innerHTML`. The optional openFDA key exists only in the Actions environment.
+FDA and USDA are fetched independently. A failed source retains only its last-known official records; if both fail and there is a valid existing dataset, the script refuses an empty replacement. Output is written to a temporary file, parsed again, and atomically replaced. `dataHealth` records:
 
-## Run and test locally
+* workflow version and generated timestamp;
+* last successful update;
+* per-source retrieval time, success/failure, retained count, and safe error type;
+* counts by agency and records with identifier candidates;
+* warnings, including partial-source coverage.
 
-Do not open `index.html` through a `file://` URL: fetches and camera APIs will not behave correctly. Camera APIs generally require HTTPS or the trusted `localhost` exception.
+The expandable **Official data status** panel shows source counts, age, warnings, stale status after eight days, and one-agency coverage. The committed repository snapshot intentionally has zero official records and says that the first refresh is required; it does not present demo data as live data.
+
+## Matching methodology and safety rules
+
+1. Normalize spaces/hyphens without deleting meaningful middle digits and accept GTIN lengths 8, 12, 13, and 14.
+2. Validate GS1 check digits while permitting an explicit user override.
+3. Generate zero-padded equivalent UPC-A/GTIN-13/GTIN-14 representations.
+4. Rank exact identifiers, equivalent identifiers, then brand/name/package-size similarity.
+5. Exact/equivalent identifiers may establish a product-level match. If any lot/date restrictions exist, the result remains `possible_match_details_required` until a printed package value matches.
+6. Similarity alone **never** produces `confirmed_match`; it produces manual review.
+7. Product-service failure still performs a direct official identifier search. Recall-data failure never produces `no_matching_recall`.
+
+Every possible/confirmed result has **Why am I seeing this?**, including match method, matched fields, exact/equivalent barcode status, similarity use, unresolved lot/date details, reason, and source record identifier.
+
+## Product information, privacy, and security
+
+Open Food Facts API v2 is community maintained and is never treated as a recall authority. Requests select only needed fields, use a timeout, and handle missing, malformed, limited, or unavailable responses separately from recall-data health.
+
+Camera access starts only after a scan action. ZXing processes frames locally; images are not uploaded or saved. Tracks stop after detection, close, Escape, stop, manual fallback, fatal error, page hiding, or navigation. Barcodes remain only in memory. There are no accounts, tracking, ads, cookies, or local storage. External content is rendered through DOM APIs and `textContent`; external links use `noopener noreferrer`. The CSP allows the pinned scanner CDN, local assets, and Open Food Facts only where required.
+
+## PWA behavior
+
+`manifest.webmanifest` uses relative `start_url`/`scope` and a local maskable SVG icon. The service worker precaches the static shell and Demo Mode JSON for offline use. Official `data/recalls.json` is deliberately network-handled rather than indefinitely cached, and cross-origin Open Food Facts responses are never cached. Installability still depends on browser criteria and HTTPS; GitHub Pages supplies HTTPS.
+
+## Local development and automated tests
+
+Do not use a `file://` URL. Fetch and camera APIs require an HTTP origin, and camera access generally requires HTTPS or localhost.
 
 ```bash
 cd /path/to/recall-check
 python3 -m http.server 8000
 ```
 
-Open <http://localhost:8000/>. Run the Node-free test harness at <http://localhost:8000/tests.html>. For machine checks:
+Open `http://localhost:8000/`; open `http://localhost:8000/tests.html` for the Node-free browser suite.
 
 ```bash
+python3 -m unittest discover -s tests -p 'test_*.py' -v
 python3 -m json.tool data/recalls.json >/dev/null
+python3 -m json.tool data/demo-recalls.json >/dev/null
 python3 -m json.tool data/demo-products.json >/dev/null
+python3 -m json.tool tests/fixtures/official-recall-fixtures.json >/dev/null
 python3 -m py_compile scripts/refresh_recalls.py
+node --check app.js && node --check tests.js && node --check sw.js
 ```
 
-The refresh script performs network writes to `data/recalls.json`; do not run it merely to test syntax.
+Remove the leading `+` characters if copying commands from a rendered diff; in the repository file they are shown to distinguish command lines visually.
 
-### Manual QA checklist
+## Version 0.2 manual test plan
 
-1. At 320 px, confirm no horizontal scrolling, visible focus, logical keyboard order, and usable touch targets.
-2. Choose each demo; confirm the four required states plus manual review work without an Open Food Facts request.
-3. For the lot/date demo, enter `L2407A`, an incorrect code, and choose “I cannot find it.”
-4. Enter `012345678905`, press Enter, and confirm a live product failure stays distinct from recall-data failure.
-5. Enter an invalid length and invalid check digit; confirm validation and explicit continue control.
-6. Grant and deny camera permission; close with button and Escape; verify the camera indicator stops immediately.
-7. Test scanner detection once and verify duplicate results do not appear.
-8. Disable networking after initial load and confirm local demos still run.
-9. Temporarily rename `data/recalls.json`; confirm the app never produces a no-match conclusion.
-10. Use a screen reader to confirm loading/result announcements and scanner dialog naming/focus.
+1. Confirm Live Check shows official source health and, on this unrefreshed snapshot, refuses a no-match conclusion.
+2. Run every Demo Mode card offline after one online load; confirm all results say fictional Demo Mode.
+3. For the lot demo, enter `L2407A`, an incorrect code, and **I cannot find it**.
+4. Inspect **Why am I seeing this?** for exact, equivalent, fuzzy, and lot-restricted fixture scenarios.
+5. Enter valid, invalid-length, and invalid-check-digit barcodes and test Enter/override behavior.
+6. Grant and deny camera permission; exit through detection, Stop, close, Escape, manual fallback, tab hiding, and navigation; confirm the camera indicator stops.
+7. Temporarily make Open Food Facts unavailable and confirm direct official identifier matching still runs.
+8. Temporarily make one source fail during a fixture refresh; confirm the other source remains usable and the status panel warns about partial coverage.
+9. Test at 320 CSS pixels, keyboard-only, reduced motion, and with a screen reader.
+10. Install the PWA where supported, go offline, and confirm the shell and demos work while Live Check does not claim fresh official data.
 
 ## GitHub Pages deployment
 
-GitHub Pages provides HTTPS, which allows camera access on supported browsers.
+1. Push files to the `main` branch.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch**.
+4. Choose **main** and **/ (root)**, then **Save**.
+5. Wait for deployment and open `https://USERNAME.github.io/REPOSITORY/` or the custom domain.
+6. Replace the footer repository placeholder before public use.
 
-1. Push these files to the repository's `main` branch.
-2. On GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main**, folder **/ (root)**, then **Save**.
-5. Wait for the Pages deployment shown by GitHub, then open `https://USERNAME.github.io/REPOSITORY/` (or the configured custom domain).
-6. Replace the footer's `USERNAME/REPOSITORY` placeholder with the actual repository URL before a public launch.
+## Optional openFDA key and refresh workflow
 
-### Optional openFDA key and data refresh
+Pages requires no key. To raise Actions API limits, open **Settings → Secrets and variables → Actions → New repository secret**, name it exactly `OPENFDA_API_KEY`, add the value, and save. The key exists only in the workflow environment; it is never logged, generated into JSON, or delivered to browsers.
 
-Pages does not need a key. To raise openFDA limits for Actions:
+Run manually through **Actions → Refresh recall data → Run workflow**. It also runs weekly. Troubleshooting:
 
-1. Open **Settings → Secrets and variables → Actions**.
-2. Choose **New repository secret**.
-3. Name it exactly `OPENFDA_API_KEY`, paste the key, and choose **Add secret**.
+* Read source status warnings in the failed run; exception types do not include secret request URLs.
+* Confirm official endpoints and Actions outbound networking are available.
+* A malformed/empty response intentionally fails or retains prior official records.
+* Validate locally with a disposable `--output` path only if network access is intended.
+* Never copy demo records into `data/recalls.json` to make a refresh appear successful.
 
-To refresh manually, open **Actions → Refresh recall data → Run workflow**, select `main`, and choose **Run workflow**. The workflow also runs Mondays at 08:17 UTC, uses the built-in `GITHUB_TOKEN`, validates non-empty output, and commits only changed JSON. The key is passed through an environment variable; the script never prints its request URL, and no browser or generated file contains it.
+## Known data-quality limitations
 
-## Testing on a phone and browser limitations
+Recall narratives may omit, group, punctuate, or ambiguously label UPC/GTIN, lot, date, brand, and size information. Regex extraction is conservative but cannot understand attachments or label images. Some FSIS records may evolve fields over time. Open Food Facts may be incomplete. The committed live cache has no successful refresh because the execution environment could not reach official endpoints; run the workflow before evaluating real record coverage. A barcode match is not a safety determination, and many recalls publish no barcode.
 
-Deploy to Pages, open the HTTPS URL on the phone, tap **Scan a barcode**, and grant camera access. Prefer a physical device, bright diffuse light, a flat barcode, and 10–20 cm distance. iPhone Safari and Android Chrome may expose different camera resolution/focus behavior. Desktop browsers may select a webcam. Corporate policies, embedded browsers, denied permission, absent cameras, offline CDN access, or an insecure origin can prevent scanning; manual entry and local demos remain available. QR/Data Matrix decoding depends on the camera and formats supported by the pinned ZXing build.
+## Future production hardening
 
-## Demonstration scenarios
-
-No barcode knowledge is required: cards launch confirmed match, lot/date required, no match, product not found, and manual-review scenarios. The matching package code is `L2407A`. Product/company names are fictional and explicitly labeled in the recall cache.
-
-## Known limitations
-
-This small cache is not comprehensive or real-time. FDA source descriptions often lack normalized UPCs and structured package fields. USDA ingestion is retention-only until a stable official API/format is verified. Open Food Facts may be slow, rate-limited, incomplete, or unavailable. Client-side identification cannot set a conventional custom `User-Agent` header, so the app sends an application-identification request header where the browser allows it. CDN loss disables camera decoding but not manual/demo operation. Barcode similarity cannot establish food safety, and some recalls have no barcode.
-
-## Production hardening
-
-A future production system should consider managed backend ingestion; a database-backed normalization pipeline; more frequent refresh; reliable UPC extraction from recall attachments; OCR for lot/date codes; GS1 product data; retailer receipt integrations; pantry monitoring and new-recall alerts; observability; formal data-quality, legal/safety, and privacy reviews; automated cross-browser/device tests; and human review of uncertain matches. These are intentionally out of scope here.
+Consider managed backend ingestion, database normalization, more frequent refreshes, reliable attachment extraction, OCR, GS1 data, retailer receipt integrations, pantry monitoring/alerts, observability, data-quality review, legal/safety/privacy review, automated cross-browser testing, and human review of uncertain matches. These remain out of scope.
 
 ## Disclaimer, attribution, and license
 
 > RecallCheck is an experimental prototype and does not replace official FDA, USDA, manufacturer, retailer, or healthcare guidance. Recall information can change, and some recalls may not include a barcode.
 
-RecallCheck is not endorsed by FDA, USDA, Open Food Facts, or any company. Product data is attributed to Open Food Facts; recall links point to government sources. Code is available under the [MIT License](LICENSE). Database/source content may be subject to its source's own terms.
+RecallCheck is not endorsed by FDA, USDA, Open Food Facts, or any company. Code is MIT licensed; source data remains subject to its source terms.

@@ -1,0 +1,46 @@
+{
+  "provenance": "Reduced historical-shape fixtures for normalization tests. Identifiers and notices are traceable through the included official agency URLs; fixtures are never loaded by the application.",
+  "fda": [
+    {
+      "recall_number": "F-1417-2024",
+      "status": "Ongoing",
+      "classification": "Class I",
+      "recalling_firm": "Historical FDA Fixture Firm",
+      "product_description": "6 oz food packages. UPC 012345678905 and UPC 036602301972.",
+      "code_info": "Lot: L2407A; BEST BY JUL 20 2027",
+      "reason_for_recall": "Historical fixture excerpt",
+      "distribution_pattern": "Nationwide",
+      "recall_initiation_date": "20240715",
+      "official_source": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+    },
+    {
+      "recall_number": "F-1420-2024",
+      "status": "Terminated",
+      "classification": "Class II",
+      "recalling_firm": "Historical No-Barcode Fixture",
+      "product_description": "Food sold in retail packages; no product identifier was published.",
+      "code_info": "Use by 08/30/2024",
+      "recall_initiation_date": "20240716",
+      "official_source": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+    }
+  ],
+  "usda": [
+    {
+      "recall_number": "023-2024",
+      "recall_date": "10/09/2024",
+      "title": "Historical USDA recall fixture",
+      "product_items": "10-lb. case; GTIN 00012345678905; EST. 51205",
+      "summary": "FSIS recall fixture based on the public recall notice shape.",
+      "classification": "Class I",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/brucepac-recalls-ready-eat-meat-and-poultry-products-due-possible-listeria"
+    },
+    {
+      "recall_number": "PHA-028-2023",
+      "recall_date": "08/18/2023",
+      "title": "Public Health Alert for a ready-to-eat product",
+      "product_items": "12 oz packages; UPC: 737628064502",
+      "summary": "Public health alert fixture.",
+      "url": "https://www.fsis.usda.gov/recalls-alerts"
+    }
+  ]
+}

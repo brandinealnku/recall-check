@@ -1,19 +1,42 @@
 {
-  "generatedAt": "2026-07-20T12:00:00Z",
-  "datasetLabel": "Demonstration sample records — not live recall data",
+  "generatedAt": "2026-07-27T00:00:00Z",
   "sources": [
-    {"agency":"FDA","name":"openFDA Food Enforcement","url":"https://open.fda.gov/apis/food/enforcement/"},
-    {"agency":"USDA","name":"USDA FSIS Recalls and Public Health Alerts","url":"https://www.fsis.usda.gov/recalls"}
-  ],
-  "recalls": [
     {
-      "id":"DEMO-FDA-001","agency":"FDA","type":"recall","status":"ongoing","classification":"Class I","title":"DEMONSTRATION: Harbor Field Oat Bites","recallingFirm":"Demonstration Foods Company (fictional)","productDescription":"DEMONSTRATION RECORD ONLY — Harbor Field Oat Bites, 6 oz pouch","brandNames":["Harbor Field"],"productNames":["Oat Bites"],"upcs":["012345678905"],"gtins":["00012345678905"],"packageSizes":["6 oz"],"lotCodes":[],"dateCodes":[],"establishmentNumbers":[],"reason":"Demonstration allergen recall scenario; this is not a real recall or company.","distribution":"Demonstration distribution: nationwide","recallDate":"2026-07-15","officialUrl":"https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts","sourceRecord":{"demo":true,"note":"Fictional record solely for interface testing; no real company or event is represented."},"searchText":"demonstration harbor field oat bites 6 oz allergen"
+      "agency": "FDA",
+      "name": "openFDA Food Enforcement",
+      "url": "https://open.fda.gov/apis/food/enforcement/"
     },
     {
-      "id":"DEMO-USDA-002","agency":"USDA","type":"public-health-alert","status":"active","classification":"High","title":"DEMONSTRATION: Meadow Table Chicken Soup","recallingFirm":"Demonstration Kitchen LLC (fictional)","productDescription":"DEMONSTRATION RECORD ONLY — Meadow Table Chicken Soup, 15 oz can","brandNames":["Meadow Table"],"productNames":["Chicken Soup"],"upcs":["036602301972"],"gtins":["00036602301972"],"packageSizes":["15 oz"],"lotCodes":["L2407A"],"dateCodes":["BEST BY JUL 20 2027"],"establishmentNumbers":["EST. DEMO"],"reason":"Demonstration inspection scenario; this is not a real alert or company.","distribution":"Demonstration distribution: selected states","recallDate":"2026-07-12","officialUrl":"https://www.fsis.usda.gov/recalls","sourceRecord":{"demo":true,"note":"Fictional record solely for interface testing; no real company or event is represented."},"searchText":"demonstration meadow table chicken soup 15 oz l2407a"
-    },
-    {
-      "id":"DEMO-FDA-003","agency":"FDA","type":"recall","status":"ongoing","classification":"Class II","title":"DEMONSTRATION: Orchard Morning Granola","recallingFirm":"Example Orchard Cooperative (fictional)","productDescription":"DEMONSTRATION RECORD ONLY — Orchard Morning Honey Granola, 10 oz","brandNames":["Orchard Morning"],"productNames":["Honey Granola"],"upcs":[],"gtins":[],"packageSizes":["10 oz"],"lotCodes":[],"dateCodes":[],"establishmentNumbers":[],"reason":"Demonstration labeling scenario; this is not a real recall or company.","distribution":"Demonstration distribution: regional","recallDate":"2026-07-10","officialUrl":"https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts","sourceRecord":{"demo":true},"searchText":"demonstration orchard morning honey granola 10 oz"
+      "agency": "USDA",
+      "name": "USDA FSIS Recall API v1",
+      "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1"
     }
-  ]
+  ],
+  "dataHealth": {
+    "workflowVersion": "0.2.0",
+    "lastSuccessfulUpdate": null,
+    "sources": {
+      "FDA": {
+        "success": false,
+        "retrievedAt": "2026-07-27T00:00:00Z",
+        "recordCount": 0,
+        "error": "Initial official refresh required"
+      },
+      "USDA": {
+        "success": false,
+        "retrievedAt": "2026-07-27T00:00:00Z",
+        "recordCount": 0,
+        "error": "Initial official refresh required"
+      }
+    },
+    "recordCountByAgency": {
+      "FDA": 0,
+      "USDA": 0
+    },
+    "recordsWithIdentifierCandidates": 0,
+    "warnings": [
+      "No official refresh has completed in this repository snapshot. Run the refresh workflow before relying on Live Check."
+    ]
+  },
+  "recalls": []
 }

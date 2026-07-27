@@ -1,3 +1,3 @@
 # Icons
 
-The prototype currently uses text and CSS-native symbols so it does not require additional image requests. Future local SVG icons belong here.
+`recallcheck.svg` is the local Version 0.2 prototype icon used by the manifest and favicon. A production release should export and test dedicated 192×192 and 512×512 PNG fallbacks for platforms that do not accept SVG manifest icons.

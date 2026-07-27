@@ -6,6 +6,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://world.openfoodfacts.org; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
   <title>RecallCheck — Food recall checker</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/recallcheck.svg" type="image/svg+xml">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -17,13 +19,14 @@
     <div class="actions"><button class="primary" id="scan-button" type="button">▣&nbsp; Scan a barcode</button><button class="secondary" id="manual-button" type="button">Enter barcode manually</button></div>
     <p class="privacy-note">🔒 Scanning happens in your browser. This prototype never saves camera imagery.</p>
   </section>
-  <div id="data-notice" class="notice loading" role="status" aria-live="polite">Loading recall data…</div>
+  <div id="data-notice" class="notice loading" role="status" aria-live="polite">Loading official recall data…</div>
+  <details id="data-status" class="data-status"><summary>Official data status</summary><div id="data-status-content" aria-live="polite">Loading source health…</div></details>
   <section id="manual-section" class="card" hidden aria-labelledby="manual-title">
     <h2 id="manual-title">Enter a barcode</h2><p>Enter the 8, 12, 13, or 14 digits printed below the bars.</p>
     <form id="barcode-form" novalidate><label for="barcode-input">Barcode</label><input id="barcode-input" name="barcode" inputmode="numeric" autocomplete="off" placeholder="Example: 012345678905" aria-describedby="barcode-help barcode-error"><small id="barcode-help">Spaces and hyphens are okay.</small><p id="barcode-error" class="field-error" role="alert"></p><button class="primary" type="submit">Check product</button><button id="continue-invalid" class="text-button" type="button" hidden>Continue despite check-digit warning</button></form>
   </section>
-  <section class="demo" aria-labelledby="demo-title"><div><p class="eyebrow">Works offline with loaded files</p><h2 id="demo-title">Try a demo product</h2></div><div id="demo-list" class="demo-grid" aria-busy="true"></div></section>
-  <section id="results" class="results" hidden tabindex="-1" aria-labelledby="result-title"><div id="product-summary"></div><div id="result-panel" role="status" aria-live="polite"></div></section>
+  <section class="demo" aria-labelledby="demo-title"><div><p class="eyebrow">Demo Mode · fictional records</p><h2 id="demo-title">Try a demo product</h2><p>Demo Mode searches a separate fictional dataset. It never mixes these examples into Live Check results.</p></div><div id="demo-list" class="demo-grid" aria-busy="true"></div></section>
+  <section id="results" class="results" hidden tabindex="-1" aria-labelledby="result-title"><h2 id="result-title" class="sr-only">Recall check result</h2><div id="product-summary"></div><div id="result-panel" role="status" aria-live="polite"></div></section>
   <section id="about" class="about" aria-labelledby="about-title"><p class="eyebrow">About</p><h2 id="about-title">A useful check—not a safety guarantee</h2><div class="about-grid"><article><h3>What it does</h3><p>RecallCheck identifies a product through community-maintained Open Food Facts data, then compares it with locally cached FDA and USDA recall information. Government notices are authoritative.</p></article><article><h3>Why the package matters</h3><p>A barcode may identify a product line, while only specific lots or dates are recalled. Check codes printed near the seal, nutrition panel, package bottom, or cap.</p></article><article><h3>Privacy</h3><p>Camera video is processed locally and is neither uploaded nor saved. Barcodes remain only for this browser session. There are no accounts, cookies, ads, or analytics.</p></article><article><h3>Limitations</h3><p>Coverage and product records may be incomplete or delayed. This tool does not assess food safety, diagnose illness, or replace an official notice.</p></article></div><p class="disclaimer">RecallCheck is an experimental prototype and does not replace official FDA, USDA, manufacturer, retailer, or healthcare guidance. Recall information can change, and some recalls may not include a barcode.</p></section>
 </main>
 <dialog id="scanner-dialog" aria-labelledby="scanner-title"><div class="dialog-head"><h2 id="scanner-title">Scan a barcode</h2><button id="scanner-close" class="icon-button" aria-label="Close scanner">×</button></div><p>Point the rear camera at the entire barcode and hold steady.</p><div class="camera"><video id="scanner-video" playsinline muted aria-label="Live camera preview"></video><div class="scan-frame" aria-hidden="true"></div></div><p id="scanner-status" role="status" aria-live="polite">Camera is off.</p><div class="actions"><button id="scanner-stop" class="secondary" type="button">Stop camera</button><button id="scanner-manual" class="text-button" type="button">Enter barcode instead</button></div></dialog>
