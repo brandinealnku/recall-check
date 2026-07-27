@@ -1,4 +1,4 @@
-# RecallCheck 0.6
+# RecallCheck 0.7
 
 **Is this food recalled?** RecallCheck is a calm, mobile-first consumer tool that identifies packaged food through Open Food Facts and compares it with cached official FDA and USDA recall records. It is an independent beta—not a safety guarantee, production safety system, or medical system.
 
@@ -6,7 +6,7 @@
 
 RecallCheck is created and operated by **ITSBAD LLC**. RecallCheck remains the primary product identity; compact maker text in the header and hero, an About subsection, metadata, and ownership/disclaimer text provide supporting company attribution.
 
-Version 0.6 restores a focused recall-checking journey: capture a barcode, identify the product, check current FDA and USDA recall records, and show the recall result. Privacy-conscious result feedback, product confirmation and correction, package-code guidance from official notices, repeat-check actions, clear coverage reporting, and a secondary fictional Demo Mode remain available. RecallCheck deliberately does **not** add accounts, alerts, uploads, or pantry management.
+Version 0.7 expands a focused recall-checking journey: capture a barcode, identify the product, check current FDA and USDA recall records, and show the recall result. Privacy-conscious result feedback, product confirmation and correction, package-code guidance from official notices, repeat-check actions, clear coverage reporting, and a secondary fictional Demo Mode remain available. RecallCheck deliberately does **not** add accounts, alerts, uploads, or pantry management.
 
 There is no runtime server, build step, database, analytics, cookie, or browser API key. Relative first-party URLs support both `USERNAME.github.io/REPOSITORY/` and custom domains.
 
@@ -190,3 +190,8 @@ overlap. Brand contributes 40 points, distinctive name overlap up to 45, and pac
 therefore brand or size alone cannot qualify. Similarity never confirms a specific barcode.
 Inactive similarity records appear only as secondary historical information beneath the primary
 no-current-recall result.
+
+
+## Version 0.7 discovery and privacy notes
+
+Current-recall category filters are deliberately conservative: USDA records map to meat and poultry; all other category filters require explicit normalized `categories` or `hazards` fields. No category is inferred from loose title or reason keywords. Recall detail links contain only the public normalized recall ID. Dynamic detail URLs are excluded from the sitemap because they are query-based and not a stable generated static list. Session history uses generic “Product check” labels, is held only in JavaScript memory, is capped at five, and clears on reload. The sitemap uses a conspicuous non-production placeholder because no production URL was confirmed; replace it and add the Sitemap directive to robots.txt during deployment; canonical tags are omitted rather than emitting incorrect relative canonicals. Lighthouse and PageSpeed may be run against the deployed URL; no measurements are transmitted by the application.

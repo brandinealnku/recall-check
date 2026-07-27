@@ -48,9 +48,9 @@
     const worker=await fetch("sw.js").then(r=>r.text());
     assert("Removed date feature is not cached",!worker.includes("date-check.js")&&!worker.includes("printed-date"));
     assert("Feedback prompt and accessible controls implemented",source.includes("Was this result helpful or confusing?")&&source.includes('el("button",value[0]')&&source.includes('el("fieldset")'));
-    assert("Helpful and confusing structured reasons",source.includes("The result was clear")&&source.includes("The recall seemed unrelated")&&source.includes("Current versus historical was unclear"));
+    assert("Helpful and confusing structured reasons",source.includes("Result was clear")&&source.includes("Recall seemed unrelated")&&source.includes("Current versus historical was unclear"));
     assert("Optional comment character limit",source.includes("comment.maxLength=750")&&source.includes("remaining"));
-    const safe=api.buildFeedbackPayload("confusing","The recall seemed unrelated","  detail  ",{status:"historical_exact_match",isDemo:true,exactBarcode:true});
+    const safe=api.buildFeedbackPayload("confusing","Recall seemed unrelated","  detail  ",{status:"historical_exact_match",isDemo:true,exactBarcode:true});
     assert("Feedback safe fields and Demo context",safe.feedback==="confusing"&&safe.comment==="detail"&&safe.classification==="historical"&&safe.isDemo===true);
     assert("Endpoint payload excludes product identifiers",!["barcode","code","product","productName","brand","recallTitle","lotCode","dateCode","packageCode"].some(k=>Object.hasOwn(safe,k))&&!JSON.stringify(safe).includes("012345678905"));
     api.configureFeedback({mode:"endpoint",endpoint:"https://example.invalid/feedback",email:"CONFIGURE_FEEDBACK_EMAIL"});
