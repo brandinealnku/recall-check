@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T13:08:27Z",
+  "generatedAt": "2026-07-27T13:45:44Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,17 +14,17 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.2.0",
-    "lastSuccessfulUpdate": "2026-07-27T13:08:27Z",
+    "lastSuccessfulUpdate": "2026-07-27T13:45:44Z",
     "sources": {
       "FDA": {
         "success": false,
-        "retrievedAt": "2026-07-27T13:08:27Z",
+        "retrievedAt": "2026-07-27T13:45:44Z",
         "recordCount": 0,
         "error": "HTTPError"
       },
       "USDA": {
         "success": true,
-        "retrievedAt": "2026-07-27T13:08:27Z",
+        "retrievedAt": "2026-07-27T13:45:44Z",
         "recordCount": 2013,
         "error": null
       }
