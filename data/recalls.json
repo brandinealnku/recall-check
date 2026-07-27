@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T13:45:44Z",
+  "generatedAt": "2026-07-27T14:12:01Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,17 +14,23 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.2.0",
-    "lastSuccessfulUpdate": "2026-07-27T13:45:44Z",
+    "lastSuccessfulUpdate": "2026-07-27T14:12:01Z",
     "sources": {
       "FDA": {
         "success": false,
-        "retrievedAt": "2026-07-27T13:45:44Z",
+        "retrievedAt": "2026-07-27T14:12:01Z",
         "recordCount": 0,
-        "error": "HTTPError"
+        "error": {
+          "httpStatus": 403,
+          "httpReason": "Forbidden",
+          "message": "An invalid api_key was supplied. Get one at [URL REMOVED]",
+          "paginationOffset": 0,
+          "apiKeySupplied": true
+        }
       },
       "USDA": {
         "success": true,
-        "retrievedAt": "2026-07-27T13:45:44Z",
+        "retrievedAt": "2026-07-27T14:12:01Z",
         "recordCount": 2013,
         "error": null
       }
