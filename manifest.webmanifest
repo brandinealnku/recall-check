@@ -1,7 +1,7 @@
 {
   "name": "RecallCheck",
   "short_name": "RecallCheck",
-  "description": "Scan a packaged-food barcode and compare it with available FDA and USDA recall information using RecallCheck, an ITSBAD LLC product.",
+  "description": "Scan a packaged-food barcode and compare it with available FDA and USDA recall information and evaluate an encoded or entered package date using RecallCheck, an ITSBAD LLC product.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
