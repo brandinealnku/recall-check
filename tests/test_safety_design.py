@@ -63,3 +63,32 @@ class SafetyStateDesignTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class ResponsiveHeaderTests(unittest.TestCase):
+    def test_header_uses_three_primary_links_and_secondary_more_menu(self):
+        primary = re.search(r'<ul class="primary-nav">(.*?)<li class="more-item">', INDEX, re.S).group(1)
+        self.assertEqual(3, len(re.findall(r'<a ', primary)))
+        for label in ("Scan", "Current recalls", "How it works"):
+            self.assertIn(f">{label}</a>", primary)
+        secondary = re.search(r'<ul class="secondary-nav">(.*?)</ul>', INDEX, re.S).group(1)
+        for label in ("Privacy", "Methodology", "About ITSBAD LLC", "Beta: How results work"):
+            self.assertIn(f">{label}</a>", secondary)
+
+    def test_navigation_switches_before_links_wrap(self):
+        self.assertIn("@media(max-width:960px)", CSS)
+        self.assertRegex(CSS, r'(?s)@media\(max-width:960px\).*?\.menu-button\{display:block\}')
+        self.assertIn('.site-header nav[data-open="true"]{display:block}', CSS)
+        self.assertIn("white-space:nowrap", CSS)
+        self.assertIn("word-break:normal", CSS)
+        self.assertIn("overflow-wrap:normal", CSS)
+
+    def test_navigation_accessibility_hooks(self):
+        self.assertIn('aria-expanded="false" aria-controls="site-nav"', INDEX)
+        self.assertIn('aria-current="page"', INDEX)
+        self.assertIn('close(true)', (ROOT / "discovery.js").read_text())
+        self.assertIn('event.target.closest("a")', (ROOT / "discovery.js").read_text())
+
+    def test_header_is_single_fixed_height_row_and_320_safe(self):
+        self.assertIn("height:4rem;min-height:4rem;max-height:4rem", CSS)
+        self.assertIn("width:100%;max-height:calc(100vh - 4rem);overflow-y:auto", CSS)
+        self.assertNotIn("Beta: how results work</span>", INDEX)
