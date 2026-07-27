@@ -1,10 +1,10 @@
-# RecallCheck 0.2
+# RecallCheck 0.3
 
-**Scan it. Check it. Protect your household.** RecallCheck is a mobile-first GitHub Pages prototype that identifies packaged food through Open Food Facts and deterministically compares it with cached official FDA and USDA recall records. It is an experimental testing tool—not a production safety or medical system.
+**Is this food recalled?** RecallCheck is a calm, mobile-first consumer tool that identifies packaged food through Open Food Facts and compares it with cached official FDA and USDA recall records. It is an independent beta—not a safety guarantee, production safety system, or medical system.
 
 ## Scope and architecture
 
-Version 0.2 provides opt-in ZXing camera scanning, manual GTIN entry, live official checks, an isolated fictional Demo Mode, data-health reporting, matching explanations, lot/date confirmation, a browser test page, and PWA fundamentals. It deliberately does **not** add accounts, alerts, OCR, uploads, or pantry management.
+Version 0.3 adds a focused scan-first home screen, accessible three-step lookup progress, product confirmation and correction, six explicit consumer result states, package-code guidance, repeat-check actions, clearer coverage reporting, and a secondary fictional Demo Mode. It deliberately does **not** add accounts, alerts, OCR, uploads, or pantry management.
 
 There is no runtime server, build step, database, analytics, cookie, or browser API key. Relative first-party URLs support both `USERNAME.github.io/REPOSITORY/` and custom domains.
 
@@ -51,7 +51,7 @@ FDA and USDA are fetched independently. A failed source retains only its last-kn
 * counts by agency and records with identifier candidates;
 * warnings, including partial-source coverage.
 
-The expandable **Official data status** panel shows source counts, age, warnings, stale status after eight days, and one-agency coverage. The committed repository snapshot intentionally has zero official records and says that the first refresh is required; it does not present demo data as live data.
+The expandable **Recall data coverage** panel gives plain-language agency availability and update time. Nested technical details retain source counts, structured errors, age, warnings, and partial coverage. The committed repository snapshot intentionally has zero official records and says that the first refresh is required; it does not present demo data as live data.
 
 ## Matching methodology and safety rules
 
@@ -98,7 +98,7 @@ node --check app.js && node --check tests.js && node --check sw.js
 
 Remove the leading `+` characters if copying commands from a rendered diff; in the repository file they are shown to distinguish command lines visually.
 
-## Version 0.2 manual test plan
+## Version 0.3 manual test plan
 
 1. Confirm Live Check shows official source health and, on this unrefreshed snapshot, refuses a no-match conclusion.
 2. Run every Demo Mode card offline after one online load; confirm all results say fictional Demo Mode.
