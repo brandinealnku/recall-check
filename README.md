@@ -123,6 +123,16 @@ python3 -m py_compile scripts/refresh_recalls.py
 node --check app.js && node --check tests.js && node --check sw.js
 ```
 
+## Mobile-first redesign
+
+The primary page is designed around the one-handed **open → scan → check → result → action** journey. Base layout rules support 320px screens without horizontal scrolling; `min-width` enhancements add breathing room and wider action layouts without turning the desktop view into a separate dashboard. The scanner remains a focused modal, manual entry uses a numeric keyboard hint, and secondary material is progressively disclosed below the task.
+
+Native headings, forms, buttons, `details` disclosures, live regions, visible focus indicators, 48px primary controls, text-plus-icon status treatments, forced-colors support, and reduced-motion handling support WCAG 2.2 AA-oriented use. Safety states remain semantic and distinct: a no-match is not described as safe, partial or unavailable official data cannot produce a normal no-match, and fictional Demo Mode data remains isolated and prominently labeled.
+
+Test responsive reflow at **320, 360, 375, 390, 414, 430, 768, 1024, and 1440 CSS pixels**, plus 200% zoom, keyboard-only navigation, reduced motion, and forced colors. Serve locally with `python3 -m http.server 8000` and use `http://localhost:8000/` (not `file://`); the browser test suite is at `http://localhost:8000/tests.html`.
+
+For GitHub Pages verification, open the deployed repository-subpath URL and confirm the stylesheet, scripts, manifest, icon, Demo Mode JSON, official recall JSON, scanner dependency, and service worker load. All first-party references intentionally remain relative, including `./sw.js` registration and manifest `./` scope/start URL, so no root deployment or build output is required.
+
 Remove the leading `+` characters if copying commands from a rendered diff; in the repository file they are shown to distinguish command lines visually.
 
 ## Version 0.6 manual test plan
