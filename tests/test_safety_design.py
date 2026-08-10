@@ -13,10 +13,10 @@ DESIGN_SYSTEM = (ROOT / "design-system.html").read_text()
 
 class SafetyStateDesignTests(unittest.TestCase):
     def test_current_recall_and_verification_are_two_layers(self):
-        self.assertIn('current_recall_details_required:{label:"Current recall"', APP)
+        self.assertIn('current_recall_details_required:{label:"CURRENT RECALL"', APP)
         self.assertIn('tone:"critical"', APP)
         self.assertIn("package-verification package-verification--warning", APP)
-        self.assertIn("This barcode is associated with a current recall", APP)
+        self.assertIn("This barcode is linked to a current recall", APP)
 
     def test_package_choices_and_outcomes_preserve_uncertainty(self):
         for copy in ("My package matches", "My package does not match", "I cannot find the code"):
@@ -32,7 +32,8 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertNotIn("result--success", CSS)
 
     def test_no_match_is_not_a_safety_approval(self):
-        self.assertIn("This is not a safety guarantee", APP)
+        self.assertIn("We didn\'t find this barcode in the FDA or USDA recall data checked.", APP)
+        self.assertIn("not a food-safety guarantee", INDEX)
         self.assertIn('tone:"neutral-result"', APP)
         self.assertNotRegex(APP, re.compile(r"safe to eat", re.I))
 
@@ -83,13 +84,13 @@ if __name__ == "__main__":
     unittest.main()
 
 class ResponsiveHeaderTests(unittest.TestCase):
-    def test_header_uses_three_primary_links_and_secondary_more_menu(self):
+    def test_header_keeps_primary_task_navigation_concise(self):
         primary = re.search(r'<ul class="primary-nav">(.*?)<li class="more-item">', INDEX, re.S).group(1)
-        self.assertEqual(3, len(re.findall(r'<a ', primary)))
-        for label in ("Scan", "Current recalls", "How it works"):
+        self.assertEqual(2, len(re.findall(r'<a ', primary)))
+        for label in ("Current recalls", "How it works"):
             self.assertIn(f">{label}</a>", primary)
         secondary = re.search(r'<ul class="secondary-nav">(.*?)</ul>', INDEX, re.S).group(1)
-        for label in ("Privacy", "Methodology", "About ITSBAD LLC", "Beta: How results work"):
+        for label in ("Privacy", "Methodology", "About"):
             self.assertIn(f">{label}</a>", secondary)
 
     def test_navigation_switches_before_links_wrap(self):
@@ -100,7 +101,7 @@ class ResponsiveHeaderTests(unittest.TestCase):
 
     def test_navigation_accessibility_hooks(self):
         self.assertIn('aria-expanded="false" aria-controls="site-nav"', INDEX)
-        self.assertIn('aria-current="page"', INDEX)
+        self.assertIn('aria-label="RecallCheck by ITSBAD LLC home"', INDEX)
         self.assertIn('close(true)', (ROOT / "discovery.js").read_text())
         self.assertIn('event.target.closest("a")', (ROOT / "discovery.js").read_text())
 
