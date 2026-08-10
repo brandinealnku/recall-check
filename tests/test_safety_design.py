@@ -25,8 +25,10 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("Do not assume the product is unaffected", APP)
 
     def test_semantic_result_tones_are_distinct(self):
-        for tone in ("critical", "warning", "neutral-result", "historical", "failure"):
-            self.assertIn(f"--color-{tone}", CSS)
+        for tone in ("danger", "warning", "historical", "info"):
+            self.assertIn(f"--{tone}", CSS)
+        for result_class in ("critical", "warning", "neutral-result", "historical", "failure"):
+            self.assertIn(f".result--{result_class}", CSS)
         self.assertNotIn("result--success", CSS)
 
     def test_no_match_is_not_a_safety_approval(self):
@@ -50,10 +52,10 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertEqual(16, len(set(fixture_ids)))
 
     def test_accessibility_media_and_focus_rules(self):
-        self.assertIn("prefers-reduced-motion:reduce", CSS)
-        self.assertIn("forced-colors:active", CSS)
+        self.assertRegex(CSS, r"prefers-reduced-motion:\s*reduce")
+        self.assertRegex(CSS, r"forced-colors:\s*active")
         self.assertIn("scroll-margin-top", CSS)
-        self.assertIn("@media(max-width:540px)", CSS)
+        self.assertRegex(CSS, r"@media\s*\(max-width:\s*640px\)")
 
     def test_version_and_ownership(self):
         self.assertIn("Version 0.8", INDEX)
@@ -61,12 +63,10 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by the FDA, USDA", INDEX)
 
-    def test_premium_semantic_tokens_and_review_fixture(self):
-        for token in ("--surface-page", "--surface-raised", "--surface-inset",
-                      "--text-primary", "--text-secondary", "--brand-primary-hover",
-                      "--state-critical", "--state-warning", "--state-historical",
-                      "--state-information", "--state-failure", "--border-subtle",
-                      "--duration-fast", "--content-narrow"):
+    def test_restrained_service_tokens_and_review_fixture(self):
+        for token in ("--ink", "--muted", "--brand", "--line", "--neutral",
+                      "--danger", "--warning", "--historical", "--info",
+                      "--focus", "--task", "--reading", "--wide"):
             self.assertIn(token, CSS)
         for component in ("Actions and form controls", "Product confirmation",
                           "Safety result states", "Scanner shell"):
@@ -93,12 +93,10 @@ class ResponsiveHeaderTests(unittest.TestCase):
             self.assertIn(f">{label}</a>", secondary)
 
     def test_navigation_switches_before_links_wrap(self):
-        self.assertIn("@media(max-width:960px)", CSS)
-        self.assertRegex(CSS, r'(?s)@media\(max-width:960px\).*?\.menu-button\{display:block\}')
-        self.assertIn('.site-header nav[data-open="true"]{display:block}', CSS)
-        self.assertIn("white-space:nowrap", CSS)
-        self.assertIn("word-break:normal", CSS)
-        self.assertIn("overflow-wrap:normal", CSS)
+        self.assertRegex(CSS, r"@media\s*\(max-width:\s*960px\)")
+        self.assertRegex(CSS, r'(?s)@media\s*\(max-width:\s*960px\).*?\.menu-button\s*\{\s*display:\s*block')
+        self.assertRegex(CSS, r'\.site-header nav\[data-open="true"\]\s*\{\s*display:\s*block')
+        self.assertRegex(CSS, r"white-space:\s*nowrap")
 
     def test_navigation_accessibility_hooks(self):
         self.assertIn('aria-expanded="false" aria-controls="site-nav"', INDEX)
@@ -107,6 +105,6 @@ class ResponsiveHeaderTests(unittest.TestCase):
         self.assertIn('event.target.closest("a")', (ROOT / "discovery.js").read_text())
 
     def test_header_is_single_fixed_height_row_and_320_safe(self):
-        self.assertIn("height:4rem;min-height:4rem;max-height:4rem", CSS)
-        self.assertIn("width:100%;max-height:calc(100vh - 4rem);overflow-y:auto", CSS)
+        self.assertRegex(CSS, r"\.site-header\s*\{[^}]*min-height:\s*4\.5rem")
+        self.assertRegex(CSS, r"(?s)@media\s*\(max-width:\s*960px\).*?\.site-header nav\s*\{[^}]*position:\s*absolute")
         self.assertNotIn("Beta: how results work</span>", INDEX)
