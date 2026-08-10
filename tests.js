@@ -9,7 +9,7 @@
     const api=frame.contentWindow.RecallCheck, doc=frame.contentDocument;
     const recall=(overrides={})=>({id:"test",agency:"FDA",status:"ongoing",lifecycle:{state:"active",isActionable:true,sourceStatus:"Ongoing",terminationDate:""},recallDate:"2025-07-12",upcs:[],gtins:[],brandNames:[],productNames:[],packageSizes:[],lotCodes:[],dateCodes:[],...overrides});
     const product=(overrides={})=>({code:"012345678905",product_name:"",brands:"",quantity:"",...overrides});
-    assert("Consumer-first heading",doc.querySelector("main h1")?.textContent==="Is this food recalled?");
+    assert("Consumer-first heading",doc.querySelector("main h1")?.textContent==="Check a food product");
     assert("RecallCheck remains dominant with ITSBAD maker branding",doc.querySelector(".brand strong")?.textContent==="RecallCheck"&&doc.querySelector(".brand small")?.textContent.includes("ITSBAD LLC"));
     assert("ITSBAD LLC About content",doc.querySelector("#about")?.textContent.includes("About ITSBAD LLC"));
     assert("Footer ownership and independent disclaimer",doc.querySelector("footer")?.textContent.includes("product of ITSBAD LLC")&&doc.querySelector("footer")?.textContent.includes("independent ITSBAD LLC product"));
