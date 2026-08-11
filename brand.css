@@ -66,7 +66,7 @@ p { text-wrap: pretty; }
 a { color: var(--itsbad-indigo); }
 a:hover { color: #25265C; }
 
-/* Mobile-first masthead */
+/* Mobile-first masthead: restrained parent-brand attribution. */
 .site-header {
   position: sticky;
   top: 0;
@@ -74,7 +74,7 @@ a:hover { color: #25265C; }
   min-height: 4rem;
   padding: .55rem 1rem;
   gap: .75rem;
-  background: rgba(7, 17, 31, .98);
+  background: var(--itsbad-navy);
   border-bottom: 1px solid #202C44;
   box-shadow: 0 5px 22px rgba(7, 17, 31, .12);
 }
@@ -85,20 +85,11 @@ a:hover { color: #25265C; }
   font-size: 1.05rem;
   letter-spacing: -.02em;
 }
-.site-header .brand strong::after {
-  content: " / LABS";
-  color: var(--itsbad-pink);
-  font-size: .66em;
-  font-weight: 800;
-  letter-spacing: .09em;
-}
 .site-header .brand small {
+  margin-top: .16rem;
   color: var(--itsbad-muted);
-  font-size: 0;
-}
-.site-header .brand small::after {
-  content: "by ITSBAD Labs";
   font-size: .68rem;
+  font-weight: 600;
 }
 .site-header nav a[aria-current="page"] {
   text-decoration-color: var(--itsbad-pink);
@@ -177,7 +168,7 @@ main { padding-inline: 1rem; }
   border: 0;
   border-bottom: 1px solid #D7DCE8;
   border-radius: 0;
-  background: linear-gradient(180deg, #F8F8FC 0%, #F3F4FA 100%);
+  background: #F5F6FA;
   box-shadow: inset 0 4px 0 var(--itsbad-pink);
 }
 .hero-copy { max-width: 36rem; }
