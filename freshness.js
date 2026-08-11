@@ -3,8 +3,6 @@
 
   const RECALL_URL = "data/recalls.json";
   const $ = selector => document.querySelector(selector);
-  let latestData = null;
-  let applying = false;
 
   function formatDate(value, includeTime = false) {
     const time = Date.parse(value || "");
@@ -28,8 +26,6 @@
   }
 
   function applyHomepageSummary(data) {
-    if (applying) return;
-    applying = true;
     const notice = document.getElementById("data-notice");
     const footer = document.getElementById("footer-updated");
     const sources = data?.dataHealth?.sources || {};
@@ -48,8 +44,7 @@
 
     const statusRoot = document.getElementById("data-status-content");
     if (statusRoot) {
-      const existing = statusRoot.querySelector("[data-source-freshness]");
-      if (existing) existing.remove();
+      statusRoot.querySelector("[data-source-freshness]")?.remove();
       const wrap = document.createElement("div");
       wrap.dataset.sourceFreshness = "true";
       const heading = document.createElement("p");
@@ -64,7 +59,6 @@
       });
       statusRoot.prepend(wrap);
     }
-    applying = false;
   }
 
   function setListingSummary(data) {
@@ -82,29 +76,19 @@
     });
   }
 
-  function watchForLegacyOverwrite() {
-    const targets = [
-      document.getElementById("data-notice"),
-      document.getElementById("footer-updated"),
-      document.getElementById("data-status-content")
-    ].filter(Boolean);
-    if (!targets.length || !latestData) return;
-    const observer = new MutationObserver(() => {
-      if (!applying && latestData) queueMicrotask(() => applyHomepageSummary(latestData));
-    });
-    targets.forEach(target => observer.observe(target, { childList: true, characterData: true, subtree: true }));
-  }
-
   async function init() {
     try {
       const response = await fetch(RECALL_URL, { cache: "no-store" });
       if (!response.ok) return;
-      latestData = await response.json();
-      applyHomepageSummary(latestData);
-      setListingSummary(latestData);
-      watchForLegacyOverwrite();
-      setTimeout(() => applyHomepageSummary(latestData), 250);
-      setTimeout(() => applyHomepageSummary(latestData), 1000);
+      const data = await response.json();
+      applyHomepageSummary(data);
+      setListingSummary(data);
+
+      // app.js also updates the homepage after its own data load. Re-apply the
+      // source-specific wording a finite number of times instead of observing and
+      // rewriting the same DOM nodes indefinitely.
+      setTimeout(() => applyHomepageSummary(data), 250);
+      setTimeout(() => applyHomepageSummary(data), 1000);
     } catch (_) {
       // Existing page-level unavailable states remain authoritative on fetch failure.
     }
