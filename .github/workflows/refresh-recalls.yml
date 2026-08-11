@@ -2,8 +2,14 @@ name: Refresh recall data
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/refresh_recalls_current.py"
+      - ".github/workflows/refresh-recalls.yml"
   schedule:
-    - cron: "17 8 * * 1"
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
@@ -15,15 +21,14 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch and normalize official data
-        env:
-          OPENFDA_API_KEY: ${{ secrets.OPENFDA_API_KEY }}
-        run: python3 scripts/refresh_recalls.py
+      - name: Fetch and normalize current official data
+        run: python3 scripts/refresh_recalls_current.py
       - name: Run normalization and matching tests
         run: python3 -m unittest discover -s tests -p 'test_*.py' -v
       - name: Validate all recall JSON
