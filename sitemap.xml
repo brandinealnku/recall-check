@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Set the production base URL during deployment; dynamic recall URLs are intentionally excluded. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/recalls.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/how-recalls-work.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/fda-vs-usda.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/find-a-lot-code.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/why-barcode-may-not-be-enough.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/current-vs-historical.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/what-no-match-means.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/privacy.html</loc></url>
- <url><loc>https://REPLACE-WITH-PRODUCTION-URL.invalid/methodology.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/recalls.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/how-recalls-work.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/fda-vs-usda.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/find-a-lot-code.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/why-barcode-may-not-be-enough.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/current-vs-historical.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/what-no-match-means.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/privacy.html</loc></url>
+ <url><loc>https://recallcheck.itsbadlabs.com/methodology.html</loc></url>
 </urlset>
