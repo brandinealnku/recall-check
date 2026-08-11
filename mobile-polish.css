@@ -88,8 +88,12 @@
     margin-right: 0;
   }
 
-  /* Home hero remains edge-to-edge relative to the content frame, not the viewport. */
+  /* Truly span the mobile viewport. The base stylesheet fixes .hero at width:100%,
+     so negative margins alone would shift the box left without replacing the space
+     on the right. Explicitly add both gutters back into the width. */
   .hero {
+    width: calc(100% + (2 * var(--mobile-gutter)));
+    max-width: none;
     margin-left: calc(-1 * var(--mobile-gutter));
     margin-right: calc(-1 * var(--mobile-gutter));
     padding-left: var(--mobile-gutter);
