@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "scripts/refresh_recalls_current.py"
+      - "scripts/refresh_recalls_current_v2.py"
       - ".github/workflows/refresh-recalls.yml"
   schedule:
     - cron: "17 */6 * * *"
@@ -28,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Fetch and normalize current official data
-        run: python3 scripts/refresh_recalls_current.py
+        run: python3 scripts/refresh_recalls_current_v2.py
       - name: Run normalization and matching tests
         run: python3 -m unittest discover -s tests -p 'test_*.py' -v
       - name: Validate all recall JSON
