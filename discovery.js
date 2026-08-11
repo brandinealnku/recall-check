@@ -85,7 +85,7 @@
   async function load() { const response = await fetch("data/recalls.json", {cache:"no-store"}); if (!response.ok) throw new Error("Recall data unavailable"); return response.json(); }
 
   function setupNavigation() {
-    const button = document.querySelector("[data-menu-button]"), nav = document.querySelector("[data-nav]"), more = nav?.querySelector(".more-menu"), mobile = matchMedia("(max-width: 960px)");
+    const button = document.querySelector("[data-menu-button]"), nav = document.querySelector("[data-nav]"), more = nav?.querySelector(".more-menu"), mobile = matchMedia("(max-width: 799px)");
     if (!button || !nav) return;
     const close = (returnFocus=false) => { button.setAttribute("aria-expanded", "false"); nav.dataset.open = "false"; if (returnFocus) button.focus(); };
     const syncLayout = () => { if (more) more.open = mobile.matches; if (!mobile.matches) close(); };
