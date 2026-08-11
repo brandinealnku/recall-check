@@ -1,3 +1,5 @@
+@import url("mobile-polish.css");
+
 .page {
   width: min(100%, var(--wide));
   margin-inline: auto;
@@ -40,6 +42,6 @@
 
 @media (max-width: 640px) {
   .page {
-    padding-inline: 1.25rem;
+    padding-inline: 0;
   }
 }
