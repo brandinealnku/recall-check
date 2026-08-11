@@ -2,6 +2,46 @@
   --mobile-gutter: clamp(1.25rem, 5.5vw, 1.5rem);
 }
 
+/* When the barcode signature is hidden, collapse the hero into an intentional
+   centered composition instead of leaving a left-heavy desktop remnant. */
+@media (max-width: 799px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 42rem;
+    margin-inline: auto;
+  }
+
+  .hero h1,
+  .hero .lede,
+  .hero .data-facts {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero h1 {
+    max-width: 13ch;
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 28rem;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .hero .manual-card {
+    width: 100%;
+    max-width: 32rem;
+    margin-inline: auto;
+    text-align: left;
+  }
+}
+
 @media (max-width: 639px) {
   .site-header {
     padding-inline: var(--mobile-gutter);
