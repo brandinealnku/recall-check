@@ -24,11 +24,16 @@
   }
 
   function hasAny(textValue, patterns) { return patterns.some(pattern => pattern.test(textValue)); }
+  function isExplicitlyNotReadyToEat(textValue) { return /\bnot[- ]ready[- ]to[- ]eat\b|\bnrte\b/.test(textValue); }
 
   const CATEGORY_RULES = {
     "meat-poultry": r => r.agency === "USDA",
     "dairy-eggs": r => hasAny(signalText(r), [/\bdairy\b/, /\bmilk\b/, /\bcheese\b/, /\bcream\b/, /\byogurt\b/, /\bbutter\b/, /\begg(s)?\b/]),
-    "prepared-foods": r => hasAny(signalText(r), [/\bprepared food(s)?\b/, /\bready[- ]to[- ]eat\b/, /\brte\b/, /\bmeal(s)?\b/, /\bsandwich(es)?\b/, /\bsalad(s)?\b/, /\bsoup(s)?\b/, /\bpizza(s)?\b/, /\bwrap(s)?\b/, /\bbowl(s)?\b/, /\bentree(s)?\b/]),
+    "prepared-foods": r => {
+      const signals = signalText(r);
+      if (isExplicitlyNotReadyToEat(signals)) return false;
+      return hasAny(signals, [/\bprepared food(s)?\b/, /\bready[- ]to[- ]eat\b/, /\brte\b/, /\bmeal(s)?\b/, /\bsandwich(es)?\b/, /\bsalad(s)?\b/, /\bsoup(s)?\b/, /\bpizza(s)?\b/, /\bwrap(s)?\b/, /\bbowl(s)?\b/, /\bentree(s)?\b/]);
+    },
     allergens: r => hasAny(signalText(r), [/\ballergen(s)?\b/, /\bunreported allergen(s)?\b/, /\bundeclared\b/, /\bmisbranding\b.*\ballergen/, /\bmilk allergen\b/, /\begg allergen\b/, /\bpeanut(s)?\b/, /\bsoy\b/, /\bwheat\b/, /\bsesame\b/, /\b tree nut(s)?\b/, /\bshellfish\b/]),
     contamination: r => hasAny(signalText(r), [/\bproduct contamination\b/, /\bcontamination\b/, /\bcontaminated\b/, /\bsalmonella\b/, /\blisteria\b/, /\be\.?\s*coli\b/, /\bclostridium\b/, /\bbotulism\b/, /\bforeign material\b/, /\bforeign matter\b/])
   };
