@@ -1,11 +1,26 @@
 "use strict";
-const CACHE = "recallcheck-static-v0.8-service-design";
-const STATIC = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest", "./assets/icons/recallcheck.svg", "./data/demo-products.json", "./data/demo-recalls.json", "./discovery.js", "./recalls.html", "./recall.html", "./how-recalls-work.html", "./fda-vs-usda.html", "./find-a-lot-code.html", "./why-barcode-may-not-be-enough.html", "./current-vs-historical.html", "./what-no-match-means.html", "./privacy.html", "./methodology.html", "./assets/social/recallcheck-share.svg", "./design-review.html", "./design-system.html", "./design-review.js"];
-self.addEventListener("install", event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(STATIC)).then(() => self.skipWaiting())));
-self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
-self.addEventListener("fetch", event => {
-  if (event.request.method !== "GET") return;
-  const url = new URL(event.request.url);
-  if (url.origin !== self.location.origin || url.pathname.endsWith("/data/recalls.json")) return;
-  event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => { if (response.ok && !url.hostname.includes("openfoodfacts")) caches.open(CACHE).then(cache => cache.put(event.request, response.clone())); return response; })));
+
+// RecallCheck changes frequently during beta. Do not keep an offline copy of
+// HTML, CSS, JavaScript, or recall data because a stale service-worker cache
+// can make a newly deployed page appear blank or outdated until a hard refresh.
+const RECALLCHECK_CACHE_PREFIX = "recallcheck-";
+
+self.addEventListener("install", () => {
+  self.skipWaiting();
 });
+
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(
+        keys
+          .filter(key => key.startsWith(RECALLCHECK_CACHE_PREFIX))
+          .map(key => caches.delete(key))
+      ))
+      .then(() => self.clients.claim())
+  );
+});
+
+// Intentionally no fetch handler during beta. Requests use the browser/network
+// normally, so Cloudflare deployments become visible without requiring users
+// to force-refresh each page.
