@@ -1,12 +1,12 @@
 {
-  "name": "RecallCheck",
+  "name": "RecallCheck by ITSBAD Labs",
   "short_name": "RecallCheck",
-  "description": "Scan a packaged-food barcode and compare it with available FDA and USDA recall information using RecallCheck, an ITSBAD LLC product.",
+  "description": "Check packaged food against available FDA and USDA FSIS recall information with RecallCheck, an ITSBAD Labs product.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f1f7f5",
-  "theme_color": "#123c43",
+  "background_color": "#F4F7FF",
+  "theme_color": "#07111F",
   "icons": [
     {
       "src": "assets/icons/recallcheck.svg",
