@@ -4,6 +4,15 @@
   const CLOSED = new Set(["terminated", "closed", "completed"]);
   const OFFICIAL_HOSTS = ["fda.gov", "accessdata.fda.gov", "fsis.usda.gov", "usda.gov"];
 
+  function ensureBrandStyles() {
+    if (typeof document === "undefined" || document.querySelector('link[href="brand.css"]')) return;
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "brand.css";
+    document.head.append(link);
+  }
+  ensureBrandStyles();
+
   function cleanSourceLabel(value) {
     let textValue = String(value ?? "").trim();
     if (!textValue) return "Status unknown";
