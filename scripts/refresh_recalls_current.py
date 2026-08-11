@@ -28,7 +28,7 @@ OUTPUT = ROOT / "data" / "recalls.json"
 FDA_DATASETS_PAGE = "https://www.fda.gov/about-fda/open-government-fda-data-sets/recalls-data-sets"
 FDA_RECALLS_PAGE = "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
 USDA_ENDPOINT = legacy.USDA_ENDPOINT
-WORKFLOW_VERSION = "0.4.0"
+WORKFLOW_VERSION = "0.4.1"
 Fetcher = Callable[[str, dict[str, str]], tuple[Any, dict[str, str]]]
 
 
@@ -72,6 +72,18 @@ def first(record: dict[str, Any], *keys: str) -> str:
     return ""
 
 
+def clean_serialized_list(value: Any) -> str:
+    """Turn FSIS stringified arrays into readable text without changing plain strings."""
+    text = legacy.clean_text(value)
+    if len(text) >= 2 and text.startswith("[") and text.endswith("]"):
+        inner = text[1:-1].strip()
+        if not inner:
+            return ""
+        parts = [part.strip().strip("'\"") for part in inner.split(",")]
+        return ", ".join(part for part in parts if part)
+    return text
+
+
 def _looks_like_fda_record(record: dict[str, str]) -> bool:
     product = first(record, "product_description", "product", "description")
     date = first(record, "fda_publish_date", "publish_date", "company_announcement_date", "recall_date", "date")
@@ -102,7 +114,6 @@ def parse_fda_xml(xml_text: str) -> list[dict[str, str]]:
     records: list[dict[str, str]] = []
     seen: set[tuple[str, str, str, str]] = set()
     for node, record in candidates:
-        # Keep the smallest record-like node, not a parent wrapper containing rows.
         if any(id(desc) in candidate_ids for desc in list(node.iter())[1:]):
             continue
         key = (
@@ -238,7 +249,7 @@ def normalize_usda(record: dict[str, Any]) -> dict[str, Any]:
     press_release = first(record, "field_press_release", "field_en_press_release", "press_release")
     details = legacy.clean_text(" ".join([summary, press_release]))
     number = first(record, "field_recall_number", "recall_number", "id") or "unknown"
-    recall_type = first(record, "field_recall_type", "recall_type", "status", "recall_status")
+    recall_type = clean_serialized_list(first(record, "field_recall_type", "recall_type", "status", "recall_status"))
     active_notice = first(record, "field_active_notice", "active_notice")
     closed_date = first(record, "field_closed_date", "closed_date", "termination_date")
     recall_date = first(record, "field_recall_date", "recall_date", "date")
@@ -250,7 +261,6 @@ def normalize_usda(record: dict[str, Any]) -> dict[str, Any]:
     elif closed_date or "closed recall" in type_lower or "closed" == type_lower:
         lifecycle = legacy.normalize_lifecycle("closed", closed_date)
     elif "public health alert" in type_lower:
-        # A PHA is actionable only when FSIS explicitly marks the notice active.
         lifecycle = legacy.normalize_lifecycle("active" if active_flag else "unknown", closed_date)
     else:
         lifecycle = legacy.normalize_lifecycle(recall_type, closed_date)
@@ -260,10 +270,10 @@ def normalize_usda(record: dict[str, Any]) -> dict[str, Any]:
     if closed_date:
         lifecycle["terminationDate"] = legacy.parse_date(closed_date)
 
-    classification = first(record, "field_recall_classification", "field_recall_classification_2", "classification", "recall_classification") or "unknown"
-    reason = first(record, "field_recall_reason", "reason", "reason_for_recall") or summary or "See official notice"
-    states = first(record, "field_states", "states")
-    distribution = first(record, "field_distro_list", "distribution") or states or "See official notice"
+    classification = clean_serialized_list(first(record, "field_recall_classification", "field_recall_classification_2", "classification", "recall_classification")) or "unknown"
+    reason = clean_serialized_list(first(record, "field_recall_reason", "reason", "reason_for_recall")) or clean_serialized_list(summary) or "See official notice"
+    states = clean_serialized_list(first(record, "field_states", "states"))
+    distribution = clean_serialized_list(first(record, "field_distro_list", "distribution")) or states or "See official notice"
     establishment = first(record, "field_establishment", "establishment", "company", "recalling_firm")
     url = first(record, "field_recall_url", "recall_url", "url", "official_url", "path")
     if url.startswith("/"):
