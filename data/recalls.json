@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-10T09:48:24Z",
+  "generatedAt": "2026-08-11T14:37:23Z",
   "sources": [
     {
       "agency": "FDA",
-      "name": "openFDA Food Enforcement",
-      "url": "https://open.fda.gov/apis/food/enforcement/"
+      "name": "FDA Firm-Issued Recalls XML",
+      "url": "https://www.fda.gov/about-fda/open-government-fda-data-sets/recalls-data-sets"
     },
     {
       "agency": "USDA",
@@ -13,18 +13,24 @@
     }
   ],
   "dataHealth": {
-    "workflowVersion": "0.2.0",
-    "lastSuccessfulUpdate": "2026-08-10T09:48:24Z",
+    "workflowVersion": "0.3.0",
+    "lastSuccessfulUpdate": "2026-08-11T14:37:23Z",
     "sources": {
       "FDA": {
-        "success": true,
-        "retrievedAt": "2026-08-10T09:48:24Z",
+        "success": false,
+        "retrievedAt": "2026-08-11T14:37:23Z",
         "recordCount": 2772,
-        "error": null
+        "error": {
+          "httpStatus": null,
+          "httpReason": "",
+          "message": "FDA XML contained no usable recall records",
+          "paginationOffset": 0,
+          "apiKeySupplied": false
+        }
       },
       "USDA": {
         "success": true,
-        "retrievedAt": "2026-08-10T09:48:24Z",
+        "retrievedAt": "2026-08-11T14:37:23Z",
         "recordCount": 2020,
         "error": null
       }
@@ -34,7 +40,9 @@
       "USDA": 2020
     },
     "recordsWithIdentifierCandidates": 1278,
-    "warnings": []
+    "warnings": [
+      "FDA refresh failed; retained 2772 last-known records"
+    ]
   },
   "recalls": [
     {
