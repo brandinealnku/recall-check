@@ -1,0 +1,88 @@
+:root {
+  --mobile-gutter: clamp(1.25rem, 5.5vw, 1.5rem);
+}
+
+@media (max-width: 639px) {
+  .site-header {
+    padding-inline: var(--mobile-gutter);
+  }
+
+  .site-header nav {
+    padding-inline: var(--mobile-gutter);
+  }
+
+  main {
+    padding-inline: var(--mobile-gutter);
+  }
+
+  /* Secondary pages already inherit the global gutter; avoid stacked padding. */
+  main.page {
+    padding-left: var(--mobile-gutter);
+    padding-right: var(--mobile-gutter);
+  }
+
+  .page {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .page > .content-section,
+  .page > article,
+  .content-section,
+  .disclosure,
+  .support-links {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page article > h1,
+  .page article > h2,
+  .page article > h3,
+  .page article > p,
+  .page article > ul,
+  .page article > ol,
+  .page article > dl,
+  .page article > nav {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Home hero remains edge-to-edge relative to the content frame, not the viewport. */
+  .hero {
+    margin-left: calc(-1 * var(--mobile-gutter));
+    margin-right: calc(-1 * var(--mobile-gutter));
+    padding-left: var(--mobile-gutter);
+    padding-right: var(--mobile-gutter);
+  }
+
+  .hero-copy,
+  .hero-actions,
+  .hero .data-facts {
+    width: 100%;
+  }
+
+  /* Keep horizontal filter scrolling while aligning its first/last chip to page copy. */
+  .filters,
+  .page .filters {
+    margin-left: calc(-1 * var(--mobile-gutter));
+    margin-right: calc(-1 * var(--mobile-gutter));
+    padding-left: var(--mobile-gutter);
+    padding-right: var(--mobile-gutter);
+  }
+
+  .card,
+  .results {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  footer {
+    padding-left: var(--mobile-gutter);
+    padding-right: var(--mobile-gutter);
+  }
+}
+
+@media (min-width: 390px) and (max-width: 639px) {
+  :root { --mobile-gutter: 1.5rem; }
+}
