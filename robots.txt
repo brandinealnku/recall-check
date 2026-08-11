@@ -1,2 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /design-review.html
+Disallow: /design-system.html
+Disallow: /tests.html
+
+Sitemap: https://recallcheck.itsbadlabs.com/sitemap.xml
