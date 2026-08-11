@@ -1,0 +1,45 @@
+.page {
+  width: min(100%, var(--wide));
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2rem);
+}
+
+.page > .content-section {
+  width: 100%;
+  max-width: none;
+}
+
+.page .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.page .filters button {
+  padding: .55rem .8rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.page .filters button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+.page .recall-grid {
+  width: 100%;
+}
+
+.page .category {
+  text-transform: none;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-inline: 1.25rem;
+  }
+}
