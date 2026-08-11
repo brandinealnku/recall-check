@@ -11,6 +11,12 @@
     return textValue || "Status unknown";
   }
 
+  function cleanRecallText(value, fallback = "See the official notice for details.") {
+    const raw = String(value ?? "").trim();
+    if (!raw) return fallback;
+    return cleanSourceLabel(raw);
+  }
+
   function signalText(record) {
     const source = record?.sourceRecord || {};
     const values = [record?.title, record?.productDescription, record?.reason, ...(record?.categories || []), ...(record?.hazards || []), source.field_recall_type, source.recall_type, source.product_type, source.product_types, source.category, source.recall_reason_description, source.reason_for_announcement, source.reason_for_recall, source.reason, source.product_description, source.product_items, source.field_product_items];
@@ -56,7 +62,7 @@
     const a = text("article", "", "recall-card");
     a.append(text("h3", record.title || record.productDescription || "Food recall"));
     const status = cleanSourceLabel(record.lifecycle?.sourceStatus || record.status);
-    a.append(text("p", `${record.agency} · ${formatDate(record.recallDate || record.timeline?.recallDate)} · ${status}`, "recall-meta"), text("p", record.reason || "See the official notice for details."));
+    a.append(text("p", `${record.agency} · ${formatDate(record.recallDate || record.timeline?.recallDate)} · ${status}`, "recall-meta"), text("p", cleanRecallText(record.reason)));
     const cats = reliableCategories(record);
     if (cats.length) a.append(text("p", cats.map(categoryLabel).join(" · "), "category"));
     const link = text("a", "View recall", "secondary"); link.href = detailUrl(record.id); a.append(link); return a;
@@ -106,7 +112,7 @@
       if (official) { const link = text("a", current ? "View official recall instructions" : "View historical recall", "button " + (current ? "button--critical" : "button--secondary")); link.href = official; link.target = "_blank"; link.rel = "noopener noreferrer"; summary.append(link); }
       const details = text("section", "", "result-details"), dl = text("dl", "", "details");
       const sourceHealth = data?.dataHealth?.sources?.[r.agency] || {};
-      [["Recall reason",r.reason],["Recalling company",r.recallingFirm],["Agency",r.agency],["Recall date",formatDate(r.recallDate || r.timeline?.recallDate)],["Official status",cleanSourceLabel(r.lifecycle?.sourceStatus || r.status)],["Distribution",r.distribution],["Source last successful retrieval",formatDate(sourceHealth.lastSuccessfulUpdate || sourceHealth.retrievedAt)],["Newest listed recall in this source",formatDate(sourceHealth.newestRecallDate)],["Dataset generated",formatDate(data.generatedAt)]].forEach(([k,v]) => dl.append(text("dt",k), text("dd",v)));
+      [["Recall reason",cleanRecallText(r.reason, "See official notice")],["Recalling company",r.recallingFirm],["Agency",r.agency],["Recall date",formatDate(r.recallDate || r.timeline?.recallDate)],["Official status",cleanSourceLabel(r.lifecycle?.sourceStatus || r.status)],["Distribution",cleanRecallText(r.distribution, "See official notice")],["Source last successful retrieval",formatDate(sourceHealth.lastSuccessfulUpdate || sourceHealth.retrievedAt)],["Newest listed recall in this source",formatDate(sourceHealth.newestRecallDate)],["Dataset generated",formatDate(data.generatedAt)]].forEach(([k,v]) => dl.append(text("dt",k), text("dd",v)));
       details.append(dl);
       const technical = text("details", "", "technical"), technicalSummary = text("summary", "Technical identifiers"), technicalBody = text("p", [...(r.upcs || []), ...(r.gtins || []), ...(r.establishmentNumbers || [])].join(", ") || "No identifiers listed");
       technical.append(technicalSummary, technicalBody); details.append(technical); article.append(banner, summary, details);
@@ -120,7 +126,7 @@
   function notFound(root) { root.replaceChildren(text("h1", "Recall not found"), text("p", "This recall link is invalid or the record is unavailable.")); const a = text("div", "", "actions"); [["Return to current recalls","recalls.html"],["Scan a product","index.html"],["Visit FDA recalls","https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"],["Visit USDA recalls","https://www.fsis.usda.gov/recalls"]].forEach(([label,url]) => { const x = text("a",label,label.startsWith("Return") ? "primary" : "secondary"); x.href = url; if (url.startsWith("https")) { x.target = "_blank"; x.rel = "noopener noreferrer"; } a.append(x); }); root.append(a); }
 
   function init() { setupNavigation(); recent(); listing(); detail(); }
-  const api = {currentRecalls, filterRecalls, reliableCategories, cleanSourceLabel, validRecallId, detailUrl, safeOfficialUrl, shareRecall};
+  const api = {currentRecalls, filterRecalls, reliableCategories, cleanSourceLabel, cleanRecallText, validRecallId, detailUrl, safeOfficialUrl, shareRecall};
   global.RecallDiscovery = Object.freeze(api);
   if (typeof module !== "undefined") module.exports = api;
   if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", init);
