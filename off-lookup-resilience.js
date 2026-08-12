@@ -13,8 +13,8 @@
     if (code.length === 12) candidates.add(`0${code}`);
     if (code.length === 13 && code.startsWith("0")) candidates.add(code.slice(1));
 
-    // GTIN-14 may similarly carry packaging indicator/zero padding. Only remove
-    // leading zero padding; never invent or alter significant digits.
+    // GTIN-14 may similarly carry zero padding. Only remove leading zero
+    // padding; never alter significant digits.
     if (code.length === 14 && code.startsWith("0")) candidates.add(code.slice(1));
     if (code.length === 14 && code.startsWith("00")) candidates.add(code.slice(2));
 
@@ -54,13 +54,35 @@
         if (await productWasFound(retryResponse)) return retryResponse;
       } catch (_) {
         // A failed equivalent lookup must never turn a valid original miss into
-        // a service failure. RecallCheck will still check the original barcode
+        // a service failure. RecallCheck still checks the original barcode
         // directly against FDA/USDA records.
       }
     }
 
     return originalResponse;
   };
+
+  // Make an Open Food Facts directory miss distinct from a scanner failure.
+  // app.js already continues with the direct FDA/USDA barcode check; this layer
+  // makes that successful fallback explicit to the user.
+  document.addEventListener("DOMContentLoaded", () => {
+    const root = document.getElementById("result-panel");
+    if (!root) return;
+    const clarified = new WeakSet();
+    const clarify = () => {
+      root.querySelectorAll(".product-identity").forEach(identity => {
+        if (clarified.has(identity)) return;
+        const heading = identity.querySelector("h3");
+        const paragraph = identity.querySelector("p");
+        if (!heading || heading.textContent.trim() !== "Product name not found") return;
+        clarified.add(identity);
+        heading.textContent = "Product details unavailable";
+        if (paragraph) paragraph.textContent = "The barcode scanned successfully, but Open Food Facts did not have a matching product record. RecallCheck still compared this barcode with the available FDA and USDA recall records.";
+      });
+    };
+    clarify();
+    new MutationObserver(clarify).observe(root, { childList: true, subtree: true });
+  });
 
   window.RecallCheckProductLookup = Object.freeze({ barcodeCandidates });
 })();
