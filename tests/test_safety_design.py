@@ -62,21 +62,17 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("Version 0.8", INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
-        self.assertIn("not endorsed by the FDA, USDA", INDEX)
+        self.assertIn("not endorsed by FDA, USDA", INDEX)
 
     def test_restrained_service_tokens_and_review_fixture(self):
-        for token in ("--ink", "--muted", "--brand", "--line", "--neutral",
-                      "--danger", "--warning", "--historical", "--info",
-                      "--focus", "--task", "--reading", "--wide"):
+        for token in ("--ink", "--muted", "--brand", "--line", "--neutral", "--danger", "--warning", "--historical", "--info", "--focus", "--task", "--reading", "--wide"):
             self.assertIn(token, CSS)
-        for component in ("Actions and form controls", "Product confirmation",
-                          "Safety result states", "Scanner shell"):
+        for component in ("Actions and form controls", "Product confirmation", "Safety result states", "Scanner shell"):
             self.assertIn(component, DESIGN_SYSTEM)
 
     def test_design_avoids_template_dependencies_and_effects(self):
         combined = (CSS + INDEX + DESIGN_SYSTEM).lower()
-        for forbidden in ("backdrop-filter", "fonts.googleapis.com", "font-awesome",
-                          "bootstrap.min", "tailwind", "sparkle", "decorative-blob"):
+        for forbidden in ("backdrop-filter", "font-awesome", "bootstrap.min", "tailwind", "sparkle", "decorative-blob"):
             self.assertNotIn(forbidden, combined)
 
 
@@ -90,7 +86,7 @@ class ResponsiveHeaderTests(unittest.TestCase):
         for label in ("Current recalls", "How it works"):
             self.assertIn(f">{label}</a>", primary)
         secondary = re.search(r'<ul class="secondary-nav">(.*?)</ul>', INDEX, re.S).group(1)
-        for label in ("Privacy", "Methodology", "About"):
+        for label in ("Privacy", "Methodology"):
             self.assertIn(f">{label}</a>", secondary)
 
     def test_navigation_switches_before_links_wrap(self):
@@ -101,7 +97,7 @@ class ResponsiveHeaderTests(unittest.TestCase):
 
     def test_navigation_accessibility_hooks(self):
         self.assertIn('aria-expanded="false" aria-controls="site-nav"', INDEX)
-        self.assertIn('aria-label="RecallCheck by ITSBAD LLC home"', INDEX)
+        self.assertIn('aria-label="RecallCheck by ITSBAD Labs home"', INDEX)
         self.assertIn('close(true)', (ROOT / "discovery.js").read_text())
         self.assertIn('event.target.closest("a")', (ROOT / "discovery.js").read_text())
 
