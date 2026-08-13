@@ -1,0 +1,45 @@
+name: Test RecallCheck site
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "index.html"
+      - "styles.css"
+      - "brand.css"
+      - "mobile-polish.css"
+      - "discovery.js"
+      - "app.js"
+      - "design-system.html"
+      - "design-review.js"
+      - "tests/test_safety_design.py"
+      - ".github/workflows/test-site.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "styles.css"
+      - "brand.css"
+      - "mobile-polish.css"
+      - "discovery.js"
+      - "app.js"
+      - "design-system.html"
+      - "design-review.js"
+      - "tests/test_safety_design.py"
+      - ".github/workflows/test-site.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  site-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run site regression tests
+        run: python3 tests/test_safety_design.py
