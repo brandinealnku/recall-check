@@ -62,6 +62,49 @@
     return originalResponse;
   };
 
+  function embeddedCameraFallbackNeeded() {
+    if (window.location.protocol !== "https:") return false;
+    return !window.isSecureContext || !navigator.mediaDevices?.getUserMedia;
+  }
+
+  function showEmbeddedCameraFallback() {
+    const dialog = document.getElementById("scanner-dialog");
+    if (dialog?.open) dialog.close();
+
+    const manual = document.getElementById("manual-section");
+    const manualButton = document.getElementById("manual-button");
+    const input = document.getElementById("barcode-input");
+    if (!manual) return;
+
+    manual.hidden = false;
+    manualButton?.setAttribute("aria-expanded", "true");
+
+    let notice = document.getElementById("camera-browser-notice");
+    if (!notice) {
+      notice = document.createElement("p");
+      notice.id = "camera-browser-notice";
+      notice.className = "field-error";
+      notice.setAttribute("role", "status");
+
+      const heading = document.getElementById("manual-title");
+      heading?.insertAdjacentElement("afterend", notice);
+    }
+
+    notice.textContent =
+      "Camera scanning isn’t available inside this in-app browser. Open RecallCheck in Safari or Chrome to scan, or enter the barcode number below.";
+
+    input?.focus();
+  }
+
+  document.addEventListener("click", event => {
+    const trigger = event.target?.closest?.("#scan-button, #correction-scan");
+    if (!trigger || !embeddedCameraFallbackNeeded()) return;
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    showEmbeddedCameraFallback();
+  }, true);
+
   // Make an Open Food Facts directory miss distinct from a scanner failure.
   // app.js already continues with the direct FDA/USDA barcode check; this layer
   // makes that successful fallback explicit to the user.
