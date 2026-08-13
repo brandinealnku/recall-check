@@ -2,6 +2,7 @@
   "use strict";
 
   const RECALL_URL = "data/recalls.json";
+  const CLEAN_RECALLCHECK_URL = "https://recallcheck.itsbadlabs.com/";
   const $ = selector => document.querySelector(selector);
 
   function formatDate(value, includeTime = false) {
@@ -76,15 +77,105 @@
     });
   }
 
+  function isLinkedInContext() {
+    const params = new URLSearchParams(window.location.search);
+    const userAgent = String(navigator.userAgent || "");
+    return params.has("linkedin") || /LinkedInApp|LinkedIn/i.test(userAgent);
+  }
+
   function cameraFallbackNeeded() {
     const isHttps = window.location.protocol === "https:";
     const cameraUnavailable = !window.isSecureContext || !navigator.mediaDevices?.getUserMedia;
-    return isHttps && cameraUnavailable;
+    return isLinkedInContext() || (isHttps && cameraUnavailable);
+  }
+
+  function ensureLinkedInNotice() {
+    if (!isLinkedInContext()) return null;
+    let notice = document.getElementById("linkedin-browser-notice");
+    if (notice) return notice;
+
+    const actions = document.querySelector(".hero-actions");
+    if (!actions) return null;
+
+    notice = document.createElement("aside");
+    notice.id = "linkedin-browser-notice";
+    notice.className = "manual-card";
+    notice.setAttribute("aria-labelledby", "linkedin-browser-title");
+
+    const title = document.createElement("h2");
+    title.id = "linkedin-browser-title";
+    title.textContent = "For barcode scanning, open RecallCheck in your browser";
+
+    const explanation = document.createElement("p");
+    explanation.textContent = "LinkedIn opens links inside its own browser, which can prevent RecallCheck from using your camera.";
+
+    const instructions = document.createElement("p");
+    instructions.innerHTML = "On iPhone, tap <strong>•••</strong> in the top-right corner and choose <strong>Open in Safari</strong>. Then tap Scan a barcode again.";
+
+    const buttonRow = document.createElement("div");
+    buttonRow.className = "actions";
+
+    const copyButton = document.createElement("button");
+    copyButton.type = "button";
+    copyButton.className = "secondary";
+    copyButton.textContent = "Copy RecallCheck link";
+
+    const copyStatus = document.createElement("span");
+    copyStatus.setAttribute("role", "status");
+    copyStatus.setAttribute("aria-live", "polite");
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(CLEAN_RECALLCHECK_URL);
+        copyStatus.textContent = " Link copied.";
+      } catch (_) {
+        const input = document.createElement("input");
+        input.value = CLEAN_RECALLCHECK_URL;
+        input.setAttribute("readonly", "");
+        input.style.position = "fixed";
+        input.style.opacity = "0";
+        document.body.append(input);
+        input.select();
+        try {
+          document.execCommand("copy");
+          copyStatus.textContent = " Link copied.";
+        } catch (_error) {
+          copyStatus.textContent = ` Copy this link: ${CLEAN_RECALLCHECK_URL}`;
+        } finally {
+          input.remove();
+        }
+      }
+    });
+
+    const manualButton = document.createElement("button");
+    manualButton.type = "button";
+    manualButton.className = "text-button";
+    manualButton.textContent = "Enter barcode manually instead";
+    manualButton.addEventListener("click", () => {
+      const section = document.getElementById("manual-section");
+      const toggle = document.getElementById("manual-button");
+      if (!section) return;
+      section.hidden = false;
+      toggle?.setAttribute("aria-expanded", "true");
+      document.getElementById("barcode-input")?.focus();
+    });
+
+    buttonRow.append(copyButton, manualButton, copyStatus);
+    notice.append(title, explanation, instructions, buttonRow);
+    actions.insertAdjacentElement("afterend", notice);
+    return notice;
   }
 
   function showCameraFallback() {
     const dialog = document.getElementById("scanner-dialog");
     if (dialog?.open) dialog.close();
+
+    if (isLinkedInContext()) {
+      const notice = ensureLinkedInNotice();
+      notice?.scrollIntoView({ behavior: "smooth", block: "center" });
+      notice?.querySelector("button")?.focus();
+      return;
+    }
 
     const manual = document.getElementById("manual-section");
     const manualButton = document.getElementById("manual-button");
@@ -103,11 +194,12 @@
       document.getElementById("manual-title")?.insertAdjacentElement("afterend", notice);
     }
 
-    notice.textContent = "Camera scanning isn’t available inside this in-app browser. Open RecallCheck in Safari or Chrome to scan, or enter the barcode number below.";
+    notice.textContent = "Camera scanning isn’t available in this browser. Open RecallCheck in Safari or Chrome to scan, or enter the barcode number below.";
     input?.focus();
   }
 
   function installCameraFallback() {
+    ensureLinkedInNotice();
     const scanButton = document.getElementById("scan-button");
     const correctionScan = document.getElementById("correction-scan");
 
