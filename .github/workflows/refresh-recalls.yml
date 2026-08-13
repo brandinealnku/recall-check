@@ -28,24 +28,118 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Fetch and normalize current official data
         run: python3 scripts/refresh_recalls_current_v2.py
-      - name: Run normalization and matching tests
-        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Run recall data tests
+        run: |
+          python3 tests/test_refresh_current.py
+          python3 tests/test_refresh_recalls.py
+
       - name: Validate all recall JSON
         run: |
           python3 -m json.tool data/recalls.json >/dev/null
           python3 -m json.tool data/demo-recalls.json >/dev/null
           python3 -m json.tool data/demo-products.json >/dev/null
           python3 -m json.tool tests/fixtures/official-recall-fixtures.json >/dev/null
+
+      - name: Validate generated recall structure
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          payload = json.loads(Path("data/recalls.json").read_text(encoding="utf-8"))
+          recalls = payload.get("recalls")
+          health = payload.get("dataHealth", {})
+          sources = health.get("sources", {})
+
+          if not isinstance(recalls, list) or not recalls:
+              raise SystemExit("Refusing to publish an empty recall dataset.")
+
+          for agency in ("FDA", "USDA"):
+              source = sources.get(agency)
+              if not isinstance(source, dict):
+                  raise SystemExit(f"Missing dataHealth metadata for {agency}.")
+              if not source.get("checkedAt"):
+                  raise SystemExit(f"Missing checkedAt for {agency}.")
+              if source.get("recordCount") is None:
+                  raise SystemExit(f"Missing recordCount for {agency}.")
+
+          agency_counts = {
+              agency: sum(item.get("agency") == agency for item in recalls)
+              for agency in ("FDA", "USDA")
+          }
+          for agency, count in agency_counts.items():
+              if count == 0:
+                  raise SystemExit(f"Refusing to publish zero {agency} records.")
+
+          print("Recall dataset structure is valid:", agency_counts)
+          PY
+
       - name: Commit changed data
         run: |
           if git diff --quiet -- data/recalls.json; then
             echo "Recall data is unchanged."
-            exit 0
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/recalls.json
+            git commit -m "chore: refresh recall data"
+            git push
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/recalls.json
-          git commit -m "chore: refresh recall data"
-          git push
+
+      - name: Enforce source freshness
+        run: |
+          python3 - <<'PY'
+          import datetime as dt
+          import json
+          from pathlib import Path
+
+          payload = json.loads(Path("data/recalls.json").read_text(encoding="utf-8"))
+          sources = payload.get("dataHealth", {}).get("sources", {})
+          now = dt.datetime.now(dt.timezone.utc)
+          problems = []
+
+          def parse_time(value):
+              if not value:
+                  return None
+              text = str(value).strip()
+              if text.endswith("Z"):
+                  text = text[:-1] + "+00:00"
+              parsed = dt.datetime.fromisoformat(text)
+              if parsed.tzinfo is None:
+                  parsed = parsed.replace(tzinfo=dt.timezone.utc)
+              return parsed.astimezone(dt.timezone.utc)
+
+          for agency in ("FDA", "USDA"):
+              source = sources.get(agency, {})
+              successful = source.get("success") is True
+              last_success = parse_time(source.get("lastSuccessfulUpdate"))
+              checked = source.get("checkedAt")
+              newest = source.get("newestRecallDate")
+
+              print(
+                  f"{agency}: success={successful}, "
+                  f"lastSuccessfulUpdate={source.get('lastSuccessfulUpdate')}, "
+                  f"checkedAt={checked}, newestRecallDate={newest}"
+              )
+
+              if not successful:
+                  problems.append(f"{agency} latest refresh failed")
+
+              if last_success is None:
+                  problems.append(f"{agency} has no lastSuccessfulUpdate")
+              else:
+                  age = now - last_success
+                  if age > dt.timedelta(hours=12):
+                      problems.append(
+                          f"{agency} last successful update is {age.total_seconds() / 3600:.1f} hours old"
+                      )
+
+          if problems:
+              raise SystemExit("; ".join(problems))
+
+          print("FDA and USDA source freshness checks passed.")
+          PY
