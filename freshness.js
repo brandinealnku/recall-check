@@ -76,7 +76,53 @@
     });
   }
 
+  function cameraFallbackNeeded() {
+    const isHttps = window.location.protocol === "https:";
+    const cameraUnavailable = !window.isSecureContext || !navigator.mediaDevices?.getUserMedia;
+    return isHttps && cameraUnavailable;
+  }
+
+  function showCameraFallback() {
+    const dialog = document.getElementById("scanner-dialog");
+    if (dialog?.open) dialog.close();
+
+    const manual = document.getElementById("manual-section");
+    const manualButton = document.getElementById("manual-button");
+    const input = document.getElementById("barcode-input");
+    if (!manual) return;
+
+    manual.hidden = false;
+    manualButton?.setAttribute("aria-expanded", "true");
+
+    let notice = document.getElementById("camera-browser-notice");
+    if (!notice) {
+      notice = document.createElement("p");
+      notice.id = "camera-browser-notice";
+      notice.className = "field-error";
+      notice.setAttribute("role", "status");
+      document.getElementById("manual-title")?.insertAdjacentElement("afterend", notice);
+    }
+
+    notice.textContent = "Camera scanning isn’t available inside this in-app browser. Open RecallCheck in Safari or Chrome to scan, or enter the barcode number below.";
+    input?.focus();
+  }
+
+  function installCameraFallback() {
+    const scanButton = document.getElementById("scan-button");
+    const correctionScan = document.getElementById("correction-scan");
+
+    [scanButton, correctionScan].filter(Boolean).forEach(button => {
+      button.addEventListener("click", event => {
+        if (!cameraFallbackNeeded()) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        showCameraFallback();
+      }, true);
+    });
+  }
+
   async function init() {
+    installCameraFallback();
     try {
       const response = await fetch(RECALL_URL, { cache: "no-store" });
       if (!response.ok) return;
