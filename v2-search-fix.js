@@ -68,9 +68,6 @@
     const brandStrength = Math.max(0, ...(recall.brandNames || []).map(value => fieldMatchStrength(query, value)));
     const productStrength = Math.max(0, ...(recall.productNames || []).map(value => fieldMatchStrength(query, value)));
     const firmStrength = fieldMatchStrength(query, recall.recallingFirm);
-
-    // Product/brand/company relevance is mandatory. Status and recency may rank
-    // a relevant record, but can never create a search match on their own.
     const lexicalStrength = Math.max(brandStrength, productStrength, firmStrength);
     if (!lexicalStrength) return 0;
 
@@ -142,22 +139,22 @@
     root.replaceChildren();
 
     if (!matches.length) {
-      status.textContent = `No product or brand matches found for “${query}”.`;
+      status.textContent = `No matching recalls found for “${query}”.`;
       const empty = make("article", null, "v2-empty-state");
       empty.append(
-        make("h3", "No matching recall records found"),
-        make("p", "RecallCheck did not find this product, brand, or recalling company in the available recall records. This does not guarantee that a product is safe."),
-        make("p", "Try the brand name alone, a more specific product name, or enter the package barcode for the strongest available check.", "v2-muted")
+        make("h3", "No matching recalls found"),
+        make("p", `We didn’t find a recall matching “${query}” in the records currently available to RecallCheck.`),
+        make("p", "Try the brand name, a more specific product name, or scan the package barcode. A search with no results does not guarantee the product is safe.", "v2-muted")
       );
       root.append(empty);
       return;
     }
 
-    status.textContent = `${matches.length} relevant recall record${matches.length === 1 ? "" : "s"} shown for “${query}”.`;
+    status.textContent = `${matches.length} relevant recall record${matches.length === 1 ? "" : "s"} found for “${query}”.`;
 
     for (const { recall, life } of matches) {
       const card = make("article", null, `v2-recall-card v2-recall-card--${life.state}`);
-      const badge = make("span", life.state === "active" ? "CURRENT" : life.state === "unknown" ? "VERIFY STATUS" : "HISTORICAL", "v2-status-badge");
+      const badge = make("span", life.state === "active" ? "CURRENT RECALL" : life.state === "unknown" ? "CHECK STATUS" : "OLDER RECALL", "v2-status-badge");
       const title = make("h3", cleanDisplayValue((recall.productNames || [])[0]) || cleanDisplayValue(recall.recallingFirm) || "Recall record");
       const meta = make("p", `${recall.agency || "Agency not listed"} · ${dateLabel(dateValue(recall))}`, "v2-recall-meta");
       const reason = make("p", cleanDisplayValue(recall.reason) || "Recall reason not listed.");
@@ -172,7 +169,7 @@
       }
       const officialUrl = safeOfficialUrl(recall);
       if (officialUrl) {
-        const official = make("a", "View official notice", "button button--secondary");
+        const official = make("a", "View official recall", "button button--secondary");
         official.href = officialUrl;
         official.target = "_blank";
         official.rel = "noopener noreferrer";
@@ -191,7 +188,7 @@
     const status = document.getElementById("v2-search-status");
     const root = document.getElementById("v2-search-results");
     if (!status || !root) return;
-    status.textContent = "Searching product and brand fields…";
+    status.textContent = "Searching available recalls…";
     root.replaceChildren();
     try {
       const data = await loadRecallData();
@@ -199,7 +196,10 @@
     } catch (_) {
       status.textContent = "Recall search is temporarily unavailable.";
       const failure = make("article", null, "v2-empty-state");
-      failure.append(make("h3", "Unable to search recalls"), make("p", "The recall data could not be loaded. Use the official FDA or USDA recall sites until RecallCheck can complete the search."));
+      failure.append(
+        make("h3", "We couldn’t search recalls"),
+        make("p", "RecallCheck couldn’t load the recall data right now. Try again, or use the official FDA or USDA recall sites to check directly.")
+      );
       root.replaceChildren(failure);
     }
   }
@@ -209,7 +209,7 @@
     if (!(form instanceof HTMLFormElement) || form.id !== "v2-search-form") return;
     const input = document.getElementById("v2-search-input");
     const query = String(input?.value || "").trim();
-    if (!query || isBarcodeQuery(query)) return; // keep the original barcode workflow
+    if (!query || isBarcodeQuery(query)) return;
     event.preventDefault();
     event.stopImmediatePropagation();
     runFixedSearch(query);
