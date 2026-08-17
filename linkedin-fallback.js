@@ -3,6 +3,15 @@
 
   const RECALLCHECK_URL = "https://recallcheck.itsbadlabs.com/";
 
+  function loadV2SearchFix() {
+    if (document.querySelector('script[data-recallcheck-v2-search-fix]')) return;
+    const fix = document.createElement("script");
+    fix.src = "v2-search-fix.js?v=2.0.1-beta";
+    fix.defer = true;
+    fix.dataset.recallcheckV2SearchFix = "true";
+    document.body.appendChild(fix);
+  }
+
   function loadV2Assets() {
     if (!document.querySelector('link[data-recallcheck-v2]')) {
       const stylesheet = document.createElement("link");
@@ -16,7 +25,10 @@
       script.src = "v2.js?v=2.0.0-beta";
       script.defer = true;
       script.dataset.recallcheckV2 = "true";
+      script.addEventListener("load", loadV2SearchFix, { once: true });
       document.body.appendChild(script);
+    } else {
+      loadV2SearchFix();
     }
   }
 
