@@ -3,6 +3,7 @@
 
   const panel = document.getElementById("result-panel");
   if (!panel) return;
+  const resultsRoot = document.getElementById("results") || panel;
 
   const states = {
     recalled: {
@@ -132,13 +133,21 @@
     result.dataset.indicatorsApplied = "true";
   }
 
-  function scan() {
-    polishHomepage();
+  function scanResults() {
     polishProductAttribution();
     panel.querySelectorAll(".result").forEach(decorate);
   }
 
-  const observer = new MutationObserver(scan);
-  observer.observe(document.body, { childList: true, subtree: true });
-  scan();
+  // Static/homepage copy only needs to be applied once. Re-run briefly after
+  // deferred V2 UI initialization in case the search card is inserted later.
+  polishHomepage();
+  requestAnimationFrame(polishHomepage);
+  setTimeout(polishHomepage, 400);
+
+  // Result copy can change as scans complete, so observe only the results area.
+  // Never observe document.body here: this script also changes text content and
+  // a body-wide observer would recursively trigger itself.
+  const observer = new MutationObserver(scanResults);
+  observer.observe(resultsRoot, { childList: true, subtree: true });
+  scanResults();
 })();
