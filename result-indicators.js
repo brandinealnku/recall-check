@@ -7,51 +7,67 @@
   const states = {
     recalled: {
       icon: "!",
-      label: "RECALLED",
-      message: "A current recall matches this product.",
-      next: "Do not eat or serve this product. Open the official recall notice and follow the agency instructions."
+      label: "RECALL FOUND",
+      message: "This product matches a current recall.",
+      next: "Do not eat or serve this product. Check the official recall notice for return, disposal, or other instructions."
     },
     verify: {
       icon: "!",
-      label: "RECALL MATCH — VERIFY PACKAGE",
-      message: "This barcode is linked to a recall, but package details still matter.",
-      next: "Do not eat or serve the product until you confirm the lot, date, package size, or other identifying details in the official notice."
+      label: "RECALL FOUND — CHECK YOUR PACKAGE",
+      message: "This barcode matches a recall, but only certain packages may be affected.",
+      next: "Before eating or serving it, compare your package’s lot number, date, size, or other details with the official recall notice."
     },
     warning: {
       icon: "?",
-      label: "VERIFY BEFORE USING",
-      message: "RecallCheck found information that needs manual verification.",
-      next: "Review the dated official recall notice before using the product."
+      label: "POSSIBLE RECALL MATCH",
+      message: "We found a recall that may be related to this product, but we can’t confirm that your package is included.",
+      next: "Check the official recall notice before eating or serving this product."
     },
     neutral: {
       icon: "i",
-      label: "NO MATCH FOUND",
-      message: "No matching current recall was found in the official records checked.",
-      next: "You can use the product identification and source details below to verify the result. No match is not a guarantee that the product is safe."
+      label: "NO CURRENT RECALL MATCH FOUND",
+      message: "We didn’t find this barcode in the current FDA or USDA recall records we checked.",
+      next: "This does not guarantee the product is safe. If something seems wrong with the product, don’t use it and check the official FDA or USDA sources."
     },
     historical: {
       icon: "↺",
-      label: "HISTORICAL RECALL",
-      message: "This barcode appears in an older recall record.",
-      next: "The listed recall is closed or terminated. Review the historical notice if you need to compare package details."
+      label: "OLDER RECALL FOUND",
+      message: "This barcode appears in an older recall that is now listed as closed or terminated.",
+      next: "If you may have an older package, compare its details with the original recall notice."
     },
     failure: {
       icon: "×",
-      label: "CHECK UNAVAILABLE",
-      message: "RecallCheck could not complete the official recall check.",
-      next: "Do not rely on this result. Use the FDA or USDA links below to check the official sources directly."
+      label: "WE COULDN’T COMPLETE THE CHECK",
+      message: "We couldn’t check all of the FDA or USDA recall data right now.",
+      next: "Try again, or use the official FDA and USDA links below to check directly."
     }
   };
 
   function classify(result) {
     const heading = (result.querySelector(".result-heading")?.textContent || "").toLowerCase();
     if (result.classList.contains("result--critical")) {
-      return heading.includes("this product is recalled") ? states.recalled : states.verify;
+      return heading.includes("this product is recalled") || heading.includes("recall found") && !heading.includes("check your package") ? states.recalled : states.verify;
     }
     if (result.classList.contains("result--warning") || result.classList.contains("result--warning-critical")) return states.warning;
     if (result.classList.contains("result--historical")) return states.historical;
     if (result.classList.contains("result--failure")) return states.failure;
     return states.neutral;
+  }
+
+  function polishProductAttribution() {
+    document.querySelectorAll(".coverage-line").forEach(node => {
+      const text = (node.textContent || "").trim();
+      if (text === "Product information supplied by Open Food Facts and may be incomplete.") {
+        node.textContent = "Product details come from Open Food Facts and may not always be complete or correct.";
+      }
+    });
+  }
+
+  function polishHomepage() {
+    const lede = document.querySelector(".hero .lede");
+    if (lede) lede.textContent = "Scan a food barcode to see whether it matches a current FDA or USDA recall.";
+    const confirmationNote = document.getElementById("confirmation-note");
+    if (confirmationNote) confirmationNote.textContent = "Product details come from Open Food Facts and may not always be complete or correct.";
   }
 
   function decorate(result) {
@@ -100,14 +116,19 @@
     if (summary) summary.after(next);
     else result.append(next);
 
+    const heading = result.querySelector(".result-heading");
+    if (heading) heading.textContent = state.label.charAt(0) + state.label.slice(1).toLowerCase();
+
     result.dataset.indicatorsApplied = "true";
   }
 
   function scan() {
+    polishHomepage();
+    polishProductAttribution();
     panel.querySelectorAll(".result").forEach(decorate);
   }
 
   const observer = new MutationObserver(scan);
-  observer.observe(panel, { childList: true, subtree: true });
+  observer.observe(document.body, { childList: true, subtree: true });
   scan();
 })();
