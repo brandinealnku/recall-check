@@ -3,6 +3,23 @@
 
   const RECALLCHECK_URL = "https://recallcheck.itsbadlabs.com/";
 
+  function loadV2Assets() {
+    if (!document.querySelector('link[data-recallcheck-v2]')) {
+      const stylesheet = document.createElement("link");
+      stylesheet.rel = "stylesheet";
+      stylesheet.href = "v2.css?v=2.0.0-beta";
+      stylesheet.dataset.recallcheckV2 = "true";
+      document.head.appendChild(stylesheet);
+    }
+    if (!document.querySelector('script[data-recallcheck-v2]')) {
+      const script = document.createElement("script");
+      script.src = "v2.js?v=2.0.0-beta";
+      script.defer = true;
+      script.dataset.recallcheckV2 = "true";
+      document.body.appendChild(script);
+    }
+  }
+
   function isLinkedInBrowser() {
     const ua = navigator.userAgent || "";
     const referrer = document.referrer || "";
@@ -113,6 +130,7 @@
   }
 
   function installGuard() {
+    loadV2Assets();
     cleanLegacyFallback();
     const scanButton = document.getElementById("scan-button");
     if (!scanButton) return;

@@ -1,0 +1,27 @@
+.v2-search-card{margin:1.35rem 0 1rem;padding:1.15rem;border:1px solid rgba(255,255,255,.13);border-radius:18px;background:rgba(255,255,255,.045);box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.v2-eyebrow{margin:0 0 .3rem;font-size:.74rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;opacity:.72}
+.v2-search-card h2{margin:.1rem 0 .45rem;font-size:clamp(1.25rem,4vw,1.65rem)}
+.v2-search-intro{margin:0 0 1rem;max-width:62ch;opacity:.86}
+.v2-search-form{display:grid;gap:.5rem}
+.v2-search-form label{font-weight:750}
+.v2-search-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem;align-items:stretch}
+.v2-search-row input{min-width:0;width:100%;min-height:48px;border-radius:12px;padding:.75rem .9rem;font:inherit}
+.v2-search-row button{min-height:48px;white-space:nowrap}
+.v2-search-form small{line-height:1.45;opacity:.72}
+.v2-search-status{min-height:1.45em;margin:.8rem 0 0;font-weight:650}
+.v2-search-results{display:grid;gap:.75rem;margin-top:.65rem}
+.v2-recall-card,.v2-empty-state{position:relative;padding:1rem;border-radius:15px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11)}
+.v2-recall-card h3,.v2-empty-state h3{margin:.4rem 0 .2rem;font-size:1.08rem}
+.v2-recall-card p,.v2-empty-state p{margin:.4rem 0}
+.v2-status-badge{display:inline-flex;align-items:center;min-height:25px;padding:.2rem .5rem;border-radius:999px;font-size:.7rem;font-weight:850;letter-spacing:.08em}
+.v2-recall-card--active .v2-status-badge{background:#8b1e2d;color:#fff}
+.v2-recall-card--closed .v2-status-badge,.v2-recall-card--terminated .v2-status-badge{background:rgba(255,255,255,.12)}
+.v2-recall-card--unknown .v2-status-badge{background:#8a6410;color:#fff}
+.v2-recall-meta,.v2-muted{font-size:.9rem;opacity:.76}
+.v2-result-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.8rem}
+.v2-result-actions .button{min-height:42px}
+.v2-source-strip{margin:.55rem 0 0;padding:.65rem .8rem;border-radius:12px;background:rgba(255,255,255,.04);font-size:.78rem;line-height:1.5;opacity:.86}
+.v2-source-strip--warning{border:1px solid rgba(214,153,31,.45)}
+.v2-browser-notice{margin:0 0 1rem;padding:.8rem .9rem;border-radius:12px;border:1px solid rgba(214,153,31,.4);background:rgba(214,153,31,.09);line-height:1.45}
+@media (max-width:680px){.v2-search-card{margin-left:0;margin-right:0;padding:1rem}.v2-search-row{grid-template-columns:1fr}.v2-search-row button{width:100%}.v2-result-actions{display:grid}.v2-result-actions .button{width:100%;justify-content:center}.v2-source-strip{font-size:.76rem}}
+@media (prefers-reduced-motion:reduce){.v2-search-card,.v2-recall-card{scroll-behavior:auto}}
