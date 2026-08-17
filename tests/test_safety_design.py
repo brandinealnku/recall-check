@@ -1,4 +1,4 @@
-"""Static regression checks for the Version 0.8 safety-state contract."""
+"""Static regression checks for the RecallCheck V2.1 safety-state contract."""
 from pathlib import Path
 import re
 import unittest
@@ -59,7 +59,7 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertRegex(CSS, r"@media\s*\(max-width:\s*640px\)")
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 0.8", INDEX)
+        self.assertIn("Version 2.1.0-beta", INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
