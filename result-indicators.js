@@ -46,7 +46,7 @@
   function classify(result) {
     const heading = (result.querySelector(".result-heading")?.textContent || "").toLowerCase();
     if (result.classList.contains("result--critical")) {
-      return heading.includes("this product is recalled") || heading.includes("recall found") && !heading.includes("check your package") ? states.recalled : states.verify;
+      return heading.includes("this product is recalled") || (heading.includes("recall found") && !heading.includes("check your package")) ? states.recalled : states.verify;
     }
     if (result.classList.contains("result--warning") || result.classList.contains("result--warning-critical")) return states.warning;
     if (result.classList.contains("result--historical")) return states.historical;
@@ -66,8 +66,18 @@
   function polishHomepage() {
     const lede = document.querySelector(".hero .lede");
     if (lede) lede.textContent = "Scan a food barcode to see whether it matches a current FDA or USDA recall.";
+
     const confirmationNote = document.getElementById("confirmation-note");
     if (confirmationNote) confirmationNote.textContent = "Product details come from Open Food Facts and may not always be complete or correct.";
+
+    const searchTitle = document.getElementById("v2-search-title");
+    if (searchTitle) searchTitle.textContent = "Search by product, brand, or barcode";
+
+    const searchIntro = document.querySelector(".v2-search-intro");
+    if (searchIntro) searchIntro.textContent = "Don’t have the package handy? Search by product or brand. For the most precise check, scan or enter the barcode.";
+
+    const searchHelp = document.getElementById("v2-search-help");
+    if (searchHelp) searchHelp.textContent = "Search by product or brand, or use the package barcode for the most precise check.";
   }
 
   function decorate(result) {
