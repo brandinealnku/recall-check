@@ -228,9 +228,30 @@
     const text = (result.textContent || "").toLowerCase();
     if (!(text.includes("product information") || text.includes("name unavailable") || text.includes("could not identify"))) return;
     if (result.querySelector("[data-identity-caution]")) return;
-    const caution = el("p", "Product identity could not be confirmed from this barcode. Any recall result reflects barcode matching only; compare package details with the official notice.", "about-check-health about-check-health--warning");
+    const caution = el("p", "Product identity could not be confirmed from this barcode. RecallCheck still checked the barcode against the official recall records available for this check.", "identity-note");
     caution.dataset.identityCaution = "true";
-    (result.querySelector(".result-summary") || result).prepend(caution);
+    const summary = result.querySelector(".result-summary") || result;
+    summary.prepend(caution);
+    if (isNoMatch(result) && allHealthy()) {
+      const heading = result.querySelector(".result-heading");
+      const instruction = result.querySelector(".result-instruction");
+      if (heading) heading.textContent = "No recall match found for this barcode";
+      if (instruction) instruction.textContent = "We did not find this barcode in the FDA or USDA recall records checked. This does not guarantee the product is safe or that every recall can be identified by barcode.";
+    }
+  }
+
+  function relabelResultRefresh(result) {
+    result.querySelectorAll(".coverage-line").forEach(line => {
+      const text = (line.textContent || "").trim();
+      if (/^Updated\s/i.test(text)) line.textContent = text.replace(/^Updated\s/i, "RecallCheck data refresh: ");
+    });
+  }
+
+  function simplifyFeedback(result) {
+    const feedback = result.querySelector(".feedback");
+    if (!feedback) return;
+    const disabled = window.RecallCheck?.feedbackMode?.() === "disabled";
+    if (disabled) feedback.remove();
   }
 
   function enhancePackageVerification(result) {
@@ -252,6 +273,7 @@
     result.querySelector(".result-provenance")?.remove();
     result.querySelector(".trust-summary")?.remove();
     result.querySelector(".transparency")?.remove();
+    simplifyFeedback(result);
     const feedback = result.querySelector(".feedback");
     const repeat = result.querySelector(".result-actions");
     result.insertBefore(about, feedback || repeat || null);
@@ -264,6 +286,7 @@
     if (!result || !sourceStatus) return;
     degradeNoMatch(result);
     productIdentityCaution(result);
+    relabelResultRefresh(result);
     enhancePackageVerification(result);
     simplifyTrustUI(result);
   }
