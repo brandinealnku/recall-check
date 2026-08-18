@@ -1,7 +1,7 @@
 (() => {
   "use strict";
-  const VERSION = "3.1.0-beta";
-  const RESPONSIVE_CSS = "recallcheck-v3-responsive.css?v=3.1.0-beta";
+  const VERSION = "3.2.0-beta";
+  const RESPONSIVE_CSS = "recallcheck-v3-responsive.css?v=3.2.0-beta";
   const $ = id => document.getElementById(id);
 
   function ensureResponsiveStyles(){
