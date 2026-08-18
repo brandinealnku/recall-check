@@ -10,6 +10,7 @@ RESPONSIVE = (ROOT / "recallcheck-v3-responsive.css").read_text()
 INDEX = (ROOT / "index.html").read_text()
 DISCOVERY = (ROOT / "discovery.js").read_text()
 V3 = (ROOT / "recallcheck-v3.js").read_text()
+FRESHNESS = (ROOT / "freshness.js").read_text()
 PAGES = [
     (ROOT / "recalls.html").read_text(),
     (ROOT / "recall.html").read_text(),
@@ -42,6 +43,8 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("We didn\'t find this barcode in the FDA or USDA recall data checked.", APP)
         self.assertIn("not a food-safety guarantee", INDEX)
         self.assertIn('tone:"neutral-result"', APP)
+        self.assertIn("This is a partial recall check.", FRESHNESS)
+        self.assertIn("FDA coverage is currently incomplete", FRESHNESS)
 
     def test_accessibility_media_and_focus_rules(self):
         self.assertIn("prefers-reduced-motion:reduce", CSS)
@@ -51,7 +54,7 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("prefers-reduced-motion: reduce", RESPONSIVE)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 3.3.0-beta", INDEX)
+        self.assertIn("Version 3.3.1-beta", INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
@@ -60,6 +63,7 @@ class ConsolidationTests(unittest.TestCase):
     def test_home_uses_v3_design_system_and_responsive_layer(self):
         self.assertIn('recallcheck-v3.css?v=3.0.0-beta', INDEX)
         self.assertIn('recallcheck-v3-responsive.css?v=3.3.0-beta', INDEX)
+        self.assertIn('freshness.js?v=3.3.1-coverage', INDEX)
         for legacy in ("styles.css", "brand.css", "mobile-polish.css", "v2-1.css", "consumer-ux.css", "v2-3.css", "v2-4.css"):
             self.assertNotIn(f'href="{legacy}', INDEX)
 
@@ -113,9 +117,10 @@ class ConsolidationTests(unittest.TestCase):
     def test_current_recall_context_explains_source_and_quality(self):
         self.assertIn("Newest displayed current record", V3)
         self.assertIn("Source coverage note", V3)
-        self.assertIn("authoritativeNewestRecallDate", V3)
         self.assertIn("data-current-list-summary", (ROOT / "recalls.html").read_text())
         self.assertIn("data-recent-summary", INDEX)
+        self.assertIn("official-fda-multi-surface-union-v1", FRESHNESS)
+        self.assertNotIn("official listing newest", FRESHNESS)
 
     def test_v3_avoids_template_dependencies_and_effects(self):
         combined = (CSS + RESPONSIVE + INDEX).lower()

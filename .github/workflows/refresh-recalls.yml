@@ -9,8 +9,10 @@ on:
       - "scripts/refresh_recalls_current.py"
       - "scripts/refresh_recalls_current_v2.py"
       - "scripts/refresh_recalls_current_v3.py"
+      - "scripts/refresh_recalls_current_v4.py"
       - "scripts/write_source_status.py"
       - "tests/test_fda_live_augmentation.py"
+      - "tests/test_fda_source_union.py"
       - "tests/test_source_quality.py"
       - ".github/workflows/refresh-recalls.yml"
   schedule:
@@ -34,7 +36,7 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch and normalize current official data
-        run: python3 scripts/refresh_recalls_current_v3.py
+        run: python3 scripts/refresh_recalls_current_v4.py
 
       - name: Write compact source-status snapshot
         run: python3 scripts/write_source_status.py
@@ -45,6 +47,7 @@ jobs:
           python3 tests/test_refresh_recalls.py
           python3 tests/test_source_quality.py
           python3 tests/test_fda_live_augmentation.py
+          python3 tests/test_fda_source_union.py
 
       - name: Validate all recall JSON
         run: |
@@ -86,6 +89,14 @@ jobs:
               for key in ("current", "qualityStatus", "recordCount", "newestRecallDate"):
                   if compact.get(key) != source.get(key):
                       raise SystemExit(f"source-status mismatch for {agency}.{key}")
+
+          fda = sources.get("FDA", {})
+          if fda.get("coverageMethod") != "official-fda-multi-surface-union-v1":
+              raise SystemExit("FDA is not using the multi-source coverage model.")
+          surfaces = fda.get("surfaces", {})
+          for name in ("annualAnnouncements", "publicAlerts", "enforcement"):
+              if not isinstance(surfaces.get(name), dict):
+                  raise SystemExit(f"Missing FDA source surface metadata: {name}")
 
           agency_counts = {
               agency: sum(item.get("agency") == agency for item in recalls)
@@ -143,21 +154,24 @@ jobs:
               last_success = parse_time(source.get("lastSuccessfulUpdate"))
               checked = source.get("checkedAt")
               newest = source.get("newestRecallDate")
-              authority_newest = source.get("authoritativeNewestRecallDate")
 
               print(
                   f"{agency}: success={successful}, current={current}, qualityStatus={quality}, "
                   f"lastSuccessfulUpdate={source.get('lastSuccessfulUpdate')}, checkedAt={checked}, "
-                  f"newestRecallDate={newest}, authoritativeNewestRecallDate={authority_newest}"
+                  f"newestRecallDate={newest}"
               )
 
               if not successful:
-                  failures.append(f"{agency} latest source retrieval failed")
+                  failures.append(f"{agency} latest official-source retrieval failed")
 
               if successful and not current:
-                  detail = f"{agency} data quality is {quality or 'unknown'}"
-                  if authority_newest:
-                      detail += f" (RecallCheck newest {newest}; official newest {authority_newest})"
+                  detail = f"{agency} coverage is {quality or 'unknown'}"
+                  failed_surfaces = [
+                      name for name, status in (source.get("surfaces") or {}).items()
+                      if status.get("success") is not True
+                  ]
+                  if failed_surfaces:
+                      detail += f" (failed surfaces: {', '.join(failed_surfaces)})"
                   warnings.append(detail)
 
               if last_success is None:
@@ -176,7 +190,7 @@ jobs:
               raise SystemExit("; ".join(failures))
 
           if warnings:
-              print("Recall data refresh completed with source-quality warnings. Published metadata will warn consumers.")
+              print("Recall data refresh completed with coverage warnings. Published metadata will warn consumers.")
           else:
-              print("FDA and USDA retrieval and data-quality checks passed.")
+              print("FDA multi-source coverage and USDA retrieval checks passed.")
           PY
