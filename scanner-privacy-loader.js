@@ -37,20 +37,13 @@
   }
 
   class LazyBrowserMultiFormatReader {
-    constructor(...args) {
-      this.args = args;
-      this.reader = null;
-    }
-
+    constructor(...args) { this.args = args; this.reader = null; }
     async decodeFromConstraints(...args) {
       const lib = await loadZXing();
       this.reader = new lib.BrowserMultiFormatReader(...this.args);
       return this.reader.decodeFromConstraints(...args);
     }
-
-    reset(...args) {
-      return this.reader?.reset?.(...args);
-    }
+    reset(...args) { return this.reader?.reset?.(...args); }
   }
 
   const lazyFacade = {
@@ -63,6 +56,23 @@
     }
   };
 
+  function loadMobileUtilities() {
+    if (!document.querySelector('link[href="pwa-share.css"]')) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "pwa-share.css";
+      document.head.appendChild(link);
+    }
+    if (!document.querySelector('script[src="pwa-share.js"]')) {
+      const script = document.createElement("script");
+      script.src = "pwa-share.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+  }
+
   if (!window.ZXingBrowser) window.ZXingBrowser = lazyFacade;
   window.RecallCheckScannerLoader = Object.freeze({ load: loadZXing });
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", loadMobileUtilities, { once: true });
+  else loadMobileUtilities();
 })();
