@@ -34,27 +34,22 @@ for agency in ("FDA", "USDA"):
             "checkedAt",
             "lastSuccessfulUpdate",
             "newestRecallDate",
-            "authoritativeNewestRecallDate",
-            "freshnessValidated",
-            "freshnessValidatedAt",
-            "freshnessLagDays",
-            "validationMethod",
-            "livePublicRowsSeen",
-            "livePublicRowsAdded",
+            "coverageComplete",
+            "coverageMethod",
+            "surfaces",
         )
         if key in source
     }
 
-live_fda = [
-    item for item in recalls
-    if item.get("agency") == "FDA"
-    and str(item.get("id") or "").startswith("FDA-PUBLIC-")
-]
-live_fda.sort(
+# Keep a small human-auditable sample of FDA records and the official surfaces that
+# contributed to each normalized record. This is diagnostic metadata, not a second
+# recall database.
+fda_records = [item for item in recalls if item.get("agency") == "FDA"]
+fda_records.sort(
     key=lambda item: str(item.get("recallDate") or (item.get("timeline") or {}).get("recallDate") or ""),
     reverse=True,
 )
-snapshot["liveFdaRows"] = [
+snapshot["fdaSample"] = [
     {
         "id": item.get("id"),
         "date": item.get("recallDate") or (item.get("timeline") or {}).get("recallDate"),
@@ -62,8 +57,9 @@ snapshot["liveFdaRows"] = [
         "product": item.get("productDescription") or item.get("title"),
         "reason": item.get("reason"),
         "officialUrl": item.get("officialUrl"),
+        "sourceSurfaces": item.get("sourceSurfaces") or [],
     }
-    for item in live_fda[:20]
+    for item in fda_records[:20]
 ]
 
 OUTPUT.write_text(json.dumps(snapshot, indent=2, sort_keys=True) + "\n", encoding="utf-8")
