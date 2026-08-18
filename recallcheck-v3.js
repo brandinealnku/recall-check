@@ -1,7 +1,17 @@
 (() => {
   "use strict";
-  const VERSION = "3.0.0-beta";
+  const VERSION = "3.1.0-beta";
+  const RESPONSIVE_CSS = "recallcheck-v3-responsive.css?v=3.1.0-beta";
   const $ = id => document.getElementById(id);
+
+  function ensureResponsiveStyles(){
+    if(document.querySelector('link[data-recallcheck-responsive]')) return;
+    const link=document.createElement("link");
+    link.rel="stylesheet";
+    link.href=RESPONSIVE_CSS;
+    link.dataset.recallcheckResponsive="true";
+    document.head.append(link);
+  }
 
   function sentenceCase(value){const t=String(value||"").trim();return t?t.charAt(0).toUpperCase()+t.slice(1):""}
   function shortenOfficialTitle(title){
@@ -35,6 +45,51 @@
   function enhanceRecallCards(root=document){root.querySelectorAll?.(".recall-card").forEach(enhanceRecallCard)}
   function watchRecallCards(){enhanceRecallCards();document.querySelectorAll(".recall-grid").forEach(root=>new MutationObserver(()=>enhanceRecallCards(root)).observe(root,{childList:true}))}
 
+  function formatDate(value){
+    const time=Date.parse(value||"");
+    return Number.isFinite(time)?new Intl.DateTimeFormat("en-US",{year:"numeric",month:"short",day:"numeric",timeZone:"UTC"}).format(time):"date unavailable";
+  }
+  function sourceName(agency){return agency==="USDA"?"USDA FSIS":agency}
+  function sourceNeedsAttention(source){return Boolean(source&&(source.current===false||["stale","unverified"].includes(source.qualityStatus)||source.success===false))}
+  function collectionContextNode(kind){
+    const existing=document.querySelector(`[data-${kind}-summary]`);if(existing)return existing;
+    const p=document.createElement("p");p.className="collection-context";p.dataset[`${kind}Summary`]="true";p.setAttribute("role","status");p.setAttribute("aria-live","polite");
+    if(kind==="recent") document.querySelector(".recent-section .section-heading")?.insertAdjacentElement("afterend",p);
+    else document.querySelector(".filters")?.insertAdjacentElement("beforebegin",p);
+    return p;
+  }
+  async function setRecallCollectionContext(){
+    if(!document.querySelector("[data-recent], [data-recall-list]"))return;
+    try{
+      const response=await fetch("data/recalls.json",{cache:"no-store"});if(!response.ok)return;
+      const data=await response.json();
+      const current=window.RecallDiscovery?.currentRecalls?.(data.recalls)||[];
+      const newest=current[0];if(!newest)return;
+      const date=newest.recallDate||newest.timeline?.recallDate;
+      const sources=data?.dataHealth?.sources||{};
+      const attention=Object.entries(sources).filter(([,source])=>sourceNeedsAttention(source));
+      let text=`Newest displayed current record: ${sourceName(newest.agency)} · ${formatDate(date)}.`;
+      if(attention.length){
+        const details=attention.map(([agency,source])=>{
+          if(source.qualityStatus==="stale"){
+            const rc=source.newestRecallDate?`RecallCheck ${formatDate(source.newestRecallDate)}`:"RecallCheck date unavailable";
+            const official=source.authoritativeNewestRecallDate?`official listing ${formatDate(source.authoritativeNewestRecallDate)}`:"official freshness not verified";
+            return `${sourceName(agency)} data may be incomplete (${rc}; ${official})`;
+          }
+          if(source.success===false)return `${sourceName(agency)} source retrieval failed`;
+          return `${sourceName(agency)} freshness is not independently verified`;
+        });
+        text+=` Source coverage note: ${details.join("; ")}.`;
+      }
+      ["recent","currentList"].forEach(kind=>{
+        const selector=kind==="recent"?"[data-recent]":"[data-recall-list]";
+        if(!document.querySelector(selector))return;
+        const node=collectionContextNode(kind);if(!node)return;
+        node.textContent=text;node.dataset.warning=String(attention.length>0);
+      });
+    }catch(_){/* Existing source-status UI remains authoritative. */}
+  }
+
   function polishSearch(){
     const title=$("v2-search-title");if(title)title.textContent="Search by product or brand";
     const intro=document.querySelector(".v2-search-intro");if(intro)intro.textContent="Don’t have the package? Search the recall records by product or brand.";
@@ -55,7 +110,7 @@
   function removeTestUI(){document.querySelector("details.demo")?.setAttribute("hidden","");$("session-history")?.setAttribute("hidden","")}
   function syncResultMode(){const r=$("results");if(r)document.body.classList.toggle("rc-has-results",!r.hidden)}
   function watchResults(){const r=$("results");if(!r)return;syncResultMode();new MutationObserver(syncResultMode).observe(r,{attributes:true,attributeFilter:["hidden"]})}
-  function init(){setVersion();polishSearch();addCheckAnother();removeTestUI();watchRecallCards();watchResults();setTimeout(polishSearch,450)}
+  function init(){ensureResponsiveStyles();setVersion();polishSearch();addCheckAnother();removeTestUI();watchRecallCards();watchResults();setRecallCollectionContext();setTimeout(polishSearch,450)}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
   window.RecallCheckV3=Object.freeze({VERSION,shortenOfficialTitle,hazardFromTitle});
 })();
