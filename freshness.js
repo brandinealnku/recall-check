@@ -3,7 +3,9 @@
 
   const RECALL_URL = "data/recalls.json";
   const CLEAN_RECALLCHECK_URL = "https://recallcheck.itsbadlabs.com/";
+  const FDA_RECALLS_URL = "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts";
   const $ = selector => document.querySelector(selector);
+  let coverageData = null;
 
   function formatDate(value, includeTime = false) {
     const time = Date.parse(value || "");
@@ -18,35 +20,50 @@
     return Boolean(source?.success && source?.current === true && source?.qualityStatus === "current");
   }
 
+  function failedSurfaceNames(source) {
+    const labels = {
+      annualAnnouncements: "FDA recall announcements",
+      publicAlerts: "FDA public recall alerts",
+      enforcement: "FDA enforcement reports",
+    };
+    return Object.entries(source?.surfaces || {})
+      .filter(([, status]) => status?.success !== true)
+      .map(([name]) => labels[name] || name);
+  }
+
   function sourceSummary(agency, source) {
     if (!source) return `${agency}: status unavailable`;
     const checked = formatDate(source.checkedAt || source.retrievedAt, true);
     const newest = source.newestRecallDate
-      ? `RecallCheck newest record ${formatDate(source.newestRecallDate)}`
-      : "RecallCheck newest record unavailable";
-    const authority = source.authoritativeNewestRecallDate
-      ? `official listing newest ${formatDate(source.authoritativeNewestRecallDate)}`
-      : "";
+      ? `newest RecallCheck record ${formatDate(source.newestRecallDate)}`
+      : "newest RecallCheck record unavailable";
 
     if (!source.success) {
       const lastGood = source.lastSuccessfulUpdate;
-      return `${agency}: latest source check failed · last successful retrieval ${formatDate(lastGood, true)} · ${newest}`;
+      return `${agency}: latest official-source check failed · last successful retrieval ${formatDate(lastGood, true)} · ${newest}`;
     }
 
-    if (source.qualityStatus === "stale" || source.current === false && source.freshnessValidated) {
-      return `${agency}: data may be incomplete · checked ${checked} · ${newest}${authority ? ` · ${authority}` : ""}`;
+    if (source.qualityStatus === "degraded" || source.coverageComplete === false) {
+      const failed = failedSurfaceNames(source);
+      return `${agency}: coverage degraded · checked ${checked} · ${newest}${failed.length ? ` · unavailable: ${failed.join(", ")}` : ""}`;
     }
 
-    if (source.qualityStatus === "unverified" || source.freshnessValidated === false) {
-      return `${agency}: source reached successfully ${checked}, but freshness could not be independently verified · ${newest}`;
+    if (source.qualityStatus === "stale") {
+      return `${agency}: data may be incomplete · checked ${checked} · ${newest}`;
+    }
+
+    if (source.qualityStatus === "unverified") {
+      return `${agency}: source reached successfully ${checked}, but coverage could not be verified · ${newest}`;
     }
 
     if (sourceIsCurrent(source)) {
-      return `${agency}: current · checked successfully ${checked} · ${newest}${authority ? ` · ${authority}` : ""}`;
+      if (source.coverageMethod === "official-fda-multi-surface-union-v1") {
+        return `${agency}: current across FDA announcement, public-alert, and enforcement sources · checked ${checked} · ${newest}`;
+      }
+      return `${agency}: current · checked successfully ${checked} · ${newest}`;
     }
 
-    // Backward-compatible wording for older datasets that predate source-quality fields.
-    return `${agency}: source reached successfully ${checked} · freshness not yet validated · ${newest}`;
+    return `${agency}: source reached successfully ${checked} · coverage status unavailable · ${newest}`;
   }
 
   function applyHomepageSummary(data) {
@@ -59,8 +76,8 @@
 
     if (notice) {
       notice.textContent = bothCurrent
-        ? "FDA + USDA data current"
-        : "Some official data needs attention";
+        ? "FDA + USDA coverage current"
+        : "Official-source coverage needs attention";
     }
     if (footer) {
       footer.textContent = `Official sources last checked ${formatDate(data?.dataHealth?.checkedAt || data?.generatedAt, true)}.`;
@@ -73,7 +90,7 @@
       wrap.dataset.sourceFreshness = "true";
       const heading = document.createElement("p");
       const strong = document.createElement("strong");
-      strong.textContent = "Source freshness";
+      strong.textContent = "Official-source coverage";
       heading.append(strong);
       wrap.append(heading);
       [sourceSummary("FDA", fda), sourceSummary("USDA FSIS", usda)].forEach(value => {
@@ -100,6 +117,41 @@
     });
   }
 
+  function guardNoMatchWhenCoverageDegraded() {
+    const panel = document.getElementById("result-panel");
+    if (!panel || !coverageData) return;
+    const fda = coverageData?.dataHealth?.sources?.FDA;
+    if (sourceIsCurrent(fda)) return;
+    const text = String(panel.textContent || "").toLowerCase();
+    if (!text.includes("no current recall match found") && !text.includes("no matching current recall")) return;
+    if (panel.querySelector("[data-coverage-caution]")) return;
+
+    const warning = document.createElement("section");
+    warning.className = "notice notice--warning";
+    warning.dataset.coverageCaution = "true";
+    warning.setAttribute("role", "status");
+    const strong = document.createElement("strong");
+    strong.textContent = "This is a partial recall check.";
+    const body = document.createElement("p");
+    body.textContent = "FDA coverage is currently incomplete, so this no-match result only reflects the official records RecallCheck could retrieve.";
+    const link = document.createElement("a");
+    link.href = FDA_RECALLS_URL;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = "Check current FDA recalls";
+    warning.append(strong, body, link);
+    panel.prepend(warning);
+  }
+
+  function watchResultCoverage() {
+    const panel = document.getElementById("result-panel");
+    const results = document.getElementById("results");
+    if (!panel) return;
+    const observer = new MutationObserver(() => guardNoMatchWhenCoverageDegraded());
+    observer.observe(panel, { childList: true, subtree: true });
+    if (results) new MutationObserver(() => guardNoMatchWhenCoverageDegraded()).observe(results, { attributes: true, attributeFilter: ["hidden"] });
+  }
+
   function isLinkedInContext() {
     const params = new URLSearchParams(window.location.search);
     const userAgent = String(navigator.userAgent || "");
@@ -116,7 +168,6 @@
     if (!isLinkedInContext()) return null;
     let notice = document.getElementById("linkedin-browser-notice");
     if (notice) return notice;
-
     const actions = document.querySelector(".hero-actions");
     if (!actions) return null;
 
@@ -124,29 +175,22 @@
     notice.id = "linkedin-browser-notice";
     notice.className = "manual-card";
     notice.setAttribute("aria-labelledby", "linkedin-browser-title");
-
     const title = document.createElement("h2");
     title.id = "linkedin-browser-title";
     title.textContent = "For barcode scanning, open RecallCheck in your browser";
-
     const explanation = document.createElement("p");
     explanation.textContent = "LinkedIn opens links inside its own browser, which can prevent RecallCheck from using your camera.";
-
     const instructions = document.createElement("p");
-    instructions.innerHTML = "On iPhone, tap <strong>•••</strong> in the top-right corner and choose <strong>Open in Safari</strong>. Then tap Scan a barcode again.";
-
+    instructions.innerHTML = "On iPhone, tap <strong>•••</strong> in the top-right corner and choose <strong>Open in Safari</strong>. Then tap Scan barcode again.";
     const buttonRow = document.createElement("div");
     buttonRow.className = "actions";
-
     const copyButton = document.createElement("button");
     copyButton.type = "button";
     copyButton.className = "secondary";
     copyButton.textContent = "Copy RecallCheck link";
-
     const copyStatus = document.createElement("span");
     copyStatus.setAttribute("role", "status");
     copyStatus.setAttribute("aria-live", "polite");
-
     copyButton.addEventListener("click", async () => {
       try {
         await navigator.clipboard.writeText(CLEAN_RECALLCHECK_URL);
@@ -159,17 +203,11 @@
         input.style.opacity = "0";
         document.body.append(input);
         input.select();
-        try {
-          document.execCommand("copy");
-          copyStatus.textContent = " Link copied.";
-        } catch (_error) {
-          copyStatus.textContent = ` Copy this link: ${CLEAN_RECALLCHECK_URL}`;
-        } finally {
-          input.remove();
-        }
+        try { document.execCommand("copy"); copyStatus.textContent = " Link copied."; }
+        catch (_error) { copyStatus.textContent = ` Copy this link: ${CLEAN_RECALLCHECK_URL}`; }
+        finally { input.remove(); }
       }
     });
-
     const manualButton = document.createElement("button");
     manualButton.type = "button";
     manualButton.className = "text-button";
@@ -182,7 +220,6 @@
       toggle?.setAttribute("aria-expanded", "true");
       document.getElementById("barcode-input")?.focus();
     });
-
     buttonRow.append(copyButton, manualButton, copyStatus);
     notice.append(title, explanation, instructions, buttonRow);
     actions.insertAdjacentElement("afterend", notice);
@@ -192,22 +229,18 @@
   function showCameraFallback() {
     const dialog = document.getElementById("scanner-dialog");
     if (dialog?.open) dialog.close();
-
     if (isLinkedInContext()) {
       const notice = ensureLinkedInNotice();
       notice?.scrollIntoView({ behavior: "smooth", block: "center" });
       notice?.querySelector("button")?.focus();
       return;
     }
-
     const manual = document.getElementById("manual-section");
     const manualButton = document.getElementById("manual-button");
     const input = document.getElementById("barcode-input");
     if (!manual) return;
-
     manual.hidden = false;
     manualButton?.setAttribute("aria-expanded", "true");
-
     let notice = document.getElementById("camera-browser-notice");
     if (!notice) {
       notice = document.createElement("p");
@@ -216,7 +249,6 @@
       notice.setAttribute("role", "status");
       document.getElementById("manual-title")?.insertAdjacentElement("afterend", notice);
     }
-
     notice.textContent = "Camera scanning isn’t available in this browser. Open RecallCheck in Safari or Chrome to scan, or enter the barcode number below.";
     input?.focus();
   }
@@ -225,7 +257,6 @@
     ensureLinkedInNotice();
     const scanButton = document.getElementById("scan-button");
     const correctionScan = document.getElementById("correction-scan");
-
     [scanButton, correctionScan].filter(Boolean).forEach(button => {
       button.addEventListener("click", event => {
         if (!cameraFallbackNeeded()) return;
@@ -238,15 +269,16 @@
 
   async function init() {
     installCameraFallback();
+    watchResultCoverage();
     try {
       const response = await fetch(RECALL_URL, { cache: "no-store" });
       if (!response.ok) return;
-      const data = await response.json();
-      applyHomepageSummary(data);
-      setListingSummary(data);
-
-      setTimeout(() => applyHomepageSummary(data), 250);
-      setTimeout(() => applyHomepageSummary(data), 1000);
+      coverageData = await response.json();
+      applyHomepageSummary(coverageData);
+      setListingSummary(coverageData);
+      guardNoMatchWhenCoverageDegraded();
+      setTimeout(() => applyHomepageSummary(coverageData), 250);
+      setTimeout(() => applyHomepageSummary(coverageData), 1000);
     } catch (_) {
       // Existing page-level unavailable states remain authoritative on fetch failure.
     }
