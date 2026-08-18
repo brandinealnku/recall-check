@@ -7,9 +7,12 @@ import refresh_recalls_current_v2 as quality
 
 
 PUBLIC_ROWS = """
-<table><tbody>
+<table>
+<thead><tr><th>Date</th><th>Brand Name(s)</th><th>Product Description</th><th>Product Type</th><th>Recall Reason Description</th></tr></thead>
+<tbody>
+<tr><td>08/17/2026</td><td>DeviceBrand</td><td>Diagnostic kit</td><td>Medical Devices</td><td>Label issue mentioning allergens</td></tr>
 <tr><td>08/06/2026</td><td>Sun Noodle</td><td>Noodles</td><td>Food &amp; Beverages, Allergens</td><td>Undeclared fish</td></tr>
-<tr><td>08/05/2026</td><td>DrugBrand</td><td>Medicine</td><td>Drugs</td><td>Label issue</td></tr>
+<tr><td>08/05/2026</td><td>DrugBrand</td><td>Medicine</td><td>Drugs</td><td>Foodborne illness study reference</td></tr>
 <tr><td>08/01/2026</td><td>Ukrops</td><td>Baked foods</td><td>Food &amp; Beverages</td><td>Foreign material</td></tr>
 </tbody></table>
 """
@@ -44,6 +47,9 @@ class SourceQualityTests(unittest.TestCase):
 
     def test_public_listing_extracts_newest_food_date_only(self):
         self.assertEqual(quality.newest_fda_public_food_date(PUBLIC_ROWS), "2026-08-06")
+
+    def test_non_food_row_with_newer_date_cannot_become_authority_date(self):
+        self.assertNotEqual(quality.newest_fda_public_food_date(PUBLIC_ROWS), "2026-08-17")
 
     def test_stale_fda_is_flagged_even_when_retrieval_succeeded(self):
         data = quality.apply_source_quality(
