@@ -6,10 +6,6 @@
     FDA: "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
     USDA: "https://www.fsis.usda.gov/recalls"
   };
-  const OFFICIAL_LABELS = {
-    FDA: "Open FDA official recalls",
-    USDA: "Open USDA official recalls"
-  };
   let sourceStatus = null;
 
   const el = (tag, text, className) => {
@@ -24,13 +20,7 @@
     const raw = String(source.coverageStatus || source.qualityStatus || "").toLowerCase();
     const healthy = source.success !== false && (raw === "current" || raw === "healthy" || source.current === true);
     const failed = source.success === false || raw === "failed" || raw === "unavailable";
-    return {
-      agency,
-      source,
-      healthy,
-      failed,
-      label: healthy ? "Current" : failed ? "Unavailable" : "Needs attention"
-    };
+    return { agency, source, healthy, failed, label: healthy ? "Current" : failed ? "Unavailable" : "Needs attention" };
   }
 
   function allHealthy() {
@@ -43,14 +33,21 @@
     return Number.isFinite(parsed) ? new Date(parsed) : null;
   }
 
+  function formatChecked(date) {
+    if (!date) return "Verification time unavailable";
+    return new Intl.DateTimeFormat("en-US", {
+      month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit"
+    }).format(date);
+  }
+
   function relativeChecked(date) {
     if (!date) return "Verification time unavailable";
     const minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60000));
-    if (minutes < 1) return "Verified just now";
-    if (minutes < 60) return `Verified ${minutes} min ago`;
+    if (minutes < 1) return "checked just now";
+    if (minutes < 60) return `checked ${minutes} min ago`;
     const hours = Math.floor(minutes / 60);
-    if (hours < 24) return `Verified ${hours} hr${hours === 1 ? "" : "s"} ago`;
-    return `Verified ${date.toLocaleString()}`;
+    if (hours < 24) return `checked ${hours} hr${hours === 1 ? "" : "s"} ago`;
+    return `checked ${formatChecked(date)}`;
   }
 
   function surfaceEntries(state) {
@@ -90,9 +87,8 @@
   function updateGlobalStatus() {
     const notice = document.getElementById("data-notice");
     if (!notice || !sourceStatus) return;
-    const checked = checkedDate();
     if (allHealthy()) {
-      notice.textContent = `Official sources current · ${relativeChecked(checked)}`;
+      notice.textContent = `Official sources current · ${relativeChecked(checkedDate())}`;
       notice.classList.remove("coverage-warning");
       notice.classList.add("coverage-current");
     } else {
@@ -102,44 +98,88 @@
     }
   }
 
-  function buildVerificationCard() {
-    const card = el("section", null, "trust-verification-card");
-    card.setAttribute("aria-label", "Source verification for this result");
-    const head = el("div", null, "trust-verification-head");
-    head.append(el("h3", "Sources checked for this result"), el("p", relativeChecked(checkedDate()), "trust-verified-time"));
-    card.append(head);
-
-    const grid = el("div", null, "trust-source-grid");
-    [sourceState("FDA"), sourceState("USDA")].forEach(state => {
-      const item = el("div", null, `trust-source trust-source--${state.healthy ? "current" : state.failed ? "failed" : "warning"}`);
-      const top = el("div", null, "trust-source-title");
-      top.append(el("strong", state.agency === "FDA" ? "FDA food recalls" : "USDA FSIS recalls"), el("span", state.label, "trust-source-badge"));
-      item.append(top);
-      const newest = state.source.newestRecallDate || state.source.latestRecallDate;
-      if (newest) item.append(el("p", `Newest record in this source: ${new Date(`${newest}T00:00:00Z`).toLocaleDateString()}`));
-      if (!state.healthy) item.append(el("p", "RecallCheck will not treat a no-match as a complete verification while this source needs attention.", "trust-source-warning"));
-      item.append(officialLink(state.agency, OFFICIAL_LABELS[state.agency]));
-      grid.append(item);
+  function legacyValues(result) {
+    const values = {};
+    result.querySelectorAll(".trust-summary .details").forEach(dl => {
+      const terms = [...dl.querySelectorAll("dt")];
+      terms.forEach(dt => {
+        const dd = dt.nextElementSibling;
+        if (dd?.tagName === "DD") values[dt.textContent.trim()] = dd.textContent.trim();
+      });
     });
-    card.append(grid);
-    return card;
+    return values;
   }
 
-  function buildProvenance() {
-    const details = el("details", null, "result-provenance");
-    details.append(el("summary", "Which official sources were checked?"));
-    const body = el("div", null, "result-provenance-body");
+  function isNoMatch(result) {
+    const heading = (result.querySelector(".result-heading")?.textContent || "").toLowerCase();
+    return heading.includes("no matching recall found") || heading.includes("no match found");
+  }
+
+  function addFact(list, label, value) {
+    if (!value || value === "Not applicable") return;
+    const row = el("div", null, "about-check-row");
+    row.append(el("dt", label), el("dd", value));
+    list.append(row);
+  }
+
+  function buildTechnicalDetails(result, legacy) {
+    const technical = el("details", null, "about-check-technical");
+    technical.append(el("summary", "Technical details"));
+    const body = el("div", null, "about-check-technical-body");
+
     [sourceState("FDA"), sourceState("USDA")].forEach(state => {
-      const section = el("section");
+      const section = el("section", null, "about-check-source");
       section.append(el("h4", state.agency === "FDA" ? "FDA" : "USDA FSIS"));
       const list = el("ul");
       surfaceEntries(state).forEach(surface => {
-        const checked = surface.checkedAt && Number.isFinite(Date.parse(surface.checkedAt)) ? ` · checked ${new Date(surface.checkedAt).toLocaleString()}` : "";
-        list.append(el("li", `${surface.name}: ${surface.success ? "reached" : "unavailable"}${checked}`));
+        const when = surface.checkedAt && Number.isFinite(Date.parse(surface.checkedAt))
+          ? ` · ${formatChecked(new Date(surface.checkedAt))}` : "";
+        list.append(el("li", `${surface.name}: ${surface.success ? "reached" : "unavailable"}${when}`));
       });
-      section.append(list);
+      section.append(list, officialLink(state.agency, `Open ${state.agency} official recalls`));
       body.append(section);
     });
+
+    const oldTransparency = result.querySelector(".transparency");
+    const oldTechnical = oldTransparency?.querySelector(".technical p")?.textContent?.trim();
+    if (oldTechnical) {
+      const match = el("section", null, "about-check-source");
+      match.append(el("h4", "Recall matching"), el("p", oldTechnical));
+      body.append(match);
+    }
+
+    if (legacy["Barcode match"] && legacy["Barcode match"] !== "No" && legacy["Barcode match"] !== "Not applicable") {
+      const match = el("section", null, "about-check-source");
+      match.append(el("h4", "Identifier relationship"), el("p", legacy["Barcode match"]));
+      body.append(match);
+    }
+
+    technical.append(body);
+    return technical;
+  }
+
+  function buildAboutCheck(result) {
+    const legacy = legacyValues(result);
+    const noMatch = isNoMatch(result);
+    const details = el("details", null, "about-check");
+    details.append(el("summary", "About this check"));
+
+    const body = el("div", null, "about-check-body");
+    const facts = el("dl", null, "about-check-facts");
+    addFact(facts, "Sources checked", "FDA food recalls and USDA FSIS recalls");
+    addFact(facts, "Recall records last refreshed", legacy["Recall data updated"] || formatChecked(checkedDate()));
+    addFact(facts, "Product information", legacy["Product information source"] || "Open Food Facts");
+
+    if (!noMatch) {
+      addFact(facts, "Official recall status", legacy["Official status"]);
+      if (legacy["Package confirmation"] && legacy["Package confirmation"] !== "Not applicable") {
+        addFact(facts, "Package verification", legacy["Package confirmation"]);
+      }
+    }
+
+    body.append(facts);
+    const sourceLine = el("p", allHealthy() ? "FDA and USDA source coverage was current for this check." : "At least one official source needs attention, so this check may be incomplete.", allHealthy() ? "about-check-health" : "about-check-health about-check-health--warning");
+    body.append(sourceLine, buildTechnicalDetails(result, legacy));
     details.append(body);
     return details;
   }
@@ -149,14 +189,14 @@
     const heading = result.querySelector(".result-heading");
     const label = result.querySelector(".result-label");
     const instruction = result.querySelector(".result-instruction");
-    if (!heading || !/no matching recall found/i.test(heading.textContent || "")) return;
+    if (!heading || !/no matching recall found|no match found/i.test(heading.textContent || "")) return;
 
     result.className = result.className.replace(/result--[^\s]+/g, "").trim() + " result--warning trust-result-degraded";
     const banner = result.querySelector(".result-banner");
     if (banner) banner.className = banner.className.replace(/result-banner--[^\s]+/g, "").trim() + " result-banner--warning";
-    label.textContent = "UNABLE TO FULLY VERIFY";
+    if (label) label.textContent = "UNABLE TO FULLY VERIFY";
     heading.textContent = "No match found, but official coverage is incomplete";
-    instruction.textContent = "We did not find this barcode in the recall records currently available to RecallCheck. At least one official source needs attention, so this is not a complete no-match result.";
+    if (instruction) instruction.textContent = "We did not find this barcode in the recall records currently available to RecallCheck. At least one official source needs attention, so this is not a complete no-match result.";
 
     if (!result.querySelector(".trust-degraded-actions")) {
       const actions = el("div", null, "result-actions trust-degraded-actions");
@@ -178,20 +218,26 @@
     panel.insertBefore(guide, actions || null);
   }
 
+  function simplifyTrustUI(result) {
+    if (result.dataset.trustSimplified === "true") return;
+    const about = buildAboutCheck(result);
+    result.querySelector(".trust-verification-card")?.remove();
+    result.querySelector(".result-provenance")?.remove();
+    result.querySelector(".trust-summary")?.remove();
+    result.querySelector(".transparency")?.remove();
+    const feedback = result.querySelector(".feedback");
+    const repeat = result.querySelector(".result-actions");
+    result.insertBefore(about, feedback || repeat || null);
+    result.dataset.trustSimplified = "true";
+  }
+
   function enhanceResult() {
     const panel = document.getElementById("result-panel");
     const result = panel?.querySelector(".result");
     if (!result || !sourceStatus) return;
     degradeNoMatch(result);
     enhancePackageVerification(result);
-    if (!result.querySelector(".trust-verification-card")) {
-      const trustSummary = result.querySelector(".trust-summary");
-      result.insertBefore(buildVerificationCard(), trustSummary || null);
-    }
-    if (!result.querySelector(".result-provenance")) {
-      const transparency = result.querySelector(".transparency");
-      result.insertBefore(buildProvenance(), transparency || null);
-    }
+    simplifyTrustUI(result);
   }
 
   async function init() {
