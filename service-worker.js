@@ -1,4 +1,4 @@
-const CACHE_NAME = "recallcheck-shell-v2";
+const CACHE_NAME = "recallcheck-shell-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -30,10 +30,10 @@ self.addEventListener("fetch", event => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // Safety-critical recall/source data is always network-only. Never answer
-  // these requests from Cache Storage, so stale records cannot look current.
+  // Safety-critical recall/source JSON bypasses the service worker completely.
+  // This prevents Safari service-worker fetch/cache-mode compatibility issues
+  // and guarantees Cache Storage is never used for live recall status data.
   if (url.pathname.includes("/data/") || /(?:recalls|source-status)\.json$/i.test(url.pathname)) {
-    event.respondWith(fetch(request, { cache: "no-store" }));
     return;
   }
 
