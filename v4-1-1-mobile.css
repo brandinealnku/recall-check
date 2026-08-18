@@ -1,0 +1,87 @@
+/* RecallCheck V4.1.1 — iPhone result + recent-check hardening */
+
+/* app.js inserts an SVG icon directly into .result-banner. Give it an explicit
+   box so Safari never treats the viewBox-only SVG as a full-width image. */
+.result-banner{
+  display:grid;
+  grid-template-columns:2.25rem minmax(0,1fr);
+  align-items:start;
+  gap:.8rem;
+  padding:1rem;
+}
+.result-banner>.icon{
+  display:block;
+  width:2.1rem !important;
+  min-width:2.1rem !important;
+  max-width:2.1rem !important;
+  height:2.1rem !important;
+  min-height:2.1rem !important;
+  max-height:2.1rem !important;
+  margin:.08rem 0 0;
+  flex:none;
+}
+.result-banner>div{min-width:0}
+.result-banner .result-label{margin:0 0 .25rem;font-size:.76rem;line-height:1.25}
+.result-banner .result-heading{margin:0;max-width:100%;overflow-wrap:anywhere}
+
+/* The legacy V2 indicator duplicates the mature app.js result banner. V4.1.1
+   no longer loads that script, but keep this defensive rule for cached HTML. */
+.result-status-indicator{display:none!important}
+
+/* Recent checks are a compact history collection, not loose text. */
+.recent-checks-v21{
+  width:100%;
+  max-width:var(--task);
+  margin:1.75rem auto 0;
+  padding-top:1.5rem;
+  border-top:1px solid var(--line);
+}
+.recent-checks-v21 .section-heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  margin-bottom:.9rem;
+}
+.recent-checks-v21 .section-heading h2{margin:0;font-size:clamp(1.45rem,5vw,1.9rem)}
+.recent-checks-v21 .section-heading .text-button{flex:0 0 auto}
+.recent-checks-list-v21{display:grid;gap:.75rem}
+.recent-check-v21{
+  min-width:0;
+  padding:1rem;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+}
+.recent-check-v21 h3{margin:0 0 .35rem;font-size:1.08rem;line-height:1.3;overflow-wrap:anywhere}
+.recent-check-v21 p{margin:.28rem 0;line-height:1.45}
+.recent-check-v21 .v2-muted{font-size:.88rem;color:var(--muted)}
+.recent-check-v21 .button{margin-top:.7rem;min-height:46px}
+.recent-checks-v21>.v2-muted{margin:.85rem 0 0;font-size:.88rem;line-height:1.5}
+
+/* Keep result internals within the card on narrow Safari viewports. */
+.result,.result *{min-width:0}
+.result-summary,.result-details,.trust-verification-card,.result-provenance,.transparency{overflow-wrap:anywhere}
+.result .button,.result button{max-width:100%}
+
+@media(max-width:640px){
+  .result-banner{grid-template-columns:2rem minmax(0,1fr);gap:.65rem;padding:.9rem}
+  .result-banner>.icon{width:1.9rem!important;min-width:1.9rem!important;max-width:1.9rem!important;height:1.9rem!important;min-height:1.9rem!important;max-height:1.9rem!important}
+  .result-banner .result-heading{font-size:clamp(1.35rem,6.7vw,1.7rem);line-height:1.16}
+  .result-summary,.result-details{padding-inline:.9rem}
+  .recent-checks-v21{margin-top:1.5rem;padding-top:1.25rem}
+  .recent-checks-v21 .section-heading{align-items:flex-start}
+  .recent-check-v21{padding:.9rem}
+  .recent-check-v21 .button{width:100%;justify-content:center}
+}
+
+@media(max-width:380px){
+  .result-banner{grid-template-columns:1.8rem minmax(0,1fr);gap:.55rem;padding:.8rem}
+  .result-banner>.icon{width:1.7rem!important;min-width:1.7rem!important;max-width:1.7rem!important;height:1.7rem!important;min-height:1.7rem!important;max-height:1.7rem!important}
+  .recent-checks-v21 .section-heading{display:block}
+  .recent-checks-v21 .section-heading .text-button{margin-top:.35rem}
+}
+
+@media(forced-colors:active){
+  .recent-check-v21{border:1px solid CanvasText}
+}
