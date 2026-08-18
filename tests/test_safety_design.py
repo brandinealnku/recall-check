@@ -51,7 +51,7 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("prefers-reduced-motion: reduce", RESPONSIVE)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 3.2.1-beta", INDEX)
+        self.assertIn("Version 3.3.0-beta", INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
@@ -59,7 +59,7 @@ class SafetyStateDesignTests(unittest.TestCase):
 class ConsolidationTests(unittest.TestCase):
     def test_home_uses_v3_design_system_and_responsive_layer(self):
         self.assertIn('recallcheck-v3.css?v=3.0.0-beta', INDEX)
-        self.assertIn('recallcheck-v3-responsive.css?v=3.2.1-beta', INDEX)
+        self.assertIn('recallcheck-v3-responsive.css?v=3.3.0-beta', INDEX)
         for legacy in ("styles.css", "brand.css", "mobile-polish.css", "v2-1.css", "consumer-ux.css", "v2-3.css", "v2-4.css"):
             self.assertNotIn(f'href="{legacy}', INDEX)
 
@@ -82,11 +82,21 @@ class ConsolidationTests(unittest.TestCase):
         self.assertIn("overflow-x:hidden", RESPONSIVE)
         self.assertIn("grid-template-columns: 1fr", RESPONSIVE)
 
-    def test_mobile_width_is_pinned_to_viewport(self):
-        self.assertIn("html { width:100%; min-width:100%; max-width:100%; overflow-x:hidden", RESPONSIVE)
-        self.assertIn("body { width:100%; min-width:100%; max-width:100%; overflow-x:hidden", RESPONSIVE)
-        self.assertIn(".site-header, main, footer { width:100%; max-width:none; }", RESPONSIVE)
+    def test_mobile_width_is_pinned_to_visual_viewport(self):
+        self.assertIn("width:100vw; min-width:100vw; max-width:100vw", RESPONSIVE)
+        self.assertIn("width:100dvw; min-width:100dvw; max-width:100dvw", RESPONSIVE)
+        self.assertIn(".site-header, main, footer { width:100dvw; min-width:100dvw; max-width:100dvw; }", RESPONSIVE)
         self.assertNotIn("width: calc(100% + var(--gutter))", RESPONSIVE)
+
+    def test_mobile_hero_is_full_bleed_not_a_nested_card(self):
+        self.assertIn("margin-left:calc(50% - 50vw)", RESPONSIVE)
+        self.assertIn("margin-left:calc(50% - 50dvw)", RESPONSIVE)
+        self.assertIn(".hero-copy {", RESPONSIVE)
+        self.assertIn("border:0", RESPONSIVE)
+        self.assertIn("background:transparent", RESPONSIVE)
+        self.assertIn('class="hero-assurance"', INDEX)
+        self.assertIn("No account required", INDEX)
+        self.assertIn("Camera frames stay on this device", INDEX)
 
     def test_mobile_polish_uses_single_recall_status_and_consistent_inset(self):
         self.assertIn('.recall-card::before { display:none !important; content:none !important; }', RESPONSIVE)
@@ -98,7 +108,7 @@ class ConsolidationTests(unittest.TestCase):
         self.assertIn('class="hero-kicker"', INDEX)
         self.assertIn("FDA + USDA recall check", INDEX)
         self.assertIn(".hero-kicker", RESPONSIVE)
-        self.assertIn("box-shadow:0 8px 18px", RESPONSIVE)
+        self.assertIn("box-shadow:0 10px 24px", RESPONSIVE)
 
     def test_current_recall_context_explains_source_and_quality(self):
         self.assertIn("Newest displayed current record", V3)
