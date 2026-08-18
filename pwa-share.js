@@ -2,7 +2,10 @@
   "use strict";
 
   const APP_URL = "https://recallcheck.itsbadlabs.com/";
+  const SESSION_KEY = "recallcheck.completedChecks.v1";
+  const DISMISS_KEY = "recallcheck.installDismissed.v1";
   let deferredInstallPrompt = null;
+  let lastResultSignature = "";
 
   const $ = id => document.getElementById(id);
   const isStandalone = () => window.matchMedia?.("(display-mode: standalone)")?.matches || window.navigator.standalone === true;
@@ -10,6 +13,25 @@
 
   function setInstalledState() {
     document.documentElement.classList.toggle("rc-installed", isStandalone());
+  }
+
+  function completedChecks() {
+    try { return Number(sessionStorage.getItem(SESSION_KEY) || "0") || 0; } catch (_) { return 0; }
+  }
+
+  function incrementCompletedChecks() {
+    const next = completedChecks() + 1;
+    try { sessionStorage.setItem(SESSION_KEY, String(next)); } catch (_) {}
+    return next;
+  }
+
+  function installDismissed() {
+    try { return localStorage.getItem(DISMISS_KEY) === "1"; } catch (_) { return false; }
+  }
+
+  function dismissInstallPromotion() {
+    try { localStorage.setItem(DISMISS_KEY, "1"); } catch (_) {}
+    $("rc-install-promotion")?.remove();
   }
 
   function installSheet() {
@@ -24,23 +46,15 @@
     sheet.setAttribute("aria-labelledby", "rc-install-title");
     sheet.innerHTML = `
       <section class="rc-install-panel">
-        <h2 id="rc-install-title">Add RecallCheck to your phone</h2>
-        <p>RecallCheck can open from your Home Screen like an app.</p>
+        <h2 id="rc-install-title">Add to Home Screen</h2>
         <ol class="rc-install-steps">
-          <li>Tap the <strong>Share</strong> button in Safari.</li>
-          <li>Choose <strong>Add to Home Screen</strong>.</li>
-          <li>Tap <strong>Add</strong>.</li>
+          <li>Tap <strong>Share</strong> in Safari.</li>
+          <li>Tap <strong>Add to Home Screen</strong>.</li>
         </ol>
-        <p class="rc-install-note">Apple requires these final taps before a website can be added to your Home Screen.</p>
-        <div class="actions"><button type="button" class="primary" id="rc-install-share">Open Share menu</button><button type="button" class="secondary" id="rc-install-close">Done</button></div>
+        <button type="button" class="primary" id="rc-install-close">Got it</button>
       </section>`;
     document.body.append(sheet);
     $("rc-install-close").addEventListener("click", () => { sheet.hidden = true; });
-    $("rc-install-share").addEventListener("click", async () => {
-      try {
-        if (navigator.share) await navigator.share({ title: "RecallCheck", text: "Add RecallCheck to your Home Screen for quick food recall checks.", url: APP_URL });
-      } catch (_) {}
-    });
     sheet.addEventListener("click", event => { if (event.target === sheet) sheet.hidden = true; });
     return sheet;
   }
@@ -54,17 +68,14 @@
       setInstalledState();
       return;
     }
-    const sheet = installSheet();
-    sheet.hidden = false;
-    $("rc-install-close")?.focus();
+    if (isIOS()) {
+      const sheet = installSheet();
+      sheet.hidden = false;
+      $("rc-install-close")?.focus();
+    }
   }
 
-  async function shareRecallCheck() {
-    const payload = {
-      title: "RecallCheck — Is this food recalled?",
-      text: "Check FDA and USDA food recalls with RecallCheck.",
-      url: APP_URL
-    };
+  async function sharePayload(payload, fallbackUrl = APP_URL) {
     try {
       if (navigator.share) {
         await navigator.share(payload);
@@ -74,42 +85,100 @@
       if (error?.name === "AbortError") return;
     }
     try {
-      await navigator.clipboard.writeText(APP_URL);
+      await navigator.clipboard.writeText(fallbackUrl);
       const status = $("rc-share-status");
-      if (status) status.textContent = "RecallCheck link copied.";
+      if (status) status.textContent = "Link copied.";
     } catch (_) {
-      window.prompt("Copy this RecallCheck link:", APP_URL);
+      window.prompt("Copy this link:", fallbackUrl);
     }
   }
 
-  function addUtilityActions() {
-    const assurance = document.querySelector(".hero-assurance");
-    if (!assurance || $("rc-utility-actions")) return;
-    const wrap = document.createElement("div");
-    wrap.id = "rc-utility-actions";
-    wrap.className = "rc-utility-actions";
+  function shareRecallCheck() {
+    return sharePayload({
+      title: "RecallCheck — Is this food recalled?",
+      text: "Check FDA and USDA food recalls with RecallCheck.",
+      url: APP_URL
+    });
+  }
 
-    const install = document.createElement("button");
-    install.type = "button";
-    install.className = "button button--secondary rc-install-button";
-    install.textContent = isIOS() ? "Add to Home Screen" : "Install RecallCheck";
-    install.addEventListener("click", requestInstall);
+  function isPositiveRecall(result) {
+    const heading = (result?.querySelector(".result-heading")?.textContent || "").toLowerCase();
+    const label = (result?.querySelector(".result-label")?.textContent || "").toLowerCase();
+    return /recalled|linked to a current recall|current recall/.test(`${heading} ${label}`) && !/no recall|no match|historical/.test(`${heading} ${label}`);
+  }
 
-    const share = document.createElement("button");
-    share.type = "button";
-    share.className = "button button--secondary";
-    share.textContent = "Share RecallCheck";
-    share.addEventListener("click", shareRecallCheck);
+  function officialRecallUrl(result) {
+    const links = [...(result?.querySelectorAll("a[href]") || [])];
+    const official = links.find(a => /fda\.gov|fsis\.usda\.gov/.test(a.href));
+    return official?.href || APP_URL;
+  }
 
-    wrap.append(install, share);
-    assurance.insertAdjacentElement("afterend", wrap);
-    const status = document.createElement("p");
+  function addShareThisRecall(result) {
+    if (!isPositiveRecall(result) || result.querySelector("[data-share-recall]")) return;
+    const actions = result.querySelector(".result-actions") || result.querySelector(".result-summary") || result;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "button button--secondary rc-share-recall";
+    button.dataset.shareRecall = "true";
+    button.textContent = "Share this recall";
+    button.addEventListener("click", () => {
+      const product = $("product-summary")?.querySelector("h3")?.textContent?.trim() || "a food product";
+      const url = officialRecallUrl(result);
+      sharePayload({
+        title: `Food recall: ${product}`,
+        text: `RecallCheck found a current recall related to ${product}. Review the official recall details before using the product.`,
+        url
+      }, url);
+    });
+    actions.append(button);
+  }
+
+  function addInstallPromotion(result) {
+    if (isStandalone() || installDismissed() || $("rc-install-promotion")) return;
+    const checks = completedChecks();
+    if (checks < 2 && !isPositiveRecall(result)) return;
+
+    const card = document.createElement("aside");
+    card.id = "rc-install-promotion";
+    card.className = "rc-install-promotion";
+    card.innerHTML = `
+      <div><strong>Keep RecallCheck handy</strong><p>Add it to your Home Screen for faster checks.</p></div>
+      <div class="rc-install-promotion-actions"><button type="button" class="button button--secondary" data-install> Add to Home Screen </button><button type="button" class="text-button" data-dismiss>Not now</button></div>`;
+    card.querySelector("[data-install]").addEventListener("click", requestInstall);
+    card.querySelector("[data-dismiss]").addEventListener("click", dismissInstallPromotion);
+    const results = $("results");
+    results?.insertAdjacentElement("afterend", card);
+  }
+
+  function recordResultAndEnhance() {
+    const result = $("result-panel")?.querySelector(".result");
+    if (!result) return;
+    const signature = `${result.querySelector(".result-heading")?.textContent || ""}|${result.querySelector(".coverage-line")?.textContent || ""}`;
+    if (signature && signature !== lastResultSignature) {
+      lastResultSignature = signature;
+      incrementCompletedChecks();
+    }
+    addShareThisRecall(result);
+    addInstallPromotion(result);
+  }
+
+  function addFooterShare() {
+    if ($("rc-footer-share")) return;
+    const nav = document.querySelector("footer nav");
+    if (!nav) return;
+    const button = document.createElement("button");
+    button.id = "rc-footer-share";
+    button.type = "button";
+    button.className = "rc-footer-share";
+    button.textContent = "Share RecallCheck";
+    button.addEventListener("click", shareRecallCheck);
+    nav.append(button);
+    const status = document.createElement("span");
     status.id = "rc-share-status";
-    status.className = "rc-share-status";
+    status.className = "sr-only";
     status.setAttribute("role", "status");
     status.setAttribute("aria-live", "polite");
-    wrap.insertAdjacentElement("afterend", status);
-    setInstalledState();
+    nav.append(status);
   }
 
   function registerServiceWorker() {
@@ -123,12 +192,18 @@
   });
   window.addEventListener("appinstalled", () => {
     deferredInstallPrompt = null;
+    $("rc-install-promotion")?.remove();
     setInstalledState();
   });
 
   function init() {
-    addUtilityActions();
+    document.getElementById("install-prompt")?.setAttribute("hidden", "");
+    addFooterShare();
     registerServiceWorker();
+    setInstalledState();
+    const panel = $("result-panel");
+    if (panel) new MutationObserver(recordResultAndEnhance).observe(panel, { childList: true, subtree: true });
+    recordResultAndEnhance();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
