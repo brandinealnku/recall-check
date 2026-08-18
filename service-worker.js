@@ -1,4 +1,4 @@
-const CACHE_NAME = "recallcheck-shell-v1";
+const CACHE_NAME = "recallcheck-shell-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -29,6 +29,13 @@ self.addEventListener("fetch", event => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  // Safety-critical recall/source data is always network-only. Never answer
+  // these requests from Cache Storage, so stale records cannot look current.
+  if (url.pathname.includes("/data/") || /(?:recalls|source-status)\.json$/i.test(url.pathname)) {
+    event.respondWith(fetch(request, { cache: "no-store" }));
+    return;
+  }
 
   if (request.mode === "navigate") {
     event.respondWith(fetch(request).catch(() => caches.match("./index.html")));
