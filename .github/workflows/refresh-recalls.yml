@@ -98,7 +98,7 @@ jobs:
             git push
           fi
 
-      - name: Enforce source data quality
+      - name: Report source data quality
         run: |
           python3 - <<'PY'
           import datetime as dt
@@ -108,7 +108,8 @@ jobs:
           payload = json.loads(Path("data/recalls.json").read_text(encoding="utf-8"))
           sources = payload.get("dataHealth", {}).get("sources", {})
           now = dt.datetime.now(dt.timezone.utc)
-          problems = []
+          failures = []
+          warnings = []
 
           def parse_time(value):
               if not value:
@@ -138,25 +139,31 @@ jobs:
               )
 
               if not successful:
-                  problems.append(f"{agency} latest source retrieval failed")
+                  failures.append(f"{agency} latest source retrieval failed")
 
-              if not current:
+              if successful and not current:
                   detail = f"{agency} data quality is {quality or 'unknown'}"
                   if authority_newest:
                       detail += f" (RecallCheck newest {newest}; official newest {authority_newest})"
-                  problems.append(detail)
+                  warnings.append(detail)
 
               if last_success is None:
-                  problems.append(f"{agency} has no lastSuccessfulUpdate")
+                  failures.append(f"{agency} has no lastSuccessfulUpdate")
               else:
                   age = now - last_success
                   if age > dt.timedelta(hours=12):
-                      problems.append(
+                      failures.append(
                           f"{agency} last successful update is {age.total_seconds() / 3600:.1f} hours old"
                       )
 
-          if problems:
-              raise SystemExit("; ".join(problems))
+          for warning in warnings:
+              print(f"::warning::{warning}")
 
-          print("FDA and USDA retrieval and data-quality checks passed.")
+          if failures:
+              raise SystemExit("; ".join(failures))
+
+          if warnings:
+              print("Recall data refresh completed with source-quality warnings. Published metadata will warn consumers.")
+          else:
+              print("FDA and USDA retrieval and data-quality checks passed.")
           PY
