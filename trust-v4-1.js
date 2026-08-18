@@ -6,6 +6,10 @@
     FDA: "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
     USDA: "https://www.fsis.usda.gov/recalls"
   };
+  const OFFICIAL_LABELS = {
+    FDA: "Open FDA official recalls",
+    USDA: "Open USDA official recalls"
+  };
   let sourceStatus = null;
 
   const el = (tag, text, className) => {
@@ -114,7 +118,7 @@
       const newest = state.source.newestRecallDate || state.source.latestRecallDate;
       if (newest) item.append(el("p", `Newest record in this source: ${new Date(`${newest}T00:00:00Z`).toLocaleDateString()}`));
       if (!state.healthy) item.append(el("p", "RecallCheck will not treat a no-match as a complete verification while this source needs attention.", "trust-source-warning"));
-      item.append(officialLink(state.agency, `Open ${state.agency} official recalls`));
+      item.append(officialLink(state.agency, OFFICIAL_LABELS[state.agency]));
       grid.append(item);
     });
     card.append(grid);
