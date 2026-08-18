@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T02:07:56Z",
+  "generatedAt": "2026-08-18T02:09:55Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,20 +14,20 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.6.0",
-    "checkedAt": "2026-08-18T02:07:56Z",
-    "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
+    "checkedAt": "2026-08-18T02:09:55Z",
+    "lastSuccessfulUpdate": "2026-08-18T02:09:55Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-08-18T02:07:56Z",
-        "retrievedAt": "2026-08-18T02:07:56Z",
-        "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
+        "checkedAt": "2026-08-18T02:09:55Z",
+        "retrievedAt": "2026-08-18T02:09:55Z",
+        "lastSuccessfulUpdate": "2026-08-18T02:09:55Z",
         "newestRecallDate": "2026-08-17",
         "recordCount": 155,
         "error": null,
         "validationMethod": "annual-xml-plus-public-recall-table",
         "freshnessValidated": true,
-        "freshnessValidatedAt": "2026-08-18T02:07:56Z",
+        "freshnessValidatedAt": "2026-08-18T02:09:55Z",
         "authoritativeNewestRecallDate": "2026-08-17",
         "freshnessLagDays": 0,
         "current": true,
@@ -37,9 +37,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-08-18T02:07:56Z",
-        "retrievedAt": "2026-08-18T02:07:56Z",
-        "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
+        "checkedAt": "2026-08-18T02:09:55Z",
+        "retrievedAt": "2026-08-18T02:09:55Z",
+        "lastSuccessfulUpdate": "2026-08-18T02:09:55Z",
         "newestRecallDate": "2026-08-08",
         "recordCount": 2020,
         "error": null,
@@ -244,68 +244,6 @@
       "searchText": "l-nutra prolon apulian almond & cocoa spread undeclared cashews, pistachios and/or hazelnut"
     },
     {
-      "id": "FDA-PUBLIC-0efe6eeb75f53b7f",
-      "sourceRecordId": "PUBLIC-0efe6eeb75f53b7f",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-08-14",
-        "ageDaysAtRefresh": 4,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Potato Sourdough",
-      "recallingFirm": "Grand Central Bakery",
-      "productDescription": "Potato Sourdough",
-      "brandNames": [
-        "Grand Central Bakery"
-      ],
-      "productNames": [
-        "Potato Sourdough"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "may contain pieces of metal",
-      "distribution": "See official notice",
-      "recallDate": "2026-08-14",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-08-14",
-        "brand": "Grand Central Bakery",
-        "product": "Potato Sourdough",
-        "productType": "Food & Beverages, Contaminants",
-        "reason": "may contain pieces of metal",
-        "company": "Grand Central Bakery",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object"
-      },
-      "searchText": "grand central bakery grand central bakery potato sourdough may contain pieces of metal"
-    },
-    {
       "id": "FDA-PUBLIC-8c48c93bcc65a021",
       "sourceRecordId": "PUBLIC-8c48c93bcc65a021",
       "agency": "FDA",
@@ -368,8 +306,8 @@
       "searchText": "the hampton grocer, inc. the hampton grocer granola potential to be contaminated with salmonella"
     },
     {
-      "id": "FDA-PUBLIC-6333894b477dce4b",
-      "sourceRecordId": "PUBLIC-6333894b477dce4b",
+      "id": "FDA-PUBLIC-0efe6eeb75f53b7f",
+      "sourceRecordId": "PUBLIC-0efe6eeb75f53b7f",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -385,14 +323,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
-      "recallingFirm": "NatureBest Precut & Produce LLC",
-      "productDescription": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
+      "title": "Potato Sourdough",
+      "recallingFirm": "Grand Central Bakery",
+      "productDescription": "Potato Sourdough",
       "brandNames": [
-        "NatureBest, HEB"
+        "Grand Central Bakery"
       ],
       "productNames": [
-        "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno."
+        "Potato Sourdough"
       ],
       "upcs": [],
       "gtins": [],
@@ -400,10 +338,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential for contamination with Salmonella",
+      "reason": "may contain pieces of metal",
       "distribution": "See official notice",
       "recallDate": "2026-08-14",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -418,16 +356,16 @@
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-08-14",
-        "brand": "NatureBest, HEB",
-        "product": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential for contamination with Salmonella",
-        "company": "NatureBest Precut & Produce LLC",
+        "brand": "Grand Central Bakery",
+        "product": "Potato Sourdough",
+        "productType": "Food & Beverages, Contaminants",
+        "reason": "may contain pieces of metal",
+        "company": "Grand Central Bakery",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object"
       },
-      "searchText": "naturebest precut & produce llc naturebest, heb finished products such as pico de gallo, stuffed mushrooms, and soup-mix containing jalapeno. potential for contamination with salmonella"
+      "searchText": "grand central bakery grand central bakery potato sourdough may contain pieces of metal"
     },
     {
       "id": "FDA-PUBLIC-b23fca494c03fa70",
@@ -490,6 +428,68 @@
         "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk"
       },
       "searchText": "salata dressings, llc. salata salad dressing potential to be contaminated with salmonella"
+    },
+    {
+      "id": "FDA-PUBLIC-6333894b477dce4b",
+      "sourceRecordId": "PUBLIC-6333894b477dce4b",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-08-14",
+        "ageDaysAtRefresh": 4,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
+      "recallingFirm": "NatureBest Precut & Produce LLC",
+      "productDescription": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
+      "brandNames": [
+        "NatureBest, HEB"
+      ],
+      "productNames": [
+        "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno."
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential for contamination with Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-08-14",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-08-14",
+        "brand": "NatureBest, HEB",
+        "product": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential for contamination with Salmonella",
+        "company": "NatureBest Precut & Produce LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential"
+      },
+      "searchText": "naturebest precut & produce llc naturebest, heb finished products such as pico de gallo, stuffed mushrooms, and soup-mix containing jalapeno. potential for contamination with salmonella"
     },
     {
       "id": "FDA-PUBLIC-047a3c4d9db3ae4e",

@@ -1,15 +1,117 @@
 {
-  "checkedAt": "2026-08-18T02:07:56Z",
-  "generatedAt": "2026-08-18T02:07:56Z",
+  "checkedAt": "2026-08-18T02:09:55Z",
+  "generatedAt": "2026-08-18T02:09:55Z",
+  "liveFdaRows": [
+    {
+      "brandNames": [
+        "Oma\u2019s Pride"
+      ],
+      "date": "2026-08-17",
+      "id": "FDA-PUBLIC-02e4d6f82d55b3ca",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-omas-pride-voluntarily-recalls-one-lot-woof-complete-canine-chicken-recipe-6-lb-bag-because",
+      "product": "Canine Food",
+      "reason": "Contaminated with Salmonella"
+    },
+    {
+      "brandNames": [
+        "Dairyland Produce LLC"
+      ],
+      "date": "2026-08-17",
+      "id": "FDA-PUBLIC-83ecdb8929809697",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hardies-fresh-foods-recalls-jalapenos-because-possible-health-risk",
+      "product": "Pepper Jalapenos",
+      "reason": "Potential Salmonella Contamination"
+    },
+    {
+      "brandNames": [
+        "Prolon"
+      ],
+      "date": "2026-08-17",
+      "id": "FDA-PUBLIC-d09e3eed10bec2d8",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/l-nutra-issues-allergy-alert-undeclared-tree-nuts-prolon-brand-apulian-almond-cocoa-spread",
+      "product": "Apulian Almond & Cocoa Spread",
+      "reason": "Undeclared cashews, pistachios and/or hazelnut"
+    },
+    {
+      "brandNames": [
+        "The Hampton Grocer"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-PUBLIC-8c48c93bcc65a021",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hampton-grocers-inc-recalls-its-8-ounce-packages-lacnola-lactation-granola-because-possible-health",
+      "product": "Granola",
+      "reason": "Potential to be Contaminated with Salmonella"
+    },
+    {
+      "brandNames": [
+        "Grand Central Bakery"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-PUBLIC-0efe6eeb75f53b7f",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object",
+      "product": "Potato Sourdough",
+      "reason": "may contain pieces of metal"
+    },
+    {
+      "brandNames": [
+        "Salata"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-PUBLIC-b23fca494c03fa70",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk",
+      "product": "Salad dressing",
+      "reason": "Potential to be contaminated with Salmonella"
+    },
+    {
+      "brandNames": [
+        "NatureBest, HEB"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-PUBLIC-6333894b477dce4b",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential",
+      "product": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
+      "reason": "Potential for contamination with Salmonella"
+    },
+    {
+      "brandNames": [
+        "Marketside"
+      ],
+      "date": "2026-08-13",
+      "id": "FDA-PUBLIC-047a3c4d9db3ae4e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/kettle-cuisine-recalls-marketside-tomato-bisque-soup-kit-sold-exclusively-walmart-stores-because",
+      "product": "Tomato Bisque Soup Kit 14oz (397g)",
+      "reason": "Potential to be contaminated with Listeria monocytogenes"
+    },
+    {
+      "brandNames": [
+        "Vitasia Chinese Style"
+      ],
+      "date": "2026-08-12",
+      "id": "FDA-PUBLIC-9fab981713b00506",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-vitasia-asian-style-wok-spice-mix-due-potential-salmonella-contamination",
+      "product": "Spice Mix 1.58 oz",
+      "reason": "Potential to be contaminated with Salmonella"
+    },
+    {
+      "brandNames": [
+        "Frankie\u2019s Organic"
+      ],
+      "date": "2026-08-12",
+      "id": "FDA-PUBLIC-9210d1ef9b8fff3c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frankies-organic-issues-allergy-alert-undeclared-milk-frankies-organic-plant-based-vegan-cheddar",
+      "product": "Plant Based Snack",
+      "reason": "Undeclared milk"
+    }
+  ],
   "sources": {
     "FDA": {
       "authoritativeNewestRecallDate": "2026-08-17",
-      "checkedAt": "2026-08-18T02:07:56Z",
+      "checkedAt": "2026-08-18T02:09:55Z",
       "current": true,
       "freshnessLagDays": 0,
       "freshnessValidated": true,
-      "freshnessValidatedAt": "2026-08-18T02:07:56Z",
-      "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
+      "freshnessValidatedAt": "2026-08-18T02:09:55Z",
+      "lastSuccessfulUpdate": "2026-08-18T02:09:55Z",
       "livePublicRowsAdded": 10,
       "livePublicRowsSeen": 10,
       "newestRecallDate": "2026-08-17",
@@ -19,10 +121,10 @@
       "validationMethod": "annual-xml-plus-public-recall-table"
     },
     "USDA": {
-      "checkedAt": "2026-08-18T02:07:56Z",
+      "checkedAt": "2026-08-18T02:09:55Z",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
+      "lastSuccessfulUpdate": "2026-08-18T02:09:55Z",
       "newestRecallDate": "2026-08-08",
       "qualityStatus": "current",
       "recordCount": 2020,
