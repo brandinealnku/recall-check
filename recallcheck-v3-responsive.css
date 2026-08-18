@@ -1,4 +1,4 @@
-/* RecallCheck V3 responsive hardening — 3.1.0-beta */
+/* RecallCheck V3 responsive hardening — 3.2.0-beta */
 
 html, body { max-width: 100%; overflow-x: clip; }
 main, header, footer, section, article, nav, div, form, fieldset, dl { min-width: 0; }
@@ -6,8 +6,35 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
 button, input, textarea, select { max-width: 100%; }
 .recall-card, .result, .card, .v2-search-card, .manual-card, .disclosure, .support-links, .prose { min-width: 0; }
 .recall-card h3, .recall-card__hazard, .recall-meta, .result-heading, .details dd, .support-links a, .footer-inner { overflow-wrap: anywhere; word-break: normal; }
-.collection-context { max-width: 46rem; margin: .65rem 0 1rem; color: var(--muted); font-size: .92rem; line-height: 1.45; }
-.collection-context[data-warning="true"] { padding: .7rem .85rem; border-left: 4px solid var(--warning); border-radius: 8px; background: var(--warning-soft); color: var(--ink-soft); }
+.collection-context { max-width: 46rem; margin: .65rem 0 1rem; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.collection-context[data-warning="true"] { padding: .8rem .9rem; border-left: 4px solid var(--warning); border-radius: 10px; background: var(--warning-soft); color: var(--ink-soft); }
+
+/* V3.2 hierarchy polish */
+.hero-kicker { display:inline-flex; align-items:center; gap:.45rem; margin:0 auto .85rem; padding:.4rem .7rem; border:1px solid #dddaf8; border-radius:999px; background:var(--brand-soft); color:var(--brand-dark); font-size:.82rem; line-height:1; font-weight:850; letter-spacing:.045em; text-transform:uppercase; }
+.hero-kicker::before { content:""; width:.48rem; height:.48rem; border-radius:50%; background:#ed58ae; box-shadow:0 0 0 4px rgba(237,88,174,.12); }
+.hero-copy { position:relative; }
+.hero .scan-action { box-shadow:0 8px 18px rgba(63,61,143,.18); }
+.hero .manual-action { font-weight:800; }
+.v2-search-card { box-shadow:0 10px 30px rgba(16,24,39,.07); }
+.v2-search-card h2 { line-height:1.18; }
+.v2-search-intro, .v2-search-form small { line-height:1.5; }
+.how-section .steps li p { line-height:1.5; }
+.how-section .steps li h3 { line-height:1.2; }
+
+/* One consistent recall-card inset and one status label. */
+.recall-grid { gap:.9rem; }
+.recall-card { width:100%; margin:0; padding:1.25rem 1.25rem 1.2rem !important; border:1px solid var(--line); border-left:6px solid var(--danger); border-radius:18px; background:#fff; box-shadow:0 7px 22px rgba(16,24,39,.055); }
+.recall-card:first-child { border-top:1px solid var(--line); }
+.recall-card::before { display:none !important; content:none !important; }
+.recall-card__status { margin:0 0 .65rem; color:var(--danger); font-size:.82rem; line-height:1.2; letter-spacing:.085em; }
+.recall-card h3 { margin:0; }
+.recall-card__hazard { margin:.55rem 0 .45rem; }
+.recall-meta { margin:.4rem 0; }
+.category { margin:.75rem 0 !important; }
+.category span { padding:.28rem .55rem; }
+.recall-card .secondary { margin-top:.15rem; }
+.recall-card__official-title { margin-top:.6rem; }
+.recall-card__official-title summary { display:flex; align-items:center; min-height:44px; }
 
 @media (max-width: 959px) {
   .site-header { min-height: 4rem; padding-inline: var(--gutter); }
@@ -25,24 +52,42 @@ button, input, textarea, select { max-width: 100%; }
 
 @media (max-width: 767px) {
   :root { --gutter: clamp(1rem, 4.8vw, 1.35rem); }
-  h1 { font-size: clamp(2rem, 9vw, 2.85rem); }
-  h2 { font-size: clamp(1.4rem, 6vw, 1.9rem); }
-  .page { padding-top: 1.15rem; }
-  .hero { padding-top: 1.65rem; }
-  .hero h1 { max-width: 12ch; }
-  .hero .lede { font-size: 1rem; line-height: 1.5; }
+  h1 { font-size: clamp(2.05rem, 9vw, 2.85rem); }
+  h2 { font-size: clamp(1.5rem, 6vw, 1.95rem); }
+  .page { padding-top: 1.25rem; }
+  .hero { padding:1rem 0 .85rem; }
+  .hero-copy { max-width:38rem; padding:1.45rem 1.05rem 1.25rem; border:1px solid #e3e4ed; border-radius:24px; background:linear-gradient(180deg,#fbfbff 0%,#f7f8fc 100%); box-shadow:0 12px 34px rgba(16,24,39,.06); }
+  .hero h1 { max-width: 12ch; margin-bottom:.8rem; }
+  .hero .lede { max-width:30rem; margin-bottom:1.25rem; font-size: 1.05rem; line-height: 1.55; }
   .hero-actions, .manual-card, .v2-search-card, .v2-source-strip--warning { max-width: 100%; }
-  .data-facts { max-width: 100%; row-gap: .35rem; }
+  .hero-actions { gap:.65rem; }
+  .scan-action { min-height:58px; font-size:1.08rem; border-radius:14px; }
+  .manual-action { font-size:1rem; }
+  .data-facts { max-width: 100%; row-gap: .4rem; font-size:.9rem; line-height:1.45; }
   .data-facts > * { min-width: 0; }
-  .content-section { margin-top: 1.5rem; padding-top: 1.5rem; }
+  .v2-search-card { margin-top:1.1rem; padding:1.15rem; border-radius:18px; }
+  .v2-search-card h2 { font-size:1.4rem; margin-bottom:.35rem; }
+  .v2-search-intro { font-size:1rem; margin-bottom:1rem; }
+  .v2-search-form label { font-size:1rem; }
+  .v2-search-form small { font-size:.92rem; }
+  .content-section { margin-top: 1.65rem; padding-top: 1.65rem; }
   .section-heading { gap: .75rem; }
   .section-heading h2 { margin: 0; }
   .section-heading a { flex: 0 0 auto; }
   .recall-grid { max-width: 100%; }
-  .recall-card { padding: 1rem 0; }
-  .recall-card h3 { font-size: 1.08rem; line-height: 1.3; }
-  .recall-card__hazard { line-height: 1.45; }
-  .category { gap: .3rem; }
+  .recall-card h3 { font-size: 1.13rem; line-height: 1.3; }
+  .recall-card__hazard { font-size:1rem; line-height: 1.5; }
+  .recall-meta { font-size:.9rem; line-height:1.45; }
+  .category { gap: .35rem; }
+  .category span { font-size:.82rem; line-height:1.25; }
+  .recall-card .secondary { font-size:.98rem; }
+  .recall-card__official-title summary { font-size:.9rem; }
+  .how-section .steps { gap:0; }
+  .how-section .steps li { padding:1.15rem 0; }
+  .how-section .steps li h3 { font-size:1.2rem; margin-bottom:.45rem; }
+  .how-section .steps li p { margin:0; font-size:1.03rem; }
+  .how-section .steps li > span { font-size:1rem; }
+  .how-section > p:last-child a { display:inline-flex; align-items:center; min-height:44px; font-size:1rem; }
   .filters { flex-wrap: nowrap; width: calc(100% + var(--gutter)); margin-right: calc(-1 * var(--gutter)); padding: .15rem var(--gutter) .45rem 0; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
   .filters button { flex: 0 0 auto; white-space: nowrap; min-height: 44px; }
   .product { grid-template-columns: 64px minmax(0, 1fr); }
@@ -65,22 +110,28 @@ button, input, textarea, select { max-width: 100%; }
 
 @media (max-width: 479px) {
   :root { --gutter: 1rem; }
-  body { font-size: 1rem; }
-  .site-header { min-height: 3.75rem; gap: .65rem; padding-block: .45rem; }
-  .brand strong { font-size: 1.1rem; }
-  .brand small { font-size: .68rem; }
-  .menu-button { min-width: 44px; padding-inline: .65rem; }
-  .hero { padding-top: 1.35rem; }
-  .hero h1 { font-size: clamp(2rem, 10.5vw, 2.55rem); margin-bottom: .75rem; }
-  .hero .lede { margin-bottom: 1.1rem; }
-  .scan-action { min-height: 54px; }
-  .manual-card, .v2-search-card, .card { padding: .9rem; border-radius: 14px; }
-  .data-facts { font-size: .8rem; }
+  body { font-size: 1.0625rem; line-height:1.55; }
+  .site-header { min-height: 3.6rem; gap: .65rem; padding-block: .45rem; }
+  .brand strong { font-size: 1.16rem; }
+  .brand small { font-size: .76rem; }
+  .menu-button { min-width: 46px; min-height:46px; padding-inline: .65rem; border-radius:13px; }
+  .hero { padding-top:.8rem; }
+  .hero-copy { padding:1.25rem .95rem 1.1rem; border-radius:20px; }
+  .hero-kicker { margin-bottom:.75rem; font-size:.76rem; }
+  .hero h1 { font-size: clamp(2.15rem, 11vw, 2.6rem); margin-bottom: .75rem; }
+  .hero .lede { font-size:1.02rem; margin-bottom: 1.1rem; }
+  .scan-action { min-height: 56px; }
+  .manual-card, .v2-search-card, .card { padding: 1rem; border-radius: 16px; }
+  .v2-search-card h2 { font-size:1.34rem; }
+  .data-facts { font-size: .87rem; }
   .section-heading { align-items: flex-start; }
-  .section-heading a { font-size: .9rem; }
-  .recall-card h3 { font-size: 1.02rem; }
-  .recall-meta { font-size: .8rem; }
-  .category span { font-size: .73rem; }
+  .section-heading a { font-size: .95rem; }
+  .recall-card { padding:1.1rem 1.05rem 1.05rem !important; border-radius:16px; }
+  .recall-card__status { font-size:.78rem; }
+  .recall-card h3 { font-size: 1.08rem; }
+  .recall-meta { font-size: .88rem; }
+  .category span { font-size: .8rem; }
+  .collection-context { font-size:.92rem; }
   .result-heading { font-size: clamp(1.4rem, 7vw, 1.75rem); }
   .result-status-indicator { gap: .6rem; }
   .result-status-indicator__icon { flex-basis: 2rem; width: 2rem; height: 2rem; }
@@ -93,13 +144,14 @@ button, input, textarea, select { max-width: 100%; }
   :root { --gutter: .875rem; }
   .site-header { gap: .4rem; }
   .brand small { display: none; }
-  .hero h1 { font-size: 2rem; }
+  .hero-copy { padding-inline:.8rem; }
+  .hero h1 { font-size: 2.1rem; }
   .section-heading { display: block; }
   .section-heading a { display: inline-block; margin-top: .25rem; min-height: 44px; padding-block: .55rem; }
   .data-facts { display: block; text-align: center; }
   .data-facts > span[aria-hidden="true"] { display: none; }
   .data-facts > * { display: block; margin: .15rem 0; }
-  .recall-card { padding-block: .9rem; }
+  .recall-card { padding:1rem .9rem !important; }
   dialog { width: calc(100% - 1rem); padding: .85rem; }
 }
 
