@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/refresh_recalls_current.py"
       - "scripts/refresh_recalls_current_v2.py"
+      - "tests/test_source_quality.py"
       - ".github/workflows/refresh-recalls.yml"
   schedule:
     - cron: "17 */6 * * *"
@@ -36,6 +37,7 @@ jobs:
         run: |
           python3 tests/test_refresh_current.py
           python3 tests/test_refresh_recalls.py
+          python3 tests/test_source_quality.py
 
       - name: Validate all recall JSON
         run: |
@@ -66,6 +68,10 @@ jobs:
                   raise SystemExit(f"Missing checkedAt for {agency}.")
               if source.get("recordCount") is None:
                   raise SystemExit(f"Missing recordCount for {agency}.")
+              if "current" not in source:
+                  raise SystemExit(f"Missing current quality state for {agency}.")
+              if not source.get("qualityStatus"):
+                  raise SystemExit(f"Missing qualityStatus for {agency}.")
 
           agency_counts = {
               agency: sum(item.get("agency") == agency for item in recalls)
@@ -78,6 +84,8 @@ jobs:
           print("Recall dataset structure is valid:", agency_counts)
           PY
 
+      # Commit quality metadata even when a source is stale. The UI must be able to
+      # warn consumers rather than continuing to show the previous healthy state.
       - name: Commit changed data
         run: |
           if git diff --quiet -- data/recalls.json; then
@@ -90,7 +98,7 @@ jobs:
             git push
           fi
 
-      - name: Enforce source freshness
+      - name: Enforce source data quality
         run: |
           python3 - <<'PY'
           import datetime as dt
@@ -116,18 +124,27 @@ jobs:
           for agency in ("FDA", "USDA"):
               source = sources.get(agency, {})
               successful = source.get("success") is True
+              current = source.get("current") is True
+              quality = source.get("qualityStatus")
               last_success = parse_time(source.get("lastSuccessfulUpdate"))
               checked = source.get("checkedAt")
               newest = source.get("newestRecallDate")
+              authority_newest = source.get("authoritativeNewestRecallDate")
 
               print(
-                  f"{agency}: success={successful}, "
-                  f"lastSuccessfulUpdate={source.get('lastSuccessfulUpdate')}, "
-                  f"checkedAt={checked}, newestRecallDate={newest}"
+                  f"{agency}: success={successful}, current={current}, qualityStatus={quality}, "
+                  f"lastSuccessfulUpdate={source.get('lastSuccessfulUpdate')}, checkedAt={checked}, "
+                  f"newestRecallDate={newest}, authoritativeNewestRecallDate={authority_newest}"
               )
 
               if not successful:
-                  problems.append(f"{agency} latest refresh failed")
+                  problems.append(f"{agency} latest source retrieval failed")
+
+              if not current:
+                  detail = f"{agency} data quality is {quality or 'unknown'}"
+                  if authority_newest:
+                      detail += f" (RecallCheck newest {newest}; official newest {authority_newest})"
+                  problems.append(detail)
 
               if last_success is None:
                   problems.append(f"{agency} has no lastSuccessfulUpdate")
@@ -141,5 +158,5 @@ jobs:
           if problems:
               raise SystemExit("; ".join(problems))
 
-          print("FDA and USDA source freshness checks passed.")
+          print("FDA and USDA retrieval and data-quality checks passed.")
           PY
