@@ -5,14 +5,14 @@
   const $ = id => document.getElementById(id);
 
   function loadV23Assets() {
-    if (!document.querySelector('link[data-recallcheck-v23]')) {
+    if (!document.querySelector('link[href^="v2-3.css"]')) {
       const css = document.createElement("link");
       css.rel = "stylesheet";
       css.href = "v2-3.css?v=2.3.0-beta";
       css.dataset.recallcheckV23 = "true";
       document.head.appendChild(css);
     }
-    if (!document.querySelector('script[data-recallcheck-v23]')) {
+    if (!document.querySelector('script[src^="v2-3.js"]')) {
       const script = document.createElement("script");
       script.src = "v2-3.js?v=2.3.0-beta";
       script.defer = true;
