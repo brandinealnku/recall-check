@@ -12,6 +12,7 @@ OUTPUT = ROOT / "data" / "source-status.json"
 payload = json.loads(RECALLS.read_text(encoding="utf-8"))
 health = payload.get("dataHealth") or {}
 sources = health.get("sources") or {}
+recalls = payload.get("recalls") or []
 
 snapshot = {
     "generatedAt": payload.get("generatedAt"),
@@ -43,6 +44,27 @@ for agency in ("FDA", "USDA"):
         )
         if key in source
     }
+
+live_fda = [
+    item for item in recalls
+    if item.get("agency") == "FDA"
+    and str(item.get("id") or "").startswith("FDA-PUBLIC-")
+]
+live_fda.sort(
+    key=lambda item: str(item.get("recallDate") or (item.get("timeline") or {}).get("recallDate") or ""),
+    reverse=True,
+)
+snapshot["liveFdaRows"] = [
+    {
+        "id": item.get("id"),
+        "date": item.get("recallDate") or (item.get("timeline") or {}).get("recallDate"),
+        "brandNames": item.get("brandNames") or [],
+        "product": item.get("productDescription") or item.get("title"),
+        "reason": item.get("reason"),
+        "officialUrl": item.get("officialUrl"),
+    }
+    for item in live_fda[:20]
+]
 
 OUTPUT.write_text(json.dumps(snapshot, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 print(json.dumps(snapshot, indent=2, sort_keys=True))
