@@ -27,9 +27,7 @@
       script.dataset.recallcheckV2 = "true";
       script.addEventListener("load", loadV2SearchFix, { once: true });
       document.body.appendChild(script);
-    } else {
-      loadV2SearchFix();
-    }
+    } else loadV2SearchFix();
   }
 
   function isLinkedInBrowser() {
@@ -52,25 +50,22 @@
     dialog.innerHTML = `
       <div class="dialog-head">
         <div>
-          <p class="privacy-note">Barcode scanning needs a direct browser session.</p>
-          <h2 id="browser-fallback-title">Open RecallCheck directly</h2>
+          <p class="privacy-note">Camera scanning isn’t available here</p>
+          <h2 id="browser-fallback-title">Open RecallCheck in Safari or Chrome</h2>
         </div>
         <button id="browser-fallback-close" class="icon-button" type="button" aria-label="Close">×</button>
       </div>
-      <p class="scanner-instruction">LinkedIn can limit camera access, even after choosing “Open in Safari” or “Open in Chrome.”</p>
-      <div class="camera-status" role="status">
-        <strong>To scan with your camera:</strong><br>
-        1. Copy the RecallCheck link below.<br>
-        2. Open Safari or Chrome yourself.<br>
-        3. Paste the link into the address bar.
-      </div>
-      <p class="scanner-help"><strong>${RECALLCHECK_URL}</strong></p>
+      <p class="scanner-instruction">LinkedIn’s in-app browser can block camera access. You can still check a product without the camera.</p>
+      <div class="browser-fallback-tip"><strong>Best option:</strong> copy the RecallCheck link, open Safari or Chrome yourself, and paste it into the address bar.</div>
       <p id="browser-fallback-copy-status" class="scanner-help" role="status" aria-live="polite"></p>
       <div class="actions">
         <button id="copy-recallcheck-link" class="primary" type="button">Copy RecallCheck link</button>
-        <button id="browser-fallback-manual" class="secondary" type="button">Enter barcode manually</button>
-        <button id="browser-fallback-cancel" class="text-button" type="button">Cancel</button>
-      </div>`;
+        <button id="browser-fallback-manual" class="secondary" type="button">Enter barcode instead</button>
+      </div>
+      <details class="browser-fallback-details">
+        <summary>How to open it directly</summary>
+        <ol><li>Copy the RecallCheck link.</li><li>Open Safari or Chrome.</li><li>Paste the link into the address bar.</li></ol>
+      </details>`;
     document.body.appendChild(dialog);
 
     const close = () => {
@@ -79,11 +74,7 @@
     };
 
     dialog.querySelector("#browser-fallback-close")?.addEventListener("click", close);
-    dialog.querySelector("#browser-fallback-cancel")?.addEventListener("click", close);
-    dialog.addEventListener("cancel", event => {
-      event.preventDefault();
-      close();
-    });
+    dialog.addEventListener("cancel", event => { event.preventDefault(); close(); });
 
     dialog.querySelector("#browser-fallback-manual")?.addEventListener("click", () => {
       close();
@@ -112,11 +103,9 @@
         input.remove();
       }
 
-      if (status) {
-        status.textContent = copied
-          ? "Link copied. Now open Safari or Chrome and paste it into the address bar."
-          : "Press and hold the URL above to copy it, then paste it into Safari or Chrome.";
-      }
+      if (status) status.textContent = copied
+        ? "Link copied. Open Safari or Chrome and paste it into the address bar."
+        : "Copy the browser address, then paste it into Safari or Chrome.";
     });
 
     return dialog;
@@ -160,18 +149,8 @@
       event.stopImmediatePropagation();
       showFallback();
     }, true);
-
-    if (!window.isSecureContext) {
-      const status = document.getElementById("scanner-status");
-      if (status && /HTTPS or localhost/i.test(status.textContent || "")) {
-        status.textContent = "Camera scanning isn't available in this browser session. Open RecallCheck directly in Safari or Chrome, or enter the barcode manually.";
-      }
-    }
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", installGuard, { once: true });
-  } else {
-    installGuard();
-  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", installGuard, { once: true });
+  else installGuard();
 })();

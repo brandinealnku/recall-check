@@ -1,8 +1,25 @@
 (() => {
   "use strict";
 
-  const VERSION = "2.2.0-beta";
+  const VERSION = "2.3.0-beta";
   const $ = id => document.getElementById(id);
+
+  function loadV23Assets() {
+    if (!document.querySelector('link[href^="v2-3.css"]')) {
+      const css = document.createElement("link");
+      css.rel = "stylesheet";
+      css.href = "v2-3.css?v=2.3.0-beta";
+      css.dataset.recallcheckV23 = "true";
+      document.head.appendChild(css);
+    }
+    if (!document.querySelector('script[src^="v2-3.js"]')) {
+      const script = document.createElement("script");
+      script.src = "v2-3.js?v=2.3.0-beta";
+      script.defer = true;
+      script.dataset.recallcheckV23 = "true";
+      document.body.appendChild(script);
+    }
+  }
 
   function setVersion() {
     document.documentElement.dataset.recallcheckVersion = VERSION;
@@ -16,19 +33,14 @@
   function polishPrimaryTask() {
     const searchTitle = $("v2-search-title");
     if (searchTitle) searchTitle.textContent = "Search instead";
-
     const searchIntro = document.querySelector(".v2-search-intro");
     if (searchIntro) searchIntro.textContent = "No barcode handy? Search by product or brand.";
-
     const searchHelp = $("v2-search-help");
     if (searchHelp) searchHelp.textContent = "For the most precise check, scan or enter the barcode on the package.";
-
     const searchSubmit = document.querySelector("#v2-search-form button[type='submit']");
     if (searchSubmit) searchSubmit.textContent = "Search";
-
     const manual = $("manual-button");
     if (manual) manual.textContent = "Or enter the barcode number";
-
     const footerBrand = document.querySelector(".footer-brand span");
     if (footerBrand) footerBrand.textContent = "An ITSBAD Labs product";
   }
@@ -43,7 +55,6 @@
     const results = $("results");
     const productSummary = $("product-summary");
     if (!results || !productSummary || $("rc-check-another")) return;
-
     const button = document.createElement("button");
     button.id = "rc-check-another";
     button.className = "secondary rc-check-another";
@@ -73,16 +84,12 @@
 
   function init() {
     setVersion();
+    loadV23Assets();
     polishPrimaryTask();
     removeTestingSignals();
     addCheckAnotherAction();
     watchResults();
-
-    // V2 search is deferred but should already exist; one bounded retry covers slow devices.
-    window.setTimeout(() => {
-      polishPrimaryTask();
-      removeTestingSignals();
-    }, 500);
+    window.setTimeout(() => { polishPrimaryTask(); removeTestingSignals(); }, 500);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
