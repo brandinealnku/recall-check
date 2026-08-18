@@ -8,6 +8,8 @@ on:
     paths:
       - "scripts/refresh_recalls_current.py"
       - "scripts/refresh_recalls_current_v2.py"
+      - "scripts/refresh_recalls_current_v3.py"
+      - "tests/test_fda_live_augmentation.py"
       - "tests/test_source_quality.py"
       - ".github/workflows/refresh-recalls.yml"
   schedule:
@@ -31,13 +33,14 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch and normalize current official data
-        run: python3 scripts/refresh_recalls_current_v2.py
+        run: python3 scripts/refresh_recalls_current_v3.py
 
       - name: Run recall data tests
         run: |
           python3 tests/test_refresh_current.py
           python3 tests/test_refresh_recalls.py
           python3 tests/test_source_quality.py
+          python3 tests/test_fda_live_augmentation.py
 
       - name: Validate all recall JSON
         run: |
@@ -84,8 +87,6 @@ jobs:
           print("Recall dataset structure is valid:", agency_counts)
           PY
 
-      # Commit quality metadata even when a source is stale. The UI must be able to
-      # warn consumers rather than continuing to show the previous healthy state.
       - name: Commit changed data
         run: |
           if git diff --quiet -- data/recalls.json; then
