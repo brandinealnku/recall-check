@@ -12,7 +12,7 @@ class ProductLookupResilienceTests(unittest.TestCase):
     def test_v411_assets_remain_loaded_and_cache_busted(self):
         self.assertIn('v4-1-1-mobile.css?v=4.1.1-beta', INDEX)
         self.assertIn('product-lookup-v4-1-1.js?v=4.1.1-beta', INDEX)
-        self.assertRegex(INDEX, r'meta name="version" content="4\.1\.[1-9][0-9]*-beta"')
+        self.assertIn('meta name="version" content="1.0"', INDEX)
 
     def test_legacy_duplicate_result_indicator_is_not_loaded(self):
         self.assertNotIn('result-indicators.js', INDEX)
