@@ -14,16 +14,39 @@
     ).format(time);
   }
 
+  function sourceIsCurrent(source) {
+    return Boolean(source?.success && source?.current === true && source?.qualityStatus === "current");
+  }
+
   function sourceSummary(agency, source) {
     if (!source) return `${agency}: status unavailable`;
+    const checked = formatDate(source.checkedAt || source.retrievedAt, true);
     const newest = source.newestRecallDate
-      ? `newest listed recall ${formatDate(source.newestRecallDate)}`
-      : "newest recall date unavailable";
-    if (source.success) {
-      return `${agency}: checked successfully ${formatDate(source.checkedAt || source.retrievedAt, true)} · ${newest}`;
+      ? `RecallCheck newest record ${formatDate(source.newestRecallDate)}`
+      : "RecallCheck newest record unavailable";
+    const authority = source.authoritativeNewestRecallDate
+      ? `official listing newest ${formatDate(source.authoritativeNewestRecallDate)}`
+      : "";
+
+    if (!source.success) {
+      const lastGood = source.lastSuccessfulUpdate;
+      return `${agency}: latest source check failed · last successful retrieval ${formatDate(lastGood, true)} · ${newest}`;
     }
-    const lastGood = source.lastSuccessfulUpdate;
-    return `${agency}: latest check failed · last successful retrieval ${formatDate(lastGood, true)} · ${newest}`;
+
+    if (source.qualityStatus === "stale" || source.current === false && source.freshnessValidated) {
+      return `${agency}: data may be incomplete · checked ${checked} · ${newest}${authority ? ` · ${authority}` : ""}`;
+    }
+
+    if (source.qualityStatus === "unverified" || source.freshnessValidated === false) {
+      return `${agency}: source reached successfully ${checked}, but freshness could not be independently verified · ${newest}`;
+    }
+
+    if (sourceIsCurrent(source)) {
+      return `${agency}: current · checked successfully ${checked} · ${newest}${authority ? ` · ${authority}` : ""}`;
+    }
+
+    // Backward-compatible wording for older datasets that predate source-quality fields.
+    return `${agency}: source reached successfully ${checked} · freshness not yet validated · ${newest}`;
   }
 
   function applyHomepageSummary(data) {
@@ -32,11 +55,11 @@
     const sources = data?.dataHealth?.sources || {};
     const fda = sources.FDA;
     const usda = sources.USDA;
-    const bothHealthy = Boolean(fda?.success && usda?.success);
+    const bothCurrent = sourceIsCurrent(fda) && sourceIsCurrent(usda);
 
     if (notice) {
-      notice.textContent = bothHealthy
-        ? "FDA + USDA checked successfully"
+      notice.textContent = bothCurrent
+        ? "FDA + USDA data current"
         : "Some official data needs attention";
     }
     if (footer) {
@@ -222,9 +245,6 @@
       applyHomepageSummary(data);
       setListingSummary(data);
 
-      // app.js also updates the homepage after its own data load. Re-apply the
-      // source-specific wording a finite number of times instead of observing and
-      // rewriting the same DOM nodes indefinitely.
       setTimeout(() => applyHomepageSummary(data), 250);
       setTimeout(() => applyHomepageSummary(data), 1000);
     } catch (_) {
