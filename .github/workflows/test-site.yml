@@ -5,13 +5,16 @@ on:
   pull_request:
     paths:
       - "index.html"
-      - "styles.css"
-      - "brand.css"
-      - "mobile-polish.css"
+      - "recalls.html"
+      - "recall.html"
+      - "how-recalls-work.html"
+      - "privacy.html"
+      - "methodology.html"
+      - "recallcheck-v3.css"
+      - "recallcheck-v3-responsive.css"
+      - "recallcheck-v3.js"
       - "discovery.js"
       - "app.js"
-      - "design-system.html"
-      - "design-review.js"
       - "tests/test_safety_design.py"
       - ".github/workflows/test-site.yml"
   push:
@@ -19,13 +22,16 @@ on:
       - main
     paths:
       - "index.html"
-      - "styles.css"
-      - "brand.css"
-      - "mobile-polish.css"
+      - "recalls.html"
+      - "recall.html"
+      - "how-recalls-work.html"
+      - "privacy.html"
+      - "methodology.html"
+      - "recallcheck-v3.css"
+      - "recallcheck-v3-responsive.css"
+      - "recallcheck-v3.js"
       - "discovery.js"
       - "app.js"
-      - "design-system.html"
-      - "design-review.js"
       - "tests/test_safety_design.py"
       - ".github/workflows/test-site.yml"
 
