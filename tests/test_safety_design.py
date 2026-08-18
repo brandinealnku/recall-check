@@ -81,7 +81,8 @@ class TrustVerificationTests(unittest.TestCase):
     def test_result_has_source_verification_and_provenance(self):
         self.assertIn("Sources checked for this result", TRUST_JS)
         self.assertIn("Which official sources were checked?", TRUST_JS)
-        self.assertIn('`Open ${state.agency} official recalls`', TRUST_JS)
+        self.assertIn("Open FDA official recalls", TRUST_JS)
+        self.assertIn("Open USDA official recalls", TRUST_JS)
         self.assertIn("trust-verification-card", TRUST_CSS)
         self.assertIn("result-provenance", TRUST_CSS)
 
