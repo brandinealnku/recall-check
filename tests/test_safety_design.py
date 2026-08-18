@@ -37,7 +37,7 @@ class SafetyStateDesignTests(unittest.TestCase):
 
     def test_no_match_is_not_a_safety_approval(self):
         self.assertIn("We didn\'t find this barcode in the FDA or USDA recall data checked.", APP)
-        self.assertIn("not a food-safety guarantee", INDEX)
+        self.assertIn("cannot guarantee that a product is safe", INDEX)
         self.assertIn("No match found, but official coverage is incomplete", TRUST_JS)
         self.assertIn("UNABLE TO FULLY VERIFY", TRUST_JS)
 
@@ -50,8 +50,8 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("forced-colors:active", TRUST_CSS)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 4.1.2-beta", INDEX)
-        self.assertIn('meta name="version" content="4.1.2-beta"', INDEX)
+        self.assertIn('meta name="version" content="1.0"', INDEX)
+        self.assertNotIn("Version 4.1.2-beta", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
 
