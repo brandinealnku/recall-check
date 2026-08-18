@@ -1,0 +1,1 @@
+FDA live augmentation is activated only when the refresh workflow calls scripts/refresh_recalls_current_v3.py. This marker exists to make the pipeline transition explicit in the associated pull request.
