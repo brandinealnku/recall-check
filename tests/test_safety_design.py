@@ -1,4 +1,4 @@
-"""Static regression checks for the RecallCheck V3 safety and responsive design contract."""
+"""Static regression checks for the RecallCheck safety, trust, and responsive design contract."""
 from pathlib import Path
 import re
 import unittest
@@ -7,6 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 APP = (ROOT / "app.js").read_text()
 CSS = (ROOT / "recallcheck-v3.css").read_text()
 RESPONSIVE = (ROOT / "recallcheck-v3-responsive.css").read_text()
+TRUST_CSS = (ROOT / "trust-v4-1.css").read_text()
+TRUST_JS = (ROOT / "trust-v4-1.js").read_text()
 INDEX = (ROOT / "index.html").read_text()
 DISCOVERY = (ROOT / "discovery.js").read_text()
 V3 = (ROOT / "recallcheck-v3.js").read_text()
@@ -31,6 +33,8 @@ class SafetyStateDesignTests(unittest.TestCase):
             self.assertIn(copy, APP)
         self.assertIn("This does not guarantee the product is safe", APP)
         self.assertNotRegex(APP, re.compile(r"safe to eat", re.I))
+        self.assertIn("Match the package, not only the barcode", TRUST_JS)
+        self.assertIn("lot/date code, package size, or establishment number", TRUST_JS)
 
     def test_semantic_result_tones_are_distinct(self):
         for tone in ("danger", "warning", "historical", "info"):
@@ -45,6 +49,8 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn('tone:"neutral-result"', APP)
         self.assertIn("This is a partial recall check.", FRESHNESS)
         self.assertIn("FDA coverage is currently incomplete", FRESHNESS)
+        self.assertIn("No match found, but official coverage is incomplete", TRUST_JS)
+        self.assertIn("UNABLE TO FULLY VERIFY", TRUST_JS)
 
     def test_accessibility_media_and_focus_rules(self):
         self.assertIn("prefers-reduced-motion:reduce", CSS)
@@ -52,12 +58,38 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("scroll-margin-top", CSS)
         self.assertIn("min-width:44px", CSS)
         self.assertIn("prefers-reduced-motion: reduce", RESPONSIVE)
+        self.assertIn("forced-colors:active", TRUST_CSS)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 3.3.1-beta", INDEX)
+        self.assertIn("Version 4.1.0-beta", INDEX)
+        self.assertIn('meta name="version" content="4.1.0-beta"', INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
+
+class TrustVerificationTests(unittest.TestCase):
+    def test_v41_assets_are_cache_busted(self):
+        self.assertIn('trust-v4-1.css?v=4.1.0-beta', INDEX)
+        self.assertIn('trust-v4-1.js?v=4.1.0-beta', INDEX)
+
+    def test_runtime_source_health_uses_coverage_state(self):
+        self.assertIn("coverageStatus || source.qualityStatus", TRUST_JS)
+        self.assertIn("source.current === true", TRUST_JS)
+        self.assertIn("Official source coverage needs attention", TRUST_JS)
+        self.assertIn("Official sources current", TRUST_JS)
+
+    def test_result_has_source_verification_and_provenance(self):
+        self.assertIn("Sources checked for this result", TRUST_JS)
+        self.assertIn("Which official sources were checked?", TRUST_JS)
+        self.assertIn("Open FDA official recalls", TRUST_JS)
+        self.assertIn("Open USDA official recalls", TRUST_JS)
+        self.assertIn("trust-verification-card", TRUST_CSS)
+        self.assertIn("result-provenance", TRUST_CSS)
+
+    def test_degraded_coverage_changes_no_match_result(self):
+        self.assertIn("degradeNoMatch", TRUST_JS)
+        self.assertIn("RecallCheck will not treat a no-match as a complete verification", TRUST_JS)
+        self.assertIn("Verify with ${state.agency}", TRUST_JS)
 
 class ConsolidationTests(unittest.TestCase):
     def test_home_uses_v3_design_system_and_responsive_layer(self):
@@ -123,7 +155,7 @@ class ConsolidationTests(unittest.TestCase):
         self.assertNotIn("official listing newest", FRESHNESS)
 
     def test_v3_avoids_template_dependencies_and_effects(self):
-        combined = (CSS + RESPONSIVE + INDEX).lower()
+        combined = (CSS + RESPONSONSIVE if False else CSS + RESPONSIVE + INDEX).lower()
         for forbidden in ("backdrop-filter", "font-awesome", "bootstrap.min", "tailwind", "sparkle", "decorative-blob"):
             self.assertNotIn(forbidden, combined)
 
