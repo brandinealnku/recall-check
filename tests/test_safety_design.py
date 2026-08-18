@@ -61,8 +61,8 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("forced-colors:active", TRUST_CSS)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 4.1.0-beta", INDEX)
-        self.assertIn('meta name="version" content="4.1.0-beta"', INDEX)
+        self.assertIn("Version 4.1.1-beta", INDEX)
+        self.assertIn('meta name="version" content="4.1.1-beta"', INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
@@ -81,8 +81,7 @@ class TrustVerificationTests(unittest.TestCase):
     def test_result_has_source_verification_and_provenance(self):
         self.assertIn("Sources checked for this result", TRUST_JS)
         self.assertIn("Which official sources were checked?", TRUST_JS)
-        self.assertIn("Open FDA official recalls", TRUST_JS)
-        self.assertIn("Open USDA official recalls", TRUST_JS)
+        self.assertIn('`Open ${state.agency} official recalls`', TRUST_JS)
         self.assertIn("trust-verification-card", TRUST_CSS)
         self.assertIn("result-provenance", TRUST_CSS)
 
@@ -155,7 +154,7 @@ class ConsolidationTests(unittest.TestCase):
         self.assertNotIn("official listing newest", FRESHNESS)
 
     def test_v3_avoids_template_dependencies_and_effects(self):
-        combined = (CSS + RESPONSONSIVE if False else CSS + RESPONSIVE + INDEX).lower()
+        combined = (CSS + RESPONSIVE + INDEX).lower()
         for forbidden in ("backdrop-filter", "font-awesome", "bootstrap.min", "tailwind", "sparkle", "decorative-blob"):
             self.assertNotIn(forbidden, combined)
 
