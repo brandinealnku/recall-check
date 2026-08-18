@@ -33,3 +33,4 @@ jobs:
           python3 tests/test_release_candidate_1_0.py
           python3 tests/test_safari_private_compat.py
           python3 tests/test_pwa_share.py
+          python3 tests/test_service_worker_data_passthrough.py
