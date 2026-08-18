@@ -13,8 +13,12 @@ on:
       - "recallcheck-v3.css"
       - "recallcheck-v3-responsive.css"
       - "recallcheck-v3.js"
+      - "freshness.js"
       - "discovery.js"
       - "app.js"
+      - "scripts/refresh_recalls_current_v4.py"
+      - "scripts/write_source_status.py"
+      - "tests/test_fda_source_union.py"
       - "tests/test_safety_design.py"
       - ".github/workflows/test-site.yml"
   push:
@@ -30,8 +34,12 @@ on:
       - "recallcheck-v3.css"
       - "recallcheck-v3-responsive.css"
       - "recallcheck-v3.js"
+      - "freshness.js"
       - "discovery.js"
       - "app.js"
+      - "scripts/refresh_recalls_current_v4.py"
+      - "scripts/write_source_status.py"
+      - "tests/test_fda_source_union.py"
       - "tests/test_safety_design.py"
       - ".github/workflows/test-site.yml"
 
@@ -48,4 +56,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Run site regression tests
-        run: python3 tests/test_safety_design.py
+        run: |
+          python3 tests/test_safety_design.py
+          python3 tests/test_fda_source_union.py
