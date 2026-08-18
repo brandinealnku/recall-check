@@ -1,4 +1,4 @@
-"""Static regression checks for the RecallCheck V3 safety and design contract."""
+"""Static regression checks for the RecallCheck V3 safety and responsive design contract."""
 from pathlib import Path
 import re
 import unittest
@@ -6,8 +6,10 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 APP = (ROOT / "app.js").read_text()
 CSS = (ROOT / "recallcheck-v3.css").read_text()
+RESPONSIVE = (ROOT / "recallcheck-v3-responsive.css").read_text()
 INDEX = (ROOT / "index.html").read_text()
 DISCOVERY = (ROOT / "discovery.js").read_text()
+V3 = (ROOT / "recallcheck-v3.js").read_text()
 PAGES = [
     (ROOT / "recalls.html").read_text(),
     (ROOT / "recall.html").read_text(),
@@ -46,36 +48,49 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("forced-colors:active", CSS)
         self.assertIn("scroll-margin-top", CSS)
         self.assertIn("min-width:44px", CSS)
+        self.assertIn("prefers-reduced-motion: reduce", RESPONSIVE)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 3.0.0-beta", INDEX)
+        self.assertIn("Version 3.1.0-beta", INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
 
 class ConsolidationTests(unittest.TestCase):
-    def test_home_uses_single_v3_stylesheet(self):
+    def test_home_uses_v3_design_system_and_responsive_layer(self):
         self.assertIn('recallcheck-v3.css?v=3.0.0-beta', INDEX)
+        self.assertIn('recallcheck-v3-responsive.css?v=3.1.0-beta', INDEX)
         for legacy in ("styles.css", "brand.css", "mobile-polish.css", "v2-1.css", "consumer-ux.css", "v2-3.css", "v2-4.css"):
             self.assertNotIn(f'href="{legacy}', INDEX)
 
-    def test_all_primary_pages_use_v3_design_system(self):
+    def test_all_primary_pages_use_v3_responsive_system(self):
         for page in PAGES:
             self.assertIn('recallcheck-v3.css?v=3.0.0-beta', page)
-            self.assertIn("Version 3.0.0-beta", page)
+            self.assertIn('recallcheck-v3-responsive.css?v=3.1.0-beta', page)
+            self.assertIn("Version 3.1.0-beta", page)
 
     def test_primary_pages_share_header_navigation(self):
         for page in [INDEX, *PAGES]:
             self.assertIn('aria-label="RecallCheck by ITSBAD Labs home"', page)
             self.assertIn('aria-expanded="false" aria-controls="site-nav"', page)
 
-    def test_v3_has_mobile_navigation_and_reflow(self):
-        self.assertIn("@media(max-width:799px)", CSS)
-        self.assertIn('.site-header nav[data-open="true"]{display:block}', CSS)
-        self.assertIn("grid-template-columns:1fr", CSS)
+    def test_responsive_matrix_covers_phone_tablet_desktop(self):
+        for width in (959, 767, 479, 359):
+            self.assertIn(f"max-width: {width}px", RESPONSIVE)
+        self.assertIn("min-width: 768px", RESPONSIVE)
+        self.assertIn("min-width: 1100px", RESPONSIVE)
+        self.assertIn("overflow-x: clip", RESPONSIVE)
+        self.assertIn("grid-template-columns: 1fr", RESPONSIVE)
+
+    def test_current_recall_context_explains_source_and_quality(self):
+        self.assertIn("Newest displayed current record", V3)
+        self.assertIn("Source coverage note", V3)
+        self.assertIn("authoritativeNewestRecallDate", V3)
+        self.assertIn("data-current-list-summary", (ROOT / "recalls.html").read_text())
+        self.assertIn("data-recent-summary", INDEX)
 
     def test_v3_avoids_template_dependencies_and_effects(self):
-        combined = (CSS + INDEX).lower()
+        combined = (CSS + RESPONSIVE + INDEX).lower()
         for forbidden in ("backdrop-filter", "font-awesome", "bootstrap.min", "tailwind", "sparkle", "decorative-blob"):
             self.assertNotIn(forbidden, combined)
 
