@@ -8,6 +8,8 @@
   const CACHE_KEY = "recallcheck.productIdentity.v1";
   const RECENT_KEY = "recallcheck.recentChecks.v2";
   const MAX_CACHE = 40;
+  const MAX_CACHE_AGE = 30 * 24 * 60 * 60 * 1000;
+  const MAX_RECENT_AGE = 90 * 24 * 60 * 60 * 1000;
 
   const normalizeCode = value => String(value || "").replace(/\D/g, "");
 
@@ -29,6 +31,11 @@
   function writeJson(key, value) {
     try { localStorage.setItem(key, JSON.stringify(value)); }
     catch (_) {}
+  }
+
+  function isRecent(value, maxAge) {
+    const parsed = Date.parse(value || "");
+    return Number.isFinite(parsed) && Date.now() - parsed <= maxAge;
   }
 
   function cleanedInit(init = {}) {
@@ -61,14 +68,17 @@
     const entry = { product, code: canonical || normalizeCode(requestedCode), cachedAt: new Date().toISOString(), source: "Open Food Facts" };
     barcodeCandidates(requestedCode).forEach(code => { cache[code] = entry; });
     barcodeCandidates(canonical).forEach(code => { cache[code] = entry; });
-    const ordered = Object.entries(cache).sort((a, b) => Date.parse(b[1]?.cachedAt || 0) - Date.parse(a[1]?.cachedAt || 0));
+    const ordered = Object.entries(cache)
+      .filter(([, item]) => isRecent(item?.cachedAt, MAX_CACHE_AGE))
+      .sort((a, b) => Date.parse(b[1]?.cachedAt || 0) - Date.parse(a[1]?.cachedAt || 0));
     writeJson(CACHE_KEY, Object.fromEntries(ordered.slice(0, MAX_CACHE)));
   }
 
   function cachedProduct(code) {
     const cache = readJson(CACHE_KEY, {});
     for (const candidate of barcodeCandidates(code)) {
-      if (cache[candidate]?.product) return { ...cache[candidate].product, code: cache[candidate].product.code || candidate, recallcheck_identity_source: "cached Open Food Facts result" };
+      const item = cache[candidate];
+      if (item?.product && isRecent(item.cachedAt, MAX_CACHE_AGE)) return { ...item.product, code: item.product.code || candidate, recallcheck_identity_source: "cached Open Food Facts result" };
     }
     return null;
   }
@@ -76,7 +86,7 @@
   function recentProduct(code) {
     const recent = readJson(RECENT_KEY, []);
     const candidates = new Set(barcodeCandidates(code));
-    const item = recent.find(entry => barcodeCandidates(entry?.barcode).some(value => candidates.has(value)));
+    const item = recent.find(entry => isRecent(entry?.checkedAt, MAX_RECENT_AGE) && barcodeCandidates(entry?.barcode).some(value => candidates.has(value)));
     const name = String(item?.productName || "").trim();
     if (!name || /^(barcode check|product details unavailable|product name not found)$/i.test(name)) return null;
     return {
@@ -128,6 +138,14 @@
     throw new Error("service");
   };
 
+  function clearIdentityCacheWithRecentChecks() {
+    document.addEventListener("click", event => {
+      const button = event.target?.closest?.("#recent-checks-v21 .text-button");
+      if (!button || String(button.textContent || "").trim() !== "Clear") return;
+      try { localStorage.removeItem(CACHE_KEY); } catch (_) {}
+    });
+  }
+
   function markVersion() {
     document.documentElement.dataset.recallcheckVersion = VERSION;
     document.querySelector('meta[name="version"]')?.setAttribute("content", VERSION);
@@ -136,8 +154,13 @@
     });
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", markVersion, { once: true });
-  else markVersion();
+  function init() {
+    clearIdentityCacheWithRecentChecks();
+    markVersion();
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
+  else init();
 
   window.RecallCheckProductIdentity = Object.freeze({ VERSION, barcodeCandidates, cachedProduct, recentProduct });
 })();
