@@ -15,7 +15,9 @@ def test_service_worker_never_caches_recall_data():
     assert "CACHE_NAME" in sw
     assert 'url.origin !== self.location.origin' in sw
     assert 'url.pathname.includes("/data/")' in sw
-    assert 'cache: "no-store"' in sw
+    block = sw.split('url.pathname.includes("/data/")', 1)[1].split("}", 1)[0]
+    assert "return;" in block
+    assert "respondWith" not in block
     assert 'request.mode === "navigate"' in sw
 
 def test_install_and_share_are_contextual():
