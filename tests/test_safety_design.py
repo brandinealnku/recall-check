@@ -51,7 +51,7 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("prefers-reduced-motion: reduce", RESPONSIVE)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 3.1.0-beta", INDEX)
+        self.assertIn("Version 3.2.0-beta", INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
@@ -59,15 +59,15 @@ class SafetyStateDesignTests(unittest.TestCase):
 class ConsolidationTests(unittest.TestCase):
     def test_home_uses_v3_design_system_and_responsive_layer(self):
         self.assertIn('recallcheck-v3.css?v=3.0.0-beta', INDEX)
-        self.assertIn('recallcheck-v3-responsive.css?v=3.1.0-beta', INDEX)
+        self.assertIn('recallcheck-v3-responsive.css?v=3.2.0-beta', INDEX)
         for legacy in ("styles.css", "brand.css", "mobile-polish.css", "v2-1.css", "consumer-ux.css", "v2-3.css", "v2-4.css"):
             self.assertNotIn(f'href="{legacy}', INDEX)
 
     def test_all_primary_pages_use_v3_responsive_system(self):
         for page in PAGES:
             self.assertIn('recallcheck-v3.css?v=3.0.0-beta', page)
-            self.assertIn('recallcheck-v3-responsive.css?v=3.1.0-beta', page)
-            self.assertIn("Version 3.1.0-beta", page)
+            self.assertIn('recallcheck-v3-responsive.css?v=3.2.0-beta', page)
+            self.assertIn("Version 3.2.0-beta", page)
 
     def test_primary_pages_share_header_navigation(self):
         for page in [INDEX, *PAGES]:
@@ -81,6 +81,18 @@ class ConsolidationTests(unittest.TestCase):
         self.assertIn("min-width: 1100px", RESPONSIVE)
         self.assertIn("overflow-x: clip", RESPONSIVE)
         self.assertIn("grid-template-columns: 1fr", RESPONSIVE)
+
+    def test_mobile_polish_uses_single_recall_status_and_consistent_inset(self):
+        self.assertIn('.recall-card::before { display:none !important; content:none !important; }', RESPONSIVE)
+        self.assertIn('padding:1.25rem 1.25rem 1.2rem !important', RESPONSIVE)
+        self.assertIn('border-left:6px solid var(--danger)', RESPONSIVE)
+        self.assertIn('body { font-size: 1.0625rem', RESPONSIVE)
+
+    def test_home_hero_has_product_context_and_visual_hierarchy(self):
+        self.assertIn('class="hero-kicker"', INDEX)
+        self.assertIn("FDA + USDA recall check", INDEX)
+        self.assertIn(".hero-kicker", RESPONSIVE)
+        self.assertIn("box-shadow:0 8px 18px", RESPONSIVE)
 
     def test_current_recall_context_explains_source_and_quality(self):
         self.assertIn("Newest displayed current record", V3)
