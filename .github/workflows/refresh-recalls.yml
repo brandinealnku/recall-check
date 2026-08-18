@@ -9,6 +9,7 @@ on:
       - "scripts/refresh_recalls_current.py"
       - "scripts/refresh_recalls_current_v2.py"
       - "scripts/refresh_recalls_current_v3.py"
+      - "scripts/write_source_status.py"
       - "tests/test_fda_live_augmentation.py"
       - "tests/test_source_quality.py"
       - ".github/workflows/refresh-recalls.yml"
@@ -35,6 +36,9 @@ jobs:
       - name: Fetch and normalize current official data
         run: python3 scripts/refresh_recalls_current_v3.py
 
+      - name: Write compact source-status snapshot
+        run: python3 scripts/write_source_status.py
+
       - name: Run recall data tests
         run: |
           python3 tests/test_refresh_current.py
@@ -45,6 +49,7 @@ jobs:
       - name: Validate all recall JSON
         run: |
           python3 -m json.tool data/recalls.json >/dev/null
+          python3 -m json.tool data/source-status.json >/dev/null
           python3 -m json.tool data/demo-recalls.json >/dev/null
           python3 -m json.tool data/demo-products.json >/dev/null
           python3 -m json.tool tests/fixtures/official-recall-fixtures.json >/dev/null
@@ -56,6 +61,7 @@ jobs:
           from pathlib import Path
 
           payload = json.loads(Path("data/recalls.json").read_text(encoding="utf-8"))
+          snapshot = json.loads(Path("data/source-status.json").read_text(encoding="utf-8"))
           recalls = payload.get("recalls")
           health = payload.get("dataHealth", {})
           sources = health.get("sources", {})
@@ -76,6 +82,11 @@ jobs:
               if not source.get("qualityStatus"):
                   raise SystemExit(f"Missing qualityStatus for {agency}.")
 
+              compact = snapshot.get("sources", {}).get(agency, {})
+              for key in ("current", "qualityStatus", "recordCount", "newestRecallDate"):
+                  if compact.get(key) != source.get(key):
+                      raise SystemExit(f"source-status mismatch for {agency}.{key}")
+
           agency_counts = {
               agency: sum(item.get("agency") == agency for item in recalls)
               for agency in ("FDA", "USDA")
@@ -85,16 +96,17 @@ jobs:
                   raise SystemExit(f"Refusing to publish zero {agency} records.")
 
           print("Recall dataset structure is valid:", agency_counts)
+          print("Compact source status agrees with recalls.json.")
           PY
 
       - name: Commit changed data
         run: |
-          if git diff --quiet -- data/recalls.json; then
-            echo "Recall data is unchanged."
+          if git diff --quiet -- data/recalls.json data/source-status.json; then
+            echo "Recall data and source status are unchanged."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/recalls.json
+            git add data/recalls.json data/source-status.json
             git commit -m "chore: refresh recall data"
             git push
           fi
@@ -106,8 +118,8 @@ jobs:
           import json
           from pathlib import Path
 
-          payload = json.loads(Path("data/recalls.json").read_text(encoding="utf-8"))
-          sources = payload.get("dataHealth", {}).get("sources", {})
+          payload = json.loads(Path("data/source-status.json").read_text(encoding="utf-8"))
+          sources = payload.get("sources", {})
           now = dt.datetime.now(dt.timezone.utc)
           failures = []
           warnings = []
