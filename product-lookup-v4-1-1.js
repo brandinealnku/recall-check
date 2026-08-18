@@ -1,6 +1,7 @@
 (() => {
   "use strict";
 
+  const VERSION = "4.1.1-beta";
   const previousFetch = window.fetch.bind(window);
   const OFF_HOST = "world.openfoodfacts.org";
   const PRODUCT_PATH = /^\/api\/v2\/product\/([0-9]+)\.json$/;
@@ -127,5 +128,16 @@
     throw new Error("service");
   };
 
-  window.RecallCheckProductIdentity = Object.freeze({ barcodeCandidates, cachedProduct, recentProduct });
+  function markVersion() {
+    document.documentElement.dataset.recallcheckVersion = VERSION;
+    document.querySelector('meta[name="version"]')?.setAttribute("content", VERSION);
+    document.querySelectorAll("footer .copyright span").forEach(span => {
+      if (/^Version\s/i.test(span.textContent || "")) span.textContent = `Version ${VERSION}`;
+    });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", markVersion, { once: true });
+  else markVersion();
+
+  window.RecallCheckProductIdentity = Object.freeze({ VERSION, barcodeCandidates, cachedProduct, recentProduct });
 })();
