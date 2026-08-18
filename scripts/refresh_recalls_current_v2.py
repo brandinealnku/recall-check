@@ -10,14 +10,13 @@ current.
 from __future__ import annotations
 
 import datetime as dt
-import re
 from html.parser import HTMLParser
 from typing import Any
 
 import refresh_recalls_current as current
 
 
-WORKFLOW_VERSION = "0.5.0"
+WORKFLOW_VERSION = "0.5.1"
 
 
 def fuzzy_first(record: dict[str, str], *keys: str) -> str:
@@ -36,7 +35,7 @@ def fuzzy_first(record: dict[str, str], *keys: str) -> str:
 
 
 class FdaRecallTableParser(HTMLParser):
-    """Extract rows from FDA's public Recalls, Market Withdrawals & Safety Alerts table."""
+    """Extract table rows from FDA's public recall listing."""
 
     def __init__(self) -> None:
         super().__init__()
@@ -85,21 +84,44 @@ def _iso_date(value: str) -> str:
     return current.legacy.parse_date(text)
 
 
+def _normalized_header(value: str) -> str:
+    return " ".join(current.legacy.clean_text(value).lower().replace("(s)", "s").split())
+
+
 def newest_fda_public_food_date(html: str) -> str:
-    """Return the newest food recall date visible in FDA's public recall table."""
+    """Return the newest FDA food-recall date using explicit table columns only."""
     parser = FdaRecallTableParser()
     parser.feed(str(html))
+
+    header_map: dict[str, int] | None = None
     dates: list[str] = []
+
     for row in parser.rows:
-        combined = " | ".join(row)
-        if not re.search(r"(?i)\bFood\s*&\s*Beverages\b|\bFoodborne Illness\b|\bAllergens\b", combined):
+        normalized = [_normalized_header(cell) for cell in row]
+        if "date" in normalized and any("product type" in cell for cell in normalized):
+            header_map = {name: index for index, name in enumerate(normalized)}
             continue
-        date_cell = next((cell for cell in row if re.fullmatch(r"\d{2}/\d{2}/\d{4}", cell.strip())), "")
-        parsed = _iso_date(date_cell)
+
+        if not header_map:
+            continue
+
+        date_index = header_map.get("date")
+        product_type_index = next((i for name, i in header_map.items() if "product type" in name), None)
+        if date_index is None or product_type_index is None:
+            continue
+        if date_index >= len(row) or product_type_index >= len(row):
+            continue
+
+        product_type = current.legacy.clean_text(row[product_type_index])
+        if "food & beverages" not in product_type.lower():
+            continue
+
+        parsed = _iso_date(row[date_index])
         if parsed:
             dates.append(parsed)
+
     if not dates:
-        raise ValueError("FDA public recalls page contained no identifiable food recall rows")
+        raise ValueError("FDA public recalls page contained no identifiable Food & Beverages recall rows")
     return max(dates)
 
 
@@ -173,9 +195,6 @@ def apply_source_quality(dataset: dict[str, Any], fda_fetcher=current.fetch_text
     return dataset
 
 
-# Functions in refresh_recalls_current resolve `first` and `build_dataset` from their
-# module globals at call time. Keep the tested ingestion logic intact while adding
-# field-name compatibility and a separate quality layer.
 current.first = fuzzy_first
 _original_build_dataset = current.build_dataset
 
