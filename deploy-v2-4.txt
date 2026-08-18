@@ -1,0 +1,3 @@
+RecallCheck V2.4 deployment trigger
+2026-08-17T20:39-04:00
+Purpose: force the external production deployment integration to pick up the merged V2.4 assets.
