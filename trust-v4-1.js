@@ -18,7 +18,8 @@
   function sourceState(agency) {
     const source = sourceStatus?.sources?.[agency] || {};
     const raw = String(source.coverageStatus || source.qualityStatus || "").toLowerCase();
-    const healthy = source.success !== false && (raw === "current" || raw === "healthy" || source.current === true);
+    const freshnessVerified = source.freshnessValidated===true;
+    const healthy = source.success === true && source.current === true && freshnessVerified && (raw === "current" || raw === "healthy");
     const failed = source.success === false || raw === "failed" || raw === "unavailable";
     return { agency, source, healthy, failed, label: healthy ? "Current" : failed ? "Unavailable" : "Needs attention" };
   }
@@ -38,6 +39,12 @@
     return new Intl.DateTimeFormat("en-US", {
       month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit"
     }).format(date);
+  }
+
+  function formatRecordDate(value) {
+    const parsed = Date.parse(value || "");
+    if (!Number.isFinite(parsed)) return "not available";
+    return new Intl.DateTimeFormat("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }).format(parsed);
   }
 
   function relativeChecked(date) {
@@ -86,15 +93,23 @@
 
   function updateGlobalStatus() {
     const notice = document.getElementById("data-notice");
-    if (!notice || !sourceStatus) return;
-    if (allHealthy()) {
-      notice.textContent = `Official sources current · ${relativeChecked(checkedDate())}`;
-      notice.classList.remove("coverage-warning");
-      notice.classList.add("coverage-current");
-    } else {
-      notice.textContent = "Official source coverage needs attention";
-      notice.classList.remove("coverage-current");
-      notice.classList.add("coverage-warning");
+    const footer = document.getElementById("footer-updated");
+    if (!sourceStatus) return;
+    const fda = sourceState("FDA");
+    const usda = sourceState("USDA");
+    if (notice) {
+      if (allHealthy()) {
+        notice.textContent = `Official sources current · FDA verified through ${formatRecordDate(fda.source.newestRecallDate)} · USDA FSIS through ${formatRecordDate(usda.source.newestRecallDate)}`;
+        notice.classList.remove("coverage-warning");
+        notice.classList.add("coverage-current");
+      } else {
+        notice.textContent = "Official source coverage needs attention";
+        notice.classList.remove("coverage-current");
+        notice.classList.add("coverage-warning");
+      }
+    }
+    if (footer) {
+      footer.textContent = `Official source status checked ${formatChecked(checkedDate())}. Newest verified records: FDA ${formatRecordDate(fda.source.newestRecallDate)}; USDA FSIS ${formatRecordDate(usda.source.newestRecallDate)}.`;
     }
   }
 
@@ -112,7 +127,7 @@
 
   function isNoMatch(result) {
     const heading = (result.querySelector(".result-heading")?.textContent || "").toLowerCase();
-    return heading.includes("no matching recall found") || heading.includes("no match found");
+    return heading.includes("no matching recall found") || heading.includes("no match found") || heading.includes("no current recall");
   }
 
   function addFact(list, label, value) {
@@ -136,6 +151,7 @@
           ? ` · ${formatChecked(new Date(surface.checkedAt))}` : "";
         list.append(el("li", `${surface.name}: ${surface.success ? "reached" : "unavailable"}${when}`));
       });
+      list.append(el("li", `Newest verified record: ${formatRecordDate(state.source.newestRecallDate)}`));
       section.append(list, officialLink(state.agency, `Open ${state.agency} official recalls`));
       body.append(section);
     });
@@ -168,6 +184,8 @@
     const facts = el("dl", null, "about-check-facts");
     addFact(facts, "Sources checked", "FDA food recalls and USDA FSIS recalls");
     addFact(facts, "Recall records last refreshed", legacy["Recall data updated"] || formatChecked(checkedDate()));
+    addFact(facts, "FDA newest verified record", formatRecordDate(sourceState("FDA").source.newestRecallDate));
+    addFact(facts, "USDA newest verified record", formatRecordDate(sourceState("USDA").source.newestRecallDate));
     addFact(facts, "Product information", legacy["Product information source"] || "Open Food Facts");
 
     if (!noMatch) {
@@ -178,7 +196,7 @@
     }
 
     body.append(facts);
-    const sourceLine = el("p", allHealthy() ? "FDA and USDA source coverage was current for this check." : "At least one official source needs attention, so this check may be incomplete.", allHealthy() ? "about-check-health" : "about-check-health about-check-health--warning");
+    const sourceLine = el("p", allHealthy() ? "FDA and USDA source coverage was current and freshness-verified for this check." : "At least one official source needs attention, so this check may be incomplete.", allHealthy() ? "about-check-health" : "about-check-health about-check-health--warning");
     body.append(sourceLine, buildTechnicalDetails(result, legacy));
     details.append(body);
     return details;
@@ -189,21 +207,30 @@
     const heading = result.querySelector(".result-heading");
     const label = result.querySelector(".result-label");
     const instruction = result.querySelector(".result-instruction");
-    if (!heading || !/no matching recall found|no match found/i.test(heading.textContent || "")) return;
+    if (!heading || !/no matching recall found|no match found|no current recall/i.test(heading.textContent || "")) return;
 
     result.className = result.className.replace(/result--[^\s]+/g, "").trim() + " result--warning trust-result-degraded";
     const banner = result.querySelector(".result-banner");
     if (banner) banner.className = banner.className.replace(/result-banner--[^\s]+/g, "").trim() + " result-banner--warning";
-    if (label) label.textContent = "UNABLE TO FULLY VERIFY";
+    if (label) label.textContent = "UNABLE TO FULLY VERIFY — PARTIAL CHECK";
     heading.textContent = "No match found, but official coverage is incomplete";
-    if (instruction) instruction.textContent = "We did not find this barcode in the recall records currently available to RecallCheck. At least one official source needs attention, so this is not a complete no-match result.";
+    if (instruction) instruction.textContent = "We did not find this barcode in the recall records currently available to RecallCheck. At least one official source is unavailable, stale, or not freshness-verified, so this does not prove the product is not recalled.";
 
     if (!result.querySelector(".trust-degraded-actions")) {
       const actions = el("div", null, "result-actions trust-degraded-actions");
-      [sourceState("FDA"), sourceState("USDA")].filter(state => !state.healthy).forEach(state => actions.append(officialLink(state.agency, `Verify with ${state.agency}`)));
+      [sourceState("FDA"), sourceState("USDA")].filter(state => !state.healthy).forEach(x => actions.append(officialLink(x.agency, `Verify with ${x.agency}`)));
       const summary = result.querySelector(".result-summary");
       if (summary) summary.append(actions);
     }
+  }
+
+  function productIdentityCaution(result) {
+    const text = (result.textContent || "").toLowerCase();
+    if (!(text.includes("product information") || text.includes("name unavailable") || text.includes("could not identify"))) return;
+    if (result.querySelector("[data-identity-caution]")) return;
+    const caution = el("p", "Product identity could not be confirmed from this barcode. Any recall result reflects barcode matching only; compare package details with the official notice.", "about-check-health about-check-health--warning");
+    caution.dataset.identityCaution = "true";
+    (result.querySelector(".result-summary") || result).prepend(caution);
   }
 
   function enhancePackageVerification(result) {
@@ -236,8 +263,23 @@
     const result = panel?.querySelector(".result");
     if (!result || !sourceStatus) return;
     degradeNoMatch(result);
+    productIdentityCaution(result);
     enhancePackageVerification(result);
     simplifyTrustUI(result);
+  }
+
+  function renderSourceFailure() {
+    const notice = document.getElementById("data-notice");
+    const footer = document.getElementById("footer-updated");
+    const root = document.getElementById("data-status-content");
+    if (notice) {
+      notice.textContent = "Source verification unavailable";
+      notice.classList.add("coverage-warning");
+    }
+    if (footer) footer.textContent = "RecallCheck could not verify official source freshness. Confirm results with FDA and USDA FSIS.";
+    if (root) {
+      root.replaceChildren(el("p", "RecallCheck could not verify source freshness right now. Results may be incomplete; use the official FDA and USDA FSIS listings for confirmation.", "field-error"));
+    }
   }
 
   async function init() {
@@ -248,13 +290,10 @@
       updateGlobalStatus();
       enhanceResult();
       const resultPanel = document.getElementById("result-panel");
-      if (resultPanel) new MutationObserver(enhanceResult).observe(resultPanel, { childList: true });
+      if (resultPanel) new MutationObserver(enhanceResult).observe(resultPanel, { childList: true, subtree: true });
     } catch (_) {
-      const notice = document.getElementById("data-notice");
-      if (notice) {
-        notice.textContent = "Source verification unavailable";
-        notice.classList.add("coverage-warning");
-      }
+      sourceStatus = null;
+      renderSourceFailure();
     }
   }
 

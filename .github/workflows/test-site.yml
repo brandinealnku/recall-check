@@ -3,61 +3,10 @@ name: Test RecallCheck site
 on:
   workflow_dispatch:
   pull_request:
-    paths:
-      - "index.html"
-      - "recalls.html"
-      - "recall.html"
-      - "how-recalls-work.html"
-      - "privacy.html"
-      - "methodology.html"
-      - "recallcheck-v3.css"
-      - "recallcheck-v3-responsive.css"
-      - "recallcheck-v3.js"
-      - "trust-v4-1.css"
-      - "trust-v4-1.js"
-      - "v4-1-1-mobile.css"
-      - "product-lookup-v4-1-1.js"
-      - "freshness.js"
-      - "discovery.js"
-      - "app.js"
-      - "data/recalls.json"
-      - "data/source-status.json"
-      - "scripts/refresh_recalls_current_v4.py"
-      - "scripts/write_source_status.py"
-      - "tests/test_fda_source_union.py"
-      - "tests/test_known_recall_fixtures.py"
-      - "tests/test_safety_design.py"
-      - "tests/test_v411_mobile_lookup.py"
-      - ".github/workflows/test-site.yml"
+  merge_group:
   push:
     branches:
       - main
-    paths:
-      - "index.html"
-      - "recalls.html"
-      - "recall.html"
-      - "how-recalls-work.html"
-      - "privacy.html"
-      - "methodology.html"
-      - "recallcheck-v3.css"
-      - "recallcheck-v3-responsive.css"
-      - "recallcheck-v3.js"
-      - "trust-v4-1.css"
-      - "trust-v4-1.js"
-      - "v4-1-1-mobile.css"
-      - "product-lookup-v4-1-1.js"
-      - "freshness.js"
-      - "discovery.js"
-      - "app.js"
-      - "data/recalls.json"
-      - "data/source-status.json"
-      - "scripts/refresh_recalls_current_v4.py"
-      - "scripts/write_source_status.py"
-      - "tests/test_fda_source_union.py"
-      - "tests/test_known_recall_fixtures.py"
-      - "tests/test_safety_design.py"
-      - "tests/test_v411_mobile_lookup.py"
-      - ".github/workflows/test-site.yml"
 
 permissions:
   contents: read
@@ -65,15 +14,20 @@ permissions:
 jobs:
   site-regression:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run site regression tests
+      - name: Run RecallCheck 1.0 regression suite
         run: |
           python3 tests/test_safety_design.py
           python3 tests/test_fda_source_union.py
+          python3 tests/test_fda_live_augmentation.py
           python3 tests/test_known_recall_fixtures.py
+          python3 tests/test_refresh_current.py
+          python3 tests/test_refresh_recalls.py
+          python3 tests/test_source_quality.py
           python3 tests/test_v411_mobile_lookup.py
+          python3 tests/test_release_candidate_1_0.py
