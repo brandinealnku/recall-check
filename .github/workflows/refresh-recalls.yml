@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/refresh_recalls_current.py"
       - "scripts/refresh_recalls_current_v2.py"
+      - "tests/test_source_quality.py"
       - ".github/workflows/refresh-recalls.yml"
   schedule:
     - cron: "17 */6 * * *"
@@ -36,6 +37,7 @@ jobs:
         run: |
           python3 tests/test_refresh_current.py
           python3 tests/test_refresh_recalls.py
+          python3 tests/test_source_quality.py
 
       - name: Validate all recall JSON
         run: |
