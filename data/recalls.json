@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T02:02:19Z",
+  "generatedAt": "2026-08-18T02:07:56Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,20 +14,20 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.6.0",
-    "checkedAt": "2026-08-18T02:02:19Z",
-    "lastSuccessfulUpdate": "2026-08-18T02:02:19Z",
+    "checkedAt": "2026-08-18T02:07:56Z",
+    "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-08-18T02:02:19Z",
-        "retrievedAt": "2026-08-18T02:02:19Z",
-        "lastSuccessfulUpdate": "2026-08-18T02:02:19Z",
+        "checkedAt": "2026-08-18T02:07:56Z",
+        "retrievedAt": "2026-08-18T02:07:56Z",
+        "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
         "newestRecallDate": "2026-08-17",
         "recordCount": 155,
         "error": null,
         "validationMethod": "annual-xml-plus-public-recall-table",
         "freshnessValidated": true,
-        "freshnessValidatedAt": "2026-08-18T02:02:19Z",
+        "freshnessValidatedAt": "2026-08-18T02:07:56Z",
         "authoritativeNewestRecallDate": "2026-08-17",
         "freshnessLagDays": 0,
         "current": true,
@@ -37,9 +37,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-08-18T02:02:19Z",
-        "retrievedAt": "2026-08-18T02:02:19Z",
-        "lastSuccessfulUpdate": "2026-08-18T02:02:19Z",
+        "checkedAt": "2026-08-18T02:07:56Z",
+        "retrievedAt": "2026-08-18T02:07:56Z",
+        "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
         "newestRecallDate": "2026-08-08",
         "recordCount": 2020,
         "error": null,

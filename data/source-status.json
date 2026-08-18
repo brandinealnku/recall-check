@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-08-18T02:07:56Z",
+  "generatedAt": "2026-08-18T02:07:56Z",
+  "sources": {
+    "FDA": {
+      "authoritativeNewestRecallDate": "2026-08-17",
+      "checkedAt": "2026-08-18T02:07:56Z",
+      "current": true,
+      "freshnessLagDays": 0,
+      "freshnessValidated": true,
+      "freshnessValidatedAt": "2026-08-18T02:07:56Z",
+      "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
+      "livePublicRowsAdded": 10,
+      "livePublicRowsSeen": 10,
+      "newestRecallDate": "2026-08-17",
+      "qualityStatus": "current",
+      "recordCount": 155,
+      "success": true,
+      "validationMethod": "annual-xml-plus-public-recall-table"
+    },
+    "USDA": {
+      "checkedAt": "2026-08-18T02:07:56Z",
+      "current": true,
+      "freshnessValidated": true,
+      "lastSuccessfulUpdate": "2026-08-18T02:07:56Z",
+      "newestRecallDate": "2026-08-08",
+      "qualityStatus": "current",
+      "recordCount": 2020,
+      "success": true,
+      "validationMethod": "primary-api"
+    }
+  },
+  "warnings": [],
+  "workflowVersion": "0.6.0"
+}
