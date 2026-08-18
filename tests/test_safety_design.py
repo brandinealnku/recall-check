@@ -51,7 +51,7 @@ class SafetyStateDesignTests(unittest.TestCase):
         self.assertIn("prefers-reduced-motion: reduce", RESPONSIVE)
 
     def test_version_and_ownership(self):
-        self.assertIn("Version 3.2.0-beta", INDEX)
+        self.assertIn("Version 3.2.1-beta", INDEX)
         self.assertIn("RecallCheck", INDEX)
         self.assertIn("ITSBAD LLC", INDEX)
         self.assertIn("not endorsed by FDA, USDA", INDEX)
@@ -59,7 +59,7 @@ class SafetyStateDesignTests(unittest.TestCase):
 class ConsolidationTests(unittest.TestCase):
     def test_home_uses_v3_design_system_and_responsive_layer(self):
         self.assertIn('recallcheck-v3.css?v=3.0.0-beta', INDEX)
-        self.assertIn('recallcheck-v3-responsive.css?v=3.2.0-beta', INDEX)
+        self.assertIn('recallcheck-v3-responsive.css?v=3.2.1-beta', INDEX)
         for legacy in ("styles.css", "brand.css", "mobile-polish.css", "v2-1.css", "consumer-ux.css", "v2-3.css", "v2-4.css"):
             self.assertNotIn(f'href="{legacy}', INDEX)
 
@@ -79,8 +79,14 @@ class ConsolidationTests(unittest.TestCase):
             self.assertIn(f"max-width: {width}px", RESPONSIVE)
         self.assertIn("min-width: 768px", RESPONSIVE)
         self.assertIn("min-width: 1100px", RESPONSIVE)
-        self.assertIn("overflow-x: clip", RESPONSIVE)
+        self.assertIn("overflow-x:hidden", RESPONSIVE)
         self.assertIn("grid-template-columns: 1fr", RESPONSIVE)
+
+    def test_mobile_width_is_pinned_to_viewport(self):
+        self.assertIn("html { width:100%; min-width:100%; max-width:100%; overflow-x:hidden", RESPONSIVE)
+        self.assertIn("body { width:100%; min-width:100%; max-width:100%; overflow-x:hidden", RESPONSIVE)
+        self.assertIn(".site-header, main, footer { width:100%; max-width:none; }", RESPONSIVE)
+        self.assertNotIn("width: calc(100% + var(--gutter))", RESPONSIVE)
 
     def test_mobile_polish_uses_single_recall_status_and_consistent_inset(self):
         self.assertIn('.recall-card::before { display:none !important; content:none !important; }', RESPONSIVE)

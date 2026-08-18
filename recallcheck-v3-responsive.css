@@ -1,6 +1,8 @@
-/* RecallCheck V3 responsive hardening — 3.2.0-beta */
+/* RecallCheck V3 responsive hardening — 3.2.1-beta */
 
-html, body { max-width: 100%; overflow-x: clip; }
+html { width:100%; min-width:100%; max-width:100%; overflow-x:hidden; background:#fff; }
+body { width:100%; min-width:100%; max-width:100%; overflow-x:hidden; position:relative; }
+.site-header, main, footer { width:100%; max-width:none; }
 main, header, footer, section, article, nav, div, form, fieldset, dl { min-width: 0; }
 img, video, canvas, svg { max-width: 100%; height: auto; }
 button, input, textarea, select { max-width: 100%; }
@@ -88,7 +90,7 @@ button, input, textarea, select { max-width: 100%; }
   .how-section .steps li p { margin:0; font-size:1.03rem; }
   .how-section .steps li > span { font-size:1rem; }
   .how-section > p:last-child a { display:inline-flex; align-items:center; min-height:44px; font-size:1rem; }
-  .filters { flex-wrap: nowrap; width: calc(100% + var(--gutter)); margin-right: calc(-1 * var(--gutter)); padding: .15rem var(--gutter) .45rem 0; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+  .filters { flex-wrap: nowrap; width:100%; margin-right:0; padding:.15rem 0 .45rem; overflow-x:auto; overscroll-behavior-inline:contain; scrollbar-width:thin; -webkit-overflow-scrolling:touch; }
   .filters button { flex: 0 0 auto; white-space: nowrap; min-height: 44px; }
   .product { grid-template-columns: 64px minmax(0, 1fr); }
   .product img, .image-placeholder { width: 64px; height: 64px; }
