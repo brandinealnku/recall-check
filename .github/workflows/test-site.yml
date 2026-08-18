@@ -15,6 +15,8 @@ on:
       - "recallcheck-v3.js"
       - "trust-v4-1.css"
       - "trust-v4-1.js"
+      - "v4-1-1-mobile.css"
+      - "product-lookup-v4-1-1.js"
       - "freshness.js"
       - "discovery.js"
       - "app.js"
@@ -25,6 +27,7 @@ on:
       - "tests/test_fda_source_union.py"
       - "tests/test_known_recall_fixtures.py"
       - "tests/test_safety_design.py"
+      - "tests/test_v411_mobile_lookup.py"
       - ".github/workflows/test-site.yml"
   push:
     branches:
@@ -41,6 +44,8 @@ on:
       - "recallcheck-v3.js"
       - "trust-v4-1.css"
       - "trust-v4-1.js"
+      - "v4-1-1-mobile.css"
+      - "product-lookup-v4-1-1.js"
       - "freshness.js"
       - "discovery.js"
       - "app.js"
@@ -51,6 +56,7 @@ on:
       - "tests/test_fda_source_union.py"
       - "tests/test_known_recall_fixtures.py"
       - "tests/test_safety_design.py"
+      - "tests/test_v411_mobile_lookup.py"
       - ".github/workflows/test-site.yml"
 
 permissions:
@@ -70,3 +76,4 @@ jobs:
           python3 tests/test_safety_design.py
           python3 tests/test_fda_source_union.py
           python3 tests/test_known_recall_fixtures.py
+          python3 tests/test_v411_mobile_lookup.py
