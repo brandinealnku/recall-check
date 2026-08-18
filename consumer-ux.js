@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "2.3.0-beta";
+  const VERSION = "2.4.0-beta";
   const $ = id => document.getElementById(id);
 
   function loadV23Assets() {

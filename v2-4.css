@@ -1,0 +1,40 @@
+:root{--rc24-gutter:clamp(1rem,4.5vw,1.35rem);--rc24-content:34rem}
+
+/* RecallCheck V2.4 — centered mobile task flow */
+@media(max-width:639px){
+  main{padding-inline:var(--rc24-gutter)!important}
+
+  /* One visual axis for the primary task. */
+  .hero{width:calc(100% + (2 * var(--rc24-gutter)))!important;margin-inline:calc(-1 * var(--rc24-gutter))!important;padding:1.35rem var(--rc24-gutter) 1rem!important}
+  .hero-copy{width:100%!important;max-width:var(--rc24-content)!important;margin-inline:auto!important;text-align:center!important}
+  .hero h1{max-width:10.5ch!important;margin:0 auto .7rem!important;text-align:center!important;font-size:clamp(2.15rem,10vw,2.75rem)!important;line-height:1.05!important;letter-spacing:-.035em!important}
+  .hero .lede{max-width:27rem!important;margin:0 auto 1.2rem!important;text-align:center!important;font-size:1rem!important;line-height:1.48!important}
+  .hero-actions{width:100%!important;max-width:var(--rc24-content)!important;margin-inline:auto!important;gap:.55rem!important;align-items:stretch!important}
+  .scan-action{width:100%!important;min-height:58px!important}
+  .manual-action{align-self:center!important;text-align:center!important;margin:.15rem auto 0!important;padding-inline:.25rem!important}
+  .hero .data-facts{max-width:28rem!important;margin:1rem auto 0!important;text-align:center!important;justify-content:center!important}
+
+  /* Manual-entry form stays centered as a card; form mechanics stay left aligned. */
+  .hero .manual-card{width:100%!important;max-width:var(--rc24-content)!important;margin:.85rem auto 0!important;padding:1rem!important;text-align:left!important}
+  .hero .manual-card h2{text-align:center!important;margin-bottom:.5rem!important}
+
+  /* Search is visually part of the same task, not a separate left-aligned page. */
+  .v2-search-card{width:100%!important;max-width:var(--rc24-content)!important;margin:1rem auto 0!important;padding:1rem!important;text-align:center!important;border-radius:16px!important}
+  .v2-search-card h2{margin:0 auto .25rem!important;text-align:center!important;font-size:1.2rem!important}
+  .v2-search-intro{max-width:24rem!important;margin:.2rem auto .9rem!important;text-align:center!important;line-height:1.45!important}
+  .v2-search-form{width:100%!important;text-align:left!important}
+  .v2-search-form label{display:block!important;text-align:left!important;margin:0 0 .35rem!important}
+  .v2-search-row{width:100%!important;gap:.55rem!important}
+  .v2-search-row input{width:100%!important;min-width:0!important}
+  .v2-search-row button{width:100%!important}
+  #v2-search-help{display:block!important;max-width:26rem!important;margin:.65rem auto 0!important;text-align:center!important;line-height:1.4!important}
+  .v2-search-status{text-align:center!important}
+  #v2-search-results{text-align:left!important}
+
+  /* Maintain the same horizontal rhythm once the user moves into results. */
+  #lookup-progress,#product-confirmation,#results,.recent-section,.how-section,#data-status,#support{width:100%!important;max-width:var(--rc24-content)!important;margin-left:auto!important;margin-right:auto!important}
+}
+
+@media(min-width:640px) and (max-width:899px){
+  .hero-copy,.v2-search-card{max-width:36rem!important;margin-inline:auto!important}
+}
