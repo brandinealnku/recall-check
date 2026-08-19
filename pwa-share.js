@@ -150,9 +150,19 @@
     results?.insertAdjacentElement("afterend", card);
   }
 
+  function reconcileProductIdentity(result) {
+    // renderStatus() adds .product-identity only when productIdentityMissing is true.
+    // Trust/provenance copy such as "Product information source" must never be
+    // treated as evidence that identification failed.
+    const identityMissing = Boolean(result.querySelector(".product-identity"));
+    const caution = result.querySelector("[data-identity-caution]");
+    if (!identityMissing && caution) caution.remove();
+  }
+
   function recordResultAndEnhance() {
     const result = $("result-panel")?.querySelector(".result");
     if (!result) return;
+    reconcileProductIdentity(result);
     const signature = `${result.querySelector(".result-heading")?.textContent || ""}|${result.querySelector(".coverage-line")?.textContent || ""}`;
     if (signature && signature !== lastResultSignature) {
       lastResultSignature = signature;
