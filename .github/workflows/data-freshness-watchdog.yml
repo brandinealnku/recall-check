@@ -1,0 +1,47 @@
+name: Recall data freshness watchdog
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/check_source_freshness.py"
+      - ".github/workflows/data-freshness-watchdog.yml"
+  schedule:
+    - cron: "7 * * * *"
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: recall-data-freshness-watchdog
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check published FDA/USDA source freshness
+        id: freshness
+        continue-on-error: true
+        run: python3 scripts/check_source_freshness.py --max-age-hours 8
+
+      - name: Trigger immediate recall refresh when stale
+        if: steps.freshness.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run refresh-recalls.yml --ref main
+
+      - name: Fail loudly after requesting repair
+        if: steps.freshness.outcome == 'failure'
+        run: |
+          echo "Published recall source status is stale. An immediate refresh was dispatched."
+          exit 1

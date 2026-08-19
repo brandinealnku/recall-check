@@ -1,0 +1,45 @@
+import datetime as dt
+import importlib.util
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+SPEC = importlib.util.spec_from_file_location("check_source_freshness", ROOT / "scripts" / "check_source_freshness.py")
+MODULE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+NOW = dt.datetime(2026, 8, 19, 23, 30, tzinfo=dt.timezone.utc)
+
+
+def payload(checked_at="2026-08-19T20:00:00Z"):
+    return {
+        "checkedAt": checked_at,
+        "sources": {
+            "FDA": {"success": True, "qualityStatus": "current", "checkedAt": checked_at},
+            "USDA": {"success": True, "qualityStatus": "current", "checkedAt": checked_at},
+        },
+    }
+
+
+def test_fresh_snapshot_passes():
+    assert MODULE.evaluate(payload(), now=NOW, max_age_hours=8) == []
+
+
+def test_old_snapshot_fails_even_if_sources_still_claim_current():
+    failures = MODULE.evaluate(payload("2026-08-18T02:09:55Z"), now=NOW, max_age_hours=8)
+    assert any("source-status snapshot" in item and "hours old" in item for item in failures)
+    assert any("FDA source check" in item for item in failures)
+    assert any("USDA source check" in item for item in failures)
+
+
+def test_failed_source_fails_watchdog():
+    data = payload()
+    data["sources"]["FDA"]["success"] = False
+    failures = MODULE.evaluate(data, now=NOW, max_age_hours=8)
+    assert "FDA latest retrieval is not successful" in failures
+
+
+def test_missing_quality_state_fails_watchdog():
+    data = payload()
+    del data["sources"]["USDA"]["qualityStatus"]
+    failures = MODULE.evaluate(data, now=NOW, max_age_hours=8)
+    assert "USDA has no qualityStatus" in failures
