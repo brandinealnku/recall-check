@@ -32,6 +32,14 @@ def test_install_and_share_are_contextual():
     assert "Share RecallCheck" in js
     assert 'document.querySelector(".hero-assurance")' not in js
 
+def test_identified_products_do_not_keep_false_identity_caution():
+    js = read("pwa-share.js")
+    assert "function reconcileProductIdentity(result)" in js
+    assert 'result.querySelector(".product-identity")' in js
+    assert 'result.querySelector("[data-identity-caution]")' in js
+    assert "if (!identityMissing && caution) caution.remove();" in js
+    assert "reconcileProductIdentity(result);" in js
+
 def test_ios_instructions_are_minimal():
     js = read("pwa-share.js")
     assert "Tap <strong>Share</strong> in Safari." in js
@@ -56,6 +64,7 @@ if __name__ == "__main__":
     test_manifest_is_standalone()
     test_service_worker_never_caches_recall_data()
     test_install_and_share_are_contextual()
+    test_identified_products_do_not_keep_false_identity_caution()
     test_ios_instructions_are_minimal()
     test_pwa_assets_are_loaded_directly_not_by_scanner_loader()
     test_legacy_install_card_is_suppressed()
