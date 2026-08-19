@@ -43,3 +43,14 @@ def test_missing_quality_state_fails_watchdog():
     del data["sources"]["USDA"]["qualityStatus"]
     failures = MODULE.evaluate(data, now=NOW, max_age_hours=8)
     assert "USDA has no qualityStatus" in failures
+
+
+def test_watchdog_repairs_directly_instead_of_dispatching_another_workflow():
+    workflow = (ROOT / ".github" / "workflows" / "data-freshness-watchdog.yml").read_text(encoding="utf-8")
+    assert "python3 scripts/refresh_recalls_current_v4.py" in workflow
+    assert "python3 scripts/write_source_status.py" in workflow
+    assert "python3 scripts/check_source_freshness.py --max-age-hours 1" in workflow
+    assert 'git commit -m "chore: refresh recall data"' in workflow
+    assert "git push origin HEAD:main" in workflow
+    assert "gh workflow run refresh-recalls.yml" not in workflow
+    assert "contents: write" in workflow
