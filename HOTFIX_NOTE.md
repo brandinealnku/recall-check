@@ -1,0 +1,1 @@
+Emergency rollback of the product identity observer change from PR #55 after production failed to load. Restores pwa-share.js and its regression test to the previously deployed state. No recall data, matching, scanner, or freshness logic is changed.
