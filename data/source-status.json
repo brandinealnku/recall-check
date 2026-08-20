@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-20T00:31:23Z",
+  "checkedAt": "2026-08-20T08:52:20Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -25,20 +25,6 @@
       "reason": "undeclared gluten",
       "sourceSurfaces": [
         "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Grand Central Bakery"
-      ],
-      "date": "2026-08-19",
-      "id": "FDA-PUBLIC-7e5355311ebc9d0a",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-grand-central-bakery-seattle-recalls-potato-sourdough-bread-due-possible-foreign-object",
-      "product": "Potato Sourdough",
-      "reason": "may contain pieces of metal",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
       ]
     },
     {
@@ -98,20 +84,6 @@
     },
     {
       "brandNames": [
-        "Salata"
-      ],
-      "date": "2026-08-14",
-      "id": "FDA-PUBLIC-b23fca494c03fa70",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk",
-      "product": "Salad dressing",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "NatureBest, HEB"
       ],
       "date": "2026-08-14",
@@ -126,13 +98,41 @@
     },
     {
       "brandNames": [
+        "Salata"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-PUBLIC-b23fca494c03fa70",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk",
+      "product": "Salad dressing",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
         "The Hampton Grocer"
       ],
       "date": "2026-08-14",
-      "id": "FDA-ANN-2f89792f5eab7b32",
+      "id": "FDA-PUBLIC-8c48c93bcc65a021",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hampton-grocers-inc-recalls-its-8-ounce-packages-lacnola-lactation-granola-because-possible-health",
       "product": "Granola",
       "reason": "Potential to be Contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Grand Central Bakery"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-ANN-acd7f6d31f101731",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object",
+      "product": "Potato Sourdough",
+      "reason": "may contain pieces of metal",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -268,33 +268,33 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-20T00:31:23Z",
+  "generatedAt": "2026-08-20T08:52:20Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-20T00:31:23Z",
+      "checkedAt": "2026-08-20T08:52:20Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
-      "lastSuccessfulUpdate": "2026-08-20T00:31:23Z",
+      "lastSuccessfulUpdate": "2026-08-20T08:52:20Z",
       "newestRecallDate": "2026-08-19",
       "qualityStatus": "current",
       "recordCount": 2131,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-20T00:31:23Z",
+          "checkedAt": "2026-08-20T08:52:20Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-20T00:31:23Z",
+          "checkedAt": "2026-08-20T08:52:20Z",
           "newestRecallDate": "2026-08-01",
           "recordCount": 2800,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-20T00:31:23Z",
+          "checkedAt": "2026-08-20T08:52:20Z",
           "newestRecallDate": "2026-08-19",
           "recordCount": 9,
           "success": true
@@ -302,11 +302,11 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-20T00:31:23Z",
+      "checkedAt": "2026-08-20T08:52:20Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
-      "lastSuccessfulUpdate": "2026-08-20T00:31:23Z",
+      "lastSuccessfulUpdate": "2026-08-20T08:52:20Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
