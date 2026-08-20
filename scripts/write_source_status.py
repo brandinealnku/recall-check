@@ -24,8 +24,21 @@ snapshot = {
 
 for agency in ("FDA", "USDA"):
     source = sources.get(agency) or {}
+    normalized = dict(source)
+
+    # The v4 FDA union intentionally bypasses the retired v2 FDA quality wrapper.
+    # USDA still comes directly from the FSIS API, so a successful retrieval is the
+    # authoritative quality signal for that source. Preserve that explicit state in
+    # source-status even when the base dataset did not add the old wrapper fields.
+    if agency == "USDA":
+        success = source.get("success") is True
+        normalized.setdefault("current", success)
+        normalized.setdefault("qualityStatus", "current" if success else "unavailable")
+        normalized.setdefault("coverageComplete", success)
+        normalized.setdefault("coverageMethod", "primary-api")
+
     snapshot["sources"][agency] = {
-        key: source.get(key)
+        key: normalized.get(key)
         for key in (
             "success",
             "current",
@@ -38,7 +51,7 @@ for agency in ("FDA", "USDA"):
             "coverageMethod",
             "surfaces",
         )
-        if key in source
+        if key in normalized
     }
 
 # Keep a small human-auditable sample of FDA records and the official surfaces that
