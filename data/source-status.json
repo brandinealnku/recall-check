@@ -1,7 +1,59 @@
 {
-  "checkedAt": "2026-08-18T02:09:55Z",
-  "generatedAt": "2026-08-18T02:09:55Z",
-  "liveFdaRows": [
+  "checkedAt": "2026-08-20T00:31:23Z",
+  "fdaSample": [
+    {
+      "brandNames": [
+        "Prince"
+      ],
+      "date": "2026-08-19",
+      "id": "FDA-PUBLIC-7c987516615ea928",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prince-bakery-inc-issues-allergy-alert-undeclared-milk-and-sesame-prince-bakery-breads",
+      "product": "Variety of Breads",
+      "reason": "Undeclared milk and sesame",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Momchipz"
+      ],
+      "date": "2026-08-19",
+      "id": "FDA-PUBLIC-eb1451e48af2ff40",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/exotique-foods-inc-recalls-momchipz-veggie-chips-broccoli-florets-cauliflower-due-undeclared-gluten",
+      "product": "Veggie Chips Broccoli Florets & Cauliflower",
+      "reason": "undeclared gluten",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Grand Central Bakery"
+      ],
+      "date": "2026-08-19",
+      "id": "FDA-PUBLIC-7e5355311ebc9d0a",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-grand-central-bakery-seattle-recalls-potato-sourdough-bread-due-possible-foreign-object",
+      "product": "Potato Sourdough",
+      "reason": "may contain pieces of metal",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Outshine"
+      ],
+      "date": "2026-08-18",
+      "id": "FDA-PUBLIC-1d7c248ed565b57e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-dreyers-grand-ice-cream-inc-issues-voluntary-recall-select-outshine-fruit-bars-due-possible",
+      "product": "Outshine Fruit Bars",
+      "reason": "Possible foreign material contamination with glass",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Oma\u2019s Pride"
@@ -10,17 +62,11 @@
       "id": "FDA-PUBLIC-02e4d6f82d55b3ca",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-omas-pride-voluntarily-recalls-one-lot-woof-complete-canine-chicken-recipe-6-lb-bag-because",
       "product": "Canine Food",
-      "reason": "Contaminated with Salmonella"
-    },
-    {
-      "brandNames": [
-        "Dairyland Produce LLC"
-      ],
-      "date": "2026-08-17",
-      "id": "FDA-PUBLIC-83ecdb8929809697",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hardies-fresh-foods-recalls-jalapenos-because-possible-health-risk",
-      "product": "Pepper Jalapenos",
-      "reason": "Potential Salmonella Contamination"
+      "reason": "Contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
     },
     {
       "brandNames": [
@@ -30,27 +76,25 @@
       "id": "FDA-PUBLIC-d09e3eed10bec2d8",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/l-nutra-issues-allergy-alert-undeclared-tree-nuts-prolon-brand-apulian-almond-cocoa-spread",
       "product": "Apulian Almond & Cocoa Spread",
-      "reason": "Undeclared cashews, pistachios and/or hazelnut"
+      "reason": "Undeclared cashews, pistachios and/or hazelnut",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
     },
     {
       "brandNames": [
-        "The Hampton Grocer"
+        "Dairyland Produce LLC"
       ],
-      "date": "2026-08-14",
-      "id": "FDA-PUBLIC-8c48c93bcc65a021",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hampton-grocers-inc-recalls-its-8-ounce-packages-lacnola-lactation-granola-because-possible-health",
-      "product": "Granola",
-      "reason": "Potential to be Contaminated with Salmonella"
-    },
-    {
-      "brandNames": [
-        "Grand Central Bakery"
-      ],
-      "date": "2026-08-14",
-      "id": "FDA-PUBLIC-0efe6eeb75f53b7f",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object",
-      "product": "Potato Sourdough",
-      "reason": "may contain pieces of metal"
+      "date": "2026-08-17",
+      "id": "FDA-PUBLIC-83ecdb8929809697",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hardies-fresh-foods-recalls-jalapenos-because-possible-health-risk",
+      "product": "Pepper Jalapenos",
+      "reason": "Potential Salmonella Contamination",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
     },
     {
       "brandNames": [
@@ -60,7 +104,11 @@
       "id": "FDA-PUBLIC-b23fca494c03fa70",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk",
       "product": "Salad dressing",
-      "reason": "Potential to be contaminated with Salmonella"
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
     },
     {
       "brandNames": [
@@ -70,68 +118,201 @@
       "id": "FDA-PUBLIC-6333894b477dce4b",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential",
       "product": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
-      "reason": "Potential for contamination with Salmonella"
+      "reason": "Potential for contamination with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "The Hampton Grocer"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-ANN-2f89792f5eab7b32",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hampton-grocers-inc-recalls-its-8-ounce-packages-lacnola-lactation-granola-because-possible-health",
+      "product": "Granola",
+      "reason": "Potential to be Contaminated with Salmonella",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     },
     {
       "brandNames": [
         "Marketside"
       ],
       "date": "2026-08-13",
-      "id": "FDA-PUBLIC-047a3c4d9db3ae4e",
+      "id": "FDA-ANN-adb18f67b48d179f",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/kettle-cuisine-recalls-marketside-tomato-bisque-soup-kit-sold-exclusively-walmart-stores-because",
       "product": "Tomato Bisque Soup Kit 14oz (397g)",
-      "reason": "Potential to be contaminated with Listeria monocytogenes"
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     },
     {
       "brandNames": [
         "Vitasia Chinese Style"
       ],
       "date": "2026-08-12",
-      "id": "FDA-PUBLIC-9fab981713b00506",
+      "id": "FDA-ANN-bee74df637a62ebf",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-vitasia-asian-style-wok-spice-mix-due-potential-salmonella-contamination",
       "product": "Spice Mix 1.58 oz",
-      "reason": "Potential to be contaminated with Salmonella"
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     },
     {
       "brandNames": [
         "Frankie\u2019s Organic"
       ],
       "date": "2026-08-12",
-      "id": "FDA-PUBLIC-9210d1ef9b8fff3c",
+      "id": "FDA-ANN-324357723155c3f8",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frankies-organic-issues-allergy-alert-undeclared-milk-frankies-organic-plant-based-vegan-cheddar",
       "product": "Plant Based Snack",
-      "reason": "Undeclared milk"
+      "reason": "Undeclared milk",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Whole Foods Market"
+      ],
+      "date": "2026-08-12",
+      "id": "FDA-ANN-260fdbd895415852",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-announces-recall-select-salsas-guacamole-pico-de-gallo-and-prepared-foods",
+      "product": "Finished products such as dips, salsa, guacamole, and more containing jalapeno.",
+      "reason": "Potential Salmonella Contamination",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Fresenius Kabi"
+      ],
+      "date": "2026-08-11",
+      "id": "FDA-ANN-1b670650d67911d9",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresenius-kabi-issues-nationwide-recall-tyenner-tocilizumab-aazg-injection-400-mg20-ml-vials-due",
+      "product": "Tyenne Injection 400 mg/20 mL vial",
+      "reason": "Due to Presence of Glass Particles",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Schwarzkopf Professional"
+      ],
+      "date": "2026-08-11",
+      "id": "FDA-ANN-1496219456af109f",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/henkel-corp-announces-nationwide-recall-schwarzkopf-professional-osis-grip-676-fl-oz200-ml-due",
+      "product": "Extra Strong Mousse",
+      "reason": "Due to Packaging Defect",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Trader Joe\u2019s, Freshness Guaranteed and more"
+      ],
+      "date": "2026-08-09",
+      "id": "FDA-ANN-9c3fd5ce91ab6b3c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-fresh-foods-recalls-products-made-jalapeno-peppers-because-possible-health-risk",
+      "product": "Finished products (e.g. dips, salsa, guacamole and more) containing jalapeno",
+      "reason": "Possible Salmonella Contamination",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Food To Live"
+      ],
+      "date": "2026-08-07",
+      "id": "FDA-ANN-2573a625d96b51f1",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lexunder-inc-recalls-food-live-brand-green-powder-products-because-possible-health-risk",
+      "product": "Green Powder Products",
+      "reason": "Possible Salmonella Contamination",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Sun Noodle"
+      ],
+      "date": "2026-08-06",
+      "id": "FDA-ANN-f10f9368874a975e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sun-noodle-issues-voluntary-recall-sura-tanmen-hot-and-sour-flavor-premium-japanese-noodles-soup",
+      "product": "Sura Tanmen Hot and Sour Flavor Premium Japanese Noodles & Soup Base",
+      "reason": "Contain undeclared Fish",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Medline, Teleflex"
+      ],
+      "date": "2026-08-06",
+      "id": "FDA-ANN-1c8bd6cdabe7c66e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-industries-lp-issues-nationwide-recall-hudson-rci-neonatalinfant-heated-wire-breathing",
+      "product": "Hudson RCI Neonatal/Infant Heated Wire Breathing Circuits",
+      "reason": "Due to heated wire connector (pigtail) at the Neptune humidifier may exhibit discoloration, melting, smoke, burning odor, or other signs of localized thermal damage",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     }
   ],
+  "generatedAt": "2026-08-20T00:31:23Z",
   "sources": {
     "FDA": {
-      "authoritativeNewestRecallDate": "2026-08-17",
-      "checkedAt": "2026-08-18T02:09:55Z",
+      "checkedAt": "2026-08-20T00:31:23Z",
+      "coverageComplete": true,
+      "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
-      "freshnessLagDays": 0,
-      "freshnessValidated": true,
-      "freshnessValidatedAt": "2026-08-18T02:09:55Z",
-      "lastSuccessfulUpdate": "2026-08-18T02:09:55Z",
-      "livePublicRowsAdded": 10,
-      "livePublicRowsSeen": 10,
-      "newestRecallDate": "2026-08-17",
+      "lastSuccessfulUpdate": "2026-08-20T00:31:23Z",
+      "newestRecallDate": "2026-08-19",
       "qualityStatus": "current",
-      "recordCount": 155,
+      "recordCount": 2131,
       "success": true,
-      "validationMethod": "annual-xml-plus-public-recall-table"
+      "surfaces": {
+        "annualAnnouncements": {
+          "checkedAt": "2026-08-20T00:31:23Z",
+          "newestRecallDate": "2026-08-17",
+          "recordCount": 185,
+          "success": true
+        },
+        "enforcement": {
+          "checkedAt": "2026-08-20T00:31:23Z",
+          "newestRecallDate": "2026-08-01",
+          "recordCount": 2800,
+          "success": true
+        },
+        "publicAlerts": {
+          "checkedAt": "2026-08-20T00:31:23Z",
+          "newestRecallDate": "2026-08-19",
+          "recordCount": 9,
+          "success": true
+        }
+      }
     },
     "USDA": {
-      "checkedAt": "2026-08-18T02:09:55Z",
+      "checkedAt": "2026-08-20T00:31:23Z",
+      "coverageComplete": true,
+      "coverageMethod": "primary-api",
       "current": true,
-      "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-18T02:09:55Z",
-      "newestRecallDate": "2026-08-08",
+      "lastSuccessfulUpdate": "2026-08-20T00:31:23Z",
+      "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
-      "recordCount": 2020,
-      "success": true,
-      "validationMethod": "primary-api"
+      "recordCount": 2022,
+      "success": true
     }
   },
   "warnings": [],
-  "workflowVersion": "0.6.0"
+  "workflowVersion": "0.7.0"
 }
