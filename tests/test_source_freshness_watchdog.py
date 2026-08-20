@@ -54,3 +54,11 @@ def test_watchdog_repairs_directly_instead_of_dispatching_another_workflow():
     assert "git push origin HEAD:main" in workflow
     assert "gh workflow run refresh-recalls.yml" not in workflow
     assert "contents: write" in workflow
+
+
+def test_watchdog_validates_against_current_v4_contracts():
+    workflow = (ROOT / ".github" / "workflows" / "data-freshness-watchdog.yml").read_text(encoding="utf-8")
+    assert "python3 tests/test_fda_source_union.py" in workflow
+    assert "python3 tests/test_fda_live_augmentation.py" in workflow
+    assert "python3 tests/test_known_recall_fixtures.py" in workflow
+    assert "python3 tests/test_source_quality.py" not in workflow
