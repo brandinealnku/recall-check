@@ -44,11 +44,14 @@ jobs:
       - name: Validate refreshed recall data
         if: steps.freshness.outcome == 'failure'
         run: |
+          # Validate against the current v4 multi-surface FDA/USDA contract.
+          # test_source_quality.py intentionally exercises the retired v2
+          # single-authority-date model and must not gate v4 production data.
           python3 tests/test_refresh_current.py
           python3 tests/test_refresh_recalls.py
-          python3 tests/test_source_quality.py
           python3 tests/test_fda_live_augmentation.py
           python3 tests/test_fda_source_union.py
+          python3 tests/test_known_recall_fixtures.py
           python3 -m json.tool data/recalls.json >/dev/null
           python3 -m json.tool data/source-status.json >/dev/null
           python3 scripts/check_source_freshness.py --max-age-hours 1
