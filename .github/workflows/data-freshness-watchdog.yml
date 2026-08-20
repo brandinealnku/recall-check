@@ -7,6 +7,8 @@ on:
       - main
     paths:
       - "scripts/check_source_freshness.py"
+      - "scripts/refresh_recalls_current_v4.py"
+      - "scripts/write_source_status.py"
       - ".github/workflows/data-freshness-watchdog.yml"
   schedule:
     - cron: "7 * * * *"

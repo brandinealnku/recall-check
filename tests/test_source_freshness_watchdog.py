@@ -62,3 +62,14 @@ def test_watchdog_validates_against_current_v4_contracts():
     assert "python3 tests/test_fda_live_augmentation.py" in workflow
     assert "python3 tests/test_known_recall_fixtures.py" in workflow
     assert "python3 tests/test_source_quality.py" not in workflow
+
+
+def test_v4_source_status_restores_explicit_usda_quality_state():
+    writer = (ROOT / "scripts" / "write_source_status.py").read_text(encoding="utf-8")
+    workflow = (ROOT / ".github" / "workflows" / "data-freshness-watchdog.yml").read_text(encoding="utf-8")
+    assert 'if agency == "USDA"' in writer
+    assert 'normalized.setdefault("qualityStatus", "current" if success else "unavailable")' in writer
+    assert 'normalized.setdefault("current", success)' in writer
+    assert 'normalized.setdefault("coverageMethod", "primary-api")' in writer
+    assert '"scripts/write_source_status.py"' in workflow
+    assert '"scripts/refresh_recalls_current_v4.py"' in workflow
