@@ -1,20 +1,6 @@
 {
-  "checkedAt": "2026-08-21T01:53:36Z",
+  "checkedAt": "2026-08-21T10:41:36Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "Grand Central Bakery"
-      ],
-      "date": "2026-08-19",
-      "id": "FDA-PUBLIC-7e5355311ebc9d0a",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-grand-central-bakery-seattle-recalls-potato-sourdough-bread-due-possible-foreign-object",
-      "product": "Potato Sourdough",
-      "reason": "may contain pieces of metal",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
     {
       "brandNames": [
         "Prince"
@@ -39,6 +25,20 @@
       "reason": "undeclared gluten",
       "sourceSurfaces": [
         "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Grand Central Bakery"
+      ],
+      "date": "2026-08-19",
+      "id": "FDA-PUBLIC-7e5355311ebc9d0a",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-grand-central-bakery-seattle-recalls-potato-sourdough-bread-due-possible-foreign-object",
+      "product": "Potato Sourdough",
+      "reason": "may contain pieces of metal",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -98,13 +98,13 @@
     },
     {
       "brandNames": [
-        "NatureBest, HEB"
+        "Salata"
       ],
       "date": "2026-08-14",
-      "id": "FDA-PUBLIC-6333894b477dce4b",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential",
-      "product": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
-      "reason": "Potential for contamination with Salmonella",
+      "id": "FDA-PUBLIC-b23fca494c03fa70",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk",
+      "product": "Salad dressing",
+      "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
@@ -125,13 +125,13 @@
     },
     {
       "brandNames": [
-        "Salata"
+        "NatureBest, HEB"
       ],
       "date": "2026-08-14",
-      "id": "FDA-ANN-f08b0234b96f5611",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk",
-      "product": "Salad dressing",
-      "reason": "Potential to be contaminated with Salmonella",
+      "id": "FDA-ANN-cd1b6dccc4a07ef1",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential",
+      "product": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
+      "reason": "Potential for contamination with Salmonella",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -267,33 +267,33 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-21T01:53:36Z",
+  "generatedAt": "2026-08-21T10:41:36Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-21T01:53:36Z",
+      "checkedAt": "2026-08-21T10:41:36Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
-      "lastSuccessfulUpdate": "2026-08-21T01:53:36Z",
+      "lastSuccessfulUpdate": "2026-08-21T10:41:36Z",
       "newestRecallDate": "2026-08-19",
       "qualityStatus": "current",
       "recordCount": 2130,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-21T01:53:36Z",
+          "checkedAt": "2026-08-21T10:41:36Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-21T01:53:36Z",
+          "checkedAt": "2026-08-21T10:41:36Z",
           "newestRecallDate": "2026-08-01",
           "recordCount": 2799,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-21T01:53:36Z",
+          "checkedAt": "2026-08-21T10:41:36Z",
           "newestRecallDate": "2026-08-19",
           "recordCount": 8,
           "success": true
@@ -301,11 +301,11 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-21T01:53:36Z",
+      "checkedAt": "2026-08-21T10:41:36Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
-      "lastSuccessfulUpdate": "2026-08-21T01:53:36Z",
+      "lastSuccessfulUpdate": "2026-08-21T10:41:36Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
