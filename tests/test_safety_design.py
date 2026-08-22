@@ -103,7 +103,8 @@ class ConsolidationTests(unittest.TestCase):
     def test_home_uses_v3_design_system_and_responsive_layer(self):
         self.assertIn('recallcheck-v3.css?v=3.0.0-beta', INDEX)
         self.assertIn('recallcheck-v3-responsive.css?v=3.3.0-beta', INDEX)
-        self.assertIn('freshness.js?v=3.3.1-coverage', INDEX)
+        self.assertIn('freshness.js?v=3.3.2-canonical', INDEX)
+        self.assertNotIn('freshness.js?v=3.3.1-coverage', INDEX)
         for legacy in ("styles.css", "brand.css", "mobile-polish.css", "v2-1.css", "consumer-ux.css", "v2-3.css", "v2-4.css"):
             self.assertNotIn(f'href="{legacy}', INDEX)
 
