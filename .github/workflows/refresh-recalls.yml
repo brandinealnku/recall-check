@@ -10,10 +10,11 @@ on:
       - "scripts/refresh_recalls_current_v2.py"
       - "scripts/refresh_recalls_current_v3.py"
       - "scripts/refresh_recalls_current_v4.py"
+      - "scripts/finalize_source_health.py"
       - "scripts/write_source_status.py"
       - "tests/test_fda_live_augmentation.py"
       - "tests/test_fda_source_union.py"
-      - "tests/test_source_quality.py"
+      - "tests/test_source_health_consistency.py"
       - ".github/workflows/refresh-recalls.yml"
   schedule:
     - cron: "17 */6 * * *"
@@ -36,7 +37,9 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch and normalize current official data
-        run: python3 scripts/refresh_recalls_current_v4.py
+        run: |
+          python3 scripts/refresh_recalls_current_v4.py
+          python3 scripts/finalize_source_health.py
 
       - name: Write compact source-status snapshot
         run: python3 scripts/write_source_status.py
@@ -45,9 +48,10 @@ jobs:
         run: |
           python3 tests/test_refresh_current.py
           python3 tests/test_refresh_recalls.py
-          python3 tests/test_source_quality.py
           python3 tests/test_fda_live_augmentation.py
           python3 tests/test_fda_source_union.py
+          python3 tests/test_source_health_consistency.py
+          python3 tests/test_known_recall_fixtures.py
 
       - name: Validate all recall JSON
         run: |
@@ -84,9 +88,13 @@ jobs:
                   raise SystemExit(f"Missing current quality state for {agency}.")
               if not source.get("qualityStatus"):
                   raise SystemExit(f"Missing qualityStatus for {agency}.")
+              if "coverageComplete" not in source:
+                  raise SystemExit(f"Missing coverageComplete for {agency}.")
+              if not source.get("coverageMethod"):
+                  raise SystemExit(f"Missing coverageMethod for {agency}.")
 
               compact = snapshot.get("sources", {}).get(agency, {})
-              for key in ("current", "qualityStatus", "recordCount", "newestRecallDate"):
+              for key in ("success", "current", "qualityStatus", "coverageComplete", "coverageMethod", "recordCount", "newestRecallDate"):
                   if compact.get(key) != source.get(key):
                       raise SystemExit(f"source-status mismatch for {agency}.{key}")
 
@@ -97,6 +105,10 @@ jobs:
           for name in ("annualAnnouncements", "publicAlerts", "enforcement"):
               if not isinstance(surfaces.get(name), dict):
                   raise SystemExit(f"Missing FDA source surface metadata: {name}")
+
+          usda = sources.get("USDA", {})
+          if usda.get("coverageMethod") != "primary-api":
+              raise SystemExit("USDA is not using the primary FSIS API coverage model.")
 
           agency_counts = {
               agency: sum(item.get("agency") == agency for item in recalls)

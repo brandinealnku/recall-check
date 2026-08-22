@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/check_source_freshness.py"
       - "scripts/refresh_recalls_current_v4.py"
+      - "scripts/finalize_source_health.py"
       - "scripts/write_source_status.py"
       - ".github/workflows/data-freshness-watchdog.yml"
   schedule:
@@ -37,39 +38,60 @@ jobs:
         continue-on-error: true
         run: python3 scripts/check_source_freshness.py --max-age-hours 8
 
-      - name: Refresh official FDA/USDA data directly when stale
-        if: steps.freshness.outcome == 'failure'
+      - name: Decide whether canonical data must be regenerated
+        id: repair
+        run: |
+          if [ "${{ steps.freshness.outcome }}" = "failure" ] || [ "${{ github.event_name }}" = "push" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Refresh official FDA/USDA data directly when needed
+        if: steps.repair.outputs.needed == 'true'
         run: |
           python3 scripts/refresh_recalls_current_v4.py
+          python3 scripts/finalize_source_health.py
           python3 scripts/write_source_status.py
 
       - name: Validate refreshed recall data
-        if: steps.freshness.outcome == 'failure'
+        if: steps.repair.outputs.needed == 'true'
         run: |
-          # Validate against the current v4 multi-surface FDA/USDA contract.
-          # test_source_quality.py intentionally exercises the retired v2
-          # single-authority-date model and must not gate v4 production data.
           python3 tests/test_refresh_current.py
           python3 tests/test_refresh_recalls.py
           python3 tests/test_fda_live_augmentation.py
           python3 tests/test_fda_source_union.py
+          python3 tests/test_source_health_consistency.py
           python3 tests/test_known_recall_fixtures.py
           python3 -m json.tool data/recalls.json >/dev/null
           python3 -m json.tool data/source-status.json >/dev/null
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          recalls = json.loads(Path('data/recalls.json').read_text())
+          status = json.loads(Path('data/source-status.json').read_text())
+          for agency in ('FDA', 'USDA'):
+              canonical = recalls.get('dataHealth', {}).get('sources', {}).get(agency, {})
+              compact = status.get('sources', {}).get(agency, {})
+              for key in ('success', 'current', 'qualityStatus', 'coverageComplete', 'coverageMethod', 'recordCount', 'newestRecallDate'):
+                  if compact.get(key) != canonical.get(key):
+                      raise SystemExit(f'source-health mismatch: {agency}.{key}')
+          print('recalls.json and source-status.json source health agree')
+          PY
           python3 scripts/check_source_freshness.py --max-age-hours 1
 
       - name: Commit repaired data
-        if: steps.freshness.outcome == 'failure'
+        if: steps.repair.outputs.needed == 'true'
         run: |
           if git diff --quiet -- data/recalls.json data/source-status.json; then
-            echo "Refresh completed but produced no file changes."
-            exit 1
+            echo "Refresh completed and canonical data is unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/recalls.json data/source-status.json
+            git commit -m "chore: refresh recall data"
+            git push origin HEAD:main
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/recalls.json data/source-status.json
-          git commit -m "chore: refresh recall data"
-          git push origin HEAD:main
 
       - name: Confirm source snapshot is fresh
         run: python3 scripts/check_source_freshness.py --max-age-hours 8
