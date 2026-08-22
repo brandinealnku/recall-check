@@ -1,0 +1,1 @@
+RecallCheck 1.0 source-status hotfix: source-status.json now publishes a compatibility freshnessValidated boolean derived from canonical v4 source health, and Cloudflare data JSON is marked no-store to prevent stale consumer views.
