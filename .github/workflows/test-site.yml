@@ -35,3 +35,4 @@ jobs:
           python3 tests/test_safari_private_compat.py
           python3 tests/test_pwa_share.py
           python3 tests/test_service_worker_data_passthrough.py
+          python3 tests/test_production_deploy_contract.py

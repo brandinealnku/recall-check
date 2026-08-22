@@ -1,0 +1,95 @@
+name: Deploy RecallCheck production
+
+on:
+  workflow_run:
+    workflows:
+      - Test RecallCheck site
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recallcheck-production
+  cancel-in-progress: true
+
+jobs:
+  deploy-production:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: production
+    steps:
+      - name: Check out the exact tested commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify Cloudflare credentials are configured
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo "CLOUDFLARE_API_TOKEN is not configured"; exit 1; }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo "CLOUDFLARE_ACCOUNT_ID is not configured"; exit 1; }
+
+      - name: Stamp the build with the tested commit
+        env:
+          DEPLOY_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          payload = {
+              "commit": os.environ["DEPLOY_SHA"],
+              "deployedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "environment": "production"
+          }
+          with open("deployment.json", "w", encoding="utf-8") as fh:
+              json.dump(payload, fh, indent=2)
+              fh.write("\n")
+          PY
+
+      - name: Deploy tested commit to Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy
+
+      - name: Verify the custom domain is serving this commit
+        env:
+          EXPECTED_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          expected = os.environ["EXPECTED_SHA"]
+          url = "https://recallcheck.itsbadlabs.com/deployment.json"
+          last_error = None
+          for attempt in range(12):
+              try:
+                  request = urllib.request.Request(
+                      f"{url}?t={int(time.time())}",
+                      headers={"Cache-Control": "no-cache", "User-Agent": "RecallCheck-production-verifier/1.0"}
+                  )
+                  with urllib.request.urlopen(request, timeout=15) as response:
+                      payload = json.load(response)
+                  actual = payload.get("commit")
+                  if actual == expected:
+                      print(f"Production verified at {url}: {actual}")
+                      break
+                  last_error = f"custom domain served commit {actual!r}; expected {expected!r}"
+              except Exception as exc:
+                  last_error = repr(exc)
+              if attempt < 11:
+                  time.sleep(10)
+          else:
+              raise SystemExit(f"Production verification failed: {last_error}")
+          PY
