@@ -37,7 +37,7 @@ for agency in ("FDA", "USDA"):
         normalized.setdefault("coverageComplete", success)
         normalized.setdefault("coverageMethod", "primary-api")
 
-    snapshot["sources"][agency] = {
+    compact = {
         key: normalized.get(key)
         for key in (
             "success",
@@ -53,6 +53,20 @@ for agency in ("FDA", "USDA"):
         )
         if key in normalized
     }
+
+    # Consumer compatibility projection. trust-v4-1.js historically required a
+    # freshnessValidated boolean. In v4, freshness is represented canonically by a
+    # successful current coverage state plus the workflow's checkedAt/age watchdog.
+    # Publish the compatibility flag only in this compact UI snapshot; do not put the
+    # retired single-authority freshness fields back into data/recalls.json.
+    compact["freshnessValidated"] = bool(
+        normalized.get("success") is True
+        and normalized.get("current") is True
+        and normalized.get("qualityStatus") == "current"
+        and normalized.get("coverageComplete") is True
+    )
+
+    snapshot["sources"][agency] = compact
 
 # Keep a small human-auditable sample of FDA records and the official surfaces that
 # contributed to each normalized record. This is diagnostic metadata, not a second
