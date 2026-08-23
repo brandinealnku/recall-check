@@ -1,18 +1,17 @@
 {
-  "checkedAt": "2026-08-22T18:47:14Z",
+  "checkedAt": "2026-08-23T01:58:08Z",
   "fdaSample": [
     {
       "brandNames": [
-        "Grand Central Bakery"
+        "Everything Sprouts, Calco"
       ],
-      "date": "2026-08-19",
-      "id": "FDA-PUBLIC-7e5355311ebc9d0a",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-grand-central-bakery-seattle-recalls-potato-sourdough-bread-due-possible-foreign-object",
-      "product": "Potato Sourdough",
-      "reason": "may contain pieces of metal",
+      "date": "2026-08-22",
+      "id": "FDA-PUBLIC-dca5c2ffc692a3ad",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-recalls-alfalfa-sprouts-due-potential-e-coli-and-salmonella-risk",
+      "product": "Alfalfa Sprouts",
+      "reason": "Potential to be contaminated with Salmonella and Shiga toxin-producing Escherichia coli (STEC)",
       "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
+        "publicAlerts"
       ]
     },
     {
@@ -39,6 +38,20 @@
       "reason": "undeclared gluten",
       "sourceSurfaces": [
         "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Grand Central Bakery"
+      ],
+      "date": "2026-08-19",
+      "id": "FDA-PUBLIC-7e5355311ebc9d0a",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-grand-central-bakery-seattle-recalls-potato-sourdough-bread-due-possible-foreign-object",
+      "product": "Potato Sourdough",
+      "reason": "may contain pieces of metal",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -87,12 +100,11 @@
         "Dairyland Produce LLC"
       ],
       "date": "2026-08-17",
-      "id": "FDA-PUBLIC-83ecdb8929809697",
+      "id": "FDA-ANN-d631b97ee730edcd",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hardies-fresh-foods-recalls-jalapenos-because-possible-health-risk",
       "product": "Pepper Jalapenos",
       "reason": "Potential Salmonella Contamination",
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
@@ -251,62 +263,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Medline, Teleflex"
-      ],
-      "date": "2026-08-06",
-      "id": "FDA-ANN-1c8bd6cdabe7c66e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-industries-lp-issues-nationwide-recall-hudson-rci-neonatalinfant-heated-wire-breathing",
-      "product": "Hudson RCI Neonatal/Infant Heated Wire Breathing Circuits",
-      "reason": "Due to heated wire connector (pigtail) at the Neptune humidifier may exhibit discoloration, melting, smoke, burning odor, or other signs of localized thermal damage",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-08-22T18:47:14Z",
+  "generatedAt": "2026-08-23T01:58:08Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-22T18:47:14Z",
+      "checkedAt": "2026-08-23T01:58:08Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-22T18:47:14Z",
-      "newestRecallDate": "2026-08-19",
+      "lastSuccessfulUpdate": "2026-08-23T01:58:08Z",
+      "newestRecallDate": "2026-08-22",
       "qualityStatus": "current",
-      "recordCount": 2124,
+      "recordCount": 2117,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-22T18:47:14Z",
+          "checkedAt": "2026-08-23T01:58:08Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-22T18:47:14Z",
+          "checkedAt": "2026-08-23T01:58:08Z",
           "newestRecallDate": "2026-08-01",
-          "recordCount": 2782,
+          "recordCount": 2772,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-22T18:47:14Z",
-          "newestRecallDate": "2026-08-19",
+          "checkedAt": "2026-08-23T01:58:08Z",
+          "newestRecallDate": "2026-08-22",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-22T18:47:14Z",
+      "checkedAt": "2026-08-23T01:58:08Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-22T18:47:14Z",
+      "lastSuccessfulUpdate": "2026-08-23T01:58:08Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
