@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-08-25T13:09:30Z",
+  "checkedAt": "2026-08-25T18:55:20Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Donutful"
+      ],
+      "date": "2026-08-24",
+      "id": "FDA-PUBLIC-6c623fc6c94f641e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/better-bakehouse-snack-company-recalling-certain-lots-donutful-chocolate-dipped-vanilla-cake-donuts",
+      "product": "Chocolate Dipped Vanilla Cake Donuts",
+      "reason": "Undeclared milk allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Momchipz"
@@ -72,12 +85,11 @@
         "Oma\u2019s Pride"
       ],
       "date": "2026-08-17",
-      "id": "FDA-PUBLIC-02e4d6f82d55b3ca",
+      "id": "FDA-ANN-50e55aba664d56ed",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-omas-pride-voluntarily-recalls-one-lot-woof-complete-canine-chicken-recipe-6-lb-bag-because",
       "product": "Canine Food",
       "reason": "Contaminated with Salmonella",
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
@@ -249,49 +261,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Sun Noodle"
-      ],
-      "date": "2026-08-06",
-      "id": "FDA-ANN-f10f9368874a975e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sun-noodle-issues-voluntary-recall-sura-tanmen-hot-and-sour-flavor-premium-japanese-noodles-soup",
-      "product": "Sura Tanmen Hot and Sour Flavor Premium Japanese Noodles & Soup Base",
-      "reason": "Contain undeclared Fish",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-08-25T13:09:30Z",
+  "generatedAt": "2026-08-25T18:55:20Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-25T13:09:30Z",
+      "checkedAt": "2026-08-25T18:55:20Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-25T13:09:30Z",
+      "lastSuccessfulUpdate": "2026-08-25T18:55:20Z",
       "newestRecallDate": "2026-08-24",
       "qualityStatus": "current",
-      "recordCount": 2115,
+      "recordCount": 2116,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-25T13:09:30Z",
+          "checkedAt": "2026-08-25T18:55:20Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-25T13:09:30Z",
+          "checkedAt": "2026-08-25T18:55:20Z",
           "newestRecallDate": "2026-08-01",
           "recordCount": 2770,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-25T13:09:30Z",
+          "checkedAt": "2026-08-25T18:55:20Z",
           "newestRecallDate": "2026-08-24",
           "recordCount": 6,
           "success": true
@@ -299,12 +298,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-25T13:09:30Z",
+      "checkedAt": "2026-08-25T18:55:20Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-25T13:09:30Z",
+      "lastSuccessfulUpdate": "2026-08-25T18:55:20Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
