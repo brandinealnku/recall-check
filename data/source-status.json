@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-25T07:06:44Z",
+  "checkedAt": "2026-08-25T13:09:30Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -29,19 +29,6 @@
     },
     {
       "brandNames": [
-        "Prince"
-      ],
-      "date": "2026-08-19",
-      "id": "FDA-PUBLIC-7c987516615ea928",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prince-bakery-inc-issues-allergy-alert-undeclared-milk-and-sesame-prince-bakery-breads",
-      "product": "Variety of Breads",
-      "reason": "Undeclared milk and sesame",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Grand Central Bakery"
       ],
       "date": "2026-08-19",
@@ -52,6 +39,19 @@
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Prince"
+      ],
+      "date": "2026-08-19",
+      "id": "FDA-PUBLIC-7c987516615ea928",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prince-bakery-inc-issues-allergy-alert-undeclared-milk-and-sesame-prince-bakery-breads",
+      "product": "Variety of Breads",
+      "reason": "Undeclared milk and sesame",
+      "sourceSurfaces": [
+        "publicAlerts"
       ]
     },
     {
@@ -264,34 +264,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-25T07:06:44Z",
+  "generatedAt": "2026-08-25T13:09:30Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-25T07:06:44Z",
+      "checkedAt": "2026-08-25T13:09:30Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-25T07:06:44Z",
+      "lastSuccessfulUpdate": "2026-08-25T13:09:30Z",
       "newestRecallDate": "2026-08-24",
       "qualityStatus": "current",
       "recordCount": 2115,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-25T07:06:44Z",
+          "checkedAt": "2026-08-25T13:09:30Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-25T07:06:44Z",
+          "checkedAt": "2026-08-25T13:09:30Z",
           "newestRecallDate": "2026-08-01",
           "recordCount": 2770,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-25T07:06:44Z",
+          "checkedAt": "2026-08-25T13:09:30Z",
           "newestRecallDate": "2026-08-24",
           "recordCount": 6,
           "success": true
@@ -299,12 +299,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-25T07:06:44Z",
+      "checkedAt": "2026-08-25T13:09:30Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-25T07:06:44Z",
+      "lastSuccessfulUpdate": "2026-08-25T13:09:30Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
