@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-08-24T18:57:47Z",
+  "checkedAt": "2026-08-25T01:50:37Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Momchipz"
+      ],
+      "date": "2026-08-24",
+      "id": "FDA-PUBLIC-0d913d7c1310baec",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/exotique-foods-inc-recalls-momchipz-veggie-chips-broccoli-florets-cauliflower-due-undeclared-wheat",
+      "product": "Veggie Chips Broccoli Florets & Cauliflower",
+      "reason": "undeclared wheat",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Everything Sprouts, Calco"
@@ -23,19 +36,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prince-bakery-inc-issues-allergy-alert-undeclared-milk-and-sesame-prince-bakery-breads",
       "product": "Variety of Breads",
       "reason": "Undeclared milk and sesame",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Momchipz"
-      ],
-      "date": "2026-08-19",
-      "id": "FDA-PUBLIC-eb1451e48af2ff40",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/exotique-foods-inc-recalls-momchipz-veggie-chips-broccoli-florets-cauliflower-due-undeclared-gluten",
-      "product": "Veggie Chips Broccoli Florets & Cauliflower",
-      "reason": "undeclared gluten",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -83,20 +83,6 @@
     },
     {
       "brandNames": [
-        "Prolon"
-      ],
-      "date": "2026-08-17",
-      "id": "FDA-PUBLIC-d09e3eed10bec2d8",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/l-nutra-issues-allergy-alert-undeclared-tree-nuts-prolon-brand-apulian-almond-cocoa-spread",
-      "product": "Apulian Almond & Cocoa Spread",
-      "reason": "Undeclared cashews, pistachios and/or hazelnut",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "Dairyland Produce LLC"
       ],
       "date": "2026-08-17",
@@ -104,6 +90,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hardies-fresh-foods-recalls-jalapenos-because-possible-health-risk",
       "product": "Pepper Jalapenos",
       "reason": "Potential Salmonella Contamination",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Prolon"
+      ],
+      "date": "2026-08-17",
+      "id": "FDA-ANN-7e9ad43ab7a69208",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/l-nutra-issues-allergy-alert-undeclared-tree-nuts-prolon-brand-apulian-almond-cocoa-spread",
+      "product": "Apulian Almond & Cocoa Spread",
+      "reason": "Undeclared cashews, pistachios and/or hazelnut",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -265,47 +264,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-24T18:57:47Z",
+  "generatedAt": "2026-08-25T01:50:37Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-24T18:57:47Z",
+      "checkedAt": "2026-08-25T01:50:37Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-24T18:57:47Z",
-      "newestRecallDate": "2026-08-22",
+      "lastSuccessfulUpdate": "2026-08-25T01:50:37Z",
+      "newestRecallDate": "2026-08-24",
       "qualityStatus": "current",
       "recordCount": 2115,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-24T18:57:47Z",
+          "checkedAt": "2026-08-25T01:50:37Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-24T18:57:47Z",
+          "checkedAt": "2026-08-25T01:50:37Z",
           "newestRecallDate": "2026-08-01",
           "recordCount": 2770,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-24T18:57:47Z",
-          "newestRecallDate": "2026-08-22",
-          "recordCount": 7,
+          "checkedAt": "2026-08-25T01:50:37Z",
+          "newestRecallDate": "2026-08-24",
+          "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-24T18:57:47Z",
+      "checkedAt": "2026-08-25T01:50:37Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-24T18:57:47Z",
+      "lastSuccessfulUpdate": "2026-08-25T01:50:37Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
