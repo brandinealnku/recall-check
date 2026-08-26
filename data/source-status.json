@@ -1,6 +1,32 @@
 {
-  "checkedAt": "2026-08-26T13:14:17Z",
+  "checkedAt": "2026-08-26T20:01:25Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Shelter\u2019s Choice, Breeder\u2019s Edge"
+      ],
+      "date": "2026-08-26",
+      "id": "FDA-PUBLIC-bb2bed8804319ed5",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/revival-animal-health-llc-voluntarily-recalls-feline-milk-replacers-due-inconsistent-levels-vitamins",
+      "product": "Feline Milk Replacers",
+      "reason": "Low levels of potassium, copper, folic acid, choline and/or pyridoxine (vitamin B6)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Jaime\u2019s Spanish Village"
+      ],
+      "date": "2026-08-26",
+      "id": "FDA-PUBLIC-0773be44c13fb1ad",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jaimes-foods-atx-issues-allergy-alert-undeclared-egg-allergen-jaimes-spanish-village-jalapeno-ranch",
+      "product": "Jalapeno Ranch Dressing",
+      "reason": "contains undeclared eggs",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Momchipz"
@@ -42,33 +68,6 @@
     },
     {
       "brandNames": [
-        "Prince"
-      ],
-      "date": "2026-08-19",
-      "id": "FDA-PUBLIC-7c987516615ea928",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prince-bakery-inc-issues-allergy-alert-undeclared-milk-and-sesame-prince-bakery-breads",
-      "product": "Variety of Breads",
-      "reason": "Undeclared milk and sesame",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Grand Central Bakery"
-      ],
-      "date": "2026-08-19",
-      "id": "FDA-PUBLIC-7e5355311ebc9d0a",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-grand-central-bakery-seattle-recalls-potato-sourdough-bread-due-possible-foreign-object",
-      "product": "Potato Sourdough",
-      "reason": "may contain pieces of metal",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "Oma\u2019s Pride"
       ],
       "date": "2026-08-17",
@@ -102,6 +101,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/l-nutra-issues-allergy-alert-undeclared-tree-nuts-prolon-brand-apulian-almond-cocoa-spread",
       "product": "Apulian Almond & Cocoa Spread",
       "reason": "Undeclared cashews, pistachios and/or hazelnut",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Grand Central Bakery"
+      ],
+      "date": "2026-08-14",
+      "id": "FDA-ANN-acd7f6d31f101731",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object",
+      "product": "Potato Sourdough",
+      "reason": "may contain pieces of metal",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -248,62 +260,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Sun Noodle"
-      ],
-      "date": "2026-08-06",
-      "id": "FDA-ANN-f10f9368874a975e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sun-noodle-issues-voluntary-recall-sura-tanmen-hot-and-sour-flavor-premium-japanese-noodles-soup",
-      "product": "Sura Tanmen Hot and Sour Flavor Premium Japanese Noodles & Soup Base",
-      "reason": "Contain undeclared Fish",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-08-26T13:14:17Z",
+  "generatedAt": "2026-08-26T20:01:25Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-26T13:14:17Z",
+      "checkedAt": "2026-08-26T20:01:25Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-26T13:14:17Z",
-      "newestRecallDate": "2026-08-24",
+      "lastSuccessfulUpdate": "2026-08-26T20:01:25Z",
+      "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
-      "recordCount": 2122,
+      "recordCount": 2123,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-26T13:14:17Z",
+          "checkedAt": "2026-08-26T20:01:25Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-26T13:14:17Z",
+          "checkedAt": "2026-08-26T20:01:25Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2777,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-26T13:14:17Z",
-          "newestRecallDate": "2026-08-24",
+          "checkedAt": "2026-08-26T20:01:25Z",
+          "newestRecallDate": "2026-08-26",
           "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-26T13:14:17Z",
+      "checkedAt": "2026-08-26T20:01:25Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-26T13:14:17Z",
+      "lastSuccessfulUpdate": "2026-08-26T20:01:25Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
