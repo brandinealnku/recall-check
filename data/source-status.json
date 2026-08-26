@@ -1,19 +1,6 @@
 {
-  "checkedAt": "2026-08-26T07:06:55Z",
+  "checkedAt": "2026-08-26T13:14:17Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "Donutful"
-      ],
-      "date": "2026-08-24",
-      "id": "FDA-PUBLIC-6c623fc6c94f641e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/better-bakehouse-snack-company-recalling-certain-lots-donutful-chocolate-dipped-vanilla-cake-donuts",
-      "product": "Chocolate Dipped Vanilla Cake Donuts",
-      "reason": "Undeclared milk allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "Momchipz"
@@ -23,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/exotique-foods-inc-recalls-momchipz-veggie-chips-broccoli-florets-cauliflower-due-undeclared-wheat",
       "product": "Veggie Chips Broccoli Florets & Cauliflower",
       "reason": "undeclared wheat",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Donutful"
+      ],
+      "date": "2026-08-24",
+      "id": "FDA-PUBLIC-6c623fc6c94f641e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/better-bakehouse-snack-company-recalling-certain-lots-donutful-chocolate-dipped-vanilla-cake-donuts",
+      "product": "Chocolate Dipped Vanilla Cake Donuts",
+      "reason": "Undeclared milk allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -263,34 +263,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-26T07:06:55Z",
+  "generatedAt": "2026-08-26T13:14:17Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-26T07:06:55Z",
+      "checkedAt": "2026-08-26T13:14:17Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-26T07:06:55Z",
+      "lastSuccessfulUpdate": "2026-08-26T13:14:17Z",
       "newestRecallDate": "2026-08-24",
       "qualityStatus": "current",
       "recordCount": 2122,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-26T07:06:55Z",
+          "checkedAt": "2026-08-26T13:14:17Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-26T07:06:55Z",
+          "checkedAt": "2026-08-26T13:14:17Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2777,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-26T07:06:55Z",
+          "checkedAt": "2026-08-26T13:14:17Z",
           "newestRecallDate": "2026-08-24",
           "recordCount": 5,
           "success": true
@@ -298,12 +298,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-26T07:06:55Z",
+      "checkedAt": "2026-08-26T13:14:17Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-26T07:06:55Z",
+      "lastSuccessfulUpdate": "2026-08-26T13:14:17Z",
       "newestRecallDate": "2026-08-17",
       "qualityStatus": "current",
       "recordCount": 2022,
