@@ -1,6 +1,71 @@
 {
-  "checkedAt": "2026-08-27T09:32:58Z",
+  "checkedAt": "2026-08-27T09:42:55Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Shelter\u2019s Choice, Breeder\u2019s Edge"
+      ],
+      "date": "2026-08-26",
+      "id": "FDA-PUBLIC-bb2bed8804319ed5",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/revival-animal-health-llc-voluntarily-recalls-feline-milk-replacers-due-inconsistent-levels-vitamins",
+      "product": "Feline Milk Replacers",
+      "reason": "Low levels of potassium, copper, folic acid, choline and/or pyridoxine (vitamin B6)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Jaime\u2019s Spanish Village"
+      ],
+      "date": "2026-08-26",
+      "id": "FDA-PUBLIC-0773be44c13fb1ad",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jaimes-foods-atx-issues-allergy-alert-undeclared-egg-allergen-jaimes-spanish-village-jalapeno-ranch",
+      "product": "Jalapeno Ranch Dressing",
+      "reason": "contains undeclared eggs",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Donutful"
+      ],
+      "date": "2026-08-24",
+      "id": "FDA-PUBLIC-6c623fc6c94f641e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/better-bakehouse-snack-company-recalling-certain-lots-donutful-chocolate-dipped-vanilla-cake-donuts",
+      "product": "Chocolate Dipped Vanilla Cake Donuts",
+      "reason": "Undeclared milk allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Momchipz"
+      ],
+      "date": "2026-08-24",
+      "id": "FDA-PUBLIC-0d913d7c1310baec",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/exotique-foods-inc-recalls-momchipz-veggie-chips-broccoli-florets-cauliflower-due-undeclared-wheat",
+      "product": "Veggie Chips Broccoli Florets & Cauliflower",
+      "reason": "undeclared wheat",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Everything Sprouts, Calco"
+      ],
+      "date": "2026-08-22",
+      "id": "FDA-PUBLIC-dca5c2ffc692a3ad",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-recalls-alfalfa-sprouts-due-potential-e-coli-and-salmonella-risk",
+      "product": "Alfalfa Sprouts",
+      "reason": "Potential to be contaminated with Salmonella and Shiga toxin-producing Escherichia coli (STEC)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Oma\u2019s Pride"
@@ -195,126 +260,55 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Sun Noodle"
-      ],
-      "date": "2026-08-06",
-      "id": "FDA-ANN-f10f9368874a975e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sun-noodle-issues-voluntary-recall-sura-tanmen-hot-and-sour-flavor-premium-japanese-noodles-soup",
-      "product": "Sura Tanmen Hot and Sour Flavor Premium Japanese Noodles & Soup Base",
-      "reason": "Contain undeclared Fish",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Medline, Teleflex"
-      ],
-      "date": "2026-08-06",
-      "id": "FDA-ANN-1c8bd6cdabe7c66e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-industries-lp-issues-nationwide-recall-hudson-rci-neonatalinfant-heated-wire-breathing",
-      "product": "Hudson RCI Neonatal/Infant Heated Wire Breathing Circuits",
-      "reason": "Due to heated wire connector (pigtail) at the Neptune humidifier may exhibit discoloration, melting, smoke, burning odor, or other signs of localized thermal damage",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Fresenius Kabi"
-      ],
-      "date": "2026-08-05",
-      "id": "FDA-ANN-5b292dd0c8c4fbde",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresenius-kabi-issues-voluntary-nationwide-recall-one-lot-morphine-sulfate-injection-usp-simplistr",
-      "product": "Morphine Sulfate Injection USP, Simplist\u00ae 2 mg/1 mL",
-      "reason": "Due to a label mix-up",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "VMC"
-      ],
-      "date": "2026-08-05",
-      "id": "FDA-ANN-000db0f5812a862b",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/victory-medical-center-pharmacy-issues-voluntary-nationwide-recall-certain-lots-compounded",
-      "product": "Compounded Glutathione 200 mg/mL Multi-Dose Vials",
-      "reason": "Elevated Endotoxin level",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "OPTIRAY"
-      ],
-      "date": "2026-08-04",
-      "id": "FDA-ANN-9174cf9d51f12f45",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/liebel-flarsheim-company-llc-issues-recall-optiray-imaging-bulk-package-350-500ml-vial-nationwide",
-      "product": "OPTIRAY Imaging Bulk Package (IBP) 350, 500mL in vial (Ioversol Injection 74% 350 mg iodine/ml)",
-      "reason": "Presence of particulate matter comprising polyethylene and other plastic materials, stainless steel and glass",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-08-27T09:32:58Z",
+  "generatedAt": "2026-08-27T09:42:55Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-27T09:32:58Z",
-      "coverageComplete": false,
+      "checkedAt": "2026-08-27T09:42:55Z",
+      "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
-      "current": false,
-      "freshnessValidated": false,
-      "lastSuccessfulUpdate": "2026-08-27T09:32:58Z",
-      "newestRecallDate": "2026-08-17",
-      "qualityStatus": "degraded",
-      "recordCount": 2112,
+      "current": true,
+      "freshnessValidated": true,
+      "lastSuccessfulUpdate": "2026-08-27T09:42:55Z",
+      "newestRecallDate": "2026-08-26",
+      "qualityStatus": "current",
+      "recordCount": 2117,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-27T09:32:58Z",
+          "checkedAt": "2026-08-27T09:42:55Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-27T09:32:58Z",
+          "checkedAt": "2026-08-27T09:42:55Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2765,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-27T09:32:58Z",
-          "error": {
-            "message": "FDA public recall table returned no usable Food & Beverages rows",
-            "type": "ValueError"
-          },
-          "newestRecallDate": "",
-          "recordCount": 0,
-          "success": false
+          "checkedAt": "2026-08-27T09:42:55Z",
+          "newestRecallDate": "2026-08-26",
+          "recordCount": 5,
+          "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-27T09:32:58Z",
+      "checkedAt": "2026-08-27T09:42:55Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-27T09:32:58Z",
+      "lastSuccessfulUpdate": "2026-08-27T09:42:55Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
       "success": true
     }
   },
-  "warnings": [
-    "FDA coverage is degraded: unavailable source surface(s): publicAlerts"
-  ],
+  "warnings": [],
   "workflowVersion": "0.7.0"
 }
