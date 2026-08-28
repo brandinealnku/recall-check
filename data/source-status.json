@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-27T22:13:45Z",
+  "checkedAt": "2026-08-28T11:19:40Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -262,34 +262,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-27T22:13:45Z",
+  "generatedAt": "2026-08-28T11:19:40Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-27T22:13:45Z",
+      "checkedAt": "2026-08-28T11:19:40Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-27T22:13:45Z",
+      "lastSuccessfulUpdate": "2026-08-28T11:19:40Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
-      "recordCount": 2117,
+      "recordCount": 2116,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-27T22:13:45Z",
+          "checkedAt": "2026-08-28T11:19:40Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-27T22:13:45Z",
+          "checkedAt": "2026-08-28T11:19:40Z",
           "newestRecallDate": "2026-07-29",
-          "recordCount": 2765,
+          "recordCount": 2756,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-27T22:13:45Z",
+          "checkedAt": "2026-08-28T11:19:40Z",
           "newestRecallDate": "2026-08-26",
           "recordCount": 5,
           "success": true
@@ -297,12 +297,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-27T22:13:45Z",
+      "checkedAt": "2026-08-28T11:19:40Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-27T22:13:45Z",
+      "lastSuccessfulUpdate": "2026-08-28T11:19:40Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
