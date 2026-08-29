@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-08-29T07:00:58Z",
+  "checkedAt": "2026-08-29T16:41:17Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Northwest Naturals"
+      ],
+      "date": "2026-08-28",
+      "id": "FDA-PUBLIC-f7a5017e20e64672",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/northwest-naturals-voluntarily-recalls-two-raw-pet-food-products-because-possible-salmonella",
+      "product": "Chicken Recipe",
+      "reason": "Potential contamination with Salmonella and/or Listeria monocytogenes",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Shelter\u2019s Choice, Breeder\u2019s Edge"
@@ -29,19 +42,6 @@
     },
     {
       "brandNames": [
-        "Donutful"
-      ],
-      "date": "2026-08-24",
-      "id": "FDA-PUBLIC-6c623fc6c94f641e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/better-bakehouse-snack-company-recalling-certain-lots-donutful-chocolate-dipped-vanilla-cake-donuts",
-      "product": "Chocolate Dipped Vanilla Cake Donuts",
-      "reason": "Undeclared milk allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Momchipz"
       ],
       "date": "2026-08-24",
@@ -55,13 +55,13 @@
     },
     {
       "brandNames": [
-        "Everything Sprouts, Calco"
+        "Donutful"
       ],
-      "date": "2026-08-22",
-      "id": "FDA-PUBLIC-dca5c2ffc692a3ad",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-recalls-alfalfa-sprouts-due-potential-e-coli-and-salmonella-risk",
-      "product": "Alfalfa Sprouts",
-      "reason": "Potential to be contaminated with Salmonella and Shiga toxin-producing Escherichia coli (STEC)",
+      "date": "2026-08-24",
+      "id": "FDA-PUBLIC-6c623fc6c94f641e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/better-bakehouse-snack-company-recalling-certain-lots-donutful-chocolate-dipped-vanilla-cake-donuts",
+      "product": "Chocolate Dipped Vanilla Cake Donuts",
+      "reason": "Undeclared milk allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -262,47 +262,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-29T07:00:58Z",
+  "generatedAt": "2026-08-29T16:41:17Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-29T07:00:58Z",
+      "checkedAt": "2026-08-29T16:41:17Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-29T07:00:58Z",
-      "newestRecallDate": "2026-08-26",
+      "lastSuccessfulUpdate": "2026-08-29T16:41:17Z",
+      "newestRecallDate": "2026-08-28",
       "qualityStatus": "current",
       "recordCount": 2115,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-29T07:00:58Z",
+          "checkedAt": "2026-08-29T16:41:17Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-29T07:00:58Z",
+          "checkedAt": "2026-08-29T16:41:17Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2753,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-29T07:00:58Z",
-          "newestRecallDate": "2026-08-26",
+          "checkedAt": "2026-08-29T16:41:17Z",
+          "newestRecallDate": "2026-08-28",
           "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-29T07:00:58Z",
+      "checkedAt": "2026-08-29T16:41:17Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-29T07:00:58Z",
+      "lastSuccessfulUpdate": "2026-08-29T16:41:17Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
