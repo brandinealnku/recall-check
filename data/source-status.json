@@ -1,6 +1,32 @@
 {
-  "checkedAt": "2026-08-29T16:41:17Z",
+  "checkedAt": "2026-08-29T20:53:12Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Martina"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-PUBLIC-ca450aa0f15875b2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
+      "product": "Mangoes",
+      "reason": "Potential contamination with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Everything Sprouts"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-PUBLIC-9d574543ebbaf5e2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
+      "product": "Robust Radish Mix, 5oz Cups",
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Northwest Naturals"
@@ -36,32 +62,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jaimes-foods-atx-issues-allergy-alert-undeclared-egg-allergen-jaimes-spanish-village-jalapeno-ranch",
       "product": "Jalapeno Ranch Dressing",
       "reason": "contains undeclared eggs",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Momchipz"
-      ],
-      "date": "2026-08-24",
-      "id": "FDA-PUBLIC-0d913d7c1310baec",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/exotique-foods-inc-recalls-momchipz-veggie-chips-broccoli-florets-cauliflower-due-undeclared-wheat",
-      "product": "Veggie Chips Broccoli Florets & Cauliflower",
-      "reason": "undeclared wheat",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Donutful"
-      ],
-      "date": "2026-08-24",
-      "id": "FDA-PUBLIC-6c623fc6c94f641e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/better-bakehouse-snack-company-recalling-certain-lots-donutful-chocolate-dipped-vanilla-cake-donuts",
-      "product": "Chocolate Dipped Vanilla Cake Donuts",
-      "reason": "Undeclared milk allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -262,47 +262,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-29T16:41:17Z",
+  "generatedAt": "2026-08-29T20:53:12Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-29T16:41:17Z",
+      "checkedAt": "2026-08-29T20:53:12Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-29T16:41:17Z",
-      "newestRecallDate": "2026-08-28",
+      "lastSuccessfulUpdate": "2026-08-29T20:53:12Z",
+      "newestRecallDate": "2026-08-29",
       "qualityStatus": "current",
       "recordCount": 2115,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-29T16:41:17Z",
+          "checkedAt": "2026-08-29T20:53:12Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-29T16:41:17Z",
+          "checkedAt": "2026-08-29T20:53:12Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2753,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-29T16:41:17Z",
-          "newestRecallDate": "2026-08-28",
+          "checkedAt": "2026-08-29T20:53:12Z",
+          "newestRecallDate": "2026-08-29",
           "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-29T16:41:17Z",
+      "checkedAt": "2026-08-29T20:53:12Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-29T16:41:17Z",
+      "lastSuccessfulUpdate": "2026-08-29T20:53:12Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
