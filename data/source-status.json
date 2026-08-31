@@ -1,19 +1,6 @@
 {
-  "checkedAt": "2026-08-31T05:28:46Z",
+  "checkedAt": "2026-08-31T13:35:26Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "Martina"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-ca450aa0f15875b2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
-      "product": "Mangoes",
-      "reason": "Potential contamination with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "Everything Sprouts"
@@ -23,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
       "product": "Robust Radish Mix, 5oz Cups",
       "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Martina"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-PUBLIC-ca450aa0f15875b2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
+      "product": "Mangoes",
+      "reason": "Potential contamination with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -262,34 +262,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-31T05:28:46Z",
+  "generatedAt": "2026-08-31T13:35:26Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-31T05:28:46Z",
+      "checkedAt": "2026-08-31T13:35:26Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-31T05:28:46Z",
+      "lastSuccessfulUpdate": "2026-08-31T13:35:26Z",
       "newestRecallDate": "2026-08-29",
       "qualityStatus": "current",
       "recordCount": 2111,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-31T05:28:46Z",
+          "checkedAt": "2026-08-31T13:35:26Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-31T05:28:46Z",
+          "checkedAt": "2026-08-31T13:35:26Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2746,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-31T05:28:46Z",
+          "checkedAt": "2026-08-31T13:35:26Z",
           "newestRecallDate": "2026-08-29",
           "recordCount": 5,
           "success": true
@@ -297,12 +297,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-31T05:28:46Z",
+      "checkedAt": "2026-08-31T13:35:26Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-31T05:28:46Z",
+      "lastSuccessfulUpdate": "2026-08-31T13:35:26Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
