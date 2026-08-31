@@ -1,15 +1,28 @@
 {
-  "checkedAt": "2026-08-31T13:42:46Z",
+  "checkedAt": "2026-08-31T22:48:18Z",
   "fdaSample": [
     {
       "brandNames": [
-        "Martina"
+        "Kofinas"
       ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-ca450aa0f15875b2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
-      "product": "Mangoes",
-      "reason": "Potential contamination with Salmonella",
+      "date": "2026-08-31",
+      "id": "FDA-PUBLIC-a76b0fd7278a1fb6",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lmsi-llckofinas-olive-oil-issues-voluntary-recall-its-garlic-mediterranean-infused-extra-virgin",
+      "product": "Garlic Mediterranean Infused Extra Virgin Olive Oil 500 ml, 250 ml, and 100 ml",
+      "reason": "Contains garlic essential oil not approved for culinary use",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Little Temptations"
+      ],
+      "date": "2026-08-31",
+      "id": "FDA-PUBLIC-66c04085f5d8a616",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/crystal-temptations-issues-allergy-alert-undeclared-milk-chocolatey-eyeballs",
+      "product": "Chocolatey Eyeballs, 7 oz., 10 oz., 10.5 oz., 11 oz., and 16 oz.",
+      "reason": "Undeclared milk",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -23,6 +36,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
       "product": "Robust Radish Mix, 5oz Cups",
       "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Martina"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-PUBLIC-ca450aa0f15875b2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
+      "product": "Mangoes",
+      "reason": "Potential contamination with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -234,75 +260,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Trader Joe\u2019s, Freshness Guaranteed and more"
-      ],
-      "date": "2026-08-09",
-      "id": "FDA-ANN-9c3fd5ce91ab6b3c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-fresh-foods-recalls-products-made-jalapeno-peppers-because-possible-health-risk",
-      "product": "Finished products (e.g. dips, salsa, guacamole and more) containing jalapeno",
-      "reason": "Possible Salmonella Contamination",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Food To Live"
-      ],
-      "date": "2026-08-07",
-      "id": "FDA-ANN-2573a625d96b51f1",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lexunder-inc-recalls-food-live-brand-green-powder-products-because-possible-health-risk",
-      "product": "Green Powder Products",
-      "reason": "Possible Salmonella Contamination",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-08-31T13:42:46Z",
+  "generatedAt": "2026-08-31T22:48:18Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-08-31T13:42:46Z",
+      "checkedAt": "2026-08-31T22:48:18Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-31T13:42:46Z",
-      "newestRecallDate": "2026-08-29",
+      "lastSuccessfulUpdate": "2026-08-31T22:48:18Z",
+      "newestRecallDate": "2026-08-31",
       "qualityStatus": "current",
-      "recordCount": 2111,
+      "recordCount": 2113,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-08-31T13:42:46Z",
+          "checkedAt": "2026-08-31T22:48:18Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-08-31T13:42:46Z",
+          "checkedAt": "2026-08-31T22:48:18Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2746,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-08-31T13:42:46Z",
-          "newestRecallDate": "2026-08-29",
-          "recordCount": 5,
+          "checkedAt": "2026-08-31T22:48:18Z",
+          "newestRecallDate": "2026-08-31",
+          "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-08-31T13:42:46Z",
+      "checkedAt": "2026-08-31T22:48:18Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-08-31T13:42:46Z",
+      "lastSuccessfulUpdate": "2026-08-31T22:48:18Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
