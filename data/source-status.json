@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-04T04:26:58Z",
+  "checkedAt": "2026-09-04T11:13:50Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -42,19 +42,6 @@
     },
     {
       "brandNames": [
-        "Everything Sprouts"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-9d574543ebbaf5e2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
-      "product": "Robust Radish Mix, 5oz Cups",
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Martina"
       ],
       "date": "2026-08-29",
@@ -62,6 +49,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
       "product": "Mangoes",
       "reason": "Potential contamination with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Everything Sprouts"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-PUBLIC-9d574543ebbaf5e2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
+      "product": "Robust Radish Mix, 5oz Cups",
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -88,6 +88,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/revival-animal-health-llc-voluntarily-recalls-feline-milk-replacers-due-inconsistent-levels-vitamins",
       "product": "Feline Milk Replacers",
       "reason": "Low levels of potassium, copper, folic acid, choline and/or pyridoxine (vitamin B6)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Jaime\u2019s Spanish Village"
+      ],
+      "date": "2026-08-26",
+      "id": "FDA-PUBLIC-0773be44c13fb1ad",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jaimes-foods-atx-issues-allergy-alert-undeclared-egg-allergen-jaimes-spanish-village-jalapeno-ranch",
+      "product": "Jalapeno Ranch Dressing",
+      "reason": "contains undeclared eggs",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -247,62 +260,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Schwarzkopf Professional"
-      ],
-      "date": "2026-08-11",
-      "id": "FDA-ANN-1496219456af109f",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/henkel-corp-announces-nationwide-recall-schwarzkopf-professional-osis-grip-676-fl-oz200-ml-due",
-      "product": "Extra Strong Mousse",
-      "reason": "Due to Packaging Defect",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-04T04:26:58Z",
+  "generatedAt": "2026-09-04T11:13:50Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-04T04:26:58Z",
+      "checkedAt": "2026-09-04T11:13:50Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-04T04:26:58Z",
+      "lastSuccessfulUpdate": "2026-09-04T11:13:50Z",
       "newestRecallDate": "2026-09-03",
       "qualityStatus": "current",
-      "recordCount": 2112,
+      "recordCount": 2113,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-04T04:26:58Z",
+          "checkedAt": "2026-09-04T11:13:50Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-04T04:26:58Z",
+          "checkedAt": "2026-09-04T11:13:50Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2745,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-04T04:26:58Z",
+          "checkedAt": "2026-09-04T11:13:50Z",
           "newestRecallDate": "2026-09-03",
-          "recordCount": 7,
+          "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-04T04:26:58Z",
+      "checkedAt": "2026-09-04T11:13:50Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-04T04:26:58Z",
+      "lastSuccessfulUpdate": "2026-09-04T11:13:50Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
