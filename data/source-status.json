@@ -1,6 +1,32 @@
 {
-  "checkedAt": "2026-09-04T11:13:50Z",
+  "checkedAt": "2026-09-04T16:18:51Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Foods Alive"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-5dea411e656bc6bc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
+      "product": "Moringa Leaf Powder",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Great Value"
@@ -10,6 +36,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple",
       "product": "Organic Triple Berry Blend",
       "reason": "Possible E. Coli Contamination",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "American Regent, Inc."
+      ],
+      "date": "2026-09-03",
+      "id": "FDA-PUBLIC-d9d7221eda597400",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/american-regent-inc-issues-voluntary-nationwide-recall-three-lots-epinephrine-injection-usp-30-mg-30",
+      "product": "Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vial",
+      "reason": "Presence of particulate matter and lack of sterility assurance",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -42,19 +81,6 @@
     },
     {
       "brandNames": [
-        "Martina"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-ca450aa0f15875b2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
-      "product": "Mangoes",
-      "reason": "Potential contamination with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Everything Sprouts"
       ],
       "date": "2026-08-29",
@@ -68,39 +94,13 @@
     },
     {
       "brandNames": [
-        "Northwest Naturals"
+        "Martina"
       ],
-      "date": "2026-08-28",
-      "id": "FDA-PUBLIC-f7a5017e20e64672",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/northwest-naturals-voluntarily-recalls-two-raw-pet-food-products-because-possible-salmonella",
-      "product": "Chicken Recipe",
-      "reason": "Potential contamination with Salmonella and/or Listeria monocytogenes",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Shelter\u2019s Choice, Breeder\u2019s Edge"
-      ],
-      "date": "2026-08-26",
-      "id": "FDA-PUBLIC-bb2bed8804319ed5",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/revival-animal-health-llc-voluntarily-recalls-feline-milk-replacers-due-inconsistent-levels-vitamins",
-      "product": "Feline Milk Replacers",
-      "reason": "Low levels of potassium, copper, folic acid, choline and/or pyridoxine (vitamin B6)",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Jaime\u2019s Spanish Village"
-      ],
-      "date": "2026-08-26",
-      "id": "FDA-PUBLIC-0773be44c13fb1ad",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jaimes-foods-atx-issues-allergy-alert-undeclared-egg-allergen-jaimes-spanish-village-jalapeno-ranch",
-      "product": "Jalapeno Ranch Dressing",
-      "reason": "contains undeclared eggs",
+      "date": "2026-08-29",
+      "id": "FDA-PUBLIC-ca450aa0f15875b2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
+      "product": "Mangoes",
+      "reason": "Potential contamination with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -262,47 +262,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-04T11:13:50Z",
+  "generatedAt": "2026-09-04T16:18:51Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-04T11:13:50Z",
+      "checkedAt": "2026-09-04T16:18:51Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-04T11:13:50Z",
-      "newestRecallDate": "2026-09-03",
+      "lastSuccessfulUpdate": "2026-09-04T16:18:51Z",
+      "newestRecallDate": "2026-09-04",
       "qualityStatus": "current",
       "recordCount": 2113,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-04T11:13:50Z",
+          "checkedAt": "2026-09-04T16:18:51Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-04T11:13:50Z",
+          "checkedAt": "2026-09-04T16:18:51Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2745,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-04T11:13:50Z",
-          "newestRecallDate": "2026-09-03",
+          "checkedAt": "2026-09-04T16:18:51Z",
+          "newestRecallDate": "2026-09-04",
           "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-04T11:13:50Z",
+      "checkedAt": "2026-09-04T16:18:51Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-04T11:13:50Z",
+      "lastSuccessfulUpdate": "2026-09-04T16:18:51Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
