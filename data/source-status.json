@@ -1,19 +1,6 @@
 {
-  "checkedAt": "2026-09-05T10:31:08Z",
+  "checkedAt": "2026-09-05T15:10:16Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "Business Pill, Branch Manager for Men"
-      ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-e5f88d740fd1b163",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
-      "product": "dietary supplements marketed for male sexual enhancement",
-      "reason": "Products contain undeclared yohimbine",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "Foods Alive"
@@ -23,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
       "product": "Moringa Leaf Powder",
       "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -81,19 +81,6 @@
     },
     {
       "brandNames": [
-        "Everything Sprouts"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-9d574543ebbaf5e2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
-      "product": "Robust Radish Mix, 5oz Cups",
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Martina"
       ],
       "date": "2026-08-29",
@@ -101,6 +88,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
       "product": "Mangoes",
       "reason": "Potential contamination with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Everything Sprouts"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-PUBLIC-9d574543ebbaf5e2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
+      "product": "Robust Radish Mix, 5oz Cups",
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -262,34 +262,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-05T10:31:08Z",
+  "generatedAt": "2026-09-05T15:10:16Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-05T10:31:08Z",
+      "checkedAt": "2026-09-05T15:10:16Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-05T10:31:08Z",
+      "lastSuccessfulUpdate": "2026-09-05T15:10:16Z",
       "newestRecallDate": "2026-09-04",
       "qualityStatus": "current",
       "recordCount": 2113,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-05T10:31:08Z",
+          "checkedAt": "2026-09-05T15:10:16Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-05T10:31:08Z",
+          "checkedAt": "2026-09-05T15:10:16Z",
           "newestRecallDate": "2026-07-29",
           "recordCount": 2745,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-05T10:31:08Z",
+          "checkedAt": "2026-09-05T15:10:16Z",
           "newestRecallDate": "2026-09-04",
           "recordCount": 8,
           "success": true
@@ -297,12 +297,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-05T10:31:08Z",
+      "checkedAt": "2026-09-05T15:10:16Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-05T10:31:08Z",
+      "lastSuccessfulUpdate": "2026-09-05T15:10:16Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
