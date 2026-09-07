@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-09-06T20:21:58Z",
+  "checkedAt": "2026-09-07T04:27:46Z",
   "fdaSample": [
     {
       "brandNames": [
-        "Business Pill, Branch Manager for Men"
+        "Made Fresh Salads, Northside"
       ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-e5f88d740fd1b163",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
-      "product": "dietary supplements marketed for male sexual enhancement",
-      "reason": "Products contain undeclared yohimbine",
+      "date": "2026-09-06",
+      "id": "FDA-PUBLIC-0ad4eca67643eeff",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
+      "product": "Ready to Eat Deli Style Salads and cream cheese",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -23,6 +23,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
       "product": "Moringa Leaf Powder",
       "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -75,19 +88,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/crystal-temptations-issues-allergy-alert-undeclared-milk-chocolatey-eyeballs",
       "product": "Chocolatey Eyeballs, 7 oz., 10 oz., 10.5 oz., 11 oz., and 16 oz.",
       "reason": "Undeclared milk",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Everything Sprouts"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-9d574543ebbaf5e2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
-      "product": "Robust Radish Mix, 5oz Cups",
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -262,47 +262,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-06T20:21:58Z",
+  "generatedAt": "2026-09-07T04:27:46Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-06T20:21:58Z",
+      "checkedAt": "2026-09-07T04:27:46Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-06T20:21:58Z",
-      "newestRecallDate": "2026-09-04",
+      "lastSuccessfulUpdate": "2026-09-07T04:27:46Z",
+      "newestRecallDate": "2026-09-06",
       "qualityStatus": "current",
-      "recordCount": 2112,
+      "recordCount": 2110,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-06T20:21:58Z",
+          "checkedAt": "2026-09-07T04:27:46Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-06T20:21:58Z",
+          "checkedAt": "2026-09-07T04:27:46Z",
           "newestRecallDate": "2026-07-29",
-          "recordCount": 2744,
+          "recordCount": 2742,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-06T20:21:58Z",
-          "newestRecallDate": "2026-09-04",
+          "checkedAt": "2026-09-07T04:27:46Z",
+          "newestRecallDate": "2026-09-06",
           "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-06T20:21:58Z",
+      "checkedAt": "2026-09-07T04:27:46Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-06T20:21:58Z",
+      "lastSuccessfulUpdate": "2026-09-07T04:27:46Z",
       "newestRecallDate": "2026-08-26",
       "qualityStatus": "current",
       "recordCount": 2023,
