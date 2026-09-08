@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-09-07T21:28:47Z",
+  "checkedAt": "2026-09-08T04:30:35Z",
   "fdaSample": [
     {
       "brandNames": [
-        "Business Pill, Branch Manager for Men"
+        "Made Fresh Salads, Northside"
       ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-e5f88d740fd1b163",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
-      "product": "dietary supplements marketed for male sexual enhancement",
-      "reason": "Products contain undeclared yohimbine",
+      "date": "2026-09-06",
+      "id": "FDA-PUBLIC-0ad4eca67643eeff",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
+      "product": "Ready to Eat Deli Style Salads and cream cheese",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -23,6 +23,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
       "product": "Moringa Leaf Powder",
       "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -81,19 +94,6 @@
     },
     {
       "brandNames": [
-        "Everything Sprouts"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-9d574543ebbaf5e2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
-      "product": "Robust Radish Mix, 5oz Cups",
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Martina"
       ],
       "date": "2026-08-29",
@@ -103,6 +103,17 @@
       "reason": "Potential contamination with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-08-18",
+      "id": "FDA-H-1265-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Outshine Fruit Bar Watermelon, 6-Count 2.5 ounce with UPC 041548413624, packaged in paper outer cartons; individual fruit bars in plastic wrapper. Keep at 0F (-18C) or colder.",
+      "reason": "Foreign object: products may contain glass pieces",
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -142,6 +153,17 @@
       "reason": "Undeclared cashews, pistachios and/or hazelnut",
       "sourceSurfaces": [
         "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-08-14",
+      "id": "FDA-H-1245-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Gifford's HomeMaine ice cream brand POWER PLAY FUDGE; ONE QUART (946 mL); UPC: 8 60864 00030 7",
+      "reason": "Potential foreign object contamination: rubber pieces",
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -210,6 +232,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-08-12",
+      "id": "FDA-H-1244-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Product is Potato Sourdough Bread and sold under three following names: Potato Market Loaf 20oz. UPC 733163001576, product is sold at grocery stores with paper packaging. Label declares Potato Grand Central Rustic Breads ***A hearty sourdough loaf made with house-roasted potatoes. ***\" Potato Table Loaf 20oz. No UPC. Product is sold direct to consumer at Grand Central Cafe stores and wholesalers without paper packaging. Mini Potato Loaf 12oz. No UPC. Product is sold at grocery stores and wholesalers without paper packaging.",
+      "reason": "Foreign object: May contain metal pieces",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Vitasia Chinese Style"
       ],
@@ -221,88 +254,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Frankie\u2019s Organic"
-      ],
-      "date": "2026-08-12",
-      "id": "FDA-ANN-324357723155c3f8",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frankies-organic-issues-allergy-alert-undeclared-milk-frankies-organic-plant-based-vegan-cheddar",
-      "product": "Plant Based Snack",
-      "reason": "Undeclared milk",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Whole Foods Market"
-      ],
-      "date": "2026-08-12",
-      "id": "FDA-ANN-260fdbd895415852",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-announces-recall-select-salsas-guacamole-pico-de-gallo-and-prepared-foods",
-      "product": "Finished products such as dips, salsa, guacamole, and more containing jalapeno.",
-      "reason": "Potential Salmonella Contamination",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Fresenius Kabi"
-      ],
-      "date": "2026-08-11",
-      "id": "FDA-ANN-1b670650d67911d9",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresenius-kabi-issues-nationwide-recall-tyenner-tocilizumab-aazg-injection-400-mg20-ml-vials-due",
-      "product": "Tyenne Injection 400 mg/20 mL vial",
-      "reason": "Due to Presence of Glass Particles",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-07T21:28:47Z",
+  "generatedAt": "2026-09-08T04:30:35Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-07T21:28:47Z",
+      "checkedAt": "2026-09-08T04:30:35Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-07T21:28:47Z",
-      "newestRecallDate": "2026-09-04",
+      "lastSuccessfulUpdate": "2026-09-08T04:30:35Z",
+      "newestRecallDate": "2026-09-06",
       "qualityStatus": "current",
-      "recordCount": 2110,
+      "recordCount": 2149,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-07T21:28:47Z",
+          "checkedAt": "2026-09-08T04:30:35Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-07T21:28:47Z",
-          "newestRecallDate": "2026-07-29",
-          "recordCount": 2742,
+          "checkedAt": "2026-09-08T04:30:35Z",
+          "newestRecallDate": "2026-08-18",
+          "recordCount": 2811,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-07T21:28:47Z",
-          "newestRecallDate": "2026-09-04",
+          "checkedAt": "2026-09-08T04:30:35Z",
+          "newestRecallDate": "2026-09-06",
           "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-07T21:28:47Z",
+      "checkedAt": "2026-09-08T04:30:35Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-07T21:28:47Z",
+      "lastSuccessfulUpdate": "2026-09-08T04:30:35Z",
       "newestRecallDate": "2026-09-06",
       "qualityStatus": "current",
       "recordCount": 2024,
