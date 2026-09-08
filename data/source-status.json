@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-08T16:35:30Z",
+  "checkedAt": "2026-09-08T21:06:48Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Created Fresh!"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-PUBLIC-e66a67462d388f7c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
+      "product": "Cranberry Chicken Salad Wedge Sandwich",
+      "reason": "Improperly declared egg allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Made Fresh Salads, Northside"
@@ -62,19 +75,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/american-regent-inc-issues-voluntary-nationwide-recall-three-lots-epinephrine-injection-usp-30-mg-30",
       "product": "Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vial",
       "reason": "Presence of particulate matter and lack of sterility assurance",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Kofinas"
-      ],
-      "date": "2026-08-31",
-      "id": "FDA-PUBLIC-a76b0fd7278a1fb6",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lmsi-llckofinas-olive-oil-issues-voluntary-recall-its-garlic-mediterranean-infused-extra-virgin",
-      "product": "Garlic Mediterranean Infused Extra Virgin Olive Oil 500 ml, 250 ml, and 100 ml",
-      "reason": "Contains garlic essential oil not approved for culinary use",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,47 +256,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-08T16:35:30Z",
+  "generatedAt": "2026-09-08T21:06:48Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-08T16:35:30Z",
+      "checkedAt": "2026-09-08T21:06:48Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-08T16:35:30Z",
-      "newestRecallDate": "2026-09-06",
+      "lastSuccessfulUpdate": "2026-09-08T21:06:48Z",
+      "newestRecallDate": "2026-09-08",
       "qualityStatus": "current",
       "recordCount": 2147,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-08T16:35:30Z",
+          "checkedAt": "2026-09-08T21:06:48Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-08T16:35:30Z",
+          "checkedAt": "2026-09-08T21:06:48Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2811,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-08T16:35:30Z",
-          "newestRecallDate": "2026-09-06",
+          "checkedAt": "2026-09-08T21:06:48Z",
+          "newestRecallDate": "2026-09-08",
           "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-08T16:35:30Z",
+      "checkedAt": "2026-09-08T21:06:48Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-08T16:35:30Z",
+      "lastSuccessfulUpdate": "2026-09-08T21:06:48Z",
       "newestRecallDate": "2026-09-06",
       "qualityStatus": "current",
       "recordCount": 2024,
