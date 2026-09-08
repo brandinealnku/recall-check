@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-08T11:13:06Z",
+  "checkedAt": "2026-09-08T16:35:30Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -16,19 +16,6 @@
     },
     {
       "brandNames": [
-        "Foods Alive"
-      ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-5dea411e656bc6bc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
-      "product": "Moringa Leaf Powder",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Business Pill, Branch Manager for Men"
       ],
       "date": "2026-09-04",
@@ -36,6 +23,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
       "product": "dietary supplements marketed for male sexual enhancement",
       "reason": "Products contain undeclared yohimbine",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Foods Alive"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-5dea411e656bc6bc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
+      "product": "Moringa Leaf Powder",
+      "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -75,32 +75,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lmsi-llckofinas-olive-oil-issues-voluntary-recall-its-garlic-mediterranean-infused-extra-virgin",
       "product": "Garlic Mediterranean Infused Extra Virgin Olive Oil 500 ml, 250 ml, and 100 ml",
       "reason": "Contains garlic essential oil not approved for culinary use",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Little Temptations"
-      ],
-      "date": "2026-08-31",
-      "id": "FDA-PUBLIC-66c04085f5d8a616",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/crystal-temptations-issues-allergy-alert-undeclared-milk-chocolatey-eyeballs",
-      "product": "Chocolatey Eyeballs, 7 oz., 10 oz., 10.5 oz., 11 oz., and 16 oz.",
-      "reason": "Undeclared milk",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Martina"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-PUBLIC-ca450aa0f15875b2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
-      "product": "Mangoes",
-      "reason": "Potential contamination with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -254,49 +228,75 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
+    },
+    {
+      "brandNames": [
+        "Frankie\u2019s Organic"
+      ],
+      "date": "2026-08-12",
+      "id": "FDA-ANN-324357723155c3f8",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frankies-organic-issues-allergy-alert-undeclared-milk-frankies-organic-plant-based-vegan-cheddar",
+      "product": "Plant Based Snack",
+      "reason": "Undeclared milk",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Whole Foods Market"
+      ],
+      "date": "2026-08-12",
+      "id": "FDA-ANN-260fdbd895415852",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-announces-recall-select-salsas-guacamole-pico-de-gallo-and-prepared-foods",
+      "product": "Finished products such as dips, salsa, guacamole, and more containing jalapeno.",
+      "reason": "Potential Salmonella Contamination",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     }
   ],
-  "generatedAt": "2026-09-08T11:13:06Z",
+  "generatedAt": "2026-09-08T16:35:30Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-08T11:13:06Z",
+      "checkedAt": "2026-09-08T16:35:30Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-08T11:13:06Z",
+      "lastSuccessfulUpdate": "2026-09-08T16:35:30Z",
       "newestRecallDate": "2026-09-06",
       "qualityStatus": "current",
-      "recordCount": 2149,
+      "recordCount": 2147,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-08T11:13:06Z",
+          "checkedAt": "2026-09-08T16:35:30Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-08T11:13:06Z",
+          "checkedAt": "2026-09-08T16:35:30Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2811,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-08T11:13:06Z",
+          "checkedAt": "2026-09-08T16:35:30Z",
           "newestRecallDate": "2026-09-06",
-          "recordCount": 8,
+          "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-08T11:13:06Z",
+      "checkedAt": "2026-09-08T16:35:30Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-08T11:13:06Z",
+      "lastSuccessfulUpdate": "2026-09-08T16:35:30Z",
       "newestRecallDate": "2026-09-06",
       "qualityStatus": "current",
       "recordCount": 2024,
