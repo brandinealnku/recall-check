@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-09T11:17:55Z",
+  "checkedAt": "2026-09-09T16:35:30Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -256,34 +256,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-09T11:17:55Z",
+  "generatedAt": "2026-09-09T16:35:30Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-09T11:17:55Z",
+      "checkedAt": "2026-09-09T16:35:30Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-09T11:17:55Z",
+      "lastSuccessfulUpdate": "2026-09-09T16:35:30Z",
       "newestRecallDate": "2026-09-08",
       "qualityStatus": "current",
       "recordCount": 2147,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-09T11:17:55Z",
+          "checkedAt": "2026-09-09T16:35:30Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-09T11:17:55Z",
+          "checkedAt": "2026-09-09T16:35:30Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2811,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-09T11:17:55Z",
+          "checkedAt": "2026-09-09T16:35:30Z",
           "newestRecallDate": "2026-09-08",
           "recordCount": 6,
           "success": true
@@ -291,12 +291,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-09T11:17:55Z",
+      "checkedAt": "2026-09-09T16:35:30Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-09T11:17:55Z",
+      "lastSuccessfulUpdate": "2026-09-09T16:35:30Z",
       "newestRecallDate": "2026-09-06",
       "qualityStatus": "current",
       "recordCount": 2024,
