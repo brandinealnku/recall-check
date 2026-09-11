@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-10T20:49:15Z",
+  "checkedAt": "2026-09-11T04:35:10Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "No Brand Name"
+      ],
+      "date": "2026-09-10",
+      "id": "FDA-PUBLIC-0fe69de961087310",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/evergreen-fresh-sprouts-llc-recalls-broccoli-sprouts-because-possible-health-risk",
+      "product": "Broccoli Sprouts",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Created Fresh!"
@@ -29,19 +42,6 @@
     },
     {
       "brandNames": [
-        "Business Pill, Branch Manager for Men"
-      ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-e5f88d740fd1b163",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
-      "product": "dietary supplements marketed for male sexual enhancement",
-      "reason": "Products contain undeclared yohimbine",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Foods Alive"
       ],
       "date": "2026-09-04",
@@ -49,6 +49,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
       "product": "Moringa Leaf Powder",
       "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -75,19 +88,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/american-regent-inc-issues-voluntary-nationwide-recall-three-lots-epinephrine-injection-usp-30-mg-30",
       "product": "Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vial",
       "reason": "Presence of particulate matter and lack of sterility assurance",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Kofinas"
-      ],
-      "date": "2026-08-31",
-      "id": "FDA-PUBLIC-a76b0fd7278a1fb6",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lmsi-llckofinas-olive-oil-issues-voluntary-recall-its-garlic-mediterranean-infused-extra-virgin",
-      "product": "Garlic Mediterranean Infused Extra Virgin Olive Oil 500 ml, 250 ml, and 100 ml",
-      "reason": "Contains garlic essential oil not approved for culinary use",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,47 +256,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-10T20:49:15Z",
+  "generatedAt": "2026-09-11T04:35:10Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-10T20:49:15Z",
+      "checkedAt": "2026-09-11T04:35:10Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-10T20:49:15Z",
-      "newestRecallDate": "2026-09-08",
+      "lastSuccessfulUpdate": "2026-09-11T04:35:10Z",
+      "newestRecallDate": "2026-09-10",
       "qualityStatus": "current",
-      "recordCount": 2144,
+      "recordCount": 2143,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-10T20:49:15Z",
+          "checkedAt": "2026-09-11T04:35:10Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-10T20:49:15Z",
+          "checkedAt": "2026-09-11T04:35:10Z",
           "newestRecallDate": "2026-08-18",
-          "recordCount": 2807,
+          "recordCount": 2806,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-10T20:49:15Z",
-          "newestRecallDate": "2026-09-08",
+          "checkedAt": "2026-09-11T04:35:10Z",
+          "newestRecallDate": "2026-09-10",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-10T20:49:15Z",
+      "checkedAt": "2026-09-11T04:35:10Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-10T20:49:15Z",
+      "lastSuccessfulUpdate": "2026-09-11T04:35:10Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
