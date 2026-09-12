@@ -1,19 +1,6 @@
 {
-  "checkedAt": "2026-09-12T04:30:15Z",
+  "checkedAt": "2026-09-12T10:41:42Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "Whole Foods Market"
-      ],
-      "date": "2026-09-11",
-      "id": "FDA-PUBLIC-14e18e05dcf6ddfe",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-issues-allergy-alert-undeclared-egg-cabricharme-cheese",
-      "product": "Cheese",
-      "reason": "Undeclared Egg",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "No Brand Name"
@@ -55,19 +42,6 @@
     },
     {
       "brandNames": [
-        "Business Pill, Branch Manager for Men"
-      ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-e5f88d740fd1b163",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
-      "product": "dietary supplements marketed for male sexual enhancement",
-      "reason": "Products contain undeclared yohimbine",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Foods Alive"
       ],
       "date": "2026-09-04",
@@ -81,6 +55,19 @@
     },
     {
       "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
         "American Regent, Inc."
       ],
       "date": "2026-09-03",
@@ -88,6 +75,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/american-regent-inc-issues-voluntary-nationwide-recall-three-lots-epinephrine-injection-usp-30-mg-30",
       "product": "Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vial",
       "reason": "Presence of particulate matter and lack of sterility assurance",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Great Value"
+      ],
+      "date": "2026-09-03",
+      "id": "FDA-PUBLIC-915648e6f07743e0",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple",
+      "product": "Organic Triple Berry Blend",
+      "reason": "Possible E. Coli Contamination",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,47 +256,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-12T04:30:15Z",
+  "generatedAt": "2026-09-12T10:41:42Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-12T04:30:15Z",
+      "checkedAt": "2026-09-12T10:41:42Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-12T04:30:15Z",
-      "newestRecallDate": "2026-09-11",
+      "lastSuccessfulUpdate": "2026-09-12T10:41:42Z",
+      "newestRecallDate": "2026-09-10",
       "qualityStatus": "current",
       "recordCount": 2132,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-12T04:30:15Z",
+          "checkedAt": "2026-09-12T10:41:42Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-12T04:30:15Z",
+          "checkedAt": "2026-09-12T10:41:42Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2793,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-12T04:30:15Z",
-          "newestRecallDate": "2026-09-11",
+          "checkedAt": "2026-09-12T10:41:42Z",
+          "newestRecallDate": "2026-09-10",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-12T04:30:15Z",
+      "checkedAt": "2026-09-12T10:41:42Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-12T04:30:15Z",
+      "lastSuccessfulUpdate": "2026-09-12T10:41:42Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
