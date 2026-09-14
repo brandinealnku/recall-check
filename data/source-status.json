@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-14T12:39:55Z",
+  "checkedAt": "2026-09-14T21:47:04Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -55,19 +55,6 @@
     },
     {
       "brandNames": [
-        "Business Pill, Branch Manager for Men"
-      ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-e5f88d740fd1b163",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
-      "product": "dietary supplements marketed for male sexual enhancement",
-      "reason": "Products contain undeclared yohimbine",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Foods Alive"
       ],
       "date": "2026-09-04",
@@ -75,6 +62,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
       "product": "Moringa Leaf Powder",
       "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -141,6 +141,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-08-14",
+      "id": "FDA-H-1309-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "THE HAMPTON GROCER brand; Lacnola; SMALL BATCH LACTATION GRANOLA, 8oz, stand up pouches; NUTRIENT DENSE INGREDIENTS + MORINGA; SUPPORTS + PROMOTES HEALTHY LACTATION; INGREDIENTS Organic Gluten Free Oats Organic Maple Syrup Organic Pumpkin Seeds Organic Coconut Oil Almond Butter Almonds Organic Coconut Sugar Chocolate Chips (Cane Sugar, Unsweetened Chocolate, Cocoa Butter) Organic Ground Flaxseed Moringa Leaf Powder Pure Vanilla Extract (Water, Alcohol, Vanilla Bean Extractives) Cream of Tartar Baking Soda Salt; CONTAINS: TREE NUTS (ALMOND, COCONUTS); DISTRIBUTED BY: The Hampton Grocer Inc. Montauk, NY; MADE IN A FACILITY THAT PROCESSES TREE NUTS, PEANUTS, SESAME, AND SOY; UPC 8 50035 32455 4",
+      "reason": "Product may be contaminated with Salmonella.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Grand Central Bakery"
       ],
@@ -193,6 +204,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-08-13",
+      "id": "FDA-H-1305-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Prince ITALIAN BREAD; Sesame; ITALIAN & FRENCH BREAD, LARGE; NET WEIGHT 12 OZ. (340g); INGREDIENTS: ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALT BARLEY FLOUR< NIACIN, FERROUS SULFATE, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, POTASSIUM BROMATE), WATER, YEAST, SALT, VEGETABLE SHORTENING (PARTIALLY HYDROGENATED SOYBEAN, COTTONSEED AND/OR CANOLA OILS), DOUGH CONDITIONER [WHEY (MILK), CORN FLOUR, MONOCALCIUM PHOSPHATE, L-CYSTEINE HYDROCHLORIDE, POTASSIUM BROMATE] DEXTROSE, MONO-DIGLCYERIDES, DIACETYL, TARTARIC ACID ESTERS OF MONO-DIGLYCERIDES (DATEM), CORN SYRUP SOLIDS, POTASSIUM BROMATE, ENZYME, POLYSORBATE 60, SOY OIL, L CYSTEINE, PROPIONIC ACID, SODIUM PROPIONATE (A PRESERVATIVE), PHOSPHORIC ACID. MAY CONTAIN SESAME SEEDS; UPC 8 93601 00104 6; green and yellow bag. Both Large Italian and French breads are packaged in the same bags.",
+      "reason": "Sesame is not declared in the ingredient statement but is declared in the statement of identity.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Marketside"
       ],
@@ -228,62 +250,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Frankie\u2019s Organic"
-      ],
-      "date": "2026-08-12",
-      "id": "FDA-ANN-324357723155c3f8",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frankies-organic-issues-allergy-alert-undeclared-milk-frankies-organic-plant-based-vegan-cheddar",
-      "product": "Plant Based Snack",
-      "reason": "Undeclared milk",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Whole Foods Market"
-      ],
-      "date": "2026-08-12",
-      "id": "FDA-ANN-260fdbd895415852",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-announces-recall-select-salsas-guacamole-pico-de-gallo-and-prepared-foods",
-      "product": "Finished products such as dips, salsa, guacamole, and more containing jalapeno.",
-      "reason": "Potential Salmonella Contamination",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-14T12:39:55Z",
+  "generatedAt": "2026-09-14T21:47:04Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-14T12:39:55Z",
+      "checkedAt": "2026-09-14T21:47:04Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-14T12:39:55Z",
+      "lastSuccessfulUpdate": "2026-09-14T21:47:04Z",
       "newestRecallDate": "2026-09-11",
       "qualityStatus": "current",
-      "recordCount": 2122,
+      "recordCount": 2134,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-14T12:39:55Z",
+          "checkedAt": "2026-09-14T21:47:04Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-14T12:39:55Z",
+          "checkedAt": "2026-09-14T21:47:04Z",
           "newestRecallDate": "2026-08-18",
-          "recordCount": 2782,
+          "recordCount": 2802,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-14T12:39:55Z",
+          "checkedAt": "2026-09-14T21:47:04Z",
           "newestRecallDate": "2026-09-11",
           "recordCount": 6,
           "success": true
@@ -291,12 +287,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-14T12:39:55Z",
+      "checkedAt": "2026-09-14T21:47:04Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-14T12:39:55Z",
+      "lastSuccessfulUpdate": "2026-09-14T21:47:04Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
