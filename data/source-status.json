@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-13T20:46:16Z",
+  "checkedAt": "2026-09-14T04:51:28Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -55,19 +55,6 @@
     },
     {
       "brandNames": [
-        "Foods Alive"
-      ],
-      "date": "2026-09-04",
-      "id": "FDA-PUBLIC-5dea411e656bc6bc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
-      "product": "Moringa Leaf Powder",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Business Pill, Branch Manager for Men"
       ],
       "date": "2026-09-04",
@@ -75,6 +62,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
       "product": "dietary supplements marketed for male sexual enhancement",
       "reason": "Products contain undeclared yohimbine",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Foods Alive"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-5dea411e656bc6bc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
+      "product": "Moringa Leaf Powder",
+      "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,34 +256,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-13T20:46:16Z",
+  "generatedAt": "2026-09-14T04:51:28Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-13T20:46:16Z",
+      "checkedAt": "2026-09-14T04:51:28Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-13T20:46:16Z",
+      "lastSuccessfulUpdate": "2026-09-14T04:51:28Z",
       "newestRecallDate": "2026-09-11",
       "qualityStatus": "current",
-      "recordCount": 2130,
+      "recordCount": 2122,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-13T20:46:16Z",
+          "checkedAt": "2026-09-14T04:51:28Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-13T20:46:16Z",
+          "checkedAt": "2026-09-14T04:51:28Z",
           "newestRecallDate": "2026-08-18",
-          "recordCount": 2792,
+          "recordCount": 2782,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-13T20:46:16Z",
+          "checkedAt": "2026-09-14T04:51:28Z",
           "newestRecallDate": "2026-09-11",
           "recordCount": 6,
           "success": true
@@ -291,12 +291,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-13T20:46:16Z",
+      "checkedAt": "2026-09-14T04:51:28Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-13T20:46:16Z",
+      "lastSuccessfulUpdate": "2026-09-14T04:51:28Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
