@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-16T11:27:13Z",
+  "checkedAt": "2026-09-16T16:50:32Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -11,7 +11,48 @@
       "product": "biQ-FEL 500mL supplement bottle",
       "reason": "Product contains sildenafil and tadalafil",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "So Delicious Dairy Free"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-PUBLIC-2cd59ec8e1ab12d2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
+      "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
+      "reason": "Product may contain foreign objects such as small stones and other hard objects",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "X10"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-ANN-42afcf685130d215",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared",
+      "product": "X10 Natural Enhancement Supplement",
+      "reason": "Product contains sildenafil and tadalafil",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Centric Compounding"
+      ],
+      "date": "2026-09-13",
+      "id": "FDA-ANN-8ae85a51f4d892bd",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/centric-compounding-issues-nationwide-recall-glutathione-myers-cocktail-and-tri-immune-boost-due",
+      "product": "Compounded Glutathione 200 mg/mL 30 mL multidose vial; Myer\u2019s Cocktail 30 mL multidose vial; Tri-Immune Boost 30 mL multidose vial",
+      "reason": "Elevated Endotoxin level",
+      "sourceSurfaces": [
+        "annualAnnouncements"
       ]
     },
     {
@@ -24,7 +65,8 @@
       "product": "Cheese",
       "reason": "Undeclared Egg",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -37,7 +79,8 @@
       "product": "Broccoli Sprouts",
       "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -50,7 +93,34 @@
       "product": "Cranberry Chicken Salad Wedge Sandwich",
       "reason": "Improperly declared egg allergen",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "FI"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-9895db7507beaede",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination",
+      "product": "Supplements",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "BMC"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-431458e3050c8f5b",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect",
+      "product": "Luna G3 APAP (Model LG3600)",
+      "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
+      "sourceSurfaces": [
+        "annualAnnouncements"
       ]
     },
     {
@@ -63,7 +133,8 @@
       "product": "Ready to Eat Deli Style Salads and cream cheese",
       "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -71,215 +142,160 @@
         "Business Pill, Branch Manager for Men"
       ],
       "date": "2026-09-04",
-      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "id": "FDA-ANN-f5513d560739abcc",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
       "product": "dietary supplements marketed for male sexual enhancement",
       "reason": "Products contain undeclared yohimbine",
       "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-08-18",
-      "id": "FDA-H-1265-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Outshine Fruit Bar Watermelon, 6-Count 2.5 ounce with UPC 041548413624, packaged in paper outer cartons; individual fruit bars in plastic wrapper. Keep at 0F (-18C) or colder.",
-      "reason": "Foreign object: products may contain glass pieces",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "Oma\u2019s Pride"
-      ],
-      "date": "2026-08-17",
-      "id": "FDA-ANN-50e55aba664d56ed",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/updated-omas-pride-voluntarily-recalls-one-lot-woof-complete-canine-chicken-recipe-6-lb-bag-because",
-      "product": "Canine Food",
-      "reason": "Contaminated with Salmonella",
-      "sourceSurfaces": [
         "annualAnnouncements"
       ]
     },
     {
       "brandNames": [
-        "Dairyland Produce LLC"
+        "Foods Alive"
       ],
-      "date": "2026-08-17",
-      "id": "FDA-ANN-d631b97ee730edcd",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hardies-fresh-foods-recalls-jalapenos-because-possible-health-risk",
-      "product": "Pepper Jalapenos",
-      "reason": "Potential Salmonella Contamination",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Prolon"
-      ],
-      "date": "2026-08-17",
-      "id": "FDA-ANN-7e9ad43ab7a69208",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/l-nutra-issues-allergy-alert-undeclared-tree-nuts-prolon-brand-apulian-almond-cocoa-spread",
-      "product": "Apulian Almond & Cocoa Spread",
-      "reason": "Undeclared cashews, pistachios and/or hazelnut",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-08-14",
-      "id": "FDA-H-1245-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Gifford's HomeMaine ice cream brand POWER PLAY FUDGE; ONE QUART (946 mL); UPC: 8 60864 00030 7",
-      "reason": "Potential foreign object contamination: rubber pieces",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-08-14",
-      "id": "FDA-H-1309-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "THE HAMPTON GROCER brand; Lacnola; SMALL BATCH LACTATION GRANOLA, 8oz, stand up pouches; NUTRIENT DENSE INGREDIENTS + MORINGA; SUPPORTS + PROMOTES HEALTHY LACTATION; INGREDIENTS Organic Gluten Free Oats Organic Maple Syrup Organic Pumpkin Seeds Organic Coconut Oil Almond Butter Almonds Organic Coconut Sugar Chocolate Chips (Cane Sugar, Unsweetened Chocolate, Cocoa Butter) Organic Ground Flaxseed Moringa Leaf Powder Pure Vanilla Extract (Water, Alcohol, Vanilla Bean Extractives) Cream of Tartar Baking Soda Salt; CONTAINS: TREE NUTS (ALMOND, COCONUTS); DISTRIBUTED BY: The Hampton Grocer Inc. Montauk, NY; MADE IN A FACILITY THAT PROCESSES TREE NUTS, PEANUTS, SESAME, AND SOY; UPC 8 50035 32455 4",
-      "reason": "Product may be contaminated with Salmonella.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "Grand Central Bakery"
-      ],
-      "date": "2026-08-14",
-      "id": "FDA-ANN-acd7f6d31f101731",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-central-bakery-recalls-potato-sourdough-bread-due-possible-foreign-object",
-      "product": "Potato Sourdough",
-      "reason": "may contain pieces of metal",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "The Hampton Grocer"
-      ],
-      "date": "2026-08-14",
-      "id": "FDA-ANN-2f89792f5eab7b32",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/hampton-grocers-inc-recalls-its-8-ounce-packages-lacnola-lactation-granola-because-possible-health",
-      "product": "Granola",
-      "reason": "Potential to be Contaminated with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "NatureBest, HEB"
-      ],
-      "date": "2026-08-14",
-      "id": "FDA-ANN-cd1b6dccc4a07ef1",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naturebest-precut-produce-llc-voluntarily-recalls-products-containing-jalapenos-due-potential",
-      "product": "Finished products such as Pico de Gallo, Stuffed Mushrooms, and Soup-mix Containing Jalapeno.",
-      "reason": "Potential for contamination with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Salata"
-      ],
-      "date": "2026-08-14",
-      "id": "FDA-ANN-f08b0234b96f5611",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/recall-jalapeno-avocado-dressing-because-possible-health-risk",
-      "product": "Salad dressing",
+      "date": "2026-09-04",
+      "id": "FDA-ANN-0687eb209f8229fc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/foods-alive-recalls-organic-moringa-leaf-powder-because-possible-health-risk",
+      "product": "Moringa Leaf Powder",
       "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
     },
     {
-      "brandNames": [],
-      "date": "2026-08-13",
-      "id": "FDA-H-1305-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Prince ITALIAN BREAD; Sesame; ITALIAN & FRENCH BREAD, LARGE; NET WEIGHT 12 OZ. (340g); INGREDIENTS: ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALT BARLEY FLOUR< NIACIN, FERROUS SULFATE, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, POTASSIUM BROMATE), WATER, YEAST, SALT, VEGETABLE SHORTENING (PARTIALLY HYDROGENATED SOYBEAN, COTTONSEED AND/OR CANOLA OILS), DOUGH CONDITIONER [WHEY (MILK), CORN FLOUR, MONOCALCIUM PHOSPHATE, L-CYSTEINE HYDROCHLORIDE, POTASSIUM BROMATE] DEXTROSE, MONO-DIGLCYERIDES, DIACETYL, TARTARIC ACID ESTERS OF MONO-DIGLYCERIDES (DATEM), CORN SYRUP SOLIDS, POTASSIUM BROMATE, ENZYME, POLYSORBATE 60, SOY OIL, L CYSTEINE, PROPIONIC ACID, SODIUM PROPIONATE (A PRESERVATIVE), PHOSPHORIC ACID. MAY CONTAIN SESAME SEEDS; UPC 8 93601 00104 6; green and yellow bag. Both Large Italian and French breads are packaged in the same bags.",
-      "reason": "Sesame is not declared in the ingredient statement but is declared in the statement of identity.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
       "brandNames": [
-        "Marketside"
+        "B. Braun"
       ],
-      "date": "2026-08-13",
-      "id": "FDA-ANN-adb18f67b48d179f",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/kettle-cuisine-recalls-marketside-tomato-bisque-soup-kit-sold-exclusively-walmart-stores-because",
-      "product": "Tomato Bisque Soup Kit 14oz (397g)",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "date": "2026-09-03",
+      "id": "FDA-ANN-413d42dc0b0e4ebd",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/b-braun-medical-inc-issues-voluntary-nationwide-recall-09-sodium-chloride-injection-usp-100-ml-150",
+      "product": "0.9% Sodium Chloride Injection USP, 100 mL, in a 150 mL PAB\u00ae Container",
+      "reason": "Presence of particulate matter identified as iron oxide",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
     },
     {
-      "brandNames": [],
-      "date": "2026-08-12",
-      "id": "FDA-H-1244-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Product is Potato Sourdough Bread and sold under three following names: Potato Market Loaf 20oz. UPC 733163001576, product is sold at grocery stores with paper packaging. Label declares Potato Grand Central Rustic Breads ***A hearty sourdough loaf made with house-roasted potatoes. ***\" Potato Table Loaf 20oz. No UPC. Product is sold direct to consumer at Grand Central Cafe stores and wholesalers without paper packaging. Mini Potato Loaf 12oz. No UPC. Product is sold at grocery stores and wholesalers without paper packaging.",
-      "reason": "Foreign object: May contain metal pieces",
+      "brandNames": [
+        "American Regent, Inc."
+      ],
+      "date": "2026-09-03",
+      "id": "FDA-ANN-be0db24ddef68063",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/american-regent-inc-issues-voluntary-nationwide-recall-three-lots-epinephrine-injection-usp-30-mg-30",
+      "product": "Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vial",
+      "reason": "Presence of particulate matter and lack of sterility assurance",
       "sourceSurfaces": [
-        "enforcement"
+        "annualAnnouncements"
       ]
     },
     {
       "brandNames": [
-        "Vitasia Chinese Style"
+        "Great Value"
       ],
-      "date": "2026-08-12",
-      "id": "FDA-ANN-bee74df637a62ebf",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-vitasia-asian-style-wok-spice-mix-due-potential-salmonella-contamination",
-      "product": "Spice Mix 1.58 oz",
-      "reason": "Potential to be contaminated with Salmonella",
+      "date": "2026-09-03",
+      "id": "FDA-ANN-c2209a8780bbfebd",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple",
+      "product": "Organic Triple Berry Blend",
+      "reason": "Possible E. Coli Contamination",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Kofinas"
+      ],
+      "date": "2026-08-31",
+      "id": "FDA-ANN-994a814eecb7a81c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lmsi-llckofinas-olive-oil-issues-voluntary-recall-its-garlic-mediterranean-infused-extra-virgin",
+      "product": "Garlic Mediterranean Infused Extra Virgin Olive Oil 500 ml, 250 ml, and 100 ml",
+      "reason": "Contains garlic essential oil not approved for culinary use",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Little Temptations"
+      ],
+      "date": "2026-08-31",
+      "id": "FDA-ANN-3ca353bc18499a43",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/crystal-temptations-issues-allergy-alert-undeclared-milk-chocolatey-eyeballs",
+      "product": "Chocolatey Eyeballs, 7 oz., 10 oz., 10.5 oz., 11 oz., and 16 oz.",
+      "reason": "Undeclared milk",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Lipofit"
+      ],
+      "date": "2026-08-31",
+      "id": "FDA-ANN-28c5c23965be5a38",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ana-salazar-modela-tu-cuerpo-inc-issues-nationwide-voluntary-recall-lipofit-extreme-fat-burner-20",
+      "product": "Lipofit Extreme 2.0 Fat Burner Dietary Supplement",
+      "reason": "Undeclared Fluoxetine and 2,4-Dinitrophenol (DNP)",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Everything Sprouts"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-ANN-cc8c8798b1b0379e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
+      "product": "Robust Radish Mix, 5oz Cups",
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Martina"
+      ],
+      "date": "2026-08-29",
+      "id": "FDA-ANN-6d24f9494a6fa024",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
+      "product": "Mangoes",
+      "reason": "Potential contamination with Salmonella",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
     }
   ],
-  "generatedAt": "2026-09-16T11:27:13Z",
+  "generatedAt": "2026-09-16T16:50:32Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-16T11:27:13Z",
+      "checkedAt": "2026-09-16T16:50:32Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-16T11:27:13Z",
+      "lastSuccessfulUpdate": "2026-09-16T16:50:32Z",
       "newestRecallDate": "2026-09-15",
       "qualityStatus": "current",
-      "recordCount": 2133,
+      "recordCount": 2158,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-16T11:27:13Z",
-          "newestRecallDate": "2026-08-17",
-          "recordCount": 185,
+          "checkedAt": "2026-09-16T16:50:32Z",
+          "newestRecallDate": "2026-09-15",
+          "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-16T11:27:13Z",
+          "checkedAt": "2026-09-16T16:50:32Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2801,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-16T11:27:13Z",
+          "checkedAt": "2026-09-16T16:50:32Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 6,
           "success": true
@@ -287,12 +303,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-16T11:27:13Z",
+      "checkedAt": "2026-09-16T16:50:32Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-16T11:27:13Z",
+      "lastSuccessfulUpdate": "2026-09-16T16:50:32Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
