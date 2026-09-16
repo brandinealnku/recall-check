@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-16T04:45:34Z",
+  "checkedAt": "2026-09-16T11:27:13Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -10,19 +10,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
       "product": "biQ-FEL 500mL supplement bottle",
       "reason": "Product contains sildenafil and tadalafil",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "So Delicious Dairy Free"
-      ],
-      "date": "2026-09-15",
-      "id": "FDA-PUBLIC-2cd59ec8e1ab12d2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
-      "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
-      "reason": "Product may contain foreign objects such as small stones and other hard objects",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -75,6 +62,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
       "product": "Ready to Eat Deli Style Salads and cream cheese",
       "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Business Pill, Branch Manager for Men"
+      ],
+      "date": "2026-09-04",
+      "id": "FDA-PUBLIC-e5f88d740fd1b163",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
+      "product": "dietary supplements marketed for male sexual enhancement",
+      "reason": "Products contain undeclared yohimbine",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -252,34 +252,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-16T04:45:34Z",
+  "generatedAt": "2026-09-16T11:27:13Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-16T04:45:34Z",
+      "checkedAt": "2026-09-16T11:27:13Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-16T04:45:34Z",
+      "lastSuccessfulUpdate": "2026-09-16T11:27:13Z",
       "newestRecallDate": "2026-09-15",
       "qualityStatus": "current",
       "recordCount": 2133,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-16T04:45:34Z",
+          "checkedAt": "2026-09-16T11:27:13Z",
           "newestRecallDate": "2026-08-17",
           "recordCount": 185,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-16T04:45:34Z",
+          "checkedAt": "2026-09-16T11:27:13Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2801,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-16T04:45:34Z",
+          "checkedAt": "2026-09-16T11:27:13Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 6,
           "success": true
@@ -287,12 +287,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-16T04:45:34Z",
+      "checkedAt": "2026-09-16T11:27:13Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-16T04:45:34Z",
+      "lastSuccessfulUpdate": "2026-09-16T11:27:13Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
