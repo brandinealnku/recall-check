@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-18T11:09:26Z",
+  "checkedAt": "2026-09-18T16:21:24Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "J. HIGGS"
+      ],
+      "date": "2026-09-18",
+      "id": "FDA-PUBLIC-b70debaf116c8a73",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
+      "product": "Loaded Bacon & Cheddar Potato Chips",
+      "reason": "Undeclared soy allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "biQ-FEL"
@@ -128,12 +141,11 @@
         "Made Fresh Salads, Northside"
       ],
       "date": "2026-09-06",
-      "id": "FDA-PUBLIC-0ad4eca67643eeff",
+      "id": "FDA-ANN-9fd1a57afef0194a",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
       "product": "Ready to Eat Deli Style Salads and cream cheese",
       "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
@@ -253,62 +265,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Martina"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-ANN-6d24f9494a6fa024",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination",
-      "product": "Mangoes",
-      "reason": "Potential contamination with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-18T11:09:26Z",
+  "generatedAt": "2026-09-18T16:21:24Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-18T11:09:26Z",
+      "checkedAt": "2026-09-18T16:21:24Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-18T11:09:26Z",
-      "newestRecallDate": "2026-09-15",
+      "lastSuccessfulUpdate": "2026-09-18T16:21:24Z",
+      "newestRecallDate": "2026-09-18",
       "qualityStatus": "current",
-      "recordCount": 2156,
+      "recordCount": 2157,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-18T11:09:26Z",
+          "checkedAt": "2026-09-18T16:21:24Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-18T11:09:26Z",
+          "checkedAt": "2026-09-18T16:21:24Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2796,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-18T11:09:26Z",
-          "newestRecallDate": "2026-09-15",
+          "checkedAt": "2026-09-18T16:21:24Z",
+          "newestRecallDate": "2026-09-18",
           "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-18T11:09:26Z",
+      "checkedAt": "2026-09-18T16:21:24Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-18T11:09:26Z",
+      "lastSuccessfulUpdate": "2026-09-18T16:21:24Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
