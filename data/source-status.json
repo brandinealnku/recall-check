@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-19T10:54:00Z",
+  "checkedAt": "2026-09-19T15:50:41Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -29,20 +29,6 @@
     },
     {
       "brandNames": [
-        "So Delicious Dairy Free"
-      ],
-      "date": "2026-09-15",
-      "id": "FDA-PUBLIC-2cd59ec8e1ab12d2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
-      "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
-      "reason": "Product may contain foreign objects such as small stones and other hard objects",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "biQ-FEL"
       ],
       "date": "2026-09-15",
@@ -50,6 +36,20 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
       "product": "biQ-FEL 500mL supplement bottle",
       "reason": "Product contains sildenafil and tadalafil",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "So Delicious Dairy Free"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-PUBLIC-2cd59ec8e1ab12d2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
+      "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
+      "reason": "Product may contain foreign objects such as small stones and other hard objects",
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
@@ -124,6 +124,20 @@
     },
     {
       "brandNames": [
+        "Created Fresh!"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-PUBLIC-e66a67462d388f7c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
+      "product": "Cranberry Chicken Salad Wedge Sandwich",
+      "reason": "Improperly declared egg allergen",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
         "FI"
       ],
       "date": "2026-09-08",
@@ -144,19 +158,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect",
       "product": "Luna G3 APAP (Model LG3600)",
       "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Created Fresh!"
-      ],
-      "date": "2026-09-08",
-      "id": "FDA-ANN-cc6138b08ae2f71e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
-      "product": "Cranberry Chicken Salad Wedge Sandwich",
-      "reason": "Improperly declared egg allergen",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -266,47 +267,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-19T10:54:00Z",
+  "generatedAt": "2026-09-19T15:50:41Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-19T10:54:00Z",
+      "checkedAt": "2026-09-19T15:50:41Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-19T10:54:00Z",
+      "lastSuccessfulUpdate": "2026-09-19T15:50:41Z",
       "newestRecallDate": "2026-09-18",
       "qualityStatus": "current",
       "recordCount": 2159,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-19T10:54:00Z",
+          "checkedAt": "2026-09-19T15:50:41Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-19T10:54:00Z",
+          "checkedAt": "2026-09-19T15:50:41Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2796,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-19T10:54:00Z",
+          "checkedAt": "2026-09-19T15:50:41Z",
           "newestRecallDate": "2026-09-18",
-          "recordCount": 7,
+          "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-19T10:54:00Z",
+      "checkedAt": "2026-09-19T15:50:41Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-19T10:54:00Z",
+      "lastSuccessfulUpdate": "2026-09-19T15:50:41Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
