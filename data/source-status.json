@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-18T20:52:02Z",
+  "checkedAt": "2026-09-19T04:33:40Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -12,6 +12,33 @@
       "reason": "Undeclared soy allergen",
       "sourceSurfaces": [
         "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Truly AIP, EAT G.A.N.G.S.T.E.R"
+      ],
+      "date": "2026-09-18",
+      "id": "FDA-PUBLIC-09a24245adf244d6",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix",
+      "product": "All purpose flour, bread mix, flat bread pizza mix",
+      "reason": "Undeclared wheat allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "So Delicious Dairy Free"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-PUBLIC-2cd59ec8e1ab12d2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
+      "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
+      "reason": "Product may contain foreign objects such as small stones and other hard objects",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -30,16 +57,15 @@
     },
     {
       "brandNames": [
-        "So Delicious Dairy Free"
+        "Bettergoods"
       ],
       "date": "2026-09-15",
-      "id": "FDA-PUBLIC-2cd59ec8e1ab12d2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
-      "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
-      "reason": "Product may contain foreign objects such as small stones and other hard objects",
+      "id": "FDA-PUBLIC-07ecedb654c33797",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible",
+      "product": "Italian Lemon Alfredo Fettuccine",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
+        "publicAlerts"
       ]
     },
     {
@@ -98,20 +124,6 @@
     },
     {
       "brandNames": [
-        "Created Fresh!"
-      ],
-      "date": "2026-09-08",
-      "id": "FDA-PUBLIC-e66a67462d388f7c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
-      "product": "Cranberry Chicken Salad Wedge Sandwich",
-      "reason": "Improperly declared egg allergen",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "FI"
       ],
       "date": "2026-09-08",
@@ -132,6 +144,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect",
       "product": "Luna G3 APAP (Model LG3600)",
       "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Created Fresh!"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-cc6138b08ae2f71e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
+      "product": "Cranberry Chicken Salad Wedge Sandwich",
+      "reason": "Improperly declared egg allergen",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -239,75 +264,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Lipofit"
-      ],
-      "date": "2026-08-31",
-      "id": "FDA-ANN-28c5c23965be5a38",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ana-salazar-modela-tu-cuerpo-inc-issues-nationwide-voluntary-recall-lipofit-extreme-fat-burner-20",
-      "product": "Lipofit Extreme 2.0 Fat Burner Dietary Supplement",
-      "reason": "Undeclared Fluoxetine and 2,4-Dinitrophenol (DNP)",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Everything Sprouts"
-      ],
-      "date": "2026-08-29",
-      "id": "FDA-ANN-cc8c8798b1b0379e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
-      "product": "Robust Radish Mix, 5oz Cups",
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-18T20:52:02Z",
+  "generatedAt": "2026-09-19T04:33:40Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-18T20:52:02Z",
+      "checkedAt": "2026-09-19T04:33:40Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-18T20:52:02Z",
+      "lastSuccessfulUpdate": "2026-09-19T04:33:40Z",
       "newestRecallDate": "2026-09-18",
       "qualityStatus": "current",
-      "recordCount": 2157,
+      "recordCount": 2159,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-18T20:52:02Z",
+          "checkedAt": "2026-09-19T04:33:40Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-18T20:52:02Z",
+          "checkedAt": "2026-09-19T04:33:40Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2796,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-18T20:52:02Z",
+          "checkedAt": "2026-09-19T04:33:40Z",
           "newestRecallDate": "2026-09-18",
-          "recordCount": 6,
+          "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-18T20:52:02Z",
+      "checkedAt": "2026-09-19T04:33:40Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-18T20:52:02Z",
+      "lastSuccessfulUpdate": "2026-09-19T04:33:40Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
