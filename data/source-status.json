@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-19T20:36:03Z",
+  "checkedAt": "2026-09-20T04:50:14Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -124,20 +124,6 @@
     },
     {
       "brandNames": [
-        "Created Fresh!"
-      ],
-      "date": "2026-09-08",
-      "id": "FDA-PUBLIC-e66a67462d388f7c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
-      "product": "Cranberry Chicken Salad Wedge Sandwich",
-      "reason": "Improperly declared egg allergen",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "FI"
       ],
       "date": "2026-09-08",
@@ -158,6 +144,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect",
       "product": "Luna G3 APAP (Model LG3600)",
       "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Created Fresh!"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-cc6138b08ae2f71e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
+      "product": "Cranberry Chicken Salad Wedge Sandwich",
+      "reason": "Improperly declared egg allergen",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -267,47 +266,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-19T20:36:03Z",
+  "generatedAt": "2026-09-20T04:50:14Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-19T20:36:03Z",
+      "checkedAt": "2026-09-20T04:50:14Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-19T20:36:03Z",
+      "lastSuccessfulUpdate": "2026-09-20T04:50:14Z",
       "newestRecallDate": "2026-09-18",
       "qualityStatus": "current",
-      "recordCount": 2159,
+      "recordCount": 2158,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-19T20:36:03Z",
+          "checkedAt": "2026-09-20T04:50:14Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-19T20:36:03Z",
+          "checkedAt": "2026-09-20T04:50:14Z",
           "newestRecallDate": "2026-08-18",
-          "recordCount": 2796,
+          "recordCount": 2795,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-19T20:36:03Z",
+          "checkedAt": "2026-09-20T04:50:14Z",
           "newestRecallDate": "2026-09-18",
-          "recordCount": 8,
+          "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-19T20:36:03Z",
+      "checkedAt": "2026-09-20T04:50:14Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-19T20:36:03Z",
+      "lastSuccessfulUpdate": "2026-09-20T04:50:14Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
