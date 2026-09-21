@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-21T12:42:55Z",
+  "checkedAt": "2026-09-21T21:56:45Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -29,20 +29,6 @@
     },
     {
       "brandNames": [
-        "biQ-FEL"
-      ],
-      "date": "2026-09-15",
-      "id": "FDA-PUBLIC-1e62e34e21f09acb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
-      "product": "biQ-FEL 500mL supplement bottle",
-      "reason": "Product contains sildenafil and tadalafil",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "So Delicious Dairy Free"
       ],
       "date": "2026-09-15",
@@ -50,6 +36,20 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
       "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
       "reason": "Product may contain foreign objects such as small stones and other hard objects",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "biQ-FEL"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-PUBLIC-1e62e34e21f09acb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
+      "product": "biQ-FEL 500mL supplement bottle",
+      "reason": "Product contains sildenafil and tadalafil",
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
@@ -99,12 +99,11 @@
         "Whole Foods Market"
       ],
       "date": "2026-09-11",
-      "id": "FDA-PUBLIC-14e18e05dcf6ddfe",
+      "id": "FDA-ANN-cea1b405db7be04c",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/whole-foods-market-issues-allergy-alert-undeclared-egg-cabricharme-cheese",
       "product": "Cheese",
       "reason": "Undeclared Egg",
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
@@ -113,12 +112,11 @@
         "No Brand Name"
       ],
       "date": "2026-09-10",
-      "id": "FDA-PUBLIC-0fe69de961087310",
+      "id": "FDA-ANN-69ab2fdc073a9d8f",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/evergreen-fresh-sprouts-llc-recalls-broccoli-sprouts-because-possible-health-risk",
       "product": "Broccoli Sprouts",
       "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
@@ -266,47 +264,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-21T12:42:55Z",
+  "generatedAt": "2026-09-21T21:56:45Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-21T12:42:55Z",
+      "checkedAt": "2026-09-21T21:56:45Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-21T12:42:55Z",
+      "lastSuccessfulUpdate": "2026-09-21T21:56:45Z",
       "newestRecallDate": "2026-09-18",
       "qualityStatus": "current",
       "recordCount": 2158,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-21T12:42:55Z",
+          "checkedAt": "2026-09-21T21:56:45Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-21T12:42:55Z",
+          "checkedAt": "2026-09-21T21:56:45Z",
           "newestRecallDate": "2026-08-18",
           "recordCount": 2795,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-21T12:42:55Z",
+          "checkedAt": "2026-09-21T21:56:45Z",
           "newestRecallDate": "2026-09-18",
-          "recordCount": 7,
+          "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-21T12:42:55Z",
+      "checkedAt": "2026-09-21T21:56:45Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-21T12:42:55Z",
+      "lastSuccessfulUpdate": "2026-09-21T21:56:45Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
