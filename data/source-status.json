@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-22T16:54:23Z",
+  "checkedAt": "2026-09-22T21:15:42Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Wholesome Pantry"
+      ],
+      "date": "2026-09-22",
+      "id": "FDA-PUBLIC-df71fe168dcbb5ab",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wakefern-food-corp-voluntarily-recalls-wholesome-pantry-organic-unsweetened-apple-sauce",
+      "product": "Organic Unsweetened Apple Sauce",
+      "reason": "Elevated levels of patulin",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "J. HIGGS"
@@ -249,62 +262,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Little Temptations"
-      ],
-      "date": "2026-08-31",
-      "id": "FDA-ANN-3ca353bc18499a43",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/crystal-temptations-issues-allergy-alert-undeclared-milk-chocolatey-eyeballs",
-      "product": "Chocolatey Eyeballs, 7 oz., 10 oz., 10.5 oz., 11 oz., and 16 oz.",
-      "reason": "Undeclared milk",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-22T16:54:23Z",
+  "generatedAt": "2026-09-22T21:15:42Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-22T16:54:23Z",
+      "checkedAt": "2026-09-22T21:15:42Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-22T16:54:23Z",
-      "newestRecallDate": "2026-09-18",
+      "lastSuccessfulUpdate": "2026-09-22T21:15:42Z",
+      "newestRecallDate": "2026-09-22",
       "qualityStatus": "current",
-      "recordCount": 2167,
+      "recordCount": 2168,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-22T16:54:23Z",
+          "checkedAt": "2026-09-22T21:15:42Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-22T16:54:23Z",
+          "checkedAt": "2026-09-22T21:15:42Z",
           "newestRecallDate": "2026-08-23",
           "recordCount": 2804,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-22T16:54:23Z",
-          "newestRecallDate": "2026-09-18",
-          "recordCount": 5,
+          "checkedAt": "2026-09-22T21:15:42Z",
+          "newestRecallDate": "2026-09-22",
+          "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-22T16:54:23Z",
+      "checkedAt": "2026-09-22T21:15:42Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-22T16:54:23Z",
+      "lastSuccessfulUpdate": "2026-09-22T21:15:42Z",
       "newestRecallDate": "2026-09-09",
       "qualityStatus": "current",
       "recordCount": 2025,
