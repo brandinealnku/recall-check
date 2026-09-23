@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-23T16:53:40Z",
+  "checkedAt": "2026-09-23T21:27:52Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Berlin Seeds"
+      ],
+      "date": "2026-09-23",
+      "id": "FDA-PUBLIC-220cdaa63d98baa5",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/berlin-seeds-recalls-alfalfa-sprouting-seed-because-possible-health-risk",
+      "product": "Alfalfa sprouting seeds",
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) and/or Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Wholesome Pantry"
@@ -66,19 +79,6 @@
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Bettergoods"
-      ],
-      "date": "2026-09-15",
-      "id": "FDA-PUBLIC-07ecedb654c33797",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible",
-      "product": "Italian Lemon Alfredo Fettuccine",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "publicAlerts"
       ]
     },
     {
@@ -264,47 +264,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-23T16:53:40Z",
+  "generatedAt": "2026-09-23T21:27:52Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-23T16:53:40Z",
+      "checkedAt": "2026-09-23T21:27:52Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-23T16:53:40Z",
-      "newestRecallDate": "2026-09-22",
+      "lastSuccessfulUpdate": "2026-09-23T21:27:52Z",
+      "newestRecallDate": "2026-09-23",
       "qualityStatus": "current",
       "recordCount": 2168,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-23T16:53:40Z",
+          "checkedAt": "2026-09-23T21:27:52Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-23T16:53:40Z",
+          "checkedAt": "2026-09-23T21:27:52Z",
           "newestRecallDate": "2026-08-23",
           "recordCount": 2804,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-23T16:53:40Z",
-          "newestRecallDate": "2026-09-22",
+          "checkedAt": "2026-09-23T21:27:52Z",
+          "newestRecallDate": "2026-09-23",
           "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-23T16:53:40Z",
+      "checkedAt": "2026-09-23T21:27:52Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-23T16:53:40Z",
+      "lastSuccessfulUpdate": "2026-09-23T21:27:52Z",
       "newestRecallDate": "2026-09-22",
       "qualityStatus": "current",
       "recordCount": 2026,
