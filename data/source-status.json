@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-23T21:27:52Z",
+  "checkedAt": "2026-09-24T04:44:24Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -55,20 +55,6 @@
     },
     {
       "brandNames": [
-        "biQ-FEL"
-      ],
-      "date": "2026-09-15",
-      "id": "FDA-PUBLIC-1e62e34e21f09acb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
-      "product": "biQ-FEL 500mL supplement bottle",
-      "reason": "Product contains sildenafil and tadalafil",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "So Delicious Dairy Free"
       ],
       "date": "2026-09-15",
@@ -76,6 +62,20 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
       "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
       "reason": "Product may contain foreign objects such as small stones and other hard objects",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "biQ-FEL"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-PUBLIC-1e62e34e21f09acb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
+      "product": "biQ-FEL 500mL supplement bottle",
+      "reason": "Product contains sildenafil and tadalafil",
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
@@ -264,34 +264,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-23T21:27:52Z",
+  "generatedAt": "2026-09-24T04:44:24Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-23T21:27:52Z",
+      "checkedAt": "2026-09-24T04:44:24Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-23T21:27:52Z",
+      "lastSuccessfulUpdate": "2026-09-24T04:44:24Z",
       "newestRecallDate": "2026-09-23",
       "qualityStatus": "current",
-      "recordCount": 2168,
+      "recordCount": 2167,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-23T21:27:52Z",
+          "checkedAt": "2026-09-24T04:44:24Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-23T21:27:52Z",
+          "checkedAt": "2026-09-24T04:44:24Z",
           "newestRecallDate": "2026-08-23",
-          "recordCount": 2804,
+          "recordCount": 2803,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-23T21:27:52Z",
+          "checkedAt": "2026-09-24T04:44:24Z",
           "newestRecallDate": "2026-09-23",
           "recordCount": 6,
           "success": true
@@ -299,12 +299,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-23T21:27:52Z",
+      "checkedAt": "2026-09-24T04:44:24Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-23T21:27:52Z",
+      "lastSuccessfulUpdate": "2026-09-24T04:44:24Z",
       "newestRecallDate": "2026-09-22",
       "qualityStatus": "current",
       "recordCount": 2026,
