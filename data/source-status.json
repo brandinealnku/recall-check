@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-24T17:06:54Z",
+  "checkedAt": "2026-09-24T21:28:32Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Lior"
+      ],
+      "date": "2026-09-24",
+      "id": "FDA-PUBLIC-26f1fc200eacf7cc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
+      "product": "Ground cinnamon",
+      "reason": "Potential to be contaminated with elevated levels of lead",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Berlin Seeds"
@@ -55,20 +68,6 @@
     },
     {
       "brandNames": [
-        "biQ-FEL"
-      ],
-      "date": "2026-09-15",
-      "id": "FDA-PUBLIC-1e62e34e21f09acb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
-      "product": "biQ-FEL 500mL supplement bottle",
-      "reason": "Product contains sildenafil and tadalafil",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "So Delicious Dairy Free"
       ],
       "date": "2026-09-15",
@@ -76,6 +75,20 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert",
       "product": "Salted Caramel Cluster Non-Dairy Frozen Dessert pints",
       "reason": "Product may contain foreign objects such as small stones and other hard objects",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "biQ-FEL"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-PUBLIC-1e62e34e21f09acb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
+      "product": "biQ-FEL 500mL supplement bottle",
+      "reason": "Product contains sildenafil and tadalafil",
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
@@ -249,62 +262,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Kofinas"
-      ],
-      "date": "2026-08-31",
-      "id": "FDA-ANN-994a814eecb7a81c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lmsi-llckofinas-olive-oil-issues-voluntary-recall-its-garlic-mediterranean-infused-extra-virgin",
-      "product": "Garlic Mediterranean Infused Extra Virgin Olive Oil 500 ml, 250 ml, and 100 ml",
-      "reason": "Contains garlic essential oil not approved for culinary use",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-24T17:06:54Z",
+  "generatedAt": "2026-09-24T21:28:32Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-24T17:06:54Z",
+      "checkedAt": "2026-09-24T21:28:32Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-24T17:06:54Z",
-      "newestRecallDate": "2026-09-23",
+      "lastSuccessfulUpdate": "2026-09-24T21:28:32Z",
+      "newestRecallDate": "2026-09-24",
       "qualityStatus": "current",
-      "recordCount": 2167,
+      "recordCount": 2168,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-24T17:06:54Z",
+          "checkedAt": "2026-09-24T21:28:32Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-24T17:06:54Z",
+          "checkedAt": "2026-09-24T21:28:32Z",
           "newestRecallDate": "2026-08-23",
           "recordCount": 2803,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-24T17:06:54Z",
-          "newestRecallDate": "2026-09-23",
-          "recordCount": 6,
+          "checkedAt": "2026-09-24T21:28:32Z",
+          "newestRecallDate": "2026-09-24",
+          "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-24T17:06:54Z",
+      "checkedAt": "2026-09-24T21:28:32Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-24T17:06:54Z",
+      "lastSuccessfulUpdate": "2026-09-24T21:28:32Z",
       "newestRecallDate": "2026-09-22",
       "qualityStatus": "current",
       "recordCount": 2026,
