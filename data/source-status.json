@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-25T11:46:35Z",
+  "checkedAt": "2026-09-25T17:07:17Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -55,19 +55,6 @@
     },
     {
       "brandNames": [
-        "J. HIGGS"
-      ],
-      "date": "2026-09-18",
-      "id": "FDA-PUBLIC-b70debaf116c8a73",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
-      "product": "Loaded Bacon & Cheddar Potato Chips",
-      "reason": "Undeclared soy allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Truly AIP, EAT G.A.N.G.S.T.E.R"
       ],
       "date": "2026-09-18",
@@ -81,16 +68,28 @@
     },
     {
       "brandNames": [
-        "biQ-FEL"
+        "J. HIGGS"
+      ],
+      "date": "2026-09-18",
+      "id": "FDA-PUBLIC-b70debaf116c8a73",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
+      "product": "Loaded Bacon & Cheddar Potato Chips",
+      "reason": "Undeclared soy allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Bettergoods"
       ],
       "date": "2026-09-15",
-      "id": "FDA-PUBLIC-1e62e34e21f09acb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
-      "product": "biQ-FEL 500mL supplement bottle",
-      "reason": "Product contains sildenafil and tadalafil",
+      "id": "FDA-PUBLIC-07ecedb654c33797",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible",
+      "product": "Italian Lemon Alfredo Fettuccine",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
+        "publicAlerts"
       ]
     },
     {
@@ -101,6 +100,19 @@
       "id": "FDA-ANN-42afcf685130d215",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared",
       "product": "X10 Natural Enhancement Supplement",
+      "reason": "Product contains sildenafil and tadalafil",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "biQ-FEL"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-ANN-6c66bf284d6275a7",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
+      "product": "biQ-FEL 500mL supplement bottle",
       "reason": "Product contains sildenafil and tadalafil",
       "sourceSurfaces": [
         "annualAnnouncements"
@@ -248,49 +260,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "American Regent, Inc."
-      ],
-      "date": "2026-09-03",
-      "id": "FDA-ANN-be0db24ddef68063",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/american-regent-inc-issues-voluntary-nationwide-recall-three-lots-epinephrine-injection-usp-30-mg-30",
-      "product": "Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vial",
-      "reason": "Presence of particulate matter and lack of sterility assurance",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-25T11:46:35Z",
+  "generatedAt": "2026-09-25T17:07:17Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-25T11:46:35Z",
+      "checkedAt": "2026-09-25T17:07:17Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-25T11:46:35Z",
+      "lastSuccessfulUpdate": "2026-09-25T17:07:17Z",
       "newestRecallDate": "2026-09-24",
       "qualityStatus": "current",
-      "recordCount": 2168,
+      "recordCount": 2169,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-25T11:46:35Z",
+          "checkedAt": "2026-09-25T17:07:17Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-25T11:46:35Z",
+          "checkedAt": "2026-09-25T17:07:17Z",
           "newestRecallDate": "2026-08-23",
           "recordCount": 2802,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-25T11:46:35Z",
+          "checkedAt": "2026-09-25T17:07:17Z",
           "newestRecallDate": "2026-09-24",
           "recordCount": 7,
           "success": true
@@ -298,12 +297,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-25T11:46:35Z",
+      "checkedAt": "2026-09-25T17:07:17Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-25T11:46:35Z",
+      "lastSuccessfulUpdate": "2026-09-25T17:07:17Z",
       "newestRecallDate": "2026-09-22",
       "qualityStatus": "current",
       "recordCount": 2026,
