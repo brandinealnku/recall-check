@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-25T21:31:56Z",
+  "checkedAt": "2026-09-26T04:52:58Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Mezzetta"
+      ],
+      "date": "2026-09-25",
+      "id": "FDA-PUBLIC-7f7d36c57f3c1d42",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
+      "product": "Greek peppers/ Golden Greek Peperoncini, Medium Heat",
+      "reason": "Product may contain foreign objects such as Pest contaminant in jar",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Lior"
@@ -81,26 +94,25 @@
     },
     {
       "brandNames": [
-        "biQ-FEL"
-      ],
-      "date": "2026-09-15",
-      "id": "FDA-PUBLIC-1e62e34e21f09acb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
-      "product": "biQ-FEL 500mL supplement bottle",
-      "reason": "Product contains sildenafil and tadalafil",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "X10"
       ],
       "date": "2026-09-15",
       "id": "FDA-ANN-42afcf685130d215",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared",
       "product": "X10 Natural Enhancement Supplement",
+      "reason": "Product contains sildenafil and tadalafil",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "biQ-FEL"
+      ],
+      "date": "2026-09-15",
+      "id": "FDA-ANN-6c66bf284d6275a7",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-biq-fel-due-undeclared-sildenafil-and-tadalafil",
+      "product": "biQ-FEL 500mL supplement bottle",
       "reason": "Product contains sildenafil and tadalafil",
       "sourceSurfaces": [
         "annualAnnouncements"
@@ -248,65 +260,52 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "American Regent, Inc."
-      ],
-      "date": "2026-09-03",
-      "id": "FDA-ANN-be0db24ddef68063",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/american-regent-inc-issues-voluntary-nationwide-recall-three-lots-epinephrine-injection-usp-30-mg-30",
-      "product": "Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vial",
-      "reason": "Presence of particulate matter and lack of sterility assurance",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-09-25T21:31:56Z",
+  "generatedAt": "2026-09-26T04:52:58Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-25T21:31:56Z",
+      "checkedAt": "2026-09-26T04:52:58Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-25T21:31:56Z",
-      "newestRecallDate": "2026-09-24",
+      "lastSuccessfulUpdate": "2026-09-26T04:52:58Z",
+      "newestRecallDate": "2026-09-25",
       "qualityStatus": "current",
-      "recordCount": 2168,
+      "recordCount": 2169,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-25T21:31:56Z",
+          "checkedAt": "2026-09-26T04:52:58Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-25T21:31:56Z",
+          "checkedAt": "2026-09-26T04:52:58Z",
           "newestRecallDate": "2026-08-23",
           "recordCount": 2802,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-25T21:31:56Z",
-          "newestRecallDate": "2026-09-24",
+          "checkedAt": "2026-09-26T04:52:58Z",
+          "newestRecallDate": "2026-09-25",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-25T21:31:56Z",
+      "checkedAt": "2026-09-26T04:52:58Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-25T21:31:56Z",
-      "newestRecallDate": "2026-09-22",
+      "lastSuccessfulUpdate": "2026-09-26T04:52:58Z",
+      "newestRecallDate": "2026-09-25",
       "qualityStatus": "current",
-      "recordCount": 2026,
+      "recordCount": 2028,
       "success": true
     }
   },
