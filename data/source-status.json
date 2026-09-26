@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-09-26T16:19:32Z",
+  "checkedAt": "2026-09-26T21:06:11Z",
   "fdaSample": [
     {
       "brandNames": [
         "Mezzetta"
       ],
-      "date": "2026-09-25",
-      "id": "FDA-PUBLIC-7f7d36c57f3c1d42",
+      "date": "2026-09-26",
+      "id": "FDA-PUBLIC-3d516d23c9e9a613",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
       "product": "Greek peppers/ Golden Greek Peperoncini, Medium Heat",
       "reason": "Product may contain foreign objects such as Pest contaminant in jar",
@@ -262,47 +262,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-26T16:19:32Z",
+  "generatedAt": "2026-09-26T21:06:11Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-26T16:19:32Z",
+      "checkedAt": "2026-09-26T21:06:11Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-26T16:19:32Z",
-      "newestRecallDate": "2026-09-25",
+      "lastSuccessfulUpdate": "2026-09-26T21:06:11Z",
+      "newestRecallDate": "2026-09-26",
       "qualityStatus": "current",
       "recordCount": 2169,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-26T16:19:32Z",
+          "checkedAt": "2026-09-26T21:06:11Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-26T16:19:32Z",
+          "checkedAt": "2026-09-26T21:06:11Z",
           "newestRecallDate": "2026-08-23",
           "recordCount": 2802,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-26T16:19:32Z",
-          "newestRecallDate": "2026-09-25",
+          "checkedAt": "2026-09-26T21:06:11Z",
+          "newestRecallDate": "2026-09-26",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-26T16:19:32Z",
+      "checkedAt": "2026-09-26T21:06:11Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-26T16:19:32Z",
+      "lastSuccessfulUpdate": "2026-09-26T21:06:11Z",
       "newestRecallDate": "2026-09-25",
       "qualityStatus": "current",
       "recordCount": 2028,
