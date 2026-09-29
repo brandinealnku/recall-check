@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-28T23:14:01Z",
+  "checkedAt": "2026-09-29T05:39:47Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -68,19 +68,6 @@
     },
     {
       "brandNames": [
-        "Truly AIP, EAT G.A.N.G.S.T.E.R"
-      ],
-      "date": "2026-09-18",
-      "id": "FDA-PUBLIC-09a24245adf244d6",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix",
-      "product": "All purpose flour, bread mix, flat bread pizza mix",
-      "reason": "Undeclared wheat allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "J. HIGGS"
       ],
       "date": "2026-09-18",
@@ -88,6 +75,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
       "product": "Loaded Bacon & Cheddar Potato Chips",
       "reason": "Undeclared soy allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Truly AIP, EAT G.A.N.G.S.T.E.R"
+      ],
+      "date": "2026-09-18",
+      "id": "FDA-PUBLIC-09a24245adf244d6",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix",
+      "product": "All purpose flour, bread mix, flat bread pizza mix",
+      "reason": "Undeclared wheat allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -249,47 +249,45 @@
       ]
     },
     {
-      "brandNames": [
-        "B. Braun"
-      ],
+      "brandNames": [],
       "date": "2026-09-03",
-      "id": "FDA-ANN-413d42dc0b0e4ebd",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/b-braun-medical-inc-issues-voluntary-nationwide-recall-09-sodium-chloride-injection-usp-100-ml-150",
-      "product": "0.9% Sodium Chloride Injection USP, 100 mL, in a 150 mL PAB\u00ae Container",
-      "reason": "Presence of particulate matter identified as iron oxide",
+      "id": "FDA-N/A",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Heinz Real - Vraie Mayonnaise, 12.5ml single serving packet, 500 packets per case, case code 57000 06672",
+      "reason": "undeclared ingredients including but not limited to mustard",
       "sourceSurfaces": [
-        "annualAnnouncements"
+        "enforcement"
       ]
     }
   ],
-  "generatedAt": "2026-09-28T23:14:01Z",
+  "generatedAt": "2026-09-29T05:39:47Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-28T23:14:01Z",
+      "checkedAt": "2026-09-29T05:39:47Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-28T23:14:01Z",
+      "lastSuccessfulUpdate": "2026-09-29T05:39:47Z",
       "newestRecallDate": "2026-09-26",
       "qualityStatus": "current",
-      "recordCount": 2165,
+      "recordCount": 2207,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-28T23:14:01Z",
+          "checkedAt": "2026-09-29T05:39:47Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-28T23:14:01Z",
-          "newestRecallDate": "2026-08-23",
-          "recordCount": 2798,
+          "checkedAt": "2026-09-29T05:39:47Z",
+          "newestRecallDate": "2026-09-03",
+          "recordCount": 2845,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-28T23:14:01Z",
+          "checkedAt": "2026-09-29T05:39:47Z",
           "newestRecallDate": "2026-09-26",
           "recordCount": 7,
           "success": true
@@ -297,12 +295,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-28T23:14:01Z",
+      "checkedAt": "2026-09-29T05:39:47Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-28T23:14:01Z",
+      "lastSuccessfulUpdate": "2026-09-29T05:39:47Z",
       "newestRecallDate": "2026-09-25",
       "qualityStatus": "current",
       "recordCount": 2028,
