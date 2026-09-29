@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-09-29T12:47:17Z",
+  "checkedAt": "2026-09-29T22:12:09Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Sierra Nevada Graziers"
+      ],
+      "date": "2026-09-29",
+      "id": "FDA-PUBLIC-3a1b63de32c8133a",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk",
+      "product": "Monterey Jack, Jalapeno Jack, Medium Cheddar, and Sharp Cheddar raw milk cheeses",
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Mezzetta"
@@ -75,19 +88,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
       "product": "Loaded Bacon & Cheddar Potato Chips",
       "reason": "Undeclared soy allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Truly AIP, EAT G.A.N.G.S.T.E.R"
-      ],
-      "date": "2026-09-18",
-      "id": "FDA-PUBLIC-09a24245adf244d6",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix",
-      "product": "All purpose flour, bread mix, flat bread pizza mix",
-      "reason": "Undeclared wheat allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -260,47 +260,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-29T12:47:17Z",
+  "generatedAt": "2026-09-29T22:12:09Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-09-29T12:47:17Z",
+      "checkedAt": "2026-09-29T22:12:09Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-29T12:47:17Z",
-      "newestRecallDate": "2026-09-26",
+      "lastSuccessfulUpdate": "2026-09-29T22:12:09Z",
+      "newestRecallDate": "2026-09-29",
       "qualityStatus": "current",
       "recordCount": 2207,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-09-29T12:47:17Z",
+          "checkedAt": "2026-09-29T22:12:09Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-09-29T12:47:17Z",
+          "checkedAt": "2026-09-29T22:12:09Z",
           "newestRecallDate": "2026-09-03",
           "recordCount": 2845,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-09-29T12:47:17Z",
-          "newestRecallDate": "2026-09-26",
+          "checkedAt": "2026-09-29T22:12:09Z",
+          "newestRecallDate": "2026-09-29",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-09-29T12:47:17Z",
+      "checkedAt": "2026-09-29T22:12:09Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-09-29T12:47:17Z",
+      "lastSuccessfulUpdate": "2026-09-29T22:12:09Z",
       "newestRecallDate": "2026-09-25",
       "qualityStatus": "current",
       "recordCount": 2028,
