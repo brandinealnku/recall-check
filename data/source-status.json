@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-01T13:06:46Z",
+  "checkedAt": "2026-10-01T22:38:29Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Bettergoods"
+      ],
+      "date": "2026-10-01",
+      "id": "FDA-PUBLIC-52c36a580e48860c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0",
+      "product": "Pasta",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Sierra Nevada Graziers"
@@ -75,19 +88,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wakefern-food-corp-voluntarily-recalls-wholesome-pantry-organic-unsweetened-apple-sauce",
       "product": "Organic Unsweetened Apple Sauce",
       "reason": "Elevated levels of patulin",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "J. HIGGS"
-      ],
-      "date": "2026-09-18",
-      "id": "FDA-PUBLIC-b70debaf116c8a73",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
-      "product": "Loaded Bacon & Cheddar Potato Chips",
-      "reason": "Undeclared soy allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -260,47 +260,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-01T13:06:46Z",
+  "generatedAt": "2026-10-01T22:38:29Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-01T13:06:46Z",
+      "checkedAt": "2026-10-01T22:38:29Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-01T13:06:46Z",
-      "newestRecallDate": "2026-09-29",
+      "lastSuccessfulUpdate": "2026-10-01T22:38:29Z",
+      "newestRecallDate": "2026-10-01",
       "qualityStatus": "current",
       "recordCount": 2204,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-01T13:06:46Z",
+          "checkedAt": "2026-10-01T22:38:29Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-01T13:06:46Z",
+          "checkedAt": "2026-10-01T22:38:29Z",
           "newestRecallDate": "2026-09-03",
           "recordCount": 2841,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-01T13:06:46Z",
-          "newestRecallDate": "2026-09-29",
+          "checkedAt": "2026-10-01T22:38:29Z",
+          "newestRecallDate": "2026-10-01",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-01T13:06:46Z",
+      "checkedAt": "2026-10-01T22:38:29Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-01T13:06:46Z",
+      "lastSuccessfulUpdate": "2026-10-01T22:38:29Z",
       "newestRecallDate": "2026-09-25",
       "qualityStatus": "current",
       "recordCount": 2028,
