@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-03T16:14:26Z",
+  "checkedAt": "2026-10-03T21:11:16Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Saint Francis"
+      ],
+      "date": "2026-10-03",
+      "id": "FDA-PUBLIC-835c7aabc1722afe",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
+      "product": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
+      "reason": "Undeclared soy allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Great Value, Trader Joe\u2019s",
@@ -18,19 +31,6 @@
     },
     {
       "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-PUBLIC-4642373cdfbad0da",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
-      "product": "Salsa Bean Dip",
-      "reason": "Potential pest inclusion",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Home Grown"
       ],
       "date": "2026-10-02",
@@ -38,6 +38,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom",
       "product": "Green Sprouting Calabrese Broccoli Seeds",
       "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "date": "2026-10-02",
+      "id": "FDA-PUBLIC-4642373cdfbad0da",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
+      "product": "Salsa Bean Dip",
+      "reason": "Potential pest inclusion",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -103,19 +116,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
       "product": "Ground cinnamon",
       "reason": "Potential to be contaminated with elevated levels of lead",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Deano\u2019s Pasta"
-      ],
-      "date": "2026-09-24",
-      "id": "FDA-PUBLIC-840ecd92df01fd14",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/deanos-pasta-issue-allergy-alert-undeclared-lobster-pear-and-pecorino-triangoli-ravioli",
-      "product": "Pasta",
-      "reason": "Undeclared crustacean shellfish (lobster) allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -264,47 +264,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-03T16:14:26Z",
+  "generatedAt": "2026-10-03T21:11:16Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-03T16:14:26Z",
+      "checkedAt": "2026-10-03T21:11:16Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-03T16:14:26Z",
-      "newestRecallDate": "2026-10-02",
+      "lastSuccessfulUpdate": "2026-10-03T21:11:16Z",
+      "newestRecallDate": "2026-10-03",
       "qualityStatus": "current",
       "recordCount": 2187,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-03T16:14:26Z",
+          "checkedAt": "2026-10-03T21:11:16Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-03T16:14:26Z",
+          "checkedAt": "2026-10-03T21:11:16Z",
           "newestRecallDate": "2026-09-03",
           "recordCount": 2818,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-03T16:14:26Z",
-          "newestRecallDate": "2026-10-02",
+          "checkedAt": "2026-10-03T21:11:16Z",
+          "newestRecallDate": "2026-10-03",
           "recordCount": 9,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-03T16:14:26Z",
+      "checkedAt": "2026-10-03T21:11:16Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-03T16:14:26Z",
+      "lastSuccessfulUpdate": "2026-10-03T21:11:16Z",
       "newestRecallDate": "2026-10-02",
       "qualityStatus": "current",
       "recordCount": 2029,
