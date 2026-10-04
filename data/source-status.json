@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-03T21:11:16Z",
+  "checkedAt": "2026-10-04T05:47:23Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -264,34 +264,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-03T21:11:16Z",
+  "generatedAt": "2026-10-04T05:47:23Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-03T21:11:16Z",
+      "checkedAt": "2026-10-04T05:47:23Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-03T21:11:16Z",
+      "lastSuccessfulUpdate": "2026-10-04T05:47:23Z",
       "newestRecallDate": "2026-10-03",
       "qualityStatus": "current",
-      "recordCount": 2187,
+      "recordCount": 2180,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-03T21:11:16Z",
+          "checkedAt": "2026-10-04T05:47:23Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-03T21:11:16Z",
+          "checkedAt": "2026-10-04T05:47:23Z",
           "newestRecallDate": "2026-09-03",
-          "recordCount": 2818,
+          "recordCount": 2811,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-03T21:11:16Z",
+          "checkedAt": "2026-10-04T05:47:23Z",
           "newestRecallDate": "2026-10-03",
           "recordCount": 9,
           "success": true
@@ -299,12 +299,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-03T21:11:16Z",
+      "checkedAt": "2026-10-04T05:47:23Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-03T21:11:16Z",
+      "lastSuccessfulUpdate": "2026-10-04T05:47:23Z",
       "newestRecallDate": "2026-10-02",
       "qualityStatus": "current",
       "recordCount": 2029,
