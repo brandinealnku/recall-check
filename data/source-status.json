@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-04T12:17:02Z",
+  "checkedAt": "2026-10-04T16:52:05Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -264,38 +264,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-04T12:17:02Z",
+  "generatedAt": "2026-10-04T16:52:05Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-04T12:17:02Z",
-      "coverageComplete": false,
+      "checkedAt": "2026-10-04T16:52:05Z",
+      "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
-      "current": false,
-      "freshnessValidated": false,
-      "lastSuccessfulUpdate": "2026-10-04T12:17:02Z",
+      "current": true,
+      "freshnessValidated": true,
+      "lastSuccessfulUpdate": "2026-10-04T16:52:05Z",
       "newestRecallDate": "2026-10-03",
-      "qualityStatus": "degraded",
-      "recordCount": 219,
+      "qualityStatus": "current",
+      "recordCount": 2180,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-04T12:17:02Z",
+          "checkedAt": "2026-10-04T16:52:05Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-04T12:17:02Z",
-          "error": {
-            "message": "HTTP 500 \u2014 Check your request and try again (offset 0, apiKeySupplied=false)",
-            "type": "FdaRequestError"
-          },
-          "newestRecallDate": "",
-          "recordCount": 0,
-          "success": false
+          "checkedAt": "2026-10-04T16:52:05Z",
+          "newestRecallDate": "2026-09-03",
+          "recordCount": 2811,
+          "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-04T12:17:02Z",
+          "checkedAt": "2026-10-04T16:52:05Z",
           "newestRecallDate": "2026-10-03",
           "recordCount": 9,
           "success": true
@@ -303,20 +299,18 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-04T12:17:02Z",
+      "checkedAt": "2026-10-04T16:52:05Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-04T12:17:02Z",
+      "lastSuccessfulUpdate": "2026-10-04T16:52:05Z",
       "newestRecallDate": "2026-10-02",
       "qualityStatus": "current",
       "recordCount": 2029,
       "success": true
     }
   },
-  "warnings": [
-    "FDA coverage is degraded: unavailable source surface(s): enforcement"
-  ],
+  "warnings": [],
   "workflowVersion": "0.7.0"
 }
