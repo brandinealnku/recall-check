@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-05T14:29:54Z",
+  "checkedAt": "2026-10-05T22:34:01Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Nature's Own"
+      ],
+      "date": "2026-10-05",
+      "id": "FDA-PUBLIC-6b7f5a9a28efaebc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
+      "product": "Nature's Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+      "reason": "Undeclared milk allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Saint Francis"
@@ -103,19 +116,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
       "product": "Greek peppers/ Golden Greek Peperoncini, Medium Heat",
       "reason": "Product may contain foreign objects such as Pest contaminant in jar",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Lior"
-      ],
-      "date": "2026-09-24",
-      "id": "FDA-PUBLIC-26f1fc200eacf7cc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
-      "product": "Ground cinnamon",
-      "reason": "Potential to be contaminated with elevated levels of lead",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -264,47 +264,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-05T14:29:54Z",
+  "generatedAt": "2026-10-05T22:34:01Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-05T14:29:54Z",
+      "checkedAt": "2026-10-05T22:34:01Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-05T14:29:54Z",
-      "newestRecallDate": "2026-10-03",
+      "lastSuccessfulUpdate": "2026-10-05T22:34:01Z",
+      "newestRecallDate": "2026-10-05",
       "qualityStatus": "current",
       "recordCount": 2179,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-05T14:29:54Z",
+          "checkedAt": "2026-10-05T22:34:01Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-05T14:29:54Z",
+          "checkedAt": "2026-10-05T22:34:01Z",
           "newestRecallDate": "2026-09-03",
           "recordCount": 2810,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-05T14:29:54Z",
-          "newestRecallDate": "2026-10-03",
+          "checkedAt": "2026-10-05T22:34:01Z",
+          "newestRecallDate": "2026-10-05",
           "recordCount": 9,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-05T14:29:54Z",
+      "checkedAt": "2026-10-05T22:34:01Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-05T14:29:54Z",
+      "lastSuccessfulUpdate": "2026-10-05T22:34:01Z",
       "newestRecallDate": "2026-10-02",
       "qualityStatus": "current",
       "recordCount": 2029,
