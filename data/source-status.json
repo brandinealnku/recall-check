@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-06T00:00:37Z",
+  "checkedAt": "2026-10-06T06:15:21Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -121,6 +121,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-09-15",
+      "id": "FDA-H-1394-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "So Delicious Dairy Free Salted Caramel Cluster Cashewmilk, Non-Dairy Frozen Dessert. 16 oz paper tub with an attached paper lid. Sold as a single unit multi serving tub. UPC 744473 476138. Distributed by For So Delicious Dairy Free Eugene, OR 97402.",
+      "reason": "Product may contain foreign material: small stones and other hard objects.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "X10"
       ],
@@ -199,6 +210,28 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-09-08",
+      "id": "FDA-H-1395-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all dates through and including 10/7/2026 Packaging: Plastic wrapped by slice Net Wt.: Various, cut from whole wheel and priced by weight with Whole Foods Market scale label PLUs: 54670, 57953",
+      "reason": "Undeclared Egg Allergen",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-08",
+      "id": "FDA-H-1393-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "American Ginsengs. PRODUCT OF WISCONSIN. NET WT: 4 oz. NET WT. 8 oz.",
+      "reason": "Potential contamination with pesticides.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "FI"
       ],
@@ -223,75 +256,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Created Fresh!"
-      ],
-      "date": "2026-09-08",
-      "id": "FDA-ANN-cc6138b08ae2f71e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
-      "product": "Cranberry Chicken Salad Wedge Sandwich",
-      "reason": "Improperly declared egg allergen",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Made Fresh Salads, Northside"
-      ],
-      "date": "2026-09-06",
-      "id": "FDA-ANN-9fd1a57afef0194a",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
-      "product": "Ready to Eat Deli Style Salads and cream cheese",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Business Pill, Branch Manager for Men"
-      ],
-      "date": "2026-09-04",
-      "id": "FDA-ANN-f5513d560739abcc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplxcom-issues-voluntary-nationwide-recall-business-pill-and-branch-manager-men-due-undeclared",
-      "product": "dietary supplements marketed for male sexual enhancement",
-      "reason": "Products contain undeclared yohimbine",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-10-06T00:00:37Z",
+  "generatedAt": "2026-10-06T06:15:21Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-06T00:00:37Z",
+      "checkedAt": "2026-10-06T06:15:21Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-06T00:00:37Z",
+      "lastSuccessfulUpdate": "2026-10-06T06:15:21Z",
       "newestRecallDate": "2026-10-05",
       "qualityStatus": "current",
-      "recordCount": 2179,
+      "recordCount": 2187,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-06T00:00:37Z",
+          "checkedAt": "2026-10-06T06:15:21Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-06T00:00:37Z",
-          "newestRecallDate": "2026-09-03",
-          "recordCount": 2810,
+          "checkedAt": "2026-10-06T06:15:21Z",
+          "newestRecallDate": "2026-09-15",
+          "recordCount": 2818,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-06T00:00:37Z",
+          "checkedAt": "2026-10-06T06:15:21Z",
           "newestRecallDate": "2026-10-05",
           "recordCount": 9,
           "success": true
@@ -299,12 +293,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-06T00:00:37Z",
+      "checkedAt": "2026-10-06T06:15:21Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-06T00:00:37Z",
+      "lastSuccessfulUpdate": "2026-10-06T06:15:21Z",
       "newestRecallDate": "2026-10-02",
       "qualityStatus": "current",
       "recordCount": 2029,
