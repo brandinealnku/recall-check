@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-07T13:16:07Z",
+  "checkedAt": "2026-10-07T23:01:00Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "EDEN BROTHERS"
+      ],
+      "date": "2026-10-07",
+      "id": "FDA-PUBLIC-a5a3dcb8059eb06c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
+      "product": "Broccoli Seeds - Calabrese",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Nature's Own"
@@ -77,32 +90,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign",
       "product": "Ice cream",
       "reason": "Potential presence of metal",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Bettergoods"
-      ],
-      "date": "2026-10-01",
-      "id": "FDA-PUBLIC-52c36a580e48860c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0",
-      "product": "Pasta",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Sierra Nevada Graziers"
-      ],
-      "date": "2026-09-29",
-      "id": "FDA-PUBLIC-3a1b63de32c8133a",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk",
-      "product": "Monterey Jack, Jalapeno Jack, Medium Cheddar, and Sharp Cheddar raw milk cheeses",
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC)",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,49 +243,62 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
+    },
+    {
+      "brandNames": [
+        "Made Fresh Salads, Northside"
+      ],
+      "date": "2026-09-06",
+      "id": "FDA-ANN-9fd1a57afef0194a",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
+      "product": "Ready to Eat Deli Style Salads and cream cheese",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     }
   ],
-  "generatedAt": "2026-10-07T13:16:07Z",
+  "generatedAt": "2026-10-07T23:01:00Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-07T13:16:07Z",
+      "checkedAt": "2026-10-07T23:01:00Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-07T13:16:07Z",
-      "newestRecallDate": "2026-10-05",
+      "lastSuccessfulUpdate": "2026-10-07T23:01:00Z",
+      "newestRecallDate": "2026-10-07",
       "qualityStatus": "current",
-      "recordCount": 2186,
+      "recordCount": 2185,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-07T13:16:07Z",
+          "checkedAt": "2026-10-07T23:01:00Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-07T13:16:07Z",
+          "checkedAt": "2026-10-07T23:01:00Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 2818,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-07T13:16:07Z",
-          "newestRecallDate": "2026-10-05",
-          "recordCount": 8,
+          "checkedAt": "2026-10-07T23:01:00Z",
+          "newestRecallDate": "2026-10-07",
+          "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-07T13:16:07Z",
+      "checkedAt": "2026-10-07T23:01:00Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-07T13:16:07Z",
+      "lastSuccessfulUpdate": "2026-10-07T23:01:00Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
