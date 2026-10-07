@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-06T22:36:38Z",
+  "checkedAt": "2026-10-07T05:53:38Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -103,19 +103,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk",
       "product": "Monterey Jack, Jalapeno Jack, Medium Cheddar, and Sharp Cheddar raw milk cheeses",
       "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC)",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Mezzetta"
-      ],
-      "date": "2026-09-26",
-      "id": "FDA-PUBLIC-3d516d23c9e9a613",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
-      "product": "Greek peppers/ Golden Greek Peperoncini, Medium Heat",
-      "reason": "Product may contain foreign objects such as Pest contaminant in jar",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,52 +243,65 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
+    },
+    {
+      "brandNames": [
+        "Created Fresh!"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-cc6138b08ae2f71e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
+      "product": "Cranberry Chicken Salad Wedge Sandwich",
+      "reason": "Improperly declared egg allergen",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     }
   ],
-  "generatedAt": "2026-10-06T22:36:38Z",
+  "generatedAt": "2026-10-07T05:53:38Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-06T22:36:38Z",
+      "checkedAt": "2026-10-07T05:53:38Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-06T22:36:38Z",
+      "lastSuccessfulUpdate": "2026-10-07T05:53:38Z",
       "newestRecallDate": "2026-10-05",
       "qualityStatus": "current",
-      "recordCount": 2187,
+      "recordCount": 2186,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-06T22:36:38Z",
+          "checkedAt": "2026-10-07T05:53:38Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-06T22:36:38Z",
+          "checkedAt": "2026-10-07T05:53:38Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 2818,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-06T22:36:38Z",
+          "checkedAt": "2026-10-07T05:53:38Z",
           "newestRecallDate": "2026-10-05",
-          "recordCount": 9,
+          "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-06T22:36:38Z",
+      "checkedAt": "2026-10-07T05:53:38Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-06T22:36:38Z",
-      "newestRecallDate": "2026-10-02",
+      "lastSuccessfulUpdate": "2026-10-07T05:53:38Z",
+      "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
-      "recordCount": 2029,
+      "recordCount": 2030,
       "success": true
     }
   },
