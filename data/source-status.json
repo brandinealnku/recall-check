@@ -1,6 +1,32 @@
 {
-  "checkedAt": "2026-10-09T13:11:14Z",
+  "checkedAt": "2026-10-09T22:35:01Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Starfish Seafood"
+      ],
+      "date": "2026-10-09",
+      "id": "FDA-PUBLIC-6ec815c102b54cfc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "product": "Cold Smoked Salmon, Halibut, and Trout",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Riad's Oliva to Go"
+      ],
+      "date": "2026-10-09",
+      "id": "FDA-PUBLIC-84481900ebb4da8e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
+      "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "reason": "Undeclared sesame allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Gardeners Basics"
@@ -49,47 +75,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
       "product": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
       "reason": "Undeclared soy allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Great Value, Trader Joe\u2019s",
-        "Great Value"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-PUBLIC-129c1f3166cc10ee",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
-      "product": "Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
-      "reason": "Potential E. Coli O145:H28 Contamination",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Home Grown"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-PUBLIC-0c968a44f28b2105",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom",
-      "product": "Green Sprouting Calabrese Broccoli Seeds",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-PUBLIC-4642373cdfbad0da",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
-      "product": "Salsa Bean Dip",
-      "reason": "Potential pest inclusion",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,49 +241,60 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-04",
+      "id": "FDA-H-1390-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Evergreen Fresh Sprouts LLC, Broccoli Sprouts, packaged in clear plastic zip lock bag, net wt. 4oz, UPC 8 38796 00105 1. Firm distributed cases (6/4oz. bags per case) to distributor.",
+      "reason": "Salmonella",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
     }
   ],
-  "generatedAt": "2026-10-09T13:11:14Z",
+  "generatedAt": "2026-10-09T22:35:01Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-09T13:11:14Z",
+      "checkedAt": "2026-10-09T22:35:01Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-09T13:11:14Z",
-      "newestRecallDate": "2026-10-08",
+      "lastSuccessfulUpdate": "2026-10-09T22:35:01Z",
+      "newestRecallDate": "2026-10-09",
       "qualityStatus": "current",
       "recordCount": 2180,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-09T13:11:14Z",
+          "checkedAt": "2026-10-09T22:35:01Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-09T13:11:14Z",
+          "checkedAt": "2026-10-09T22:35:01Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 2813,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-09T13:11:14Z",
-          "newestRecallDate": "2026-10-08",
-          "recordCount": 7,
+          "checkedAt": "2026-10-09T22:35:01Z",
+          "newestRecallDate": "2026-10-09",
+          "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-09T13:11:14Z",
+      "checkedAt": "2026-10-09T22:35:01Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-09T13:11:14Z",
+      "lastSuccessfulUpdate": "2026-10-09T22:35:01Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
