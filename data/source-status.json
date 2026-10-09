@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-08T23:16:44Z",
+  "checkedAt": "2026-10-09T06:03:34Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Gardeners Basics"
+      ],
+      "date": "2026-10-08",
+      "id": "FDA-PUBLIC-14939e4d2b0851fc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination",
+      "product": "Broccoli Sprouting Seeds",
+      "reason": "Product may be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "EDEN BROTHERS"
@@ -77,19 +90,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
       "product": "Salsa Bean Dip",
       "reason": "Potential pest inclusion",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Stewart\u2019s Shops"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-PUBLIC-391b5394b20affc3",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign",
-      "product": "Ice cream",
-      "reason": "Potential presence of metal",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -258,47 +258,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-08T23:16:44Z",
+  "generatedAt": "2026-10-09T06:03:34Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-08T23:16:44Z",
+      "checkedAt": "2026-10-09T06:03:34Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-08T23:16:44Z",
-      "newestRecallDate": "2026-10-07",
+      "lastSuccessfulUpdate": "2026-10-09T06:03:34Z",
+      "newestRecallDate": "2026-10-08",
       "qualityStatus": "current",
-      "recordCount": 2181,
+      "recordCount": 2180,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-08T23:16:44Z",
+          "checkedAt": "2026-10-09T06:03:34Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-08T23:16:44Z",
+          "checkedAt": "2026-10-09T06:03:34Z",
           "newestRecallDate": "2026-09-15",
-          "recordCount": 2814,
+          "recordCount": 2813,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-08T23:16:44Z",
-          "newestRecallDate": "2026-10-07",
+          "checkedAt": "2026-10-09T06:03:34Z",
+          "newestRecallDate": "2026-10-08",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-08T23:16:44Z",
+      "checkedAt": "2026-10-09T06:03:34Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-08T23:16:44Z",
+      "lastSuccessfulUpdate": "2026-10-09T06:03:34Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
