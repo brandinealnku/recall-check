@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-10T12:26:03Z",
+  "checkedAt": "2026-10-10T21:34:45Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -10,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
       "product": "Cold Smoked Salmon, Halibut, and Trout",
       "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Riad's Oliva to Go"
+      ],
+      "date": "2026-10-09",
+      "id": "FDA-PUBLIC-84481900ebb4da8e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
+      "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "reason": "Undeclared sesame allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -64,21 +77,6 @@
       "reason": "Undeclared soy allergen",
       "sourceSurfaces": [
         "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Great Value, Trader Joe\u2019s",
-        "Great Value"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-PUBLIC-129c1f3166cc10ee",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
-      "product": "Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
-      "reason": "Potential E. Coli O145:H28 Contamination",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
       ]
     },
     {
@@ -256,34 +254,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-10T12:26:03Z",
+  "generatedAt": "2026-10-10T21:34:45Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-10T12:26:03Z",
+      "checkedAt": "2026-10-10T21:34:45Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-10T12:26:03Z",
+      "lastSuccessfulUpdate": "2026-10-10T21:34:45Z",
       "newestRecallDate": "2026-10-09",
       "qualityStatus": "current",
-      "recordCount": 2176,
+      "recordCount": 2177,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-10T12:26:03Z",
+          "checkedAt": "2026-10-10T21:34:45Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-10T12:26:03Z",
+          "checkedAt": "2026-10-10T21:34:45Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 2810,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-10T12:26:03Z",
+          "checkedAt": "2026-10-10T21:34:45Z",
           "newestRecallDate": "2026-10-09",
           "recordCount": 6,
           "success": true
@@ -291,12 +289,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-10T12:26:03Z",
+      "checkedAt": "2026-10-10T21:34:45Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-10T12:26:03Z",
+      "lastSuccessfulUpdate": "2026-10-10T21:34:45Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
