@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T12:43:44Z",
+  "generatedAt": "2026-10-11T21:54:18Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-11T12:43:44Z",
-    "lastSuccessfulUpdate": "2026-10-11T12:43:44Z",
+    "checkedAt": "2026-10-11T21:54:18Z",
+    "lastSuccessfulUpdate": "2026-10-11T21:54:18Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-11T12:43:44Z",
-        "lastSuccessfulUpdate": "2026-10-11T12:43:44Z",
+        "checkedAt": "2026-10-11T21:54:18Z",
+        "lastSuccessfulUpdate": "2026-10-11T21:54:18Z",
         "recordCount": 2155,
         "newestRecallDate": "2026-10-09",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-11T12:43:44Z",
+            "checkedAt": "2026-10-11T21:54:18Z",
             "recordCount": 216,
             "newestRecallDate": "2026-09-15"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-11T12:43:44Z",
+            "checkedAt": "2026-10-11T21:54:18Z",
             "recordCount": 6,
             "newestRecallDate": "2026-10-09"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-11T12:43:44Z",
+            "checkedAt": "2026-10-11T21:54:18Z",
             "recordCount": 2787,
             "newestRecallDate": "2026-09-15"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-11T12:43:44Z",
-        "retrievedAt": "2026-10-11T12:43:44Z",
-        "lastSuccessfulUpdate": "2026-10-11T12:43:44Z",
+        "checkedAt": "2026-10-11T21:54:18Z",
+        "retrievedAt": "2026-10-11T21:54:18Z",
+        "lastSuccessfulUpdate": "2026-10-11T21:54:18Z",
         "newestRecallDate": "2026-10-06",
         "recordCount": 2030,
         "error": null,
@@ -71,78 +71,6 @@
     "warnings": []
   },
   "recalls": [
-    {
-      "id": "FDA-PUBLIC-6ec815c102b54cfc",
-      "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-09",
-        "ageDaysAtRefresh": 2,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Cold Smoked Salmon, Halibut, and Trout",
-      "recallingFirm": "Krasnyi Oktyabr Inc.",
-      "productDescription": "Cold Smoked Salmon, Halibut, and Trout",
-      "brandNames": [
-        "Starfish Seafood"
-      ],
-      "productNames": [
-        "Cold Smoked Salmon, Halibut, and Trout"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-09",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-09",
-        "brand": "Starfish Seafood",
-        "product": "Cold Smoked Salmon, Halibut, and Trout",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Listeria monocytogenes",
-        "company": "Krasnyi Oktyabr Inc.",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
-      },
-      "searchText": "krasnyi oktyabr inc. starfish seafood cold smoked salmon, halibut, and trout potential to be contaminated with listeria monocytogenes",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "id": "FDA-PUBLIC-84481900ebb4da8e",
       "sourceRecordId": "PUBLIC-84481900ebb4da8e",
@@ -209,6 +137,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-84481900ebb4da8e",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-6ec815c102b54cfc",
+      "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-09",
+        "ageDaysAtRefresh": 2,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Cold Smoked Salmon, Halibut, and Trout",
+      "recallingFirm": "Krasnyi Oktyabr Inc.",
+      "productDescription": "Cold Smoked Salmon, Halibut, and Trout",
+      "brandNames": [
+        "Starfish Seafood"
+      ],
+      "productNames": [
+        "Cold Smoked Salmon, Halibut, and Trout"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-09",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-09",
+        "brand": "Starfish Seafood",
+        "product": "Cold Smoked Salmon, Halibut, and Trout",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Listeria monocytogenes",
+        "company": "Krasnyi Oktyabr Inc.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
+      },
+      "searchText": "krasnyi oktyabr inc. starfish seafood cold smoked salmon, halibut, and trout potential to be contaminated with listeria monocytogenes",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
