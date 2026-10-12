@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T10:38:32Z",
+  "generatedAt": "2026-10-12T15:15:47Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-12T10:38:32Z",
-    "lastSuccessfulUpdate": "2026-10-12T10:38:32Z",
+    "checkedAt": "2026-10-12T15:15:47Z",
+    "lastSuccessfulUpdate": "2026-10-12T15:15:47Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-12T10:38:32Z",
-        "lastSuccessfulUpdate": "2026-10-12T10:38:32Z",
+        "checkedAt": "2026-10-12T15:15:47Z",
+        "lastSuccessfulUpdate": "2026-10-12T15:15:47Z",
         "recordCount": 2149,
         "newestRecallDate": "2026-10-09",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-12T10:38:32Z",
+            "checkedAt": "2026-10-12T15:15:47Z",
             "recordCount": 216,
             "newestRecallDate": "2026-09-15"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-12T10:38:32Z",
+            "checkedAt": "2026-10-12T15:15:47Z",
             "recordCount": 6,
             "newestRecallDate": "2026-10-09"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-12T10:38:32Z",
+            "checkedAt": "2026-10-12T15:15:47Z",
             "recordCount": 2777,
             "newestRecallDate": "2026-09-15"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-12T10:38:32Z",
-        "retrievedAt": "2026-10-12T10:38:32Z",
-        "lastSuccessfulUpdate": "2026-10-12T10:38:32Z",
+        "checkedAt": "2026-10-12T15:15:47Z",
+        "retrievedAt": "2026-10-12T15:15:47Z",
+        "lastSuccessfulUpdate": "2026-10-12T15:15:47Z",
         "newestRecallDate": "2026-10-06",
         "recordCount": 2030,
         "error": null,
@@ -71,78 +71,6 @@
     "warnings": []
   },
   "recalls": [
-    {
-      "id": "FDA-PUBLIC-84481900ebb4da8e",
-      "sourceRecordId": "PUBLIC-84481900ebb4da8e",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-09",
-        "ageDaysAtRefresh": 3,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
-      "recallingFirm": "Oliva LLC.",
-      "productDescription": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
-      "brandNames": [
-        "Riad's Oliva to Go"
-      ],
-      "productNames": [
-        "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Undeclared sesame allergen",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-09",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-09",
-        "brand": "Riad's Oliva to Go",
-        "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
-        "productType": "Food & Beverages, Allergens",
-        "reason": "Undeclared sesame allergen",
-        "company": "Oliva LLC.",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
-      },
-      "searchText": "oliva llc. riad's oliva to go baba ghanouj, spicy baba ghanouj, and hummus undeclared sesame allergen",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-84481900ebb4da8e",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "id": "FDA-PUBLIC-6ec815c102b54cfc",
       "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
@@ -209,6 +137,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-84481900ebb4da8e",
+      "sourceRecordId": "PUBLIC-84481900ebb4da8e",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-09",
+        "ageDaysAtRefresh": 3,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "recallingFirm": "Oliva LLC.",
+      "productDescription": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "brandNames": [
+        "Riad's Oliva to Go"
+      ],
+      "productNames": [
+        "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared sesame allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-09",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-09",
+        "brand": "Riad's Oliva to Go",
+        "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared sesame allergen",
+        "company": "Oliva LLC.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
+      },
+      "searchText": "oliva llc. riad's oliva to go baba ghanouj, spicy baba ghanouj, and hummus undeclared sesame allergen",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-84481900ebb4da8e",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
         }
       ],
       "sourceSurfaces": [
