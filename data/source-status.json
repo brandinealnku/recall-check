@@ -1,84 +1,6 @@
 {
-  "checkedAt": "2026-10-13T10:26:05Z",
+  "checkedAt": "2026-10-13T14:06:04Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "Riad's Oliva to Go"
-      ],
-      "date": "2026-10-09",
-      "id": "FDA-PUBLIC-84481900ebb4da8e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
-      "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
-      "reason": "Undeclared sesame allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Starfish Seafood"
-      ],
-      "date": "2026-10-09",
-      "id": "FDA-PUBLIC-6ec815c102b54cfc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
-      "product": "Cold Smoked Salmon, Halibut, and Trout",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Gardeners Basics"
-      ],
-      "date": "2026-10-08",
-      "id": "FDA-PUBLIC-14939e4d2b0851fc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination",
-      "product": "Broccoli Sprouting Seeds",
-      "reason": "Product may be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "EDEN BROTHERS"
-      ],
-      "date": "2026-10-07",
-      "id": "FDA-PUBLIC-a5a3dcb8059eb06c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
-      "product": "Broccoli Seeds - Calabrese",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Nature's Own"
-      ],
-      "date": "2026-10-05",
-      "id": "FDA-PUBLIC-6b7f5a9a28efaebc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
-      "product": "Nature's Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
-      "reason": "Undeclared milk allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Saint Francis"
-      ],
-      "date": "2026-10-03",
-      "id": "FDA-PUBLIC-835c7aabc1722afe",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
-      "product": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
-      "reason": "Undeclared soy allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [],
       "date": "2026-09-24",
@@ -244,55 +166,135 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-08",
+      "id": "FDA-H-1395-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all dates through and including 10/7/2026 Packaging: Plastic wrapped by slice Net Wt.: Various, cut from whole wheel and priced by weight with Whole Foods Market scale label PLUs: 54670, 57953",
+      "reason": "Undeclared Egg Allergen",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-08",
+      "id": "FDA-H-1393-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "American Ginsengs. PRODUCT OF WISCONSIN. NET WT: 4 oz. NET WT. 8 oz.",
+      "reason": "Potential contamination with pesticides.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [
+        "FI"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-9895db7507beaede",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination",
+      "product": "Supplements",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "BMC"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-431458e3050c8f5b",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect",
+      "product": "Luna G3 APAP (Model LG3600)",
+      "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Created Fresh!"
+      ],
+      "date": "2026-09-08",
+      "id": "FDA-ANN-cc6138b08ae2f71e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
+      "product": "Cranberry Chicken Salad Wedge Sandwich",
+      "reason": "Improperly declared egg allergen",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Made Fresh Salads, Northside"
+      ],
+      "date": "2026-09-06",
+      "id": "FDA-ANN-9fd1a57afef0194a",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
+      "product": "Ready to Eat Deli Style Salads and cream cheese",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     }
   ],
-  "generatedAt": "2026-10-13T10:26:05Z",
+  "generatedAt": "2026-10-13T14:06:04Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-13T10:26:05Z",
-      "coverageComplete": true,
+      "checkedAt": "2026-10-13T14:06:04Z",
+      "coverageComplete": false,
       "coverageMethod": "official-fda-multi-surface-union-v1",
-      "current": true,
-      "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-13T10:26:05Z",
-      "newestRecallDate": "2026-10-09",
-      "qualityStatus": "current",
-      "recordCount": 2160,
+      "current": false,
+      "freshnessValidated": false,
+      "lastSuccessfulUpdate": "2026-10-13T14:06:04Z",
+      "newestRecallDate": "2026-09-24",
+      "qualityStatus": "degraded",
+      "recordCount": 2154,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-13T10:26:05Z",
+          "checkedAt": "2026-10-13T14:06:04Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-13T10:26:05Z",
+          "checkedAt": "2026-10-13T14:06:04Z",
           "newestRecallDate": "2026-09-24",
           "recordCount": 2790,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-13T10:26:05Z",
-          "newestRecallDate": "2026-10-09",
-          "recordCount": 6,
-          "success": true
+          "checkedAt": "2026-10-13T14:06:04Z",
+          "error": {
+            "message": "HTTP Error 503: Service Unavailable",
+            "type": "HTTPError"
+          },
+          "newestRecallDate": "",
+          "recordCount": 0,
+          "success": false
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-13T10:26:05Z",
+      "checkedAt": "2026-10-13T14:06:04Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-13T10:26:05Z",
+      "lastSuccessfulUpdate": "2026-10-13T14:06:04Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
       "success": true
     }
   },
-  "warnings": [],
+  "warnings": [
+    "FDA coverage is degraded: unavailable source surface(s): publicAlerts"
+  ],
   "workflowVersion": "0.7.0"
 }
