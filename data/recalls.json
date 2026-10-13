@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T14:06:04Z",
+  "generatedAt": "2026-10-13T22:40:50Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,39 +14,35 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-13T14:06:04Z",
-    "lastSuccessfulUpdate": "2026-10-13T14:06:04Z",
+    "checkedAt": "2026-10-13T22:40:50Z",
+    "lastSuccessfulUpdate": "2026-10-13T22:40:50Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-13T14:06:04Z",
-        "lastSuccessfulUpdate": "2026-10-13T14:06:04Z",
-        "recordCount": 2154,
-        "newestRecallDate": "2026-09-24",
-        "current": false,
-        "qualityStatus": "degraded",
-        "coverageComplete": false,
+        "checkedAt": "2026-10-13T22:40:50Z",
+        "lastSuccessfulUpdate": "2026-10-13T22:40:50Z",
+        "recordCount": 2160,
+        "newestRecallDate": "2026-10-09",
+        "current": true,
+        "qualityStatus": "current",
+        "coverageComplete": true,
         "coverageMethod": "official-fda-multi-surface-union-v1",
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-13T14:06:04Z",
+            "checkedAt": "2026-10-13T22:40:50Z",
             "recordCount": 216,
             "newestRecallDate": "2026-09-15"
           },
           "publicAlerts": {
-            "success": false,
-            "checkedAt": "2026-10-13T14:06:04Z",
-            "recordCount": 0,
-            "newestRecallDate": "",
-            "error": {
-              "type": "HTTPError",
-              "message": "HTTP Error 503: Service Unavailable"
-            }
+            "success": true,
+            "checkedAt": "2026-10-13T22:40:50Z",
+            "recordCount": 6,
+            "newestRecallDate": "2026-10-09"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-13T14:06:04Z",
+            "checkedAt": "2026-10-13T22:40:50Z",
             "recordCount": 2790,
             "newestRecallDate": "2026-09-24"
           }
@@ -55,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-13T14:06:04Z",
-        "retrievedAt": "2026-10-13T14:06:04Z",
-        "lastSuccessfulUpdate": "2026-10-13T14:06:04Z",
+        "checkedAt": "2026-10-13T22:40:50Z",
+        "retrievedAt": "2026-10-13T22:40:50Z",
+        "lastSuccessfulUpdate": "2026-10-13T22:40:50Z",
         "newestRecallDate": "2026-10-06",
         "recordCount": 2030,
         "error": null,
@@ -68,15 +64,301 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2154,
+      "FDA": 2160,
       "USDA": 1241
     },
     "recordsWithIdentifierCandidates": 37,
-    "warnings": [
-      "FDA coverage is degraded: unavailable source surface(s): publicAlerts"
-    ]
+    "warnings": []
   },
   "recalls": [
+    {
+      "id": "FDA-PUBLIC-6ec815c102b54cfc",
+      "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-09",
+        "ageDaysAtRefresh": 4,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Cold Smoked Salmon, Halibut, and Trout",
+      "recallingFirm": "Krasnyi Oktyabr Inc.",
+      "productDescription": "Cold Smoked Salmon, Halibut, and Trout",
+      "brandNames": [
+        "Starfish Seafood"
+      ],
+      "productNames": [
+        "Cold Smoked Salmon, Halibut, and Trout"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-09",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-09",
+        "brand": "Starfish Seafood",
+        "product": "Cold Smoked Salmon, Halibut, and Trout",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Listeria monocytogenes",
+        "company": "Krasnyi Oktyabr Inc.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
+      },
+      "searchText": "krasnyi oktyabr inc. starfish seafood cold smoked salmon, halibut, and trout potential to be contaminated with listeria monocytogenes",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-84481900ebb4da8e",
+      "sourceRecordId": "PUBLIC-84481900ebb4da8e",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-09",
+        "ageDaysAtRefresh": 4,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "recallingFirm": "Oliva LLC.",
+      "productDescription": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "brandNames": [
+        "Riad's Oliva to Go"
+      ],
+      "productNames": [
+        "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared sesame allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-09",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-09",
+        "brand": "Riad's Oliva to Go",
+        "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared sesame allergen",
+        "company": "Oliva LLC.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
+      },
+      "searchText": "oliva llc. riad's oliva to go baba ghanouj, spicy baba ghanouj, and hummus undeclared sesame allergen",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-84481900ebb4da8e",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-14939e4d2b0851fc",
+      "sourceRecordId": "PUBLIC-14939e4d2b0851fc",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-08",
+        "ageDaysAtRefresh": 5,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Broccoli Sprouting Seeds",
+      "recallingFirm": "Gardeners Basics",
+      "productDescription": "Broccoli Sprouting Seeds",
+      "brandNames": [
+        "Gardeners Basics"
+      ],
+      "productNames": [
+        "Broccoli Sprouting Seeds"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Product may be contaminated with Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-08",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-08",
+        "brand": "Gardeners Basics",
+        "product": "Broccoli Sprouting Seeds",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Product may be contaminated with Salmonella",
+        "company": "Gardeners Basics",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination"
+      },
+      "searchText": "gardeners basics gardeners basics broccoli sprouting seeds product may be contaminated with salmonella",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-14939e4d2b0851fc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-a5a3dcb8059eb06c",
+      "sourceRecordId": "PUBLIC-a5a3dcb8059eb06c",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-07",
+        "ageDaysAtRefresh": 6,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Broccoli Seeds - Calabrese",
+      "recallingFirm": "Eden Brothers LLC",
+      "productDescription": "Broccoli Seeds - Calabrese",
+      "brandNames": [
+        "EDEN BROTHERS"
+      ],
+      "productNames": [
+        "Broccoli Seeds - Calabrese"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-07",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-07",
+        "brand": "EDEN BROTHERS",
+        "product": "Broccoli Seeds - Calabrese",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Salmonella",
+        "company": "Eden Brothers LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination"
+      },
+      "searchText": "eden brothers llc eden brothers broccoli seeds - calabrese potential to be contaminated with salmonella",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-a5a3dcb8059eb06c",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "id": "USDA-PHA-10062026-01",
       "sourceRecordId": "PHA-10062026-01",
@@ -173,6 +455,153 @@
         "field_has_spanish": "False"
       },
       "searchText": "fsis issues public health alert for ineligible chicken vienna-style sausage products illegally imported from jamaica ['\u2022\\t140-g. cans of \u201cgrace ready to eat chicken vienna sausages.\u201d ', '\u2022\\t140-g. cans of \u201cgrace ready to eat chicken vienna sausages hot &amp; spicy.\u201d '] washington, october 6, 2026 \u2013 the u.s. department of agriculture\u2019s food safety and inspection service (fsis) is issuing a public health alert for canned chicken vienna-style sausages that were illegally imported from jamaica, a country that is not eligible to export meat or poultry products to the united states. fsis is continuing to investigate how these products entered the country. the following products are subject to the public health alert, regardless of the product date [ view labels ]:&nbsp; 140-g. cans of \u201cgrace ready to eat chicken vienna sausages.\u201d&nbsp; 140-g. cans of \u201cgrace ready to eat chicken vienna sausages hot &amp; spicy.\u201d&nbsp; the products bear establishment number \u201cest. no g-01\u201d inside the jamaica mark of inspection. the importer subsequently distributed the product to retail locations in alabama, florida, georgia, maryland, and texas. the problem was discovered during routine fsis surveillance activities of imported products in commerce.&nbsp; there have been no confirmed reports of illness or injury due to consumption of these products. anyone concerned about an illness or injury should contact a health care provider.&nbsp; fsis is concerned that some product may be in consumers\u2019 pantries.&nbsp;consumers who have purchased these products are urged not to consume them.&nbsp;these products should be thrown away or returned to the place of purchase. media and consumers with questions regarding the public health alert can contact sandra campbell, owner, at 305-887-9523 or&nbsp; purecaribbeandist@gmail.com &nbsp;.&nbsp; consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to&nbsp; mphotline@usda.gov .&nbsp;for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at&nbsp; https://foodcomplaint.fsis.usda.gov/eccf/ . ['\\n company contact\\n \\n company contact\\n sandra campbell\\n 305-887-9523\\n purecaribbeandist@gmail.com\\n \\n\\n']"
+    },
+    {
+      "id": "FDA-PUBLIC-6b7f5a9a28efaebc",
+      "sourceRecordId": "PUBLIC-6b7f5a9a28efaebc",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-05",
+        "ageDaysAtRefresh": 8,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Nature's Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+      "recallingFirm": "Flowers Foods, Inc.",
+      "productDescription": "Nature's Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+      "brandNames": [
+        "Nature's Own"
+      ],
+      "productNames": [
+        "Nature's Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "20oz",
+        "40 oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared milk allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-05",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-05",
+        "brand": "Nature's Own",
+        "product": "Nature's Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared milk allergen",
+        "company": "Flowers Foods, Inc.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk"
+      },
+      "searchText": "flowers foods, inc. nature's own nature's own hawaiian bread, 20oz single loaf and 40 oz 2-pack undeclared milk allergen",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-6b7f5a9a28efaebc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-835c7aabc1722afe",
+      "sourceRecordId": "PUBLIC-835c7aabc1722afe",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-03",
+        "ageDaysAtRefresh": 10,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
+      "recallingFirm": "Saint Francis Apizza LLC",
+      "productDescription": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
+      "brandNames": [
+        "Saint Francis"
+      ],
+      "productNames": [
+        "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared soy allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-03",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-03",
+        "brand": "Saint Francis",
+        "product": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
+        "productType": "Food & Beverages",
+        "reason": "Undeclared soy allergen",
+        "company": "Saint Francis Apizza LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy"
+      },
+      "searchText": "saint francis apizza llc saint francis pepperoni, plain cheese, supreme, and mushroom and onion frozen pizzas undeclared soy allergen",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-835c7aabc1722afe",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
     },
     {
       "id": "USDA-025-2026",
