@@ -1,19 +1,6 @@
 {
-  "checkedAt": "2026-10-12T15:15:47Z",
+  "checkedAt": "2026-10-13T00:35:49Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "Starfish Seafood"
-      ],
-      "date": "2026-10-09",
-      "id": "FDA-PUBLIC-6ec815c102b54cfc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
-      "product": "Cold Smoked Salmon, Halibut, and Trout",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "Riad's Oliva to Go"
@@ -23,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
       "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
       "reason": "Undeclared sesame allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Starfish Seafood"
+      ],
+      "date": "2026-10-09",
+      "id": "FDA-PUBLIC-6ec815c102b54cfc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "product": "Cold Smoked Salmon, Halibut, and Trout",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -81,11 +81,33 @@
     },
     {
       "brandNames": [],
+      "date": "2026-09-24",
+      "id": "FDA-H-1402-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Lior brand Cinnamon Ground Seasoning; 90g transparent plastic container; UPC 794711005484.",
+      "reason": "Product contains elevated levels of lead.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
       "date": "2026-09-15",
       "id": "FDA-H-1394-2026",
       "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "product": "So Delicious Dairy Free Salted Caramel Cluster Cashewmilk, Non-Dairy Frozen Dessert. 16 oz paper tub with an attached paper lid. Sold as a single unit multi serving tub. UPC 744473 476138. Distributed by For So Delicious Dairy Free Eugene, OR 97402.",
       "reason": "Product may contain foreign material: small stones and other hard objects.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-15",
+      "id": "FDA-H-1400-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Cloud Cafe branded Collagen Milk; Strawberry Milk Zero; Caffeine Free; 10pc/box",
+      "reason": "Undeclared allergen ingredient (fish)",
       "sourceSurfaces": [
         "enforcement"
       ]
@@ -130,6 +152,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-09-14",
+      "id": "FDA-H-1401-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Organiccs Absolutely Pure, Type-1 Hydrolyzed Collagen Peptides, All-Natural Aid for Strengthening Hair, Skin, Nails, Muscles & Joints, 180 Veggie Capsules. UPC: none",
+      "reason": "Undeclared shellfish (crab shell): source of ingredient Glucosamine sulfate",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Centric Compounding"
       ],
@@ -140,6 +173,50 @@
       "reason": "Elevated Endotoxin level",
       "sourceSurfaces": [
         "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-11",
+      "id": "FDA-H-1407-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Todd's Seeds Salad Sprouting Mixture - Broccoli, Mustard, Alfalfa and Cabbage, packaged in heat-sealed resealable bags in the following sizes: 1/4 lb., 1/2 lb., and 1 lb.",
+      "reason": "Products contain alfalfa seed recalled by the supplier and may be contaminated with E. coli and/or Salmonella (downstream recall)",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-11",
+      "id": "FDA-H-1405-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Todd's Seeds Broccoli & Friends Sprouting Seed Mix - Broccoli, Alfalfa, Radish, Clover, packaged in 1 oz. sample packets and heat-sealed resealable bags in the following sizes: 1/4 lb., 1/2 lb., 1 lb., 2.5 lb., and 5 lb.",
+      "reason": "Products contain alfalfa seed recalled by the supplier and may be contaminated with E. coli and/or Salmonella (downstream recall)",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-11",
+      "id": "FDA-H-1409-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Todd's Seeds Variety Pack of Sprouting Seeds - Broccoli, Alfalfa, Radish Mung & Clover, packaged as a multi-pack consisting of 2 oz. heat-sealed resealable bags each",
+      "reason": "Products contain alfalfa seed recalled by the supplier and may be contaminated with E. coli and/or Salmonella (downstream recall)",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-09-11",
+      "id": "FDA-H-1408-2026",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Todd's Seeds Alfalfa & Mung Bundle (1lb each), packaged separately in heat-sealed resealable bags",
+      "reason": "Products contain alfalfa seed recalled by the supplier and may be contaminated with E. coli and/or Salmonella (downstream recall)",
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -167,121 +244,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-09-08",
-      "id": "FDA-H-1395-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all dates through and including 10/7/2026 Packaging: Plastic wrapped by slice Net Wt.: Various, cut from whole wheel and priced by weight with Whole Foods Market scale label PLUs: 54670, 57953",
-      "reason": "Undeclared Egg Allergen",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-09-08",
-      "id": "FDA-H-1393-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "American Ginsengs. PRODUCT OF WISCONSIN. NET WT: 4 oz. NET WT. 8 oz.",
-      "reason": "Potential contamination with pesticides.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "FI"
-      ],
-      "date": "2026-09-08",
-      "id": "FDA-ANN-9895db7507beaede",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination",
-      "product": "Supplements",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "BMC"
-      ],
-      "date": "2026-09-08",
-      "id": "FDA-ANN-431458e3050c8f5b",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect",
-      "product": "Luna G3 APAP (Model LG3600)",
-      "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Created Fresh!"
-      ],
-      "date": "2026-09-08",
-      "id": "FDA-ANN-cc6138b08ae2f71e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches",
-      "product": "Cranberry Chicken Salad Wedge Sandwich",
-      "reason": "Improperly declared egg allergen",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Made Fresh Salads, Northside"
-      ],
-      "date": "2026-09-06",
-      "id": "FDA-ANN-9fd1a57afef0194a",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/made-fresh-salads-inc-recalls-ready-eat-deli-style-salads-and-cream-cheese-because-possible-health",
-      "product": "Ready to Eat Deli Style Salads and cream cheese",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-09-04",
-      "id": "FDA-H-1390-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Evergreen Fresh Sprouts LLC, Broccoli Sprouts, packaged in clear plastic zip lock bag, net wt. 4oz, UPC 8 38796 00105 1. Firm distributed cases (6/4oz. bags per case) to distributor.",
-      "reason": "Salmonella",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
     }
   ],
-  "generatedAt": "2026-10-12T15:15:47Z",
+  "generatedAt": "2026-10-13T00:35:49Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-12T15:15:47Z",
+      "checkedAt": "2026-10-13T00:35:49Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-12T15:15:47Z",
+      "lastSuccessfulUpdate": "2026-10-13T00:35:49Z",
       "newestRecallDate": "2026-10-09",
       "qualityStatus": "current",
-      "recordCount": 2149,
+      "recordCount": 2160,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-12T15:15:47Z",
+          "checkedAt": "2026-10-13T00:35:49Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-12T15:15:47Z",
-          "newestRecallDate": "2026-09-15",
-          "recordCount": 2777,
+          "checkedAt": "2026-10-13T00:35:49Z",
+          "newestRecallDate": "2026-09-24",
+          "recordCount": 2790,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-12T15:15:47Z",
+          "checkedAt": "2026-10-13T00:35:49Z",
           "newestRecallDate": "2026-10-09",
           "recordCount": 6,
           "success": true
@@ -289,12 +281,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-12T15:15:47Z",
+      "checkedAt": "2026-10-13T00:35:49Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-12T15:15:47Z",
+      "lastSuccessfulUpdate": "2026-10-13T00:35:49Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
