@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T11:46:17Z",
+  "generatedAt": "2026-10-14T17:06:38Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,14 +14,14 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-14T11:46:17Z",
-    "lastSuccessfulUpdate": "2026-10-14T11:46:17Z",
+    "checkedAt": "2026-10-14T17:06:38Z",
+    "lastSuccessfulUpdate": "2026-10-14T17:06:38Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-14T11:46:17Z",
-        "lastSuccessfulUpdate": "2026-10-14T11:46:17Z",
-        "recordCount": 2160,
+        "checkedAt": "2026-10-14T17:06:38Z",
+        "lastSuccessfulUpdate": "2026-10-14T17:06:38Z",
+        "recordCount": 2159,
         "newestRecallDate": "2026-10-09",
         "current": true,
         "qualityStatus": "current",
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-14T11:46:17Z",
+            "checkedAt": "2026-10-14T17:06:38Z",
             "recordCount": 216,
             "newestRecallDate": "2026-09-15"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-14T11:46:17Z",
-            "recordCount": 6,
+            "checkedAt": "2026-10-14T17:06:38Z",
+            "recordCount": 5,
             "newestRecallDate": "2026-10-09"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-14T11:46:17Z",
+            "checkedAt": "2026-10-14T17:06:38Z",
             "recordCount": 2790,
             "newestRecallDate": "2026-09-24"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-14T11:46:17Z",
-        "retrievedAt": "2026-10-14T11:46:17Z",
-        "lastSuccessfulUpdate": "2026-10-14T11:46:17Z",
+        "checkedAt": "2026-10-14T17:06:38Z",
+        "retrievedAt": "2026-10-14T17:06:38Z",
+        "lastSuccessfulUpdate": "2026-10-14T17:06:38Z",
         "newestRecallDate": "2026-10-06",
         "recordCount": 2030,
         "error": null,
@@ -64,7 +64,7 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2160,
+      "FDA": 2159,
       "USDA": 1241
     },
     "recordsWithIdentifierCandidates": 37,
@@ -525,78 +525,6 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-6b7f5a9a28efaebc",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-835c7aabc1722afe",
-      "sourceRecordId": "PUBLIC-835c7aabc1722afe",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-03",
-        "ageDaysAtRefresh": 11,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
-      "recallingFirm": "Saint Francis Apizza LLC",
-      "productDescription": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
-      "brandNames": [
-        "Saint Francis"
-      ],
-      "productNames": [
-        "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Undeclared soy allergen",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-03",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-03",
-        "brand": "Saint Francis",
-        "product": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
-        "productType": "Food & Beverages",
-        "reason": "Undeclared soy allergen",
-        "company": "Saint Francis Apizza LLC",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy"
-      },
-      "searchText": "saint francis apizza llc saint francis pepperoni, plain cheese, supreme, and mushroom and onion frozen pizzas undeclared soy allergen",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-835c7aabc1722afe",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy"
         }
       ],
       "sourceSurfaces": [
