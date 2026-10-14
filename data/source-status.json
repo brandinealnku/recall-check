@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-14T17:06:38Z",
+  "checkedAt": "2026-10-14T21:37:45Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Para Bien"
+      ],
+      "date": "2026-10-14",
+      "id": "FDA-PUBLIC-62f214b9a5bcb482",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de",
+      "product": "Para Bien Al Grano",
+      "reason": "Undeclared sesame",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Starfish Seafood"
@@ -49,19 +62,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
       "product": "Broccoli Seeds - Calabrese",
       "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Nature's Own"
-      ],
-      "date": "2026-10-05",
-      "id": "FDA-PUBLIC-6b7f5a9a28efaebc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
-      "product": "Nature's Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
-      "reason": "Undeclared milk allergen",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -244,47 +244,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-14T17:06:38Z",
+  "generatedAt": "2026-10-14T21:37:45Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-14T17:06:38Z",
+      "checkedAt": "2026-10-14T21:37:45Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-14T17:06:38Z",
-      "newestRecallDate": "2026-10-09",
+      "lastSuccessfulUpdate": "2026-10-14T21:37:45Z",
+      "newestRecallDate": "2026-10-14",
       "qualityStatus": "current",
       "recordCount": 2159,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-14T17:06:38Z",
+          "checkedAt": "2026-10-14T21:37:45Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-14T17:06:38Z",
+          "checkedAt": "2026-10-14T21:37:45Z",
           "newestRecallDate": "2026-09-24",
           "recordCount": 2790,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-14T17:06:38Z",
-          "newestRecallDate": "2026-10-09",
+          "checkedAt": "2026-10-14T21:37:45Z",
+          "newestRecallDate": "2026-10-14",
           "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-14T17:06:38Z",
+      "checkedAt": "2026-10-14T21:37:45Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-14T17:06:38Z",
+      "lastSuccessfulUpdate": "2026-10-14T21:37:45Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
