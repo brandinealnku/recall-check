@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-15T16:56:13Z",
+  "checkedAt": "2026-10-15T21:19:35Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -16,19 +16,6 @@
     },
     {
       "brandNames": [
-        "Starfish Seafood"
-      ],
-      "date": "2026-10-09",
-      "id": "FDA-PUBLIC-6ec815c102b54cfc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
-      "product": "Cold Smoked Salmon, Halibut, and Trout",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Riad's Oliva to Go"
       ],
       "date": "2026-10-09",
@@ -36,6 +23,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
       "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
       "reason": "Undeclared sesame allergen",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Starfish Seafood"
+      ],
+      "date": "2026-10-09",
+      "id": "FDA-PUBLIC-6ec815c102b54cfc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "product": "Cold Smoked Salmon, Halibut, and Trout",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -244,34 +244,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-15T16:56:13Z",
+  "generatedAt": "2026-10-15T21:19:35Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-15T16:56:13Z",
+      "checkedAt": "2026-10-15T21:19:35Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-15T16:56:13Z",
+      "lastSuccessfulUpdate": "2026-10-15T21:19:35Z",
       "newestRecallDate": "2026-10-14",
       "qualityStatus": "current",
       "recordCount": 2159,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-15T16:56:13Z",
+          "checkedAt": "2026-10-15T21:19:35Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-15T16:56:13Z",
+          "checkedAt": "2026-10-15T21:19:35Z",
           "newestRecallDate": "2026-09-24",
           "recordCount": 2790,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-15T16:56:13Z",
+          "checkedAt": "2026-10-15T21:19:35Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 6,
           "success": true
@@ -279,12 +279,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-15T16:56:13Z",
+      "checkedAt": "2026-10-15T21:19:35Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-15T16:56:13Z",
+      "lastSuccessfulUpdate": "2026-10-15T21:19:35Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
