@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-15T21:19:35Z",
+  "checkedAt": "2026-10-16T04:25:51Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Family Farmstead"
+      ],
+      "date": "2026-10-15",
+      "id": "FDA-PUBLIC-f7a86c6203a31c08",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o157h7",
+      "product": "Raw Mild Cheddar Cheese",
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (E. Coli O157:H7)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Para Bien"
@@ -32,9 +45,9 @@
         "Starfish Seafood"
       ],
       "date": "2026-10-09",
-      "id": "FDA-PUBLIC-6ec815c102b54cfc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
-      "product": "Cold Smoked Salmon, Halibut, and Trout",
+      "id": "FDA-PUBLIC-5b72571fb0810e8c",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
+      "product": "Cold Smoked Salmon",
       "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
         "publicAlerts"
@@ -231,60 +244,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-09-08",
-      "id": "FDA-H-1395-2026",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Fromagerie Coop de Mean Cabricharme and Belgium Cabricharme Shelf life: 30 days, all dates through and including 10/7/2026 Packaging: Plastic wrapped by slice Net Wt.: Various, cut from whole wheel and priced by weight with Whole Foods Market scale label PLUs: 54670, 57953",
-      "reason": "Undeclared Egg Allergen",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
     }
   ],
-  "generatedAt": "2026-10-15T21:19:35Z",
+  "generatedAt": "2026-10-16T04:25:51Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-15T21:19:35Z",
+      "checkedAt": "2026-10-16T04:25:51Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-15T21:19:35Z",
-      "newestRecallDate": "2026-10-14",
+      "lastSuccessfulUpdate": "2026-10-16T04:25:51Z",
+      "newestRecallDate": "2026-10-15",
       "qualityStatus": "current",
       "recordCount": 2159,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-15T21:19:35Z",
+          "checkedAt": "2026-10-16T04:25:51Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-15T21:19:35Z",
+          "checkedAt": "2026-10-16T04:25:51Z",
           "newestRecallDate": "2026-09-24",
-          "recordCount": 2790,
+          "recordCount": 2789,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-15T21:19:35Z",
-          "newestRecallDate": "2026-10-14",
-          "recordCount": 6,
+          "checkedAt": "2026-10-16T04:25:51Z",
+          "newestRecallDate": "2026-10-15",
+          "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-15T21:19:35Z",
+      "checkedAt": "2026-10-16T04:25:51Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-15T21:19:35Z",
+      "lastSuccessfulUpdate": "2026-10-16T04:25:51Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
