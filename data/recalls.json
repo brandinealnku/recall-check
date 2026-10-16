@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T04:25:51Z",
+  "generatedAt": "2026-10-16T11:17:13Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,14 +14,14 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-16T04:25:51Z",
-    "lastSuccessfulUpdate": "2026-10-16T04:25:51Z",
+    "checkedAt": "2026-10-16T11:17:13Z",
+    "lastSuccessfulUpdate": "2026-10-16T11:17:13Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-16T04:25:51Z",
-        "lastSuccessfulUpdate": "2026-10-16T04:25:51Z",
-        "recordCount": 2159,
+        "checkedAt": "2026-10-16T11:17:13Z",
+        "lastSuccessfulUpdate": "2026-10-16T11:17:13Z",
+        "recordCount": 2158,
         "newestRecallDate": "2026-10-15",
         "current": true,
         "qualityStatus": "current",
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-16T04:25:51Z",
+            "checkedAt": "2026-10-16T11:17:13Z",
             "recordCount": 216,
             "newestRecallDate": "2026-09-15"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-16T04:25:51Z",
-            "recordCount": 7,
+            "checkedAt": "2026-10-16T11:17:13Z",
+            "recordCount": 6,
             "newestRecallDate": "2026-10-15"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-16T04:25:51Z",
+            "checkedAt": "2026-10-16T11:17:13Z",
             "recordCount": 2789,
             "newestRecallDate": "2026-09-24"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-16T04:25:51Z",
-        "retrievedAt": "2026-10-16T04:25:51Z",
-        "lastSuccessfulUpdate": "2026-10-16T04:25:51Z",
+        "checkedAt": "2026-10-16T11:17:13Z",
+        "retrievedAt": "2026-10-16T11:17:13Z",
+        "lastSuccessfulUpdate": "2026-10-16T11:17:13Z",
         "newestRecallDate": "2026-10-06",
         "recordCount": 2030,
         "error": null,
@@ -64,7 +64,7 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2159,
+      "FDA": 2158,
       "USDA": 1241
     },
     "recordsWithIdentifierCandidates": 37,
@@ -433,78 +433,6 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-14939e4d2b0851fc",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-a5a3dcb8059eb06c",
-      "sourceRecordId": "PUBLIC-a5a3dcb8059eb06c",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-07",
-        "ageDaysAtRefresh": 9,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Broccoli Seeds - Calabrese",
-      "recallingFirm": "Eden Brothers LLC",
-      "productDescription": "Broccoli Seeds - Calabrese",
-      "brandNames": [
-        "EDEN BROTHERS"
-      ],
-      "productNames": [
-        "Broccoli Seeds - Calabrese"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Salmonella",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-07",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-07",
-        "brand": "EDEN BROTHERS",
-        "product": "Broccoli Seeds - Calabrese",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Salmonella",
-        "company": "Eden Brothers LLC",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination"
-      },
-      "searchText": "eden brothers llc eden brothers broccoli seeds - calabrese potential to be contaminated with salmonella",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-a5a3dcb8059eb06c",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination"
         }
       ],
       "sourceSurfaces": [
