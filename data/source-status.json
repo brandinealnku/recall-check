@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-16T11:17:13Z",
+  "checkedAt": "2026-10-16T16:34:37Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Starfish Seafood"
+      ],
+      "date": "2026-10-16",
+      "id": "FDA-PUBLIC-df4b6e8010f64200",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
+      "product": "Cold Smoked Salmon",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Family Farmstead"
@@ -36,19 +49,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
       "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
       "reason": "Undeclared sesame allergen",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Starfish Seafood"
-      ],
-      "date": "2026-10-09",
-      "id": "FDA-PUBLIC-5b72571fb0810e8c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
-      "product": "Cold Smoked Salmon",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -244,47 +244,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-16T11:17:13Z",
+  "generatedAt": "2026-10-16T16:34:37Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-16T11:17:13Z",
+      "checkedAt": "2026-10-16T16:34:37Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-16T11:17:13Z",
-      "newestRecallDate": "2026-10-15",
+      "lastSuccessfulUpdate": "2026-10-16T16:34:37Z",
+      "newestRecallDate": "2026-10-16",
       "qualityStatus": "current",
       "recordCount": 2158,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-16T11:17:13Z",
+          "checkedAt": "2026-10-16T16:34:37Z",
           "newestRecallDate": "2026-09-15",
           "recordCount": 216,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-16T11:17:13Z",
+          "checkedAt": "2026-10-16T16:34:37Z",
           "newestRecallDate": "2026-09-24",
           "recordCount": 2789,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-16T11:17:13Z",
-          "newestRecallDate": "2026-10-15",
-          "recordCount": 6,
+          "checkedAt": "2026-10-16T16:34:37Z",
+          "newestRecallDate": "2026-10-16",
+          "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-16T11:17:13Z",
+      "checkedAt": "2026-10-16T16:34:37Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-16T11:17:13Z",
+      "lastSuccessfulUpdate": "2026-10-16T16:34:37Z",
       "newestRecallDate": "2026-10-06",
       "qualityStatus": "current",
       "recordCount": 2030,
