@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T15:29:15Z",
+  "generatedAt": "2026-10-17T20:32:56Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,15 +14,15 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-17T15:29:15Z",
-    "lastSuccessfulUpdate": "2026-10-17T15:29:15Z",
+    "checkedAt": "2026-10-17T20:32:56Z",
+    "lastSuccessfulUpdate": "2026-10-17T20:32:56Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-17T15:29:15Z",
-        "lastSuccessfulUpdate": "2026-10-17T15:29:15Z",
-        "recordCount": 2157,
-        "newestRecallDate": "2026-10-16",
+        "checkedAt": "2026-10-17T20:32:56Z",
+        "lastSuccessfulUpdate": "2026-10-17T20:32:56Z",
+        "recordCount": 2158,
+        "newestRecallDate": "2026-10-17",
         "current": true,
         "qualityStatus": "current",
         "coverageComplete": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-17T15:29:15Z",
+            "checkedAt": "2026-10-17T20:32:56Z",
             "recordCount": 216,
             "newestRecallDate": "2026-09-15"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-17T15:29:15Z",
-            "recordCount": 7,
-            "newestRecallDate": "2026-10-16"
+            "checkedAt": "2026-10-17T20:32:56Z",
+            "recordCount": 8,
+            "newestRecallDate": "2026-10-17"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-17T15:29:15Z",
+            "checkedAt": "2026-10-17T20:32:56Z",
             "recordCount": 2788,
             "newestRecallDate": "2026-09-24"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-17T15:29:15Z",
-        "retrievedAt": "2026-10-17T15:29:15Z",
-        "lastSuccessfulUpdate": "2026-10-17T15:29:15Z",
+        "checkedAt": "2026-10-17T20:32:56Z",
+        "retrievedAt": "2026-10-17T20:32:56Z",
+        "lastSuccessfulUpdate": "2026-10-17T20:32:56Z",
         "newestRecallDate": "2026-10-06",
         "recordCount": 2030,
         "error": null,
@@ -64,13 +64,85 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2157,
+      "FDA": 2158,
       "USDA": 1241
     },
     "recordsWithIdentifierCandidates": 37,
     "warnings": []
   },
   "recalls": [
+    {
+      "id": "FDA-PUBLIC-08e9c69eb36d187f",
+      "sourceRecordId": "PUBLIC-08e9c69eb36d187f",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-17",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces",
+      "recallingFirm": "Lidl US",
+      "productDescription": "Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces",
+      "brandNames": [
+        "Gelatelli"
+      ],
+      "productNames": [
+        "Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential contamination with Listeria monocytogenes",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-17",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-17",
+        "brand": "Gelatelli",
+        "product": "Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential contamination with Listeria monocytogenes",
+        "company": "Lidl US",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk"
+      },
+      "searchText": "lidl us gelatelli coffee & vanilla gelato with coffee sauce & cookie pieces potential contamination with listeria monocytogenes",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-08e9c69eb36d187f",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "id": "FDA-PUBLIC-df4b6e8010f64200",
       "sourceRecordId": "PUBLIC-df4b6e8010f64200",
