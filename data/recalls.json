@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T11:30:19Z",
+  "generatedAt": "2026-10-20T16:58:54Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,14 +14,14 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-20T11:30:19Z",
-    "lastSuccessfulUpdate": "2026-10-20T11:30:19Z",
+    "checkedAt": "2026-10-20T16:58:54Z",
+    "lastSuccessfulUpdate": "2026-10-20T16:58:54Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-20T11:30:19Z",
-        "lastSuccessfulUpdate": "2026-10-20T11:30:19Z",
-        "recordCount": 2098,
+        "checkedAt": "2026-10-20T16:58:54Z",
+        "lastSuccessfulUpdate": "2026-10-20T16:58:54Z",
+        "recordCount": 2127,
         "newestRecallDate": "2026-10-17",
         "current": true,
         "qualityStatus": "current",
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-20T11:30:19Z",
-            "recordCount": 216,
-            "newestRecallDate": "2026-09-15"
+            "checkedAt": "2026-10-20T16:58:54Z",
+            "recordCount": 251,
+            "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-20T11:30:19Z",
+            "checkedAt": "2026-10-20T16:58:54Z",
             "recordCount": 8,
             "newestRecallDate": "2026-10-17"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-20T11:30:19Z",
+            "checkedAt": "2026-10-20T16:58:54Z",
             "recordCount": 2720,
             "newestRecallDate": "2026-09-24"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-20T11:30:19Z",
-        "retrievedAt": "2026-10-20T11:30:19Z",
-        "lastSuccessfulUpdate": "2026-10-20T11:30:19Z",
+        "checkedAt": "2026-10-20T16:58:54Z",
+        "retrievedAt": "2026-10-20T16:58:54Z",
+        "lastSuccessfulUpdate": "2026-10-20T16:58:54Z",
         "newestRecallDate": "2026-10-17",
         "recordCount": 2031,
         "error": null,
@@ -64,7 +64,7 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2098,
+      "FDA": 2127,
       "USDA": 1242
     },
     "recordsWithIdentifierCandidates": 37,
@@ -314,10 +314,16 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-4d1ec5606ded176d",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -466,10 +472,92 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-1f8667dea2592743",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-ea9963a33edf6fdb",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-6c695541c93c2f22",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame"
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-fcad7ab7453b09db",
+      "sourceRecordId": "ANN-fcad7ab7453b09db",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-14",
+        "ageDaysAtRefresh": 6,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Par Health USA, LLC \u2014 Argatroban Injection 250 mg/2.5 mL (100 mg/mL)",
+      "recallingFirm": "Par Health USA, LLC",
+      "productDescription": "Argatroban Injection 250 mg/2.5 mL (100 mg/mL)",
+      "brandNames": [
+        "Par Health and Endo USA"
+      ],
+      "productNames": [
+        "Argatroban Injection 250 mg/2.5 mL (100 mg/mL)"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "2.5 mL"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Presence of particulate matter, identified as cellulose, polystyrene, polyethylene terephthalate, stopper material, and possibly stainless steel",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-14",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-argatroban-injection-due-presence-particulate-matter",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Par Health and Endo USA",
+        "company": "Par Health USA, LLC",
+        "date": "10/14/2026",
+        "productdescription": "Argatroban Injection 250 mg/2.5 mL (100 mg/mL)",
+        "producttype": "Drugs",
+        "reason": "Presence of particulate matter, identified as cellulose, polystyrene, polyethylene terephthalate, stopper material, and possibly stainless steel",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-argatroban-injection-due-presence-particulate-matter"
+      },
+      "searchText": "par health usa, llc par health and endo usa argatroban injection 250 mg/2.5 ml (100 mg/ml) presence of particulate matter, identified as cellulose, polystyrene, polyethylene terephthalate, stopper material, and possibly stainless steel par health usa, llc \u2014 argatroban injection 250 mg/2.5 ml (100 mg/ml)",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-fcad7ab7453b09db",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-argatroban-injection-due-presence-particulate-matter"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
       ]
     },
     {
@@ -494,7 +582,8 @@
       "recallingFirm": "Oliva LLC.",
       "productDescription": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
       "brandNames": [
-        "Riad's Oliva to Go"
+        "Riad's Oliva to Go",
+        "Riad&#039;s Oliva to Go"
       ],
       "productNames": [
         "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus"
@@ -538,10 +627,85 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-84481900ebb4da8e",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-63b71c827137f104",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus"
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-75af36af5ee82010",
+      "sourceRecordId": "ANN-75af36af5ee82010",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-09",
+        "ageDaysAtRefresh": 11,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Par Health \u2014 Brevital Sodium 500 mg/vial for Injection",
+      "recallingFirm": "Par Health",
+      "productDescription": "Brevital Sodium 500 mg/vial for Injection",
+      "brandNames": [
+        "Par Pharmaceutical"
+      ],
+      "productNames": [
+        "Brevital Sodium 500 mg/vial for Injection"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Presence of particulate matter identified as cellulose",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-09",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-brevitalr-sodium-500-mgvial-civ-methohexital",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Par Pharmaceutical",
+        "company": "Par Health",
+        "date": "10/09/2026",
+        "productdescription": "Brevital Sodium 500 mg/vial for Injection",
+        "producttype": "Drugs",
+        "reason": "Presence of particulate matter identified as cellulose",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-brevitalr-sodium-500-mgvial-civ-methohexital"
+      },
+      "searchText": "par health par pharmaceutical brevital sodium 500 mg/vial for injection presence of particulate matter identified as cellulose par health \u2014 brevital sodium 500 mg/vial for injection",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-75af36af5ee82010",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-brevitalr-sodium-500-mgvial-civ-methohexital"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
       ]
     },
     {
@@ -610,10 +774,226 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-14939e4d2b0851fc",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-a57a891ede114611",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination"
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-6186be8a245a821c",
+      "sourceRecordId": "ANN-6186be8a245a821c",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-07",
+        "ageDaysAtRefresh": 13,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Leader Formulas, LLC. \u2014 Preworkout Dietary Supplement Powder",
+      "recallingFirm": "Leader Formulas, LLC.",
+      "productDescription": "Preworkout Dietary Supplement Powder",
+      "brandNames": [
+        "RAPTURE"
+      ],
+      "productNames": [
+        "Preworkout Dietary Supplement Powder"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Product contains 1,3-Dimethylamylamine (DMAA)",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-07",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/leader-formulas-llc-issues-voluntary-nationwide-recall-rapture-preworkout-due-presence-13",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "RAPTURE",
+        "company": "Leader Formulas, LLC.",
+        "date": "10/07/2026",
+        "productdescription": "Preworkout Dietary Supplement Powder",
+        "producttype": "Dietary Supplements",
+        "reason": "Product contains 1,3-Dimethylamylamine (DMAA)",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/leader-formulas-llc-issues-voluntary-nationwide-recall-rapture-preworkout-due-presence-13"
+      },
+      "searchText": "leader formulas, llc. rapture preworkout dietary supplement powder product contains 1,3-dimethylamylamine (dmaa) leader formulas, llc. \u2014 preworkout dietary supplement powder",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-6186be8a245a821c",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/leader-formulas-llc-issues-voluntary-nationwide-recall-rapture-preworkout-due-presence-13"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-5c6d9a536ce6b165",
+      "sourceRecordId": "ANN-5c6d9a536ce6b165",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-07",
+        "ageDaysAtRefresh": 13,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Pacific Health Sciences \u2014 Babies&#039; Magic Tea brand Baby Sleep Gripe Water 4 oz bottle",
+      "recallingFirm": "Pacific Health Sciences",
+      "productDescription": "Babies&#039; Magic Tea brand Baby Sleep Gripe Water 4 oz bottle",
+      "brandNames": [
+        "Babies&#039; Magic Tea"
+      ],
+      "productNames": [
+        "Babies&#039",
+        "Magic Tea brand Baby Sleep Gripe Water 4 oz bottle"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "4 oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Product contains undeclared ethanol, methanol, and isopropanol",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-07",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pacific-health-sciences-voluntarily-recalls-one-lot-babies-magic-tea-brand-baby-sleep-gripe-water",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Babies&#039; Magic Tea",
+        "company": "Pacific Health Sciences",
+        "date": "10/07/2026",
+        "productdescription": "Babies&#039; Magic Tea brand Baby Sleep Gripe Water 4 oz bottle",
+        "producttype": "Dietary Supplements",
+        "reason": "Product contains undeclared ethanol, methanol, and isopropanol",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pacific-health-sciences-voluntarily-recalls-one-lot-babies-magic-tea-brand-baby-sleep-gripe-water"
+      },
+      "searchText": "pacific health sciences babies&#039; magic tea babies&#039; magic tea brand baby sleep gripe water 4 oz bottle product contains undeclared ethanol, methanol, and isopropanol pacific health sciences \u2014 babies&#039; magic tea brand baby sleep gripe water 4 oz bottle",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-5c6d9a536ce6b165",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pacific-health-sciences-voluntarily-recalls-one-lot-babies-magic-tea-brand-baby-sleep-gripe-water"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-74d35dbb2c4603ad",
+      "sourceRecordId": "ANN-74d35dbb2c4603ad",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-07",
+        "ageDaysAtRefresh": 13,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Eden Brothers LLC \u2014 Broccoli Seeds - Calabrese",
+      "recallingFirm": "Eden Brothers LLC",
+      "productDescription": "Broccoli Seeds - Calabrese",
+      "brandNames": [
+        "EDEN BROTHERS"
+      ],
+      "productNames": [
+        "Broccoli Seeds - Calabrese"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-07",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "EDEN BROTHERS",
+        "company": "Eden Brothers LLC",
+        "date": "10/07/2026",
+        "productdescription": "Broccoli Seeds - Calabrese",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Salmonella",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination"
+      },
+      "searchText": "eden brothers llc eden brothers broccoli seeds - calabrese potential to be contaminated with salmonella eden brothers llc \u2014 broccoli seeds - calabrese",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-74d35dbb2c4603ad",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
       ]
     },
     {
@@ -714,6 +1094,217 @@
       "searchText": "fsis issues public health alert for ineligible chicken vienna-style sausage products illegally imported from jamaica ['\u2022\\t140-g. cans of \u201cgrace ready to eat chicken vienna sausages.\u201d ', '\u2022\\t140-g. cans of \u201cgrace ready to eat chicken vienna sausages hot &amp; spicy.\u201d '] washington, october 6, 2026 \u2013 the u.s. department of agriculture\u2019s food safety and inspection service (fsis) is issuing a public health alert for canned chicken vienna-style sausages that were illegally imported from jamaica, a country that is not eligible to export meat or poultry products to the united states. fsis is continuing to investigate how these products entered the country. the following products are subject to the public health alert, regardless of the product date [ view labels ]:&nbsp; 140-g. cans of \u201cgrace ready to eat chicken vienna sausages.\u201d&nbsp; 140-g. cans of \u201cgrace ready to eat chicken vienna sausages hot &amp; spicy.\u201d&nbsp; the products bear establishment number \u201cest. no g-01\u201d inside the jamaica mark of inspection. the importer subsequently distributed the product to retail locations in alabama, florida, georgia, maryland, and texas. the problem was discovered during routine fsis surveillance activities of imported products in commerce.&nbsp; there have been no confirmed reports of illness or injury due to consumption of these products. anyone concerned about an illness or injury should contact a health care provider.&nbsp; fsis is concerned that some product may be in consumers\u2019 pantries.&nbsp;consumers who have purchased these products are urged not to consume them.&nbsp;these products should be thrown away or returned to the place of purchase. media and consumers with questions regarding the public health alert can contact sandra campbell, owner, at 305-887-9523 or&nbsp; purecaribbeandist@gmail.com &nbsp;.&nbsp; consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to&nbsp; mphotline@usda.gov .&nbsp;for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at&nbsp; https://foodcomplaint.fsis.usda.gov/eccf/ . ['\\n company contact\\n \\n company contact\\n sandra campbell\\n 305-887-9523\\n purecaribbeandist@gmail.com\\n \\n\\n']"
     },
     {
+      "id": "FDA-ANN-81d077c777cd3774",
+      "sourceRecordId": "ANN-81d077c777cd3774",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-06",
+        "ageDaysAtRefresh": 14,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Nova Biomedical \u2014 StatStrip Glucose Hospital Meter System",
+      "recallingFirm": "Nova Biomedical",
+      "productDescription": "StatStrip Glucose Hospital Meter System",
+      "brandNames": [
+        "Nova Biomedical StatStrip"
+      ],
+      "productNames": [
+        "StatStrip Glucose Hospital Meter System"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Software issue may cause a glucose result to be associated to the wrong patient",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-06",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Nova Biomedical StatStrip",
+        "company": "Nova Biomedical",
+        "date": "10/06/2026",
+        "productdescription": "StatStrip Glucose Hospital Meter System",
+        "producttype": "Medical Devices",
+        "reason": "Software issue may cause a glucose result to be associated to the wrong patient",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter"
+      },
+      "searchText": "nova biomedical nova biomedical statstrip statstrip glucose hospital meter system software issue may cause a glucose result to be associated to the wrong patient nova biomedical \u2014 statstrip glucose hospital meter system",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-81d077c777cd3774",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-198305bb09f62d7e",
+      "sourceRecordId": "ANN-198305bb09f62d7e",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-05",
+        "ageDaysAtRefresh": 15,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Flowers Foods, Inc. \u2014 Nature&#039;s Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+      "recallingFirm": "Flowers Foods, Inc.",
+      "productDescription": "Nature&#039;s Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+      "brandNames": [
+        "Nature&#039;s Own"
+      ],
+      "productNames": [
+        "Nature&#039",
+        "s Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "20oz",
+        "40 oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared milk allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-05",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 4,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Nature&#039;s Own",
+        "company": "Flowers Foods, Inc.",
+        "date": "10/05/2026",
+        "productdescription": "Nature&#039;s Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+        "producttype": "Food & Beverages, Allergens",
+        "reason": "Undeclared milk allergen",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk"
+      },
+      "searchText": "flowers foods, inc. nature&#039;s own nature&#039;s own hawaiian bread, 20oz single loaf and 40 oz 2-pack undeclared milk allergen flowers foods, inc. \u2014 nature&#039;s own hawaiian bread, 20oz single loaf and 40 oz 2-pack",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-198305bb09f62d7e",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-5085cfd2cafa0f13",
+      "sourceRecordId": "ANN-5085cfd2cafa0f13",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-03",
+        "ageDaysAtRefresh": 17,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Saint Francis Apizza LLC \u2014 Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
+      "recallingFirm": "Saint Francis Apizza LLC",
+      "productDescription": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
+      "brandNames": [
+        "Saint Francis"
+      ],
+      "productNames": [
+        "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared soy allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-03",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Saint Francis",
+        "company": "Saint Francis Apizza LLC",
+        "date": "10/03/2026",
+        "productdescription": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
+        "producttype": "Food & Beverages",
+        "reason": "Undeclared soy allergen",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy"
+      },
+      "searchText": "saint francis apizza llc saint francis pepperoni, plain cheese, supreme, and mushroom and onion frozen pizzas undeclared soy allergen saint francis apizza llc \u2014 pepperoni, plain cheese, supreme, and mushroom and onion frozen pizzas",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-5085cfd2cafa0f13",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
       "id": "USDA-025-2026",
       "sourceRecordId": "025-2026",
       "agency": "USDA",
@@ -812,6 +1403,565 @@
         "field_has_spanish": "False"
       },
       "searchText": "inexport logistics llc recalls ineligible pork cracklings products imported from the republic of colombia ['\u2022 60-g. foil bags of \u201cyupi golpe con todo sabor bbq\u201d mixed chips with \u201ccl\u00e1sicas,\u201d \u201cplatanos,\u201d and \u201cchicharr\u00f3n fred.\u201d'] washington, oct. 02, 2026 , inexport logistics llc, a miami, fla. firm, is recalling approximately 189&nbsp;pounds of potato chip products containing chicharr\u00f3n (pork cracklings) because they were produced in the republic of colombia, a country that is not eligible to export meat products to the united states, the u.s. department of agriculture\u2019s food safety and inspection service (fsis) announced today.&nbsp; &nbsp;the following products are subject to recall, regardless of the product date [ view labels ]:&nbsp; 60-g. foil bags of \u201cyupi golpe con todo sabor bbq\u201d mixed chips with \u201ccl\u00e1sicas,\u201d \u201cplatanos,\u201d and \u201cchicharr\u00f3n fred.\u201d the products subject to the recall do not bear any import marks on the labels. these items were shipped to distributors and retail locations in arizona, california, colorado, florida, illinois, kentucky, minnesota, and texas. the problem was discovered during an fsis recall effectiveness check where the ineligible product was observed in a retail location. there have been no confirmed reports of illness or injury due to consumption of these products.&nbsp;anyone concerned about illness or injury should contact a healthcare provider. fsis is concerned that some product may be in consumers\u2019 pantries.&nbsp;consumers who have purchased these products are urged not to consume them. these products should be thrown away or returned to the place of purchase. fsis routinely conducts recall effectiveness checks to verify recalling firms notify theircustomers of the recall and that steps are taken to make certain that the product is no longer available to consumers. when available, the retail distribution list(s) will be posted on the fsis website at&nbsp; www.fsis.usda.gov/recalls . consumers and members of the media with questions about the recall can contact&nbsp;mauricio caro, sales manager of inexport logistics llc, at (786) 670-4750 or&nbsp; sales@inexportlogistics.com .&nbsp; consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to&nbsp; mphotline@usda.gov .&nbsp;for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at&nbsp; https://foodcomplaint.fsis.usda.gov/eccf/ . ['\\n company contact\\n \\n inexport logistics llc\\n mauricio caro, sales manager of inexport logistics llc\\n (786) 670-4750\\n sales@inexportlogistics.com\\n \\n\\n']"
+    },
+    {
+      "id": "FDA-ANN-d0497ad28ba3930f",
+      "sourceRecordId": "ANN-d0497ad28ba3930f",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-02",
+        "ageDaysAtRefresh": 18,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Frutas y Hortalizas del Sur S.A. \u2014 Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
+      "recallingFirm": "Frutas y Hortalizas del Sur S.A.",
+      "productDescription": "Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
+      "brandNames": [
+        "Great Value, Trader Joe\u2019s",
+        "Great Value"
+      ],
+      "productNames": [
+        "Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
+        "Organic Triple Berry Blend"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential E. Coli O145:H28 Contamination",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-02",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Great Value, Trader Joe\u2019s",
+        "company": "Frutas y Hortalizas del Sur S.A.",
+        "date": "10/02/2026",
+        "productdescription": "Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential E. Coli O145:H28 Contamination",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic"
+      },
+      "searchText": "frutas y hortalizas del sur s.a. great value, trader joe\u2019s organic blueberries, triple berry blend and mixed berry blend potential e. coli o145:h28 contamination frutas y hortalizas del sur s.a. \u2014 organic blueberries, triple berry blend and mixed berry blend",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-d0497ad28ba3930f",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-c2209a8780bbfebd",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-2484fab8f01ade21",
+      "sourceRecordId": "ANN-2484fab8f01ade21",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-02",
+        "ageDaysAtRefresh": 18,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "WinCo Foods LLC \u2014 Salsa Bean Dip",
+      "recallingFirm": "WinCo Foods LLC",
+      "productDescription": "Salsa Bean Dip",
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "productNames": [
+        "Salsa Bean Dip"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential pest inclusion",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-02",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "WinCo Foods",
+        "company": "WinCo Foods LLC",
+        "date": "10/02/2026",
+        "productdescription": "Salsa Bean Dip",
+        "producttype": "Food & Beverages",
+        "reason": "Potential pest inclusion",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl"
+      },
+      "searchText": "winco foods llc winco foods salsa bean dip potential pest inclusion winco foods llc \u2014 salsa bean dip",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-2484fab8f01ade21",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-250c8e3fe80c689f",
+      "sourceRecordId": "ANN-250c8e3fe80c689f",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-02",
+        "ageDaysAtRefresh": 18,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Stewart\u2019s Shop Corp \u2014 Ice cream",
+      "recallingFirm": "Stewart\u2019s Shop Corp",
+      "productDescription": "Ice cream",
+      "brandNames": [
+        "Stewart\u2019s Shops"
+      ],
+      "productNames": [
+        "Ice cream"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential presence of metal",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-02",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Stewart\u2019s Shops",
+        "company": "Stewart\u2019s Shop Corp",
+        "date": "10/02/2026",
+        "productdescription": "Ice cream",
+        "producttype": "Food & Beverages",
+        "reason": "Potential presence of metal",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign"
+      },
+      "searchText": "stewart\u2019s shop corp stewart\u2019s shops ice cream potential presence of metal stewart\u2019s shop corp \u2014 ice cream",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-250c8e3fe80c689f",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-22489a064fd8ad8e",
+      "sourceRecordId": "ANN-22489a064fd8ad8e",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-02",
+        "ageDaysAtRefresh": 18,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "EAK Distribution LLC \u2014 Green Sprouting Calabrese Broccoli Seeds",
+      "recallingFirm": "EAK Distribution LLC",
+      "productDescription": "Green Sprouting Calabrese Broccoli Seeds",
+      "brandNames": [
+        "Home Grown"
+      ],
+      "productNames": [
+        "Green Sprouting Calabrese Broccoli Seeds"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-02",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Home Grown",
+        "company": "EAK Distribution LLC",
+        "date": "10/02/2026",
+        "productdescription": "Green Sprouting Calabrese Broccoli Seeds",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Salmonella",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom"
+      },
+      "searchText": "eak distribution llc home grown green sprouting calabrese broccoli seeds potential to be contaminated with salmonella eak distribution llc \u2014 green sprouting calabrese broccoli seeds",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-22489a064fd8ad8e",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-30030be31cfb39b8",
+      "sourceRecordId": "ANN-30030be31cfb39b8",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-01",
+        "ageDaysAtRefresh": 19,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Greenwich Rx \u2014 Glutathione Injection",
+      "recallingFirm": "Greenwich Rx",
+      "productDescription": "Glutathione Injection",
+      "brandNames": [
+        "Greenwich"
+      ],
+      "productNames": [
+        "Glutathione Injection"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential elevated endotoxin levels",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-01",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-glutathione-due-elevated-endotoxin-levels",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Greenwich",
+        "company": "Greenwich Rx",
+        "date": "10/01/2026",
+        "productdescription": "Glutathione Injection",
+        "producttype": "Drugs",
+        "reason": "Potential elevated endotoxin levels",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-glutathione-due-elevated-endotoxin-levels"
+      },
+      "searchText": "greenwich rx greenwich glutathione injection potential elevated endotoxin levels greenwich rx \u2014 glutathione injection",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-30030be31cfb39b8",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-glutathione-due-elevated-endotoxin-levels"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-0d05cea580de699e",
+      "sourceRecordId": "ANN-0d05cea580de699e",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-01",
+        "ageDaysAtRefresh": 19,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Gias Foods, Inc. \u2014 Pasta",
+      "recallingFirm": "Gias Foods, Inc.",
+      "productDescription": "Pasta",
+      "brandNames": [
+        "Bettergoods"
+      ],
+      "productNames": [
+        "Pasta"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-01",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Bettergoods",
+        "company": "Gias Foods, Inc.",
+        "date": "10/01/2026",
+        "productdescription": "Pasta",
+        "producttype": "Food & Beverages",
+        "reason": "Potential to be contaminated with Listeria monocytogenes",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0"
+      },
+      "searchText": "gias foods, inc. bettergoods pasta potential to be contaminated with listeria monocytogenes gias foods, inc. \u2014 pasta",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-0d05cea580de699e",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-6fbdcc6000a7874c",
+      "sourceRecordId": "ANN-6fbdcc6000a7874c",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-29",
+        "ageDaysAtRefresh": 21,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Sierra Nevada Cheese Company \u2014 Monterey Jack, Jalapeno Jack, Medium Cheddar, and Sharp Cheddar raw milk cheeses",
+      "recallingFirm": "Sierra Nevada Cheese Company",
+      "productDescription": "Monterey Jack, Jalapeno Jack, Medium Cheddar, and Sharp Cheddar raw milk cheeses",
+      "brandNames": [
+        "Sierra Nevada Graziers"
+      ],
+      "productNames": [
+        "Monterey Jack, Jalapeno Jack, Medium Cheddar, and Sharp Cheddar raw milk cheeses"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC)",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-29",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Sierra Nevada Graziers",
+        "company": "Sierra Nevada Cheese Company",
+        "date": "09/29/2026",
+        "productdescription": "Monterey Jack, Jalapeno Jack, Medium Cheddar, and Sharp Cheddar raw milk cheeses",
+        "producttype": "Food & Beverages, Foodborne Illness, Cheese/Cheese Product",
+        "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC)",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk"
+      },
+      "searchText": "sierra nevada cheese company sierra nevada graziers monterey jack, jalapeno jack, medium cheddar, and sharp cheddar raw milk cheeses potential to be contaminated with shiga toxin-producing escherichia coli (stec) sierra nevada cheese company \u2014 monterey jack, jalapeno jack, medium cheddar, and sharp cheddar raw milk cheeses",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-6fbdcc6000a7874c",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sierra-nevada-cheese-company-recalls-graziers-raw-milk-cheese-because-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-1571581414c4ec89",
+      "sourceRecordId": "ANN-1571581414c4ec89",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-26",
+        "ageDaysAtRefresh": 24,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "G. L. Mezzetta Inc. \u2014 Greek peppers/ Golden Greek Peperoncini, Medium Heat",
+      "recallingFirm": "G. L. Mezzetta Inc.",
+      "productDescription": "Greek peppers/ Golden Greek Peperoncini, Medium Heat",
+      "brandNames": [
+        "Mezzetta"
+      ],
+      "productNames": [
+        "Greek peppers/ Golden Greek Peperoncini, Medium Heat"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Product may contain foreign objects such as Pest contaminant in jar",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-26",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Mezzetta",
+        "company": "G. L. Mezzetta Inc.",
+        "date": "09/26/2026",
+        "productdescription": "Greek peppers/ Golden Greek Peperoncini, Medium Heat",
+        "producttype": "Food & Beverages, Ingredients",
+        "reason": "Product may contain foreign objects such as Pest contaminant in jar",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence"
+      },
+      "searchText": "g. l. mezzetta inc. mezzetta greek peppers/ golden greek peperoncini, medium heat product may contain foreign objects such as pest contaminant in jar g. l. mezzetta inc. \u2014 greek peppers/ golden greek peperoncini, medium heat",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-1571581414c4ec89",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     },
     {
       "id": "USDA-024-2026",
@@ -1114,6 +2264,213 @@
       ]
     },
     {
+      "id": "FDA-ANN-6a95e494132bc6f8",
+      "sourceRecordId": "ANN-6a95e494132bc6f8",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-24",
+        "ageDaysAtRefresh": 26,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Galil Importing Corp \u2014 Ground cinnamon",
+      "recallingFirm": "Galil Importing Corp",
+      "productDescription": "Ground cinnamon",
+      "brandNames": [
+        "Lior"
+      ],
+      "productNames": [
+        "Ground cinnamon"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with elevated levels of lead",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-24",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Lior",
+        "company": "Galil Importing Corp",
+        "date": "09/24/2026",
+        "productdescription": "Ground cinnamon",
+        "producttype": "Food & Beverages, Contaminants",
+        "reason": "Potential to be contaminated with elevated levels of lead",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels"
+      },
+      "searchText": "galil importing corp lior ground cinnamon potential to be contaminated with elevated levels of lead galil importing corp \u2014 ground cinnamon",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-6a95e494132bc6f8",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/galil-importing-corp-recalls-lior-cinnamon-ground-seasoning-due-elevated-lead-levels"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-9da54046bdb15d23",
+      "sourceRecordId": "ANN-9da54046bdb15d23",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-24",
+        "ageDaysAtRefresh": 26,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Deano\u2019s Pasta \u2014 Pasta",
+      "recallingFirm": "Deano\u2019s Pasta",
+      "productDescription": "Pasta",
+      "brandNames": [
+        "Deano\u2019s Pasta"
+      ],
+      "productNames": [
+        "Pasta"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared crustacean shellfish (lobster) allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-24",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/deanos-pasta-issue-allergy-alert-undeclared-lobster-pear-and-pecorino-triangoli-ravioli",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Deano\u2019s Pasta",
+        "company": "Deano\u2019s Pasta",
+        "date": "09/24/2026",
+        "productdescription": "Pasta",
+        "producttype": "Food & Beverages, Allergens",
+        "reason": "Undeclared crustacean shellfish (lobster) allergen",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/deanos-pasta-issue-allergy-alert-undeclared-lobster-pear-and-pecorino-triangoli-ravioli"
+      },
+      "searchText": "deano\u2019s pasta deano\u2019s pasta pasta undeclared crustacean shellfish (lobster) allergen deano\u2019s pasta \u2014 pasta",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-9da54046bdb15d23",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/deanos-pasta-issue-allergy-alert-undeclared-lobster-pear-and-pecorino-triangoli-ravioli"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-72ca06806d983759",
+      "sourceRecordId": "ANN-72ca06806d983759",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-23",
+        "ageDaysAtRefresh": 27,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Berlin Seeds \u2014 Alfalfa sprouting seeds",
+      "recallingFirm": "Berlin Seeds",
+      "productDescription": "Alfalfa sprouting seeds",
+      "brandNames": [
+        "Berlin Seeds"
+      ],
+      "productNames": [
+        "Alfalfa sprouting seeds"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) and/or Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-23",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/berlin-seeds-recalls-alfalfa-sprouting-seed-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Berlin Seeds",
+        "company": "Berlin Seeds",
+        "date": "09/23/2026",
+        "productdescription": "Alfalfa sprouting seeds",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) and/or Salmonella",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/berlin-seeds-recalls-alfalfa-sprouting-seed-because-possible-health-risk"
+      },
+      "searchText": "berlin seeds berlin seeds alfalfa sprouting seeds potential to be contaminated with shiga toxin-producing escherichia coli (stec) and/or salmonella berlin seeds \u2014 alfalfa sprouting seeds",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-72ca06806d983759",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/berlin-seeds-recalls-alfalfa-sprouting-seed-because-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
       "id": "USDA-022-2026",
       "sourceRecordId": "022-2026",
       "agency": "USDA",
@@ -1238,6 +2595,424 @@
         "field_has_spanish": "False"
       },
       "searchText": "star meat delivery inc. recalls raw pork, beef, and goat products produced without the benefit of inspection ['\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cgoat cut 1-1/2&quot; 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cgoat burn skin on cut 1-1/2&quot; 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cslice ribeye 4oz 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cbeef chuck thin sliced kbq 4 mm 20.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cbeef oxtail cut 10.00lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cbeef short ribs sld 3/8&quot; regular 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cshanks bone in cut 1.5 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork ground 10.00lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork chorizo 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork chop b/i 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork feet cut 8 pcs 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork feet cut 6 pcs 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork rib pieces prem 1&quot; 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork boston diced 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork boston slice 1 inch 20.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cmenudo mix 30.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork boston thin sliced 3.5mm 20.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork hock sliced 10.00 lbs\u201d', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef ribs 4bone 2&quot; c. cut p/caldo', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef short rib thin sliced', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods pork boston butt sliced 4mm', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef short ribs sld 3/8&quot; premium c. cut', '\u2022\\tvarious weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef feet cut'] washington, sept. 22, 2026 &nbsp;\u2013 star meat delivery inc., located in lucama, n.c., is recalling approximately 167,639 pounds of raw pork, beef, and goat products that were produced without the benefit of federal inspection, bearing labels with a false usda mark of inspection, the u.s. department of agriculture\u2019s food safety and inspection service (fsis) announced today. as more information becomes available, fsis may update the product list and labels with additional items.&nbsp; any product bearing the false establishment number \u201cest. 1363\u201d should be considered misbranded and unsafe to eat. the raw pork, beef, and goat items were produced on various dates prior to september 22, 2026. the products were vacuum-sealed and packed into cardboard boxes for shipment; individual consumer packages may not bear this labeling, as retail stores may have applied their own stickers with pricing and safe handling instructions. the following products, distributed in bulk under the a&amp;d foods label, are subject to recall&nbsp;[ view currently available labels ]:&nbsp; various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cgoat cut 1-1/2\" 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cgoat burn skin on cut 1-1/2\" 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cslice ribeye 4oz 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cbeef chuck thin sliced kbq 4 mm 20.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cbeef oxtail cut 10.00lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cbeef short ribs sld 3/8\" regular 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cshanks bone in cut 1.5 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork ground 10.00lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork chorizo 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork chop b/i 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork feet cut 8 pcs 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork feet cut 6 pcs 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork rib pieces prem 1\" 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork boston diced 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork boston slice 1 inch 20.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cmenudo mix 30.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork boston thin sliced 3.5mm 20.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods \u201cpork hock sliced 10.00 lbs\u201d various weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef ribs 4bone 2\" c. cut p/caldo various weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef short rib thin sliced various weight cardboard boxes containing individually vacuum-packed a&amp;d foods pork boston butt sliced 4mm various weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef short ribs sld 3/8\" premium c. cut various weight cardboard boxes containing individually vacuum-packed a&amp;d foods beef feet cut the products subject to recall bear false marks of inspection with establishment number \u201cest. 1363,\u201d which does not have a federal grant of inspection. these items were shipped to a&amp;d foods, a distributor in georgia, for further distribution to retail and restaurant locations nationwide.&nbsp; the problem was discovered&nbsp;during fsis surveillance activities.&nbsp; there have been no confirmed reports of illness or injury due to consumption of these products.&nbsp;anyone concerned about an illness or injury should contact a healthcare provider.&nbsp; food produced without inspection may contain undeclared allergens, harmful bacteria, or other contaminants that put consumer health and safety at risk. fsis is concerned that some product may be in the refrigerators or freezers of consumers, restaurants, or retailers. consumers who have purchased these products are urged not to consume them. retailers and restaurants are urged not to sell or serve these products. these products should be thrown away or returned to the place of purchase. fsis routinely conducts recall effectiveness checks to verify recalling firms notify their &nbsp; customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. when available, the retail distribution list(s) will be posted on the fsis website at&nbsp; www.fsis.usda.gov/recalls .&nbsp; consumers and members of the media with questions about the recall can contact&nbsp;jennifer joyner, media office manager, star meat delivery inc. at 252-239-0610 or&nbsp; starmeatdelivery@gmail.com . consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to&nbsp; mphotline@usda.gov .&nbsp;for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at&nbsp; https://foodcomplaint.fsis.usda.gov/eccf/ . ['\\n company contact\\n \\n star meat delivery inc.\\n jennifer joyner, media office manager\\n 252-239-0610\\n starmeatdelivery@gmail.com\\n \\n\\n']"
+    },
+    {
+      "id": "FDA-ANN-288099e6b476f7d1",
+      "sourceRecordId": "ANN-288099e6b476f7d1",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-22",
+        "ageDaysAtRefresh": 28,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Wakefern Food Corp. \u2014 Organic Unsweetened Apple Sauce",
+      "recallingFirm": "Wakefern Food Corp.",
+      "productDescription": "Organic Unsweetened Apple Sauce",
+      "brandNames": [
+        "Wholesome Pantry"
+      ],
+      "productNames": [
+        "Organic Unsweetened Apple Sauce"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Elevated levels of patulin",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-22",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wakefern-food-corp-voluntarily-recalls-wholesome-pantry-organic-unsweetened-apple-sauce",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Wholesome Pantry",
+        "company": "Wakefern Food Corp.",
+        "date": "09/22/2026",
+        "productdescription": "Organic Unsweetened Apple Sauce",
+        "producttype": "Food & Beverages",
+        "reason": "Elevated levels of patulin",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wakefern-food-corp-voluntarily-recalls-wholesome-pantry-organic-unsweetened-apple-sauce"
+      },
+      "searchText": "wakefern food corp. wholesome pantry organic unsweetened apple sauce elevated levels of patulin wakefern food corp. \u2014 organic unsweetened apple sauce",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-288099e6b476f7d1",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wakefern-food-corp-voluntarily-recalls-wholesome-pantry-organic-unsweetened-apple-sauce"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-2074d1211e5be838",
+      "sourceRecordId": "ANN-2074d1211e5be838",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-21",
+        "ageDaysAtRefresh": 29,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Otsuka ICU Medical LLC \u2014 0.9% Sodium Chloride Injection, USP, 100 mL",
+      "recallingFirm": "Otsuka ICU Medical LLC",
+      "productDescription": "0.9% Sodium Chloride Injection, USP, 100 mL",
+      "brandNames": [
+        "ICU Medical LLC"
+      ],
+      "productNames": [
+        "0.9% Sodium Chloride Injection, USP, 100 mL"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "100 mL"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Product mix-up where 0.9% Sodium Chloride Injection, USP overwrap may contain 10 mEq Potassium Chloride Injection",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-21",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/otsuka-icu-medical-llc-issues-voluntary-nationwide-recall-09-sodium-chloride-injection-usp-due",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "ICU Medical LLC",
+        "company": "Otsuka ICU Medical LLC",
+        "date": "09/21/2026",
+        "productdescription": "0.9% Sodium Chloride Injection, USP, 100 mL",
+        "producttype": "Drugs",
+        "reason": "Product mix-up where 0.9% Sodium Chloride Injection, USP overwrap may contain 10 mEq Potassium Chloride Injection",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/otsuka-icu-medical-llc-issues-voluntary-nationwide-recall-09-sodium-chloride-injection-usp-due"
+      },
+      "searchText": "otsuka icu medical llc icu medical llc 0.9% sodium chloride injection, usp, 100 ml product mix-up where 0.9% sodium chloride injection, usp overwrap may contain 10 meq potassium chloride injection otsuka icu medical llc \u2014 0.9% sodium chloride injection, usp, 100 ml",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-2074d1211e5be838",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/otsuka-icu-medical-llc-issues-voluntary-nationwide-recall-09-sodium-chloride-injection-usp-due"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-dfa7cf5bb3dc7851",
+      "sourceRecordId": "ANN-dfa7cf5bb3dc7851",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-21",
+        "ageDaysAtRefresh": 29,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Global Mix Inc. \u2014 Tejocote Capsules and Pieces",
+      "recallingFirm": "Global Mix Inc.",
+      "productDescription": "Tejocote Capsules and Pieces",
+      "brandNames": [
+        "Niwali"
+      ],
+      "productNames": [
+        "Tejocote Capsules and Pieces"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Products contain yellow oleander (Thevetia peruviana).",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-21",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/global-mix-inc-recalls-niwali-tejocote-capsules-and-niwali-tejocote-pieces-because-possible-health",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Niwali",
+        "company": "Global Mix Inc.",
+        "date": "09/21/2026",
+        "productdescription": "Tejocote Capsules and Pieces",
+        "producttype": "Dietary Supplements",
+        "reason": "Products contain yellow oleander (Thevetia peruviana).",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/global-mix-inc-recalls-niwali-tejocote-capsules-and-niwali-tejocote-pieces-because-possible-health"
+      },
+      "searchText": "global mix inc. niwali tejocote capsules and pieces products contain yellow oleander (thevetia peruviana). global mix inc. \u2014 tejocote capsules and pieces",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-dfa7cf5bb3dc7851",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/global-mix-inc-recalls-niwali-tejocote-capsules-and-niwali-tejocote-pieces-because-possible-health"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-3146269128972459",
+      "sourceRecordId": "ANN-3146269128972459",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-21",
+        "ageDaysAtRefresh": 29,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Par Health \u2014 Dexmedetomidine HCl in 0.9% Sodium Chloride Injection 400 mcg/100 mL (4 mcg/mL) for Intravenous Infusion",
+      "recallingFirm": "Par Health",
+      "productDescription": "Dexmedetomidine HCl in 0.9% Sodium Chloride Injection 400 mcg/100 mL (4 mcg/mL) for Intravenous Infusion",
+      "brandNames": [
+        "Par Pharmaceutical"
+      ],
+      "productNames": [
+        "Dexmedetomidine HCl in 0.9% Sodium Chloride Injection 400 mcg/100 mL (4 mcg/mL) for Intravenous Infusion"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "100 mL"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Presence of particulate matter identified as cellulose or stopper material",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-21",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-dexmedetomidine-hcl-09-sodium-chloride",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Par Pharmaceutical",
+        "company": "Par Health",
+        "date": "09/21/2026",
+        "productdescription": "Dexmedetomidine HCl in 0.9% Sodium Chloride Injection 400 mcg/100 mL (4 mcg/mL) for Intravenous Infusion",
+        "producttype": "Drugs",
+        "reason": "Presence of particulate matter identified as cellulose or stopper material",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-dexmedetomidine-hcl-09-sodium-chloride"
+      },
+      "searchText": "par health par pharmaceutical dexmedetomidine hcl in 0.9% sodium chloride injection 400 mcg/100 ml (4 mcg/ml) for intravenous infusion presence of particulate matter identified as cellulose or stopper material par health \u2014 dexmedetomidine hcl in 0.9% sodium chloride injection 400 mcg/100 ml (4 mcg/ml) for intravenous infusion",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-3146269128972459",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-dexmedetomidine-hcl-09-sodium-chloride"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-0e19fcad97cf0a45",
+      "sourceRecordId": "ANN-0e19fcad97cf0a45",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-18",
+        "ageDaysAtRefresh": 32,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Saratoga Potato Chips LLC \u2014 Loaded Bacon & Cheddar Potato Chips",
+      "recallingFirm": "Saratoga Potato Chips LLC",
+      "productDescription": "Loaded Bacon & Cheddar Potato Chips",
+      "brandNames": [
+        "J. HIGGS"
+      ],
+      "productNames": [
+        "Loaded Bacon & Cheddar Potato Chips"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared soy allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-18",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "J. HIGGS",
+        "company": "Saratoga Potato Chips LLC",
+        "date": "09/18/2026",
+        "productdescription": "Loaded Bacon & Cheddar Potato Chips",
+        "producttype": "Food & Beverages, Allergens",
+        "reason": "Undeclared soy allergen",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato"
+      },
+      "searchText": "saratoga potato chips llc j. higgs loaded bacon & cheddar potato chips undeclared soy allergen saratoga potato chips llc \u2014 loaded bacon & cheddar potato chips",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-0e19fcad97cf0a45",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saratoga-potato-chips-issues-allergy-alert-undeclared-soy-j-higgs-loaded-bacon-and-cheddar-potato"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-d6dce31b52780c16",
+      "sourceRecordId": "ANN-d6dce31b52780c16",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-18",
+        "ageDaysAtRefresh": 32,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "GF Blends \u2014 All purpose flour, bread mix, flat bread pizza mix",
+      "recallingFirm": "GF Blends",
+      "productDescription": "All purpose flour, bread mix, flat bread pizza mix",
+      "brandNames": [
+        "Truly AIP, EAT G.A.N.G.S.T.E.R"
+      ],
+      "productNames": [
+        "All purpose flour, bread mix, flat bread pizza mix"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared wheat allergen",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-18",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Truly AIP, EAT G.A.N.G.S.T.E.R",
+        "company": "GF Blends",
+        "date": "09/18/2026",
+        "productdescription": "All purpose flour, bread mix, flat bread pizza mix",
+        "producttype": "Food & Beverages, Allergens",
+        "reason": "Undeclared wheat allergen",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix"
+      },
+      "searchText": "gf blends truly aip, eat g.a.n.g.s.t.e.r all purpose flour, bread mix, flat bread pizza mix undeclared wheat allergen gf blends \u2014 all purpose flour, bread mix, flat bread pizza mix",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-d6dce31b52780c16",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gf-blends-recalls-truly-aip-all-purpose-flour-and-bread-mix-and-eat-gangster-flat-bread-pizza-mix"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     },
     {
       "id": "FDA-H-1394-2026",
@@ -1419,75 +3194,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-42afcf685130d215",
-      "sourceRecordId": "ANN-42afcf685130d215",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-09-15",
-        "ageDaysAtRefresh": 35,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "A&P Creations LLC \u2014 X10 Natural Enhancement Supplement",
-      "recallingFirm": "A&P Creations LLC",
-      "productDescription": "X10 Natural Enhancement Supplement",
-      "brandNames": [
-        "X10"
-      ],
-      "productNames": [
-        "X10 Natural Enhancement Supplement"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Product contains sildenafil and tadalafil",
-      "distribution": "See official notice",
-      "recallDate": "2026-09-15",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "X10",
-        "company": "A&P Creations LLC",
-        "date": "09/15/2026",
-        "productdescription": "X10 Natural Enhancement Supplement",
-        "producttype": "Dietary Supplements",
-        "reason": "Product contains sildenafil and tadalafil",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared"
-      },
-      "searchText": "a&p creations llc x10 x10 natural enhancement supplement product contains sildenafil and tadalafil a&p creations llc \u2014 x10 natural enhancement supplement",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-42afcf685130d215",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-6c66bf284d6275a7",
       "sourceRecordId": "ANN-6c66bf284d6275a7",
       "agency": "FDA",
@@ -1621,6 +3327,144 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-3942e93fad26be2d",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/so-delicious-dairy-freer-issues-voluntary-recall-salted-caramel-cluster-non-dairy-frozen-dessert"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-42afcf685130d215",
+      "sourceRecordId": "ANN-42afcf685130d215",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-15",
+        "ageDaysAtRefresh": 35,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "A&P Creations LLC \u2014 X10 Natural Enhancement Supplement",
+      "recallingFirm": "A&P Creations LLC",
+      "productDescription": "X10 Natural Enhancement Supplement",
+      "brandNames": [
+        "X10"
+      ],
+      "productNames": [
+        "X10 Natural Enhancement Supplement"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Product contains sildenafil and tadalafil",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-15",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "X10",
+        "company": "A&P Creations LLC",
+        "date": "09/15/2026",
+        "productdescription": "X10 Natural Enhancement Supplement",
+        "producttype": "Dietary Supplements",
+        "reason": "Product contains sildenafil and tadalafil",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared"
+      },
+      "searchText": "a&p creations llc x10 x10 natural enhancement supplement product contains sildenafil and tadalafil a&p creations llc \u2014 x10 natural enhancement supplement",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-42afcf685130d215",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ap-creations-llc-issues-nationwide-recall-x10-natural-enhancement-supplement-due-undeclared"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-99f2ee8bfdc91133",
+      "sourceRecordId": "ANN-99f2ee8bfdc91133",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-15",
+        "ageDaysAtRefresh": 35,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Gias Foods, Inc. \u2014 Italian Lemon Alfredo Fettuccine",
+      "recallingFirm": "Gias Foods, Inc.",
+      "productDescription": "Italian Lemon Alfredo Fettuccine",
+      "brandNames": [
+        "Bettergoods"
+      ],
+      "productNames": [
+        "Italian Lemon Alfredo Fettuccine"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-15",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Bettergoods",
+        "company": "Gias Foods, Inc.",
+        "date": "09/15/2026",
+        "productdescription": "Italian Lemon Alfredo Fettuccine",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Listeria monocytogenes",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible"
+      },
+      "searchText": "gias foods, inc. bettergoods italian lemon alfredo fettuccine potential to be contaminated with listeria monocytogenes gias foods, inc. \u2014 italian lemon alfredo fettuccine",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-99f2ee8bfdc91133",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible"
         }
       ],
       "sourceSurfaces": [
@@ -2584,144 +4428,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-9895db7507beaede",
-      "sourceRecordId": "ANN-9895db7507beaede",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-09-08",
-        "ageDaysAtRefresh": 42,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Vet Plus, Inc. \u2014 Supplements",
-      "recallingFirm": "Vet Plus, Inc.",
-      "productDescription": "Supplements",
-      "brandNames": [
-        "FI"
-      ],
-      "productNames": [
-        "Supplements"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Salmonella",
-      "distribution": "See official notice",
-      "recallDate": "2026-09-08",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "FI",
-        "company": "Vet Plus, Inc.",
-        "date": "09/08/2026",
-        "productdescription": "Supplements",
-        "producttype": "Animal & Veterinary",
-        "reason": "Potential to be contaminated with Salmonella",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination"
-      },
-      "searchText": "vet plus, inc. fi supplements potential to be contaminated with salmonella vet plus, inc. \u2014 supplements",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-9895db7507beaede",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "id": "FDA-ANN-431458e3050c8f5b",
-      "sourceRecordId": "ANN-431458e3050c8f5b",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-09-08",
-        "ageDaysAtRefresh": 42,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "BMC Medical Co., Ltd. \u2014 Luna G3 APAP (Model LG3600)",
-      "recallingFirm": "BMC Medical Co., Ltd.",
-      "productDescription": "Luna G3 APAP (Model LG3600)",
-      "brandNames": [
-        "BMC"
-      ],
-      "productNames": [
-        "Luna G3 APAP (Model LG3600)"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
-      "distribution": "See official notice",
-      "recallDate": "2026-09-08",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "BMC",
-        "company": "BMC Medical Co., Ltd.",
-        "date": "09/08/2026",
-        "productdescription": "Luna G3 APAP (Model LG3600)",
-        "producttype": "Medical Devices",
-        "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect"
-      },
-      "searchText": "bmc medical co., ltd. bmc luna g3 apap (model lg3600) the firmware version, g3-2.00.76 installed on the luna g3 apap (model lg3600) devices contained a firmware defect bmc medical co., ltd. \u2014 luna g3 apap (model lg3600)",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-431458e3050c8f5b",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-firmware-g3-20076-due-firmware-defect"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-cc6138b08ae2f71e",
       "sourceRecordId": "ANN-cc6138b08ae2f71e",
       "agency": "FDA",
@@ -2784,6 +4490,144 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-cc6138b08ae2f71e",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/freshpoint-issues-recall-due-improperly-declared-allergen-egg-chicken-salad-wedge-sandwiches"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-9895db7507beaede",
+      "sourceRecordId": "ANN-9895db7507beaede",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-08",
+        "ageDaysAtRefresh": 42,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Fi Barking Labs Corp \u2014 Supplements",
+      "recallingFirm": "Fi Barking Labs Corp",
+      "productDescription": "Supplements",
+      "brandNames": [
+        "FI"
+      ],
+      "productNames": [
+        "Supplements"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-08",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "FI",
+        "company": "Fi Barking Labs Corp",
+        "date": "09/08/2026",
+        "productdescription": "Supplements",
+        "producttype": "Animal & Veterinary",
+        "reason": "Potential to be contaminated with Salmonella",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination"
+      },
+      "searchText": "fi barking labs corp fi supplements potential to be contaminated with salmonella fi barking labs corp \u2014 supplements",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-9895db7507beaede",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fi-recalls-supplements-dogs-because-possible-salmonella-contamination"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-9a7dc04cfc7f28a8",
+      "sourceRecordId": "ANN-9a7dc04cfc7f28a8",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-08",
+        "ageDaysAtRefresh": 42,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "BMC Medical Co., Ltd. \u2014 Luna G3 APAP (Model LG3600)",
+      "recallingFirm": "BMC Medical Co., Ltd.",
+      "productDescription": "Luna G3 APAP (Model LG3600)",
+      "brandNames": [
+        "BMC"
+      ],
+      "productNames": [
+        "Luna G3 APAP (Model LG3600)"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
+      "distribution": "See official notice",
+      "recallDate": "2026-09-08",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-devices-firmware-g3-20076-configured-g3-a20",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "BMC",
+        "company": "BMC Medical Co., Ltd.",
+        "date": "09/08/2026",
+        "productdescription": "Luna G3 APAP (Model LG3600)",
+        "producttype": "Medical Devices",
+        "reason": "The firmware version, G3-2.00.76 installed on the Luna G3 APAP (Model LG3600) devices contained a firmware defect",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-devices-firmware-g3-20076-configured-g3-a20"
+      },
+      "searchText": "bmc medical co., ltd. bmc luna g3 apap (model lg3600) the firmware version, g3-2.00.76 installed on the luna g3 apap (model lg3600) devices contained a firmware defect bmc medical co., ltd. \u2014 luna g3 apap (model lg3600)",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-9a7dc04cfc7f28a8",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bmc-medical-co-ltd-recalls-luna-g3-apap-model-lg3600-devices-firmware-g3-20076-configured-g3-a20"
         }
       ],
       "sourceSurfaces": [
@@ -3523,75 +5367,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-c2209a8780bbfebd",
-      "sourceRecordId": "ANN-c2209a8780bbfebd",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-09-03",
-        "ageDaysAtRefresh": 47,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Frutas y Hortalizas del Sur S.A. \u2014 Organic Triple Berry Blend",
-      "recallingFirm": "Frutas y Hortalizas del Sur S.A.",
-      "productDescription": "Organic Triple Berry Blend",
-      "brandNames": [
-        "Great Value"
-      ],
-      "productNames": [
-        "Organic Triple Berry Blend"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Possible E. Coli Contamination",
-      "distribution": "See official notice",
-      "recallDate": "2026-09-03",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "Great Value",
-        "company": "Frutas y Hortalizas del Sur S.A.",
-        "date": "09/03/2026",
-        "productdescription": "Organic Triple Berry Blend",
-        "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Possible E. Coli Contamination",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple"
-      },
-      "searchText": "frutas y hortalizas del sur s.a. great value organic triple berry blend possible e. coli contamination frutas y hortalizas del sur s.a. \u2014 organic triple berry blend",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-c2209a8780bbfebd",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-994a814eecb7a81c",
       "sourceRecordId": "ANN-994a814eecb7a81c",
       "agency": "FDA",
@@ -3905,77 +5680,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-cc8c8798b1b0379e",
-      "sourceRecordId": "ANN-cc8c8798b1b0379e",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-08-29",
-        "ageDaysAtRefresh": 52,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Everything Sprouts, LLC \u2014 Robust Radish Mix, 5oz Cups",
-      "recallingFirm": "Everything Sprouts, LLC",
-      "productDescription": "Robust Radish Mix, 5oz Cups",
-      "brandNames": [
-        "Everything Sprouts"
-      ],
-      "productNames": [
-        "Robust Radish Mix, 5oz Cups"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [
-        "5oz"
-      ],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
-      "distribution": "See official notice",
-      "recallDate": "2026-08-29",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "medium",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 2,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "Everything Sprouts",
-        "company": "Everything Sprouts, LLC",
-        "date": "08/29/2026",
-        "productdescription": "Robust Radish Mix, 5oz Cups",
-        "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and"
-      },
-      "searchText": "everything sprouts, llc everything sprouts robust radish mix, 5oz cups potential to be contaminated with shiga toxin-producing escherichia coli (stec) or salmonella. everything sprouts, llc \u2014 robust radish mix, 5oz cups",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-cc8c8798b1b0379e",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-6d24f9494a6fa024",
       "sourceRecordId": "ANN-6d24f9494a6fa024",
       "agency": "FDA",
@@ -4038,6 +5742,78 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-6d24f9494a6fa024",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/panorama-produce-recalls-mangoes-due-possible-salmonella-contamination"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-cc8c8798b1b0379e",
+      "sourceRecordId": "ANN-cc8c8798b1b0379e",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "terminated",
+      "lifecycle": {
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "terminated",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-08-29",
+        "ageDaysAtRefresh": 52,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Everything Sprouts, LLC \u2014 Robust Radish Mix, 5oz Cups",
+      "recallingFirm": "Everything Sprouts, LLC",
+      "productDescription": "Robust Radish Mix, 5oz Cups",
+      "brandNames": [
+        "Everything Sprouts"
+      ],
+      "productNames": [
+        "Robust Radish Mix, 5oz Cups"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "5oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
+      "distribution": "See official notice",
+      "recallDate": "2026-08-29",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Everything Sprouts",
+        "company": "Everything Sprouts, LLC",
+        "date": "08/29/2026",
+        "productdescription": "Robust Radish Mix, 5oz Cups",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (STEC) or Salmonella.",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and",
+        "terminated": "Terminated"
+      },
+      "searchText": "everything sprouts, llc everything sprouts robust radish mix, 5oz cups potential to be contaminated with shiga toxin-producing escherichia coli (stec) or salmonella. everything sprouts, llc \u2014 robust radish mix, 5oz cups",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-cc8c8798b1b0379e",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-expands-voluntarily-recall-include-robust-radish-mix-due-potential-e-coli-and"
         }
       ],
       "sourceSurfaces": [
@@ -5684,11 +7460,11 @@
       "sourceRecordId": "ANN-6a6fad14f8b5627f",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "terminated",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "terminated",
         "terminationDate": ""
       },
       "timeline": {
@@ -5734,7 +7510,8 @@
         "productdescription": "Alfalfa Sprouts",
         "producttype": "Food & Beverages",
         "reason": "Potential to be contaminated with Salmonella and Shiga toxin-producing Escherichia coli (STEC)",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-recalls-alfalfa-sprouts-due-potential-e-coli-and-salmonella-risk"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-recalls-alfalfa-sprouts-due-potential-e-coli-and-salmonella-risk",
+        "terminated": "Terminated"
       },
       "searchText": "everything sprouts, llc everything sprouts, calco alfalfa sprouts potential to be contaminated with salmonella and shiga toxin-producing escherichia coli (stec) everything sprouts, llc \u2014 alfalfa sprouts",
       "sourceReferences": [
@@ -17018,11 +18795,11 @@
       "sourceRecordId": "ANN-34fa868535568bec",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "terminated",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "terminated",
         "terminationDate": ""
       },
       "timeline": {
@@ -17068,7 +18845,8 @@
         "productdescription": "White shell eggs and brown cage free shell eggs",
         "producttype": "Food & Beverages, Foodborne Illness",
         "reason": "Potential to be contaminated with Salmonella Enteritidis.",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/midwest-poultry-services-lp-recalls-shell-eggs-due-possible-salmonella-enteritidis-contamination"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/midwest-poultry-services-lp-recalls-shell-eggs-due-possible-salmonella-enteritidis-contamination",
+        "terminated": "Terminated"
       },
       "searchText": "midwest poultry services, l.p. multiple brand names white shell eggs and brown cage free shell eggs potential to be contaminated with salmonella enteritidis. midwest poultry services, l.p. \u2014 white shell eggs and brown cage free shell eggs",
       "sourceReferences": [
@@ -25485,6 +27263,147 @@
       ]
     },
     {
+      "id": "FDA-ANN-1665d0694da40ede",
+      "sourceRecordId": "ANN-1665d0694da40ede",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-06-05",
+        "ageDaysAtRefresh": 137,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Ballester Hermanos \u2014 MEZCLA PARA PANQUEQUES Y WAFFLES",
+      "recallingFirm": "Ballester Hermanos",
+      "productDescription": "MEZCLA PARA PANQUEQUES Y WAFFLES",
+      "brandNames": [
+        "Pearl Milling Company"
+      ],
+      "productNames": [
+        "MEZCLA PARA PANQUEQUES Y WAFFLES"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Debido a la presencia no declarada de leche y soya",
+      "distribution": "See official notice",
+      "recallDate": "2026-06-05",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ballester-hermanos-realiza-un-retiro-por-contenido-no-declarado-de-soya-y-leche-en-pearl-milling",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Pearl Milling Company",
+        "company": "Ballester Hermanos",
+        "date": "06/05/2026",
+        "productdescription": "MEZCLA PARA PANQUEQUES Y WAFFLES",
+        "producttype": "Food & Beverages, Allergens",
+        "reason": "Debido a la presencia no declarada de leche y soya",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ballester-hermanos-realiza-un-retiro-por-contenido-no-declarado-de-soya-y-leche-en-pearl-milling"
+      },
+      "searchText": "ballester hermanos pearl milling company mezcla para panqueques y waffles debido a la presencia no declarada de leche y soya ballester hermanos \u2014 mezcla para panqueques y waffles",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-1665d0694da40ede",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ballester-hermanos-realiza-un-retiro-por-contenido-no-declarado-de-soya-y-leche-en-pearl-milling"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-2f41988b2e204040",
+      "sourceRecordId": "ANN-2f41988b2e204040",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-06-05",
+        "ageDaysAtRefresh": 137,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Ballester Hermanos \u2014 Pearl Milling Company Original Pancake & Waffles Complete \u2013 5.99 oz (170g)",
+      "recallingFirm": "Ballester Hermanos",
+      "productDescription": "Pearl Milling Company Original Pancake & Waffles Complete \u2013 5.99 oz (170g)",
+      "brandNames": [
+        "Pearl Milling Company"
+      ],
+      "productNames": [
+        "Pearl Milling Company Original Pancake & Waffles Complete \u2013 5.99 oz (170g)"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "5.99 oz",
+        "170g"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared Soy and Milk",
+      "distribution": "See official notice",
+      "recallDate": "2026-06-05",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ballester-hermanos-issues-recall-due-undeclared-soy-and-milk-pearl-milling-company-original-pancake",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 4,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Pearl Milling Company",
+        "company": "Ballester Hermanos",
+        "date": "06/05/2026",
+        "productdescription": "Pearl Milling Company Original Pancake & Waffles Complete \u2013 5.99 oz (170g)",
+        "producttype": "Food & Beverages, Allergens",
+        "reason": "Undeclared Soy and Milk",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ballester-hermanos-issues-recall-due-undeclared-soy-and-milk-pearl-milling-company-original-pancake"
+      },
+      "searchText": "ballester hermanos pearl milling company pearl milling company original pancake & waffles complete \u2013 5.99 oz (170g) undeclared soy and milk ballester hermanos \u2014 pearl milling company original pancake & waffles complete \u2013 5.99 oz (170g)",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-2f41988b2e204040",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ballester-hermanos-issues-recall-due-undeclared-soy-and-milk-pearl-milling-company-original-pancake"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
       "id": "FDA-H-1219-2026",
       "sourceRecordId": "H-1219-2026",
       "agency": "FDA",
@@ -27798,11 +29717,11 @@
       "sourceRecordId": "ANN-0263f2f0fc977b77",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "terminated",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "terminated",
         "terminationDate": ""
       },
       "timeline": {
@@ -27848,7 +29767,8 @@
         "productdescription": "Dark Chocolate Coconut Almond Bites",
         "producttype": "Food & Beverages, Allergens",
         "reason": "May Contain undeclared peanuts",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bazzini-voluntarily-recalls-certain-lots-skinnydippedr-dark-chocolate-coconut-almond-bites-due"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bazzini-voluntarily-recalls-certain-lots-skinnydippedr-dark-chocolate-coconut-almond-bites-due",
+        "terminated": "Terminated"
       },
       "searchText": "bazzini, llc skinnydipped dark chocolate coconut almond bites may contain undeclared peanuts bazzini, llc \u2014 dark chocolate coconut almond bites",
       "sourceReferences": [
@@ -28453,75 +30373,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-9e2e53548ed0d2a1",
-      "sourceRecordId": "ANN-9e2e53548ed0d2a1",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-05-23",
-        "ageDaysAtRefresh": 150,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "SKS Copack \u2014 Specialty Beverages",
-      "recallingFirm": "SKS Copack",
-      "productDescription": "Specialty Beverages",
-      "brandNames": [
-        "Angel Specialty Products, Royal Gold, Boba Time, Fanale, Denda"
-      ],
-      "productNames": [
-        "Specialty Beverages"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Due to contamination of Salmonella",
-      "distribution": "See official notice",
-      "recallDate": "2026-05-23",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sks-copack-recalls-various-specialty-beverages-because-possible-health-risk",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "Angel Specialty Products, Royal Gold, Boba Time, Fanale, Denda",
-        "company": "SKS Copack",
-        "date": "05/23/2026",
-        "productdescription": "Specialty Beverages",
-        "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Due to contamination of Salmonella",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sks-copack-recalls-various-specialty-beverages-because-possible-health-risk"
-      },
-      "searchText": "sks copack angel specialty products, royal gold, boba time, fanale, denda specialty beverages due to contamination of salmonella sks copack \u2014 specialty beverages",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-9e2e53548ed0d2a1",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sks-copack-recalls-various-specialty-beverages-because-possible-health-risk"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-8517be774e99d9e5",
       "sourceRecordId": "ANN-8517be774e99d9e5",
       "agency": "FDA",
@@ -28584,6 +30435,75 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-8517be774e99d9e5",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jxk-enterprises-inc-issues-voluntary-nationwide-recall-boner-bears-chocolate-due-undeclared"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-9e2e53548ed0d2a1",
+      "sourceRecordId": "ANN-9e2e53548ed0d2a1",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-05-23",
+        "ageDaysAtRefresh": 150,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "SKS Copack \u2014 Specialty Beverages",
+      "recallingFirm": "SKS Copack",
+      "productDescription": "Specialty Beverages",
+      "brandNames": [
+        "Angel Specialty Products, Royal Gold, Boba Time, Fanale, Denda"
+      ],
+      "productNames": [
+        "Specialty Beverages"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Due to contamination of Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-05-23",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sks-copack-recalls-various-specialty-beverages-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Angel Specialty Products, Royal Gold, Boba Time, Fanale, Denda",
+        "company": "SKS Copack",
+        "date": "05/23/2026",
+        "productdescription": "Specialty Beverages",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Due to contamination of Salmonella",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sks-copack-recalls-various-specialty-beverages-because-possible-health-risk"
+      },
+      "searchText": "sks copack angel specialty products, royal gold, boba time, fanale, denda specialty beverages due to contamination of salmonella sks copack \u2014 specialty beverages",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-9e2e53548ed0d2a1",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/sks-copack-recalls-various-specialty-beverages-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
@@ -30235,75 +32155,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-11645e370b8879f8",
-      "sourceRecordId": "ANN-11645e370b8879f8",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-05-18",
-        "ageDaysAtRefresh": 155,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Nassar Investment Co., LLC. \u2014 Tahina",
-      "recallingFirm": "Nassar Investment Co., LLC.",
-      "productDescription": "Tahina",
-      "brandNames": [
-        "Malazi"
-      ],
-      "productNames": [
-        "Tahina"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Due to contamination of Salmonella",
-      "distribution": "See official notice",
-      "recallDate": "2026-05-18",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nassar-investments-recalls-malazi-tahina-due-salmonella-contamination",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "Malazi",
-        "company": "Nassar Investment Co., LLC.",
-        "date": "05/18/2026",
-        "productdescription": "Tahina",
-        "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Due to contamination of Salmonella",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nassar-investments-recalls-malazi-tahina-due-salmonella-contamination"
-      },
-      "searchText": "nassar investment co., llc. malazi tahina due to contamination of salmonella nassar investment co., llc. \u2014 tahina",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-11645e370b8879f8",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nassar-investments-recalls-malazi-tahina-due-salmonella-contamination"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-ad767249f27cb238",
       "sourceRecordId": "ANN-ad767249f27cb238",
       "agency": "FDA",
@@ -30366,6 +32217,75 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-ad767249f27cb238",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/best-supplements-best-prices-issues-voluntary-nationwide-recall-wap-sensual-enhancement-capsules-due"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-11645e370b8879f8",
+      "sourceRecordId": "ANN-11645e370b8879f8",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-05-18",
+        "ageDaysAtRefresh": 155,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Nassar Investment Co., LLC. \u2014 Tahina",
+      "recallingFirm": "Nassar Investment Co., LLC.",
+      "productDescription": "Tahina",
+      "brandNames": [
+        "Malazi"
+      ],
+      "productNames": [
+        "Tahina"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Due to contamination of Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-05-18",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nassar-investments-recalls-malazi-tahina-due-salmonella-contamination",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Malazi",
+        "company": "Nassar Investment Co., LLC.",
+        "date": "05/18/2026",
+        "productdescription": "Tahina",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Due to contamination of Salmonella",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nassar-investments-recalls-malazi-tahina-due-salmonella-contamination"
+      },
+      "searchText": "nassar investment co., llc. malazi tahina due to contamination of salmonella nassar investment co., llc. \u2014 tahina",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-11645e370b8879f8",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nassar-investments-recalls-malazi-tahina-due-salmonella-contamination"
         }
       ],
       "sourceSurfaces": [
@@ -31449,11 +33369,11 @@
       "sourceRecordId": "ANN-b53d24e972945220",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "terminated",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "terminated",
         "terminationDate": ""
       },
       "timeline": {
@@ -31504,7 +33424,8 @@
         "productdescription": "Fly By Jing Creamy Sesame Noodles, single packs (NET WT 38 OZ, 107 G) and 4 pack (NET WT 152 OZ, 428 G)",
         "producttype": "Food & Beverages, Allergens",
         "reason": "Potential Peanut Contamination",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fly-jing-issues-voluntary-recall-creamy-sesame-noodles-due-potential-cross-contact-peanuts"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fly-jing-issues-voluntary-recall-creamy-sesame-noodles-due-potential-cross-contact-peanuts",
+        "terminated": "Terminated"
       },
       "searchText": "fly by jing fly by jing fly by jing creamy sesame noodles, single packs (net wt 38 oz, 107 g) and 4 pack (net wt 152 oz, 428 g) potential peanut contamination fly by jing \u2014 fly by jing creamy sesame noodles, single packs (net wt 38 oz, 107 g) and 4 pack (net wt 152 oz, 428 g)",
       "sourceReferences": [
@@ -32600,76 +34521,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-27fcb34ce06790b3",
-      "sourceRecordId": "ANN-27fcb34ce06790b3",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "terminated",
-      "lifecycle": {
-        "state": "terminated",
-        "isActionable": false,
-        "sourceStatus": "terminated",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-05-08",
-        "ageDaysAtRefresh": 165,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Jonco Industries, Inc. \u2014 White Cheddar Seasoning",
-      "recallingFirm": "Jonco Industries, Inc.",
-      "productDescription": "White Cheddar Seasoning",
-      "brandNames": [
-        "Williams Sonoma, Fireworks Popcorn"
-      ],
-      "productNames": [
-        "White Cheddar Seasoning"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential Salmonella Contamination",
-      "distribution": "See official notice",
-      "recallDate": "2026-05-08",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jonco-industries-recalls-certain-consumer-sized-white-cheddar-seasoning-products-because-possible",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "Williams Sonoma, Fireworks Popcorn",
-        "company": "Jonco Industries, Inc.",
-        "date": "05/08/2026",
-        "productdescription": "White Cheddar Seasoning",
-        "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential Salmonella Contamination",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jonco-industries-recalls-certain-consumer-sized-white-cheddar-seasoning-products-because-possible",
-        "terminated": "Terminated"
-      },
-      "searchText": "jonco industries, inc. williams sonoma, fireworks popcorn white cheddar seasoning potential salmonella contamination jonco industries, inc. \u2014 white cheddar seasoning",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-27fcb34ce06790b3",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jonco-industries-recalls-certain-consumer-sized-white-cheddar-seasoning-products-because-possible"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-894b3d43e1b2c3be",
       "sourceRecordId": "ANN-894b3d43e1b2c3be",
       "agency": "FDA",
@@ -32733,6 +34584,76 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-894b3d43e1b2c3be",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/shining-sea-fish-co-recalls-ma-cohens-kippered-herring-because-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-27fcb34ce06790b3",
+      "sourceRecordId": "ANN-27fcb34ce06790b3",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "terminated",
+      "lifecycle": {
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "terminated",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-05-08",
+        "ageDaysAtRefresh": 165,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Jonco Industries, Inc. \u2014 White Cheddar Seasoning",
+      "recallingFirm": "Jonco Industries, Inc.",
+      "productDescription": "White Cheddar Seasoning",
+      "brandNames": [
+        "Williams Sonoma, Fireworks Popcorn"
+      ],
+      "productNames": [
+        "White Cheddar Seasoning"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential Salmonella Contamination",
+      "distribution": "See official notice",
+      "recallDate": "2026-05-08",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jonco-industries-recalls-certain-consumer-sized-white-cheddar-seasoning-products-because-possible",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Williams Sonoma, Fireworks Popcorn",
+        "company": "Jonco Industries, Inc.",
+        "date": "05/08/2026",
+        "productdescription": "White Cheddar Seasoning",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential Salmonella Contamination",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jonco-industries-recalls-certain-consumer-sized-white-cheddar-seasoning-products-because-possible",
+        "terminated": "Terminated"
+      },
+      "searchText": "jonco industries, inc. williams sonoma, fireworks popcorn white cheddar seasoning potential salmonella contamination jonco industries, inc. \u2014 white cheddar seasoning",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-27fcb34ce06790b3",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/jonco-industries-recalls-certain-consumer-sized-white-cheddar-seasoning-products-because-possible"
         }
       ],
       "sourceSurfaces": [
@@ -32829,75 +34750,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-fbb277c3d856754c",
-      "sourceRecordId": "ANN-fbb277c3d856754c",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-05-07",
-        "ageDaysAtRefresh": 166,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "My Wife\u2019s Slaw \u2014 Original and Jalapeno Heat flavored coleslaw",
-      "recallingFirm": "My Wife\u2019s Slaw",
-      "productDescription": "Original and Jalapeno Heat flavored coleslaw",
-      "brandNames": [
-        "My Wife\u2019s Slaw"
-      ],
-      "productNames": [
-        "Original and Jalapeno Heat flavored coleslaw"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Foodborne Illness - Potential for microorganisms growth",
-      "distribution": "See official notice",
-      "recallDate": "2026-05-07",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/my-wifes-slaw-issues-voluntary-recall-its-original-and-jalapeno-heat-flavored-coleslaw-being",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "My Wife\u2019s Slaw",
-        "company": "My Wife\u2019s Slaw",
-        "date": "05/07/2026",
-        "productdescription": "Original and Jalapeno Heat flavored coleslaw",
-        "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Foodborne Illness - Potential for microorganisms growth",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/my-wifes-slaw-issues-voluntary-recall-its-original-and-jalapeno-heat-flavored-coleslaw-being"
-      },
-      "searchText": "my wife\u2019s slaw my wife\u2019s slaw original and jalapeno heat flavored coleslaw foodborne illness - potential for microorganisms growth my wife\u2019s slaw \u2014 original and jalapeno heat flavored coleslaw",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-fbb277c3d856754c",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/my-wifes-slaw-issues-voluntary-recall-its-original-and-jalapeno-heat-flavored-coleslaw-being"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-950cd97a8c875b5e",
       "sourceRecordId": "ANN-950cd97a8c875b5e",
       "agency": "FDA",
@@ -32960,6 +34812,75 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-950cd97a8c875b5e",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/albrights-raw-pet-food-announces-voluntary-recall-select-chicken-recipe-dogs-complete-and-balanced-1"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-13d3f985df6bd7c7",
+      "sourceRecordId": "ANN-13d3f985df6bd7c7",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-05-07",
+        "ageDaysAtRefresh": 166,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Stoltzfus Family Dairy LLC \u2014 Sour Cream and Onion Cheese Curds",
+      "recallingFirm": "Stoltzfus Family Dairy LLC",
+      "productDescription": "Sour Cream and Onion Cheese Curds",
+      "brandNames": [
+        "Stoltzfus Family Dairy"
+      ],
+      "productNames": [
+        "Sour Cream and Onion Cheese Curds"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential Salmonella Contamination",
+      "distribution": "See official notice",
+      "recallDate": "2026-05-07",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stoltzfus-family-dairy-recalls-sour-cream-and-onion-cheese-curds-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Stoltzfus Family Dairy",
+        "company": "Stoltzfus Family Dairy LLC",
+        "date": "05/07/2026",
+        "productdescription": "Sour Cream and Onion Cheese Curds",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential Salmonella Contamination",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stoltzfus-family-dairy-recalls-sour-cream-and-onion-cheese-curds-because-possible-health-risk"
+      },
+      "searchText": "stoltzfus family dairy llc stoltzfus family dairy sour cream and onion cheese curds potential salmonella contamination stoltzfus family dairy llc \u2014 sour cream and onion cheese curds",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-13d3f985df6bd7c7",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stoltzfus-family-dairy-recalls-sour-cream-and-onion-cheese-curds-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
@@ -33036,8 +34957,8 @@
       ]
     },
     {
-      "id": "FDA-ANN-13d3f985df6bd7c7",
-      "sourceRecordId": "ANN-13d3f985df6bd7c7",
+      "id": "FDA-ANN-fbb277c3d856754c",
+      "sourceRecordId": "ANN-fbb277c3d856754c",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -33053,14 +34974,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Stoltzfus Family Dairy LLC \u2014 Sour Cream and Onion Cheese Curds",
-      "recallingFirm": "Stoltzfus Family Dairy LLC",
-      "productDescription": "Sour Cream and Onion Cheese Curds",
+      "title": "My Wife\u2019s Slaw \u2014 Original and Jalapeno Heat flavored coleslaw",
+      "recallingFirm": "My Wife\u2019s Slaw",
+      "productDescription": "Original and Jalapeno Heat flavored coleslaw",
       "brandNames": [
-        "Stoltzfus Family Dairy"
+        "My Wife\u2019s Slaw"
       ],
       "productNames": [
-        "Sour Cream and Onion Cheese Curds"
+        "Original and Jalapeno Heat flavored coleslaw"
       ],
       "upcs": [],
       "gtins": [],
@@ -33068,10 +34989,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential Salmonella Contamination",
+      "reason": "Foodborne Illness - Potential for microorganisms growth",
       "distribution": "See official notice",
       "recallDate": "2026-05-07",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stoltzfus-family-dairy-recalls-sour-cream-and-onion-cheese-curds-because-possible-health-risk",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/my-wifes-slaw-issues-voluntary-recall-its-original-and-jalapeno-heat-flavored-coleslaw-being",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -33084,20 +35005,20 @@
         }
       },
       "sourceRecord": {
-        "brand": "Stoltzfus Family Dairy",
-        "company": "Stoltzfus Family Dairy LLC",
+        "brand": "My Wife\u2019s Slaw",
+        "company": "My Wife\u2019s Slaw",
         "date": "05/07/2026",
-        "productdescription": "Sour Cream and Onion Cheese Curds",
+        "productdescription": "Original and Jalapeno Heat flavored coleslaw",
         "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential Salmonella Contamination",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stoltzfus-family-dairy-recalls-sour-cream-and-onion-cheese-curds-because-possible-health-risk"
+        "reason": "Foodborne Illness - Potential for microorganisms growth",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/my-wifes-slaw-issues-voluntary-recall-its-original-and-jalapeno-heat-flavored-coleslaw-being"
       },
-      "searchText": "stoltzfus family dairy llc stoltzfus family dairy sour cream and onion cheese curds potential salmonella contamination stoltzfus family dairy llc \u2014 sour cream and onion cheese curds",
+      "searchText": "my wife\u2019s slaw my wife\u2019s slaw original and jalapeno heat flavored coleslaw foodborne illness - potential for microorganisms growth my wife\u2019s slaw \u2014 original and jalapeno heat flavored coleslaw",
       "sourceReferences": [
         {
           "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-13d3f985df6bd7c7",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stoltzfus-family-dairy-recalls-sour-cream-and-onion-cheese-curds-because-possible-health-risk"
+          "sourceRecordId": "ANN-fbb277c3d856754c",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/my-wifes-slaw-issues-voluntary-recall-its-original-and-jalapeno-heat-flavored-coleslaw-being"
         }
       ],
       "sourceSurfaces": [
@@ -40379,11 +42300,11 @@
       "sourceRecordId": "ANN-fc8f849a12220f0a",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "terminated",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
+        "state": "terminated",
+        "isActionable": false,
+        "sourceStatus": "terminated",
         "terminationDate": ""
       },
       "timeline": {
@@ -40429,7 +42350,8 @@
         "productdescription": "Potato chips",
         "producttype": "Food & Beverages, Foodborne Illness",
         "reason": "Potential Foodborne Illness - Salmonella",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/utz-quality-foods-llc-issues-voluntary-recall-certain-limited-varieties-zapps-and-dirty-potato-chips"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/utz-quality-foods-llc-issues-voluntary-recall-certain-limited-varieties-zapps-and-dirty-potato-chips",
+        "terminated": "Terminated"
       },
       "searchText": "utz quality foods llc zapp\u2019s, dirty potato chips potential foodborne illness - salmonella utz quality foods llc \u2014 potato chips",
       "sourceReferences": [
@@ -42592,6 +44514,75 @@
       ],
       "sourceSurfaces": [
         "enforcement"
+      ]
+    },
+    {
+      "id": "FDA-ANN-143ec7c87165a01d",
+      "sourceRecordId": "ANN-143ec7c87165a01d",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-04-28",
+        "ageDaysAtRefresh": 175,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "B. Braun Medical Inc. \u2014 Lactated Ringer\u2019s Injection, E7500, 1L",
+      "recallingFirm": "B. Braun Medical Inc.",
+      "productDescription": "Lactated Ringer\u2019s Injection, E7500, 1L",
+      "brandNames": [
+        "B. Braun"
+      ],
+      "productNames": [
+        "Lactated Ringer\u2019s Injection, E7500, 1L"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Products were found to contain particulate matter in solution",
+      "distribution": "See official notice",
+      "recallDate": "2026-04-28",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/b-braun-medical-inc-issues-voluntary-nationwide-recall-lactated-ringers-injection-1l-e7500-due",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "B. Braun",
+        "company": "B. Braun Medical Inc.",
+        "date": "04/28/2026",
+        "productdescription": "Lactated Ringer\u2019s Injection, E7500, 1L",
+        "producttype": "Drugs",
+        "reason": "Products were found to contain particulate matter in solution",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/b-braun-medical-inc-issues-voluntary-nationwide-recall-lactated-ringers-injection-1l-e7500-due"
+      },
+      "searchText": "b. braun medical inc. b. braun lactated ringer\u2019s injection, e7500, 1l products were found to contain particulate matter in solution b. braun medical inc. \u2014 lactated ringer\u2019s injection, e7500, 1l",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-143ec7c87165a01d",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/b-braun-medical-inc-issues-voluntary-nationwide-recall-lactated-ringers-injection-1l-e7500-due"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
       ]
     },
     {
@@ -67980,6 +69971,75 @@
       ]
     },
     {
+      "id": "FDA-ANN-85ab86ae6dba94ce",
+      "sourceRecordId": "ANN-85ab86ae6dba94ce",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-01-28",
+        "ageDaysAtRefresh": 265,
+        "isRecent": false
+      },
+      "classification": "unknown",
+      "title": "Gerber Products Company \u2014 Arrowroot biscuits",
+      "recallingFirm": "Gerber Products Company",
+      "productDescription": "Arrowroot biscuits",
+      "brandNames": [
+        "Gerber"
+      ],
+      "productNames": [
+        "Arrowroot biscuits"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "potential presence of soft plastic and/or paper pieces",
+      "distribution": "See official notice",
+      "recallDate": "2026-01-28",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gerber-products-company-announces-voluntary-recall-limited-batches-arrowroot-biscuits-out-abundance",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Gerber",
+        "company": "Gerber Products Company",
+        "date": "01/28/2026",
+        "productdescription": "Arrowroot biscuits",
+        "producttype": "Food & Beverages",
+        "reason": "potential presence of soft plastic and/or paper pieces",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gerber-products-company-announces-voluntary-recall-limited-batches-arrowroot-biscuits-out-abundance"
+      },
+      "searchText": "gerber products company gerber arrowroot biscuits potential presence of soft plastic and/or paper pieces gerber products company \u2014 arrowroot biscuits",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-85ab86ae6dba94ce",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gerber-products-company-announces-voluntary-recall-limited-batches-arrowroot-biscuits-out-abundance"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
       "id": "FDA-H-0482-2026",
       "sourceRecordId": "H-0482-2026",
       "agency": "FDA",
@@ -68736,75 +70796,6 @@
       ]
     },
     {
-      "id": "FDA-ANN-cf93e7db7066f91f",
-      "sourceRecordId": "ANN-cf93e7db7066f91f",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-01-23",
-        "ageDaysAtRefresh": 270,
-        "isRecent": false
-      },
-      "classification": "unknown",
-      "title": "IKM \u2014 Metal Cookware Items",
-      "recallingFirm": "IKM",
-      "productDescription": "Metal Cookware Items",
-      "brandNames": [
-        "IKM"
-      ],
-      "productNames": [
-        "Metal Cookware Items"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential Foodborne Illness \u2013 Lead contamination",
-      "distribution": "See official notice",
-      "recallDate": "2026-01-23",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ikm-recalls-product-because-possible-health-risk",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "IKM",
-        "company": "IKM",
-        "date": "01/23/2026",
-        "productdescription": "Metal Cookware Items",
-        "producttype": "Food & Beverages, Contaminants, Foodborne Illness",
-        "reason": "Potential Foodborne Illness \u2013 Lead contamination",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ikm-recalls-product-because-possible-health-risk"
-      },
-      "searchText": "ikm ikm metal cookware items potential foodborne illness \u2013 lead contamination ikm \u2014 metal cookware items",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-cf93e7db7066f91f",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ikm-recalls-product-because-possible-health-risk"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-ab6cf7bcdb0b3ebc",
       "sourceRecordId": "ANN-ab6cf7bcdb0b3ebc",
       "agency": "FDA",
@@ -68867,6 +70858,75 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-ab6cf7bcdb0b3ebc",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/navitas-organics-voluntarily-recalls-select-lots-8oz-organic-chia-seeds-because-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-cf93e7db7066f91f",
+      "sourceRecordId": "ANN-cf93e7db7066f91f",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-01-23",
+        "ageDaysAtRefresh": 270,
+        "isRecent": false
+      },
+      "classification": "unknown",
+      "title": "IKM \u2014 Metal Cookware Items",
+      "recallingFirm": "IKM",
+      "productDescription": "Metal Cookware Items",
+      "brandNames": [
+        "IKM"
+      ],
+      "productNames": [
+        "Metal Cookware Items"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential Foodborne Illness \u2013 Lead contamination",
+      "distribution": "See official notice",
+      "recallDate": "2026-01-23",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ikm-recalls-product-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "IKM",
+        "company": "IKM",
+        "date": "01/23/2026",
+        "productdescription": "Metal Cookware Items",
+        "producttype": "Food & Beverages, Contaminants, Foodborne Illness",
+        "reason": "Potential Foodborne Illness \u2013 Lead contamination",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ikm-recalls-product-because-possible-health-risk"
+      },
+      "searchText": "ikm ikm metal cookware items potential foodborne illness \u2013 lead contamination ikm \u2014 metal cookware items",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-cf93e7db7066f91f",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/ikm-recalls-product-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
@@ -71361,6 +73421,75 @@
       ]
     },
     {
+      "id": "FDA-ANN-9069705387c59a24",
+      "sourceRecordId": "ANN-9069705387c59a24",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-01-12",
+        "ageDaysAtRefresh": 281,
+        "isRecent": false
+      },
+      "classification": "unknown",
+      "title": "Spring & Mulberry \u2014 Mint Leaf Date Sweetened Chocolate Bar",
+      "recallingFirm": "Spring & Mulberry",
+      "productDescription": "Mint Leaf Date Sweetened Chocolate Bar",
+      "brandNames": [
+        "Spring & Mulberry"
+      ],
+      "productNames": [
+        "Mint Leaf Date Sweetened Chocolate Bar"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential Foodborne Illness - Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-01-12",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/spring-mulberry-issues-voluntary-recall-mint-leaf-date-sweetened-chocolate-bar-due-possible",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Spring & Mulberry",
+        "company": "Spring & Mulberry",
+        "date": "01/12/2026",
+        "productdescription": "Mint Leaf Date Sweetened Chocolate Bar",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential Foodborne Illness - Salmonella",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/spring-mulberry-issues-voluntary-recall-mint-leaf-date-sweetened-chocolate-bar-due-possible"
+      },
+      "searchText": "spring & mulberry spring & mulberry mint leaf date sweetened chocolate bar potential foodborne illness - salmonella spring & mulberry \u2014 mint leaf date sweetened chocolate bar",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-9069705387c59a24",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/spring-mulberry-issues-voluntary-recall-mint-leaf-date-sweetened-chocolate-bar-due-possible"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
       "id": "FDA-ANN-d3de1dee151dbc38",
       "sourceRecordId": "ANN-d3de1dee151dbc38",
       "agency": "FDA",
@@ -71492,75 +73621,6 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-22fede964da73d24",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vh-foods-inc-dba-outside-breadbox-issues-allergy-alert-undeclared-egg-and-milk-bread-crumbs"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "id": "FDA-ANN-9069705387c59a24",
-      "sourceRecordId": "ANN-9069705387c59a24",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-01-12",
-        "ageDaysAtRefresh": 281,
-        "isRecent": false
-      },
-      "classification": "unknown",
-      "title": "Spring & Mulberry \u2014 Mint Leaf Date Sweetened Chocolate Bar",
-      "recallingFirm": "Spring & Mulberry",
-      "productDescription": "Mint Leaf Date Sweetened Chocolate Bar",
-      "brandNames": [
-        "Spring & Mulberry"
-      ],
-      "productNames": [
-        "Mint Leaf Date Sweetened Chocolate Bar"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential Foodborne Illness - Salmonella",
-      "distribution": "See official notice",
-      "recallDate": "2026-01-12",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/spring-mulberry-issues-voluntary-recall-mint-leaf-date-sweetened-chocolate-bar-due-possible",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "Spring & Mulberry",
-        "company": "Spring & Mulberry",
-        "date": "01/12/2026",
-        "productdescription": "Mint Leaf Date Sweetened Chocolate Bar",
-        "producttype": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential Foodborne Illness - Salmonella",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/spring-mulberry-issues-voluntary-recall-mint-leaf-date-sweetened-chocolate-bar-due-possible"
-      },
-      "searchText": "spring & mulberry spring & mulberry mint leaf date sweetened chocolate bar potential foodborne illness - salmonella spring & mulberry \u2014 mint leaf date sweetened chocolate bar",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-9069705387c59a24",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/spring-mulberry-issues-voluntary-recall-mint-leaf-date-sweetened-chocolate-bar-due-possible"
         }
       ],
       "sourceSurfaces": [
