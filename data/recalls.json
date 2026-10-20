@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T04:43:48Z",
+  "generatedAt": "2026-10-20T11:30:19Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-20T04:43:48Z",
-    "lastSuccessfulUpdate": "2026-10-20T04:43:48Z",
+    "checkedAt": "2026-10-20T11:30:19Z",
+    "lastSuccessfulUpdate": "2026-10-20T11:30:19Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-20T04:43:48Z",
-        "lastSuccessfulUpdate": "2026-10-20T04:43:48Z",
+        "checkedAt": "2026-10-20T11:30:19Z",
+        "lastSuccessfulUpdate": "2026-10-20T11:30:19Z",
         "recordCount": 2098,
         "newestRecallDate": "2026-10-17",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-20T04:43:48Z",
+            "checkedAt": "2026-10-20T11:30:19Z",
             "recordCount": 216,
             "newestRecallDate": "2026-09-15"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-20T04:43:48Z",
+            "checkedAt": "2026-10-20T11:30:19Z",
             "recordCount": 8,
             "newestRecallDate": "2026-10-17"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-20T04:43:48Z",
+            "checkedAt": "2026-10-20T11:30:19Z",
             "recordCount": 2720,
             "newestRecallDate": "2026-09-24"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-20T04:43:48Z",
-        "retrievedAt": "2026-10-20T04:43:48Z",
-        "lastSuccessfulUpdate": "2026-10-20T04:43:48Z",
+        "checkedAt": "2026-10-20T11:30:19Z",
+        "retrievedAt": "2026-10-20T11:30:19Z",
+        "lastSuccessfulUpdate": "2026-10-20T11:30:19Z",
         "newestRecallDate": "2026-10-17",
         "recordCount": 2031,
         "error": null,
