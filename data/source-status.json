@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-20T21:34:04Z",
+  "checkedAt": "2026-10-21T04:40:35Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -242,6 +242,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-10-01",
+      "id": "FDA-H-0021-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Saint Francis Apizza Frozen Pepperoni Pizza, Net Weight: 17 oz. (482g), packaged individually in vacuum-sealed plastic, UPC: 6 66186 27762 1",
+      "reason": "Undeclared soy allergen: soybean oil and soy lecithin",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Greenwich"
       ],
@@ -253,49 +264,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Bettergoods"
-      ],
-      "date": "2026-10-01",
-      "id": "FDA-ANN-0d05cea580de699e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0",
-      "product": "Pasta",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-10-20T21:34:04Z",
+  "generatedAt": "2026-10-21T04:40:35Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-20T21:34:04Z",
+      "checkedAt": "2026-10-21T04:40:35Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-20T21:34:04Z",
+      "lastSuccessfulUpdate": "2026-10-21T04:40:35Z",
       "newestRecallDate": "2026-10-17",
       "qualityStatus": "current",
-      "recordCount": 2127,
+      "recordCount": 2142,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-20T21:34:04Z",
+          "checkedAt": "2026-10-21T04:40:35Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-20T21:34:04Z",
-          "newestRecallDate": "2026-09-24",
-          "recordCount": 2720,
+          "checkedAt": "2026-10-21T04:40:35Z",
+          "newestRecallDate": "2026-10-01",
+          "recordCount": 2740,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-20T21:34:04Z",
+          "checkedAt": "2026-10-21T04:40:35Z",
           "newestRecallDate": "2026-10-17",
           "recordCount": 8,
           "success": true
@@ -303,12 +301,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-20T21:34:04Z",
+      "checkedAt": "2026-10-21T04:40:35Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-20T21:34:04Z",
+      "lastSuccessfulUpdate": "2026-10-21T04:40:35Z",
       "newestRecallDate": "2026-10-17",
       "qualityStatus": "current",
       "recordCount": 2031,
