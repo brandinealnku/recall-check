@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T17:07:44Z",
+  "generatedAt": "2026-10-21T21:38:25Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-21T17:07:44Z",
-    "lastSuccessfulUpdate": "2026-10-21T17:07:44Z",
+    "checkedAt": "2026-10-21T21:38:25Z",
+    "lastSuccessfulUpdate": "2026-10-21T21:38:25Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-21T17:07:44Z",
-        "lastSuccessfulUpdate": "2026-10-21T17:07:44Z",
+        "checkedAt": "2026-10-21T21:38:25Z",
+        "lastSuccessfulUpdate": "2026-10-21T21:38:25Z",
         "recordCount": 2142,
         "newestRecallDate": "2026-10-17",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-21T17:07:44Z",
+            "checkedAt": "2026-10-21T21:38:25Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-21T17:07:44Z",
-            "recordCount": 8,
+            "checkedAt": "2026-10-21T21:38:25Z",
+            "recordCount": 7,
             "newestRecallDate": "2026-10-17"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-21T17:07:44Z",
+            "checkedAt": "2026-10-21T21:38:25Z",
             "recordCount": 2740,
             "newestRecallDate": "2026-10-01"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-21T17:07:44Z",
-        "retrievedAt": "2026-10-21T17:07:44Z",
-        "lastSuccessfulUpdate": "2026-10-21T17:07:44Z",
+        "checkedAt": "2026-10-21T21:38:25Z",
+        "retrievedAt": "2026-10-21T21:38:25Z",
+        "lastSuccessfulUpdate": "2026-10-21T21:38:25Z",
         "newestRecallDate": "2026-10-17",
         "recordCount": 2031,
         "error": null,
@@ -709,8 +709,8 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-14939e4d2b0851fc",
-      "sourceRecordId": "PUBLIC-14939e4d2b0851fc",
+      "id": "FDA-ANN-a57a891ede114611",
+      "sourceRecordId": "ANN-a57a891ede114611",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -726,7 +726,7 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Broccoli Sprouting Seeds",
+      "title": "Gardeners Basics \u2014 Broccoli Sprouting Seeds",
       "recallingFirm": "Gardeners Basics",
       "productDescription": "Broccoli Sprouting Seeds",
       "brandNames": [
@@ -757,24 +757,16 @@
         }
       },
       "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-08",
         "brand": "Gardeners Basics",
-        "product": "Broccoli Sprouting Seeds",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Product may be contaminated with Salmonella",
         "company": "Gardeners Basics",
-        "terminated": "",
-        "excerpt": "",
+        "date": "10/08/2026",
+        "productdescription": "Broccoli Sprouting Seeds",
+        "producttype": "Food & Beverages, Foodborne Illness",
+        "reason": "Product may be contaminated with Salmonella",
         "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination"
       },
-      "searchText": "gardeners basics gardeners basics broccoli sprouting seeds product may be contaminated with salmonella",
+      "searchText": "gardeners basics gardeners basics broccoli sprouting seeds product may be contaminated with salmonella gardeners basics \u2014 broccoli sprouting seeds",
       "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-14939e4d2b0851fc",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination"
-        },
         {
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-a57a891ede114611",
@@ -782,7 +774,6 @@
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
