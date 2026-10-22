@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T17:06:43Z",
+  "generatedAt": "2026-10-22T21:31:45Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,15 +14,15 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-22T17:06:43Z",
-    "lastSuccessfulUpdate": "2026-10-22T17:06:43Z",
+    "checkedAt": "2026-10-22T21:31:45Z",
+    "lastSuccessfulUpdate": "2026-10-22T21:31:45Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-22T17:06:43Z",
-        "lastSuccessfulUpdate": "2026-10-22T17:06:43Z",
-        "recordCount": 2141,
-        "newestRecallDate": "2026-10-17",
+        "checkedAt": "2026-10-22T21:31:45Z",
+        "lastSuccessfulUpdate": "2026-10-22T21:31:45Z",
+        "recordCount": 2142,
+        "newestRecallDate": "2026-10-22",
         "current": true,
         "qualityStatus": "current",
         "coverageComplete": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-22T17:06:43Z",
+            "checkedAt": "2026-10-22T21:31:45Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-22T17:06:43Z",
+            "checkedAt": "2026-10-22T21:31:45Z",
             "recordCount": 7,
-            "newestRecallDate": "2026-10-17"
+            "newestRecallDate": "2026-10-22"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-22T17:06:43Z",
+            "checkedAt": "2026-10-22T21:31:45Z",
             "recordCount": 2739,
             "newestRecallDate": "2026-10-01"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-22T17:06:43Z",
-        "retrievedAt": "2026-10-22T17:06:43Z",
-        "lastSuccessfulUpdate": "2026-10-22T17:06:43Z",
+        "checkedAt": "2026-10-22T21:31:45Z",
+        "retrievedAt": "2026-10-22T21:31:45Z",
+        "lastSuccessfulUpdate": "2026-10-22T21:31:45Z",
         "newestRecallDate": "2026-10-17",
         "recordCount": 2031,
         "error": null,
@@ -64,13 +64,85 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2141,
+      "FDA": 2142,
       "USDA": 1242
     },
     "recordsWithIdentifierCandidates": 37,
     "warnings": []
   },
   "recalls": [
+    {
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "sourceRecordId": "PUBLIC-2c852be91c011238",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-22",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Hoagie Rolls",
+      "recallingFirm": "WinCo Foods LLC",
+      "productDescription": "Hoagie Rolls",
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "productNames": [
+        "Hoagie Rolls"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared sesame",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-22",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-22",
+        "brand": "WinCo Foods",
+        "product": "Hoagie Rolls",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared sesame",
+        "company": "WinCo Foods LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
+      },
+      "searchText": "winco foods llc winco foods hoagie rolls undeclared sesame",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-2c852be91c011238",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "id": "USDA-026-2026",
       "sourceRecordId": "026-2026",
@@ -309,11 +381,6 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-df4b6e8010f64200",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz"
-        },
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-6ec815c102b54cfc",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
         },
         {
           "surface": "annualAnnouncements",

@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-10-22T17:06:43Z",
+  "checkedAt": "2026-10-22T21:31:45Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "product": "Hoagie Rolls",
+      "reason": "Undeclared sesame",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Gelatelli"
@@ -250,62 +263,49 @@
       "sourceSurfaces": [
         "enforcement"
       ]
-    },
-    {
-      "brandNames": [
-        "Greenwich"
-      ],
-      "date": "2026-10-01",
-      "id": "FDA-ANN-30030be31cfb39b8",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-glutathione-due-elevated-endotoxin-levels",
-      "product": "Glutathione Injection",
-      "reason": "Potential elevated endotoxin levels",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-10-22T17:06:43Z",
+  "generatedAt": "2026-10-22T21:31:45Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-22T17:06:43Z",
+      "checkedAt": "2026-10-22T21:31:45Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-22T17:06:43Z",
-      "newestRecallDate": "2026-10-17",
+      "lastSuccessfulUpdate": "2026-10-22T21:31:45Z",
+      "newestRecallDate": "2026-10-22",
       "qualityStatus": "current",
-      "recordCount": 2141,
+      "recordCount": 2142,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-22T17:06:43Z",
+          "checkedAt": "2026-10-22T21:31:45Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-22T17:06:43Z",
+          "checkedAt": "2026-10-22T21:31:45Z",
           "newestRecallDate": "2026-10-01",
           "recordCount": 2739,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-22T17:06:43Z",
-          "newestRecallDate": "2026-10-17",
+          "checkedAt": "2026-10-22T21:31:45Z",
+          "newestRecallDate": "2026-10-22",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-22T17:06:43Z",
+      "checkedAt": "2026-10-22T21:31:45Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-22T17:06:43Z",
+      "lastSuccessfulUpdate": "2026-10-22T21:31:45Z",
       "newestRecallDate": "2026-10-17",
       "qualityStatus": "current",
       "recordCount": 2031,
