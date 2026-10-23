@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T04:43:43Z",
+  "generatedAt": "2026-10-23T11:32:56Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-23T04:43:43Z",
-    "lastSuccessfulUpdate": "2026-10-23T04:43:43Z",
+    "checkedAt": "2026-10-23T11:32:56Z",
+    "lastSuccessfulUpdate": "2026-10-23T11:32:56Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-23T04:43:43Z",
-        "lastSuccessfulUpdate": "2026-10-23T04:43:43Z",
+        "checkedAt": "2026-10-23T11:32:56Z",
+        "lastSuccessfulUpdate": "2026-10-23T11:32:56Z",
         "recordCount": 2137,
         "newestRecallDate": "2026-10-22",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-23T04:43:43Z",
+            "checkedAt": "2026-10-23T11:32:56Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-23T04:43:43Z",
+            "checkedAt": "2026-10-23T11:32:56Z",
             "recordCount": 7,
             "newestRecallDate": "2026-10-22"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-23T04:43:43Z",
+            "checkedAt": "2026-10-23T11:32:56Z",
             "recordCount": 2732,
             "newestRecallDate": "2026-10-01"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-23T04:43:43Z",
-        "retrievedAt": "2026-10-23T04:43:43Z",
-        "lastSuccessfulUpdate": "2026-10-23T04:43:43Z",
+        "checkedAt": "2026-10-23T11:32:56Z",
+        "retrievedAt": "2026-10-23T11:32:56Z",
+        "lastSuccessfulUpdate": "2026-10-23T11:32:56Z",
         "newestRecallDate": "2026-10-17",
         "recordCount": 2031,
         "error": null,
@@ -231386,7 +231386,7 @@
         ],
         "field_recall_type": "Closed Recall",
         "field_related_to_outbreak": "False",
-        "field_summary": "<p><strong>WASHINGTON, April 23, 2021</strong> \u2013 Super World Trading Inc., a Brooklyn, N.Y. establishment, is recalling approximately 26,270 pounds of ready-to-eat (RTE) imported Siluriformes products. The products were imported from the People\u2019s Republic of China, a country ineligible to export processed Siluriformes products to the United States, the U.S. Department of Agriculture\u2019s Food Safety and Inspection Service (FSIS) announced today.&nbsp;</p>\n\n<p>The following products are subject to recall, regardless of the product date:&nbsp;</p>\n\n<ul>\n\t<li>4.23 oz. (120g) plastic tray and cover packages containing \u201cGolden Spoon Hot Pot Fish Chips\u201d.</li>\n</ul>\n\n<p>Refer to the label link <a href=\"/sites/default/files/food_label_pdf/2021-04/recall-014-2021-labels.pdf\">here</a>&nbsp;for additional product information. The products do not bear an establishment number nor a USDA mark of inspection. These items were shipped to retail and wholesale locations nationwide.</p>\n\n<p>The problem was discovered during a routine FSIS surveillance activity of imported products. China is eligible to import raw Siluriformes products into the United States, but not processed or RTE Siluriformes products.</p>\n\n<p>There have been no confirmed reports of adverse reactions due to consumption of these products. Anyone concerned about a reaction should contact a healthcare provider.&nbsp;&nbsp;</p>\n\n<p>FSIS is concerned that consumers may still be in possession of the product. Consumers who have purchased these products are urged not to consume them. These products should be thrown away or returned to the place of purchase.</p>\n\n<p>FSIS routinely conducts recall effectiveness checks to verify recalling firms notify their<strong> </strong>customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. When available, the retail distribution list(s) will be posted on the FSIS website at&nbsp;<a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p>\n\n<p>Consumers and members of the media with questions about the recall can contact Ling Cho, Admin Asst., Super World Trading Inc., at (718) 381-5659 or email <a href=\"mailto:superworldtrading@yahoo.com\">superworldtrading@yahoo.com</a>.<span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><a name=\"_Hlk21099580\"></a></span></span></p>\n\n<p>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 1-888-MPHotline (1-888-674-6854) or live chat via <a href=\"https://ask.fsis.usda.gov/\">Ask USDA</a> from 10 a.m. to 6 p.m. (Eastern Time) Monday through Friday. Consumers can also browse food safety messages at <a href=\"https://ask.fsis.usda.gov/\">Ask USDA</a> or send a question via email to <a href=\"mailto:MPHotline@usda.gov\">MPHotline@usda.gov</a>. For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at<a href=\" https://foodcomplaint.fsis.usda.gov/eCCF/\"> https://foodcomplaint.fsis.usda.gov/eCCF/</a>.&nbsp;</p>\n",
+        "field_summary": "<p><strong>WASHINGTON, April 23, 2021</strong> \u2013 Super World Trading Inc., a Brooklyn, N.Y. establishment, is recalling approximately 26,270 pounds of ready-to-eat (RTE) imported Siluriformes products. The products were imported from the People\u2019s Republic of China, a country ineligible to export processed Siluriformes products to the United States, the U.S. Department of Agriculture\u2019s Food Safety and Inspection Service (FSIS) announced today.&nbsp;</p><p>The following products are subject to recall, regardless of the product date:&nbsp;</p><ul><li data-list-item-id=\"e1c43f4419004f76a9ab73e7af21f5f16\">4.23 oz. (120g) plastic tray and cover packages containing \u201cGolden Spoon Hot Pot Fish Chips\u201d.</li></ul><p>Refer to the label link <a href=\"/sites/default/files/food_label_pdf/2021-04/recall-014-2021-labels.pdf\">here</a>&nbsp;for additional product information. The products do not bear an establishment number nor a USDA mark of inspection. These items were shipped to retail and wholesale locations nationwide.</p><p>The problem was discovered during a routine FSIS surveillance activity of imported products. China is eligible to import raw Siluriformes products into the United States, but not processed or RTE Siluriformes products.</p><p>There have been no confirmed reports of adverse reactions due to consumption of these products. Anyone concerned about a reaction should contact a healthcare provider.&nbsp;&nbsp;</p><p>FSIS is concerned that consumers may still be in possession of the product. Consumers who have purchased these products are urged not to consume them. These products should be thrown away or returned to the place of purchase.</p><p>FSIS routinely conducts recall effectiveness checks to verify recalling firms notify their<strong> </strong>customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. When available, the retail distribution list(s) will be posted on the FSIS website at&nbsp;<a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p><p>Consumers and members of the media with questions about the recall can contact Ling Cho, Admin Asst., Super World Trading Inc., at (718) 381-5659 or email <a href=\"mailto:superworldtrading@yahoo.com\">superworldtrading@yahoo.com</a>.</p><p>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 1-888-MPHotline (1-888-674-6854) or live chat via <a href=\"https://ask.fsis.usda.gov/\">Ask USDA</a> from 10 a.m. to 6 p.m. (Eastern Time) Monday through Friday. Consumers can also browse food safety messages at <a href=\"https://ask.fsis.usda.gov/\">Ask USDA</a> or send a question via email to <a href=\"mailto:MPHotline@usda.gov\">MPHotline@usda.gov</a>. For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at<a href=\"#https://foodcomplaint.fsis.usda.gov/eCCF/\"> https://foodcomplaint.fsis.usda.gov/eCCF/</a>.&nbsp;</p>",
         "field_year": "2021",
         "langcode": "English",
         "field_has_spanish": "False"
@@ -254248,7 +254248,7 @@
           "Product Contamination"
         ],
         "field_recall_type": "Closed Recall",
-        "field_related_to_outbreak": "",
+        "field_related_to_outbreak": "False",
         "field_summary": "<p><strong>EDITOR\u00c3\u00adS NOTE: </strong><br><br>\n&nbsp;-Esta versi\u00f3n se actualiz\u00f3 el 21 de octubre de 2018 para reflejar el peso adicional producido.</p>\n<p dir=\"ltr\">&nbsp;</p>\n<p dir=\"ltr\"><strong>WASHINGTON, 17 de octubre de 2018</strong> - <em>GH Foods CA, LLC</em>, un establecimiento de Sacramento, California es retirando aproximadamente 987 libras ensaladas con productos de pollo listas para el consumo que contienen un ingrediente de ma\u00edz que puede estar contaminado con <em>Salmonella</em> y <em>Listeria monocytogenes</em>, anunci\u00f3 hoy el Servicio de Inocuidad e Inspecci\u00f3n de Alimentos (FSIS) del Departamento de Agricultura de los EE. UU. (USDA).</p>\n<p>Las ensaladas con pollo listas para el consumo fueron producidas en varias fechas desde el 9 de octubre de 2018 hasta el 13 de octubre de 2018. Los siguientes productos son objeto de la retirada: [<a href=\"/sites/default/files/import/Recall%2B093-2018%2BLabels_0.pdf\">Etiquetas</a> (formato PDF)]</p>\n<ul dir=\"ltr\">\n<li>Empaques clamshell de 9.75 onzas de pl\u00e1stico transparente que contienen \"Ensalada con pollo estilo Santa Fe\" y fechas de caducidad desde el 17/10/18 al 18/10/18.</li>\n<li>Empaques clamshell de 10 onzas de pl\u00e1stico transparente que contienen \"ENSALADA PICADA CON POLLO ESTILO BBQ 365 DE WHOLE FOODS MARKET\" y fechas de venta preferentes del 17/10/18 a 20/10/18.</li>\n<li>Kit embolsado de 6 libras que contiene el \"Kit de ensalada estilo BBQ con pollo blanco\" y fechas de caducidad del 17/10/18 al 22/10/18.</li>\n<li>Empaques clamshell de 8 onzas de pl\u00e1stico de transparente que contienen \"ENSALADA DE FAJITA DE POLLO 365 DE WHOLE FOODS MARKET\" y fechas de venta preferentes del 17/10/18 a 20/10/18.</li>\n</ul>\n<p>Los productos sujetos a retirada est\u00e1n marcados con el n\u00famero de establecimiento \"EST. P-39994\u201d dentro del sello de inspecci\u00f3n del USDA. Estos art\u00edculos fueron enviados a puntos de venta en California.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\n<p>El problema fue descubierto el 16 de octubre de 2018 cuando GH Foods CA, LLC recibi\u00f3 notificaci\u00f3n de que el ma\u00edz utilizado en la producci\u00f3n de sus ensaladas con pollo listas para el consumo estaban siendo retiradas por su proveedor de ma\u00edz debido a preocupaciones relacionadas con <em>Listeria monocytogenes</em> y <em>Salmonella</em>.</p>\n<p>No han habido informes confirmados de reacciones adversas debido al consumo de estos productos. Cualquier persona que tenga inquietudes acerca de lesiones o enfermedades debe contactar a un proveedor de servicios de salud.</p>\n<p>El consumo de alimentos contaminados con <em>Salmonella</em> puede causar salmonellosis, una de las enfermedades bacterianas transmitidas por alimentos que se presenta m\u00e1s com\u00fanmente. Los s\u00edntomas m\u00e1s comunes de la salmonellosis son la diarrea, calambres abdominales y la fiebre entre las 12 a 72 horas siguientes al consumo del producto contaminado. Esta enfermedad suele durar de 4 a 7 d\u00edas. La mayor\u00eda de las personas se recuperan sin recibir tratamiento. Sin embargo, algunas personas pueden sufrir de diarrea tan severa que requiera la hospitalizaci\u00f3n del paciente.</p>\n<p>El consumo de alimentos contaminados con L. monocytogenes puede causar listeriosis, una infecci\u00f3n grave que afecta principalmente a adultos mayores, personas con sistemas inmunes debilitados y mujeres embarazadas y sus reci\u00e9n nacidos. Con menos frecuencia, se ven afectadas las personas que se encuentran fuera de estos grupos de riesgo.</p>\n<p>La listeriosis puede causar fiebre, dolores musculares, dolor de cabeza, tort\u00edcolis, confusi\u00f3n, p\u00e9rdida del equilibrio y convulsiones, que a menudo los anteceden la diarrea y otros s\u00edntomas gastrointestinales. Una infecci\u00f3n invasiva se extiende m\u00e1s all\u00e1 del tracto gastrointestinal. En las mujeres embarazadas, la infecci\u00f3n puede causar abortos espont\u00e1neos, partos prematuros o infecciones potencialmente letales para el reci\u00e9n nacido. Adem\u00e1s puede causar infecciones graves o que pueden causar la muerte de adultos mayores y personas con sistemas inmunes debilitados. La listeriosis se trata con antibi\u00f3ticos. Las personas en las categor\u00edas de alto riesgo que sufran de s\u00edntomas similares a los de la gripa en los dos meses siguientes al consumo de comida contaminada deben buscar atenci\u00f3n m\u00e9dica e informarle al proveedor de servicios de salud del consumo de la comida contaminada.</p>\n<p>El FSIS muestra preocupaci\u00f3n debido a que parte del producto puede estar en los refrigeradores de los consumidores. Se insta a los consumidores que compraron estos productos que no los consuman. Estos productos deben ser desechados o devueltos al punto de venta.</p>\n<p>El FSIS realiza revisiones sobre la efectividad de la retirada de manera rutinaria para verificar que las empresas que realizan una retirada&nbsp; le notifiquen a sus clientes y sigan los pasos necesarios para asegurarse de que el producto ya no est\u00e9 al alcance de los consumidores. Cuando est\u00e9(n) disponible(s), la(s) lista(s) de distribuci\u00f3n minorista se publicar\u00e1(n) en el sitio web del FSIS en <a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p>\n<p>Los consumidores con preguntas sobre la memoria pueden comunicarse con Nelia Alamo, VP de comunicaciones de GH Foods, LLC, llamando al (916) 638-8825. Los medios de comunicaci\u00f3n con preguntas sobre la retirada pueden comunicarse con Amy Philpott, Director Senior de relaciones con los medios de Watson, LLC, llamando al (703) 472-6615.</p>\n<p>Los consumidores con preguntas de salubridad de alimentos pueden hacerlas a trav\u00e9s de \"Preg\u00fantele a Karen\", la representante virtual del FSIS que est\u00e1 disponible las 24 horas del d\u00eda en <a href=\"http://askkaren.gov/\">Pregunteleakaren.gov</a> o a trav\u00e9s de su tel\u00e9fono inteligente en <a href=\"http://m.askkaren.gov/\">m.pregunteleakaren.gov</a>. La l\u00ednea directa gratuita para carnes y aves de corral del USDA 1-888-MPHotline (1-888-674-6854) est\u00e1 disponible en ingl\u00e9s y espa\u00f1ol y se puede contactar de 10 a.m. a 6 p.m. (Hora del Este) de lunes a viernes. Los avisos de salubridad de alimentos registrados est\u00e1n disponibles las 24 horas del d\u00eda. El Sistema Electr\u00f3nico de Monitoreo de Quejas del Consumidor en la web, puede ser accedido las 24 horas del d\u00eda en: <a href=\"http://www.fsis.usda.gov/reportproblem\">http://www.fsis.usda.gov/reportproblem</a>.</p>\n",
         "field_year": "2018",
         "langcode": "Spanish",
