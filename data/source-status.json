@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-22T21:31:45Z",
+  "checkedAt": "2026-10-23T04:43:43Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -10,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
       "product": "Hoagie Rolls",
       "reason": "Undeclared sesame",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Natural Grocers"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-PUBLIC-10f749b0c03717f9",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
+      "product": "2 pound Mung Beans",
+      "reason": "Possible foreign material contamination with glass",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -83,21 +96,6 @@
     },
     {
       "brandNames": [
-        "Riad's Oliva to Go",
-        "Riad&#039;s Oliva to Go"
-      ],
-      "date": "2026-10-09",
-      "id": "FDA-PUBLIC-84481900ebb4da8e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
-      "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
-      "reason": "Undeclared sesame allergen",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "Par Pharmaceutical"
       ],
       "date": "2026-10-09",
@@ -105,6 +103,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-brevitalr-sodium-500-mgvial-civ-methohexital",
       "product": "Brevital Sodium 500 mg/vial for Injection",
       "reason": "Presence of particulate matter identified as cellulose",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Riad&#039;s Oliva to Go"
+      ],
+      "date": "2026-10-09",
+      "id": "FDA-ANN-63b71c827137f104",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
+      "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
+      "reason": "Undeclared sesame allergen",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -252,47 +263,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-01",
-      "id": "FDA-H-0021-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Saint Francis Apizza Frozen Pepperoni Pizza, Net Weight: 17 oz. (482g), packaged individually in vacuum-sealed plastic, UPC: 6 66186 27762 1",
-      "reason": "Undeclared soy allergen: soybean oil and soy lecithin",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
     }
   ],
-  "generatedAt": "2026-10-22T21:31:45Z",
+  "generatedAt": "2026-10-23T04:43:43Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-22T21:31:45Z",
+      "checkedAt": "2026-10-23T04:43:43Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-22T21:31:45Z",
+      "lastSuccessfulUpdate": "2026-10-23T04:43:43Z",
       "newestRecallDate": "2026-10-22",
       "qualityStatus": "current",
-      "recordCount": 2142,
+      "recordCount": 2137,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-22T21:31:45Z",
+          "checkedAt": "2026-10-23T04:43:43Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-22T21:31:45Z",
+          "checkedAt": "2026-10-23T04:43:43Z",
           "newestRecallDate": "2026-10-01",
-          "recordCount": 2739,
+          "recordCount": 2732,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-22T21:31:45Z",
+          "checkedAt": "2026-10-23T04:43:43Z",
           "newestRecallDate": "2026-10-22",
           "recordCount": 7,
           "success": true
@@ -300,12 +300,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-22T21:31:45Z",
+      "checkedAt": "2026-10-23T04:43:43Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-22T21:31:45Z",
+      "lastSuccessfulUpdate": "2026-10-23T04:43:43Z",
       "newestRecallDate": "2026-10-17",
       "qualityStatus": "current",
       "recordCount": 2031,
