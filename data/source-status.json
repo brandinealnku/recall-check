@@ -1,19 +1,6 @@
 {
-  "checkedAt": "2026-10-26T04:40:40Z",
+  "checkedAt": "2026-10-26T12:50:04Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-22",
-      "id": "FDA-PUBLIC-2c852be91c011238",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
-      "product": "Hoagie Rolls",
-      "reason": "Undeclared sesame",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "Natural Grocers"
@@ -23,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
       "product": "2 pound Mung Beans",
       "reason": "Possible foreign material contamination with glass",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "product": "Hoagie Rolls",
+      "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -265,34 +265,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-26T04:40:40Z",
+  "generatedAt": "2026-10-26T12:50:04Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-26T04:40:40Z",
+      "checkedAt": "2026-10-26T12:50:04Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-26T04:40:40Z",
+      "lastSuccessfulUpdate": "2026-10-26T12:50:04Z",
       "newestRecallDate": "2026-10-22",
       "qualityStatus": "current",
       "recordCount": 2132,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-26T04:40:40Z",
+          "checkedAt": "2026-10-26T12:50:04Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-26T04:40:40Z",
+          "checkedAt": "2026-10-26T12:50:04Z",
           "newestRecallDate": "2026-10-01",
           "recordCount": 2726,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-26T04:40:40Z",
+          "checkedAt": "2026-10-26T12:50:04Z",
           "newestRecallDate": "2026-10-22",
           "recordCount": 7,
           "success": true
@@ -300,12 +300,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-26T04:40:40Z",
+      "checkedAt": "2026-10-26T12:50:04Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-26T04:40:40Z",
+      "lastSuccessfulUpdate": "2026-10-26T12:50:04Z",
       "newestRecallDate": "2026-10-24",
       "qualityStatus": "current",
       "recordCount": 2032,
