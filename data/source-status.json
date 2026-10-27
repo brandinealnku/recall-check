@@ -1,19 +1,6 @@
 {
-  "checkedAt": "2026-10-26T22:36:58Z",
+  "checkedAt": "2026-10-27T04:58:11Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-22",
-      "id": "FDA-PUBLIC-2c852be91c011238",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
-      "product": "Hoagie Rolls",
-      "reason": "Undeclared sesame",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "Natural Grocers"
@@ -23,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
       "product": "2 pound Mung Beans",
       "reason": "Possible foreign material contamination with glass",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "product": "Hoagie Rolls",
+      "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -134,6 +134,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-10-07",
+      "id": "FDA-H-0095-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Pur Aqua Sparkling Frost Cherry Limeade 17 oz., UPC: 4099100167023",
+      "reason": "May contain undeclared aspartame.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "RAPTURE"
       ],
@@ -212,6 +223,28 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-10-02",
+      "id": "FDA-H-0094-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
+      "reason": "Foreign object: May contain pieces of metal",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-02",
+      "id": "FDA-H-0093-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Stewarts Shops Vanilla chocolate Strawberry Ice Cream 1/2 gallon (1.89 L), UPC: 0 82086 44377 3",
+      "reason": "Foreign object: May contain pieces of metal",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Great Value, Trader Joe\u2019s",
         "Great Value"
@@ -224,75 +257,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-ANN-2484fab8f01ade21",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
-      "product": "Salsa Bean Dip",
-      "reason": "Potential pest inclusion",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Stewart\u2019s Shops"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-ANN-250c8e3fe80c689f",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stewarts-shop-corp-recalls-heavenly-medley-and-vanilla-chocolate-strawberry-due-possible-foreign",
-      "product": "Ice cream",
-      "reason": "Potential presence of metal",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Home Grown"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-ANN-22489a064fd8ad8e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eak-distribution-llc-recalls-home-grown-green-sprouting-calabrese-broccoli-seeds-8-oz-heirloom",
-      "product": "Green Sprouting Calabrese Broccoli Seeds",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-10-26T22:36:58Z",
+  "generatedAt": "2026-10-27T04:58:11Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-26T22:36:58Z",
+      "checkedAt": "2026-10-27T04:58:11Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-26T22:36:58Z",
+      "lastSuccessfulUpdate": "2026-10-27T04:58:11Z",
       "newestRecallDate": "2026-10-22",
       "qualityStatus": "current",
-      "recordCount": 2132,
+      "recordCount": 2139,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-26T22:36:58Z",
+          "checkedAt": "2026-10-27T04:58:11Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-26T22:36:58Z",
-          "newestRecallDate": "2026-10-01",
-          "recordCount": 2726,
+          "checkedAt": "2026-10-27T04:58:11Z",
+          "newestRecallDate": "2026-10-07",
+          "recordCount": 2733,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-26T22:36:58Z",
+          "checkedAt": "2026-10-27T04:58:11Z",
           "newestRecallDate": "2026-10-22",
           "recordCount": 7,
           "success": true
@@ -300,12 +294,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-26T22:36:58Z",
+      "checkedAt": "2026-10-27T04:58:11Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-26T22:36:58Z",
+      "lastSuccessfulUpdate": "2026-10-27T04:58:11Z",
       "newestRecallDate": "2026-10-24",
       "qualityStatus": "current",
       "recordCount": 2032,
