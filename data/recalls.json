@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T17:57:41Z",
+  "generatedAt": "2026-10-27T22:08:58Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,14 +14,14 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-27T17:57:41Z",
-    "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
+    "checkedAt": "2026-10-27T22:08:58Z",
+    "lastSuccessfulUpdate": "2026-10-27T22:08:58Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-27T17:57:41Z",
-        "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
-        "recordCount": 2140,
+        "checkedAt": "2026-10-27T22:08:58Z",
+        "lastSuccessfulUpdate": "2026-10-27T22:08:58Z",
+        "recordCount": 2141,
         "newestRecallDate": "2026-10-27",
         "current": true,
         "qualityStatus": "current",
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-27T17:57:41Z",
+            "checkedAt": "2026-10-27T22:08:58Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-27T17:57:41Z",
+            "checkedAt": "2026-10-27T22:08:58Z",
             "recordCount": 7,
             "newestRecallDate": "2026-10-27"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-27T17:57:41Z",
+            "checkedAt": "2026-10-27T22:08:58Z",
             "recordCount": 2733,
             "newestRecallDate": "2026-10-07"
           }
@@ -50,25 +50,30 @@
         "error": null
       },
       "USDA": {
-        "success": true,
-        "checkedAt": "2026-10-27T17:57:41Z",
+        "success": false,
+        "checkedAt": "2026-10-27T22:08:58Z",
         "retrievedAt": "2026-10-27T17:57:41Z",
         "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
         "newestRecallDate": "2026-10-24",
-        "recordCount": 2032,
-        "error": null,
-        "current": true,
-        "qualityStatus": "current",
-        "coverageComplete": true,
+        "recordCount": 1243,
+        "error": {
+          "type": "URLError",
+          "message": ""
+        },
+        "current": false,
+        "qualityStatus": "unavailable",
+        "coverageComplete": false,
         "coverageMethod": "primary-api"
       }
     },
     "recordCountByAgency": {
-      "FDA": 2140,
+      "FDA": 2141,
       "USDA": 1243
     },
-    "recordsWithIdentifierCandidates": 37,
-    "warnings": []
+    "recordsWithIdentifierCandidates": 20,
+    "warnings": [
+      "USDA refresh failed; retained 1243 last-known records"
+    ]
   },
   "recalls": [
     {
@@ -137,6 +142,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-58c684b35be092fb",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-9fa18b7b3c8b361f",
+      "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-27",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "BBQ Chop Salad Kit",
+      "recallingFirm": "Taylor Farms",
+      "productDescription": "BBQ Chop Salad Kit",
+      "brandNames": [
+        "H-E-B"
+      ],
+      "productNames": [
+        "BBQ Chop Salad Kit"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared soy and tree nuts (almonds)",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-27",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-27",
+        "brand": "H-E-B",
+        "product": "BBQ Chop Salad Kit",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared soy and tree nuts (almonds)",
+        "company": "Taylor Farms",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
+      },
+      "searchText": "taylor farms h-e-b bbq chop salad kit undeclared soy and tree nuts (almonds)",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
         }
       ],
       "sourceSurfaces": [
@@ -718,92 +795,6 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-62f214b9a5bcb482",
-      "sourceRecordId": "PUBLIC-62f214b9a5bcb482",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-14",
-        "ageDaysAtRefresh": 13,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Para Bien Al Grano",
-      "recallingFirm": "Pan Pepin Inc.",
-      "productDescription": "Para Bien Al Grano",
-      "brandNames": [
-        "Para Bien"
-      ],
-      "productNames": [
-        "Para Bien Al Grano",
-        "Para Bien Al Grano, 24oz box"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [
-        "24oz"
-      ],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Undeclared sesame",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-14",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-14",
-        "brand": "Para Bien",
-        "product": "Para Bien Al Grano",
-        "productType": "Food & Beverages, Allergens",
-        "reason": "Undeclared sesame",
-        "company": "Pan Pepin Inc.",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de"
-      },
-      "searchText": "pan pepin inc. para bien para bien al grano undeclared sesame",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-62f214b9a5bcb482",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-ea9963a33edf6fdb",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-6c695541c93c2f22",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-fcad7ab7453b09db",
       "sourceRecordId": "ANN-fcad7ab7453b09db",
       "agency": "FDA",
@@ -868,6 +859,83 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-fcad7ab7453b09db",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-argatroban-injection-due-presence-particulate-matter"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-ea9963a33edf6fdb",
+      "sourceRecordId": "ANN-ea9963a33edf6fdb",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-14",
+        "ageDaysAtRefresh": 13,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Pan Pepin Inc. \u2014 Para Bien Al Grano",
+      "recallingFirm": "Pan Pepin Inc.",
+      "productDescription": "Para Bien Al Grano",
+      "brandNames": [
+        "Para Bien"
+      ],
+      "productNames": [
+        "Para Bien Al Grano",
+        "Para Bien Al Grano, 24oz box"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "24oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared sesame",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-14",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Para Bien",
+        "company": "Pan Pepin Inc.",
+        "date": "10/14/2026",
+        "productdescription": "Para Bien Al Grano",
+        "producttype": "Food & Beverages, Allergens",
+        "reason": "Undeclared sesame",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de"
+      },
+      "searchText": "pan pepin inc. para bien para bien al grano undeclared sesame pan pepin inc. \u2014 para bien al grano",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-ea9963a33edf6fdb",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-6c695541c93c2f22",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame"
         }
       ],
       "sourceSurfaces": [

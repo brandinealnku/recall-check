@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-27T17:57:41Z",
+  "checkedAt": "2026-10-27T22:08:58Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -10,6 +10,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
       "product": "Cold Smoked Sprat Fish",
       "reason": "Potential contamination with Clostridium botulinum",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "H-E-B"
+      ],
+      "date": "2026-10-27",
+      "id": "FDA-PUBLIC-9fa18b7b3c8b361f",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
+      "product": "BBQ Chop Salad Kit",
+      "reason": "Undeclared soy and tree nuts (almonds)",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -82,20 +95,6 @@
     },
     {
       "brandNames": [
-        "Para Bien"
-      ],
-      "date": "2026-10-14",
-      "id": "FDA-PUBLIC-62f214b9a5bcb482",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de",
-      "product": "Para Bien Al Grano",
-      "reason": "Undeclared sesame",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "Par Health and Endo USA"
       ],
       "date": "2026-10-14",
@@ -103,6 +102,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-argatroban-injection-due-presence-particulate-matter",
       "product": "Argatroban Injection 250 mg/2.5 mL (100 mg/mL)",
       "reason": "Presence of particulate matter, identified as cellulose, polystyrene, polyethylene terephthalate, stopper material, and possibly stainless steel",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Para Bien"
+      ],
+      "date": "2026-10-14",
+      "id": "FDA-ANN-ea9963a33edf6fdb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de",
+      "product": "Para Bien Al Grano",
+      "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -245,47 +257,36 @@
       "sourceSurfaces": [
         "enforcement"
       ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-02",
-      "id": "FDA-H-0093-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Stewarts Shops Vanilla chocolate Strawberry Ice Cream 1/2 gallon (1.89 L), UPC: 0 82086 44377 3",
-      "reason": "Foreign object: May contain pieces of metal",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
     }
   ],
-  "generatedAt": "2026-10-27T17:57:41Z",
+  "generatedAt": "2026-10-27T22:08:58Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-27T17:57:41Z",
+      "checkedAt": "2026-10-27T22:08:58Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
+      "lastSuccessfulUpdate": "2026-10-27T22:08:58Z",
       "newestRecallDate": "2026-10-27",
       "qualityStatus": "current",
-      "recordCount": 2140,
+      "recordCount": 2141,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-27T17:57:41Z",
+          "checkedAt": "2026-10-27T22:08:58Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-27T17:57:41Z",
+          "checkedAt": "2026-10-27T22:08:58Z",
           "newestRecallDate": "2026-10-07",
           "recordCount": 2733,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-27T17:57:41Z",
+          "checkedAt": "2026-10-27T22:08:58Z",
           "newestRecallDate": "2026-10-27",
           "recordCount": 7,
           "success": true
@@ -293,18 +294,20 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-27T17:57:41Z",
-      "coverageComplete": true,
+      "checkedAt": "2026-10-27T22:08:58Z",
+      "coverageComplete": false,
       "coverageMethod": "primary-api",
-      "current": true,
-      "freshnessValidated": true,
+      "current": false,
+      "freshnessValidated": false,
       "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
       "newestRecallDate": "2026-10-24",
-      "qualityStatus": "current",
-      "recordCount": 2032,
-      "success": true
+      "qualityStatus": "unavailable",
+      "recordCount": 1243,
+      "success": false
     }
   },
-  "warnings": [],
+  "warnings": [
+    "USDA refresh failed; retained 1243 last-known records"
+  ],
   "workflowVersion": "0.7.0"
 }
