@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-10-27T12:04:48Z",
+  "checkedAt": "2026-10-27T17:57:41Z",
   "fdaSample": [
     {
       "brandNames": [
-        "Natural Grocers"
+        "No Brand"
       ],
-      "date": "2026-10-22",
-      "id": "FDA-PUBLIC-10f749b0c03717f9",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
-      "product": "2 pound Mung Beans",
-      "reason": "Possible foreign material contamination with glass",
+      "date": "2026-10-27",
+      "id": "FDA-PUBLIC-58c684b35be092fb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "product": "Cold Smoked Sprat Fish",
+      "reason": "Potential contamination with Clostridium botulinum",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -23,6 +23,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
       "product": "Hoagie Rolls",
       "reason": "Undeclared sesame",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Natural Grocers"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-PUBLIC-10f749b0c03717f9",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
+      "product": "2 pound Mung Beans",
+      "reason": "Possible foreign material contamination with glass",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -243,63 +256,49 @@
       "sourceSurfaces": [
         "enforcement"
       ]
-    },
-    {
-      "brandNames": [
-        "Great Value, Trader Joe\u2019s",
-        "Great Value"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-ANN-d0497ad28ba3930f",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
-      "product": "Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
-      "reason": "Potential E. Coli O145:H28 Contamination",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-10-27T12:04:48Z",
+  "generatedAt": "2026-10-27T17:57:41Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-27T12:04:48Z",
+      "checkedAt": "2026-10-27T17:57:41Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-27T12:04:48Z",
-      "newestRecallDate": "2026-10-22",
+      "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
+      "newestRecallDate": "2026-10-27",
       "qualityStatus": "current",
-      "recordCount": 2139,
+      "recordCount": 2140,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-27T12:04:48Z",
+          "checkedAt": "2026-10-27T17:57:41Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-27T12:04:48Z",
+          "checkedAt": "2026-10-27T17:57:41Z",
           "newestRecallDate": "2026-10-07",
           "recordCount": 2733,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-27T12:04:48Z",
-          "newestRecallDate": "2026-10-22",
+          "checkedAt": "2026-10-27T17:57:41Z",
+          "newestRecallDate": "2026-10-27",
           "recordCount": 7,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-27T12:04:48Z",
+      "checkedAt": "2026-10-27T17:57:41Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-27T12:04:48Z",
+      "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
       "newestRecallDate": "2026-10-24",
       "qualityStatus": "current",
       "recordCount": 2032,
