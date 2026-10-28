@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T05:34:31Z",
+  "checkedAt": "2026-10-28T08:19:59Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -259,34 +259,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-28T05:34:31Z",
+  "generatedAt": "2026-10-28T08:19:59Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-10-28T05:34:31Z",
+      "checkedAt": "2026-10-28T08:19:59Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-10-28T05:34:31Z",
+      "lastSuccessfulUpdate": "2026-10-28T08:19:59Z",
       "newestRecallDate": "2026-10-27",
       "qualityStatus": "current",
       "recordCount": 2141,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-10-28T05:34:31Z",
+          "checkedAt": "2026-10-28T08:19:59Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-10-28T05:34:31Z",
+          "checkedAt": "2026-10-28T08:19:59Z",
           "newestRecallDate": "2026-10-07",
           "recordCount": 2733,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-10-28T05:34:31Z",
+          "checkedAt": "2026-10-28T08:19:59Z",
           "newestRecallDate": "2026-10-27",
           "recordCount": 7,
           "success": true
@@ -294,20 +294,18 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-10-28T05:34:31Z",
-      "coverageComplete": false,
+      "checkedAt": "2026-10-28T08:19:59Z",
+      "coverageComplete": true,
       "coverageMethod": "primary-api",
-      "current": false,
-      "freshnessValidated": false,
-      "lastSuccessfulUpdate": "2026-10-27T17:57:41Z",
+      "current": true,
+      "freshnessValidated": true,
+      "lastSuccessfulUpdate": "2026-10-28T08:19:59Z",
       "newestRecallDate": "2026-10-24",
-      "qualityStatus": "unavailable",
-      "recordCount": 1243,
-      "success": false
+      "qualityStatus": "current",
+      "recordCount": 2032,
+      "success": true
     }
   },
-  "warnings": [
-    "USDA refresh failed; retained 1243 last-known records"
-  ],
+  "warnings": [],
   "workflowVersion": "0.7.0"
 }
