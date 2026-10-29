@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T12:54:45Z",
+  "generatedAt": "2026-10-29T22:41:55Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,15 +14,15 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-29T12:54:45Z",
-    "lastSuccessfulUpdate": "2026-10-29T12:54:45Z",
+    "checkedAt": "2026-10-29T22:41:55Z",
+    "lastSuccessfulUpdate": "2026-10-29T22:41:55Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-29T12:54:45Z",
-        "lastSuccessfulUpdate": "2026-10-29T12:54:45Z",
-        "recordCount": 2141,
-        "newestRecallDate": "2026-10-27",
+        "checkedAt": "2026-10-29T22:41:55Z",
+        "lastSuccessfulUpdate": "2026-10-29T22:41:55Z",
+        "recordCount": 2142,
+        "newestRecallDate": "2026-10-29",
         "current": true,
         "qualityStatus": "current",
         "coverageComplete": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-29T12:54:45Z",
+            "checkedAt": "2026-10-29T22:41:55Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-29T12:54:45Z",
-            "recordCount": 7,
-            "newestRecallDate": "2026-10-27"
+            "checkedAt": "2026-10-29T22:41:55Z",
+            "recordCount": 8,
+            "newestRecallDate": "2026-10-29"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-29T12:54:45Z",
+            "checkedAt": "2026-10-29T22:41:55Z",
             "recordCount": 2733,
             "newestRecallDate": "2026-10-07"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-29T12:54:45Z",
-        "retrievedAt": "2026-10-29T12:54:45Z",
-        "lastSuccessfulUpdate": "2026-10-29T12:54:45Z",
+        "checkedAt": "2026-10-29T22:41:55Z",
+        "retrievedAt": "2026-10-29T22:41:55Z",
+        "lastSuccessfulUpdate": "2026-10-29T22:41:55Z",
         "newestRecallDate": "2026-10-24",
         "recordCount": 2032,
         "error": null,
@@ -64,7 +64,7 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2141,
+      "FDA": 2142,
       "USDA": 1243
     },
     "recordsWithIdentifierCandidates": 37,
@@ -72,8 +72,8 @@
   },
   "recalls": [
     {
-      "id": "FDA-PUBLIC-58c684b35be092fb",
-      "sourceRecordId": "PUBLIC-58c684b35be092fb",
+      "id": "FDA-PUBLIC-9e518728b7eb4694",
+      "sourceRecordId": "PUBLIC-9e518728b7eb4694",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -84,19 +84,19 @@
         "terminationDate": ""
       },
       "timeline": {
-        "recallDate": "2026-10-27",
-        "ageDaysAtRefresh": 2,
+        "recallDate": "2026-10-29",
+        "ageDaysAtRefresh": 0,
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Cold Smoked Sprat Fish",
-      "recallingFirm": "D&M Smoked Fish Inc. dba Haifa Smoked Fish Inc.",
-      "productDescription": "Cold Smoked Sprat Fish",
+      "title": "Ground cinnamon",
+      "recallingFirm": "SLR Food Distribution Inc.",
+      "productDescription": "Ground cinnamon",
       "brandNames": [
-        "No Brand"
+        "Wise Wife"
       ],
       "productNames": [
-        "Cold Smoked Sprat Fish"
+        "Ground cinnamon"
       ],
       "upcs": [],
       "gtins": [],
@@ -104,10 +104,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential contamination with Clostridium botulinum",
+      "reason": "Potential to be contaminated with elevated levels of lead.",
       "distribution": "See official notice",
-      "recallDate": "2026-10-27",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "recallDate": "2026-10-29",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -121,22 +121,22 @@
       },
       "sourceRecord": {
         "source": "FDA public recalls table",
-        "date": "2026-10-27",
-        "brand": "No Brand",
-        "product": "Cold Smoked Sprat Fish",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential contamination with Clostridium botulinum",
-        "company": "D&M Smoked Fish Inc. dba Haifa Smoked Fish Inc.",
+        "date": "2026-10-29",
+        "brand": "Wise Wife",
+        "product": "Ground cinnamon",
+        "productType": "Food & Beverages, Spices, Flavors & Salts",
+        "reason": "Potential to be contaminated with elevated levels of lead.",
+        "company": "SLR Food Distribution Inc.",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels"
       },
-      "searchText": "d&m smoked fish inc. dba haifa smoked fish inc. no brand cold smoked sprat fish potential contamination with clostridium botulinum",
+      "searchText": "slr food distribution inc. wise wife ground cinnamon potential to be contaminated with elevated levels of lead.",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-58c684b35be092fb",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
+          "sourceRecordId": "PUBLIC-9e518728b7eb4694",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels"
         }
       ],
       "sourceSurfaces": [
@@ -209,6 +209,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-58c684b35be092fb",
+      "sourceRecordId": "PUBLIC-58c684b35be092fb",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-27",
+        "ageDaysAtRefresh": 2,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Cold Smoked Sprat Fish",
+      "recallingFirm": "D&M Smoked Fish Inc. dba Haifa Smoked Fish Inc.",
+      "productDescription": "Cold Smoked Sprat Fish",
+      "brandNames": [
+        "No Brand"
+      ],
+      "productNames": [
+        "Cold Smoked Sprat Fish"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential contamination with Clostridium botulinum",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-27",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-27",
+        "brand": "No Brand",
+        "product": "Cold Smoked Sprat Fish",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential contamination with Clostridium botulinum",
+        "company": "D&M Smoked Fish Inc. dba Haifa Smoked Fish Inc.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
+      },
+      "searchText": "d&m smoked fish inc. dba haifa smoked fish inc. no brand cold smoked sprat fish potential contamination with clostridium botulinum",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-58c684b35be092fb",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
         }
       ],
       "sourceSurfaces": [
