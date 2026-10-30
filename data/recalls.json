@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T12:47:32Z",
+  "generatedAt": "2026-10-30T22:14:58Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,15 +14,15 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-10-30T12:47:32Z",
-    "lastSuccessfulUpdate": "2026-10-30T12:47:32Z",
+    "checkedAt": "2026-10-30T22:14:58Z",
+    "lastSuccessfulUpdate": "2026-10-30T22:14:58Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-10-30T12:47:32Z",
-        "lastSuccessfulUpdate": "2026-10-30T12:47:32Z",
+        "checkedAt": "2026-10-30T22:14:58Z",
+        "lastSuccessfulUpdate": "2026-10-30T22:14:58Z",
         "recordCount": 2137,
-        "newestRecallDate": "2026-10-29",
+        "newestRecallDate": "2026-10-30",
         "current": true,
         "qualityStatus": "current",
         "coverageComplete": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-10-30T12:47:32Z",
+            "checkedAt": "2026-10-30T22:14:58Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-10-30T12:47:32Z",
+            "checkedAt": "2026-10-30T22:14:58Z",
             "recordCount": 8,
-            "newestRecallDate": "2026-10-29"
+            "newestRecallDate": "2026-10-30"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-10-30T12:47:32Z",
+            "checkedAt": "2026-10-30T22:14:58Z",
             "recordCount": 2728,
             "newestRecallDate": "2026-10-07"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-10-30T12:47:32Z",
-        "retrievedAt": "2026-10-30T12:47:32Z",
-        "lastSuccessfulUpdate": "2026-10-30T12:47:32Z",
+        "checkedAt": "2026-10-30T22:14:58Z",
+        "retrievedAt": "2026-10-30T22:14:58Z",
+        "lastSuccessfulUpdate": "2026-10-30T22:14:58Z",
         "newestRecallDate": "2026-10-24",
         "recordCount": 2032,
         "error": null,
@@ -71,6 +71,78 @@
     "warnings": []
   },
   "recalls": [
+    {
+      "id": "FDA-PUBLIC-79d92f1e35291c16",
+      "sourceRecordId": "PUBLIC-79d92f1e35291c16",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-30",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Standardized + Full Spectrum Blend Ashwagandha Capsules",
+      "recallingFirm": "Vitality Works Inc.",
+      "productDescription": "Standardized + Full Spectrum Blend Ashwagandha Capsules",
+      "brandNames": [
+        "365 Whole Foods Market"
+      ],
+      "productNames": [
+        "Standardized + Full Spectrum Blend Ashwagandha Capsules"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Salmonella",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-30",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-30",
+        "brand": "365 Whole Foods Market",
+        "product": "Standardized + Full Spectrum Blend Ashwagandha Capsules",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Salmonella",
+        "company": "Vitality Works Inc.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential"
+      },
+      "searchText": "vitality works inc. 365 whole foods market standardized + full spectrum blend ashwagandha capsules potential to be contaminated with salmonella",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-79d92f1e35291c16",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "id": "FDA-PUBLIC-9e518728b7eb4694",
       "sourceRecordId": "PUBLIC-9e518728b7eb4694",
@@ -144,78 +216,6 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-9fa18b7b3c8b361f",
-      "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-27",
-        "ageDaysAtRefresh": 3,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "BBQ Chop Salad Kit",
-      "recallingFirm": "Taylor Farms",
-      "productDescription": "BBQ Chop Salad Kit",
-      "brandNames": [
-        "H-E-B"
-      ],
-      "productNames": [
-        "BBQ Chop Salad Kit"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Undeclared soy and tree nuts (almonds)",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-27",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-27",
-        "brand": "H-E-B",
-        "product": "BBQ Chop Salad Kit",
-        "productType": "Food & Beverages, Allergens",
-        "reason": "Undeclared soy and tree nuts (almonds)",
-        "company": "Taylor Farms",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
-      },
-      "searchText": "taylor farms h-e-b bbq chop salad kit undeclared soy and tree nuts (almonds)",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
       "id": "FDA-PUBLIC-58c684b35be092fb",
       "sourceRecordId": "PUBLIC-58c684b35be092fb",
       "agency": "FDA",
@@ -281,6 +281,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-58c684b35be092fb",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-9fa18b7b3c8b361f",
+      "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-27",
+        "ageDaysAtRefresh": 3,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "BBQ Chop Salad Kit",
+      "recallingFirm": "Taylor Farms",
+      "productDescription": "BBQ Chop Salad Kit",
+      "brandNames": [
+        "H-E-B"
+      ],
+      "productNames": [
+        "BBQ Chop Salad Kit"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared soy and tree nuts (almonds)",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-27",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-27",
+        "brand": "H-E-B",
+        "product": "BBQ Chop Salad Kit",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared soy and tree nuts (almonds)",
+        "company": "Taylor Farms",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
+      },
+      "searchText": "taylor farms h-e-b bbq chop salad kit undeclared soy and tree nuts (almonds)",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
         }
       ],
       "sourceSurfaces": [
@@ -394,6 +466,78 @@
       "searchText": "imperio distribution llc recalls beef jerky products produced without the benefit of inspection ['2 oz. sealed bag of &quot;imperio fuego beef jerky (carne seca).&quot;', '2 oz. sealed bag of &quot;imperio original beef jerky (carne seca).&quot;', '2 oz. sealed bag of &quot;imperio lim\u00f3n beef jerky (carne seca).&quot;'] washington, oct. 24, 2026 - imperio distribution llc, an elgin, ill. establishment, is recalling approximately 946 pounds of ready-to-eat (rte) beef jerky products that were produced without the benefit of federal inspection and misbranded because of the unauthorized use of a usda mark of inspection, the u.s. department of agriculture's food safety and inspection service (fsis) announced today. the rte beef jerky products were packaged january 2026, to october 2026. the following products are subject to recall [ view labels ]: 2 oz. sealed bag of \"imperio fuego beef jerky (carne seca).\" 2 oz. sealed bag of \"imperio original beef jerky (carne seca).\" 2 oz. sealed bag of \"imperio lim\u00f3n beef jerky (carne seca).\" the products subject to recall include the unapproved use of another facility's mark of inspection, identified as establishment number \"1885\" inside the usda mark of inspection. these items were distributed to various retail locations in illinois, indiana, iowa, michigan, minnesota, missouri, and wisconsin. the problem was discovered during fsis surveillance activities. there have been no confirmed reports of illness or injury due to consumption of these products. anyone concerned about an illness or injury should contact a healthcare provider. food produced without inspection may contain undeclared allergens, harmful bacteria, or other contaminants that put consumer health and safety at risk. fsis is concerned that some products may be in consumer refrigerators or pantries or at various retailers. consumers who have purchased these products are urged not to consume them. these products should be thrown away or returned to the place of purchase. fsis routinely conducts recall effectiveness checks to verify recalling firms notify their customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. when available, the retail distribution list(s) will be posted on the fsis website at www.fsis.usda.gov/recalls . consumers and members of the media with questions about the recall can contact manuel cortes, owner, imperio distribution llc, at 630-532-9560 or manuelcortes33@gmail.com. consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to mphotline@usda.gov . for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at https://foodcomplaint.fsis.usda.gov/eccf/ . ['\\n company contact\\n \\n owner, imperio distribution llc\\n manuel cortes\\n 630-532-9560\\n manuelcortes33@gmail.com\\n \\n\\n']"
     },
     {
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "sourceRecordId": "PUBLIC-2c852be91c011238",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-22",
+        "ageDaysAtRefresh": 8,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Hoagie Rolls",
+      "recallingFirm": "WinCo Foods LLC",
+      "productDescription": "Hoagie Rolls",
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "productNames": [
+        "Hoagie Rolls"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared sesame",
+      "distribution": "See official notice",
+      "recallDate": "2026-10-22",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-10-22",
+        "brand": "WinCo Foods",
+        "product": "Hoagie Rolls",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared sesame",
+        "company": "WinCo Foods LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
+      },
+      "searchText": "winco foods llc winco foods hoagie rolls undeclared sesame",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-2c852be91c011238",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
       "id": "FDA-PUBLIC-10f749b0c03717f9",
       "sourceRecordId": "PUBLIC-10f749b0c03717f9",
       "agency": "FDA",
@@ -461,78 +605,6 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-10f749b0c03717f9",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-2c852be91c011238",
-      "sourceRecordId": "PUBLIC-2c852be91c011238",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-22",
-        "ageDaysAtRefresh": 8,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Hoagie Rolls",
-      "recallingFirm": "WinCo Foods LLC",
-      "productDescription": "Hoagie Rolls",
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "productNames": [
-        "Hoagie Rolls"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Undeclared sesame",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-22",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-22",
-        "brand": "WinCo Foods",
-        "product": "Hoagie Rolls",
-        "productType": "Food & Beverages, Allergens",
-        "reason": "Undeclared sesame",
-        "company": "WinCo Foods LLC",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
-      },
-      "searchText": "winco foods llc winco foods hoagie rolls undeclared sesame",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-2c852be91c011238",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
         }
       ],
       "sourceSurfaces": [
@@ -787,78 +859,6 @@
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-f7a86c6203a31c08",
-      "sourceRecordId": "PUBLIC-f7a86c6203a31c08",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-15",
-        "ageDaysAtRefresh": 15,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Raw Mild Cheddar Cheese",
-      "recallingFirm": "Family Farmstead Dairy, LLC",
-      "productDescription": "Raw Mild Cheddar Cheese",
-      "brandNames": [
-        "Family Farmstead"
-      ],
-      "productNames": [
-        "Raw Mild Cheddar Cheese"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (E. Coli O26:H11 and O45:H2)",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-15",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-15",
-        "brand": "Family Farmstead",
-        "product": "Raw Mild Cheddar Cheese",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Shiga toxin-producing Escherichia coli (E. Coli O26:H11 and O45:H2)",
-        "company": "Family Farmstead Dairy, LLC",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and"
-      },
-      "searchText": "family farmstead dairy, llc family farmstead raw mild cheddar cheese potential to be contaminated with shiga toxin-producing escherichia coli (e. coli o26:h11 and o45:h2)",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-f7a86c6203a31c08",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
       ]
     },
     {
@@ -2969,11 +2969,11 @@
       "sourceRecordId": "023-2026",
       "agency": "USDA",
       "type": "recall",
-      "status": "active",
+      "status": "closed",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "Active Recall",
+        "state": "closed",
+        "isActionable": false,
+        "sourceStatus": "Closed Recall",
         "terminationDate": ""
       },
       "timeline": {
@@ -3025,8 +3025,8 @@
           "Michigan",
           "Nevada"
         ],
-        "field_archive_recall": "False",
-        "field_closed_year": "",
+        "field_archive_recall": "True",
+        "field_closed_year": "2026",
         "field_company_media_contact": [
           "\n  Company Contact\n  \n    Fontanini Foods\n    \n              media@hormel.com\n      \n\n"
         ],
@@ -3042,7 +3042,7 @@
         ],
         "field_media_contact": "Andr\u00e9s Talero",
         "field_risk_level": "High - Class I",
-        "field_last_modified_date": "2026-10-08",
+        "field_last_modified_date": "2026-10-30",
         "field_press_release": [],
         "field_processing": [
           "Raw - Non Intact"
@@ -3050,14 +3050,14 @@
         "field_product_items": [
           "10-lb. cardboard box cases containing \u201cFontanini PORK SAUSAGE LINKS\u201d with \u201cITEM 393\u201d printed on the box and \u201cPACKED ON 06/23/2026\u201d printed on the shipping label."
         ],
-        "field_qty_recovered": "",
+        "field_qty_recovered": "890 lbs",
         "field_recall_classification": "Class I",
         "field_recall_date": "2026-09-25",
         "field_recall_number": "023-2026",
         "field_recall_reason": [
           "Product Contamination"
         ],
-        "field_recall_type": "Active Recall",
+        "field_recall_type": "Closed Recall",
         "field_related_to_outbreak": "False",
         "field_summary": "<p><strong>WASHINGTON, Sept. 25, 2026</strong> \u2013 Fontanini Foods LLC, a McCook, Ill., establishment, is recalling approximately 2,320 pounds of&nbsp;raw, frozen pork breakfast sausage products that may be contaminated with foreign material, specifically clear, hard plastic, the U.S. Department of Agriculture\u2019s Food Safety and Inspection Service (FSIS) announced today.&nbsp;</p>\n<p>The&nbsp;raw, frozen pork breakfast sausage items were produced on June 23, 2026. The following products are subject to recall [<a href=\"/sites/default/files/food_label_pdf/2026-09/Recall-023-2026-Labels.pdf\">view labels</a>]:&nbsp;</p>\n<ul type=\"disc\">\n<li>10-lb. cardboard box cases containing \u201cFontanini PORK SAUSAGE LINKS\u201d with \u201cITEM 393\u201d printed on the box and \u201cPACKED ON 06/23/2026\u201d printed on the shipping label.</li>\n</ul>\n<p>The products subject to recall bear establishment number \u201cEST. 6944\u201d inside the USDA mark of inspection printed on the box. These items were shipped to distributors in California, Florida, Michigan, and Nevada to be served in food service establishments, including restaurants.&nbsp;</p>\n<p>The problem was discovered after the firm received two customer complaints regarding clear, hard plastic found in the sausage product.&nbsp;</p>\n<p>There have been no confirmed reports of injury or adverse reactions due to consumption of these products.&nbsp;Anyone concerned about an&nbsp;injury should contact a healthcare provider.</p>\n<p>FSIS is concerned that some product may be in food service and restaurant freezers. Food service establishments and restaurants are urged not to serve this product. These products should be thrown away or returned to the place of purchase.</p>\n<p>FSIS routinely conducts recall effectiveness checks to verify recalling firms notify theircustomers of the recall and that steps are taken to make certain that the product is no longer available to consumers. If any specific retail locations are identified, a distribution list will be posted on the FSIS website at&nbsp;<a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p>\n<p>Consumers, foodservice operators, and members of the media with questions about the recall can contact Fontanini Foods at&nbsp;<a href=\"mailto:media@hormel.com\">media@hormel.com</a>.&nbsp;</p>\n<p>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 888-MPHotline (888-674-6854) or send a question via email to&nbsp;<a href=\"mailto:MPHotline@usda.gov\">MPHotline@usda.gov</a>.&nbsp;For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at&nbsp;<a href=\"https://foodcomplaint.fsis.usda.gov/eCCF/\">https://foodcomplaint.fsis.usda.gov/eCCF/</a>.</p>\n",
         "field_year": "2026",
@@ -13343,11 +13343,11 @@
       "sourceRecordId": "013-2026",
       "agency": "USDA",
       "type": "recall",
-      "status": "active",
+      "status": "closed",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "Active Recall",
+        "state": "closed",
+        "isActionable": false,
+        "sourceStatus": "Closed Recall",
         "terminationDate": ""
       },
       "timeline": {
@@ -13397,8 +13397,8 @@
           "Florida",
           "Texas"
         ],
-        "field_archive_recall": "False",
-        "field_closed_year": "",
+        "field_archive_recall": "True",
+        "field_closed_year": "2026",
         "field_company_media_contact": [
           "\n  Company Contact\n  \n    Corte Argentino USA LLC\n    Eial Kaplun, General Manager\n         786-350-5805\n              info@corteargentinoinc.com\n      \n\n"
         ],
@@ -13412,7 +13412,7 @@
         ],
         "field_media_contact": "Ethan Pickrell",
         "field_risk_level": "High - Class I",
-        "field_last_modified_date": "2026-08-24",
+        "field_last_modified_date": "2026-10-30",
         "field_press_release": [],
         "field_processing": [
           "Raw - Intact"
@@ -13424,14 +13424,14 @@
           "Various weight cardboard boxes containing \u201cFRIGORIFICO GORINA SAIC\u201d boneless beef \u201cFLAT\u201d (\u201cCARNAZA CUADRADA\u201d)",
           "Various weight cardboard boxes containing \u201cFRIGORIFICO GORINA SAIC\u201d boneless beef \u201cKNUCKLE\u201d (\u201cBOLA DE LOMO\u201d)"
         ],
-        "field_qty_recovered": "",
+        "field_qty_recovered": "17,391 lbs",
         "field_recall_classification": "Class I",
         "field_recall_date": "2026-08-07",
         "field_recall_number": "013-2026",
         "field_recall_reason": [
           "Import Violation"
         ],
-        "field_recall_type": "Active Recall",
+        "field_recall_type": "Closed Recall",
         "field_related_to_outbreak": "False",
         "field_summary": "<p>WASHINGTON, Aug. 7, 2026 \u2013 Corte Argentino USA LLC, located in Aventura, Fla., is recalling approximately 29,628 pounds of raw beef products that were imported from Argentina without the benefit of import reinspection into the United States, the U.S. Department of Agriculture\u2019s Food Safety and Inspection Service (FSIS) announced today.</p>\n<p>The raw beef products were produced between May 15, 2026, and May 20, 2026, and have use or freeze-by dates between September 15, 2026, and September 20, 2026. The following products are subject to recall [<a href=\"https://www.fsis.usda.gov/sites/default/files/food_label_pdf/2026-08/Recall-013-2026-labels.pdf\">view labels</a>]:</p>\n<ul type=\"disc\">\n<li>Various weight cardboard boxes containing \u201cFrigorIfico Gorina SAIC\u201d boneless beef&nbsp;\u201cTop Sirloin Butt\u201d&nbsp;(\u201cCuadril Sin Tapa\u201d)</li>\n<li>Various weight cardboard boxes containing \u201cFrigorIfico Gorina SAIC\u201d boneless beef&nbsp;\u201cEye Round\u201d&nbsp;(\u201cPeceto\u201d)</li>\n<li>Various weight cardboard boxes containing \u201cFrigorIfico Gorina SAIC\u201d boneless beef&nbsp;\u201cTopside Cap Off\u201d&nbsp;(\u201cNalga AD S/Tapa\u201d)</li>\n<li>Various weight cardboard boxes containing \u201cFrigorIfico Gorina SAIC\u201d boneless beef&nbsp;\u201cFlat\u201d&nbsp;(\u201cCarnaza Cuadrada\u201d)</li>\n<li>Various weight cardboard boxes containing \u201cFrigorIfico Gorina SAIC\u201d boneless beef&nbsp;\u201cKnuckle\u201d&nbsp;(\u201cBola de Lomo\u201d)</li>\n</ul>\n<p>The products subject to the recall bear Argentinian establishment number \u201cEST. N\u00b0 OF. 2025\u201d and shipping mark \u201c26644-AA\u201d The products were distributed to distributors and retailers in Florida and Texas.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</p>\n<p>The problem was discovered during routine FSIS inspection activities.&nbsp;</p>\n<p>There have been no confirmed reports of illness or injury due to consumption of these products.&nbsp;Anyone concerned about an illness or injury should contact a healthcare provider.&nbsp;&nbsp;</p>\n<p>FSIS is concerned that some product may be in consumers\u2019 refrigerators and freezers.&nbsp;Consumers who have purchased these products are urged not to consume them. These products should be thrown away or returned to the place of purchase.</p>\n<p>FSIS routinely conducts recall effectiveness checks to verify recalling firms notify theircustomers of the recall and that steps are taken to make certain that the product is no longer available to consumers. When available, the retail distribution list(s) will be posted on the FSIS website at&nbsp;<a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p>\n<p>Consumers and members of the media with questions about the recall can contact Eial Kaplun, General Manager, Corte Argentino USA LLC, at 786-350-5805 or&nbsp;<a href=\"mailto:info@corteargentinoinc.com\">info@corteargentinoinc.com</a>.&nbsp;</p>\n<p>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 888-MPHotline (888-674-6854) or send a question via email to&nbsp;<a href=\"mailto:MPHotline@usda.gov\">MPHotline@usda.gov</a>.&nbsp;For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at&nbsp;<a href=\"https://foodcomplaint.fsis.usda.gov/eCCF/\">https://foodcomplaint.fsis.usda.gov/eCCF/</a>.</p>\n<p>&nbsp;</p>\n",
         "field_year": "2026",
@@ -19762,11 +19762,11 @@
       "sourceRecordId": "011-2026",
       "agency": "USDA",
       "type": "recall",
-      "status": "active",
+      "status": "closed",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "Active Recall",
+        "state": "closed",
+        "isActionable": false,
+        "sourceStatus": "Closed Recall",
         "terminationDate": ""
       },
       "timeline": {
@@ -19826,8 +19826,8 @@
           "Oregon",
           "Washington"
         ],
-        "field_archive_recall": "False",
-        "field_closed_year": "",
+        "field_archive_recall": "True",
+        "field_closed_year": "2026",
         "field_company_media_contact": [
           "\n  Company Contact\n  \n    Vice President, Communications, Maple Leaf Foods, Inc.\n    Adam Emery\n        416-518-5131\n              adam.emery@mapleleaf.com\n      \n\n"
         ],
@@ -19850,14 +19850,14 @@
           "12-oz vacuum package of &quot;Royale Natural Applewood Smoked ALL NATURAL Uncured Bacon Product of Canada&quot; with sell by dates of &quot;SEP 01 2026&quot; and &quot;SEP 07 2026&quot; printed on the side of the package",
           "12-oz vacuum package of &quot;TOP VALU Uncured Hardwood Smoked Bacon PRODUCT OF CANADA&quot; with various sell by dates of &quot;SEP 01 2026&quot;, &quot;SEP 02 2026&quot;, &quot;SEP 04 2026&quot;, &quot;SEP 05 2026&quot;, and &quot;SEP 07 2026&quot; printed on the side of the package"
         ],
-        "field_qty_recovered": "",
+        "field_qty_recovered": "10,712 lbs",
         "field_recall_classification": "Class I",
         "field_recall_date": "2026-07-24",
         "field_recall_number": "011-2026",
         "field_recall_reason": [
           "Import Violation"
         ],
-        "field_recall_type": "Active Recall",
+        "field_recall_type": "Closed Recall",
         "field_related_to_outbreak": "False",
         "field_summary": "<body><p><strong>WASHINGTON, JULY 24, 2026 - </strong>Maple Leaf Foods, Inc., located in Lisle, Illinois, is recalling approximately 12,036 pounds of not ready-to-eat (NRTE) smoked bacon product that was imported from Canada without the benefit of import reinspection into the United States, the U.S. Department of Agriculture's Food Safety and Inspection Service (FSIS) announced today.</p><p>The NRTE refrigerated smoked bacon product was produced June 9, 2026, June 10, 2026, June 12, 2026, June 13, 2026, and June 15, 2026. The following products are subject to recall [<a href=\"/sites/default/files/food_label_pdf/2026-07/Recall-011-2026-Labels.pdf\">view labels</a>]:</p><ul type=\"disc\"><li data-list-item-id=\"e101fec12b57fdd3a06e847da9b325ecf\">12-oz vacuum package of \"Royale Natural Applewood Smoked ALL NATURAL Uncured Bacon Product of Canada\" with sell by dates of \"SEP 01 2026\" and \"SEP 07 2026\" printed on the side of the package</li><li data-list-item-id=\"ef4e1ee63305624eadc87284b3591bae2\">12-oz vacuum package of \"TOP VALU Uncured Hardwood Smoked Bacon PRODUCT OF CANADA\" with various sell by dates of \"SEP 01 2026\", \"SEP 02 2026\", \"SEP 04 2026\", \"SEP 05 2026\", and \"SEP 07 2026\" printed on the side of the package</li></ul><p>The product subject to recall bears Canadian establishment number \"EST. 1\" printed on the side the package, and health certificate \"2026-S732971612\" on master case boxes. This item was further distributed to Grocery Outlet distributors and retailers in Idaho, Oregon, and Washington.</p><p>The problem was discovered during routine FSIS inspection activities.</p><p>There have been no confirmed reports of illness or injury due to consumption of these products. Anyone concerned about an illness or injury should contact a healthcare provider.</p><p>FSIS is concerned that some product may be in consumers' refrigerators and freezers. Consumers who have purchased these products are urged not to consume them. These products should be thrown away or returned to the place of purchase.</p><p>FSIS routinely conducts recall effectiveness checks to verify recalling firms notify their customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. When available, the retail distribution list(s) will be posted on the FSIS website at <a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p><p>Media and consumers with questions regarding the public health alert can contact Adam Emery, Vice President, Communications, Maple Leaf Foods, Inc., at 416-518-5131 or adam.emery@mapleleaf.com.</p><p>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 888-MPHotline (888-674-6854) or send a question via email to <a href=\"mailto:MPHotline@usda.gov\">MPHotline@usda.gov</a>. For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at <a href=\"https://foodcomplaint.fsis.usda.gov/eCCF/\">https://foodcomplaint.fsis.usda.gov/eCCF/</a>.</p></body>",
         "field_year": "2026",
@@ -20452,11 +20452,11 @@
       "sourceRecordId": "010-2026",
       "agency": "USDA",
       "type": "recall",
-      "status": "active",
+      "status": "closed",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "Active Recall",
+        "state": "closed",
+        "isActionable": false,
+        "sourceStatus": "Closed Recall",
         "terminationDate": ""
       },
       "timeline": {
@@ -20512,8 +20512,8 @@
         "field_states": [
           "Oklahoma"
         ],
-        "field_archive_recall": "False",
-        "field_closed_year": "",
+        "field_archive_recall": "True",
+        "field_closed_year": "2026",
         "field_company_media_contact": [
           "\n  Company Contact\n  \n    Vice President, Sales, BCI Foods, Inc.\n    Marie-Lou Corbin\n        514-218-7143\n              marie-lou.corbin@bcifoods.com\n      \n\n"
         ],
@@ -20527,7 +20527,7 @@
         ],
         "field_media_contact": "Tai Thompson",
         "field_risk_level": "High - Class I",
-        "field_last_modified_date": "2026-07-23",
+        "field_last_modified_date": "2026-10-30",
         "field_press_release": [],
         "field_processing": [
           "Thermally Processed - Commercially Sterile"
@@ -20535,14 +20535,14 @@
         "field_product_items": [
           "10.5-oz can of &quot;tasty KITCHEN Chicken Noodle Condensed Soup PRODUCT OF CANADA&quot; with best by date of &quot;2028 FE 04&quot; and lot code &quot;5 9 2 26 035&quot;"
         ],
-        "field_qty_recovered": "",
+        "field_qty_recovered": "1,888 lbs",
         "field_recall_classification": "Class I",
         "field_recall_date": "2026-07-23",
         "field_recall_number": "010-2026",
         "field_recall_reason": [
           "Import Violation"
         ],
-        "field_recall_type": "Active Recall",
+        "field_recall_type": "Closed Recall",
         "field_related_to_outbreak": "False",
         "field_summary": "<body><p><strong>WASHINGTON, JULY 23, 2026 - </strong>BCI Foods, Inc., the importer of record located in Saint-Hyacinthe, Quebec, Canada, is recalling approximately 4,300 pounds of a chicken noodle soup product that was imported from Canada without the benefit of import reinspection into the United States, the U.S. Department of Agriculture's Food Safety and Inspection Service (FSIS) announced today.</p><p>The canned condensed chicken noodle soup product was produced on February 4, 2026. The following product is subject to recall <a href=\"/sites/default/files/food_label_pdf/2026-07/Recall-010-2026-Labels.pdf\">[view labels</a>]:</p><ul type=\"disc\"><li data-list-item-id=\"e94ebe754c7552c4d203079cb13757aab\">10.5-oz can of \"tasty KITCHEN Chicken Noodle Condensed Soup PRODUCT OF CANADA\" with best by date of \"2028 FE 04\" and lot code \"5 9 2 26 035\"</li></ul><p>The product subject to recall bears Canadian establishment number \"EST. 142\" printed on the can. This item was further distributed to food banks and food pantry locations in Oklahoma.</p><p>The problem was discovered when the firm notified FSIS that the canned chicken soup product imported from Canada was not presented for FSIS import reinspection.</p><p>There have been no confirmed reports of illness or injury due to consumption of these products. Anyone concerned about an illness or injury should contact a healthcare provider.</p><p>FSIS is concerned that some product may be in consumers' pantries. Consumers who have purchased these products are urged not to consume them. These products should be thrown away or returned to the place of purchase.</p><p>FSIS routinely conducts recall effectiveness checks to verify recalling firms notify their<strong> </strong>customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. When available, the retail distribution list(s) will be posted on the FSIS website at <a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p><p>Media and consumers with questions regarding the public health alert can contact Marie-Lou Corbin, Vice President, Sales, BCI Foods, Inc., at 514-218-7143 or marie-lou.corbin@bcifoods.com.</p><p>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 888-MPHotline (888-674-6854) or send a question via email to <a href=\"mailto:MPHotline@usda.gov\">MPHotline@usda.gov</a>. For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at <a href=\"https://foodcomplaint.fsis.usda.gov/eCCF/\">https://foodcomplaint.fsis.usda.gov/eCCF/</a>.</p></body>",
         "field_year": "2026",
