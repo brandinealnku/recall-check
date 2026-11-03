@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:55:04Z",
+  "generatedAt": "2026-11-03T14:05:25Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-03T00:55:04Z",
-    "lastSuccessfulUpdate": "2026-11-02T15:41:42Z",
+    "checkedAt": "2026-11-03T14:05:25Z",
+    "lastSuccessfulUpdate": "2026-11-03T00:55:04Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-03T00:55:04Z",
-        "lastSuccessfulUpdate": "2026-11-03T00:55:04Z",
+        "checkedAt": "2026-11-03T14:05:25Z",
+        "lastSuccessfulUpdate": "2026-11-03T14:05:25Z",
         "recordCount": 2154,
         "newestRecallDate": "2026-10-14",
         "current": false,
@@ -30,7 +30,7 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": false,
-            "checkedAt": "2026-11-03T00:55:04Z",
+            "checkedAt": "2026-11-03T14:05:25Z",
             "recordCount": 238,
             "newestRecallDate": "2026-10-14",
             "error": {
@@ -43,7 +43,7 @@
           },
           "publicAlerts": {
             "success": false,
-            "checkedAt": "2026-11-03T00:55:04Z",
+            "checkedAt": "2026-11-03T14:05:25Z",
             "recordCount": 0,
             "newestRecallDate": "",
             "error": {
@@ -53,7 +53,7 @@
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-03T00:55:04Z",
+            "checkedAt": "2026-11-03T14:05:25Z",
             "recordCount": 2787,
             "newestRecallDate": "2026-10-07"
           }
@@ -62,7 +62,7 @@
       },
       "USDA": {
         "success": false,
-        "checkedAt": "2026-11-03T00:55:04Z",
+        "checkedAt": "2026-11-03T14:05:25Z",
         "retrievedAt": "2026-11-02T15:41:42Z",
         "lastSuccessfulUpdate": "2026-11-02T15:41:42Z",
         "newestRecallDate": "2026-10-24",
@@ -81,9 +81,9 @@
       "FDA": 2154,
       "USDA": 1243
     },
-    "recordsWithIdentifierCandidates": 901,
+    "recordsWithIdentifierCandidates": 913,
     "warnings": [
-      "FDA refresh failed; retained 2123 last-known records",
+      "FDA refresh failed; retained 2154 last-known records",
       "USDA refresh failed; retained 1243 last-known records",
       "FDA coverage is degraded: unavailable source surface(s): annualAnnouncements, publicAlerts"
     ]
