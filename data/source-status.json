@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-03T14:05:25Z",
+  "checkedAt": "2026-11-03T23:16:32Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -251,22 +251,22 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-03T14:05:25Z",
+  "generatedAt": "2026-11-03T23:16:32Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-03T14:05:25Z",
+      "checkedAt": "2026-11-03T23:16:32Z",
       "coverageComplete": false,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": false,
       "freshnessValidated": false,
-      "lastSuccessfulUpdate": "2026-11-03T14:05:25Z",
+      "lastSuccessfulUpdate": "2026-11-03T23:16:32Z",
       "newestRecallDate": "2026-10-14",
       "qualityStatus": "degraded",
       "recordCount": 2154,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-03T14:05:25Z",
+          "checkedAt": "2026-11-03T23:16:32Z",
           "error": {
             "apiKeySupplied": false,
             "httpReason": "Not Found",
@@ -279,13 +279,13 @@
           "success": false
         },
         "enforcement": {
-          "checkedAt": "2026-11-03T14:05:25Z",
+          "checkedAt": "2026-11-03T23:16:32Z",
           "newestRecallDate": "2026-10-07",
           "recordCount": 2787,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-03T14:05:25Z",
+          "checkedAt": "2026-11-03T23:16:32Z",
           "error": {
             "message": "HTTP Error 404: Not Found",
             "type": "HTTPError"
@@ -297,7 +297,7 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-03T14:05:25Z",
+      "checkedAt": "2026-11-03T23:16:32Z",
       "coverageComplete": false,
       "coverageMethod": "primary-api",
       "current": false,
