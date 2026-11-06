@@ -1,6 +1,110 @@
 {
-  "checkedAt": "2026-11-06T06:34:32Z",
+  "checkedAt": "2026-11-06T17:54:08Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Brad\u2019s"
+      ],
+      "date": "2026-11-03",
+      "id": "FDA-PUBLIC-46bfcc82e96b7554",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/snack-right-super-foods-inc-dba-brads-raw-chips-recalls-brads-crunchy-kale-veggie-chips-due",
+      "product": "Crunchy Kale and Veggie Chips Kale",
+      "reason": "Product may contain thallium.",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Once Upon a Farm"
+      ],
+      "date": "2026-11-02",
+      "id": "FDA-PUBLIC-127c9ba034129aca",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/once-upon-farm-recalls-all-lots-and-varieties-tractor-wheels-organic-toddler-soft-baked-bars-due",
+      "product": "Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
+      "reason": "Potential choking hazard",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "365 Whole Foods Market"
+      ],
+      "date": "2026-10-30",
+      "id": "FDA-PUBLIC-79d92f1e35291c16",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential",
+      "product": "Standardized + Full Spectrum Blend Ashwagandha Capsules",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Wise Wife"
+      ],
+      "date": "2026-10-29",
+      "id": "FDA-PUBLIC-9e518728b7eb4694",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels",
+      "product": "Ground cinnamon",
+      "reason": "Potential to be contaminated with elevated levels of lead.",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "No Brand"
+      ],
+      "date": "2026-10-27",
+      "id": "FDA-PUBLIC-58c684b35be092fb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "product": "Cold Smoked Sprat Fish",
+      "reason": "Potential contamination with Clostridium botulinum",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "H-E-B"
+      ],
+      "date": "2026-10-27",
+      "id": "FDA-PUBLIC-9fa18b7b3c8b361f",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
+      "product": "BBQ Chop Salad Kit",
+      "reason": "Undeclared soy and tree nuts (almonds)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "product": "Hoagie Rolls",
+      "reason": "Undeclared sesame",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Natural Grocers"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-PUBLIC-10f749b0c03717f9",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
+      "product": "2 pound Mung Beans",
+      "reason": "Possible foreign material contamination with glass",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Par Health and Endo USA"
@@ -152,167 +256,55 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "Nature&#039;s Own"
-      ],
-      "date": "2026-10-05",
-      "id": "FDA-ANN-198305bb09f62d7e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
-      "product": "Nature&#039;s Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
-      "reason": "Undeclared milk allergen",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Saint Francis"
-      ],
-      "date": "2026-10-03",
-      "id": "FDA-ANN-5085cfd2cafa0f13",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/saint-francis-apizza-llc-issues-voluntary-recall-its-frozen-pizzas-missing-sub-ingredients-label-soy",
-      "product": "Pepperoni, Plain Cheese, Supreme, and Mushroom and Onion frozen pizzas",
-      "reason": "Undeclared soy allergen",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-02",
-      "id": "FDA-H-0165-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Voila! juice 100% SQUEEZED ORANGE VOILA! OAKLAND, CA 94601 16 OZ: UPC 701725001074 32 OZ: UPC 701725001081 64 OZ: UPC 701725001098 128 OZ: UPC 701725001104",
-      "reason": "Product not processed to achieve 5-log pathogen reduction.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-02",
-      "id": "FDA-H-0094-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
-      "reason": "Foreign object: May contain pieces of metal",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-02",
-      "id": "FDA-H-0093-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Stewarts Shops Vanilla chocolate Strawberry Ice Cream 1/2 gallon (1.89 L), UPC: 0 82086 44377 3",
-      "reason": "Foreign object: May contain pieces of metal",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-02",
-      "id": "FDA-H-0166-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Andronico's COMMUNITY MARKETS 100% SQUEEZED ORANGE ANDROINCO'S COMMUNITY MARKETS SAN LEANDRO, CA 94577 16 OZ: UPC 675643050967 32 OZ: UPC 675643050974 64 OZ: UPC 675643050981",
-      "reason": "Product not processed to achieve 5-log pathogen reduction.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "Great Value, Trader Joe\u2019s",
-        "Great Value"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-ANN-d0497ad28ba3930f",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic",
-      "product": "Organic Blueberries, Triple Berry Blend and Mixed Berry Blend",
-      "reason": "Potential E. Coli O145:H28 Contamination",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-02",
-      "id": "FDA-ANN-2484fab8f01ade21",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-boise-id-recalling-following-salsa-bean-dip-trays-due-inclusion-recalled-peperoncini-gl",
-      "product": "Salsa Bean Dip",
-      "reason": "Potential pest inclusion",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-11-06T06:34:32Z",
+  "generatedAt": "2026-11-06T17:54:08Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-06T06:34:32Z",
-      "coverageComplete": false,
+      "checkedAt": "2026-11-06T17:54:08Z",
+      "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
-      "current": false,
-      "freshnessValidated": false,
-      "lastSuccessfulUpdate": "2026-11-06T06:34:32Z",
-      "newestRecallDate": "2026-10-14",
-      "qualityStatus": "degraded",
-      "recordCount": 2144,
+      "current": true,
+      "freshnessValidated": true,
+      "lastSuccessfulUpdate": "2026-11-06T17:54:08Z",
+      "newestRecallDate": "2026-11-03",
+      "qualityStatus": "current",
+      "recordCount": 2152,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-06T06:34:32Z",
-          "error": {
-            "apiKeySupplied": false,
-            "httpReason": "Not Found",
-            "httpStatus": 404,
-            "message": "Not found",
-            "paginationOffset": 0
-          },
+          "checkedAt": "2026-11-06T17:54:08Z",
           "newestRecallDate": "2026-10-14",
-          "recordCount": 239,
-          "success": false
+          "recordCount": 251,
+          "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-06T06:34:32Z",
+          "checkedAt": "2026-11-06T17:54:08Z",
           "newestRecallDate": "2026-10-07",
           "recordCount": 2775,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-06T06:34:32Z",
-          "error": {
-            "message": "HTTP Error 404: Not Found",
-            "type": "HTTPError"
-          },
-          "newestRecallDate": "",
-          "recordCount": 0,
-          "success": false
+          "checkedAt": "2026-11-06T17:54:08Z",
+          "newestRecallDate": "2026-11-03",
+          "recordCount": 8,
+          "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-06T06:34:32Z",
-      "coverageComplete": false,
+      "checkedAt": "2026-11-06T17:54:08Z",
+      "coverageComplete": true,
       "coverageMethod": "primary-api",
-      "current": false,
-      "freshnessValidated": false,
-      "lastSuccessfulUpdate": "2026-11-05T19:53:38Z",
+      "current": true,
+      "freshnessValidated": true,
+      "lastSuccessfulUpdate": "2026-11-06T17:54:08Z",
       "newestRecallDate": "2026-10-24",
-      "qualityStatus": "unavailable",
-      "recordCount": 1243,
-      "success": false
+      "qualityStatus": "current",
+      "recordCount": 2032,
+      "success": true
     }
   },
-  "warnings": [
-    "FDA refresh failed; retained 2156 last-known records",
-    "USDA refresh failed; retained 1243 last-known records",
-    "FDA coverage is degraded: unavailable source surface(s): annualAnnouncements, publicAlerts"
-  ],
+  "warnings": [],
   "workflowVersion": "0.7.0"
 }
