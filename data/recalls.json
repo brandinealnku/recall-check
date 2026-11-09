@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:16:51Z",
+  "generatedAt": "2026-11-09T16:25:58Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,15 +14,15 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-09T06:16:51Z",
-    "lastSuccessfulUpdate": "2026-11-09T06:16:51Z",
+    "checkedAt": "2026-11-09T16:25:58Z",
+    "lastSuccessfulUpdate": "2026-11-09T16:25:58Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-09T06:16:51Z",
-        "lastSuccessfulUpdate": "2026-11-09T06:16:51Z",
-        "recordCount": 2149,
-        "newestRecallDate": "2026-11-03",
+        "checkedAt": "2026-11-09T16:25:58Z",
+        "lastSuccessfulUpdate": "2026-11-09T16:25:58Z",
+        "recordCount": 2150,
+        "newestRecallDate": "2026-11-08",
         "current": true,
         "qualityStatus": "current",
         "coverageComplete": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-09T06:16:51Z",
+            "checkedAt": "2026-11-09T16:25:58Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-09T06:16:51Z",
-            "recordCount": 8,
-            "newestRecallDate": "2026-11-03"
+            "checkedAt": "2026-11-09T16:25:58Z",
+            "recordCount": 9,
+            "newestRecallDate": "2026-11-08"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-09T06:16:51Z",
+            "checkedAt": "2026-11-09T16:25:58Z",
             "recordCount": 2772,
             "newestRecallDate": "2026-10-07"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-09T06:16:51Z",
-        "retrievedAt": "2026-11-09T06:16:51Z",
-        "lastSuccessfulUpdate": "2026-11-09T06:16:51Z",
+        "checkedAt": "2026-11-09T16:25:58Z",
+        "retrievedAt": "2026-11-09T16:25:58Z",
+        "lastSuccessfulUpdate": "2026-11-09T16:25:58Z",
         "newestRecallDate": "2026-11-06",
         "recordCount": 2033,
         "error": null,
@@ -64,13 +64,85 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2149,
+      "FDA": 2150,
       "USDA": 1244
     },
     "recordsWithIdentifierCandidates": 37,
     "warnings": []
   },
   "recalls": [
+    {
+      "id": "FDA-PUBLIC-46e2ccc49903f359",
+      "sourceRecordId": "PUBLIC-46e2ccc49903f359",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-08",
+        "ageDaysAtRefresh": 1,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "recallingFirm": "Fresh & Ready Foods LLC",
+      "productDescription": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "brandNames": [
+        "Fresh to You"
+      ],
+      "productNames": [
+        "Sausage, Egg & Cheese Biscuit Sandwich"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-08",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-11-08",
+        "brand": "Fresh to You",
+        "product": "Sausage, Egg & Cheese Biscuit Sandwich",
+        "productType": "Food & Beverages",
+        "reason": "Potential to be contaminated with Listeria monocytogenes.",
+        "company": "Fresh & Ready Foods LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
+      },
+      "searchText": "fresh & ready foods llc fresh to you sausage, egg & cheese biscuit sandwich potential to be contaminated with listeria monocytogenes.",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-46e2ccc49903f359",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "id": "USDA-PHA-11062026-01",
       "sourceRecordId": "PHA-11062026-01",

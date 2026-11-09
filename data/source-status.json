@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-11-09T06:16:51Z",
+  "checkedAt": "2026-11-09T16:25:58Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Fresh to You"
+      ],
+      "date": "2026-11-08",
+      "id": "FDA-PUBLIC-46e2ccc49903f359",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
+      "product": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Brad\u2019s"
@@ -243,62 +256,49 @@
       "sourceSurfaces": [
         "enforcement"
       ]
-    },
-    {
-      "brandNames": [
-        "Nova Biomedical StatStrip"
-      ],
-      "date": "2026-10-06",
-      "id": "FDA-ANN-81d077c777cd3774",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter",
-      "product": "StatStrip Glucose Hospital Meter System",
-      "reason": "Software issue may cause a glucose result to be associated to the wrong patient",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-11-09T06:16:51Z",
+  "generatedAt": "2026-11-09T16:25:58Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-09T06:16:51Z",
+      "checkedAt": "2026-11-09T16:25:58Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-09T06:16:51Z",
-      "newestRecallDate": "2026-11-03",
+      "lastSuccessfulUpdate": "2026-11-09T16:25:58Z",
+      "newestRecallDate": "2026-11-08",
       "qualityStatus": "current",
-      "recordCount": 2149,
+      "recordCount": 2150,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-09T06:16:51Z",
+          "checkedAt": "2026-11-09T16:25:58Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-09T06:16:51Z",
+          "checkedAt": "2026-11-09T16:25:58Z",
           "newestRecallDate": "2026-10-07",
           "recordCount": 2772,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-09T06:16:51Z",
-          "newestRecallDate": "2026-11-03",
-          "recordCount": 8,
+          "checkedAt": "2026-11-09T16:25:58Z",
+          "newestRecallDate": "2026-11-08",
+          "recordCount": 9,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-09T06:16:51Z",
+      "checkedAt": "2026-11-09T16:25:58Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-09T06:16:51Z",
+      "lastSuccessfulUpdate": "2026-11-09T16:25:58Z",
       "newestRecallDate": "2026-11-06",
       "qualityStatus": "current",
       "recordCount": 2033,
