@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-10T01:27:31Z",
+  "checkedAt": "2026-11-10T09:39:45Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -94,13 +94,13 @@
     },
     {
       "brandNames": [
-        "Natural Grocers"
+        "WinCo Foods"
       ],
       "date": "2026-10-22",
-      "id": "FDA-PUBLIC-10f749b0c03717f9",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
-      "product": "2 pound Mung Beans",
-      "reason": "Possible foreign material contamination with glass",
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "product": "Hoagie Rolls",
+      "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -129,6 +129,28 @@
       "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-09",
+      "id": "FDA-H-0181-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Riad's Oliva to Go Hummus",
+      "reason": "contains undeclared sesame",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-09",
+      "id": "FDA-H-0179-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Riad's Oliva to Go Baba Ghanouj",
+      "reason": "contains undeclared sesame",
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -186,6 +208,17 @@
     {
       "brandNames": [],
       "date": "2026-10-07",
+      "id": "FDA-H-0177-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO111 -qb2 & 1 Pound pouches UPC SVBRO111 -qb4.",
+      "reason": "Salmonella",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-07",
       "id": "FDA-H-0095-2027",
       "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "product": "Pur Aqua Sparkling Frost Cherry Limeade 17 oz., UPC: 4099100167023",
@@ -219,73 +252,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [
-        "EDEN BROTHERS"
-      ],
-      "date": "2026-10-07",
-      "id": "FDA-ANN-74d35dbb2c4603ad",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
-      "product": "Broccoli Seeds - Calabrese",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-06",
-      "id": "FDA-H-0168-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Babies' Magic Tea; Baby Sleep Gripe Water; Dietary Supplement; Net Wt. 4 OZ; Age 2eeks+ \"No Alcohol, Dairy, Wheat, Soy And Animal Testing\" UPC: 850302008183",
-      "reason": "Adulterated (elevated levels of alcohol) infant dietary supplement",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "Nova Biomedical StatStrip"
-      ],
-      "date": "2026-10-06",
-      "id": "FDA-ANN-81d077c777cd3774",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter",
-      "product": "StatStrip Glucose Hospital Meter System",
-      "reason": "Software issue may cause a glucose result to be associated to the wrong patient",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-11-10T01:27:31Z",
+  "generatedAt": "2026-11-10T09:39:45Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-10T01:27:31Z",
+      "checkedAt": "2026-11-10T09:39:45Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-10T01:27:31Z",
+      "lastSuccessfulUpdate": "2026-11-10T09:39:45Z",
       "newestRecallDate": "2026-11-08",
       "qualityStatus": "current",
-      "recordCount": 2148,
+      "recordCount": 2159,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-10T01:27:31Z",
+          "checkedAt": "2026-11-10T09:39:45Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-10T01:27:31Z",
-          "newestRecallDate": "2026-10-07",
-          "recordCount": 2771,
+          "checkedAt": "2026-11-10T09:39:45Z",
+          "newestRecallDate": "2026-10-09",
+          "recordCount": 2783,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-10T01:27:31Z",
+          "checkedAt": "2026-11-10T09:39:45Z",
           "newestRecallDate": "2026-11-08",
           "recordCount": 8,
           "success": true
@@ -293,12 +289,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-10T01:27:31Z",
+      "checkedAt": "2026-11-10T09:39:45Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-10T01:27:31Z",
+      "lastSuccessfulUpdate": "2026-11-10T09:39:45Z",
       "newestRecallDate": "2026-11-06",
       "qualityStatus": "current",
       "recordCount": 2033,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T01:27:31Z",
+  "generatedAt": "2026-11-10T09:39:45Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,14 +14,14 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-10T01:27:31Z",
-    "lastSuccessfulUpdate": "2026-11-10T01:27:31Z",
+    "checkedAt": "2026-11-10T09:39:45Z",
+    "lastSuccessfulUpdate": "2026-11-10T09:39:45Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-10T01:27:31Z",
-        "lastSuccessfulUpdate": "2026-11-10T01:27:31Z",
-        "recordCount": 2148,
+        "checkedAt": "2026-11-10T09:39:45Z",
+        "lastSuccessfulUpdate": "2026-11-10T09:39:45Z",
+        "recordCount": 2159,
         "newestRecallDate": "2026-11-08",
         "current": true,
         "qualityStatus": "current",
@@ -30,30 +30,30 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-10T01:27:31Z",
+            "checkedAt": "2026-11-10T09:39:45Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-10T01:27:31Z",
+            "checkedAt": "2026-11-10T09:39:45Z",
             "recordCount": 8,
             "newestRecallDate": "2026-11-08"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-10T01:27:31Z",
-            "recordCount": 2771,
-            "newestRecallDate": "2026-10-07"
+            "checkedAt": "2026-11-10T09:39:45Z",
+            "recordCount": 2783,
+            "newestRecallDate": "2026-10-09"
           }
         },
         "error": null
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-10T01:27:31Z",
-        "retrievedAt": "2026-11-10T01:27:31Z",
-        "lastSuccessfulUpdate": "2026-11-10T01:27:31Z",
+        "checkedAt": "2026-11-10T09:39:45Z",
+        "retrievedAt": "2026-11-10T09:39:45Z",
+        "lastSuccessfulUpdate": "2026-11-10T09:39:45Z",
         "newestRecallDate": "2026-11-06",
         "recordCount": 2033,
         "error": null,
@@ -64,7 +64,7 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2148,
+      "FDA": 2159,
       "USDA": 1244
     },
     "recordsWithIdentifierCandidates": 37,
@@ -783,8 +783,8 @@
       "searchText": "imperio distribution llc recalls beef jerky products produced without the benefit of inspection ['2 oz. sealed bag of &quot;imperio fuego beef jerky (carne seca).&quot;', '2 oz. sealed bag of &quot;imperio original beef jerky (carne seca).&quot;', '2 oz. sealed bag of &quot;imperio lim\u00f3n beef jerky (carne seca).&quot;'] washington, oct. 24, 2026 - imperio distribution llc, an elgin, ill. establishment, is recalling approximately 946 pounds of ready-to-eat (rte) beef jerky products that were produced without the benefit of federal inspection and misbranded because of the unauthorized use of a usda mark of inspection, the u.s. department of agriculture's food safety and inspection service (fsis) announced today. the rte beef jerky products were packaged january 2026, to october 2026. the following products are subject to recall [ view labels ]: 2 oz. sealed bag of \"imperio fuego beef jerky (carne seca).\" 2 oz. sealed bag of \"imperio original beef jerky (carne seca).\" 2 oz. sealed bag of \"imperio lim\u00f3n beef jerky (carne seca).\" the products subject to recall include the unapproved use of another facility's mark of inspection, identified as establishment number \"1885\" inside the usda mark of inspection. these items were distributed to various retail locations in illinois, indiana, iowa, michigan, minnesota, missouri, and wisconsin. the problem was discovered during fsis surveillance activities. there have been no confirmed reports of illness or injury due to consumption of these products. anyone concerned about an illness or injury should contact a healthcare provider. food produced without inspection may contain undeclared allergens, harmful bacteria, or other contaminants that put consumer health and safety at risk. fsis is concerned that some products may be in consumer refrigerators or pantries or at various retailers. consumers who have purchased these products are urged not to consume them. these products should be thrown away or returned to the place of purchase. fsis routinely conducts recall effectiveness checks to verify recalling firms notify their customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. when available, the retail distribution list(s) will be posted on the fsis website at www.fsis.usda.gov/recalls . consumers and members of the media with questions about the recall can contact manuel cortes, owner, imperio distribution llc, at 630-532-9560 or manuelcortes33@gmail.com. consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to mphotline@usda.gov . for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at https://foodcomplaint.fsis.usda.gov/eccf/ . ['\\n company contact\\n \\n owner, imperio distribution llc\\n manuel cortes\\n 630-532-9560\\n manuelcortes33@gmail.com\\n \\n\\n']"
     },
     {
-      "id": "FDA-PUBLIC-10f749b0c03717f9",
-      "sourceRecordId": "PUBLIC-10f749b0c03717f9",
+      "id": "FDA-PUBLIC-2c852be91c011238",
+      "sourceRecordId": "PUBLIC-2c852be91c011238",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -800,56 +800,54 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "2 pound Mung Beans",
-      "recallingFirm": "Vitamin Cottage Natural Food Markets, Inc.",
-      "productDescription": "2 pound Mung Beans",
+      "title": "Hoagie Rolls",
+      "recallingFirm": "WinCo Foods LLC",
+      "productDescription": "Hoagie Rolls",
       "brandNames": [
-        "Natural Grocers"
+        "WinCo Foods"
       ],
       "productNames": [
-        "2 pound Mung Beans"
+        "Hoagie Rolls"
       ],
       "upcs": [],
       "gtins": [],
-      "packageSizes": [
-        "2 pound"
-      ],
+      "packageSizes": [],
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Possible foreign material contamination with glass",
+      "reason": "Undeclared sesame",
       "distribution": "See official notice",
       "recallDate": "2026-10-22",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
-        "confidence": "medium",
+        "confidence": "none",
         "fields": {
           "identifiers": 0,
           "lotCodes": 0,
           "dateCodes": 0,
-          "packageSizes": 1,
+          "packageSizes": 0,
           "brandNames": 0
         }
       },
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-10-22",
-        "brand": "Natural Grocers",
-        "product": "2 pound Mung Beans",
-        "productType": "Food & Beverages",
-        "reason": "Possible foreign material contamination with glass",
-        "company": "Vitamin Cottage Natural Food Markets, Inc.",
+        "brand": "WinCo Foods",
+        "product": "Hoagie Rolls",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared sesame",
+        "company": "WinCo Foods LLC",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
       },
-      "searchText": "vitamin cottage natural food markets, inc. natural grocers 2 pound mung beans possible foreign material contamination with glass",
+      "searchText": "winco foods llc winco foods hoagie rolls undeclared sesame",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-10f749b0c03717f9",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence"
+          "sourceRecordId": "PUBLIC-2c852be91c011238",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls"
         }
       ],
       "sourceSurfaces": [
@@ -1101,6 +1099,185 @@
       ],
       "sourceSurfaces": [
         "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-H-0181-2027",
+      "sourceRecordId": "H-0181-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-09",
+        "ageDaysAtRefresh": 32,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "Oliva on Main \u2014 Riad's Oliva to Go Hummus",
+      "recallingFirm": "Oliva on Main",
+      "productDescription": "Riad's Oliva to Go Hummus",
+      "brandNames": [],
+      "productNames": [
+        "Riad's Oliva to Go Hummus"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [
+        "best by dates 10/12/26 through 10/18/26"
+      ],
+      "establishmentNumbers": [],
+      "reason": "contains undeclared sesame",
+      "distribution": "MA, CT",
+      "recallDate": "2026-10-09",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 1,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Bethlehem",
+        "state": "CT",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "100088",
+        "recalling_firm": "Oliva on Main",
+        "address_1": "15 Main St S",
+        "address_2": "",
+        "postal_code": "06751-2029",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
+        "distribution_pattern": "MA, CT",
+        "recall_number": "H-0181-2027",
+        "product_description": "Riad's Oliva to Go Hummus",
+        "product_quantity": "158 units total",
+        "reason_for_recall": "contains undeclared sesame",
+        "recall_initiation_date": "20261009",
+        "center_classification_date": "20261030",
+        "report_date": "20261104",
+        "code_info": "best by dates 10/12/26 through 10/18/26",
+        "more_code_info": ""
+      },
+      "searchText": "oliva on main riad's oliva to go hummus best by dates 10/12/26 through 10/18/26",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0181-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "id": "FDA-H-0179-2027",
+      "sourceRecordId": "H-0179-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-09",
+        "ageDaysAtRefresh": 32,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "Oliva on Main \u2014 Riad's Oliva to Go Baba Ghanouj",
+      "recallingFirm": "Oliva on Main",
+      "productDescription": "Riad's Oliva to Go Baba Ghanouj",
+      "brandNames": [],
+      "productNames": [
+        "Riad's Oliva to Go Baba Ghanouj",
+        "Riad's Oliva to Go Spicy Baba Ghanouj"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [
+        "best by dates 10/10/26 through 10/14/26",
+        "best by dates 10/10-26 through 10/14/26"
+      ],
+      "establishmentNumbers": [],
+      "reason": "contains undeclared sesame",
+      "distribution": "MA, CT",
+      "recallDate": "2026-10-09",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 1,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Bethlehem",
+        "state": "CT",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "100088",
+        "recalling_firm": "Oliva on Main",
+        "address_1": "15 Main St S",
+        "address_2": "",
+        "postal_code": "06751-2029",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
+        "distribution_pattern": "MA, CT",
+        "recall_number": "H-0179-2027",
+        "product_description": "Riad's Oliva to Go Baba Ghanouj",
+        "product_quantity": "158 units total",
+        "reason_for_recall": "contains undeclared sesame",
+        "recall_initiation_date": "20261009",
+        "center_classification_date": "20261030",
+        "report_date": "20261104",
+        "code_info": "best by dates 10/10/26 through 10/14/26",
+        "more_code_info": ""
+      },
+      "searchText": "oliva on main riad's oliva to go baba ghanouj best by dates 10/10/26 through 10/14/26",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0179-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        },
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0180-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -1377,6 +1554,96 @@
       ],
       "sourceSurfaces": [
         "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-H-0177-2027",
+      "sourceRecordId": "H-0177-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-10-07",
+        "ageDaysAtRefresh": 34,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "EDEN BROTHERS \u2014 EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO111 -qb2 & 1 Pound pouches UPC ",
+      "recallingFirm": "EDEN BROTHERS",
+      "productDescription": "EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO111 -qb2 & 1 Pound pouches UPC SVBRO111 -qb4.",
+      "brandNames": [],
+      "productNames": [
+        "EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO111 -qb2 & 1 Pound pouches UPC SVBRO111 -qb4."
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "1oz",
+        "1 Pound"
+      ],
+      "lotCodes": [
+        "1022067",
+        "1022068"
+      ],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Salmonella",
+      "distribution": "Product was distributed to the following states: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV & WY.",
+      "recallDate": "2026-10-07",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 2,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Arden",
+        "state": "NC",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99993",
+        "recalling_firm": "EDEN BROTHERS",
+        "address_1": "2099 Brevard Rd",
+        "address_2": "",
+        "postal_code": "28704-8900",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "Press Release",
+        "distribution_pattern": "Product was distributed to the following states: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV & WY.",
+        "recall_number": "H-0177-2027",
+        "product_description": "EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO111 -qb2 & 1 Pound pouches UPC SVBRO111 -qb4.",
+        "product_quantity": "195 Packets; 35/1oz pouches; 8/1lb pouches",
+        "reason_for_recall": "Salmonella",
+        "recall_initiation_date": "20261007",
+        "center_classification_date": "20261023",
+        "report_date": "20261104",
+        "code_info": "Lot #1022067, Packed For: 2027; Lot #1022068, Packed For: 2027",
+        "more_code_info": ""
+      },
+      "searchText": "eden brothers eden brothers broccoli seeds - calabrese. sold in packets, net wt. 1oz pouches, upc svbro111 -qb2 & 1 pound pouches upc svbro111 -qb4. lot #1022067, packed for: 2027; lot #1022068, packed for: 2027",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0177-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -3344,6 +3611,99 @@
         {
           "surface": "enforcement",
           "sourceRecordId": "H-0173-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "id": "FDA-H-0176-2027",
+      "sourceRecordId": "H-0176-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-29",
+        "ageDaysAtRefresh": 42,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "FORTUNA MARKETING, INC \u2014 ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 8 OZ; Heirloom Broccoli Seeds. SKU: X004IOM4AJ ZestiGreens Brocc",
+      "recallingFirm": "FORTUNA MARKETING, INC",
+      "productDescription": "ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 8 OZ; Heirloom Broccoli Seeds. SKU: X004IOM4AJ ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 16 OZ; Heirloom Broccoli Seeds. SKU: B0D5289F94",
+      "brandNames": [],
+      "productNames": [
+        "ZestiGreens Broccoli Seeds for Sprouting & Microgreens",
+        "8 OZ",
+        "Heirloom Broccoli Seeds. SKU: X004IOM4AJ ZestiGreens Broccoli Seeds for Sprouting & Microgreens",
+        "16 OZ",
+        "Heirloom Broccoli Seeds. SKU: B0D5289F94"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "8 OZ",
+        "16 OZ"
+      ],
+      "lotCodes": [],
+      "dateCodes": [
+        "no lot code"
+      ],
+      "establishmentNumbers": [],
+      "reason": "Broccoli seeds potentially contaminated with Salmonella",
+      "distribution": "Product was primarily distributed to Amazon fulfillment center. Customers were notified directly by the recalling firm. Amazon was notified and placed a stop on the product SKU. Additional product was sold and shipped to a co-packer. That product was never repackaged and was destroyed.",
+      "recallDate": "2026-09-29",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Poway",
+        "state": "CA",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "100118",
+        "recalling_firm": "FORTUNA MARKETING, INC",
+        "address_1": "16716 Valle Verde Rd",
+        "address_2": "",
+        "postal_code": "92064-1618",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
+        "distribution_pattern": "Product was primarily distributed to Amazon fulfillment center. Customers were notified directly by the recalling firm. Amazon was notified and placed a stop on the product SKU.  Additional product was sold and shipped to a co-packer. That product was never repackaged and was destroyed.",
+        "recall_number": "H-0176-2027",
+        "product_description": "ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 8 OZ; Heirloom Broccoli Seeds.  SKU: X004IOM4AJ ZestiGreens Broccoli Seeds for Sprouting & Microgreens; 16 OZ; Heirloom Broccoli Seeds.  SKU: B0D5289F94",
+        "product_quantity": "600 pounds",
+        "reason_for_recall": "Broccoli seeds potentially contaminated with Salmonella",
+        "recall_initiation_date": "20260929",
+        "center_classification_date": "20261023",
+        "report_date": "20261104",
+        "code_info": "no lot code",
+        "more_code_info": ""
+      },
+      "searchText": "fortuna marketing, inc zestigreens broccoli seeds for sprouting & microgreens; 8 oz; heirloom broccoli seeds. sku: x004iom4aj zestigreens broccoli seeds for sprouting & microgreens; 16 oz; heirloom broccoli seeds. sku: b0d5289f94 no lot code",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0176-2027",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
         }
       ],
@@ -6893,6 +7253,100 @@
       ]
     },
     {
+      "id": "FDA-H-0178-2027",
+      "sourceRecordId": "H-0178-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-11",
+        "ageDaysAtRefresh": 60,
+        "isRecent": true
+      },
+      "classification": "Class II",
+      "title": "Prosperity Organic Foods Inc \u2014 Miyoko's Creamery European Style Salted Plant Milk Butter, Net Wt. 8 OZ (227G). UPC 857554005773. Distributed By: Prospe",
+      "recallingFirm": "Prosperity Organic Foods Inc",
+      "productDescription": "Miyoko's Creamery European Style Salted Plant Milk Butter, Net Wt. 8 OZ (227G). UPC 857554005773. Distributed By: Prosperity Organic Foods, Inc. Boise, Idaho 83702. Product is perishable and stored refrigerated/frozen. Product is initially packaged in wax paper wrapping and into an SBS carton. Secondary packaging is the corrugated case for shipment, labeled as Miyoko's Creamery Organic European Style Plant Milk Butter, 6 pack, 8 oz units Net Wt 3.0 LB.",
+      "brandNames": [],
+      "productNames": [
+        "Miyoko's Creamery European Style Salted Plant Milk Butter, Net Wt. 8 OZ (227G). UPC 857554005773. Distributed By: Prosperity Organic Foods, Inc. Boise, Idaho 83"
+      ],
+      "upcs": [
+        "857554005773"
+      ],
+      "gtins": [],
+      "packageSizes": [
+        "8 OZ",
+        "227G",
+        "8 oz",
+        "3.0 LB"
+      ],
+      "lotCodes": [],
+      "dateCodes": [
+        "Best by 11/5/26 09 Secondary packaging",
+        "Best by 11/5/26 09"
+      ],
+      "establishmentNumbers": [],
+      "reason": "Product recalled due to yeast, mold, and E. coli.",
+      "distribution": "Distributed in CT, FL, GA, IA, IL, IN, MD, NJ, NH, and WI.",
+      "recallDate": "2026-09-11",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "high",
+        "fields": {
+          "identifiers": 1,
+          "lotCodes": 0,
+          "dateCodes": 2,
+          "packageSizes": 4,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Boise",
+        "state": "ID",
+        "country": "United States",
+        "classification": "Class II",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99871",
+        "recalling_firm": "Prosperity Organic Foods Inc",
+        "address_1": "816 W Bannock St Ste 202",
+        "address_2": "",
+        "postal_code": "83702-5896",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "E-Mail",
+        "distribution_pattern": "Distributed in CT, FL, GA, IA, IL, IN, MD, NJ, NH, and WI.",
+        "recall_number": "H-0178-2027",
+        "product_description": "Miyoko's Creamery European Style Salted Plant Milk Butter, Net Wt. 8 OZ (227G). UPC 857554005773. Distributed By: Prosperity Organic Foods, Inc. Boise, Idaho 83702.  Product is perishable and stored refrigerated/frozen. Product is initially packaged in wax paper wrapping and into an SBS carton.  Secondary packaging is the corrugated case for shipment, labeled as Miyoko's Creamery Organic European Style Plant Milk Butter, 6 pack, 8 oz units Net Wt 3.0 LB.",
+        "product_quantity": "1,304 cases (6-oz units/case)",
+        "reason_for_recall": "Product recalled due to yeast, mold, and E. coli.",
+        "recall_initiation_date": "20260911",
+        "center_classification_date": "20261023",
+        "report_date": "20261104",
+        "code_info": "Primary packaging on SBS carton: Lot 07871 Best by 11/5/26 09  Secondary packaging on corrugate case: 1007871 Best by 11/5/26 09:05",
+        "more_code_info": ""
+      },
+      "searchText": "prosperity organic foods inc miyoko's creamery european style salted plant milk butter, net wt. 8 oz (227g). upc 857554005773. distributed by: prosperity organic foods, inc. boise, idaho 83702. product is perishable and stored refrigerated/frozen. product is initially packaged in wax paper wrapping and into an sbs carton. secondary packaging is the corrugated case for shipment, labeled as miyoko's creamery organic european style plant milk butter, 6 pack, 8 oz units net wt 3.0 lb. primary packaging on sbs carton: lot 07871 best by 11/5/26 09 secondary packaging on corrugate case: 1007871 best by 11/5/26 09:05",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0178-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "id": "FDA-H-1405-2026",
       "sourceRecordId": "H-1405-2026",
       "agency": "FDA",
@@ -7237,6 +7691,97 @@
       ]
     },
     {
+      "id": "FDA-H-0175-2027",
+      "sourceRecordId": "H-0175-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-10",
+        "ageDaysAtRefresh": 61,
+        "isRecent": true
+      },
+      "classification": "Class II",
+      "title": "Pink House Alchemy, LLC \u2014 Blue Bottle Coffee 4oz Sweet Blossom Simple Syrup in a glass boston round bottle with metal and plastisol cap. The label",
+      "recallingFirm": "Pink House Alchemy, LLC",
+      "productDescription": "Blue Bottle Coffee 4oz Sweet Blossom Simple Syrup in a glass boston round bottle with metal and plastisol cap. The label reads in part as \"***BLUE BOTTLE COFFEE SWEET BLOSSOM SMALL BATCH SYRUP 4 FL OZ FLAVOR NOTES Elderflower Lychee Muscat***Made in Fayetteville, Arkansas by Pink House Alchemy***\"",
+      "brandNames": [],
+      "productNames": [
+        "Blue Bottle Coffee 4oz Sweet Blossom Simple Syrup in a glass boston round bottle with metal and plastisol cap. The label reads in part as \"***BLUE BOTTLE COFFEE"
+      ],
+      "upcs": [
+        "810123980659"
+      ],
+      "gtins": [],
+      "packageSizes": [
+        "4oz",
+        "4 FL OZ"
+      ],
+      "lotCodes": [],
+      "dateCodes": [
+        "UPC: 810123980659 Batch information: 4ozBBCSB261051, Expiration Date: 04/15/2028 4ozBBCSB261061, Expiration Date: 04/16/2028 4ozBBCSB261071, Expiration Date: 04/17/2028 4ozBBCSB261181, Expiration Date: 04/28/2026 4ozBBCSB261201, Expiration Date: 04/30/2028 4ozBBCSB261281, Expiration Date: 05/08/2028"
+      ],
+      "establishmentNumbers": [],
+      "reason": "Potential contamination with mold (Aspergillus niger)",
+      "distribution": "Sole consignee: Blue Bottle Coffee LLC, 476 9th Steet Oakland, CA 94607",
+      "recallDate": "2026-09-10",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "high",
+        "fields": {
+          "identifiers": 1,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Fayetteville",
+        "state": "AR",
+        "country": "United States",
+        "classification": "Class II",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99961",
+        "recalling_firm": "Pink House Alchemy, LLC",
+        "address_1": "928 N College Ave",
+        "address_2": "",
+        "postal_code": "72701-2009",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "E-Mail",
+        "distribution_pattern": "Sole consignee: Blue Bottle Coffee LLC, 476 9th Steet Oakland, CA 94607",
+        "recall_number": "H-0175-2027",
+        "product_description": "Blue Bottle Coffee 4oz Sweet Blossom Simple Syrup in a glass boston round bottle with metal and plastisol cap. The label reads in part as \"***BLUE BOTTLE COFFEE SWEET BLOSSOM SMALL BATCH SYRUP 4 FL OZ FLAVOR NOTES Elderflower Lychee Muscat***Made in Fayetteville, Arkansas by Pink House Alchemy***\"",
+        "product_quantity": "9420 bottles",
+        "reason_for_recall": "Potential contamination with mold (Aspergillus niger)",
+        "recall_initiation_date": "20260910",
+        "center_classification_date": "20261023",
+        "report_date": "20261104",
+        "code_info": "UPC: 810123980659  Batch information:  4ozBBCSB261051, Expiration Date: 04/15/2028 4ozBBCSB261061, Expiration Date: 04/16/2028 4ozBBCSB261071, Expiration Date: 04/17/2028 4ozBBCSB261181, Expiration Date: 04/28/2026 4ozBBCSB261201, Expiration Date: 04/30/2028 4ozBBCSB261281, Expiration Date: 05/08/2028",
+        "more_code_info": ""
+      },
+      "searchText": "pink house alchemy, llc blue bottle coffee 4oz sweet blossom simple syrup in a glass boston round bottle with metal and plastisol cap. the label reads in part as \"***blue bottle coffee sweet blossom small batch syrup 4 fl oz flavor notes elderflower lychee muscat***made in fayetteville, arkansas by pink house alchemy***\" upc: 810123980659 batch information: 4ozbbcsb261051, expiration date: 04/15/2028 4ozbbcsb261061, expiration date: 04/16/2028 4ozbbcsb261071, expiration date: 04/17/2028 4ozbbcsb261181, expiration date: 04/28/2026 4ozbbcsb261201, expiration date: 04/30/2028 4ozbbcsb261281, expiration date: 05/08/2028",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0175-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "id": "FDA-ANN-69ab2fdc073a9d8f",
       "sourceRecordId": "ANN-69ab2fdc073a9d8f",
       "agency": "FDA",
@@ -7574,6 +8119,272 @@
         {
           "surface": "enforcement",
           "sourceRecordId": "H-1393-2026",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "id": "FDA-H-0184-2027",
+      "sourceRecordId": "H-0184-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-08",
+        "ageDaysAtRefresh": 63,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "GF Blends Inc \u2014 Gluten Free Truly AIP Rustic Bread Mix, 14 oz",
+      "recallingFirm": "GF Blends Inc",
+      "productDescription": "Gluten Free Truly AIP Rustic Bread Mix, 14 oz",
+      "brandNames": [],
+      "productNames": [
+        "Gluten Free Truly AIP Rustic Bread Mix, 14 oz"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "14 oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [
+        "Best By date 4-17-28 Lot 260617, Best By dat"
+      ],
+      "establishmentNumbers": [],
+      "reason": "Products are recalled due to potential undeclared wheat gluten",
+      "distribution": "Sold nationwide online at eatgangster.com, trulyaip.com, and Amazon.com",
+      "recallDate": "2026-09-08",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 1,
+          "packageSizes": 1,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Richland",
+        "state": "WA",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99914",
+        "recalling_firm": "GF Blends Inc",
+        "address_1": "2746 Battelle Blvd",
+        "address_2": "",
+        "postal_code": "99354-2193",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "E-Mail",
+        "distribution_pattern": "Sold nationwide online at eatgangster.com, trulyaip.com, and Amazon.com",
+        "recall_number": "H-0184-2027",
+        "product_description": "Gluten Free Truly AIP Rustic Bread Mix, 14 oz",
+        "product_quantity": "986 bags",
+        "reason_for_recall": "Products are recalled due to potential undeclared wheat gluten",
+        "recall_initiation_date": "20260908",
+        "center_classification_date": "20261028",
+        "report_date": "20261104",
+        "code_info": "Lot 260417, Best By date 4-17-28 Lot 260617, Best By date 12-17-27",
+        "more_code_info": ""
+      },
+      "searchText": "gf blends inc gluten free truly aip rustic bread mix, 14 oz lot 260417, best by date 4-17-28 lot 260617, best by date 12-17-27",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0184-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "id": "FDA-H-0185-2027",
+      "sourceRecordId": "H-0185-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-08",
+        "ageDaysAtRefresh": 63,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "GF Blends Inc \u2014 Gluten Free EAT G.A.N.G.S.T.E.R Pizza Crust and Flat Bread Mix, 5.8oz (165g) & 3.98 lbs.",
+      "recallingFirm": "GF Blends Inc",
+      "productDescription": "Gluten Free EAT G.A.N.G.S.T.E.R Pizza Crust and Flat Bread Mix, 5.8oz (165g) & 3.98 lbs.",
+      "brandNames": [],
+      "productNames": [
+        "Gluten Free EAT G.A.N.G.S.T.E.R Pizza Crust and Flat Bread Mix, 5.8oz (165g) & 3.98 lbs."
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "5.8oz",
+        "165g"
+      ],
+      "lotCodes": [],
+      "dateCodes": [
+        "Best by date 7-27-27 and 9-27-27 Lot 260803",
+        "Best by date 2-03-28"
+      ],
+      "establishmentNumbers": [],
+      "reason": "Products are recalled due to potential undeclared wheat gluten",
+      "distribution": "Sold nationwide online at eatgangster.com, trulyaip.com, and Amazon.com",
+      "recallDate": "2026-09-08",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 2,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Richland",
+        "state": "WA",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99914",
+        "recalling_firm": "GF Blends Inc",
+        "address_1": "2746 Battelle Blvd",
+        "address_2": "",
+        "postal_code": "99354-2193",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "E-Mail",
+        "distribution_pattern": "Sold nationwide online at eatgangster.com, trulyaip.com, and Amazon.com",
+        "recall_number": "H-0185-2027",
+        "product_description": "Gluten Free  EAT G.A.N.G.S.T.E.R Pizza Crust and Flat Bread Mix, 5.8oz (165g) & 3.98 lbs.",
+        "product_quantity": "2163 (5.8oz) bags and 20 (3.98lb) bags",
+        "reason_for_recall": "Products are recalled due to potential undeclared wheat gluten",
+        "recall_initiation_date": "20260908",
+        "center_classification_date": "20261028",
+        "report_date": "20261104",
+        "code_info": "Lot 260327, Best by date 7-27-27 and 9-27-27 Lot 260803, Best by date 2-03-28",
+        "more_code_info": ""
+      },
+      "searchText": "gf blends inc gluten free eat g.a.n.g.s.t.e.r pizza crust and flat bread mix, 5.8oz (165g) & 3.98 lbs. lot 260327, best by date 7-27-27 and 9-27-27 lot 260803, best by date 2-03-28",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0185-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "id": "FDA-H-0183-2027",
+      "sourceRecordId": "H-0183-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-08",
+        "ageDaysAtRefresh": 63,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "GF Blends Inc \u2014 Gluten Free Truly AIP All Purpose Baking Mix Flour 15.3 oz",
+      "recallingFirm": "GF Blends Inc",
+      "productDescription": "Gluten Free Truly AIP All Purpose Baking Mix Flour 15.3 oz",
+      "brandNames": [],
+      "productNames": [
+        "Gluten Free Truly AIP All Purpose Baking Mix Flour 15.3 oz"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "15.3 oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [
+        "Best By date 2-25-28 Lot 260610, Best By dat"
+      ],
+      "establishmentNumbers": [],
+      "reason": "Products are recalled due to potential undeclared wheat gluten",
+      "distribution": "Sold nationwide online at eatgangster.com, trulyaip.com, and Amazon.com",
+      "recallDate": "2026-09-08",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 1,
+          "packageSizes": 1,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Richland",
+        "state": "WA",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99914",
+        "recalling_firm": "GF Blends Inc",
+        "address_1": "2746 Battelle Blvd",
+        "address_2": "",
+        "postal_code": "99354-2193",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "E-Mail",
+        "distribution_pattern": "Sold nationwide online at eatgangster.com, trulyaip.com, and Amazon.com",
+        "recall_number": "H-0183-2027",
+        "product_description": "Gluten Free Truly AIP All Purpose Baking Mix Flour 15.3 oz",
+        "product_quantity": "1495 bags",
+        "reason_for_recall": "Products are recalled due to potential undeclared wheat gluten",
+        "recall_initiation_date": "20260908",
+        "center_classification_date": "20261028",
+        "report_date": "20261104",
+        "code_info": "Lot 260225, Best By date 2-25-28 Lot 260610, Best By date 6-10-28",
+        "more_code_info": ""
+      },
+      "searchText": "gf blends inc gluten free truly aip all purpose baking mix flour 15.3 oz lot 260225, best by date 2-25-28 lot 260610, best by date 6-10-28",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0183-2027",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
         }
       ],
@@ -8977,6 +9788,94 @@
       ],
       "sourceSurfaces": [
         "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-H-0182-2027",
+      "sourceRecordId": "H-0182-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-09-02",
+        "ageDaysAtRefresh": 69,
+        "isRecent": true
+      },
+      "classification": "Class II",
+      "title": "Sunny Sky Products, LLC \u2014 Sunny Sky Non-Dairy French Vanilla Creamer, 96oz , bag in box, 3 per case, refrigerate after opening.",
+      "recallingFirm": "Sunny Sky Products, LLC",
+      "productDescription": "Sunny Sky Non-Dairy French Vanilla Creamer, 96oz , bag in box, 3 per case, refrigerate after opening.",
+      "brandNames": [],
+      "productNames": [
+        "Sunny Sky Non-Dairy French Vanilla Creamer, 96oz , bag in box, 3 per case, refrigerate after opening."
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "96oz"
+      ],
+      "lotCodes": [],
+      "dateCodes": [
+        "L0437F083101"
+      ],
+      "establishmentNumbers": [],
+      "reason": "Product sterility was potentially compromised.",
+      "distribution": "The adulterated product was distributed to the following States: GA, TX, UT, MN, NM, OH, NC, CA, KY, AR, NV,",
+      "recallDate": "2026-09-02",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 1,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Douglassville",
+        "state": "PA",
+        "country": "United States",
+        "classification": "Class II",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99881",
+        "recalling_firm": "Sunny Sky Products, LLC",
+        "address_1": "48 Quarry Rd",
+        "address_2": "",
+        "postal_code": "19518",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "Two or more of the following: Email, Fax, Letter, Press Release, Telephone, Visit",
+        "distribution_pattern": "The adulterated product was distributed to the following States: GA, TX, UT, MN, NM, OH, NC, CA, KY, AR, NV,",
+        "recall_number": "H-0182-2027",
+        "product_description": "Sunny Sky Non-Dairy French Vanilla Creamer, 96oz , bag in box, 3 per case, refrigerate after opening.",
+        "product_quantity": "1876 Cases",
+        "reason_for_recall": "Product sterility was potentially compromised.",
+        "recall_initiation_date": "20260902",
+        "center_classification_date": "20261028",
+        "report_date": "20261104",
+        "code_info": "L0437F083101",
+        "more_code_info": ""
+      },
+      "searchText": "sunny sky products, llc sunny sky non-dairy french vanilla creamer, 96oz , bag in box, 3 per case, refrigerate after opening. l0437f083101",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0182-2027",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -37466,6 +38365,95 @@
         {
           "surface": "enforcement",
           "sourceRecordId": "H-1110-2026",
+          "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
+        }
+      ],
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "id": "FDA-H-0186-2027",
+      "sourceRecordId": "H-0186-2027",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "ongoing",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "Ongoing",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-05-21",
+        "ageDaysAtRefresh": 173,
+        "isRecent": true
+      },
+      "classification": "Class I",
+      "title": "JXK Enterprises, Inc. \u2014 Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1 piece at least 1 hour prior to ",
+      "recallingFirm": "JXK Enterprises, Inc.",
+      "productDescription": "Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1 piece at least 1 hour prior to activity. Do not exceed 1 piece in any 48 hour period. Serving size about 7 g",
+      "brandNames": [],
+      "productNames": [
+        "Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1 piece at least 1 hour prior to activity. Do not exceed 1 piece in any 4"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [
+        "22g",
+        "7 g"
+      ],
+      "lotCodes": [
+        "BB21125"
+      ],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "JXK Enterprises, Inc is voluntarily recalling Boner Bears Chocolate, Lot #BB21125, after being notified that FDA laboratory analysis confirmed the presence of sildenafil, an active ingredient in the FDA-approved prescription drug Viagra, which is not declared on the product label.",
+      "distribution": "Boner Bears Chocolate is marketed as a sexual enhancement product and was distributed nationwide via online sales through www.elyxr.com.",
+      "recallDate": "2026-05-21",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "medium",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 1,
+          "dateCodes": 0,
+          "packageSizes": 2,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "status": "Ongoing",
+        "city": "Miami",
+        "state": "FL",
+        "country": "United States",
+        "classification": "Class I",
+        "openfda": {},
+        "product_type": "Food",
+        "event_id": "99495",
+        "recalling_firm": "JXK Enterprises, Inc.",
+        "address_1": "150 Se 2nd Ave Ste 403",
+        "address_2": "",
+        "postal_code": "33131-1507",
+        "voluntary_mandated": "Voluntary: Firm initiated",
+        "initial_firm_notification": "Press Release",
+        "distribution_pattern": "Boner Bears Chocolate is marketed as a sexual enhancement product and was distributed nationwide via online sales through www.elyxr.com.",
+        "recall_number": "H-0186-2027",
+        "product_description": "Boner Bears CHOCOLATE, 3 DOSES PER BAR, NET WT. 22g, MALE ENHANCEMENT, DOSAGE: Consume 1 piece at least 1 hour prior to activity. Do not exceed 1 piece in any 48 hour period.  Serving size about 7 g",
+        "product_quantity": "Unknown",
+        "reason_for_recall": "JXK Enterprises, Inc is voluntarily recalling Boner Bears Chocolate, Lot #BB21125, after being notified that FDA laboratory analysis confirmed the presence of sildenafil, an active ingredient in the FDA-approved prescription drug Viagra, which is not declared on the product label.",
+        "recall_initiation_date": "20260521",
+        "center_classification_date": "20261028",
+        "report_date": "20261104",
+        "code_info": "Lot #BB21125",
+        "more_code_info": ""
+      },
+      "searchText": "jxk enterprises, inc. boner bears chocolate, 3 doses per bar, net wt. 22g, male enhancement, dosage: consume 1 piece at least 1 hour prior to activity. do not exceed 1 piece in any 48 hour period. serving size about 7 g lot #bb21125",
+      "sourceReferences": [
+        {
+          "surface": "enforcement",
+          "sourceRecordId": "H-0186-2027",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
         }
       ],
