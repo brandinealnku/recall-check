@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-11-10T14:48:05Z",
+  "checkedAt": "2026-11-10T23:12:33Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Family Farmstead"
+      ],
+      "date": "2026-11-10",
+      "id": "FDA-PUBLIC-dd523f3c3621d279",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk",
+      "product": "Raw Mild Cheddar; Raw Sharp Cheddar",
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Fresh to You"
@@ -88,19 +101,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
       "product": "BBQ Chop Salad Kit",
       "reason": "Undeclared soy and tree nuts (almonds)",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-22",
-      "id": "FDA-PUBLIC-2c852be91c011238",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
-      "product": "Hoagie Rolls",
-      "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -254,47 +254,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-10T14:48:05Z",
+  "generatedAt": "2026-11-10T23:12:33Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-10T14:48:05Z",
+      "checkedAt": "2026-11-10T23:12:33Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-10T14:48:05Z",
-      "newestRecallDate": "2026-11-08",
+      "lastSuccessfulUpdate": "2026-11-10T23:12:33Z",
+      "newestRecallDate": "2026-11-10",
       "qualityStatus": "current",
       "recordCount": 2159,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-10T14:48:05Z",
+          "checkedAt": "2026-11-10T23:12:33Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-10T14:48:05Z",
+          "checkedAt": "2026-11-10T23:12:33Z",
           "newestRecallDate": "2026-10-09",
           "recordCount": 2783,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-10T14:48:05Z",
-          "newestRecallDate": "2026-11-08",
+          "checkedAt": "2026-11-10T23:12:33Z",
+          "newestRecallDate": "2026-11-10",
           "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-10T14:48:05Z",
+      "checkedAt": "2026-11-10T23:12:33Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-10T14:48:05Z",
+      "lastSuccessfulUpdate": "2026-11-10T23:12:33Z",
       "newestRecallDate": "2026-11-06",
       "qualityStatus": "current",
       "recordCount": 2033,
