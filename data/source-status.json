@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-09T16:25:58Z",
+  "checkedAt": "2026-11-10T01:27:31Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -88,19 +88,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
       "product": "BBQ Chop Salad Kit",
       "reason": "Undeclared soy and tree nuts (almonds)",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "WinCo Foods"
-      ],
-      "date": "2026-10-22",
-      "id": "FDA-PUBLIC-2c852be91c011238",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
-      "product": "Hoagie Rolls",
-      "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -256,49 +243,62 @@
       "sourceSurfaces": [
         "enforcement"
       ]
+    },
+    {
+      "brandNames": [
+        "Nova Biomedical StatStrip"
+      ],
+      "date": "2026-10-06",
+      "id": "FDA-ANN-81d077c777cd3774",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter",
+      "product": "StatStrip Glucose Hospital Meter System",
+      "reason": "Software issue may cause a glucose result to be associated to the wrong patient",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     }
   ],
-  "generatedAt": "2026-11-09T16:25:58Z",
+  "generatedAt": "2026-11-10T01:27:31Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-09T16:25:58Z",
+      "checkedAt": "2026-11-10T01:27:31Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-09T16:25:58Z",
+      "lastSuccessfulUpdate": "2026-11-10T01:27:31Z",
       "newestRecallDate": "2026-11-08",
       "qualityStatus": "current",
-      "recordCount": 2150,
+      "recordCount": 2148,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-09T16:25:58Z",
+          "checkedAt": "2026-11-10T01:27:31Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-09T16:25:58Z",
+          "checkedAt": "2026-11-10T01:27:31Z",
           "newestRecallDate": "2026-10-07",
-          "recordCount": 2772,
+          "recordCount": 2771,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-09T16:25:58Z",
+          "checkedAt": "2026-11-10T01:27:31Z",
           "newestRecallDate": "2026-11-08",
-          "recordCount": 9,
+          "recordCount": 8,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-09T16:25:58Z",
+      "checkedAt": "2026-11-10T01:27:31Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-09T16:25:58Z",
+      "lastSuccessfulUpdate": "2026-11-10T01:27:31Z",
       "newestRecallDate": "2026-11-06",
       "qualityStatus": "current",
       "recordCount": 2033,
