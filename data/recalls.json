@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T15:05:46Z",
+  "generatedAt": "2026-11-12T23:33:43Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,14 +14,14 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-12T15:05:46Z",
-    "lastSuccessfulUpdate": "2026-11-12T15:05:46Z",
+    "checkedAt": "2026-11-12T23:33:43Z",
+    "lastSuccessfulUpdate": "2026-11-12T23:33:43Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-12T15:05:46Z",
-        "lastSuccessfulUpdate": "2026-11-12T15:05:46Z",
-        "recordCount": 2158,
+        "checkedAt": "2026-11-12T23:33:43Z",
+        "lastSuccessfulUpdate": "2026-11-12T23:33:43Z",
+        "recordCount": 2156,
         "newestRecallDate": "2026-11-10",
         "current": true,
         "qualityStatus": "current",
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-12T15:05:46Z",
+            "checkedAt": "2026-11-12T23:33:43Z",
             "recordCount": 251,
             "newestRecallDate": "2026-10-14"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-12T15:05:46Z",
-            "recordCount": 8,
+            "checkedAt": "2026-11-12T23:33:43Z",
+            "recordCount": 6,
             "newestRecallDate": "2026-11-10"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-12T15:05:46Z",
+            "checkedAt": "2026-11-12T23:33:43Z",
             "recordCount": 2782,
             "newestRecallDate": "2026-10-09"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-12T15:05:46Z",
-        "retrievedAt": "2026-11-12T15:05:46Z",
-        "lastSuccessfulUpdate": "2026-11-12T15:05:46Z",
+        "checkedAt": "2026-11-12T23:33:43Z",
+        "retrievedAt": "2026-11-12T23:33:43Z",
+        "lastSuccessfulUpdate": "2026-11-12T23:33:43Z",
         "newestRecallDate": "2026-11-06",
         "recordCount": 2033,
         "error": null,
@@ -64,7 +64,7 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2158,
+      "FDA": 2156,
       "USDA": 1244
     },
     "recordsWithIdentifierCandidates": 37,
@@ -597,150 +597,6 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-9e518728b7eb4694",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-58c684b35be092fb",
-      "sourceRecordId": "PUBLIC-58c684b35be092fb",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-27",
-        "ageDaysAtRefresh": 16,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Cold Smoked Sprat Fish",
-      "recallingFirm": "D&M Smoked Fish Inc. dba Haifa Smoked Fish Inc.",
-      "productDescription": "Cold Smoked Sprat Fish",
-      "brandNames": [
-        "No Brand"
-      ],
-      "productNames": [
-        "Cold Smoked Sprat Fish"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential contamination with Clostridium botulinum",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-27",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-27",
-        "brand": "No Brand",
-        "product": "Cold Smoked Sprat Fish",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential contamination with Clostridium botulinum",
-        "company": "D&M Smoked Fish Inc. dba Haifa Smoked Fish Inc.",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
-      },
-      "searchText": "d&m smoked fish inc. dba haifa smoked fish inc. no brand cold smoked sprat fish potential contamination with clostridium botulinum",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-58c684b35be092fb",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-9fa18b7b3c8b361f",
-      "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-10-27",
-        "ageDaysAtRefresh": 16,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "BBQ Chop Salad Kit",
-      "recallingFirm": "Taylor Farms",
-      "productDescription": "BBQ Chop Salad Kit",
-      "brandNames": [
-        "H-E-B"
-      ],
-      "productNames": [
-        "BBQ Chop Salad Kit"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Undeclared soy and tree nuts (almonds)",
-      "distribution": "See official notice",
-      "recallDate": "2026-10-27",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-10-27",
-        "brand": "H-E-B",
-        "product": "BBQ Chop Salad Kit",
-        "productType": "Food & Beverages, Allergens",
-        "reason": "Undeclared soy and tree nuts (almonds)",
-        "company": "Taylor Farms",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
-      },
-      "searchText": "taylor farms h-e-b bbq chop salad kit undeclared soy and tree nuts (almonds)",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-9fa18b7b3c8b361f",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree"
         }
       ],
       "sourceSurfaces": [

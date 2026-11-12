@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-12T15:05:46Z",
+  "checkedAt": "2026-11-12T23:33:43Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -75,32 +75,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels",
       "product": "Ground cinnamon",
       "reason": "Potential to be contaminated with elevated levels of lead.",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "No Brand"
-      ],
-      "date": "2026-10-27",
-      "id": "FDA-PUBLIC-58c684b35be092fb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
-      "product": "Cold Smoked Sprat Fish",
-      "reason": "Potential contamination with Clostridium botulinum",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "H-E-B"
-      ],
-      "date": "2026-10-27",
-      "id": "FDA-PUBLIC-9fa18b7b3c8b361f",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
-      "product": "BBQ Chop Salad Kit",
-      "reason": "Undeclared soy and tree nuts (almonds)",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -252,49 +226,73 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
+    },
+    {
+      "brandNames": [
+        "EDEN BROTHERS"
+      ],
+      "date": "2026-10-07",
+      "id": "FDA-ANN-74d35dbb2c4603ad",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
+      "product": "Broccoli Seeds - Calabrese",
+      "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-06",
+      "id": "FDA-H-0168-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Babies' Magic Tea; Baby Sleep Gripe Water; Dietary Supplement; Net Wt. 4 OZ; Age 2eeks+ \"No Alcohol, Dairy, Wheat, Soy And Animal Testing\" UPC: 850302008183",
+      "reason": "Adulterated (elevated levels of alcohol) infant dietary supplement",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
     }
   ],
-  "generatedAt": "2026-11-12T15:05:46Z",
+  "generatedAt": "2026-11-12T23:33:43Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-12T15:05:46Z",
+      "checkedAt": "2026-11-12T23:33:43Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-12T15:05:46Z",
+      "lastSuccessfulUpdate": "2026-11-12T23:33:43Z",
       "newestRecallDate": "2026-11-10",
       "qualityStatus": "current",
-      "recordCount": 2158,
+      "recordCount": 2156,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-12T15:05:46Z",
+          "checkedAt": "2026-11-12T23:33:43Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-12T15:05:46Z",
+          "checkedAt": "2026-11-12T23:33:43Z",
           "newestRecallDate": "2026-10-09",
           "recordCount": 2782,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-12T15:05:46Z",
+          "checkedAt": "2026-11-12T23:33:43Z",
           "newestRecallDate": "2026-11-10",
-          "recordCount": 8,
+          "recordCount": 6,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-12T15:05:46Z",
+      "checkedAt": "2026-11-12T23:33:43Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-12T15:05:46Z",
+      "lastSuccessfulUpdate": "2026-11-12T23:33:43Z",
       "newestRecallDate": "2026-11-06",
       "qualityStatus": "current",
       "recordCount": 2033,
