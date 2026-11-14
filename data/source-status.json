@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T19:37:04Z",
+  "checkedAt": "2026-11-14T06:13:37Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -49,32 +49,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/once-upon-farm-recalls-all-lots-and-varieties-tractor-wheels-organic-toddler-soft-baked-bars-due",
       "product": "Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
       "reason": "Potential choking hazard",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "365 Whole Foods Market"
-      ],
-      "date": "2026-10-30",
-      "id": "FDA-PUBLIC-79d92f1e35291c16",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential",
-      "product": "Standardized + Full Spectrum Blend Ashwagandha Capsules",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Wise Wife"
-      ],
-      "date": "2026-10-29",
-      "id": "FDA-PUBLIC-9e518728b7eb4694",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels",
-      "product": "Ground cinnamon",
-      "reason": "Potential to be contaminated with elevated levels of lead.",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -250,49 +224,75 @@
       "sourceSurfaces": [
         "enforcement"
       ]
+    },
+    {
+      "brandNames": [
+        "Nova Biomedical StatStrip"
+      ],
+      "date": "2026-10-06",
+      "id": "FDA-ANN-81d077c777cd3774",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter",
+      "product": "StatStrip Glucose Hospital Meter System",
+      "reason": "Software issue may cause a glucose result to be associated to the wrong patient",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Nature&#039;s Own"
+      ],
+      "date": "2026-10-05",
+      "id": "FDA-ANN-198305bb09f62d7e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
+      "product": "Nature&#039;s Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
+      "reason": "Undeclared milk allergen",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
     }
   ],
-  "generatedAt": "2026-11-13T19:37:04Z",
+  "generatedAt": "2026-11-14T06:13:37Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-13T19:37:04Z",
+      "checkedAt": "2026-11-14T06:13:37Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-13T19:37:04Z",
+      "lastSuccessfulUpdate": "2026-11-14T06:13:37Z",
       "newestRecallDate": "2026-11-10",
       "qualityStatus": "current",
-      "recordCount": 2155,
+      "recordCount": 2151,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-13T19:37:04Z",
+          "checkedAt": "2026-11-14T06:13:37Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-13T19:37:04Z",
+          "checkedAt": "2026-11-14T06:13:37Z",
           "newestRecallDate": "2026-10-09",
-          "recordCount": 2781,
+          "recordCount": 2779,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-13T19:37:04Z",
+          "checkedAt": "2026-11-14T06:13:37Z",
           "newestRecallDate": "2026-11-10",
-          "recordCount": 6,
+          "recordCount": 4,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-13T19:37:04Z",
+      "checkedAt": "2026-11-14T06:13:37Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-13T19:37:04Z",
+      "lastSuccessfulUpdate": "2026-11-14T06:13:37Z",
       "newestRecallDate": "2026-11-06",
       "qualityStatus": "current",
       "recordCount": 2033,
