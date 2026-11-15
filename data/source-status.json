@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T22:18:39Z",
+  "checkedAt": "2026-11-15T06:21:14Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -252,34 +252,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-14T22:18:39Z",
+  "generatedAt": "2026-11-15T06:21:14Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-14T22:18:39Z",
+      "checkedAt": "2026-11-15T06:21:14Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-14T22:18:39Z",
+      "lastSuccessfulUpdate": "2026-11-15T06:21:14Z",
       "newestRecallDate": "2026-11-10",
       "qualityStatus": "current",
-      "recordCount": 2151,
+      "recordCount": 2148,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-14T22:18:39Z",
+          "checkedAt": "2026-11-15T06:21:14Z",
           "newestRecallDate": "2026-10-14",
           "recordCount": 251,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-14T22:18:39Z",
+          "checkedAt": "2026-11-15T06:21:14Z",
           "newestRecallDate": "2026-10-09",
-          "recordCount": 2779,
+          "recordCount": 2774,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-14T22:18:39Z",
+          "checkedAt": "2026-11-15T06:21:14Z",
           "newestRecallDate": "2026-11-10",
           "recordCount": 4,
           "success": true
@@ -287,15 +287,15 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-14T22:18:39Z",
+      "checkedAt": "2026-11-15T06:21:14Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-14T22:18:39Z",
-      "newestRecallDate": "2026-11-06",
+      "lastSuccessfulUpdate": "2026-11-15T06:21:14Z",
+      "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
-      "recordCount": 2033,
+      "recordCount": 2034,
       "success": true
     }
   },
