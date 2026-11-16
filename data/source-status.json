@@ -1,6 +1,58 @@
 {
-  "checkedAt": "2026-11-16T06:19:59Z",
+  "checkedAt": "2026-11-16T20:21:02Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Medline"
+      ],
+      "date": "2026-11-13",
+      "id": "FDA-ANN-1e0292a4d69e8551",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-updates-customers-and-patients-repair-and-replace-program-recall-medline-brand-beds-rails",
+      "product": "Beds, Rails, Mattresses, and accessories",
+      "reason": "Potential Fire Hazard and Entrapment Risk",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "OsteoDenx"
+      ],
+      "date": "2026-11-13",
+      "id": "FDA-ANN-1d5faf4b2bfd9ad2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/bioquad-life-sciences-issues-allergy-alert-undeclared-milk-osteodenxr-dietary-supplement",
+      "product": "OsteoDenx capsules",
+      "reason": "Contain undeclared milk.",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "10 Day Forecast"
+      ],
+      "date": "2026-11-12",
+      "id": "FDA-ANN-1725dd74ab2dc7eb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/game-changer-products-llc-issues-voluntary-nationwide-recall-10-day-forecast-capsules-due-presence",
+      "product": "10 Day Forecast Capsules 3200mg",
+      "reason": "Tainted with Sildenafil and Acetaminophen",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Candy Power For Man"
+      ],
+      "date": "2026-11-12",
+      "id": "FDA-ANN-b085af29f0e70075",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eros-apothecary-issues-recall-candy-power-man-organic-honey-due-undeclared-tadalafil",
+      "product": "Honey Dietary Supplement",
+      "reason": "Contain Undeclared Tadalafil",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
     {
       "brandNames": [
         "Family Farmstead"
@@ -11,7 +63,34 @@
       "product": "Raw Mild Cheddar; Raw Sharp Cheddar",
       "reason": "Potential to be contaminated with Listeria monocytogenes.",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Laub\u2019s Feeding & Cubing"
+      ],
+      "date": "2026-11-10",
+      "id": "FDA-ANN-48691da33c59bfb1",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/laubs-feeding-cubing-inc-voluntary-recalls-grade-mini-hay-cubes-because-potential-clostridium",
+      "product": "Grade A Mini Hay Cubes",
+      "reason": "Potential to be contaminated with Clostridium Botulinum",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Eugia"
+      ],
+      "date": "2026-11-09",
+      "id": "FDA-ANN-e20cd0f67b3d615b",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride",
+      "product": "Vancomycin Hydrochloride for Injection USP 1.25g/Vial-30mL (Single Dose Vial)",
+      "reason": "Presence of particulate matter identified as a glass particle inside the vial",
+      "sourceSurfaces": [
+        "annualAnnouncements"
       ]
     },
     {
@@ -24,7 +103,8 @@
       "product": "Sausage, Egg & Cheese Biscuit Sandwich",
       "reason": "Potential to be contaminated with Listeria monocytogenes.",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -37,7 +117,8 @@
       "product": "Crunchy Kale and Veggie Chips Kale",
       "reason": "Product may contain thallium.",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -50,66 +131,123 @@
       "product": "Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
       "reason": "Potential choking hazard",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
       "brandNames": [
-        "Par Health and Endo USA"
+        "365 Whole Foods Market"
       ],
-      "date": "2026-10-14",
-      "id": "FDA-ANN-fcad7ab7453b09db",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-argatroban-injection-due-presence-particulate-matter",
-      "product": "Argatroban Injection 250 mg/2.5 mL (100 mg/mL)",
-      "reason": "Presence of particulate matter, identified as cellulose, polystyrene, polyethylene terephthalate, stopper material, and possibly stainless steel",
+      "date": "2026-10-30",
+      "id": "FDA-ANN-579251092c4a2eee",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitality-works-inc-recalls-365-whole-foods-market-ashwagandha-capsules-sold-nationwide-due-potential",
+      "product": "Standardized + Full Spectrum Blend Ashwagandha Capsules",
+      "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
     },
     {
       "brandNames": [
-        "Para Bien"
+        "Wise Wife"
       ],
-      "date": "2026-10-14",
-      "id": "FDA-ANN-ea9963a33edf6fdb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de",
-      "product": "Para Bien Al Grano",
+      "date": "2026-10-29",
+      "id": "FDA-ANN-7c81ff230a56da26",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/slr-food-distribution-inc-recalls-wise-wife-brand-ground-cinnamon-due-elevated-lead-levels",
+      "product": "Ground cinnamon",
+      "reason": "Potential to be contaminated with elevated levels of lead.",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "No Brand"
+      ],
+      "date": "2026-10-27",
+      "id": "FDA-ANN-43412c3fe13668fb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haifa-smoked-fish-recalls-cold-smoked-sprats-due-potential-health-risk",
+      "product": "Cold Smoked Sprat Fish",
+      "reason": "Potential contamination with Clostridium botulinum",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "H-E-B"
+      ],
+      "date": "2026-10-27",
+      "id": "FDA-ANN-9809d1a097091daf",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-farms-issues-recall-h-e-b-backyard-bbq-chop-salad-kit-due-potential-undeclared-soy-and-tree",
+      "product": "BBQ Chop Salad Kit",
+      "reason": "Undeclared soy and tree nuts (almonds)",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Ultimate Forza"
+      ],
+      "date": "2026-10-24",
+      "id": "FDA-ANN-aafd3884082032de",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/tonight-we-ride-llc-issues-voluntary-recall-ultimate-forza-male-supplement-due-presence-undeclared",
+      "product": "Male Supplement",
+      "reason": "Product contains undeclared Sildenafil, Tadalafil, and Dapoxetine",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Natural Grocers"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-ANN-79c46504fde3c953",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
+      "product": "2 pound Mung Beans",
+      "reason": "Possible foreign material contamination with glass",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "WinCo Foods"
+      ],
+      "date": "2026-10-22",
+      "id": "FDA-ANN-8c449125ad20de42",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/winco-foods-llc-issues-allergy-alert-undeclared-sesame-hoagie-rolls",
+      "product": "Hoagie Rolls",
       "reason": "Undeclared sesame",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
     },
     {
-      "brandNames": [],
-      "date": "2026-10-09",
-      "id": "FDA-H-0181-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Riad's Oliva to Go Hummus",
-      "reason": "contains undeclared sesame",
+      "brandNames": [
+        "No Brand Name"
+      ],
+      "date": "2026-10-21",
+      "id": "FDA-ANN-9da067cb4e0d8ef1",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wedgewood-pharmacy-issues-recall-certain-compounded-veterinary-medications-within-expiry-due",
+      "product": "Compounded veterinary medications",
+      "reason": "Potential Potency Issues",
       "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-09",
-      "id": "FDA-H-0179-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Riad's Oliva to Go Baba Ghanouj",
-      "reason": "contains undeclared sesame",
-      "sourceSurfaces": [
-        "enforcement"
+        "annualAnnouncements"
       ]
     },
     {
       "brandNames": [
-        "Par Pharmaceutical"
+        "Gelatelli"
       ],
-      "date": "2026-10-09",
-      "id": "FDA-ANN-75af36af5ee82010",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-two-lots-brevitalr-sodium-500-mgvial-civ-methohexital",
-      "product": "Brevital Sodium 500 mg/vial for Injection",
-      "reason": "Presence of particulate matter identified as cellulose",
+      "date": "2026-10-17",
+      "id": "FDA-ANN-aee63ae96df7ed2e",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk",
+      "product": "Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces",
+      "reason": "Potential contamination with Listeria monocytogenes",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -118,168 +256,44 @@
       "brandNames": [
         "Starfish Seafood"
       ],
-      "date": "2026-10-09",
-      "id": "FDA-ANN-4d1ec5606ded176d",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
-      "product": "Cold Smoked Salmon, Halibut, and Trout",
+      "date": "2026-10-16",
+      "id": "FDA-ANN-5b19e895c2982d91",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
+      "product": "Cold Smoked Salmon",
       "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Riad&#039;s Oliva to Go"
-      ],
-      "date": "2026-10-09",
-      "id": "FDA-ANN-63b71c827137f104",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/oliva-llc-issues-allergy-alert-undeclared-sesame-baba-ghanouj-spicy-baba-ghanouj-and-hummus",
-      "product": "Baba Ghanouj, Spicy Baba Ghanouj, and Hummus",
-      "reason": "Undeclared sesame allergen",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Gardeners Basics"
-      ],
-      "date": "2026-10-08",
-      "id": "FDA-ANN-a57a891ede114611",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gardeners-basics-recalls-waltham-29-broccoli-sprouting-seeds-due-possible-salmonella-contamination",
-      "product": "Broccoli Sprouting Seeds",
-      "reason": "Product may be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-07",
-      "id": "FDA-H-0177-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "EDEN BROTHERS Broccoli Seeds - Calabrese. Sold in packets, Net Wt. 1oz pouches, UPC SVBRO111 -qb2 & 1 Pound pouches UPC SVBRO111 -qb4.",
-      "reason": "Salmonella",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-07",
-      "id": "FDA-H-0095-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Pur Aqua Sparkling Frost Cherry Limeade 17 oz., UPC: 4099100167023",
-      "reason": "May contain undeclared aspartame.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "RAPTURE"
-      ],
-      "date": "2026-10-07",
-      "id": "FDA-ANN-6186be8a245a821c",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/leader-formulas-llc-issues-voluntary-nationwide-recall-rapture-preworkout-due-presence-13",
-      "product": "Preworkout Dietary Supplement Powder",
-      "reason": "Product contains 1,3-Dimethylamylamine (DMAA)",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Babies&#039; Magic Tea"
-      ],
-      "date": "2026-10-07",
-      "id": "FDA-ANN-5c6d9a536ce6b165",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pacific-health-sciences-voluntarily-recalls-one-lot-babies-magic-tea-brand-baby-sleep-gripe-water",
-      "product": "Babies&#039; Magic Tea brand Baby Sleep Gripe Water 4 oz bottle",
-      "reason": "Product contains undeclared ethanol, methanol, and isopropanol",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "EDEN BROTHERS"
-      ],
-      "date": "2026-10-07",
-      "id": "FDA-ANN-74d35dbb2c4603ad",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eden-brothers-recalls-calabrese-broccoli-seeds-due-possible-salmonella-contamination",
-      "product": "Broccoli Seeds - Calabrese",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-06",
-      "id": "FDA-H-0168-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Babies' Magic Tea; Baby Sleep Gripe Water; Dietary Supplement; Net Wt. 4 OZ; Age 2eeks+ \"No Alcohol, Dairy, Wheat, Soy And Animal Testing\" UPC: 850302008183",
-      "reason": "Adulterated (elevated levels of alcohol) infant dietary supplement",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "Nova Biomedical StatStrip"
-      ],
-      "date": "2026-10-06",
-      "id": "FDA-ANN-81d077c777cd3774",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/nova-biomedicalr-announces-global-medical-device-correction-statstripr-glucose-hospital-meter",
-      "product": "StatStrip Glucose Hospital Meter System",
-      "reason": "Software issue may cause a glucose result to be associated to the wrong patient",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Nature&#039;s Own"
-      ],
-      "date": "2026-10-05",
-      "id": "FDA-ANN-198305bb09f62d7e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
-      "product": "Nature&#039;s Own Hawaiian Bread, 20oz single loaf and 40 oz 2-pack",
-      "reason": "Undeclared milk allergen",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
     }
   ],
-  "generatedAt": "2026-11-16T06:19:59Z",
+  "generatedAt": "2026-11-16T20:21:02Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-16T06:19:59Z",
+      "checkedAt": "2026-11-16T20:21:02Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-16T06:19:59Z",
-      "newestRecallDate": "2026-11-10",
+      "lastSuccessfulUpdate": "2026-11-16T20:21:02Z",
+      "newestRecallDate": "2026-11-13",
       "qualityStatus": "current",
-      "recordCount": 2146,
+      "recordCount": 2160,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-16T06:19:59Z",
-          "newestRecallDate": "2026-10-14",
-          "recordCount": 251,
+          "checkedAt": "2026-11-16T20:21:02Z",
+          "newestRecallDate": "2026-11-13",
+          "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-16T06:19:59Z",
+          "checkedAt": "2026-11-16T20:21:02Z",
           "newestRecallDate": "2026-10-09",
           "recordCount": 2771,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-16T06:19:59Z",
+          "checkedAt": "2026-11-16T20:21:02Z",
           "newestRecallDate": "2026-11-10",
           "recordCount": 4,
           "success": true
@@ -287,12 +301,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-16T06:19:59Z",
+      "checkedAt": "2026-11-16T20:21:02Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-16T06:19:59Z",
+      "lastSuccessfulUpdate": "2026-11-16T20:21:02Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,
