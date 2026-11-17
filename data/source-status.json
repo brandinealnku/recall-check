@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T21:57:19Z",
+  "checkedAt": "2026-11-17T07:49:16Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -188,6 +188,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-10-26",
+      "id": "FDA-H-0195-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Ethel's Gluten Free Turtle Dandy Dessert Bars 6oz, UPC 8 50054 16601 2, 6 retail units per case",
+      "reason": "Product mix-up resulting in incorrect product identity, inaccurate ingredient declaration (extra ingredients declared that are not present in the product), and inaccurate Nutrition Facts.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Ultimate Forza"
       ],
@@ -198,6 +209,17 @@
       "reason": "Product contains undeclared Sildenafil, Tadalafil, and Dapoxetine",
       "sourceSurfaces": [
         "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-23",
+      "id": "FDA-unknown",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules 120 count. Product Item Number: 3006661. 120 ct powder capsules in a 200cc bottle Take 1 capsule 2 times daily. Packaged in a 200cc white HDPE bottle with white cap. Whole Foods UPC: 099482520991. Label Address: Whole Foods Market, 550 Bowie Street, Austin, Texas 78703.",
+      "reason": "Possible Salmonella contamination.",
+      "sourceSurfaces": [
+        "enforcement"
       ]
     },
     {
@@ -227,73 +249,45 @@
       ]
     },
     {
-      "brandNames": [
-        "No Brand Name"
-      ],
+      "brandNames": [],
       "date": "2026-10-21",
-      "id": "FDA-ANN-9da067cb4e0d8ef1",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wedgewood-pharmacy-issues-recall-certain-compounded-veterinary-medications-within-expiry-due",
-      "product": "Compounded veterinary medications",
-      "reason": "Potential Potency Issues",
+      "id": "FDA-H-0196-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "WinCo Foods Hoagie Rolls, 6 rolls/bag. Product is packaged in clear plastic bag with red banner. Net Wt. 16oz (1LB) 454g. UPC 0 70552 00649 2. Distributed By: WinCo Foods, LLC, Boise, ID 83704.",
+      "reason": "Undeclared Sesame",
       "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Gelatelli"
-      ],
-      "date": "2026-10-17",
-      "id": "FDA-ANN-aee63ae96df7ed2e",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk",
-      "product": "Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces",
-      "reason": "Potential contamination with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Starfish Seafood"
-      ],
-      "date": "2026-10-16",
-      "id": "FDA-ANN-5b19e895c2982d91",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
-      "product": "Cold Smoked Salmon",
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "sourceSurfaces": [
-        "annualAnnouncements"
+        "enforcement"
       ]
     }
   ],
-  "generatedAt": "2026-11-16T21:57:19Z",
+  "generatedAt": "2026-11-17T07:49:16Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-16T21:57:19Z",
+      "checkedAt": "2026-11-17T07:49:16Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-16T21:57:19Z",
+      "lastSuccessfulUpdate": "2026-11-17T07:49:16Z",
       "newestRecallDate": "2026-11-13",
       "qualityStatus": "current",
-      "recordCount": 2160,
+      "recordCount": 2166,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-16T21:57:19Z",
+          "checkedAt": "2026-11-17T07:49:16Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-16T21:57:19Z",
-          "newestRecallDate": "2026-10-09",
-          "recordCount": 2771,
+          "checkedAt": "2026-11-17T07:49:16Z",
+          "newestRecallDate": "2026-10-26",
+          "recordCount": 2777,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-16T21:57:19Z",
+          "checkedAt": "2026-11-17T07:49:16Z",
           "newestRecallDate": "2026-11-10",
           "recordCount": 4,
           "success": true
@@ -301,12 +295,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-16T21:57:19Z",
+      "checkedAt": "2026-11-17T07:49:16Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-16T21:57:19Z",
+      "lastSuccessfulUpdate": "2026-11-17T07:49:16Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,
