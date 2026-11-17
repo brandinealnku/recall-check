@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T07:49:16Z",
+  "generatedAt": "2026-11-17T20:50:55Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,15 +14,15 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-17T07:49:16Z",
-    "lastSuccessfulUpdate": "2026-11-17T07:49:16Z",
+    "checkedAt": "2026-11-17T20:50:55Z",
+    "lastSuccessfulUpdate": "2026-11-17T20:50:55Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-17T07:49:16Z",
-        "lastSuccessfulUpdate": "2026-11-17T07:49:16Z",
-        "recordCount": 2166,
-        "newestRecallDate": "2026-11-13",
+        "checkedAt": "2026-11-17T20:50:55Z",
+        "lastSuccessfulUpdate": "2026-11-17T20:50:55Z",
+        "recordCount": 2168,
+        "newestRecallDate": "2026-11-17",
         "current": true,
         "qualityStatus": "current",
         "coverageComplete": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-17T07:49:16Z",
+            "checkedAt": "2026-11-17T20:50:55Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-17T07:49:16Z",
+            "checkedAt": "2026-11-17T20:50:55Z",
             "recordCount": 4,
-            "newestRecallDate": "2026-11-10"
+            "newestRecallDate": "2026-11-17"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-17T07:49:16Z",
+            "checkedAt": "2026-11-17T20:50:55Z",
             "recordCount": 2777,
             "newestRecallDate": "2026-10-26"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-17T07:49:16Z",
-        "retrievedAt": "2026-11-17T07:49:16Z",
-        "lastSuccessfulUpdate": "2026-11-17T07:49:16Z",
+        "checkedAt": "2026-11-17T20:50:55Z",
+        "retrievedAt": "2026-11-17T20:50:55Z",
+        "lastSuccessfulUpdate": "2026-11-17T20:50:55Z",
         "newestRecallDate": "2026-11-14",
         "recordCount": 2034,
         "error": null,
@@ -64,13 +64,157 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2166,
+      "FDA": 2168,
       "USDA": 1245
     },
     "recordsWithIdentifierCandidates": 37,
     "warnings": []
   },
   "recalls": [
+    {
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-17",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "recallingFirm": "ALDI",
+      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "brandNames": [
+        "Priano"
+      ],
+      "productNames": [
+        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Clostridium botulinum",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-17",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-11-17",
+        "brand": "Priano",
+        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Clostridium botulinum",
+        "company": "ALDI",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+      },
+      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-b991e51bcfd16894",
+      "sourceRecordId": "PUBLIC-b991e51bcfd16894",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-17",
+        "ageDaysAtRefresh": 0,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Chocolate Banana Bar Sorbetto",
+      "recallingFirm": "Naia, Inc.",
+      "productDescription": "Chocolate Banana Bar Sorbetto",
+      "brandNames": [
+        "Naia"
+      ],
+      "productNames": [
+        "Chocolate Banana Bar Sorbetto"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Undeclared Allergen \u2013 milk, eggs, tree nut (pistachio)",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-17",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-11-17",
+        "brand": "Naia",
+        "product": "Chocolate Banana Bar Sorbetto",
+        "productType": "Food & Beverages, Allergens",
+        "reason": "Undeclared Allergen \u2013 milk, eggs, tree nut (pistachio)",
+        "company": "Naia, Inc.",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts"
+      },
+      "searchText": "naia, inc. naia chocolate banana bar sorbetto undeclared allergen \u2013 milk, eggs, tree nut (pistachio)",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-b991e51bcfd16894",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "id": "USDA-PHA-11142026",
       "sourceRecordId": "PHA-11142026",
@@ -850,8 +994,8 @@
       "searchText": "fsis issues public health alert for meat and poultry products due to misbranding and undeclared allergens ['\u2022\\tclear vacuum-packed packages of 6-piece \u201cbami rolls\u201d with \u201cbest by\u201d october 2027 and lot codes br-2026-01 and br-2026-02.', '\u2022\\tclear vacuum-packed packages of 10-piece \u201csat\u00e9 kroketten\u201d with \u201cbest by\u201d october 2027 and lot code sk-1026-01.', '\u2022\\tclear vacuum-packed packages of 12-piece \u201cbitterballen\u201d with \u201cbest by\u201d october 2027 and lot code bb-1026-01.'] washington, nov. 6, 2026&nbsp; \u2013 the u.s. department of agriculture\u2019s food safety and inspection service (fsis) is issuing a public health alert for frozen, not ready-to-eat (nrte), meat and poultry products due to misbranding and undeclared allergens. the products contain sesame, a known allergen, which is not declared on the product labels. in addition, the beef product contains worcestershire sauce that contains anchovy (fish), a known allergen, which is not declared on the product labels. a recall was not requested because the products are no longer available for purchase. the frozen nrte meat and poultry products were produced on oct. 15, oct. 16, and oct. 27, 2026. the following products are subject to the public health alert [ view labels] : clear vacuum-packed packages of 6-piece \u201cbami rolls\u201d with \u201cbest by\u201d october 2027 and lot codes br-2026-01 and br-2026-02. clear vacuum-packed packages of 10-piece \u201csat\u00e9 kroketten\u201d with \u201cbest by\u201d october 2027 and lot code sk-1026-01. clear vacuum-packed packages of 12-piece \u201cbitterballen\u201d with \u201cbest by\u201d october 2027 and lot code bb-1026-01. the products bear establishment number \u201cest. m3177\u201d or \u201cest. p3177\u201d inside the usda mark of inspection. these items were sold by lowlands house for internet sales nationwide. these items may have also been sold at a festival and farmers market in greer, south carolina. the problem was discovered during a routine fsis label review. there have been no confirmed reports of adverse reactions due to consumption of these products. anyone concerned about a reaction should contact a health care provider.&nbsp; fsis is concerned that some product may be in consumers\u2019 refrigerators or freezers.&nbsp;consumers who have purchased these products are urged not to consume them. these products should be thrown away or returned to the place of purchase. media and consumers with questions regarding the public health alert can contact betterballen foods at info@betterballenfoods.com. &nbsp; consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to&nbsp; mphotline@usda.gov .&nbsp;for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at&nbsp; https://foodcomplaint.fsis.usda.gov/eccf/ . ['betterballen foods llc']"
     },
     {
-      "id": "FDA-PUBLIC-46bfcc82e96b7554",
-      "sourceRecordId": "PUBLIC-46bfcc82e96b7554",
+      "id": "FDA-ANN-bebf7514c3603765",
+      "sourceRecordId": "ANN-bebf7514c3603765",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -867,7 +1011,7 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Crunchy Kale and Veggie Chips Kale",
+      "title": "Snack Right Super Foods dba Brad\u2019s Raw Chips \u2014 Crunchy Kale and Veggie Chips Kale",
       "recallingFirm": "Snack Right Super Foods dba Brad\u2019s Raw Chips",
       "productDescription": "Crunchy Kale and Veggie Chips Kale",
       "brandNames": [
@@ -898,24 +1042,16 @@
         }
       },
       "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-03",
         "brand": "Brad\u2019s",
-        "product": "Crunchy Kale and Veggie Chips Kale",
-        "productType": "Food & Beverages",
-        "reason": "Product may contain thallium.",
         "company": "Snack Right Super Foods dba Brad\u2019s Raw Chips",
-        "terminated": "",
-        "excerpt": "",
+        "date": "11/03/2026",
+        "productdescription": "Crunchy Kale and Veggie Chips Kale",
+        "producttype": "Food & Beverages",
+        "reason": "Product may contain thallium.",
         "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/snack-right-super-foods-inc-dba-brads-raw-chips-recalls-brads-crunchy-kale-veggie-chips-due"
       },
-      "searchText": "snack right super foods dba brad\u2019s raw chips brad\u2019s crunchy kale and veggie chips kale product may contain thallium.",
+      "searchText": "snack right super foods dba brad\u2019s raw chips brad\u2019s crunchy kale and veggie chips kale product may contain thallium. snack right super foods dba brad\u2019s raw chips \u2014 crunchy kale and veggie chips kale",
       "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-46bfcc82e96b7554",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/snack-right-super-foods-inc-dba-brads-raw-chips-recalls-brads-crunchy-kale-veggie-chips-due"
-        },
         {
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-bebf7514c3603765",
@@ -923,13 +1059,12 @@
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
     {
-      "id": "FDA-PUBLIC-127c9ba034129aca",
-      "sourceRecordId": "PUBLIC-127c9ba034129aca",
+      "id": "FDA-ANN-a18636a43077a0d7",
+      "sourceRecordId": "ANN-a18636a43077a0d7",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -945,7 +1080,7 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
+      "title": "Once Upon a Farm \u2014 Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
       "recallingFirm": "Once Upon a Farm",
       "productDescription": "Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
       "brandNames": [
@@ -976,24 +1111,16 @@
         }
       },
       "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-02",
         "brand": "Once Upon a Farm",
-        "product": "Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
-        "productType": "Food & Beverages",
-        "reason": "Potential choking hazard",
         "company": "Once Upon a Farm",
-        "terminated": "",
-        "excerpt": "",
+        "date": "11/02/2026",
+        "productdescription": "Tractor Wheels Organic Toddler Soft-Baked Bars (all lots and varieties)",
+        "producttype": "Food & Beverages",
+        "reason": "Potential choking hazard",
         "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/once-upon-farm-recalls-all-lots-and-varieties-tractor-wheels-organic-toddler-soft-baked-bars-due"
       },
-      "searchText": "once upon a farm once upon a farm tractor wheels organic toddler soft-baked bars (all lots and varieties) potential choking hazard",
+      "searchText": "once upon a farm once upon a farm tractor wheels organic toddler soft-baked bars (all lots and varieties) potential choking hazard once upon a farm \u2014 tractor wheels organic toddler soft-baked bars (all lots and varieties)",
       "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-127c9ba034129aca",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/once-upon-farm-recalls-all-lots-and-varieties-tractor-wheels-organic-toddler-soft-baked-bars-due"
-        },
         {
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-a18636a43077a0d7",
@@ -1001,7 +1128,6 @@
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
