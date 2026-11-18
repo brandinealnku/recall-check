@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:20:02Z",
+  "generatedAt": "2026-11-18T20:26:29Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,35 +14,42 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-18T07:20:02Z",
-    "lastSuccessfulUpdate": "2026-11-18T07:20:02Z",
+    "checkedAt": "2026-11-18T20:26:29Z",
+    "lastSuccessfulUpdate": "2026-11-18T20:26:29Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-18T07:20:02Z",
-        "lastSuccessfulUpdate": "2026-11-18T07:20:02Z",
+        "checkedAt": "2026-11-18T20:26:29Z",
+        "lastSuccessfulUpdate": "2026-11-18T20:26:29Z",
         "recordCount": 2169,
         "newestRecallDate": "2026-11-17",
-        "current": true,
-        "qualityStatus": "current",
-        "coverageComplete": true,
+        "current": false,
+        "qualityStatus": "degraded",
+        "coverageComplete": false,
         "coverageMethod": "official-fda-multi-surface-union-v1",
         "surfaces": {
           "annualAnnouncements": {
-            "success": true,
-            "checkedAt": "2026-11-18T07:20:02Z",
-            "recordCount": 271,
-            "newestRecallDate": "2026-11-13"
+            "success": false,
+            "checkedAt": "2026-11-18T20:26:29Z",
+            "recordCount": 256,
+            "newestRecallDate": "2026-11-13",
+            "error": {
+              "httpStatus": 503,
+              "httpReason": "Service Unavailable",
+              "message": "FDA Internet Site Error (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '[URL REMOVED",
+              "paginationOffset": 0,
+              "apiKeySupplied": false
+            }
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-18T07:20:02Z",
+            "checkedAt": "2026-11-18T20:26:29Z",
             "recordCount": 4,
             "newestRecallDate": "2026-11-17"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-18T07:20:02Z",
+            "checkedAt": "2026-11-18T20:26:29Z",
             "recordCount": 2777,
             "newestRecallDate": "2026-10-26"
           }
@@ -51,9 +58,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-18T07:20:02Z",
-        "retrievedAt": "2026-11-18T07:20:02Z",
-        "lastSuccessfulUpdate": "2026-11-18T07:20:02Z",
+        "checkedAt": "2026-11-18T20:26:29Z",
+        "retrievedAt": "2026-11-18T20:26:29Z",
+        "lastSuccessfulUpdate": "2026-11-18T20:26:29Z",
         "newestRecallDate": "2026-11-14",
         "recordCount": 2034,
         "error": null,
@@ -67,8 +74,11 @@
       "FDA": 2169,
       "USDA": 1245
     },
-    "recordsWithIdentifierCandidates": 37,
-    "warnings": []
+    "recordsWithIdentifierCandidates": 931,
+    "warnings": [
+      "FDA refresh failed; retained 2169 last-known records",
+      "FDA coverage is degraded: unavailable source surface(s): annualAnnouncements"
+    ]
   },
   "recalls": [
     {
@@ -688,8 +698,7 @@
       ],
       "productNames": [
         "Raw Mild Cheddar",
-        "Raw Sharp Cheddar",
-        "Raw Mild Cheddar Cheese"
+        "Raw Sharp Cheddar"
       ],
       "upcs": [],
       "gtins": [],
@@ -730,21 +739,10 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-dd523f3c3621d279",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-a4744b4c82b3cc70",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-d864d87c246f0ac1",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and"
         }
       ],
       "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
+        "publicAlerts"
       ]
     },
     {
@@ -2773,11 +2771,6 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-ea9963a33edf6fdb",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-emite-alerta-por-alergenos-en-el-producto-parabien-al-grano-debido-la-presencia-de"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-6c695541c93c2f22",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pan-pepin-inc-issues-allergy-alert-para-bien-al-grano-due-undeclared-sesame"
         }
       ],
       "sourceSurfaces": [
@@ -3844,11 +3837,11 @@
       "sourceRecordId": "H-0191-2027",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "ongoing",
       "lifecycle": {
         "state": "active",
         "isActionable": true,
-        "sourceStatus": "active",
+        "sourceStatus": "Ongoing",
         "terminationDate": ""
       },
       "timeline": {
@@ -3860,12 +3853,9 @@
       "title": "Krasnyi Oktyabr Inc \u2014 Starfish Seafood Cold Smoked Trio Salmon Halibut Trout",
       "recallingFirm": "Krasnyi Oktyabr Inc",
       "productDescription": "Starfish Seafood Cold Smoked Trio Salmon Halibut Trout",
-      "brandNames": [
-        "Starfish Seafood"
-      ],
+      "brandNames": [],
       "productNames": [
-        "Starfish Seafood Cold Smoked Trio Salmon Halibut Trout",
-        "Cold Smoked Salmon, Halibut, and Trout"
+        "Starfish Seafood Cold Smoked Trio Salmon Halibut Trout"
       ],
       "upcs": [
         "4751048940341"
@@ -3880,7 +3870,7 @@
       "reason": "Contaminated with Listeria monocytogenes",
       "distribution": "NY, MA, SC, FL, GA, NV, NJ, OH, NC, SC, OH",
       "recallDate": "2026-10-06",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "high",
@@ -3924,16 +3914,10 @@
           "surface": "enforcement",
           "sourceRecordId": "H-0191-2027",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-4d1ec5606ded176d",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-trio-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
-        "enforcement",
-        "annualAnnouncements"
+        "enforcement"
       ]
     },
     {
@@ -4772,11 +4756,6 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-d0497ad28ba3930f",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-c2209a8780bbfebd",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple"
         }
       ],
       "sourceSurfaces": [
@@ -25286,11 +25265,6 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-9259fb0b4d1debf7",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-expands-recall-eridanous-shortbread-cookies-due-undeclared-wheat-soy-milk-egg-and-tree-nut"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-989e7b6b1eb31b56",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-eridanous-shortbread-cookies-chocolate-truffle-coating-apricot-filling-due"
         }
       ],
       "sourceSurfaces": [
@@ -29735,11 +29709,6 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-3315032717048f71",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/khong-guan-corporation-issues-recall-glutinous-rice-balls-black-sesame-filling-due-undeclared"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-381d25018d1ebde4",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/khong-guan-corporation-issues-expanded-recall-glutinous-rice-balls-black-sesame-filling-include"
         }
       ],
       "sourceSurfaces": [
@@ -31995,11 +31964,11 @@
       "sourceRecordId": "H-1185-2026",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "ongoing",
       "lifecycle": {
         "state": "active",
         "isActionable": true,
-        "sourceStatus": "active",
+        "sourceStatus": "Ongoing",
         "terminationDate": ""
       },
       "timeline": {
@@ -32011,12 +31980,9 @@
       "title": "Total Nutrition Inc \u2014 1. TNVitamins 100% Organic Moringa Capsules 1,200 mg 2. TNVitamins 100% Organic Moringa Powder 96 grams",
       "recallingFirm": "Total Nutrition Inc",
       "productDescription": "1. TNVitamins 100% Organic Moringa Capsules 1,200 mg 2. TNVitamins 100% Organic Moringa Powder 96 grams",
-      "brandNames": [
-        "TNVitamins"
-      ],
+      "brandNames": [],
       "productNames": [
-        "1. TNVitamins 100% Organic Moringa Capsules 1,200 mg 2. TNVitamins 100% Organic Moringa Powder 96 grams",
-        "TNVitamins 100% Organic Moringa Capsules and Powder"
+        "1. TNVitamins 100% Organic Moringa Capsules 1,200 mg 2. TNVitamins 100% Organic Moringa Powder 96 grams"
       ],
       "upcs": [],
       "gtins": [],
@@ -32029,7 +31995,7 @@
       "reason": "Contaminated with Salmonella",
       "distribution": "nationwide",
       "recallDate": "2026-06-26",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/total-nutrition-inc-recalls-organic-moringa-products-following-supplier-initiated-recall-due",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -32072,16 +32038,10 @@
           "surface": "enforcement",
           "sourceRecordId": "H-1185-2026",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-29d8ec8b49d05008",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/total-nutrition-inc-recalls-organic-moringa-products-following-supplier-initiated-recall-due"
         }
       ],
       "sourceSurfaces": [
-        "enforcement",
-        "annualAnnouncements"
+        "enforcement"
       ]
     },
     {
@@ -39671,11 +39631,11 @@
       "sourceRecordId": "H-0942-2026",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "ongoing",
       "lifecycle": {
         "state": "active",
         "isActionable": true,
-        "sourceStatus": "active",
+        "sourceStatus": "Ongoing",
         "terminationDate": ""
       },
       "timeline": {
@@ -39687,12 +39647,9 @@
       "title": "Total Nutrition Inc \u2014 1. TNVitamins Ultrapotent Complete Green Superfood Moringa Capsules (120 count) 2. Doctor s Pride Complete Green Superfo",
       "recallingFirm": "Total Nutrition Inc",
       "productDescription": "1. TNVitamins Ultrapotent Complete Green Superfood Moringa Capsules (120 count) 2. Doctor s Pride Complete Green Superfood Ultra Potent Moringa 10,000 mg (120 capsules)",
-      "brandNames": [
-        "TNVitamins and Doctor\u2019s Pride"
-      ],
+      "brandNames": [],
       "productNames": [
-        "1. TNVitamins Ultrapotent Complete Green Superfood Moringa Capsules (120 count) 2. Doctor s Pride Complete Green Superfood Ultra Potent Moringa 10,000 mg (120 c",
-        "TNVitamins Ultra Potent Complete Green Superfood Capsules and Doctor\u2019s Pride Complete Green Superfood capsules"
+        "1. TNVitamins Ultrapotent Complete Green Superfood Moringa Capsules (120 count) 2. Doctor s Pride Complete Green Superfood Ultra Potent Moringa 10,000 mg (120 c"
       ],
       "upcs": [
         "095234280472",
@@ -39709,7 +39666,7 @@
       "reason": "Product may be contaminated with Salmonella.",
       "distribution": "Nationwide",
       "recallDate": "2026-05-22",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/total-nutrition-inc-expands-recall-tnvitamins-and-doctors-pride-ultra-potent-complete-green-0",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "high",
@@ -39752,26 +39709,10 @@
           "surface": "enforcement",
           "sourceRecordId": "H-0942-2026",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-a3da9efd0da23e07",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/total-nutrition-inc-expands-recall-tnvitamins-and-doctors-pride-ultra-potent-complete-green-0"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-dd86381da44ef0f6",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/total-nutrition-inc-expands-recall-tnvitamins-and-doctors-pride-ultra-potent-complete-green"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-9d855c5251bbc7ee",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/total-nutrition-inc-recalls-tnvitamins-and-doctors-pride-ultra-potent-complete-green-superfood"
         }
       ],
       "sourceSurfaces": [
-        "enforcement",
-        "annualAnnouncements"
+        "enforcement"
       ]
     },
     {
@@ -42179,11 +42120,11 @@
       "sourceRecordId": "H-0899-2026",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "ongoing",
       "lifecycle": {
         "state": "active",
         "isActionable": true,
-        "sourceStatus": "active",
+        "sourceStatus": "Ongoing",
         "terminationDate": ""
       },
       "timeline": {
@@ -42195,9 +42136,7 @@
       "title": "Terra Medi LLC \u2014 Hellas Meze Golden Smoked Whole Herring",
       "recallingFirm": "Terra Medi LLC",
       "productDescription": "Hellas Meze Golden Smoked Whole Herring",
-      "brandNames": [
-        "Hellas Meze"
-      ],
+      "brandNames": [],
       "productNames": [
         "Hellas Meze Golden Smoked Whole Herring"
       ],
@@ -42212,7 +42151,7 @@
       "reason": "Un-eviscerated fish may be contaminated with clostridium botulinum",
       "distribution": "MA, NJ, IL, and NY",
       "recallDate": "2026-05-13",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/terra-medi-llc-recalls-karagounis-bros-hellas-meze-golden-smoked-whole-herring-due-improper",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -42256,16 +42195,10 @@
           "surface": "enforcement",
           "sourceRecordId": "H-0899-2026",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-3b618166d07fff96",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/terra-medi-llc-recalls-karagounis-bros-hellas-meze-golden-smoked-whole-herring-due-improper"
         }
       ],
       "sourceSurfaces": [
-        "enforcement",
-        "annualAnnouncements"
+        "enforcement"
       ]
     },
     {
@@ -52867,14 +52800,11 @@
       "title": "George J Howe Company, Inc. \u2014 25# Sunflower Seeds C/S",
       "recallingFirm": "George J Howe Company, Inc.",
       "productDescription": "25# Sunflower Seeds C/S",
-      "brandNames": [
-        "George J. Howe Co."
-      ],
+      "brandNames": [],
       "productNames": [
         "25# Sunflower Seeds C/S",
         "5# Sunflower Seeds C/S",
-        "5# Sunflower Seeds C/NS",
-        "Sunflower Seeds"
+        "5# Sunflower Seeds C/NS"
       ],
       "upcs": [],
       "gtins": [],
@@ -52889,7 +52819,7 @@
       "reason": "The firm is recalling sunflower seed products due to the presence of an undeclared tree nut allergen, cashew.",
       "distribution": "The recalled product was distributed to the following States: AL, AR, FL, GA, IA, IL, IN, KS, KY, MD, MI, MN, MO, MS, NC, NJ, NY, OH, OK, PA, SC, TN, VA,WI,WV,",
       "recallDate": "2026-04-29",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/george-j-howe-co-voluntarily-recalls-sunflower-seeds-due-undeclare-tree-nuts-cashews",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -52943,16 +52873,10 @@
           "surface": "enforcement",
           "sourceRecordId": "H-1122-2026",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-56b12980e3d308e8",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/george-j-howe-co-voluntarily-recalls-sunflower-seeds-due-undeclare-tree-nuts-cashews"
         }
       ],
       "sourceSurfaces": [
-        "enforcement",
-        "annualAnnouncements"
+        "enforcement"
       ]
     },
     {
@@ -62045,11 +61969,6 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-8bb2f6bf9d0a0714",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/blueroot-health-expands-voluntary-allergy-alert-undeclared-egg-hazelnut-and-soy-vital-nutrients"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-0e8e6ecd6b738fcf",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/blueroot-health-issues-voluntary-allergy-alert-undeclared-egg-hazelnut-and-soy-vital-nutrients-aller"
         }
       ],
       "sourceSurfaces": [
@@ -63319,11 +63238,11 @@
       "sourceRecordId": "H-0794-2026",
       "agency": "FDA",
       "type": "recall",
-      "status": "current",
+      "status": "ongoing",
       "lifecycle": {
         "state": "active",
         "isActionable": true,
-        "sourceStatus": "active",
+        "sourceStatus": "Ongoing",
         "terminationDate": ""
       },
       "timeline": {
@@ -63335,12 +63254,9 @@
       "title": "LIQUID BLENZ CORP \u2014 Liquid Blenz Good Brain Tonic 16 oz and 32 oz",
       "recallingFirm": "LIQUID BLENZ CORP",
       "productDescription": "Liquid Blenz Good Brain Tonic 16 oz and 32 oz",
-      "brandNames": [
-        "Good Brain Tonic"
-      ],
+      "brandNames": [],
       "productNames": [
-        "Liquid Blenz Good Brain Tonic 16 oz and 32 oz",
-        "Good Brain Tonic 16 oz & 32 oz"
+        "Liquid Blenz Good Brain Tonic 16 oz and 32 oz"
       ],
       "upcs": [
         "860010984468",
@@ -63359,7 +63275,7 @@
       "reason": "May be under-processed resulting in growth of Clostridium botulinum and lists health claims.",
       "distribution": "NY and online sales",
       "recallDate": "2026-04-06",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/liquid-blenz-corp-recalls-product-due-possible-health-risk",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "high",
@@ -63403,16 +63319,10 @@
           "surface": "enforcement",
           "sourceRecordId": "H-0794-2026",
           "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-d54340fdc7a842e8",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/liquid-blenz-corp-recalls-product-due-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
-        "enforcement",
-        "annualAnnouncements"
+        "enforcement"
       ]
     },
     {
