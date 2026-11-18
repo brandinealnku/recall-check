@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T20:50:55Z",
+  "checkedAt": "2026-11-18T07:20:02Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -23,6 +23,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts",
       "product": "Chocolate Banana Bar Sorbetto",
       "reason": "Undeclared Allergen \u2013 milk, eggs, tree nut (pistachio)",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Herb to Body"
+      ],
+      "date": "2026-11-17",
+      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
+      "product": "Yellow Dock Root C/S",
+      "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -124,12 +137,11 @@
         "Fresh to You"
       ],
       "date": "2026-11-08",
-      "id": "FDA-PUBLIC-46e2ccc49903f359",
+      "id": "FDA-ANN-a58372f212b1f3f2",
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
       "product": "Sausage, Egg & Cheese Biscuit Sandwich",
       "reason": "Potential to be contaminated with Listeria monocytogenes.",
       "sourceSurfaces": [
-        "publicAlerts",
         "annualAnnouncements"
       ]
     },
@@ -245,49 +257,36 @@
       "sourceSurfaces": [
         "enforcement"
       ]
-    },
-    {
-      "brandNames": [
-        "Natural Grocers"
-      ],
-      "date": "2026-10-22",
-      "id": "FDA-ANN-79c46504fde3c953",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/natural-grocers-recalls-natural-grocers-brand-organic-2-pound-mung-beans-due-potential-presence",
-      "product": "2 pound Mung Beans",
-      "reason": "Possible foreign material contamination with glass",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-11-17T20:50:55Z",
+  "generatedAt": "2026-11-18T07:20:02Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-17T20:50:55Z",
+      "checkedAt": "2026-11-18T07:20:02Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-17T20:50:55Z",
+      "lastSuccessfulUpdate": "2026-11-18T07:20:02Z",
       "newestRecallDate": "2026-11-17",
       "qualityStatus": "current",
-      "recordCount": 2168,
+      "recordCount": 2169,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-17T20:50:55Z",
+          "checkedAt": "2026-11-18T07:20:02Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-17T20:50:55Z",
+          "checkedAt": "2026-11-18T07:20:02Z",
           "newestRecallDate": "2026-10-26",
           "recordCount": 2777,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-17T20:50:55Z",
+          "checkedAt": "2026-11-18T07:20:02Z",
           "newestRecallDate": "2026-11-17",
           "recordCount": 4,
           "success": true
@@ -295,12 +294,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-17T20:50:55Z",
+      "checkedAt": "2026-11-18T07:20:02Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-17T20:50:55Z",
+      "lastSuccessfulUpdate": "2026-11-18T07:20:02Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,
