@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-18T20:26:29Z",
+  "checkedAt": "2026-11-19T07:17:27Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -102,7 +102,8 @@
       "product": "Raw Mild Cheddar; Raw Sharp Cheddar",
       "reason": "Potential to be contaminated with Listeria monocytogenes.",
       "sourceSurfaces": [
-        "publicAlerts"
+        "publicAlerts",
+        "annualAnnouncements"
       ]
     },
     {
@@ -258,41 +259,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-18T20:26:29Z",
+  "generatedAt": "2026-11-19T07:17:27Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-18T20:26:29Z",
-      "coverageComplete": false,
+      "checkedAt": "2026-11-19T07:17:27Z",
+      "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
-      "current": false,
-      "freshnessValidated": false,
-      "lastSuccessfulUpdate": "2026-11-18T20:26:29Z",
+      "current": true,
+      "freshnessValidated": true,
+      "lastSuccessfulUpdate": "2026-11-19T07:17:27Z",
       "newestRecallDate": "2026-11-17",
-      "qualityStatus": "degraded",
-      "recordCount": 2169,
+      "qualityStatus": "current",
+      "recordCount": 2164,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-18T20:26:29Z",
-          "error": {
-            "apiKeySupplied": false,
-            "httpReason": "Service Unavailable",
-            "httpStatus": 503,
-            "message": "FDA Internet Site Error (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '[URL REMOVED",
-            "paginationOffset": 0
-          },
+          "checkedAt": "2026-11-19T07:17:27Z",
           "newestRecallDate": "2026-11-13",
-          "recordCount": 256,
-          "success": false
+          "recordCount": 271,
+          "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-18T20:26:29Z",
+          "checkedAt": "2026-11-19T07:17:27Z",
           "newestRecallDate": "2026-10-26",
-          "recordCount": 2777,
+          "recordCount": 2765,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-18T20:26:29Z",
+          "checkedAt": "2026-11-19T07:17:27Z",
           "newestRecallDate": "2026-11-17",
           "recordCount": 4,
           "success": true
@@ -300,21 +294,18 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-18T20:26:29Z",
+      "checkedAt": "2026-11-19T07:17:27Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-18T20:26:29Z",
+      "lastSuccessfulUpdate": "2026-11-19T07:17:27Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,
       "success": true
     }
   },
-  "warnings": [
-    "FDA refresh failed; retained 2169 last-known records",
-    "FDA coverage is degraded: unavailable source surface(s): annualAnnouncements"
-  ],
+  "warnings": [],
   "workflowVersion": "0.7.0"
 }
