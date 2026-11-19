@@ -1,15 +1,29 @@
 {
-  "checkedAt": "2026-11-19T07:17:27Z",
+  "checkedAt": "2026-11-19T20:29:48Z",
   "fdaSample": [
     {
       "brandNames": [
-        "Priano"
+        "Fresh to You"
+      ],
+      "date": "2026-11-18",
+      "id": "FDA-PUBLIC-d683f4c6d63f8603",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and",
+      "product": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Herb to Body"
       ],
       "date": "2026-11-17",
-      "id": "FDA-PUBLIC-36f6753cae7165fc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
-      "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "reason": "Potential to be contaminated with Clostridium botulinum",
+      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
+      "product": "Yellow Dock Root C/S",
+      "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -29,13 +43,13 @@
     },
     {
       "brandNames": [
-        "Herb to Body"
+        "Priano"
       ],
       "date": "2026-11-17",
-      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
-      "product": "Yellow Dock Root C/S",
-      "reason": "Potential to be contaminated with Salmonella",
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "reason": "Potential to be contaminated with Clostridium botulinum",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -94,20 +108,6 @@
     },
     {
       "brandNames": [
-        "Family Farmstead"
-      ],
-      "date": "2026-11-10",
-      "id": "FDA-PUBLIC-dd523f3c3621d279",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk",
-      "product": "Raw Mild Cheddar; Raw Sharp Cheddar",
-      "reason": "Potential to be contaminated with Listeria monocytogenes.",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
         "Laub\u2019s Feeding & Cubing"
       ],
       "date": "2026-11-10",
@@ -121,6 +121,19 @@
     },
     {
       "brandNames": [
+        "Family Farmstead"
+      ],
+      "date": "2026-11-10",
+      "id": "FDA-ANN-a4744b4c82b3cc70",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk",
+      "product": "Raw Mild Cheddar; Raw Sharp Cheddar",
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
         "Eugia"
       ],
       "date": "2026-11-09",
@@ -128,19 +141,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride",
       "product": "Vancomycin Hydrochloride for Injection USP 1.25g/Vial-30mL (Single Dose Vial)",
       "reason": "Presence of particulate matter identified as a glass particle inside the vial",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Fresh to You"
-      ],
-      "date": "2026-11-08",
-      "id": "FDA-ANN-a58372f212b1f3f2",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
-      "product": "Sausage, Egg & Cheese Biscuit Sandwich",
-      "reason": "Potential to be contaminated with Listeria monocytogenes.",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -259,47 +259,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-19T07:17:27Z",
+  "generatedAt": "2026-11-19T20:29:48Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-19T07:17:27Z",
+      "checkedAt": "2026-11-19T20:29:48Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-19T07:17:27Z",
-      "newestRecallDate": "2026-11-17",
+      "lastSuccessfulUpdate": "2026-11-19T20:29:48Z",
+      "newestRecallDate": "2026-11-18",
       "qualityStatus": "current",
       "recordCount": 2164,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-19T07:17:27Z",
+          "checkedAt": "2026-11-19T20:29:48Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-19T07:17:27Z",
+          "checkedAt": "2026-11-19T20:29:48Z",
           "newestRecallDate": "2026-10-26",
           "recordCount": 2765,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-19T07:17:27Z",
-          "newestRecallDate": "2026-11-17",
+          "checkedAt": "2026-11-19T20:29:48Z",
+          "newestRecallDate": "2026-11-18",
           "recordCount": 4,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-19T07:17:27Z",
+      "checkedAt": "2026-11-19T20:29:48Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-19T07:17:27Z",
+      "lastSuccessfulUpdate": "2026-11-19T20:29:48Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,

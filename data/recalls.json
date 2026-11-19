@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T07:17:27Z",
+  "generatedAt": "2026-11-19T20:29:48Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,15 +14,15 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-19T07:17:27Z",
-    "lastSuccessfulUpdate": "2026-11-19T07:17:27Z",
+    "checkedAt": "2026-11-19T20:29:48Z",
+    "lastSuccessfulUpdate": "2026-11-19T20:29:48Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-19T07:17:27Z",
-        "lastSuccessfulUpdate": "2026-11-19T07:17:27Z",
+        "checkedAt": "2026-11-19T20:29:48Z",
+        "lastSuccessfulUpdate": "2026-11-19T20:29:48Z",
         "recordCount": 2164,
-        "newestRecallDate": "2026-11-17",
+        "newestRecallDate": "2026-11-18",
         "current": true,
         "qualityStatus": "current",
         "coverageComplete": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-19T07:17:27Z",
+            "checkedAt": "2026-11-19T20:29:48Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-19T07:17:27Z",
+            "checkedAt": "2026-11-19T20:29:48Z",
             "recordCount": 4,
-            "newestRecallDate": "2026-11-17"
+            "newestRecallDate": "2026-11-18"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-19T07:17:27Z",
+            "checkedAt": "2026-11-19T20:29:48Z",
             "recordCount": 2765,
             "newestRecallDate": "2026-10-26"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-19T07:17:27Z",
-        "retrievedAt": "2026-11-19T07:17:27Z",
-        "lastSuccessfulUpdate": "2026-11-19T07:17:27Z",
+        "checkedAt": "2026-11-19T20:29:48Z",
+        "retrievedAt": "2026-11-19T20:29:48Z",
+        "lastSuccessfulUpdate": "2026-11-19T20:29:48Z",
         "newestRecallDate": "2026-11-14",
         "recordCount": 2034,
         "error": null,
@@ -72,8 +72,86 @@
   },
   "recalls": [
     {
-      "id": "FDA-PUBLIC-36f6753cae7165fc",
-      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+      "id": "FDA-PUBLIC-d683f4c6d63f8603",
+      "sourceRecordId": "PUBLIC-d683f4c6d63f8603",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-18",
+        "ageDaysAtRefresh": 1,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "recallingFirm": "Fresh & Ready Foods LLC",
+      "productDescription": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "brandNames": [
+        "Fresh to You"
+      ],
+      "productNames": [
+        "Sausage, Egg & Cheese Biscuit Sandwich"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-18",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-11-18",
+        "brand": "Fresh to You",
+        "product": "Sausage, Egg & Cheese Biscuit Sandwich",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Listeria monocytogenes.",
+        "company": "Fresh & Ready Foods LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and"
+      },
+      "searchText": "fresh & ready foods llc fresh to you sausage, egg & cheese biscuit sandwich potential to be contaminated with listeria monocytogenes.",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-d683f4c6d63f8603",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-a58372f212b1f3f2",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts",
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
+      "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -89,14 +167,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "recallingFirm": "ALDI",
-      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "title": "Yellow Dock Root C/S",
+      "recallingFirm": "Larbi Inc.",
+      "productDescription": "Yellow Dock Root C/S",
       "brandNames": [
-        "Priano"
+        "Herb to Body"
       ],
       "productNames": [
-        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
+        "Yellow Dock Root C/S"
       ],
       "upcs": [],
       "gtins": [],
@@ -104,10 +182,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Clostridium botulinum",
+      "reason": "Potential to be contaminated with Salmonella",
       "distribution": "See official notice",
       "recallDate": "2026-11-17",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -122,21 +200,21 @@
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-11-17",
-        "brand": "Priano",
-        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+        "brand": "Herb to Body",
+        "product": "Yellow Dock Root C/S",
         "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Clostridium botulinum",
-        "company": "ALDI",
+        "reason": "Potential to be contaminated with Salmonella",
+        "company": "Larbi Inc.",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
       },
-      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
+      "searchText": "larbi inc. herb to body yellow dock root c/s potential to be contaminated with salmonella",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+          "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
@@ -216,8 +294,8 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
-      "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -233,14 +311,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Yellow Dock Root C/S",
-      "recallingFirm": "Larbi Inc.",
-      "productDescription": "Yellow Dock Root C/S",
+      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "recallingFirm": "ALDI",
+      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
       "brandNames": [
-        "Herb to Body"
+        "Priano"
       ],
       "productNames": [
-        "Yellow Dock Root C/S"
+        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
       ],
       "upcs": [],
       "gtins": [],
@@ -248,10 +326,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Salmonella",
+      "reason": "Potential to be contaminated with Clostridium botulinum",
       "distribution": "See official notice",
       "recallDate": "2026-11-17",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -266,21 +344,21 @@
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-11-17",
-        "brand": "Herb to Body",
-        "product": "Yellow Dock Root C/S",
+        "brand": "Priano",
+        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
         "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Salmonella",
-        "company": "Larbi Inc.",
+        "reason": "Potential to be contaminated with Clostridium botulinum",
+        "company": "ALDI",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
       },
-      "searchText": "larbi inc. herb to body yellow dock root c/s potential to be contaminated with salmonella",
+      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
+          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
         }
       ],
       "sourceSurfaces": [
@@ -663,91 +741,6 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-dd523f3c3621d279",
-      "sourceRecordId": "PUBLIC-dd523f3c3621d279",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-11-10",
-        "ageDaysAtRefresh": 9,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Raw Mild Cheddar; Raw Sharp Cheddar",
-      "recallingFirm": "Family Farmstead Dairy",
-      "productDescription": "Raw Mild Cheddar; Raw Sharp Cheddar",
-      "brandNames": [
-        "Family Farmstead"
-      ],
-      "productNames": [
-        "Raw Mild Cheddar",
-        "Raw Sharp Cheddar",
-        "Raw Mild Cheddar Cheese"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Listeria monocytogenes.",
-      "distribution": "See official notice",
-      "recallDate": "2026-11-10",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-10",
-        "brand": "Family Farmstead",
-        "product": "Raw Mild Cheddar; Raw Sharp Cheddar",
-        "productType": "Food & Beverages",
-        "reason": "Potential to be contaminated with Listeria monocytogenes.",
-        "company": "Family Farmstead Dairy",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
-      },
-      "searchText": "family farmstead dairy family farmstead raw mild cheddar; raw sharp cheddar potential to be contaminated with listeria monocytogenes.",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-dd523f3c3621d279",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-a4744b4c82b3cc70",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-d864d87c246f0ac1",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
-      ]
-    },
-    {
       "id": "FDA-ANN-48691da33c59bfb1",
       "sourceRecordId": "ANN-48691da33c59bfb1",
       "agency": "FDA",
@@ -810,6 +803,82 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-48691da33c59bfb1",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/laubs-feeding-cubing-inc-voluntary-recalls-grade-mini-hay-cubes-because-potential-clostridium"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-a4744b4c82b3cc70",
+      "sourceRecordId": "ANN-a4744b4c82b3cc70",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-10",
+        "ageDaysAtRefresh": 9,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Family Farmstead Dairy \u2014 Raw Mild Cheddar; Raw Sharp Cheddar",
+      "recallingFirm": "Family Farmstead Dairy",
+      "productDescription": "Raw Mild Cheddar; Raw Sharp Cheddar",
+      "brandNames": [
+        "Family Farmstead"
+      ],
+      "productNames": [
+        "Raw Mild Cheddar",
+        "Raw Sharp Cheddar",
+        "Raw Mild Cheddar Cheese"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-10",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Family Farmstead",
+        "company": "Family Farmstead Dairy",
+        "date": "11/10/2026",
+        "productdescription": "Raw Mild Cheddar; Raw Sharp Cheddar",
+        "producttype": "Food & Beverages",
+        "reason": "Potential to be contaminated with Listeria monocytogenes.",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
+      },
+      "searchText": "family farmstead dairy family farmstead raw mild cheddar; raw sharp cheddar potential to be contaminated with listeria monocytogenes. family farmstead dairy \u2014 raw mild cheddar; raw sharp cheddar",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-a4744b4c82b3cc70",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
+        },
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-d864d87c246f0ac1",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and"
         }
       ],
       "sourceSurfaces": [
@@ -882,75 +951,6 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-e20cd0f67b3d615b",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride"
-        }
-      ],
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
-    },
-    {
-      "id": "FDA-ANN-a58372f212b1f3f2",
-      "sourceRecordId": "ANN-a58372f212b1f3f2",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-11-08",
-        "ageDaysAtRefresh": 11,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Fresh & Ready Foods LLC \u2014 Sausage, Egg & Cheese Biscuit Sandwich",
-      "recallingFirm": "Fresh & Ready Foods LLC",
-      "productDescription": "Sausage, Egg & Cheese Biscuit Sandwich",
-      "brandNames": [
-        "Fresh to You"
-      ],
-      "productNames": [
-        "Sausage, Egg & Cheese Biscuit Sandwich"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Listeria monocytogenes.",
-      "distribution": "See official notice",
-      "recallDate": "2026-11-08",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "brand": "Fresh to You",
-        "company": "Fresh & Ready Foods LLC",
-        "date": "11/08/2026",
-        "productdescription": "Sausage, Egg & Cheese Biscuit Sandwich",
-        "producttype": "Food & Beverages",
-        "reason": "Potential to be contaminated with Listeria monocytogenes.",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
-      },
-      "searchText": "fresh & ready foods llc fresh to you sausage, egg & cheese biscuit sandwich potential to be contaminated with listeria monocytogenes. fresh & ready foods llc \u2014 sausage, egg & cheese biscuit sandwich",
-      "sourceReferences": [
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-a58372f212b1f3f2",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
         }
       ],
       "sourceSurfaces": [
@@ -9680,11 +9680,11 @@
       "sourceRecordId": "021-2026",
       "agency": "USDA",
       "type": "recall",
-      "status": "active",
+      "status": "closed",
       "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "Active Recall",
+        "state": "closed",
+        "isActionable": false,
+        "sourceStatus": "Closed Recall",
         "terminationDate": ""
       },
       "timeline": {
@@ -9736,8 +9736,8 @@
           "Connecticut",
           "Illinois"
         ],
-        "field_archive_recall": "False",
-        "field_closed_year": "",
+        "field_archive_recall": "True",
+        "field_closed_year": "2026",
         "field_company_media_contact": [
           "\n  Company Contact\n  \n    El Eden Import Distributor Corp. \n    Humberto Gallego, Owner\n              Hhgl1968@gmail.com\n      \n\n"
         ],
@@ -9751,7 +9751,7 @@
         ],
         "field_media_contact": "April Haynes",
         "field_risk_level": "High - Class I",
-        "field_last_modified_date": "2026-09-17",
+        "field_last_modified_date": "2026-11-19",
         "field_press_release": [],
         "field_processing": [
           "Heat Treated - Shelf Stable"
@@ -9760,14 +9760,14 @@
           "\u2022  45-g. foil bags of \u201cDe Todito NATURAL\u201d mixed chips with \u201cCHICHARR\u00d3N AMERICANO JACKS,\u201d \u201cMargarita,\u201d and \u201cNATU CHIPS.\u201d",
           "\u2022 45-g. foil bags of \u201cDe Todito BBQ\u201d mixed chips with \u201cCHICHARR\u00d3N AMERICANO JACKS,\u201d \u201cMargarita,\u201d and \u201cNatuChips.\u201d"
         ],
-        "field_qty_recovered": "",
+        "field_qty_recovered": "9 lbs",
         "field_recall_classification": "Class I",
         "field_recall_date": "2026-09-09",
         "field_recall_number": "021-2026",
         "field_recall_reason": [
           "Import Violation"
         ],
-        "field_recall_type": "Active Recall",
+        "field_recall_type": "Closed Recall",
         "field_related_to_outbreak": "False",
         "field_summary": "<body><table class=\"table\"><tbody><tr><td><strong>Editor's Note: </strong>This release was updated on September 17, 2026, to add additional states, including Massachusetts, New York, Connecticut, and Illinois, and to remove the specific July 28 import date to more accurately characterize the product as ineligible for import.</td></tr></tbody></table><p><strong>WASHINGTON, Sept. 09, 2026</strong>, El Eden Import Distributor Corp., a Long Island City, N.Y. firm, is recalling approximately 264 pounds of potato chip products containing chicharr\u00f3n (pork cracklings) because they were produced in the Republic of Colombia, a country that is not eligible to export meat products to the United States, the U.S. Department of Agriculture's Food Safety and Inspection Service (FSIS) announced today.</p><p>The following products are subject to recall [<a href=\"/sites/default/files/food_label_pdf/2026-09/Recall-021-2026-Labels.pdf\">view labels</a>]:</p><ul type=\"disc\"><li data-list-item-id=\"e3f4237397d71a093e18c11f454ddb7d0\">45-g. foil bags of \u201cDe Todito NATURAL\u201d mixed chips with \u201cCHICHARR\u00d3N AMERICANO JACKS,\u201d \u201cMargarita,\u201d and \u201cNATU CHIPS.\u201d</li><li data-list-item-id=\"e7e67aa7c41b72737057b1a62a104af5a\">45-g. foil bags of \u201cDe Todito BBQ\u201d mixed chips with \u201cCHICHARR\u00d3N AMERICANO JACKS,\u201d \u201cMargarita,\u201d and \u201cNatuChips.\u201d</li></ul><p>The products subject to the recall do not bear any import marks on the labels. These items were shipped to a distributor in New Jersey and retail locations in New Jersey, Utah, Massachusetts, New York, Connecticut, and Illinois. Please note, it may be possible as FSIS continues their investigation consignees in additional states may be identified.</p><p>The problem was discovered when FSIS received a consumer complaint regarding \u201cDe Todito\u201d snack products containing dried plantains, potato chips, and chicharr\u00f3nes, pork cracklings, imported from Colombia, which is ineligible to import any meat or poultry product into the U.S.</p><p>There have been no confirmed reports of illness or injury due to consumption of these products. Anyone concerned about illness or injury should contact a healthcare provider.</p><p>FSIS is concerned that some product may be in consumers' pantries. Consumers who have purchased these products are urged not to consume them. These products should be thrown away or returned to the place of purchase.</p><p>FSIS routinely conducts recall effectiveness checks to verify recalling firms notify their<strong> </strong>customers of the recall and that steps are taken to make certain that the product is no longer available to consumers. When available, the retail distribution list(s) will be posted on the FSIS website at\u202f<a href=\"http://www.fsis.usda.gov/recalls\">www.fsis.usda.gov/recalls</a>.</p><p>Consumers and members of the media with questions about the recall can contact Humberto Gallego, Owner, El Eden Import Distributor Corp. at <a href=\"mailto:Hhgl1968@gmail.com\">Hhgl1968@gmail.com</a>.</p><p>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 888-MPHotline (888-674-6854) or send a question via email to <a href=\"mailto:MPHotline@usda.gov\">MPHotline@usda.gov</a>. For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at <a href=\"https://foodcomplaint.fsis.usda.gov/eCCF/\">https://foodcomplaint.fsis.usda.gov/eCCF/</a>.</p></body>",
         "field_year": "2026",
