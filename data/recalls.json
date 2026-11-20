@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T20:01:25Z",
+  "generatedAt": "2026-11-20T20:07:20Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-20T20:01:25Z",
-    "lastSuccessfulUpdate": "2026-11-20T20:01:25Z",
+    "checkedAt": "2026-11-20T20:07:20Z",
+    "lastSuccessfulUpdate": "2026-11-20T20:07:20Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-20T20:01:25Z",
-        "lastSuccessfulUpdate": "2026-11-20T20:01:25Z",
+        "checkedAt": "2026-11-20T20:07:20Z",
+        "lastSuccessfulUpdate": "2026-11-20T20:07:20Z",
         "recordCount": 2165,
         "newestRecallDate": "2026-11-19",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-20T20:01:25Z",
+            "checkedAt": "2026-11-20T20:07:20Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-20T20:01:25Z",
+            "checkedAt": "2026-11-20T20:07:20Z",
             "recordCount": 5,
             "newestRecallDate": "2026-11-19"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-20T20:01:25Z",
+            "checkedAt": "2026-11-20T20:07:20Z",
             "recordCount": 2765,
             "newestRecallDate": "2026-10-26"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-20T20:01:25Z",
-        "retrievedAt": "2026-11-20T20:01:25Z",
-        "lastSuccessfulUpdate": "2026-11-20T20:01:25Z",
+        "checkedAt": "2026-11-20T20:07:20Z",
+        "retrievedAt": "2026-11-20T20:07:20Z",
+        "lastSuccessfulUpdate": "2026-11-20T20:07:20Z",
         "newestRecallDate": "2026-11-14",
         "recordCount": 2034,
         "error": null,
@@ -225,8 +225,8 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
-      "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -242,14 +242,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Yellow Dock Root C/S",
-      "recallingFirm": "Larbi Inc.",
-      "productDescription": "Yellow Dock Root C/S",
+      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "recallingFirm": "ALDI",
+      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
       "brandNames": [
-        "Herb to Body"
+        "Priano"
       ],
       "productNames": [
-        "Yellow Dock Root C/S"
+        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
       ],
       "upcs": [],
       "gtins": [],
@@ -257,10 +257,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Salmonella",
+      "reason": "Potential to be contaminated with Clostridium botulinum",
       "distribution": "See official notice",
       "recallDate": "2026-11-17",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -275,21 +275,21 @@
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-11-17",
-        "brand": "Herb to Body",
-        "product": "Yellow Dock Root C/S",
+        "brand": "Priano",
+        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
         "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Salmonella",
-        "company": "Larbi Inc.",
+        "reason": "Potential to be contaminated with Clostridium botulinum",
+        "company": "ALDI",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
       },
-      "searchText": "larbi inc. herb to body yellow dock root c/s potential to be contaminated with salmonella",
+      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
+          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
         }
       ],
       "sourceSurfaces": [
@@ -369,8 +369,8 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-36f6753cae7165fc",
-      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
+      "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -386,14 +386,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "recallingFirm": "ALDI",
-      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "title": "Yellow Dock Root C/S",
+      "recallingFirm": "Larbi Inc.",
+      "productDescription": "Yellow Dock Root C/S",
       "brandNames": [
-        "Priano"
+        "Herb to Body"
       ],
       "productNames": [
-        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
+        "Yellow Dock Root C/S"
       ],
       "upcs": [],
       "gtins": [],
@@ -401,10 +401,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Clostridium botulinum",
+      "reason": "Potential to be contaminated with Salmonella",
       "distribution": "See official notice",
       "recallDate": "2026-11-17",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -419,21 +419,21 @@
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-11-17",
-        "brand": "Priano",
-        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+        "brand": "Herb to Body",
+        "product": "Yellow Dock Root C/S",
         "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Clostridium botulinum",
-        "company": "ALDI",
+        "reason": "Potential to be contaminated with Salmonella",
+        "company": "Larbi Inc.",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
       },
-      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
+      "searchText": "larbi inc. herb to body yellow dock root c/s potential to be contaminated with salmonella",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+          "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
