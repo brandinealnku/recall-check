@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-11-19T20:29:48Z",
+  "checkedAt": "2026-11-20T07:06:31Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Lunch Box Sandwiches"
+      ],
+      "date": "2026-11-19",
+      "id": "FDA-PUBLIC-64a9ba79c0869fea",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-strand-sandwich-company-recalls-lunch-box-bacon-egg-and-cheese-biscuit-lunch-box-jumbo-sausage",
+      "product": "Lunch Box Chicken Sausage Biscuit ; Lunch Box Sausage Egg & Cheese Biscuit; Lunch Box Jumbo Sausage Biscuit; and Lunch Box Bacon Egg and Cheese Biscuit",
+      "reason": "Potential to be contaminated with Listeria monocytogenes",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Fresh to You"
@@ -17,13 +30,13 @@
     },
     {
       "brandNames": [
-        "Herb to Body"
+        "Priano"
       ],
       "date": "2026-11-17",
-      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
-      "product": "Yellow Dock Root C/S",
-      "reason": "Potential to be contaminated with Salmonella",
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "reason": "Potential to be contaminated with Clostridium botulinum",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -43,13 +56,13 @@
     },
     {
       "brandNames": [
-        "Priano"
+        "Herb to Body"
       ],
       "date": "2026-11-17",
-      "id": "FDA-PUBLIC-36f6753cae7165fc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
-      "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "reason": "Potential to be contaminated with Clostridium botulinum",
+      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
+      "product": "Yellow Dock Root C/S",
+      "reason": "Potential to be contaminated with Salmonella",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -246,60 +259,49 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-23",
-      "id": "FDA-unknown",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules 120 count. Product Item Number: 3006661. 120 ct powder capsules in a 200cc bottle Take 1 capsule 2 times daily. Packaged in a 200cc white HDPE bottle with white cap. Whole Foods UPC: 099482520991. Label Address: Whole Foods Market, 550 Bowie Street, Austin, Texas 78703.",
-      "reason": "Possible Salmonella contamination.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
     }
   ],
-  "generatedAt": "2026-11-19T20:29:48Z",
+  "generatedAt": "2026-11-20T07:06:31Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-19T20:29:48Z",
+      "checkedAt": "2026-11-20T07:06:31Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-19T20:29:48Z",
-      "newestRecallDate": "2026-11-18",
+      "lastSuccessfulUpdate": "2026-11-20T07:06:31Z",
+      "newestRecallDate": "2026-11-19",
       "qualityStatus": "current",
-      "recordCount": 2164,
+      "recordCount": 2165,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-19T20:29:48Z",
+          "checkedAt": "2026-11-20T07:06:31Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-19T20:29:48Z",
+          "checkedAt": "2026-11-20T07:06:31Z",
           "newestRecallDate": "2026-10-26",
           "recordCount": 2765,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-19T20:29:48Z",
-          "newestRecallDate": "2026-11-18",
-          "recordCount": 4,
+          "checkedAt": "2026-11-20T07:06:31Z",
+          "newestRecallDate": "2026-11-19",
+          "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-19T20:29:48Z",
+      "checkedAt": "2026-11-20T07:06:31Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-19T20:29:48Z",
+      "lastSuccessfulUpdate": "2026-11-20T07:06:31Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,
