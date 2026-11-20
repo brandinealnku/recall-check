@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T07:06:31Z",
+  "generatedAt": "2026-11-20T20:01:25Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-20T07:06:31Z",
-    "lastSuccessfulUpdate": "2026-11-20T07:06:31Z",
+    "checkedAt": "2026-11-20T20:01:25Z",
+    "lastSuccessfulUpdate": "2026-11-20T20:01:25Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-20T07:06:31Z",
-        "lastSuccessfulUpdate": "2026-11-20T07:06:31Z",
+        "checkedAt": "2026-11-20T20:01:25Z",
+        "lastSuccessfulUpdate": "2026-11-20T20:01:25Z",
         "recordCount": 2165,
         "newestRecallDate": "2026-11-19",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-20T07:06:31Z",
+            "checkedAt": "2026-11-20T20:01:25Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-20T07:06:31Z",
+            "checkedAt": "2026-11-20T20:01:25Z",
             "recordCount": 5,
             "newestRecallDate": "2026-11-19"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-20T07:06:31Z",
+            "checkedAt": "2026-11-20T20:01:25Z",
             "recordCount": 2765,
             "newestRecallDate": "2026-10-26"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-20T07:06:31Z",
-        "retrievedAt": "2026-11-20T07:06:31Z",
-        "lastSuccessfulUpdate": "2026-11-20T07:06:31Z",
+        "checkedAt": "2026-11-20T20:01:25Z",
+        "retrievedAt": "2026-11-20T20:01:25Z",
+        "lastSuccessfulUpdate": "2026-11-20T20:01:25Z",
         "newestRecallDate": "2026-11-14",
         "recordCount": 2034,
         "error": null,
@@ -225,8 +225,8 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-36f6753cae7165fc",
-      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
+      "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -242,14 +242,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "recallingFirm": "ALDI",
-      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "title": "Yellow Dock Root C/S",
+      "recallingFirm": "Larbi Inc.",
+      "productDescription": "Yellow Dock Root C/S",
       "brandNames": [
-        "Priano"
+        "Herb to Body"
       ],
       "productNames": [
-        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
+        "Yellow Dock Root C/S"
       ],
       "upcs": [],
       "gtins": [],
@@ -257,10 +257,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Clostridium botulinum",
+      "reason": "Potential to be contaminated with Salmonella",
       "distribution": "See official notice",
       "recallDate": "2026-11-17",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -275,21 +275,21 @@
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-11-17",
-        "brand": "Priano",
-        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+        "brand": "Herb to Body",
+        "product": "Yellow Dock Root C/S",
         "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Clostridium botulinum",
-        "company": "ALDI",
+        "reason": "Potential to be contaminated with Salmonella",
+        "company": "Larbi Inc.",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
       },
-      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
+      "searchText": "larbi inc. herb to body yellow dock root c/s potential to be contaminated with salmonella",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+          "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
         }
       ],
       "sourceSurfaces": [
@@ -369,8 +369,8 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
-      "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
       "agency": "FDA",
       "type": "recall",
       "status": "current",
@@ -386,14 +386,14 @@
         "isRecent": true
       },
       "classification": "unknown",
-      "title": "Yellow Dock Root C/S",
-      "recallingFirm": "Larbi Inc.",
-      "productDescription": "Yellow Dock Root C/S",
+      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "recallingFirm": "ALDI",
+      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
       "brandNames": [
-        "Herb to Body"
+        "Priano"
       ],
       "productNames": [
-        "Yellow Dock Root C/S"
+        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
       ],
       "upcs": [],
       "gtins": [],
@@ -401,10 +401,10 @@
       "lotCodes": [],
       "dateCodes": [],
       "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Salmonella",
+      "reason": "Potential to be contaminated with Clostridium botulinum",
       "distribution": "See official notice",
       "recallDate": "2026-11-17",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
       "extraction": {
         "method": "labeled-narrative-regex-v1",
         "confidence": "none",
@@ -419,21 +419,21 @@
       "sourceRecord": {
         "source": "FDA public recalls table",
         "date": "2026-11-17",
-        "brand": "Herb to Body",
-        "product": "Yellow Dock Root C/S",
+        "brand": "Priano",
+        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
         "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Salmonella",
-        "company": "Larbi Inc.",
+        "reason": "Potential to be contaminated with Clostridium botulinum",
+        "company": "ALDI",
         "terminated": "",
         "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
       },
-      "searchText": "larbi inc. herb to body yellow dock root c/s potential to be contaminated with salmonella",
+      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
       "sourceReferences": [
         {
           "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
+          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
         }
       ],
       "sourceSurfaces": [
@@ -515,7 +515,7 @@
         ],
         "field_media_contact": "Meredith Carothers",
         "field_risk_level": "Public Health Alert",
-        "field_last_modified_date": "2026-11-14",
+        "field_last_modified_date": "2026-11-20",
         "field_press_release": [],
         "field_processing": [
           "Fully Cooked - Not Shelf Stable"
@@ -532,12 +532,12 @@
         ],
         "field_recall_type": "Public Health Alert",
         "field_related_to_outbreak": "False",
-        "field_summary": "<p><strong>WASHINGTON, Nov. 14, 2026</strong> \u2013 The U.S. Department of Agriculture\u2019s Food Safety and Inspection Service (FSIS) is issuing a public health alert for ready-to-eat meat products containing FDA-regulated biscuits that may be contaminated with <em>Listeria monocytogenes (Lm)</em>. Additional downstream products may be identified as this ingredient recall progresses. As more information becomes available, FSIS will update this public health alert. Consumers should check back frequently.</p>\n<p><a href=\"/sites/default/files/media_file/documents/PHA-11142026-Product-List_0.pdf\" data-entity-type=\"file\" data-entity-uuid=\"3252a327-5125-4e99-8ec7-8fc38c80de29\" data-entity-substitution=\"file\">View the list of products subject to the public health alert</a>, including information such as the establishment numbers and states where the products were distributed.</p>\n<p><a href=\"/sites/default/files/food_label_pdf/2026-11/PHA-11142026-Product-Labels.pdf\" data-entity-type=\"file\" data-entity-uuid=\"81658b33-3ace-47df-b7b2-0008b03f2e58\" data-entity-substitution=\"file\">View product labels.</a></p>\n<p>The problem was discovered when a firm notified FSIS that they had received FDA-regulated biscuits that had been recalled by C.H. Guenther &amp; Son.</p>\n<p>There have been no confirmed reports of illness due to consumption of these products. Anyone concerned about an illness should contact a health care provider.</p>\n<p>Consumption of food contaminated with Lm can cause listeriosis, a serious infection that primarily affects older adults, persons with weakened immune systems, and pregnant women and their newborns. Less commonly, persons outside these risk groups are affected.<br><br>Listeriosis can cause fever, muscle aches, headache, stiff neck, confusion, loss of balance and convulsions sometimes preceded by diarrhea or other gastrointestinal symptoms. An invasive infection spreads beyond the gastrointestinal tract. In pregnant women, the infection can cause miscarriages, stillbirths, premature delivery or life-threatening infection of the newborn. In addition, serious and sometimes fatal infections can occur in older adults and persons with weakened immune systems. Listeriosis is treated with antibiotics. Persons in the higher-risk categories who experience flu-like symptoms within two months after eating contaminated food should seek medical care and tell the health care provider about eating the contaminated food.<br><br>FSIS is concerned that some product may be in consumers\u2019 or retailers\u2019 refrigerators or freezers. Consumers who have purchased these products are urged not to consume them. Retailers who have purchased these products are urged not to serve or sell them. These products should be thrown away or returned to the place of purchase.<br>&nbsp;<br>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 888-MPHotline (888-674-6854) or send a question via email to MPHotline@usda.gov. For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at <a href=\"https://foodcomplaint.fsis.usda.gov/eCCF/\">https://foodcomplaint.fsis.usda.gov/eCCF/</a>.&nbsp;</p>\n<p>###</p>\n<p>NOTE: Access news releases and other information at FSIS\u2019 website at <a href=\"/recalls\" data-entity-type=\"node\" data-entity-uuid=\"44ea4e6a-ea7d-43e2-af2e-d3d6d5c412e8\" data-entity-substitution=\"canonical\">http://www.fsis.usda.gov/recalls</a>.</p>\n<p>Follow FSIS on X at <a href=\"http://www.twitter.com/usdafoodsafety\">twitter.com/usdafoodsafety</a>.&nbsp;<br><br>USDA is an equal opportunity provider, employer and lender. To file a complaint of discrimination, write: USDA, Director, Office of Civil Rights, 1400 Independence Avenue, SW, Washington, DC 20250-9410 or call 800-795-3272 (voice), or 202-720-6382 (TDD).</p>\n",
+        "field_summary": "<p><strong>Last Updated: </strong>This release was last updated on Nov. 19, 2026, to reflect additional affected products and their corresponding labels.&nbsp;</p>\n<p><strong>WASHINGTON, Nov. 14, 2026</strong> \u2013 The U.S. Department of Agriculture\u2019s Food Safety and Inspection Service (FSIS) is issuing a public health alert for ready-to-eat meat products containing FDA-regulated biscuits that may be contaminated with <em>Listeria monocytogenes (Lm)</em>. Additional downstream products may be identified as this ingredient recall progresses. As more information becomes available, FSIS will update this public health alert. Consumers should check back frequently.</p>\n<p><a href=\"/sites/default/files/media_file/documents/PHA-11142026-Product-List_0.pdf\" data-entity-type=\"file\" data-entity-uuid=\"3252a327-5125-4e99-8ec7-8fc38c80de29\" data-entity-substitution=\"file\">View the list of products subject to the public health alert</a>, including information such as the establishment numbers and states where the products were distributed.</p>\n<p><a href=\"/sites/default/files/food_label_pdf/2026-11/PHA-11142026-Product-Labels.pdf\" data-entity-type=\"file\" data-entity-uuid=\"81658b33-3ace-47df-b7b2-0008b03f2e58\" data-entity-substitution=\"file\">View product labels.</a></p>\n<p>The problem was discovered when a firm notified FSIS that they had received FDA-regulated biscuits that had been recalled by C.H. Guenther &amp; Son.</p>\n<p>There have been no confirmed reports of illness due to consumption of these products. Anyone concerned about an illness should contact a health care provider.</p>\n<p>Consumption of food contaminated with Lm can cause listeriosis, a serious infection that primarily affects older adults, persons with weakened immune systems, and pregnant women and their newborns. Less commonly, persons outside these risk groups are affected.<br><br>Listeriosis can cause fever, muscle aches, headache, stiff neck, confusion, loss of balance and convulsions sometimes preceded by diarrhea or other gastrointestinal symptoms. An invasive infection spreads beyond the gastrointestinal tract. In pregnant women, the infection can cause miscarriages, stillbirths, premature delivery or life-threatening infection of the newborn. In addition, serious and sometimes fatal infections can occur in older adults and persons with weakened immune systems. Listeriosis is treated with antibiotics. Persons in the higher-risk categories who experience flu-like symptoms within two months after eating contaminated food should seek medical care and tell the health care provider about eating the contaminated food.<br><br>FSIS is concerned that some product may be in consumers\u2019 or retailers\u2019 refrigerators or freezers. Consumers who have purchased these products are urged not to consume them. Retailers who have purchased these products are urged not to serve or sell them. These products should be thrown away or returned to the place of purchase.<br>&nbsp;<br>Consumers with food safety questions can call the toll-free USDA Meat and Poultry Hotline at 888-MPHotline (888-674-6854) or send a question via email to MPHotline@usda.gov. For consumers that need to report a problem with a meat, poultry, or egg product, the online Electronic Consumer Complaint Monitoring System can be accessed 24 hours a day at <a href=\"https://foodcomplaint.fsis.usda.gov/eCCF/\">https://foodcomplaint.fsis.usda.gov/eCCF/</a>.&nbsp;</p>\n<p>###</p>\n<p>NOTE: Access news releases and other information at FSIS\u2019 website at <a href=\"/recalls\" data-entity-type=\"node\" data-entity-uuid=\"44ea4e6a-ea7d-43e2-af2e-d3d6d5c412e8\" data-entity-substitution=\"canonical\">http://www.fsis.usda.gov/recalls</a>.</p>\n<p>Follow FSIS on X at <a href=\"http://www.twitter.com/usdafoodsafety\">twitter.com/usdafoodsafety</a>.&nbsp;<br><br>USDA is an equal opportunity provider, employer and lender. To file a complaint of discrimination, write: USDA, Director, Office of Civil Rights, 1400 Independence Avenue, SW, Washington, DC 20250-9410 or call 800-795-3272 (voice), or 202-720-6382 (TDD).</p>\n",
         "field_year": "2026",
         "langcode": "English",
         "field_has_spanish": "False"
       },
-      "searchText": "fsis issues public health alert for ready-to-eat meat products containing biscuits recalled due to possible listeria contamination ['9.5 oz biscuit &amp; sausage gravy'] washington, nov. 14, 2026 \u2013 the u.s. department of agriculture\u2019s food safety and inspection service (fsis) is issuing a public health alert for ready-to-eat meat products containing fda-regulated biscuits that may be contaminated with listeria monocytogenes (lm) . additional downstream products may be identified as this ingredient recall progresses. as more information becomes available, fsis will update this public health alert. consumers should check back frequently. view the list of products subject to the public health alert , including information such as the establishment numbers and states where the products were distributed. view product labels. the problem was discovered when a firm notified fsis that they had received fda-regulated biscuits that had been recalled by c.h. guenther &amp; son. there have been no confirmed reports of illness due to consumption of these products. anyone concerned about an illness should contact a health care provider. consumption of food contaminated with lm can cause listeriosis, a serious infection that primarily affects older adults, persons with weakened immune systems, and pregnant women and their newborns. less commonly, persons outside these risk groups are affected. listeriosis can cause fever, muscle aches, headache, stiff neck, confusion, loss of balance and convulsions sometimes preceded by diarrhea or other gastrointestinal symptoms. an invasive infection spreads beyond the gastrointestinal tract. in pregnant women, the infection can cause miscarriages, stillbirths, premature delivery or life-threatening infection of the newborn. in addition, serious and sometimes fatal infections can occur in older adults and persons with weakened immune systems. listeriosis is treated with antibiotics. persons in the higher-risk categories who experience flu-like symptoms within two months after eating contaminated food should seek medical care and tell the health care provider about eating the contaminated food. fsis is concerned that some product may be in consumers\u2019 or retailers\u2019 refrigerators or freezers. consumers who have purchased these products are urged not to consume them. retailers who have purchased these products are urged not to serve or sell them. these products should be thrown away or returned to the place of purchase. &nbsp; consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to mphotline@usda.gov. for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at https://foodcomplaint.fsis.usda.gov/eccf/ .&nbsp; ### note: access news releases and other information at fsis\u2019 website at http://www.fsis.usda.gov/recalls . follow fsis on x at twitter.com/usdafoodsafety .&nbsp; usda is an equal opportunity provider, employer and lender. to file a complaint of discrimination, write: usda, director, office of civil rights, 1400 independence avenue, sw, washington, dc 20250-9410 or call 800-795-3272 (voice), or 202-720-6382 (tdd). ['fresh &amp; ready foods llc']"
+      "searchText": "fsis issues public health alert for ready-to-eat meat products containing biscuits recalled due to possible listeria contamination ['9.5 oz biscuit &amp; sausage gravy'] last updated: this release was last updated on nov. 19, 2026, to reflect additional affected products and their corresponding labels.&nbsp; washington, nov. 14, 2026 \u2013 the u.s. department of agriculture\u2019s food safety and inspection service (fsis) is issuing a public health alert for ready-to-eat meat products containing fda-regulated biscuits that may be contaminated with listeria monocytogenes (lm) . additional downstream products may be identified as this ingredient recall progresses. as more information becomes available, fsis will update this public health alert. consumers should check back frequently. view the list of products subject to the public health alert , including information such as the establishment numbers and states where the products were distributed. view product labels. the problem was discovered when a firm notified fsis that they had received fda-regulated biscuits that had been recalled by c.h. guenther &amp; son. there have been no confirmed reports of illness due to consumption of these products. anyone concerned about an illness should contact a health care provider. consumption of food contaminated with lm can cause listeriosis, a serious infection that primarily affects older adults, persons with weakened immune systems, and pregnant women and their newborns. less commonly, persons outside these risk groups are affected. listeriosis can cause fever, muscle aches, headache, stiff neck, confusion, loss of balance and convulsions sometimes preceded by diarrhea or other gastrointestinal symptoms. an invasive infection spreads beyond the gastrointestinal tract. in pregnant women, the infection can cause miscarriages, stillbirths, premature delivery or life-threatening infection of the newborn. in addition, serious and sometimes fatal infections can occur in older adults and persons with weakened immune systems. listeriosis is treated with antibiotics. persons in the higher-risk categories who experience flu-like symptoms within two months after eating contaminated food should seek medical care and tell the health care provider about eating the contaminated food. fsis is concerned that some product may be in consumers\u2019 or retailers\u2019 refrigerators or freezers. consumers who have purchased these products are urged not to consume them. retailers who have purchased these products are urged not to serve or sell them. these products should be thrown away or returned to the place of purchase. &nbsp; consumers with food safety questions can call the toll-free usda meat and poultry hotline at 888-mphotline (888-674-6854) or send a question via email to mphotline@usda.gov. for consumers that need to report a problem with a meat, poultry, or egg product, the online electronic consumer complaint monitoring system can be accessed 24 hours a day at https://foodcomplaint.fsis.usda.gov/eccf/ .&nbsp; ### note: access news releases and other information at fsis\u2019 website at http://www.fsis.usda.gov/recalls . follow fsis on x at twitter.com/usdafoodsafety .&nbsp; usda is an equal opportunity provider, employer and lender. to file a complaint of discrimination, write: usda, director, office of civil rights, 1400 independence avenue, sw, washington, dc 20250-9410 or call 800-795-3272 (voice), or 202-720-6382 (tdd). ['fresh &amp; ready foods llc']"
     },
     {
       "id": "FDA-ANN-1e0292a4d69e8551",
