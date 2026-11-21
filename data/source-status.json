@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T06:59:01Z",
+  "checkedAt": "2026-11-21T17:23:36Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -43,19 +43,6 @@
     },
     {
       "brandNames": [
-        "Priano"
-      ],
-      "date": "2026-11-17",
-      "id": "FDA-PUBLIC-36f6753cae7165fc",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
-      "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "reason": "Potential to be contaminated with Clostridium botulinum",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
         "Herb to Body"
       ],
       "date": "2026-11-17",
@@ -63,6 +50,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
       "product": "Yellow Dock Root C/S",
       "reason": "Potential to be contaminated with Salmonella",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "Priano"
+      ],
+      "date": "2026-11-17",
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "reason": "Potential to be contaminated with Clostridium botulinum",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -261,34 +261,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-21T06:59:01Z",
+  "generatedAt": "2026-11-21T17:23:36Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-21T06:59:01Z",
+      "checkedAt": "2026-11-21T17:23:36Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-21T06:59:01Z",
+      "lastSuccessfulUpdate": "2026-11-21T17:23:36Z",
       "newestRecallDate": "2026-11-20",
       "qualityStatus": "current",
       "recordCount": 2162,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-21T06:59:01Z",
+          "checkedAt": "2026-11-21T17:23:36Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-21T06:59:01Z",
+          "checkedAt": "2026-11-21T17:23:36Z",
           "newestRecallDate": "2026-10-26",
           "recordCount": 2762,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-21T06:59:01Z",
+          "checkedAt": "2026-11-21T17:23:36Z",
           "newestRecallDate": "2026-11-20",
           "recordCount": 5,
           "success": true
@@ -296,12 +296,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-21T06:59:01Z",
+      "checkedAt": "2026-11-21T17:23:36Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-21T06:59:01Z",
+      "lastSuccessfulUpdate": "2026-11-21T17:23:36Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T06:59:01Z",
+  "generatedAt": "2026-11-21T17:23:36Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-21T06:59:01Z",
-    "lastSuccessfulUpdate": "2026-11-21T06:59:01Z",
+    "checkedAt": "2026-11-21T17:23:36Z",
+    "lastSuccessfulUpdate": "2026-11-21T17:23:36Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-21T06:59:01Z",
-        "lastSuccessfulUpdate": "2026-11-21T06:59:01Z",
+        "checkedAt": "2026-11-21T17:23:36Z",
+        "lastSuccessfulUpdate": "2026-11-21T17:23:36Z",
         "recordCount": 2162,
         "newestRecallDate": "2026-11-20",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-21T06:59:01Z",
+            "checkedAt": "2026-11-21T17:23:36Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-21T06:59:01Z",
+            "checkedAt": "2026-11-21T17:23:36Z",
             "recordCount": 5,
             "newestRecallDate": "2026-11-20"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-21T06:59:01Z",
+            "checkedAt": "2026-11-21T17:23:36Z",
             "recordCount": 2762,
             "newestRecallDate": "2026-10-26"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-21T06:59:01Z",
-        "retrievedAt": "2026-11-21T06:59:01Z",
-        "lastSuccessfulUpdate": "2026-11-21T06:59:01Z",
+        "checkedAt": "2026-11-21T17:23:36Z",
+        "retrievedAt": "2026-11-21T17:23:36Z",
+        "lastSuccessfulUpdate": "2026-11-21T17:23:36Z",
         "newestRecallDate": "2026-11-14",
         "recordCount": 2034,
         "error": null,
@@ -297,78 +297,6 @@
       ]
     },
     {
-      "id": "FDA-PUBLIC-36f6753cae7165fc",
-      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-11-17",
-        "ageDaysAtRefresh": 4,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "recallingFirm": "ALDI",
-      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-      "brandNames": [
-        "Priano"
-      ],
-      "productNames": [
-        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Clostridium botulinum",
-      "distribution": "See official notice",
-      "recallDate": "2026-11-17",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-17",
-        "brand": "Priano",
-        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Clostridium botulinum",
-        "company": "ALDI",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
-      },
-      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
       "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
       "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
       "agency": "FDA",
@@ -434,6 +362,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-dc66b45ecfd2f7eb",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-36f6753cae7165fc",
+      "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-17",
+        "ageDaysAtRefresh": 4,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "recallingFirm": "ALDI",
+      "productDescription": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+      "brandNames": [
+        "Priano"
+      ],
+      "productNames": [
+        "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Clostridium botulinum",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-17",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-11-17",
+        "brand": "Priano",
+        "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential to be contaminated with Clostridium botulinum",
+        "company": "ALDI",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
+      },
+      "searchText": "aldi priano protein carbonara tortelloni and protein herb & cheese tortelloni potential to be contaminated with clostridium botulinum",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-36f6753cae7165fc",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because"
         }
       ],
       "sourceSurfaces": [
