@@ -1,6 +1,19 @@
 {
-  "checkedAt": "2026-11-20T20:07:20Z",
+  "checkedAt": "2026-11-21T06:59:01Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "Sanniu"
+      ],
+      "date": "2026-11-20",
+      "id": "FDA-PUBLIC-6773fb4b3f7ef1c1",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/shanghai-san-niu-food-co-ltd-recalling-sanniu-evergeen-biscuits-due-undeclared-milk-and-sanniu-salt",
+      "product": "Sanniu Evergreen Biscuits and Sanniu Salt and Pepper Soda Biscuits",
+      "reason": "Undeclared Milk and Shrimp",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Lunch Box Sandwiches"
@@ -37,19 +50,6 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/aldi-recalls-priano-protein-carbonara-tortelloni-and-priano-protein-herb-cheese-tortelloni-because",
       "product": "Protein Carbonara Tortelloni and Protein Herb & Cheese Tortelloni",
       "reason": "Potential to be contaminated with Clostridium botulinum",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Naia"
-      ],
-      "date": "2026-11-17",
-      "id": "FDA-PUBLIC-b991e51bcfd16894",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts",
-      "product": "Chocolate Banana Bar Sorbetto",
-      "reason": "Undeclared Allergen \u2013 milk, eggs, tree nut (pistachio)",
       "sourceSurfaces": [
         "publicAlerts"
       ]
@@ -261,47 +261,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-20T20:07:20Z",
+  "generatedAt": "2026-11-21T06:59:01Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-20T20:07:20Z",
+      "checkedAt": "2026-11-21T06:59:01Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-20T20:07:20Z",
-      "newestRecallDate": "2026-11-19",
+      "lastSuccessfulUpdate": "2026-11-21T06:59:01Z",
+      "newestRecallDate": "2026-11-20",
       "qualityStatus": "current",
-      "recordCount": 2165,
+      "recordCount": 2162,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-20T20:07:20Z",
+          "checkedAt": "2026-11-21T06:59:01Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-20T20:07:20Z",
+          "checkedAt": "2026-11-21T06:59:01Z",
           "newestRecallDate": "2026-10-26",
-          "recordCount": 2765,
+          "recordCount": 2762,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-20T20:07:20Z",
-          "newestRecallDate": "2026-11-19",
+          "checkedAt": "2026-11-21T06:59:01Z",
+          "newestRecallDate": "2026-11-20",
           "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-20T20:07:20Z",
+      "checkedAt": "2026-11-21T06:59:01Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-20T20:07:20Z",
+      "lastSuccessfulUpdate": "2026-11-21T06:59:01Z",
       "newestRecallDate": "2026-11-14",
       "qualityStatus": "current",
       "recordCount": 2034,
