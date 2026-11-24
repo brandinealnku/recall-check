@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-11-24T09:47:50Z",
+  "checkedAt": "2026-11-24T22:20:53Z",
   "fdaSample": [
     {
       "brandNames": [
         "No Brand"
       ],
       "date": "2026-11-23",
-      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
-      "product": "Dried Herring Fish",
+      "id": "FDA-PUBLIC-b5f4c41732e4de53",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products",
+      "product": "Dried Croaker Fish",
       "reason": "Potential contamination with Clostridium Botulinum",
       "sourceSurfaces": [
         "publicAlerts"
@@ -19,9 +19,9 @@
         "No Brand"
       ],
       "date": "2026-11-23",
-      "id": "FDA-PUBLIC-b5f4c41732e4de53",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products",
-      "product": "Dried Croaker Fish",
+      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
+      "product": "Dried Herring Fish",
       "reason": "Potential contamination with Clostridium Botulinum",
       "sourceSurfaces": [
         "publicAlerts"
@@ -51,20 +51,6 @@
       "reason": "Potential to be contaminated with Listeria monocytogenes",
       "sourceSurfaces": [
         "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Fresh to You"
-      ],
-      "date": "2026-11-18",
-      "id": "FDA-PUBLIC-d683f4c6d63f8603",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and",
-      "product": "Sausage, Egg & Cheese Biscuit Sandwich",
-      "reason": "Potential to be contaminated with Listeria monocytogenes.",
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
       ]
     },
     {
@@ -154,6 +140,19 @@
       "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride",
       "product": "Vancomycin Hydrochloride for Injection USP 1.25g/Vial-30mL (Single Dose Vial)",
       "reason": "Presence of particulate matter identified as a glass particle inside the vial",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [
+        "Fresh to You"
+      ],
+      "date": "2026-11-08",
+      "id": "FDA-ANN-a58372f212b1f3f2",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
+      "product": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
@@ -261,47 +260,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-24T09:47:50Z",
+  "generatedAt": "2026-11-24T22:20:53Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-24T09:47:50Z",
+      "checkedAt": "2026-11-24T22:20:53Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-24T09:47:50Z",
+      "lastSuccessfulUpdate": "2026-11-24T22:20:53Z",
       "newestRecallDate": "2026-11-23",
       "qualityStatus": "current",
       "recordCount": 2161,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-24T09:47:50Z",
+          "checkedAt": "2026-11-24T22:20:53Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-24T09:47:50Z",
+          "checkedAt": "2026-11-24T22:20:53Z",
           "newestRecallDate": "2026-10-26",
           "recordCount": 2761,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-24T09:47:50Z",
+          "checkedAt": "2026-11-24T22:20:53Z",
           "newestRecallDate": "2026-11-23",
-          "recordCount": 5,
+          "recordCount": 4,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-24T09:47:50Z",
+      "checkedAt": "2026-11-24T22:20:53Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-24T09:47:50Z",
+      "lastSuccessfulUpdate": "2026-11-24T22:20:53Z",
       "newestRecallDate": "2026-11-22",
       "qualityStatus": "current",
       "recordCount": 2035,

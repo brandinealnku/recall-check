@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T09:47:50Z",
+  "generatedAt": "2026-11-24T22:20:53Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-24T09:47:50Z",
-    "lastSuccessfulUpdate": "2026-11-24T09:47:50Z",
+    "checkedAt": "2026-11-24T22:20:53Z",
+    "lastSuccessfulUpdate": "2026-11-24T22:20:53Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-24T09:47:50Z",
-        "lastSuccessfulUpdate": "2026-11-24T09:47:50Z",
+        "checkedAt": "2026-11-24T22:20:53Z",
+        "lastSuccessfulUpdate": "2026-11-24T22:20:53Z",
         "recordCount": 2161,
         "newestRecallDate": "2026-11-23",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-24T09:47:50Z",
+            "checkedAt": "2026-11-24T22:20:53Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-24T09:47:50Z",
-            "recordCount": 5,
+            "checkedAt": "2026-11-24T22:20:53Z",
+            "recordCount": 4,
             "newestRecallDate": "2026-11-23"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-24T09:47:50Z",
+            "checkedAt": "2026-11-24T22:20:53Z",
             "recordCount": 2761,
             "newestRecallDate": "2026-10-26"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-24T09:47:50Z",
-        "retrievedAt": "2026-11-24T09:47:50Z",
-        "lastSuccessfulUpdate": "2026-11-24T09:47:50Z",
+        "checkedAt": "2026-11-24T22:20:53Z",
+        "retrievedAt": "2026-11-24T22:20:53Z",
+        "lastSuccessfulUpdate": "2026-11-24T22:20:53Z",
         "newestRecallDate": "2026-11-22",
         "recordCount": 2035,
         "error": null,
@@ -71,78 +71,6 @@
     "warnings": []
   },
   "recalls": [
-    {
-      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
-      "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-11-23",
-        "ageDaysAtRefresh": 1,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Dried Herring Fish",
-      "recallingFirm": "Prime Food Processing LLC",
-      "productDescription": "Dried Herring Fish",
-      "brandNames": [
-        "No Brand"
-      ],
-      "productNames": [
-        "Dried Herring Fish"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential contamination with Clostridium Botulinum",
-      "distribution": "See official notice",
-      "recallDate": "2026-11-23",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-23",
-        "brand": "No Brand",
-        "product": "Dried Herring Fish",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential contamination with Clostridium Botulinum",
-        "company": "Prime Food Processing LLC",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
-      },
-      "searchText": "prime food processing llc no brand dried herring fish potential contamination with clostridium botulinum",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "id": "FDA-PUBLIC-b5f4c41732e4de53",
       "sourceRecordId": "PUBLIC-b5f4c41732e4de53",
@@ -209,6 +137,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-b5f4c41732e4de53",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
+      "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-23",
+        "ageDaysAtRefresh": 1,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Dried Herring Fish",
+      "recallingFirm": "Prime Food Processing LLC",
+      "productDescription": "Dried Herring Fish",
+      "brandNames": [
+        "No Brand"
+      ],
+      "productNames": [
+        "Dried Herring Fish"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential contamination with Clostridium Botulinum",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-23",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-11-23",
+        "brand": "No Brand",
+        "product": "Dried Herring Fish",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential contamination with Clostridium Botulinum",
+        "company": "Prime Food Processing LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
+      },
+      "searchText": "prime food processing llc no brand dried herring fish potential contamination with clostridium botulinum",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
         }
       ],
       "sourceSurfaces": [
@@ -467,84 +467,6 @@
       ],
       "sourceSurfaces": [
         "publicAlerts"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-d683f4c6d63f8603",
-      "sourceRecordId": "PUBLIC-d683f4c6d63f8603",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-11-18",
-        "ageDaysAtRefresh": 6,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Sausage, Egg & Cheese Biscuit Sandwich",
-      "recallingFirm": "Fresh & Ready Foods LLC",
-      "productDescription": "Sausage, Egg & Cheese Biscuit Sandwich",
-      "brandNames": [
-        "Fresh to You"
-      ],
-      "productNames": [
-        "Sausage, Egg & Cheese Biscuit Sandwich"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Listeria monocytogenes.",
-      "distribution": "See official notice",
-      "recallDate": "2026-11-18",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-18",
-        "brand": "Fresh to You",
-        "product": "Sausage, Egg & Cheese Biscuit Sandwich",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential to be contaminated with Listeria monocytogenes.",
-        "company": "Fresh & Ready Foods LLC",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and"
-      },
-      "searchText": "fresh & ready foods llc fresh to you sausage, egg & cheese biscuit sandwich potential to be contaminated with listeria monocytogenes.",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-d683f4c6d63f8603",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-expands-recall-include-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-and"
-        },
-        {
-          "surface": "annualAnnouncements",
-          "sourceRecordId": "ANN-a58372f212b1f3f2",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts",
-        "annualAnnouncements"
       ]
     },
     {
@@ -1133,6 +1055,75 @@
           "surface": "annualAnnouncements",
           "sourceRecordId": "ANN-e20cd0f67b3d615b",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride"
+        }
+      ],
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "id": "FDA-ANN-a58372f212b1f3f2",
+      "sourceRecordId": "ANN-a58372f212b1f3f2",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-08",
+        "ageDaysAtRefresh": 16,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Fresh & Ready Foods LLC \u2014 Sausage, Egg & Cheese Biscuit Sandwich",
+      "recallingFirm": "Fresh & Ready Foods LLC",
+      "productDescription": "Sausage, Egg & Cheese Biscuit Sandwich",
+      "brandNames": [
+        "Fresh to You"
+      ],
+      "productNames": [
+        "Sausage, Egg & Cheese Biscuit Sandwich"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential to be contaminated with Listeria monocytogenes.",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-08",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "brand": "Fresh to You",
+        "company": "Fresh & Ready Foods LLC",
+        "date": "11/08/2026",
+        "productdescription": "Sausage, Egg & Cheese Biscuit Sandwich",
+        "producttype": "Food & Beverages",
+        "reason": "Potential to be contaminated with Listeria monocytogenes.",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
+      },
+      "searchText": "fresh & ready foods llc fresh to you sausage, egg & cheese biscuit sandwich potential to be contaminated with listeria monocytogenes. fresh & ready foods llc \u2014 sausage, egg & cheese biscuit sandwich",
+      "sourceReferences": [
+        {
+          "surface": "annualAnnouncements",
+          "sourceRecordId": "ANN-a58372f212b1f3f2",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresh-ready-foods-llc-recalls-fresh-you-brand-sausage-egg-cheese-biscuit-sandwich-due-possible"
         }
       ],
       "sourceSurfaces": [
