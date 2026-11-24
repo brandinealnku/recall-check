@@ -1,6 +1,32 @@
 {
-  "checkedAt": "2026-11-23T23:48:56Z",
+  "checkedAt": "2026-11-24T09:47:50Z",
   "fdaSample": [
+    {
+      "brandNames": [
+        "No Brand"
+      ],
+      "date": "2026-11-23",
+      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
+      "product": "Dried Herring Fish",
+      "reason": "Potential contamination with Clostridium Botulinum",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "brandNames": [
+        "No Brand"
+      ],
+      "date": "2026-11-23",
+      "id": "FDA-PUBLIC-b5f4c41732e4de53",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products",
+      "product": "Dried Croaker Fish",
+      "reason": "Potential contamination with Clostridium Botulinum",
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
     {
       "brandNames": [
         "Sanniu"
@@ -39,32 +65,6 @@
       "sourceSurfaces": [
         "publicAlerts",
         "annualAnnouncements"
-      ]
-    },
-    {
-      "brandNames": [
-        "Herb to Body"
-      ],
-      "date": "2026-11-17",
-      "id": "FDA-PUBLIC-dc66b45ecfd2f7eb",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/larbi-inc-recalls-yellow-dock-root-because-possible-health-risk",
-      "product": "Yellow Dock Root C/S",
-      "reason": "Potential to be contaminated with Salmonella",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Naia"
-      ],
-      "date": "2026-11-17",
-      "id": "FDA-PUBLIC-b991e51bcfd16894",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/naia-inc-recalls-chocolate-banana-bar-sorbetto-because-undeclared-milk-eggs-and-nuts",
-      "product": "Chocolate Banana Bar Sorbetto",
-      "reason": "Undeclared Allergen \u2013 milk, eggs, tree nut (pistachio)",
-      "sourceSurfaces": [
-        "publicAlerts"
       ]
     },
     {
@@ -261,47 +261,47 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-23T23:48:56Z",
+  "generatedAt": "2026-11-24T09:47:50Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-23T23:48:56Z",
+      "checkedAt": "2026-11-24T09:47:50Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-23T23:48:56Z",
-      "newestRecallDate": "2026-11-20",
+      "lastSuccessfulUpdate": "2026-11-24T09:47:50Z",
+      "newestRecallDate": "2026-11-23",
       "qualityStatus": "current",
       "recordCount": 2161,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-23T23:48:56Z",
+          "checkedAt": "2026-11-24T09:47:50Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-23T23:48:56Z",
+          "checkedAt": "2026-11-24T09:47:50Z",
           "newestRecallDate": "2026-10-26",
           "recordCount": 2761,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-23T23:48:56Z",
-          "newestRecallDate": "2026-11-20",
+          "checkedAt": "2026-11-24T09:47:50Z",
+          "newestRecallDate": "2026-11-23",
           "recordCount": 5,
           "success": true
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-23T23:48:56Z",
+      "checkedAt": "2026-11-24T09:47:50Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-23T23:48:56Z",
+      "lastSuccessfulUpdate": "2026-11-24T09:47:50Z",
       "newestRecallDate": "2026-11-22",
       "qualityStatus": "current",
       "recordCount": 2035,
