@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-24T22:20:53Z",
+  "checkedAt": "2026-11-25T08:24:01Z",
   "fdaSample": [
     {
       "brandNames": [
@@ -158,6 +158,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-11-06",
+      "id": "FDA-H-0229-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Fresh To You Sausage, Egg & Cheese Biscuit Sandwich, net weight. 4.6 oz (131g). Refrigerated breakfast sandwich sold to the general population, packaging is flexible clear film package. UPC 8 40549 30168 4. Manufactured By: RFR Renton, WA 98057.",
+      "reason": "Possible Listeria monocytogenes contamination.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "Brad\u2019s"
       ],
@@ -210,6 +221,17 @@
       ]
     },
     {
+      "brandNames": [],
+      "date": "2026-10-28",
+      "id": "FDA-H-0203-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Ground Up Nut Butter Cups filled with Almond & Cashew Butter Dark Chocolate Two Pack. Net wt. 1.9oz. Each paper box consists two cups wrapped in one sealed cellophane pack inside. UPC 8 50017 63722 1. Distributed By: Ground Up PDX 657 SE Yamhill St. Portland, OR 97214.",
+      "reason": "Foreign material: plastic fiber",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
       "brandNames": [
         "No Brand"
       ],
@@ -234,60 +256,36 @@
       "sourceSurfaces": [
         "annualAnnouncements"
       ]
-    },
-    {
-      "brandNames": [],
-      "date": "2026-10-26",
-      "id": "FDA-H-0195-2027",
-      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
-      "product": "Ethel's Gluten Free Turtle Dandy Dessert Bars 6oz, UPC 8 50054 16601 2, 6 retail units per case",
-      "reason": "Product mix-up resulting in incorrect product identity, inaccurate ingredient declaration (extra ingredients declared that are not present in the product), and inaccurate Nutrition Facts.",
-      "sourceSurfaces": [
-        "enforcement"
-      ]
-    },
-    {
-      "brandNames": [
-        "Ultimate Forza"
-      ],
-      "date": "2026-10-24",
-      "id": "FDA-ANN-aafd3884082032de",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/tonight-we-ride-llc-issues-voluntary-recall-ultimate-forza-male-supplement-due-presence-undeclared",
-      "product": "Male Supplement",
-      "reason": "Product contains undeclared Sildenafil, Tadalafil, and Dapoxetine",
-      "sourceSurfaces": [
-        "annualAnnouncements"
-      ]
     }
   ],
-  "generatedAt": "2026-11-24T22:20:53Z",
+  "generatedAt": "2026-11-25T08:24:01Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-24T22:20:53Z",
+      "checkedAt": "2026-11-25T08:24:01Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-24T22:20:53Z",
+      "lastSuccessfulUpdate": "2026-11-25T08:24:01Z",
       "newestRecallDate": "2026-11-23",
       "qualityStatus": "current",
-      "recordCount": 2161,
+      "recordCount": 2182,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-24T22:20:53Z",
+          "checkedAt": "2026-11-25T08:24:01Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-24T22:20:53Z",
-          "newestRecallDate": "2026-10-26",
-          "recordCount": 2761,
+          "checkedAt": "2026-11-25T08:24:01Z",
+          "newestRecallDate": "2026-11-06",
+          "recordCount": 2786,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-24T22:20:53Z",
+          "checkedAt": "2026-11-25T08:24:01Z",
           "newestRecallDate": "2026-11-23",
           "recordCount": 4,
           "success": true
@@ -295,12 +293,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-24T22:20:53Z",
+      "checkedAt": "2026-11-25T08:24:01Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-24T22:20:53Z",
+      "lastSuccessfulUpdate": "2026-11-25T08:24:01Z",
       "newestRecallDate": "2026-11-22",
       "qualityStatus": "current",
       "recordCount": 2035,
