@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T18:52:01Z",
+  "generatedAt": "2026-11-27T21:10:47Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,14 +14,14 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-27T18:52:01Z",
-    "lastSuccessfulUpdate": "2026-11-27T18:52:01Z",
+    "checkedAt": "2026-11-27T21:10:47Z",
+    "lastSuccessfulUpdate": "2026-11-27T21:10:47Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-27T18:52:01Z",
-        "lastSuccessfulUpdate": "2026-11-27T18:52:01Z",
-        "recordCount": 2179,
+        "checkedAt": "2026-11-27T21:10:47Z",
+        "lastSuccessfulUpdate": "2026-11-27T21:10:47Z",
+        "recordCount": 2178,
         "newestRecallDate": "2026-11-23",
         "current": true,
         "qualityStatus": "current",
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-27T18:52:01Z",
+            "checkedAt": "2026-11-27T21:10:47Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-27T18:52:01Z",
-            "recordCount": 4,
+            "checkedAt": "2026-11-27T21:10:47Z",
+            "recordCount": 3,
             "newestRecallDate": "2026-11-23"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-27T18:52:01Z",
+            "checkedAt": "2026-11-27T21:10:47Z",
             "recordCount": 2783,
             "newestRecallDate": "2026-11-06"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-27T18:52:01Z",
-        "retrievedAt": "2026-11-27T18:52:01Z",
-        "lastSuccessfulUpdate": "2026-11-27T18:52:01Z",
+        "checkedAt": "2026-11-27T21:10:47Z",
+        "retrievedAt": "2026-11-27T21:10:47Z",
+        "lastSuccessfulUpdate": "2026-11-27T21:10:47Z",
         "newestRecallDate": "2026-11-22",
         "recordCount": 2035,
         "error": null,
@@ -64,7 +64,7 @@
       }
     },
     "recordCountByAgency": {
-      "FDA": 2179,
+      "FDA": 2178,
       "USDA": 1246
     },
     "recordsWithIdentifierCandidates": 37,
@@ -390,81 +390,6 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-6773fb4b3f7ef1c1",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/shanghai-san-niu-food-co-ltd-recalling-sanniu-evergeen-biscuits-due-undeclared-milk-and-sanniu-salt"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "id": "FDA-PUBLIC-64a9ba79c0869fea",
-      "sourceRecordId": "PUBLIC-64a9ba79c0869fea",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-11-19",
-        "ageDaysAtRefresh": 8,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Lunch Box Chicken Sausage Biscuit ; Lunch Box Sausage Egg & Cheese Biscuit; Lunch Box Jumbo Sausage Biscuit; and Lunch Box Bacon Egg and Cheese Biscuit",
-      "recallingFirm": "Grand Strand Sandwich Company Inc",
-      "productDescription": "Lunch Box Chicken Sausage Biscuit ; Lunch Box Sausage Egg & Cheese Biscuit; Lunch Box Jumbo Sausage Biscuit; and Lunch Box Bacon Egg and Cheese Biscuit",
-      "brandNames": [
-        "Lunch Box Sandwiches"
-      ],
-      "productNames": [
-        "Lunch Box Chicken Sausage Biscuit",
-        "Lunch Box Sausage Egg & Cheese Biscuit",
-        "Lunch Box Jumbo Sausage Biscuit",
-        "and Lunch Box Bacon Egg and Cheese Biscuit"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential to be contaminated with Listeria monocytogenes",
-      "distribution": "See official notice",
-      "recallDate": "2026-11-19",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-strand-sandwich-company-recalls-lunch-box-bacon-egg-and-cheese-biscuit-lunch-box-jumbo-sausage",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-19",
-        "brand": "Lunch Box Sandwiches",
-        "product": "Lunch Box Chicken Sausage Biscuit ; Lunch Box Sausage Egg & Cheese Biscuit; Lunch Box Jumbo Sausage Biscuit; and Lunch Box Bacon Egg and Cheese Biscuit",
-        "productType": "Food & Beverages",
-        "reason": "Potential to be contaminated with Listeria monocytogenes",
-        "company": "Grand Strand Sandwich Company Inc",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-strand-sandwich-company-recalls-lunch-box-bacon-egg-and-cheese-biscuit-lunch-box-jumbo-sausage"
-      },
-      "searchText": "grand strand sandwich company inc lunch box sandwiches lunch box chicken sausage biscuit ; lunch box sausage egg & cheese biscuit; lunch box jumbo sausage biscuit; and lunch box bacon egg and cheese biscuit potential to be contaminated with listeria monocytogenes",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-64a9ba79c0869fea",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/grand-strand-sandwich-company-recalls-lunch-box-bacon-egg-and-cheese-biscuit-lunch-box-jumbo-sausage"
         }
       ],
       "sourceSurfaces": [
