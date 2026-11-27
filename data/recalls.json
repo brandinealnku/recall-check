@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:12:55Z",
+  "generatedAt": "2026-11-27T08:19:28Z",
   "sources": [
     {
       "agency": "FDA",
@@ -14,13 +14,13 @@
   ],
   "dataHealth": {
     "workflowVersion": "0.7.0",
-    "checkedAt": "2026-11-27T08:12:55Z",
-    "lastSuccessfulUpdate": "2026-11-27T08:12:55Z",
+    "checkedAt": "2026-11-27T08:19:28Z",
+    "lastSuccessfulUpdate": "2026-11-27T08:19:28Z",
     "sources": {
       "FDA": {
         "success": true,
-        "checkedAt": "2026-11-27T08:12:55Z",
-        "lastSuccessfulUpdate": "2026-11-27T08:12:55Z",
+        "checkedAt": "2026-11-27T08:19:28Z",
+        "lastSuccessfulUpdate": "2026-11-27T08:19:28Z",
         "recordCount": 2179,
         "newestRecallDate": "2026-11-23",
         "current": true,
@@ -30,19 +30,19 @@
         "surfaces": {
           "annualAnnouncements": {
             "success": true,
-            "checkedAt": "2026-11-27T08:12:55Z",
+            "checkedAt": "2026-11-27T08:19:28Z",
             "recordCount": 271,
             "newestRecallDate": "2026-11-13"
           },
           "publicAlerts": {
             "success": true,
-            "checkedAt": "2026-11-27T08:12:55Z",
+            "checkedAt": "2026-11-27T08:19:28Z",
             "recordCount": 4,
             "newestRecallDate": "2026-11-23"
           },
           "enforcement": {
             "success": true,
-            "checkedAt": "2026-11-27T08:12:55Z",
+            "checkedAt": "2026-11-27T08:19:28Z",
             "recordCount": 2783,
             "newestRecallDate": "2026-11-06"
           }
@@ -51,9 +51,9 @@
       },
       "USDA": {
         "success": true,
-        "checkedAt": "2026-11-27T08:12:55Z",
-        "retrievedAt": "2026-11-27T08:12:55Z",
-        "lastSuccessfulUpdate": "2026-11-27T08:12:55Z",
+        "checkedAt": "2026-11-27T08:19:28Z",
+        "retrievedAt": "2026-11-27T08:19:28Z",
+        "lastSuccessfulUpdate": "2026-11-27T08:19:28Z",
         "newestRecallDate": "2026-11-22",
         "recordCount": 2035,
         "error": null,
@@ -71,78 +71,6 @@
     "warnings": []
   },
   "recalls": [
-    {
-      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
-      "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
-      "agency": "FDA",
-      "type": "recall",
-      "status": "current",
-      "lifecycle": {
-        "state": "active",
-        "isActionable": true,
-        "sourceStatus": "active",
-        "terminationDate": ""
-      },
-      "timeline": {
-        "recallDate": "2026-11-23",
-        "ageDaysAtRefresh": 4,
-        "isRecent": true
-      },
-      "classification": "unknown",
-      "title": "Dried Herring Fish",
-      "recallingFirm": "Prime Food Processing LLC",
-      "productDescription": "Dried Herring Fish",
-      "brandNames": [
-        "No Brand"
-      ],
-      "productNames": [
-        "Dried Herring Fish"
-      ],
-      "upcs": [],
-      "gtins": [],
-      "packageSizes": [],
-      "lotCodes": [],
-      "dateCodes": [],
-      "establishmentNumbers": [],
-      "reason": "Potential contamination with Clostridium Botulinum",
-      "distribution": "See official notice",
-      "recallDate": "2026-11-23",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
-      "extraction": {
-        "method": "labeled-narrative-regex-v1",
-        "confidence": "none",
-        "fields": {
-          "identifiers": 0,
-          "lotCodes": 0,
-          "dateCodes": 0,
-          "packageSizes": 0,
-          "brandNames": 0
-        }
-      },
-      "sourceRecord": {
-        "source": "FDA public recalls table",
-        "date": "2026-11-23",
-        "brand": "No Brand",
-        "product": "Dried Herring Fish",
-        "productType": "Food & Beverages, Foodborne Illness",
-        "reason": "Potential contamination with Clostridium Botulinum",
-        "company": "Prime Food Processing LLC",
-        "terminated": "",
-        "excerpt": "",
-        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
-      },
-      "searchText": "prime food processing llc no brand dried herring fish potential contamination with clostridium botulinum",
-      "sourceReferences": [
-        {
-          "surface": "publicAlerts",
-          "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
-          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
-        }
-      ],
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "id": "FDA-PUBLIC-b5f4c41732e4de53",
       "sourceRecordId": "PUBLIC-b5f4c41732e4de53",
@@ -209,6 +137,78 @@
           "surface": "publicAlerts",
           "sourceRecordId": "PUBLIC-b5f4c41732e4de53",
           "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products"
+        }
+      ],
+      "sourceSurfaces": [
+        "publicAlerts"
+      ]
+    },
+    {
+      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
+      "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
+      "agency": "FDA",
+      "type": "recall",
+      "status": "current",
+      "lifecycle": {
+        "state": "active",
+        "isActionable": true,
+        "sourceStatus": "active",
+        "terminationDate": ""
+      },
+      "timeline": {
+        "recallDate": "2026-11-23",
+        "ageDaysAtRefresh": 4,
+        "isRecent": true
+      },
+      "classification": "unknown",
+      "title": "Dried Herring Fish",
+      "recallingFirm": "Prime Food Processing LLC",
+      "productDescription": "Dried Herring Fish",
+      "brandNames": [
+        "No Brand"
+      ],
+      "productNames": [
+        "Dried Herring Fish"
+      ],
+      "upcs": [],
+      "gtins": [],
+      "packageSizes": [],
+      "lotCodes": [],
+      "dateCodes": [],
+      "establishmentNumbers": [],
+      "reason": "Potential contamination with Clostridium Botulinum",
+      "distribution": "See official notice",
+      "recallDate": "2026-11-23",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
+      "extraction": {
+        "method": "labeled-narrative-regex-v1",
+        "confidence": "none",
+        "fields": {
+          "identifiers": 0,
+          "lotCodes": 0,
+          "dateCodes": 0,
+          "packageSizes": 0,
+          "brandNames": 0
+        }
+      },
+      "sourceRecord": {
+        "source": "FDA public recalls table",
+        "date": "2026-11-23",
+        "brand": "No Brand",
+        "product": "Dried Herring Fish",
+        "productType": "Food & Beverages, Foodborne Illness",
+        "reason": "Potential contamination with Clostridium Botulinum",
+        "company": "Prime Food Processing LLC",
+        "terminated": "",
+        "excerpt": "",
+        "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
+      },
+      "searchText": "prime food processing llc no brand dried herring fish potential contamination with clostridium botulinum",
+      "sourceReferences": [
+        {
+          "surface": "publicAlerts",
+          "sourceRecordId": "PUBLIC-e7dd846ed271aa3b",
+          "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0"
         }
       ],
       "sourceSurfaces": [

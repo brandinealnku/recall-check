@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-11-27T08:12:55Z",
+  "checkedAt": "2026-11-27T08:19:28Z",
   "fdaSample": [
     {
       "brandNames": [
         "No Brand"
       ],
       "date": "2026-11-23",
-      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
-      "product": "Dried Herring Fish",
+      "id": "FDA-PUBLIC-b5f4c41732e4de53",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products",
+      "product": "Dried Croaker Fish",
       "reason": "Potential contamination with Clostridium Botulinum",
       "sourceSurfaces": [
         "publicAlerts"
@@ -19,9 +19,9 @@
         "No Brand"
       ],
       "date": "2026-11-23",
-      "id": "FDA-PUBLIC-b5f4c41732e4de53",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products",
-      "product": "Dried Croaker Fish",
+      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
+      "product": "Dried Herring Fish",
       "reason": "Potential contamination with Clostridium Botulinum",
       "sourceSurfaces": [
         "publicAlerts"
@@ -258,34 +258,34 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-27T08:12:55Z",
+  "generatedAt": "2026-11-27T08:19:28Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-27T08:12:55Z",
+      "checkedAt": "2026-11-27T08:19:28Z",
       "coverageComplete": true,
       "coverageMethod": "official-fda-multi-surface-union-v1",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-27T08:12:55Z",
+      "lastSuccessfulUpdate": "2026-11-27T08:19:28Z",
       "newestRecallDate": "2026-11-23",
       "qualityStatus": "current",
       "recordCount": 2179,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-27T08:12:55Z",
+          "checkedAt": "2026-11-27T08:19:28Z",
           "newestRecallDate": "2026-11-13",
           "recordCount": 271,
           "success": true
         },
         "enforcement": {
-          "checkedAt": "2026-11-27T08:12:55Z",
+          "checkedAt": "2026-11-27T08:19:28Z",
           "newestRecallDate": "2026-11-06",
           "recordCount": 2783,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-27T08:12:55Z",
+          "checkedAt": "2026-11-27T08:19:28Z",
           "newestRecallDate": "2026-11-23",
           "recordCount": 4,
           "success": true
@@ -293,12 +293,12 @@
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-27T08:12:55Z",
+      "checkedAt": "2026-11-27T08:19:28Z",
       "coverageComplete": true,
       "coverageMethod": "primary-api",
       "current": true,
       "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-27T08:12:55Z",
+      "lastSuccessfulUpdate": "2026-11-27T08:19:28Z",
       "newestRecallDate": "2026-11-22",
       "qualityStatus": "current",
       "recordCount": 2035,
