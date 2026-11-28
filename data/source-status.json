@@ -1,45 +1,6 @@
 {
-  "checkedAt": "2026-11-27T21:10:47Z",
+  "checkedAt": "2026-11-28T07:40:15Z",
   "fdaSample": [
-    {
-      "brandNames": [
-        "No Brand"
-      ],
-      "date": "2026-11-23",
-      "id": "FDA-PUBLIC-b5f4c41732e4de53",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-two-uneviscerated-dried-fish-products",
-      "product": "Dried Croaker Fish",
-      "reason": "Potential contamination with Clostridium Botulinum",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "No Brand"
-      ],
-      "date": "2026-11-23",
-      "id": "FDA-PUBLIC-e7dd846ed271aa3b",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/prime-food-processing-llc-issues-safety-warning-regarding-uneviscerated-dried-herring-fish-0",
-      "product": "Dried Herring Fish",
-      "reason": "Potential contamination with Clostridium Botulinum",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
-    {
-      "brandNames": [
-        "Sanniu"
-      ],
-      "date": "2026-11-20",
-      "id": "FDA-PUBLIC-6773fb4b3f7ef1c1",
-      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/shanghai-san-niu-food-co-ltd-recalling-sanniu-evergeen-biscuits-due-undeclared-milk-and-sanniu-salt",
-      "product": "Sanniu Evergreen Biscuits and Sanniu Salt and Pepper Soda Biscuits",
-      "reason": "Undeclared Milk and Shrimp",
-      "sourceSurfaces": [
-        "publicAlerts"
-      ]
-    },
     {
       "brandNames": [
         "Medline"
@@ -254,55 +215,105 @@
       "sourceSurfaces": [
         "enforcement"
       ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-26",
+      "id": "FDA-H-0195-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "Ethel's Gluten Free Turtle Dandy Dessert Bars 6oz, UPC 8 50054 16601 2, 6 retail units per case",
+      "reason": "Product mix-up resulting in incorrect product identity, inaccurate ingredient declaration (extra ingredients declared that are not present in the product), and inaccurate Nutrition Facts.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
+    },
+    {
+      "brandNames": [
+        "Ultimate Forza"
+      ],
+      "date": "2026-10-24",
+      "id": "FDA-ANN-aafd3884082032de",
+      "officialUrl": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/tonight-we-ride-llc-issues-voluntary-recall-ultimate-forza-male-supplement-due-presence-undeclared",
+      "product": "Male Supplement",
+      "reason": "Product contains undeclared Sildenafil, Tadalafil, and Dapoxetine",
+      "sourceSurfaces": [
+        "annualAnnouncements"
+      ]
+    },
+    {
+      "brandNames": [],
+      "date": "2026-10-23",
+      "id": "FDA-H-0204-2027",
+      "officialUrl": "https://www.accessdata.fda.gov/scripts/ires/index.cfm#/search/",
+      "product": "365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules 120 count. Product Item Number: 3006661. 120 ct powder capsules in a 200cc bottle Take 1 capsule 2 times daily. Packaged in a 200cc white HDPE bottle with white cap. Whole Foods UPC: 099482520991. Label Address: Whole Foods Market, 550 Bowie Street, Austin, Texas 78703.",
+      "reason": "Possible Salmonella contamination.",
+      "sourceSurfaces": [
+        "enforcement"
+      ]
     }
   ],
-  "generatedAt": "2026-11-27T21:10:47Z",
+  "generatedAt": "2026-11-28T07:40:15Z",
   "sources": {
     "FDA": {
-      "checkedAt": "2026-11-27T21:10:47Z",
-      "coverageComplete": true,
+      "checkedAt": "2026-11-28T07:40:15Z",
+      "coverageComplete": false,
       "coverageMethod": "official-fda-multi-surface-union-v1",
-      "current": true,
-      "freshnessValidated": true,
-      "lastSuccessfulUpdate": "2026-11-27T21:10:47Z",
-      "newestRecallDate": "2026-11-23",
-      "qualityStatus": "current",
-      "recordCount": 2178,
+      "current": false,
+      "freshnessValidated": false,
+      "lastSuccessfulUpdate": "2026-11-28T07:40:15Z",
+      "newestRecallDate": "2026-11-13",
+      "qualityStatus": "degraded",
+      "recordCount": 2143,
       "success": true,
       "surfaces": {
         "annualAnnouncements": {
-          "checkedAt": "2026-11-27T21:10:47Z",
+          "checkedAt": "2026-11-28T07:40:15Z",
+          "error": {
+            "apiKeySupplied": false,
+            "httpReason": "Not Found",
+            "httpStatus": 404,
+            "message": "Not found",
+            "paginationOffset": 0
+          },
           "newestRecallDate": "2026-11-13",
-          "recordCount": 271,
-          "success": true
+          "recordCount": 257,
+          "success": false
         },
         "enforcement": {
-          "checkedAt": "2026-11-27T21:10:47Z",
+          "checkedAt": "2026-11-28T07:40:15Z",
           "newestRecallDate": "2026-11-06",
-          "recordCount": 2783,
+          "recordCount": 2742,
           "success": true
         },
         "publicAlerts": {
-          "checkedAt": "2026-11-27T21:10:47Z",
-          "newestRecallDate": "2026-11-23",
-          "recordCount": 3,
-          "success": true
+          "checkedAt": "2026-11-28T07:40:15Z",
+          "error": {
+            "message": "HTTP Error 404: Not Found",
+            "type": "HTTPError"
+          },
+          "newestRecallDate": "",
+          "recordCount": 0,
+          "success": false
         }
       }
     },
     "USDA": {
-      "checkedAt": "2026-11-27T21:10:47Z",
-      "coverageComplete": true,
+      "checkedAt": "2026-11-28T07:40:15Z",
+      "coverageComplete": false,
       "coverageMethod": "primary-api",
-      "current": true,
-      "freshnessValidated": true,
+      "current": false,
+      "freshnessValidated": false,
       "lastSuccessfulUpdate": "2026-11-27T21:10:47Z",
       "newestRecallDate": "2026-11-22",
-      "qualityStatus": "current",
-      "recordCount": 2035,
-      "success": true
+      "qualityStatus": "unavailable",
+      "recordCount": 1246,
+      "success": false
     }
   },
-  "warnings": [],
+  "warnings": [
+    "FDA refresh failed; retained 2178 last-known records",
+    "USDA refresh failed; retained 1246 last-known records",
+    "FDA coverage is degraded: unavailable source surface(s): annualAnnouncements, publicAlerts"
+  ],
   "workflowVersion": "0.7.0"
 }
